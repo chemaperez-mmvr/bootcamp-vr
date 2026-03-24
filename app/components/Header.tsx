@@ -149,7 +149,7 @@ export function Header({ currentPath = "/" }: { currentPath?: string }) {
           </nav>
 
           {/* Right: language switcher + mobile menu button */}
-          <div className="flex justify-self-end items-center gap-2">
+          <div className="flex justify-self-end items-center gap-2 col-start-3">
             <LanguageSwitcher />
             <button
               type="button"
