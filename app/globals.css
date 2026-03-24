@@ -1,0 +1,387 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal-500: #00a8ab;
+  --teal-600: #008A8D;
+  --teal-700: #006d70;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-900: #111827;
+}
+
+/* Scrollbar: hueco estable para que el navbar no se desplace. Evitamos overlay para no provocar un micro-salto al iniciar el scroll. */
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+/* WebKit (Chrome, Edge, Safari): scrollbar flotante por encima del contenido */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+  background-clip: padding-box;
+}
+
+body {
+  @apply antialiased text-gray-900 bg-white font-sans;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Sidebar scrollbar: thinner and subtle so it doesn't crowd the selector/content */
+aside ::-webkit-scrollbar {
+  width: 6px;
+}
+aside ::-webkit-scrollbar-track {
+  background: transparent;
+}
+aside ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+aside ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Firefox: thin scrollbar for sidebar */
+aside .overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+
+/* Evitar micro-salto al hacer scroll (p. ej. cuando el sidebar sticky se activa) */
+main {
+  overflow-anchor: none;
+}
+
+/* Enlaces: color teal solo en p?rrafos y texto, no en botones/CTAs */
+p a[href],
+li a[href],
+.prose a[href],
+article a[href] {
+  color: var(--teal-600);
+}
+p a[href]:hover,
+li a[href]:hover,
+.prose a[href]:hover,
+article a[href]:hover {
+  color: var(--teal-700);
+}
+
+/* FAQs: evitar que el scroll se mueva al abrir/cerrar un acorde?n */
+[data-faq-scroll-container] {
+  overflow-anchor: none;
+}
+
+/* Accesibilidad: anillo de foco visible para teclado (WCAG 2.4.7) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex="0"]:focus-visible {
+  outline: 2px solid var(--teal-500);
+  outline-offset: 2px;
+}
+
+/* Selecci?n de texto: color de la web (teal) con transparencia */
+::selection {
+  background-color: rgba(0, 168, 171, 0.25);
+  color: inherit;
+}
+::-moz-selection {
+  background-color: rgba(0, 168, 171, 0.25);
+  color: inherit;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-enter {
+  animation: page-enter 0.35s ease-out forwards;
+}
+
+/* Animaci?n de entrada para contenido de p?ginas (FAQs, Bootcamp, etc.) */
+@keyframes content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-content-enter {
+  animation: content-enter 0.5s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+/* Animaciones de entrada para secciones del home */
+.animate-section-enter .animate-stagger-1 {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0.05s;
+}
+.animate-section-enter .animate-stagger-2 {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0.15s;
+}
+.animate-section-enter .animate-stagger-3 {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0.25s;
+}
+.animate-section-enter.is-visible .animate-stagger-1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate-section-enter.is-visible .animate-stagger-2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+.animate-section-enter.is-visible .animate-stagger-3 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger para listas (bullets): delay incremental cuando la secci?n ya est? visible */
+.animate-section-enter.is-visible .animate-stagger-4,
+.animate-section-enter.is-visible .animate-stagger-5,
+.animate-section-enter.is-visible .animate-stagger-6,
+.animate-section-enter.is-visible .animate-stagger-7 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate-section-enter .animate-stagger-4,
+.animate-section-enter .animate-stagger-5,
+.animate-section-enter .animate-stagger-6,
+.animate-section-enter .animate-stagger-7 {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+}
+.animate-section-enter .animate-stagger-4 { transition-delay: 0.35s; }
+.animate-section-enter .animate-stagger-5 { transition-delay: 0.42s; }
+.animate-section-enter .animate-stagger-6 { transition-delay: 0.49s; }
+.animate-section-enter .animate-stagger-7 { transition-delay: 0.56s; }
+
+/* Hover en tarjetas de secci?n: elevaci?n + sombra (~200ms) */
+.section-card-hover {
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.section-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Hero: entrada escalonada al cargar (opacity + translateY, ease-out 0.5s) */
+@keyframes hero-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-entrance-item {
+  opacity: 0;
+  animation: hero-entrance 0.5s ease-out forwards;
+}
+
+/* Ola del hero: movimiento infinito */
+@keyframes hero-wave-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hero-wave-animate {
+  animation: hero-wave-move 8s linear infinite;
+}
+
+/* Documentaci?n: entrada por partes */
+@keyframes doc-part-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.doc-part-enter {
+  opacity: 0;
+  animation: doc-part-enter 0.5s ease-out forwards;
+}
+
+.doc-part-delay-0 { animation-delay: 0ms; }
+.doc-part-delay-1 { animation-delay: 80ms; }
+.doc-part-delay-2 { animation-delay: 160ms; }
+.doc-part-delay-3 { animation-delay: 240ms; }
+.doc-part-delay-4 { animation-delay: 320ms; }
+.doc-part-delay-5 { animation-delay: 400ms; }
+.doc-part-delay-6 { animation-delay: 480ms; }
+.doc-part-delay-7 { animation-delay: 560ms; }
+.doc-part-delay-8 { animation-delay: 640ms; }
+.doc-part-delay-9 { animation-delay: 720ms; }
+.doc-part-delay-10 { animation-delay: 800ms; }
+.doc-part-delay-11 { animation-delay: 880ms; }
+.doc-part-delay-12 { animation-delay: 960ms; }
+.doc-part-delay-13 { animation-delay: 1040ms; }
+.doc-part-delay-14 { animation-delay: 1120ms; }
+.doc-part-delay-15 { animation-delay: 1200ms; }
+.doc-part-delay-cta { animation-delay: 520ms; }
+
+/* Quick Start flow: entrada de secci?n */
+@keyframes qs-section-enter {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes qs-nav-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.qs-section-enter {
+  animation: qs-section-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.qs-nav-enter {
+  opacity: 0;
+  animation: qs-nav-enter 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.25s forwards;
+}
+
+/* Resaltado de b?squeda en documentaci?n: parpadeo inicial */
+@keyframes doc-highlight-blink {
+  0%, 100% { opacity: 1; }
+  20% { opacity: 0.55; }
+  40% { opacity: 1; }
+  60% { opacity: 0.7; }
+  80% { opacity: 1; }
+}
+
+.doc-search-highlight-blink {
+  animation: doc-highlight-blink 1.4s ease-out forwards;
+}
+
+/* Resaltado al navegar a una ancla: parpadeo + se mantiene hasta interacci?n */
+@keyframes anchor-highlight-blink {
+  0%, 100% {
+    background-color: rgba(0, 168, 171, 0.08);
+  }
+  30% {
+    background-color: rgba(0, 168, 171, 0.18);
+  }
+  60% {
+    background-color: rgba(0, 168, 171, 0.08);
+  }
+  80% {
+    background-color: rgba(0, 168, 171, 0.14);
+  }
+}
+
+.anchor-highlight-blink {
+  animation: anchor-highlight-blink 1.2s ease-out forwards;
+}
+
+.anchor-highlight-persist {
+  background-color: rgba(0, 168, 171, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-page-enter,
+  .animate-content-enter {
+    animation: none !important;
+  }
+  .animate-content-enter {
+    opacity: 1 !important;
+  }
+
+  .hero-wave-animate {
+    animation: none !important;
+  }
+
+  .hero-entrance-item {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .doc-part-enter {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animate-section-enter .animate-stagger-1,
+  .animate-section-enter .animate-stagger-2,
+  .animate-section-enter .animate-stagger-3,
+  .animate-section-enter .animate-stagger-4,
+  .animate-section-enter .animate-stagger-5,
+  .animate-section-enter .animate-stagger-6,
+  .animate-section-enter .animate-stagger-7 {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .section-card-hover {
+    transition: none !important;
+  }
+
+  .doc-search-highlight-blink {
+    animation: none !important;
+  }
+
+  .anchor-highlight-blink {
+    animation: none !important;
+  }
+}
