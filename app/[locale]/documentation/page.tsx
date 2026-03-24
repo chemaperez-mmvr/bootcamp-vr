@@ -33,7 +33,7 @@ function getCategoryLabelKey(categoryId: string): string {
 }
 
 /** Category ids that have at least one module (order = first appearance in modules). */
-const categoryIdsWithModules = [...new Set(documentationModules.map((m) => m.categoryId))] as ModuleCategoryId[];
+const categoryIdsWithModules = Array.from(new Set(documentationModules.map((m) => m.categoryId))) as ModuleCategoryId[];
 
 export default function DocumentationPage() {
   const t = useTranslations("docs");
