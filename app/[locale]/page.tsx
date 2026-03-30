@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import {
+  alternatesForLocalizedPath,
+  defaultOgImage,
+  openGraphLocales,
+  siteName,
+} from "@/i18n/languageAlternates";
 import { Link } from "@/i18n/navigation";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
@@ -13,9 +19,28 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
+  const title = t("metaTitle");
+  const description = t("metaDesc");
+  const og = openGraphLocales(locale);
   return {
-    title: t("metaTitle"),
-    description: t("metaDesc"),
+    title,
+    description,
+    alternates: alternatesForLocalizedPath(locale, "/"),
+    openGraph: {
+      ...og,
+      title,
+      description,
+      url: `/${locale}`,
+      type: "website",
+      siteName,
+      images: [defaultOgImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [defaultOgImage.url],
+    },
   };
 }
 
@@ -26,7 +51,7 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header currentPath="/" />
+      <Header />
 
       <main id="main-content" tabIndex={-1} className="flex-1">
         <HeroSection>

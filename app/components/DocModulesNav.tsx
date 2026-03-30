@@ -37,7 +37,7 @@ export function DocModulesNav({ modules, currentModuleSlug }: DocModulesNavProps
   };
 
   return (
-    <nav className="space-y-1" role="navigation" aria-label="Documentation modules">
+    <nav className="space-y-1" role="navigation" aria-label={t("documentationModulesNav")}>
       {modules.map(({ module: mod, sections }) => {
         const isExpanded = expandedModuleIds[mod.id] ?? false;
         const isCurrent = currentModuleSlug === mod.slug;
@@ -47,9 +47,9 @@ export function DocModulesNav({ modules, currentModuleSlug }: DocModulesNavProps
               <button
                 type="button"
                 onClick={() => toggleModule(mod.id)}
-                className="flex items-center justify-center w-6 h-6 shrink-0 rounded text-gray-400 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 transition-colors"
+                className="flex items-center justify-center w-6 h-6 shrink-0 rounded text-gray-500 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 transition-colors"
                 aria-expanded={isExpanded}
-                aria-label={isExpanded ? "Collapse module" : "Expand module"}
+                aria-label={isExpanded ? t("collapseModule") : t("expandModule")}
               >
                 {isExpanded ? (
                   <IconChevronDown className="w-3.5 h-3.5" />

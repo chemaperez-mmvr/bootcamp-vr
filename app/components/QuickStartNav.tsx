@@ -84,7 +84,7 @@ export function QuickStartNav({ sectionId }: { sectionId: string }) {
           <div className="min-w-0">
             {next && (
               <p className="text-sm text-gray-600">
-                <span className="text-gray-400">{t("quickStart.next").replace(" →", ":")} </span>
+                <span className="text-gray-500">{t("quickStart.nextPreview")} </span>
                 <span className="font-medium text-gray-800">{t(next.titleKey)}</span>
               </p>
             )}
@@ -99,7 +99,7 @@ export function QuickStartNav({ sectionId }: { sectionId: string }) {
             {prev && (
               <Link
                 href={getQuickStartHref(prev, true)}
-                className="text-sm font-medium !text-gray-600 !no-underline hover:!text-teal-700 px-3 py-2 rounded-lg hover:bg-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
+                className="text-sm font-medium text-gray-600 no-underline hover:text-teal-700 px-3 py-2 rounded-lg hover:bg-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
               >
                 {t("quickStart.prev")}
               </Link>
@@ -108,14 +108,14 @@ export function QuickStartNav({ sectionId }: { sectionId: string }) {
             {next ? (
               <Link
                 href={getQuickStartHref(next, true)}
-                className="text-sm font-medium !text-white !no-underline bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+                className="text-sm font-medium text-white no-underline bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
               >
                 {t("quickStart.next")}
               </Link>
             ) : (
               <Link
                 href="/documentation"
-                className="text-sm font-medium !text-white !no-underline bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+                className="text-sm font-medium text-white no-underline bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
               >
                 {t("quickStart.finish")}
               </Link>

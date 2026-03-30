@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { AnimateOnScroll } from "./AnimateOnScroll";
@@ -16,18 +17,23 @@ export function SeamlesslyConnected() {
     <section className="relative py-16 sm:py-24 overflow-hidden">
       {/* Video de fondo */}
       {prefersReducedMotion ? (
-        <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url(/hero-bg.jpg)` }}
-          aria-hidden
-        />
+        <div className="absolute inset-0 w-full h-full" aria-hidden>
+          <Image
+            src="/hero-bg.jpg"
+            alt=""
+            fill
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+        </div>
       ) : (
         <video
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/hero-bg.jpg"
           className="absolute inset-0 w-full h-full object-cover"
           aria-hidden
         >

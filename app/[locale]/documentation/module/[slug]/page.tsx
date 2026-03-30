@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import {
+  alternatesForLocalizedPath,
+  defaultOgImage,
+  openGraphLocales,
+  siteName,
+} from "@/i18n/languageAlternates";
 import ReactMarkdown from "react-markdown";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link as NavLink } from "@/i18n/navigation";
@@ -20,6 +26,7 @@ import { ScrollToHash } from "./ScrollToHash";
 import { HighlightSearchTerm } from "./HighlightSearchTerm";
 import { QuickStartNav } from "../../../../components/QuickStartNav";
 import { QuickStartSectionWrapper } from "./QuickStartSectionWrapper";
+import { LightboxImage } from "../../../../components/ImageLightbox";
 import { Suspense } from "react";
 
 type Props = {
@@ -35,13 +42,31 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const mod = getModuleBySlug(slug);
-  if (!mod) return { title: "Documentation | VR Education Hub" };
+  if (!mod) notFound();
   const t = await getTranslations({ locale, namespace: "docs" });
-  const title = t(mod.titleKey);
+  const title = `${t(mod.titleKey)} | VR Education Hub`;
   const description = t(mod.descriptionKey);
+  const og = openGraphLocales(locale);
+  const path = `/documentation/module/${mod.slug}`;
   return {
-    title: `${title} | VR Education Hub`,
+    title,
     description,
+    alternates: alternatesForLocalizedPath(locale, path),
+    openGraph: {
+      ...og,
+      title,
+      description,
+      url: `/${locale}${path}`,
+      type: "website",
+      siteName,
+      images: [defaultOgImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [defaultOgImage.url],
+    },
   };
 }
 
@@ -69,14 +94,11 @@ const markdownComponents = {
   h3: ({ children }: { children?: React.ReactNode }) => (
     <h3 className="text-base font-semibold text-foreground mt-4 mb-2">{children}</h3>
   ),
-  img: ({ src, alt }: { src?: string; alt?: string | null }) => (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={src}
-      alt={alt ?? ""}
-      className="max-w-xl w-full aspect-video object-cover rounded-lg my-4 border border-gray-200 shadow-sm"
-    />
-  ),
+  hr: () => <hr className="my-6 border-t border-gray-200" />,
+  img: ({ src, alt }: { src?: string; alt?: string | null }) => {
+    if (!src) return null;
+    return <LightboxImage src={src} alt={alt ?? ""} />;
+  },
 };
 
 export default async function DocumentationModuleSlugPage({ params }: Props) {
@@ -95,7 +117,7 @@ export default async function DocumentationModuleSlugPage({ params }: Props) {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header currentPath="/documentation" />
+      <Header />
       <ScrollToHash />
       <Suspense fallback={null}>
         <HighlightSearchTerm />

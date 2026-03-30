@@ -29,7 +29,7 @@ export function CopyAnchorLink({ sectionId, className = "" }: CopyAnchorLinkProp
   return (
     <button
       onClick={copyToClipboard}
-      className={`inline-flex items-center justify-center w-6 h-6 rounded text-gray-400 hover:text-teal-600 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1 transition-colors ${className}`}
+      className={`inline-flex items-center justify-center w-6 h-6 rounded text-gray-500 hover:text-teal-600 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1 transition-colors ${className}`}
       aria-label={copied ? t("linkCopied") : t("copyLink")}
       title={copied ? t("linkCopied") : t("copyLink")}
     >

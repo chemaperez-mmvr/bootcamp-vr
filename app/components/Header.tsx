@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import {
   IconClose,
   IconGraduationCap,
@@ -28,13 +28,23 @@ const navItems = [
   { href: "/faqs", labelKey: "faqs" as const, icon: CircleHelp },
 ];
 
-export function Header({ currentPath = "/" }: { currentPath?: string }) {
+function navHrefIsActive(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+export function Header() {
+  const pathname = usePathname();
   const t = useTranslations("common");
   const tNav = useTranslations("common.nav");
-  const isHome = currentPath === "/";
+  const isHome = pathname === "/";
   const [progress, setProgress] = useState(isHome ? 0 : 1);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const rafRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     if (!isHome) {
@@ -112,7 +122,7 @@ export function Header({ currentPath = "/" }: { currentPath?: string }) {
         aria-hidden
       />
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-9 gap-3">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-11 md:h-9 gap-2 md:gap-3">
           <Link
             href="/"
             className={`flex items-center gap-1.5 font-semibold justify-self-start text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 rounded ${dropShadow}`}
@@ -125,9 +135,9 @@ export function Header({ currentPath = "/" }: { currentPath?: string }) {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-3 justify-center" aria-label="Main navigation">
+          <nav className="hidden md:flex items-center gap-3 justify-center" aria-label={t("mainNavigation")}>
             {navItems.map(({ href, labelKey, icon: Icon }) => {
-              const active = currentPath === href;
+              const active = navHrefIsActive(pathname, href);
               const linkBgOpacity = active ? 0.35 - progress * 0.1 : 0;
               return (
                 <Link
@@ -153,8 +163,11 @@ export function Header({ currentPath = "/" }: { currentPath?: string }) {
             <LanguageSwitcher />
             <button
               type="button"
-              className={`md:hidden p-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${progress < 0.5 ? "hover:bg-white/20" : "hover:bg-gray-100"}`}
-              style={{ color: textColor }}
+              className={`md:hidden flex h-11 w-11 items-center justify-center rounded-xl border shadow-sm transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1 ${
+                mobileMenuOpen
+                  ? "border-teal-200 bg-teal-50 text-teal-700"
+                  : "border-white/50 bg-white/60 text-teal-700 hover:bg-white/80"
+              }`}
               onClick={() => setMobileMenuOpen((open) => !open)}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-nav"
@@ -168,28 +181,30 @@ export function Header({ currentPath = "/" }: { currentPath?: string }) {
           <div
             id="mobile-nav"
             aria-hidden={!mobileMenuOpen}
-            className={`md:hidden absolute left-0 right-0 top-full mt-0 rounded-b-lg shadow-lg overflow-hidden transition-[visibility,opacity] duration-200 ${
-              mobileMenuOpen ? "visible opacity-100" : "invisible opacity-0 pointer-events-none"
+            className={`md:hidden absolute left-0 right-0 top-full mt-2 overflow-hidden rounded-2xl border border-gray-200/80 shadow-xl transition-[transform,opacity,visibility] duration-200 ease-out ${
+              mobileMenuOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0 pointer-events-none"
             }`}
             style={{
-              backgroundColor: `rgba(255,255,255,${0.98 * (0.15 + 0.85 * progress)})`,
+              backgroundColor: `rgba(255,255,255,${0.96 + 0.02 * progress})`,
               backdropFilter: "blur(10px)",
             }}
           >
-            <nav className="px-4 py-3 border-t border-gray-200/80" aria-label="Main navigation">
-              <ul className="flex flex-col gap-1">
+            <nav className="p-3" aria-label={t("mainNavigation")}>
+              <ul className="flex flex-col gap-1.5">
                 {navItems.map(({ href, labelKey, icon: Icon }) => {
-                  const active = currentPath === href;
+                  const active = navHrefIsActive(pathname, href);
                   return (
                     <li key={href}>
                       <Link
                         href={href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`flex items-center gap-2 px-3 py-2.5 rounded-md text-sm font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
-                          active ? "bg-teal-50 text-teal-700" : "text-gray-800 hover:bg-gray-100"
+                        className={`flex min-h-11 items-center gap-3 rounded-xl px-3.5 py-2.5 text-[15px] font-semibold leading-none tracking-[0.01em] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1 ${
+                          active
+                            ? "bg-teal-50 text-teal-700 shadow-sm ring-1 ring-teal-100"
+                            : "text-gray-700 hover:bg-teal-50/70 hover:text-teal-700"
                         }`}
                       >
-                        <Icon className="w-5 h-5" />
+                        <Icon className="h-5 w-5 shrink-0" />
                         {tNav(labelKey)}
                       </Link>
                     </li>

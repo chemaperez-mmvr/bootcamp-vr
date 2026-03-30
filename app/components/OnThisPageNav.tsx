@@ -47,7 +47,7 @@ export function OnThisPageNav({ sections }: OnThisPageNavProps) {
         <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">
           {t("onThisPage")}
         </h2>
-        <nav className="space-y-1" aria-label="Table of contents">
+        <nav className="space-y-1" aria-label={t("tableOfContents")}>
           {sections.map((section) => {
             const isActive = activeSection === section.id;
             const isEssential = section.priority === "essential";

@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import {
+  alternatesForLocalizedPath,
+  defaultOgImage,
+  openGraphLocales,
+  siteName,
+} from "@/i18n/languageAlternates";
 import { Link as NavLink } from "@/i18n/navigation";
 import { Header } from "../../../components/Header";
 import { Footer } from "../../../components/Footer";
@@ -16,9 +22,28 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "docsModule" });
+  const title = `${t("title")} | VR Education Hub`;
+  const description = t("inDevelopment");
+  const og = openGraphLocales(locale);
   return {
-    title: `${t("title")} | VR Education Hub`,
-    description: t("inDevelopment"),
+    title,
+    description,
+    alternates: alternatesForLocalizedPath(locale, "/documentation/module"),
+    openGraph: {
+      ...og,
+      title,
+      description,
+      url: `/${locale}/documentation/module`,
+      type: "website",
+      siteName,
+      images: [defaultOgImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [defaultOgImage.url],
+    },
   };
 }
 
@@ -29,7 +54,7 @@ export default async function DocumentationModulePage({ params }: Props) {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header currentPath="/documentation" />
+      <Header />
 
       <main id="main-content" tabIndex={-1} className="flex-1">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

@@ -3,15 +3,14 @@
  * Image slots use [IMAGE:slotId]; slot ids are defined in app/documentation/docImages.ts.
  */
 export const sectionsEn: Record<string, string> = {
-  "account-types": `On Meta Quest you can use different types of accounts depending on context: personal, shared, or institutional. Choosing the right one avoids management issues and aligns with your institution's policies.
+  "account-types": `On Meta Quest you can use different types of accounts depending on context: personal or institutional. Choosing the right one avoids management issues and aligns with your institution's policies.
 
 **Summary**
 
-- **Personal account:** one user per account; it can be used in class with a simple setup.
-- **Shared account:** multiple users on the same account; has limits and risks; best practices should be followed.
-- **Institutional account:** managed by the institution with Meta Horizon Managed Solutions (MHMS); ideal for device fleets and centralised control.
+- **Personal account:** one user per account; it can be used in class with a simple setup. It is also possible to share one account across multiple headsets, with limitations.
+- **Institutional account (Work for Meta):** managed by the institution from [work.meta.com](https://work.meta.com/). Allows centralised management of devices, apps and users. This is the recommended option for headset fleets in educational settings.
 
-[IMAGE:types-account]`,
+[IMAGE:work-meta-dashboard]`,
 
   "personal-account": `A **personal** Meta account is an individual account tied to one user. It can be used in the classroom: setup is simpler and does not require enterprise services.
 
@@ -22,37 +21,164 @@ The process includes powering on the headset, choosing language, connecting to W
 - [Meta Quest 3 setup (video)](https://www.youtube.com/watch?v=ZgxP9JrRdO8)
 - [Create Meta Quest 3 account without Facebook](https://screenrant.com/meta-quest-3-account-without-facebook/)
 
-**Shared accounts (pros and cons)**
+**Sharing a personal account (pros and cons)**
 
-If several people use the same personal account:
+If several people use the same personal account across different headsets:
 
-- **Pros:** fewer accounts to manage, same content across headsets.
-- **Cons:** limits on account sharing, risk of mixing data and violating terms of use. Document good practices (who uses which headset, avoid changing passwords without notice) and be aware of Meta’s limits on shared use.`,
+- **Pros:** fewer accounts to manage, same content and apps across headsets.
+- **Cons:** limits on account sharing, risk of mixing data and violating terms of use. Document good practices (who uses which headset, avoid changing passwords without notice) and be aware of Meta’s limits on shared use.
 
-  "institutional-account": `**Institutional accounts** are managed with **Meta Horizon Managed Solutions (MHMS)** for education and work. They allow centralised management of devices and accounts.
+> **Note:** If you manage more than a few headsets, consider using an institutional account with Work for Meta to avoid these issues.`,
 
-**What it is and benefits**
+  "institutional-account": `**Institutional accounts** are managed with **Work for Meta** ([work.meta.com](https://work.meta.com/)) for education and work. They allow centralised management of devices, apps and users, removing the need to manage personal accounts and emails on each headset. Once the platform is configured, all the headaches with individual device setup are gone: adding new apps, removing apps, assigning app groups to specific institutions… everything becomes much simpler.
 
-- Centralised management of Quest fleets.
-- Accounts within an organisation with admin permissions.
-- Activation via codes (activation code, community code).
-- Individual and Shared modes; deactivation and account management from the admin panel.
+---
+
+**Step 1 — Create a business or education account**
+
+The first step is to create the account at [work.meta.com](https://work.meta.com/). It can be set up as a business or education account. Once created, you access the admin dashboard where everything is managed: devices, people, apps, templates and groups.
+
+[IMAGE:work-meta-dashboard]
+
+---
+
+**Step 2 — Add people to the system**
+
+Next, add people to the organisation. Work for Meta has a comprehensive role system: administrators, collaborators, etc. Each person can have different permissions depending on their function.
+
+> **Recommendation:** If an external team will handle part of the configuration, the institution can simply create the account, invite the technical team as administrators by email, and assign them the necessary roles. Once everything is configured, the institution can independently manage simpler tasks like adding new devices or linking apps.
+
+[IMAGE:work-meta-people]
+
+---
+
+**Step 3 — Add applications**
+
+Before creating templates or groups, it is recommended to add the apps you will use. When adding apps to the platform, keep in mind:
+
+- Apps must be **Private Apps** or published on Meta as **free and open**.
+- **Paid apps cannot be added**, nor can apps in Alpha or Beta channels.
+- The Work for Meta account **is not a developer account**. They are independent profiles.
+
+**How does the app addition process work?**
+
+1. The Work for Meta administrator provides the **organisation KEY** to the developer.
+2. The developer sends an invitation from their development channel using that KEY.
+3. The organisation accepts the invitation from the admin panel.
+4. The app appears in the applications list, ready to be assigned to templates, groups or devices.
+
+For third-party accounts, the process is the same: they send their organisation KEY so the developer can send them the invitation.
+
+[IMAGE:work-meta-add-app]
+
+Once added, apps are managed from the "Applications and content" panel:
+
+[IMAGE:work-meta-apps]
+
+---
+
+**Step 4 — Create a device configuration template**
+
+The template defines how devices are configured when activated. Here you set:
+
+- Whether a **PIN** is required or not.
+- Whether an **email** is required or not.
+- Which **apps are installed by default** on devices using this template.
+
+The template greatly simplifies the setup for the end user: with a good template, getting a Quest up and running is very straightforward, with no need for emails or PINs.
+
+> **Tip:** If there is only one template, it is assigned by default to all devices when they are added, simplifying the process even further. Apps can be assigned directly from the template itself.
+
+[IMAGE:work-meta-templates]
+
+---
+
+**Step 5 — Create device groups**
+
+Groups allow you to organise devices logically, for example: "Headsets for School X", "Headsets for Training Centre Y", etc. Each group can have specific apps and templates assigned.
+
+You can also:
+- Unlink devices from a group.
+- Move a device to a different group.
+- Assign different apps to each group.
+
+[IMAGE:work-meta-create-group]
+
+---
+
+**How to activate the headsets?**
+
+There are two methods for activating devices. Both link the headset to the organisation and apply the configured template and apps.
+
+---
+
+***Method A — Via Wi-Fi (no cable)***
+
+To configure headsets via Wi-Fi you need: an internet connection, the headset to activate, and a PC with the [work.meta.com](https://work.meta.com/) dashboard open in the browser.
+
+1. Charge the headset and insert batteries into the controllers.
+2. In the PC browser, go to the **"Activate Devices"** section.
+
+[IMAGE:work-meta-activate-instructions]
+
+3. On the headset: select the **language** and **Wi-Fi password**. The device update begins (installs the latest OS version, etc.).
+4. In a later step, the button **"Have an organisation manage this device"** appears. The headset restarts.
+5. The button **"Connect to your organisation"** appears and **6 digits** are displayed on screen (e.g. ABC-DEF).
+6. In the PC browser, enter that 6-digit code.
+
+[IMAGE:work-meta-activation-wifi]
+
+7. Both sides connect. The headset indicates it is linking and the browser shows the same. After a few seconds, both confirm **"Linked to the organisation"**.
+8. In the browser, the linked device now appears. It can be assigned to **groups**, **templates**, etc. from the admin panel.
+
+[IMAGE:work-meta-device-linked]
+
+9. On the headset, the assigned apps appear automatically: they update and install on their own.
+
+[IMAGE:work-meta-headset-configured]
+
+---
+
+***Method B — Via USB cable (headset off)***
+
+It is possible to configure the headset **without powering it on for the first time**. You need:
+
+- A Windows or Mac PC.
+- The USB cable to connect to the computer.
+- The PC **must have Bluetooth**. Without it, pairing is not possible.
+
+**Steps:**
+
+1. Download the **Meta Horizon device configuration tool** for PC or Mac. The download links are inside the web platform's admin panel. On Windows, once installed a security alert may appear; simply accept the exception.
+
+[IMAGE:work-meta-tool-download]
+
+2. The headset must be **powered off**. Connect it to the PC via USB cable.
+
+[IMAGE:work-meta-cable-connect]
+
+3. Once connected, press **the power button and volume-down button simultaneously**. The "boot" menu appears on the headset.
+4. At that point, the PC tool detects the headset. Click **"Link"** and fill in the requested details: Wi-Fi network name and password. Everything installs automatically.
+
+[IMAGE:work-meta-activation-cable]
+
+5. The update and configuration process starts on the headset. **There is absolutely nothing to do on the headset itself**; everything is done from the PC.
+6. Once linked, a **template** is chosen for the device, just like with the Wi-Fi method. That template pushes the predefined configuration: whether a PIN is needed, whether an email is needed, and the app group selected on the platform.
+7. As a result, when you power on the headset, **everything is already configured**: the assigned apps have been installed automatically.
+
+[IMAGE:work-meta-headset-configured-cable]
+
+---
+
+**Things to keep in mind**
+
+- **Resetting a device:** to unlink a headset and link it to another organisation or release it, simply use the **"Delete Device"** option in the admin panel. The headset performs a factory reset and starts from scratch.
+- **Two parallel workflows:** app publishing through the developer channel (DEV) remains the same process. But Work for Meta is an independent profile for managing devices and apps at scale.
 
 **Official resources**
 
-- [What are Meta Horizon Managed Solutions for education](https://knowledge.vr-expert.com/kb/what-are-meta-horizon-managed-solutions-for-education-and-work/)
-- [Getting started with Quest for Business](https://knowledge.vr-expert.com/kb/getting-started-with-quest-for-business/)
-- [Meta Work help](https://work.meta.com/help/1066783137225591?helpref=faq_content)
-- [Deactivate an account in Quest for Business](https://knowledge.vr-expert.com/kb/how-to-deactivate-an-account-in-quest-for-business/)
-- [Manage accounts in Quest for Business](https://knowledge.vr-expert.com/kb/how-to-manage-accounts-in-quest-for-business/)
-- [Set up an account inside an organisation](https://knowledge.vr-expert.com/kb/how-to-set-up-an-account-inside-an-organization-in-quest-for-business/)
-- [Create an admin account](https://knowledge.vr-expert.com/kb/how-to-create-an-admin-account-in-quest-for-business/)
-- [Create an account inside the organisation](https://knowledge.vr-expert.com/kb/how-to-create-an-account-inside-an-organization-in-quest-for-business/)
-- [Get your MHMS activation code](https://knowledge.vr-expert.com/kb/how-to-get-your-mhms-activation-code/)
-- [Where to find your MHMS community code](https://knowledge.vr-expert.com/kb/where-to-find-your-mhms-community-code/)
-- [Admin permissions in Quest for Business](https://knowledge.vr-expert.com/kb/what-permissions-do-admins-in-quest-for-business-have/)
-- [Difference between Individual Mode and Shared Mode](https://knowledge.vr-expert.com/kb/what-is-the-difference-between-individual-mode-and-shared-mode-in-quest-for-business/)
-- [What is Shared Mode in Quest for Business](https://knowledge.vr-expert.com/kb/what-is-shared-mode-in-quest-for-business/)`,
+- [Work for Meta — admin dashboard](https://work.meta.com/)
+- [Work for Meta help](https://work.meta.com/help/1066783137225591?helpref=faq_content)`,
 
   "getting-started": `Before using the headset in class, it helps to master the basics: what’s in the box, how to wear it, IPD, and language.
 

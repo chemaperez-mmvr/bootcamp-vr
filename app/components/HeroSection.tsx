@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Children, useEffect, useRef } from "react";
 import { usePrefersReducedMotion } from "./usePrefersReducedMotion";
 
@@ -72,17 +73,24 @@ export function HeroSection({ children }: { children: React.ReactNode }) {
           aria-hidden
         >
           {prefersReducedMotion ? (
-            <div
-              className="absolute inset-0 w-full h-full bg-cover bg-top"
-              style={{ backgroundImage: `url(/hero-vr.jpg)` }}
-            />
+            <div className="absolute inset-0 w-full h-full">
+              <Image
+                src="/hero-vr.jpg"
+                alt=""
+                fill
+                className="object-cover object-top"
+                priority
+                sizes="100vw"
+              />
+            </div>
           ) : (
             <video
               autoPlay
               muted
               loop
               playsInline
-              preload="auto"
+              preload="metadata"
+              poster="/hero-vr.jpg"
               className="absolute inset-0 w-full h-full object-cover object-top"
             >
               <source src={HERO_VIDEO_SRC} type="video/mp4" />

@@ -10,6 +10,8 @@
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "changeLanguage": "Change language",
     "footer": {
       "brand": "VR Education Hub",
       "tagline": "Empowering educators to integrate virtual reality into their classrooms with confidence and clarity.",
@@ -17,6 +19,7 @@
       "learningPaths": "Learning Paths",
       "company": "Company",
       "comingSoon": "Coming soon",
+      "comingSoonSr": "(coming soon)",
       "bootcamp": "Bootcamp",
       "documentation": "Documentation",
       "vrFundamentals": "VR Fundamentals",
@@ -71,11 +74,955 @@
     "learnInContext": "Learn in context: Module 2: Hardware Setup"
   },
   "bootcamp": {
+    "eyebrow": "Guided path",
     "title": "Bootcamp",
     "metaTitle": "Bootcamp | VR Education Hub",
     "metaDesc": "Structured VR learning path with progress tracking and hands-on activities. Master virtual reality integration step by step.",
+    "subtitle": "Learn VR through a flexible, teacher-focused path. Complete practical lessons at your own pace and jump to documentation when you need depth.",
     "inDevelopment": "This section is under development. You'll soon have access to the full learning path.",
-    "backHome": "Back to home"
+    "backHome": "Back to home",
+    "lessonNumber": "Lesson {current} of {total}",
+    "duration": "{minutes} min",
+    "moduleSummary": "You have completed {completed} of {total} lessons in this module.",
+    "featured": "Recommended next for you",
+    "status": {
+      "not_started": "Not started",
+      "in_progress": "In progress",
+      "completed": "Completed"
+    },
+    "actions": {
+      "continue": "Continue recommendation",
+      "resume": "Resume module",
+      "start": "Start module",
+      "openDocs": "Open section in documentation",
+      "markDone": "Mark as completed",
+      "completed": "Completed",
+      "backToBootcamp": "Back to Bootcamp"
+    },
+    "progress": {
+      "global": "Global progress",
+      "module": "{completed}/{total} lessons completed ({percent}%)"
+    },
+    "stats": {
+      "completed": "Completed",
+      "active": "Active",
+      "minutes": "min"
+    },
+    "filters": {
+      "all": "All modules",
+      "empty": "No modules match this status yet."
+    },
+    "interactiveTour": {
+      "label": "Interactive tour",
+      "heading": "Explore your Quest 3 by parts",
+      "subtitle": "The video pauses at key points. Tap the hotspot to view details and continue.",
+      "openHotspotInfo": "Open {part} information",
+      "prev": "Previous",
+      "next": "Next",
+      "finish": "Play again",
+      "close": "Close",
+      "restart": "Restart tour",
+      "phaseProgress": "Phase {current} of {total}",
+      "phase1": {
+        "title": "Quest 3: general overview",
+        "description": "This is the full headset assembly. It combines the visor, fit system, and weight distribution for comfortable use during classroom sessions."
+      },
+      "phase2": {
+        "title": "Tracking cameras",
+        "description": "Three camera clusters on the front capture your surroundings and hands. They enable passthrough (seeing the real world), controller-free hand tracking, and Guardian boundary detection to define a safe play area."
+      },
+      "phase3": {
+        "title": "IPD adjustment button",
+        "description": "Adjusts the distance between lenses to match each user's eye separation. Correct IPD improves image clarity and reduces eye strain. It should be set before each session when students change."
+      },
+      "phase4a": {
+        "title": "Power button",
+        "description": "Press briefly to turn the headset on or off. A long press forces shutdown if the system is unresponsive. Make sure headsets are powered off when stored to preserve battery life."
+      },
+      "phase4b": {
+        "title": "Audio input (3.5 mm jack)",
+        "description": "Lets you connect wired headphones for better immersion and reduced ambient noise in the classroom. Useful when multiple students wear headsets simultaneously and need acoustic isolation."
+      },
+      "phase5": {
+        "title": "Power indicator light",
+        "description": "This LED shows headset status: solid white when powered on, slow blink in standby, and orange while charging. Check it quickly before handing out headsets to confirm battery level."
+      },
+      "phase6": {
+        "title": "Head strap",
+        "description": "Keeps the headset stable and distributes weight to prevent discomfort. Adjust it before each session: it should be snug but not tight. A poor fit causes the headset to shift, blur the image, or feel uncomfortable — especially with students who move around."
+      },
+      "phase7": {
+        "title": "USB-C port (charging & data)",
+        "description": "Used to charge the headset and to connect a Link cable to a PC for tethered VR. A full charge takes about 2 hours and provides 1.5–2.5 hours of use. Remember to charge all headsets the night before each session."
+      },
+      "phase8a": {
+        "title": "Y button",
+        "description": "Secondary action button on the left controller. Its function varies by app — typically used to open context menus, toggle modes, or perform secondary actions within the experience."
+      },
+      "phase8b": {
+        "title": "X button",
+        "description": "Primary action button on the left controller. Usually used to confirm, select, or interact with objects. It's the equivalent of 'accept' in most apps."
+      },
+      "phase8c": {
+        "title": "Joystick (thumbstick)",
+        "description": "Used to move through the virtual environment and navigate menus. Movement can be smooth (locomotion) or teleport-based depending on the app. Warn students that joystick movement can cause motion sickness in some people."
+      },
+      "phase8d": {
+        "title": "Meta / Menu button (≡)",
+        "description": "Opens the Meta Quest universal menu. From there you can access the app library, quick settings, and notifications. Press it anytime to return to the main menu."
+      },
+      "phase9": {
+        "title": "Trigger (index finger)",
+        "description": "The primary interaction button — pressed with your index finger. Used to select, shoot, grab objects, or confirm actions in most apps. Think of it as the VR equivalent of a mouse click."
+      },
+      "phase10": {
+        "title": "Grip (side button)",
+        "description": "Pressed with your middle finger by squeezing the side of the controller. Used to grab, hold, and manipulate virtual objects. In most apps it's the gesture for 'closing your hand' to pick something up."
+      },
+      "phase11": {
+        "title": "Full kit: classroom ready",
+        "description": "One headset and two controllers — everything you need for a VR session. Each student should receive all three pieces. The left controller (X/Y + Meta) handles navigation, the right one (A/B + Oculus) handles interaction. Charge everything the night before and check controller batteries."
+      }
+    },
+    "tourLesson": {
+      "title": "Interactive tour of Quest 3",
+      "description": "Complete the interactive tour by tapping the hotspots and moving through each phase. When you reach the final phase, the module will be marked as completed automatically."
+    },
+    "lessonTypes": {
+      "video": "Video",
+      "practice": "Practice",
+      "checklist": "Checklist",
+      "tour": "Interactive tour"
+    },
+    "lessonTemplates": {
+      "video": {
+        "description": "Watch a guided demonstration and observe the recommended classroom flow."
+      },
+      "practice": {
+        "description": "Apply what you learned with a hands-on activity adapted to your teaching context."
+      },
+      "checklist": {
+        "description": "Verify key points before moving to the next block of this module."
+      }
+    },
+    "steps": {
+      "overview": "Overview",
+      "tour": "Tour",
+      "content": "Missions",
+      "learn": "Learn",
+      "quiz": "Quiz",
+      "results": "Results"
+    },
+    "overview": {
+      "eyebrow": "Module overview",
+      "sections": "sections",
+      "essential": "essential",
+      "roadmap": "Your learning path",
+      "topicsCovered": "Topics covered in this module",
+      "essentialLegend": "Essential topics for newcomers",
+      "startButton": "Start module",
+      "availableBadges": "Badges you can earn"
+    },
+    "tourStep": {
+      "completedTitle": "Tour completed!",
+      "completedDesc": "You've explored all the parts of the Quest 3. Now let's test your knowledge with the quiz.",
+      "continueButton": "Continue to missions"
+    },
+    "contentStep": {
+      "title": "Module missions",
+      "subtitle": "Complete each interactive mission. When all missions are done, you unlock the quiz.",
+      "continueButton": "Continue to quiz"
+    },
+    "slides": {
+      "progress": "{current} of {total}",
+      "next": "Next",
+      "prev": "Previous",
+      "startQuiz": "Continue to quiz",
+      "videoComingSoon": "Video coming soon",
+      "basicFoundations": {
+        "video": {
+          "title": "VR, AR, and XR Fundamentals",
+          "subtitle": "Watch this short introduction, then review the key concepts on the following slides."
+        },
+        "s1": {
+          "title": "What is Virtual Reality?",
+          "subtitle": "Understanding what VR means for the classroom",
+          "p1": "VR is a fully immersive technology that replaces the real environment with a computer-generated one",
+          "p2": "Students are placed inside a 360° digital world — the physical classroom disappears completely",
+          "p3": "The goal is experiential learning: students participate actively instead of receiving information passively",
+          "highlight": "VR replaces reality. Students can't see the classroom — they're inside the experience."
+        },
+        "s2": {
+          "title": "Why is VR effective for learning?",
+          "subtitle": "Three strengths that make VR a powerful teaching tool",
+          "p1": "Simulation: students practice situations that are dangerous, costly, or impossible to recreate in real life",
+          "p2": "Safe space: mistakes have no real consequences — students can repeat until they feel confident",
+          "p3": "Procedural training: guided step-by-step processes in a controlled environment reinforce correct sequences",
+          "highlight": "VR combines immersion, safe practice, and repetition — that's why learning sticks."
+        },
+        "s3": {
+          "title": "Where is VR already used in education?",
+          "subtitle": "Real examples across sectors",
+          "p1": "Healthcare: emergency response, surgical hygiene, virtual anatomy, patient interaction",
+          "p2": "Vocational training: equipment operation, safety protocols, technical procedures",
+          "p3": "Education: virtual field trips, science lab simulations, immersive language learning",
+          "p4": "Corporate: onboarding, customer service role-play, crisis management",
+          "highlight": "The strongest VR use cases involve doing, not just watching. If students only observe, you're not using VR's full potential."
+        }
+      }
+    },
+    "quizStep": {
+      "title": "Module quiz",
+      "subtitle": "Answer all questions and score at least 70% to pass.",
+      "attempt": "Attempt {number}",
+      "submit": "Submit answers",
+      "tryAgain": "Try again",
+      "passTitle": "Congratulations! You passed!",
+      "failTitle": "Not quite — try again",
+      "scoreLabel": "{score}/{total} correct ({percent}%)",
+      "continueButton": "See results",
+      "questionOf": "Question {current} of {total}",
+      "nextQuestion": "Next",
+      "prevQuestion": "Back",
+      "viewResults": "View results",
+      "judgmentLabel": "Classroom scenario",
+      "judgmentScenario": "Classroom Scenario",
+      "explanationTitle": "Why?",
+      "complete": "Complete!",
+      "seeResults": "See results",
+      "xpEarned": "XP Earned",
+      "xpAttempt": "Quiz attempted",
+      "xpPass": "Quiz passed",
+      "xpPerfect": "Perfect score",
+      "xpFirstTry": "First-try pass",
+      "xpTotal": "Total",
+      "breakdown": "Question breakdown",
+      "yourAnswer": "Your answer",
+      "correctAnswer": "Correct answer"
+    },
+    "resultsStep": {
+      "congratsTitle": "Module completed!",
+      "congratsDesc": "You've successfully completed {module}. Great job!",
+      "bestScore": "Best score",
+      "correct": "Correct",
+      "nextModule": "Next: {module}",
+      "upNext": "Up next"
+    },
+    "stepLocked": "Complete the previous step to unlock",
+    "quiz": {
+      "basicFoundations": {
+        "q1": {
+          "question": "Which of the following best describes what happens when a student uses Virtual Reality?",
+          "a": "Digital elements are added on top of the real classroom",
+          "b": "The real environment is fully replaced by a computer-generated one — the student can no longer see the physical classroom",
+          "c": "The student watches a 360-degree video on a flat screen",
+          "d": "The student controls an avatar on a computer monitor",
+          "explanation": "VR replaces reality entirely. The student is placed inside a 360° digital environment and cannot see the physical classroom."
+        },
+        "q2": {
+          "question": "What is the primary educational purpose of using VR in the classroom?",
+          "a": "To entertain students with impressive graphics",
+          "b": "To replace the teacher during part of the lesson",
+          "c": "To enable experiential learning — students participate actively in simulated environments instead of receiving information passively",
+          "d": "To keep students quiet and focused for longer periods",
+          "explanation": "VR's main educational purpose is experiential learning. Students actively participate in environments that would be difficult, dangerous, or impossible to access in real life."
+        },
+        "q3": {
+          "question": "A student wearing a VR headset asks 'Can you see me?' What does this tell you about how VR works?",
+          "a": "The headset is malfunctioning — students should be able to see through it",
+          "b": "VR creates a fully immersive 360° environment that completely replaces the physical world — the student genuinely cannot see the classroom or other people",
+          "c": "The student is confused — VR only blocks part of their vision",
+          "d": "This only happens with expensive VR headsets",
+          "explanation": "This is exactly how VR works: it replaces the real world entirely. The student is inside a digital environment and cannot see the classroom, which is why teacher supervision is important."
+        },
+        "q4": {
+          "question": "You want students to practice an emergency evacuation procedure without any real danger. Which strength of VR makes this the right tool?",
+          "a": "VR headsets are wireless, so students can move around freely",
+          "b": "VR has better graphics than a textbook diagram",
+          "c": "VR provides a safe practice environment where students can make mistakes and repeat the procedure without real-world consequences",
+          "d": "VR lets you record the session for grading later",
+          "explanation": "One of VR's core strengths is safe repetition. Students can practice dangerous or costly procedures multiple times without real consequences, building confidence and competence."
+        },
+        "q5": {
+          "question": "You're planning a VR lesson where nursing students will practice hand hygiene procedures step by step. Which VR learning advantage are you primarily leveraging?",
+          "a": "Immersion — students feel like they're in a real hospital",
+          "b": "Cost savings — you don't need to buy physical supplies",
+          "c": "Procedural training — students follow guided step-by-step processes in a controlled environment, reinforcing correct sequences through repetition",
+          "d": "Student isolation — each student works alone without distractions",
+          "explanation": "VR excels at procedural training. Students follow guided step-by-step processes, repeating them until they master the correct sequence — exactly what hand hygiene training requires."
+        },
+        "q6": {
+          "question": "A student fails a simulated fire drill in VR and wants to try again. How should you respond?",
+          "a": "Tell them they only get one chance, just like in real life",
+          "b": "Let them repeat it — VR's safe environment means mistakes have no real consequences, and repetition builds confidence and competence",
+          "c": "Move them to a different, easier activity",
+          "d": "Show them a video of the correct procedure instead",
+          "explanation": "Repetition without consequences is a core advantage of VR. Students can practice as many times as needed until they feel confident, which is impossible with real emergency drills."
+        },
+        "q7": {
+          "question": "Why is VR particularly well suited for teaching procedures and protocols?",
+          "a": "Because it has better visual quality than a textbook",
+          "b": "Because students can skip steps they already know",
+          "c": "Because students follow guided, step-by-step processes in a controlled environment, reinforcing correct sequences through hands-on repetition",
+          "d": "Because it automatically grades student performance",
+          "explanation": "VR provides a controlled environment where students follow guided processes step by step. The combination of hands-on interaction and safe repetition makes it ideal for procedural training."
+        },
+        "q8": {
+          "question": "A colleague says: 'I used VR in my history class — students watched a 360° video of ancient Rome for 15 minutes.' How would you evaluate this use of VR?",
+          "a": "Excellent — 360° videos are the best way to use VR in education",
+          "b": "It's a valid starting point, but VR's full potential comes from students doing and interacting, not just watching passively",
+          "c": "It was a waste of time — VR should only be used for science subjects",
+          "d": "It's fine as long as all students had their own headset",
+          "explanation": "The strongest VR use cases involve doing, not just watching. A 360° video is passive observation. VR shines when students interact, make decisions, and practice procedures."
+        },
+        "q9": {
+          "question": "Which of these is the strongest example of using VR's full potential in education?",
+          "a": "Students watch a 360° tour of a museum",
+          "b": "Students perform a virtual chemistry experiment — measuring, mixing, and observing reactions step by step",
+          "c": "Students view a slideshow inside a VR headset",
+          "d": "Students listen to a recorded lecture in a virtual classroom",
+          "explanation": "VR's full potential is realized when students actively do something — performing experiments, making decisions, practicing procedures. Passive viewing doesn't leverage VR's unique strengths."
+        },
+        "q10": {
+          "question": "A school administrator asks: 'In which areas is VR already being used for training?' Which answer best represents the current state?",
+          "a": "Only in video game development and entertainment",
+          "b": "Healthcare, vocational training, education, and corporate settings — from surgical practice to virtual field trips to crisis management simulations",
+          "c": "Only in universities with large technology budgets",
+          "d": "Mainly in language learning apps",
+          "explanation": "VR is already used across healthcare (surgical training, emergency response), vocational training (equipment operation, safety protocols), education (virtual field trips, science labs), and corporate settings (onboarding, crisis management)."
+        }
+      },
+      "gettingVrReady": {
+        "q1": {
+          "question": "A student says the image is blurry during their first VR session. What should you do first?",
+          "a": "Tell them to close one eye to reduce the blur",
+          "b": "Adjust the IPD wheel until the image is clear for that student",
+          "c": "Restart the headset — it's probably a software glitch",
+          "d": "Lower the screen brightness in settings"
+        },
+        "q2": {
+          "question": "WiFi drops during a VR session. Half the class hasn't had their turn yet. What's your priority?",
+          "a": "Cancel the rest of the VR activity and move to a backup lesson",
+          "b": "Switch to an offline VR app and reorganize the rotation schedule",
+          "c": "Send a student to the IT office to fix the WiFi",
+          "d": "Wait 15 minutes — school WiFi usually comes back on its own"
+        },
+        "q3": {
+          "question": "A parent emails you concerned about VR safety for their child. What's the best response?",
+          "a": "Reply that VR is perfectly safe and there's nothing to worry about",
+          "b": "Share specific safety measures you use (session limits, Guardian, supervision) and offer to discuss further",
+          "c": "Forward the email to the principal to handle",
+          "d": "Exempt the child from all VR activities immediately"
+        },
+        "q4": {
+          "question": "It's 30 minutes before class. Only 3 of your 5 headsets charged overnight. What do you do?",
+          "a": "Cancel the VR lesson — you need all 5 headsets",
+          "b": "Use the 3 charged headsets now, plug in the other 2, and rotate them in once they have enough charge",
+          "c": "Try to fast-charge all 5 for 30 minutes — that should be enough",
+          "d": "Use only the 3 charged headsets and don't worry about the other 2"
+        },
+        "q5": {
+          "question": "A student refuses to put on the VR headset and looks anxious. What do you do?",
+          "a": "Insist — they need to participate to get their grade",
+          "b": "Respect their decision and assign them an alternative role like observer, note-taker, or casting controller",
+          "c": "Put the headset on them yourself to show it's not scary",
+          "d": "Send them to the school counselor"
+        },
+        "q6": {
+          "question": "You're casting to the classroom projector but there's a 3-second lag. What should you try?",
+          "a": "Nothing — some lag is unavoidable with wireless casting",
+          "b": "Move the WiFi router closer to the headset and projector, and reduce other network traffic",
+          "c": "Use a longer HDMI cable to connect the headset directly",
+          "d": "Lower the headset's graphics quality in developer settings"
+        },
+        "q7": {
+          "question": "The VR app you planned to use needs a 2 GB update. Class starts in 10 minutes. What do you do?",
+          "a": "Start the update and push back the lesson start time",
+          "b": "Try launching the current version. If it won't run, switch to a tested backup app",
+          "c": "Skip VR entirely and do a different activity",
+          "d": "Use one headset to update while running the class with the rest"
+        },
+        "q8": {
+          "question": "Two students bump into each other while both wearing VR headsets. What's your first action?",
+          "a": "Tell them to be more careful and continue the session",
+          "b": "Stop both students, check they're okay, then reconfigure Guardian boundaries and increase zone separation",
+          "c": "Take away both students' headsets as a consequence",
+          "d": "Move one student to a different room"
+        },
+        "q9": {
+          "question": "You notice a headset getting noticeably warm after 20 minutes of continuous use. What should you do?",
+          "a": "Ignore it — headsets always get a bit warm during use",
+          "b": "Power it off, let it cool for 10 minutes, then swap it with another headset",
+          "c": "Put it in the refrigerator to cool down quickly",
+          "d": "Place a fan directly on the headset while the student keeps using it"
+        },
+        "q10": {
+          "question": "The school principal asks you to demo VR to the staff in 5 minutes at a meeting. What's your approach?",
+          "a": "Decline — you need at least an hour to prepare a proper demo",
+          "b": "Show passthrough mode first to ease people in, then launch one short impressive app and cast to the room's display",
+          "c": "Hand the principal a headset and let them figure it out",
+          "d": "Show a pre-recorded VR video on your laptop instead"
+        }
+      }
+    },
+    "contentMissions": {
+      "scenarioLabel": "Scenario",
+      "scenarioPrompt": "Situation",
+      "whatWouldYouDo": "What would you do? Tap each option to see its consequence.",
+      "tapToReveal": "Tap to see what happens",
+      "keepExploring": "Keep exploring — find the best choice to complete the mission.",
+      "markCompleted": "Mark mission as completed",
+      "checklistLabel": "Checklist",
+      "checked": "checks",
+      "missingItems": "Missing: {items}",
+      "allDone": "All checks done. Mission complete!",
+      "missionScore": "Score: {score}/{max}",
+      "xpReward": "+{amount} XP"
+    },
+    "missions": {
+      "gettingVrReady": {
+        "gettingStarted": {
+          "scenario": "You just received new Quest 3 headsets for your classroom. You unbox them and have 20 minutes before the first VR session with students.",
+          "options": {
+            "a": "Put on a headset immediately and let students try it right away",
+            "b": "Adjust the IPD and lens position on each headset, set the language, and charge them",
+            "c": "Charge the headsets but skip IPD adjustment to save time",
+            "d": "Use the Meta Quest phone app to configure everything remotely before turning on headsets"
+          },
+          "consequences": {
+            "a": "The headsets aren't charged and the IPD isn't adjusted — students get a blurry display and the battery dies in minutes. First impressions matter for VR adoption!",
+            "b": "Smart move! Adjusting the IPD ensures clear vision for each student, and charging first means you'll have a smooth, full session. This is the recommended setup flow.",
+            "c": "Charging is good, but skipping IPD adjustment means students will see a blurry image. Eye strain kicks in fast, and first impressions of VR matter! Always take a minute to adjust the lenses.",
+            "d": "The phone app can help with some settings, but you still need to physically adjust each headset's IPD and straps. It's a decent start but doesn't replace hands-on setup for classroom readiness."
+          }
+        },
+        "classroomSetup": {
+          "scenario": "It's 5 minutes before class. You have 5 Quest 3 headsets for 25 students. The classroom has desks arranged in a U-shape with limited space.",
+          "options": {
+            "a": "Place all 5 headsets in the center of the room and let students take turns freely",
+            "b": "Power on, set account/Wi-Fi, define Guardian boundaries in separate zones, and organize rotation groups",
+            "c": "Push all desks to the walls and have all 5 students use VR simultaneously in the open center",
+            "d": "Set up VR stations at individual desks and have students use seated-only VR experiences"
+          },
+          "consequences": {
+            "a": "Without separate Guardian zones, multiple students in the same area risk bumping into each other and furniture. Free turns without structure lead to chaos and wasted time.",
+            "b": "Excellent! Safety first with Guardian boundaries in defined zones, plus organized rotations ensure every student gets hands-on time within the class period.",
+            "c": "Moving desks creates space, but 5 students in VR at once in the same open area risks collisions — they can't see each other! Without defined Guardian zones and a rotation plan, this is a safety hazard.",
+            "d": "Seated VR at desks is safe and manageable, but it limits students to only certain apps and misses the immersive room-scale experiences. Good as a fallback, but not the optimal classroom setup."
+          }
+        },
+        "storeInstall": {
+          "prompt": "Before class, install the apps you need from the Meta Quest Store and verify they’re ready.",
+          "items": {
+            "1": "Open the Store from the headset menu or the Meta Quest app",
+            "2": "Search the app by name (or browse categories)",
+            "3": "Tap Get / Buy",
+            "4": "Wait for download and installation to finish",
+            "5": "Confirm the app appears in the library"
+          }
+        },
+        "casting": {
+          "scenario": "You need 25 students to see what one student is experiencing in VR. Your classroom has a projector connected to Wi-Fi and the Meta Quest app installed on your phone.",
+          "options": {
+            "a": "Have each student try the headset one by one while the rest watch from behind",
+            "b": "Cast the headset view to the classroom projector using the Meta Quest app",
+            "c": "Connect the Quest 3 to the projector with an HDMI cable",
+            "d": "Take screenshots inside VR and email them to students after class"
+          },
+          "consequences": {
+            "a": "This takes too long — with 25 students and one headset, each person barely gets a minute. The rest of the class is idle and loses interest. Casting to a shared screen is far more efficient.",
+            "b": "Excellent choice! Casting mirrors the VR view in real time on the projector, so the whole class follows along. You can narrate, pause, and discuss what everyone sees. This is the recommended approach for group demonstrations.",
+            "c": "The Quest 3 doesn’t have an HDMI port! It only has USB-C. For wireless display, use the casting feature through the Meta Quest app or a Chromecast-compatible device.",
+            "d": "Screenshots miss the immersive, real-time aspect of VR. Students can’t see movement, spatial relationships, or interact with the moment. Casting is live and much more engaging for the classroom."
+          }
+        },
+        "preClassChecklist": {
+          "prompt": "Complete this readiness check before students arrive. Go through each item and verify it’s done.",
+          "items": {
+            "1": "All headsets charged to at least 80%",
+            "2": "Wi-Fi connected and working on every headset",
+            "3": "Guardian boundaries configured in each VR zone",
+            "4": "Target apps installed, updated, and tested",
+            "5": "Head straps adjusted to fit various sizes",
+            "6": "Casting tested on projector or external screen",
+            "7": "Rotation groups planned and written on the board"
+          }
+        }
+      }
+    },
+    "wizardMissions": {
+      "label": "Interactive Mission",
+      "bossLabel": "BOSS LEVEL",
+      "stepOf": "Step {current} of {total}",
+      "tipLabel": "Tip",
+      "chooseAction": "What would you do?",
+      "gotIt": "Got it, next",
+      "confirmAction": "I confirm",
+      "nextStep": "Next step",
+      "finishMission": "Complete mission",
+      "missionComplete": "Mission complete!",
+      "perfectRun": "Perfect run! All choices correct!",
+      "stepsCorrect": "{correct}/{total} choices correct",
+      "tone": {
+        "correct": "Correct!",
+        "partial": "Partially correct",
+        "incorrect": "Not quite right"
+      },
+      "encourage": {
+        "nice": "Nice!",
+        "keepGoing": "Keep going!",
+        "awesome": "Awesome!",
+        "almostThere": "Almost there!",
+        "greatJob": "Great job!"
+      },
+      "firstSetup": {
+        "title": "First Setup",
+        "description": "Unbox and prepare a Quest 3 headset for the first time.",
+        "steps": {
+          "s1": {
+            "context": "You've just received brand new Quest 3 headsets for your classroom. Before anyone puts them on, there are some important setup steps.",
+            "body": "A proper first setup ensures clear visuals, comfort, and a smooth first experience for students. Let's walk through it step by step."
+          },
+          "s2": {
+            "context": "You pick up the first headset. The LED indicator is off and you're not sure about the battery level.",
+            "tip": "The LED color tells you the battery status: orange means charging, solid white means powered on.",
+            "choices": {
+              "a": "Power on the headset immediately and start using it",
+              "b": "Connect the USB-C charger and check the LED indicator",
+              "c": "Ask a student to figure out the battery situation"
+            },
+            "feedback": {
+              "a": "Powering on without checking the battery risks the headset dying mid-session. Always check charge first!",
+              "b": "Correct! Checking the LED tells you if it needs charging. Orange means it's charging — wait for white before using.",
+              "c": "It's better to handle setup yourself so you know the exact state of each headset before class."
+            }
+          },
+          "s3": {
+            "context": "The headset is charged. Now you need to configure the language so students see the interface in the right language.",
+            "choices": {
+              "a": "Skip it — the default English is fine for everyone",
+              "b": "Go to Settings > System > Language and select the language your students use",
+              "c": "Use the Meta Quest phone app to change the language remotely"
+            },
+            "feedback": {
+              "a": "If your students speak a different language, they'll struggle to navigate. Always match the interface language to your class.",
+              "b": "Perfect! Setting the correct language from the headset ensures students can navigate menus and understand prompts.",
+              "c": "The phone app works, but it's faster to do it directly on the headset during initial setup."
+            }
+          },
+          "s4": {
+            "context": "Time to adjust the IPD (interpupillary distance). A student will use this headset next period.",
+            "tip": "IPD affects image clarity. Incorrect IPD causes blurry or double vision and eye strain.",
+            "choices": {
+              "a": "Skip IPD — students can adjust it themselves when they notice blur",
+              "b": "Use the IPD wheel to set a neutral middle position as a starting point",
+              "c": "Set it to the widest position for maximum field of view"
+            },
+            "feedback": {
+              "a": "Students often don't know what IPD is or how to fix blur. Set a good default so the first experience is clear.",
+              "b": "Smart! A neutral middle position works for most people. You can fine-tune it for individual students during the session.",
+              "c": "The widest setting only works for people with wide-set eyes. Most students would see a blurry, distorted image."
+            }
+          },
+          "s5": {
+            "context": "The headset is almost ready. Last step: fitting the head strap properly.",
+            "choices": {
+              "a": "Tighten the strap as much as possible so the headset doesn't move",
+              "b": "Adjust it to be snug but comfortable, with weight evenly distributed",
+              "c": "Leave it loose so students can quickly take it on and off"
+            },
+            "feedback": {
+              "a": "Over-tightening causes discomfort, pressure marks, and headaches — especially during longer sessions.",
+              "b": "Correct! A snug fit with even weight distribution keeps the image clear and prevents discomfort.",
+              "c": "A loose strap means the headset shifts during movement, causing blur and possible drops."
+            }
+          },
+          "s6": {
+            "context": "You've completed the first setup. Time for a final check before handing it to students.",
+            "confirm": "I've verified: display is clear, language is correct, strap fits comfortably, and battery is sufficient"
+          }
+        }
+      },
+      "classroomSetup": {
+        "title": "Classroom Setup",
+        "description": "Prepare your classroom space and headsets for a VR session.",
+        "steps": {
+          "s1": {
+            "context": "It's 15 minutes before class. You have 5 Quest 3 headsets for 25 students.",
+            "body": "A well-organized classroom setup prevents accidents, saves time, and ensures every student gets a turn. Let's prepare the space."
+          },
+          "s2": {
+            "context": "You need to arrange the room. Currently, desks are in rows with narrow aisles.",
+            "choices": {
+              "a": "Keep the desks as they are — students will be seated during VR",
+              "b": "Create 5 designated VR zones with at least 2m between them, moving desks aside",
+              "c": "Push all furniture against the walls to create one large open space"
+            },
+            "feedback": {
+              "a": "Seated VR works for some apps, but many require standing or room-scale. Desks in rows limit movement and risk bumps.",
+              "b": "Excellent! Separate zones with clear boundaries prevent collisions and give each student safe space to move.",
+              "c": "One big open area sounds good but makes it hard to manage Guardian boundaries and students may wander into each other."
+            }
+          },
+          "s3": {
+            "context": "The room is set up. Now you need to connect all headsets to WiFi.",
+            "tip": "VR apps download large files. A strong, stable WiFi connection prevents interruptions mid-experience.",
+            "choices": {
+              "a": "Hope the school WiFi is working — it usually is",
+              "b": "Pre-connect each headset to WiFi and test signal strength in each VR zone",
+              "c": "Use your phone's mobile hotspot for all 5 headsets"
+            },
+            "feedback": {
+              "a": "Never assume! School WiFi can be unreliable, especially with 5 headsets streaming simultaneously.",
+              "b": "Perfect! Pre-testing WiFi in each zone catches dead spots before students encounter them.",
+              "c": "A phone hotspot can't reliably handle 5 VR headsets. Bandwidth and latency will cause problems."
+            }
+          },
+          "s4": {
+            "context": "WiFi is confirmed. Time to set up Guardian boundaries in each zone.",
+            "choices": {
+              "a": "Skip Guardian — the zones are clearly marked with tape on the floor",
+              "b": "Draw a Guardian boundary in each designated VR zone",
+              "c": "Set one large Guardian boundary covering the whole room"
+            },
+            "feedback": {
+              "a": "Tape on the floor is invisible inside VR! Guardian is the only safety boundary students can actually see.",
+              "b": "Correct! Individual Guardian boundaries per zone keep each student safely within their space.",
+              "c": "A room-wide boundary defeats the purpose — students won't get warnings before entering someone else's zone."
+            }
+          },
+          "s5": {
+            "context": "Boundaries are set. You have 25 students and 5 headsets. How do you organize rotations?",
+            "choices": {
+              "a": "Number each headset 1-5 and assign 5 groups of 5 students with a rotation schedule on the board",
+              "b": "Place all headsets on one table and let students come up when they're ready",
+              "c": "Let students form their own groups and figure out turns"
+            },
+            "feedback": {
+              "a": "Smart! Clear groups and a visible schedule means no confusion, no arguments, and guaranteed equal time for everyone.",
+              "b": "This creates a crowd around one table and leads to pushing, unfair turns, and wasted transition time.",
+              "c": "Self-organized rotations almost always result in some students dominating time while quieter ones miss out."
+            }
+          },
+          "s6": {
+            "context": "Almost ready. Should you do a final test on one headset before students arrive?",
+            "choices": {
+              "a": "Just check that it turns on — if it boots, it's fine",
+              "b": "Launch the target app, test Guardian triggers, verify casting to the display, and time the experience",
+              "c": "No need to test — you tested last week and nothing changed"
+            },
+            "feedback": {
+              "a": "Booting up doesn't confirm the app works, WiFi is connected, or casting functions properly.",
+              "b": "Thorough! Testing the full flow catches issues before 25 students are watching. Always test the day-of.",
+              "c": "Updates, WiFi changes, and app patches happen constantly. Last week's test tells you nothing about today."
+            }
+          }
+        }
+      },
+      "installApps": {
+        "title": "Install Apps",
+        "description": "Find, install, and verify educational VR apps on all headsets.",
+        "steps": {
+          "s1": {
+            "context": "You need to install an educational VR app called 'Wander' on all 5 headsets before tomorrow's geography lesson.",
+            "body": "Installing apps ahead of time prevents delays during class. Let's walk through finding, installing, and verifying the app."
+          },
+          "s2": {
+            "context": "Where do you look for the app?",
+            "choices": {
+              "a": "Search Google on your phone for the app download link",
+              "b": "Open the Meta Quest Store from within the headset and search 'Wander'",
+              "c": "Ask students to find and install it on their own phones"
+            },
+            "feedback": {
+              "a": "Google can point you to the store link, but you still need to install from within the headset itself.",
+              "b": "Correct! The Meta Quest Store is the official source. Search directly from the headset for the fastest install.",
+              "c": "Students can't install apps on your classroom headsets from their phones — the headset's own account is needed."
+            }
+          },
+          "s3": {
+            "context": "You search for 'Wander' but it doesn't appear in the store results.",
+            "tip": "Some apps are on App Lab (Meta's early access platform) and don't show in the main store search.",
+            "choices": {
+              "a": "Give up and look for a different geography app",
+              "b": "Check App Lab, try the direct URL link, or search via the Meta Quest phone app",
+              "c": "Assume the app was removed from the store"
+            },
+            "feedback": {
+              "a": "Don't give up too fast! Many educational apps are on App Lab, which requires a direct link or specific search.",
+              "b": "Smart! Many great educational VR apps live on App Lab. The direct link or phone app search usually finds them.",
+              "c": "Store search can be unreliable. Always try App Lab and the phone app before assuming an app is gone."
+            }
+          },
+          "s4": {
+            "context": "The app installs on 4 headsets, but the 5th shows 'Not enough storage space'.",
+            "choices": {
+              "a": "Skip this headset — 4 is enough",
+              "b": "Go to Settings > Storage, uninstall unused apps to free space, then retry the install",
+              "c": "Factory reset the headset to clear everything and start fresh"
+            },
+            "feedback": {
+              "a": "With 25 students and rotations, every headset counts. Fixing the storage issue is worth the 5 minutes.",
+              "b": "Correct! Removing unused apps is quick and targeted. Check which apps take the most space first.",
+              "c": "A factory reset clears EVERYTHING — WiFi, Guardian, all apps. Way too drastic for a simple storage issue."
+            }
+          },
+          "s5": {
+            "context": "All 5 headsets now have the app installed. Time for a final verification.",
+            "confirm": "I've verified: the app appears in the library on every headset, launches correctly, and is the latest version"
+          }
+        }
+      },
+      "castShare": {
+        "title": "Cast & Share",
+        "description": "Set up casting so the whole class can see what's happening in VR.",
+        "steps": {
+          "s1": {
+            "context": "You want the whole class (25 students) to see what one student experiences inside VR, projected on the classroom display.",
+            "body": "Casting lets non-VR students follow along, participate in discussions, and learn from the VR user's experience. Let's set it up."
+          },
+          "s2": {
+            "context": "How will you share the headset's view with the class?",
+            "choices": {
+              "a": "Pass the headset around so everyone can look inside",
+              "b": "Cast wirelessly from the headset to the classroom projector using the Meta Quest app",
+              "c": "Connect an HDMI cable from the headset to the projector",
+              "d": "Screen-record the VR session and play it back later"
+            },
+            "feedback": {
+              "a": "Passing headsets is slow, unhygienic, and means only one student sees at a time. Not scalable for 25 students.",
+              "b": "Perfect! Wireless casting via the Meta Quest app shows the VR view on any screen. The whole class watches in real-time.",
+              "c": "Quest 3 has no HDMI port. It only supports wireless casting or USB-C to a compatible PC.",
+              "d": "Playback works but kills the real-time engagement. Students can't react, discuss, or guide the VR user live."
+            }
+          },
+          "s3": {
+            "context": "Casting is working but there's a 3-second delay and the projected image is choppy.",
+            "tip": "Casting quality depends heavily on WiFi. The headset and display should be on the same network with minimal interference.",
+            "choices": {
+              "a": "Tell students to ignore the lag — the VR user has no delay",
+              "b": "Move the WiFi router closer, reduce other network traffic, and ensure both devices are on the same 5GHz band",
+              "c": "Switch to a wired USB-C connection to the projector"
+            },
+            "feedback": {
+              "a": "Lag makes it impossible for observers to follow along. The shared experience IS the teaching moment.",
+              "b": "Correct! Casting lag is almost always a WiFi issue. 5GHz band, proximity, and reduced traffic solve most problems.",
+              "c": "USB-C casting requires a compatible PC as a middleman, not a direct projector connection. It's more complex than fixing WiFi."
+            }
+          },
+          "s4": {
+            "context": "The video is smooth now. But the class can't hear the VR app's audio from the projected view.",
+            "choices": {
+              "a": "Tell the VR user to describe what they hear out loud",
+              "b": "Connect external speakers to the casting display, or use a Bluetooth speaker paired to the headset",
+              "c": "Have students put in their own earbuds"
+            },
+            "feedback": {
+              "a": "Having the VR user narrate breaks their immersion and is unreliable. Audio should be part of the shared experience.",
+              "b": "Correct! External speakers connected to the display or Bluetooth give the whole room clear audio alongside the video.",
+              "c": "Individual earbuds can't receive the VR headset's audio. Only the casting display or paired speakers can."
+            }
+          },
+          "s5": {
+            "context": "Casting is fully set up: video is smooth and audio is clear.",
+            "confirm": "I've verified: casting shows smooth video on the projector, audio is audible to the whole room, and there's minimal delay"
+          }
+        }
+      },
+      "preClassCheck": {
+        "title": "Pre-Class Checklist",
+        "description": "Final readiness check before students arrive.",
+        "steps": {
+          "s1": {
+            "context": "Students arrive in 10 minutes. Time for a final readiness check of all equipment and setup.",
+            "body": "A quick systematic check catches last-minute issues. Better to discover a dead battery now than when a student is waiting."
+          },
+          "s2": {
+            "context": "Check that all headsets are charged to at least 80%.",
+            "confirm": "All headsets verified at 80%+ battery (LED shows solid white when powered on)"
+          },
+          "s3": {
+            "context": "Confirm WiFi connectivity on every headset.",
+            "confirm": "WiFi connected and tested on every headset — pages load, apps can reach servers"
+          },
+          "s4": {
+            "context": "Verify Guardian boundaries are properly configured in each VR zone.",
+            "confirm": "Guardian boundaries set in all zones — visual warnings trigger when approaching the edge"
+          },
+          "s5": {
+            "context": "Verify the target app is ready on all headsets.",
+            "confirm": "Target app installed, launched and tested on every headset — casting verified to the display"
+          },
+          "s6": {
+            "context": "During your final check, one headset won't turn on. You press the power button — nothing happens.",
+            "tip": "A non-responsive headset might have a completely drained battery. A long press (10+ seconds) forces a reboot.",
+            "choices": {
+              "a": "Set it aside and run the class with one fewer headset",
+              "b": "Try a long-press power reset, plug in the charger, and if it still fails, redistribute your rotation groups",
+              "c": "Cancel the VR portion of today's lesson entirely"
+            },
+            "feedback": {
+              "a": "That works, but a long-press reset often fixes the issue in 30 seconds. It's worth trying before giving up.",
+              "b": "Perfect approach! Long-press reset is the first thing to try. If it's truly dead, adjusting rotation groups keeps the lesson on track.",
+              "c": "One broken headset out of five is no reason to cancel. Adapt the rotation — students barely notice the difference."
+            }
+          }
+        }
+      },
+      "fullPrep": {
+        "title": "Boss Level: Full VR Class Prep",
+        "description": "Combine everything you've learned. Prepare your first VR class from scratch.",
+        "steps": {
+          "s1": {
+            "context": "Tomorrow is your very first VR class ever. You have 8 Quest 3 headsets, 32 students, and one 50-minute period.",
+            "body": "This is the real deal. You'll walk through the complete preparation — from the evening before to post-session. Every decision counts!"
+          },
+          "s2": {
+            "context": "It's the evening before. You have 3 hours. What's your first priority?",
+            "choices": {
+              "a": "Charge all 8 headsets overnight, install and test the app on each one",
+              "b": "Create your lesson plan and figure out what app to use",
+              "c": "Watch YouTube tutorials about VR teaching until you feel confident"
+            },
+            "feedback": {
+              "a": "Correct! Hardware prep comes first — charging takes hours and you need to verify apps. The lesson plan should already exist at this point.",
+              "b": "The lesson plan should have been done days ago. The evening before is for equipment preparation, not curriculum design.",
+              "c": "Watching videos is research, not preparation. Your headsets need to be charged and apps installed tonight!"
+            }
+          },
+          "s3": {
+            "context": "Morning of. You arrive 30 minutes before class. How do you set up the room?",
+            "choices": {
+              "a": "Create 8 designated VR stations with marked boundaries, clear obstacles, and a rotation schedule on the board",
+              "b": "Push desks to the sides and create one big open VR space",
+              "c": "Leave desks as-is — students will use VR seated at their desks"
+            },
+            "feedback": {
+              "a": "Perfect! Designated stations with clear boundaries and a visible rotation plan keeps 32 students organized and safe.",
+              "b": "One big space with 8 students in VR simultaneously is a recipe for collisions. Individual zones are much safer.",
+              "c": "For your first class, standing VR gives students the best 'wow' experience. Seated works but limits the impact."
+            }
+          },
+          "s4": {
+            "context": "Stations are set up. Now you need to configure WiFi and Guardian on all 8 headsets.",
+            "tip": "With 8 headsets on WiFi simultaneously, network load is significant. Test that the connection holds under full load.",
+            "choices": {
+              "a": "Connect all headsets to the 5GHz school WiFi, set Guardian per station, and run one full test with all 8 headsets active at once",
+              "b": "Connect to WiFi and set Guardian on just 2 headsets — if those work, the rest will too",
+              "c": "Skip WiFi for now — most VR apps work offline"
+            },
+            "feedback": {
+              "a": "Correct! Testing all 8 simultaneously catches bandwidth issues you'd miss with fewer headsets. Guardian per station is essential.",
+              "b": "2 headsets working doesn't mean 8 will. WiFi bandwidth gets shared — always test at full load.",
+              "c": "Many educational VR apps need WiFi for content streaming, updates, and casting. Never assume offline works."
+            }
+          },
+          "s5": {
+            "context": "While testing, one headset shows 'App update required' and the update is 1.5 GB. Class starts in 20 minutes.",
+            "choices": {
+              "a": "Start the update and hope it finishes in time",
+              "b": "Skip the update, try launching the current version. If it fails, use that headset with a backup app instead",
+              "c": "Remove this headset from rotation and run with 7"
+            },
+            "feedback": {
+              "a": "A 1.5 GB update on school WiFi might take 20+ minutes. Too risky with a hard deadline.",
+              "b": "Smart! Older versions often still work. If not, having a backup app ready shows good contingency planning.",
+              "c": "Dropping a headset should be the last resort. Try the workaround first — it takes 2 minutes to check."
+            }
+          },
+          "s6": {
+            "context": "Students are arriving. How do you brief them about VR before they put on headsets?",
+            "choices": {
+              "a": "Hand out headsets immediately — students learn by doing",
+              "b": "Give a 3-minute safety briefing: Guardian boundaries, how to signal if dizzy, hygiene rules, and rotation schedule",
+              "c": "Show a 15-minute VR safety video before starting"
+            },
+            "feedback": {
+              "a": "Without a briefing, students won't know about Guardian, dizzy protocols, or rotations. Chaos is guaranteed.",
+              "b": "Perfect! A short, focused briefing covers essentials without eating into VR time. 3 minutes saves 15 minutes of confusion.",
+              "c": "15 minutes of a 50-minute period is too much. Students will zone out. Keep the briefing short and memorable."
+            }
+          },
+          "s7": {
+            "context": "Mid-session: a student takes off the headset looking pale and says they feel dizzy.",
+            "choices": {
+              "a": "Tell them to push through it — VR sickness passes quickly",
+              "b": "Have them sit down immediately, remove the headset, focus on a distant real-world object, and sip water",
+              "c": "Give the headset to another student so the session keeps moving"
+            },
+            "feedback": {
+              "a": "NEVER push through VR sickness. It can escalate to nausea and vomiting. Student safety comes first, always.",
+              "b": "Correct! Standard VR sickness protocol: stop, sit, real-world focus point, hydrate. Check in after 5 minutes before any return to VR.",
+              "c": "Address the student's wellbeing before worrying about headset utilization. Redistribute after they're comfortable."
+            }
+          },
+          "s8": {
+            "context": "Half the class is waiting for their VR turn. They're getting bored. How do you engage the non-VR students?",
+            "choices": {
+              "a": "Cast one headset to the projector so the whole class watches, and give observers a worksheet with discussion questions",
+              "b": "Tell them to work on homework from other classes",
+              "c": "Let them use their phones while they wait"
+            },
+            "feedback": {
+              "a": "Excellent! Casting creates a shared experience. The worksheet turns observers into active participants analyzing the VR content.",
+              "b": "This wastes the VR lesson's potential. Observers should be engaged with the VR content, not doing unrelated work.",
+              "c": "Phones create distraction and disconnect. The class should feel like one shared learning experience, not fragmented time."
+            }
+          },
+          "s9": {
+            "context": "The period is ending. How do you wrap up the VR session?",
+            "choices": {
+              "a": "Tell students to leave the headsets on their desks and go to next class",
+              "b": "Immediately start collecting headsets while students are still using them",
+              "c": "Give a 5-minute warning, then have each group power off and place their headset in the charging station while you lead a 2-minute debrief"
+            },
+            "feedback": {
+              "a": "Headsets left on desks drain battery, risk damage, and miss the chance for a reflective debrief.",
+              "b": "Abruptly ending VR is jarring and disrespectful. Always give a warning so students can finish their experience.",
+              "c": "Perfect wrap-up! The warning gives closure, students learn to care for equipment, and the debrief reinforces learning."
+            }
+          }
+        }
+      }
+    },
+    "xp": {
+      "label": "XP",
+      "totalXP": "Total XP",
+      "earnUpTo": "Earn up to ~{amount} XP",
+      "gained": "+{amount} XP",
+      "levelUp": "Level Up!",
+      "youReached": "You reached",
+      "toNextLevel": "{current}/{needed} XP to next level",
+      "levels": {
+        "novice": "VR Novice",
+        "explorer": "VR Explorer",
+        "practitioner": "VR Practitioner",
+        "champion": "VR Champion",
+        "master": "VR Master"
+      }
+    },
+    "badges": {
+      "title": "Badges",
+      "earned": "Earned badges",
+      "new": "NEW",
+      "available": "Available badges",
+      "emptyState": "Complete modules to earn badges!",
+      "hardwareHero": { "name": "Hardware Hero", "description": "Complete the Getting VR Ready module" },
+      "sharpEye": { "name": "Sharp Eye", "description": "Score 100% on any quiz" },
+      "quickLearner": { "name": "Quick Learner", "description": "Pass a quiz on the first attempt" },
+      "explorer": { "name": "Explorer", "description": "Complete the interactive hardware tour" },
+      "missionMaster": { "name": "Mission Master", "description": "Pick the best option on all scenarios" },
+      "xp100": { "name": "Rising Star", "description": "Earn 100 XP" },
+      "xp300": { "name": "Dedicated Learner", "description": "Earn 300 XP" },
+      "xp600": { "name": "VR Enthusiast", "description": "Earn 600 XP" },
+      "xp1000": { "name": "VR Legend", "description": "Earn 1000 XP" }
+    },
+    "celebrations": {
+      "quizPassed": "You passed!",
+      "moduleComplete": "Module Complete!",
+      "badgeEarned": "Badge Earned!",
+      "keepGoing": "Keep going!"
+    }
   },
   "docs": {
     "referenceMode": "Reference Mode",
@@ -106,8 +1053,12 @@
     "bootcampCta": "The Bootcamp provides a structured path through these topics with progress tracking and hands-on activities.",
     "startBootcamp": "Start the Bootcamp",
     "modulesLabel": "Modules",
+    "documentationModulesNav": "Documentation modules",
+    "collapseModule": "Collapse module",
+    "expandModule": "Expand module",
     "sectionContentComingSoon": "Content for this section is coming soon.",
     "tocLabel": "On this page",
+    "tableOfContents": "Table of contents",
     "onThisPage": "ON THIS PAGE",
     "updated": "Updated",
     "copyLink": "Copy link to this section",
@@ -135,6 +1086,7 @@
       "stepOf": "Step {current} of {total}",
       "prev": "← Previous",
       "next": "Next →",
+      "nextPreview": "Next:",
       "finish": "Back to documentation",
       "exitFlow": "Exit guide"
     },
@@ -319,5 +1271,14 @@
     "a7": "On the Documentation page you can type in the search box to filter modules by text (titles and content). You can also use the Categories filter in the sidebar to narrow results by topic (e.g. VR Fundamentals, Hardware & Setup, Pedagogical Design, Implementation).",
     "q8": "How often is the content updated?",
     "a8": "We update the documentation as new modules are ready and when hardware or best practices change. The Bootcamp will be released in stages. Check back periodically or browse the Documentation for the latest guides and recommendations."
+  },
+  "ui": {
+    "loading": "Loading…",
+    "loadingDocs": "Loading documentation",
+    "errorTitle": "Something went wrong",
+    "errorDescription": "We couldn't load this page. Please try again.",
+    "retry": "Try again",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "The page you're looking for doesn't exist or may have been moved."
   }
 }

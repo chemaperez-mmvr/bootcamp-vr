@@ -10,6 +10,8 @@
     "menuOpen": "Abrir menú",
     "menuClose": "Cerrar menú",
     "skipToContent": "Saltar al contenido",
+    "mainNavigation": "Navegación principal",
+    "changeLanguage": "Cambiar idioma",
     "footer": {
       "brand": "VR Education Hub",
       "tagline": "Impulsando a los educadores para integrar la realidad virtual en sus aulas con confianza y claridad.",
@@ -17,6 +19,7 @@
       "learningPaths": "Rutas de aprendizaje",
       "company": "Empresa",
       "comingSoon": "Próximamente",
+      "comingSoonSr": "(próximamente)",
       "bootcamp": "Bootcamp",
       "documentation": "Documentación",
       "vrFundamentals": "Fundamentos de VR",
@@ -71,11 +74,955 @@
     "learnInContext": "Aprende en contexto: Módulo 2: Configuración de hardware"
   },
   "bootcamp": {
+    "eyebrow": "Ruta guiada",
     "title": "Bootcamp",
     "metaTitle": "Bootcamp | VR Education Hub",
     "metaDesc": "Ruta de aprendizaje de VR con seguimiento de progreso y actividades prácticas. Domina la integración de la realidad virtual paso a paso.",
+    "subtitle": "Aprende VR con una ruta flexible orientada a docentes. Completa lecciones prácticas a tu ritmo y consulta la documentación cuando necesites profundizar.",
     "inDevelopment": "Esta sección está en desarrollo. Pronto podrás acceder al itinerario completo de aprendizaje.",
-    "backHome": "Volver al inicio"
+    "backHome": "Volver al inicio",
+    "lessonNumber": "Lección {current} de {total}",
+    "duration": "{minutes} min",
+    "moduleSummary": "Has completado {completed} de {total} lecciones en este módulo.",
+    "featured": "Siguiente recomendado para ti",
+    "status": {
+      "not_started": "Sin empezar",
+      "in_progress": "En progreso",
+      "completed": "Completado"
+    },
+    "actions": {
+      "continue": "Continuar recomendación",
+      "resume": "Continuar módulo",
+      "start": "Empezar módulo",
+      "openDocs": "Abrir sección en documentación",
+      "markDone": "Marcar como completada",
+      "completed": "Completada",
+      "backToBootcamp": "Volver al Bootcamp"
+    },
+    "progress": {
+      "global": "Progreso global",
+      "module": "{completed}/{total} lecciones completadas ({percent}%)"
+    },
+    "stats": {
+      "completed": "Completados",
+      "active": "Activos",
+      "minutes": "min"
+    },
+    "filters": {
+      "all": "Todos los módulos",
+      "empty": "No hay módulos en este estado todavía."
+    },
+    "interactiveTour": {
+      "label": "Tour interactivo",
+      "heading": "Conoce tu Quest 3 por partes",
+      "subtitle": "El video se detiene en puntos clave. Pulsa el hotspot para ver información y continuar.",
+      "openHotspotInfo": "Abrir información de {part}",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "finish": "Reproducir de nuevo",
+      "close": "Cerrar",
+      "restart": "Reiniciar tour",
+      "phaseProgress": "Fase {current} de {total}",
+      "phase1": {
+        "title": "Quest 3: visión general",
+        "description": "Este es el conjunto completo de las gafas. Aquí se integra el visor, el sistema de sujeción y la distribución del peso para un uso cómodo en sesiones de aula."
+      },
+      "phase2": {
+        "title": "Cámaras de seguimiento",
+        "description": "Tres conjuntos de cámaras en el frontal captan tu entorno y tus manos. Permiten el passthrough (ver el mundo real), el tracking de manos sin mandos y la detección del Guardian para delimitar la zona segura de juego."
+      },
+      "phase3": {
+        "title": "Botón de ajuste IPD",
+        "description": "Regula la distancia entre lentes para adaptarla a la separación de los ojos de cada usuario. Un ajuste correcto mejora la nitidez y reduce la fatiga visual. Debe ajustarse antes de cada sesión si cambian los alumnos."
+      },
+      "phase4a": {
+        "title": "Botón de encendido",
+        "description": "Pulsa brevemente para encender o apagar las gafas. Una pulsación larga fuerza el apagado si el sistema no responde. Asegúrate de que las gafas estén apagadas al guardarlas para conservar batería."
+      },
+      "phase4b": {
+        "title": "Entrada de audio (jack 3.5 mm)",
+        "description": "Permite conectar auriculares con cable para mejorar la inmersión y reducir el ruido externo en el aula. Útil cuando varios alumnos usan gafas a la vez y necesitan aislamiento acústico."
+      },
+      "phase5": {
+        "title": "Luz indicadora de encendido",
+        "description": "Este LED indica el estado de las gafas: blanco fijo cuando están encendidas, parpadeo lento en reposo y naranja durante la carga. Compruébalo rápidamente antes de repartir las gafas para confirmar que tienen batería."
+      },
+      "phase6": {
+        "title": "Correa de sujeción",
+        "description": "Mantiene las gafas estables en la cabeza y reparte el peso para evitar molestias. Ajústala antes de cada sesión: debe quedar firme pero sin apretar. Un mal ajuste provoca que las gafas se muevan, se desenfoquen o resulten incómodas, sobre todo con alumnos en movimiento."
+      },
+      "phase7": {
+        "title": "Puerto USB-C (carga y datos)",
+        "description": "Sirve para cargar las gafas y también para conectar un cable Link al PC (VR por cable). Una carga completa tarda unas 2 horas y ofrece entre 1,5 y 2,5 h de uso. Recuerda cargar todas las gafas la noche antes de cada sesión."
+      },
+      "phase8a": {
+        "title": "Botón Y",
+        "description": "Botón de acción secundario del mando izquierdo. Su función varía según la app: suele servir para abrir menús contextuales, alternar modos o ejecutar acciones secundarias dentro de la experiencia."
+      },
+      "phase8b": {
+        "title": "Botón X",
+        "description": "Botón de acción principal del mando izquierdo. Normalmente se usa para confirmar, seleccionar o interactuar con objetos. Es el equivalente al «aceptar» en la mayoría de apps."
+      },
+      "phase8c": {
+        "title": "Joystick (thumbstick)",
+        "description": "Permite moverse por el entorno virtual y navegar menús. El movimiento puede ser suave (locomotion) o por teletransporte según la app. Avisa a los alumnos de que el movimiento con joystick puede causar mareo en algunas personas."
+      },
+      "phase8d": {
+        "title": "Botón Meta / Menú (≡)",
+        "description": "Abre el menú universal de Meta Quest. Desde ahí se accede a la biblioteca de apps, ajustes rápidos y notificaciones. Púlsalo en cualquier momento para volver al menú principal."
+      },
+      "phase9": {
+        "title": "Trigger (gatillo de índice)",
+        "description": "Es el botón principal de interacción: se pulsa con el dedo índice. Sirve para seleccionar, disparar, agarrar objetos o confirmar acciones en la mayoría de apps. Es el equivalente al «clic» del ratón en VR."
+      },
+      "phase10": {
+        "title": "Grip (botón de agarre)",
+        "description": "Se pulsa con el dedo corazón apretando el lateral del mando. Sirve para agarrar, sostener y manipular objetos virtuales. En muchas apps es el gesto de «cerrar la mano» para coger algo."
+      },
+      "phase11": {
+        "title": "Kit completo: listo para el aula",
+        "description": "Un visor y dos controladores — todo lo que necesitas para una sesión VR. Cada alumno debe recibir las tres piezas. El mando izquierdo (X/Y + Meta) navega y el derecho (A/B + Oculus) interactúa. Carga todo la noche antes y comprueba las pilas de los mandos."
+      }
+    },
+    "tourLesson": {
+      "title": "Tour interactivo del Quest 3",
+      "description": "Completa el tour interactivo tocando los hotspots y avanzando por cada fase. Cuando llegues a la fase final, el módulo se considerará completado automáticamente."
+    },
+    "lessonTypes": {
+      "video": "Video",
+      "practice": "Práctica",
+      "checklist": "Checklist",
+      "tour": "Tour interactivo"
+    },
+    "lessonTemplates": {
+      "video": {
+        "description": "Visualiza una demostración guiada y observa el flujo recomendado para el aula."
+      },
+      "practice": {
+        "description": "Aplica lo aprendido con una actividad práctica pensada para tu contexto docente."
+      },
+      "checklist": {
+        "description": "Verifica puntos clave antes de pasar al siguiente bloque del módulo."
+      }
+    },
+    "steps": {
+      "overview": "Resumen",
+      "tour": "Tour",
+      "content": "Misiones",
+      "learn": "Aprender",
+      "quiz": "Quiz",
+      "results": "Resultados"
+    },
+    "overview": {
+      "eyebrow": "Resumen del módulo",
+      "sections": "secciones",
+      "essential": "esenciales",
+      "roadmap": "Tu ruta de aprendizaje",
+      "topicsCovered": "Temas incluidos en este módulo",
+      "essentialLegend": "Temas esenciales para principiantes",
+      "startButton": "Empezar módulo",
+      "availableBadges": "Insignias que puedes ganar"
+    },
+    "tourStep": {
+      "completedTitle": "¡Tour completado!",
+      "completedDesc": "Has explorado todas las partes del Quest 3. Ahora probemos tus conocimientos con el quiz.",
+      "continueButton": "Continuar a las misiones"
+    },
+    "contentStep": {
+      "title": "Misiones del módulo",
+      "subtitle": "Completa cada misión interactiva. Cuando termines todas, desbloqueas el quiz.",
+      "continueButton": "Continuar al quiz"
+    },
+    "slides": {
+      "progress": "{current} de {total}",
+      "next": "Siguiente",
+      "prev": "Anterior",
+      "startQuiz": "Continuar al quiz",
+      "videoComingSoon": "Video disponible pronto",
+      "basicFoundations": {
+        "video": {
+          "title": "Fundamentos de VR, AR y XR",
+          "subtitle": "Mira esta breve introduccion y luego repasa los conceptos clave en las siguientes diapositivas."
+        },
+        "s1": {
+          "title": "¿Qué es la Realidad Virtual?",
+          "subtitle": "Entendiendo qué significa VR para el aula",
+          "p1": "La VR es una tecnología totalmente inmersiva que sustituye el entorno real por uno generado por ordenador",
+          "p2": "Los alumnos se sitúan dentro de un mundo digital de 360° — el aula física desaparece completamente",
+          "p3": "El objetivo es el aprendizaje experiencial: los alumnos participan activamente en vez de recibir información de forma pasiva",
+          "highlight": "La VR sustituye la realidad. Los alumnos no ven el aula — están dentro de la experiencia."
+        },
+        "s2": {
+          "title": "¿Por qué la VR es efectiva para aprender?",
+          "subtitle": "Tres fortalezas que hacen de la VR una herramienta de enseñanza potente",
+          "p1": "Simulación: los alumnos practican situaciones peligrosas, costosas o imposibles de recrear en la vida real",
+          "p2": "Espacio seguro: los errores no tienen consecuencias reales — pueden repetir hasta sentirse seguros",
+          "p3": "Formación procedimental: procesos guiados paso a paso en un entorno controlado refuerzan las secuencias correctas",
+          "highlight": "La VR combina inmersión, práctica segura y repetición — por eso el aprendizaje perdura."
+        },
+        "s3": {
+          "title": "¿Dónde se usa ya la VR en educación?",
+          "subtitle": "Ejemplos reales en distintos sectores",
+          "p1": "Salud: respuesta a emergencias, higiene quirúrgica, anatomía virtual, interacción con pacientes",
+          "p2": "Formación profesional: operación de equipos, protocolos de seguridad, procedimientos técnicos",
+          "p3": "Educación: excursiones virtuales, simulaciones de laboratorio, aprendizaje inmersivo de idiomas",
+          "p4": "Empresa: incorporación, atención al cliente con role-play, gestión de crisis",
+          "highlight": "Los mejores usos de VR en educación implican hacer, no solo mirar. Si los alumnos solo observan, no estás aprovechando todo el potencial."
+        }
+      }
+    },
+    "quizStep": {
+      "title": "Quiz del módulo",
+      "subtitle": "Responde todas las preguntas y consigue al menos un 70% para aprobar.",
+      "attempt": "Intento {number}",
+      "submit": "Enviar respuestas",
+      "tryAgain": "Intentar de nuevo",
+      "passTitle": "¡Enhorabuena! Has aprobado.",
+      "failTitle": "Casi, casi — inténtalo de nuevo",
+      "scoreLabel": "{score}/{total} correctas ({percent}%)",
+      "continueButton": "Ver resultados",
+      "questionOf": "Pregunta {current} de {total}",
+      "nextQuestion": "Siguiente",
+      "prevQuestion": "Atrás",
+      "viewResults": "Ver resultados",
+      "judgmentLabel": "Escenario de aula",
+      "judgmentScenario": "Escenario de Aula",
+      "explanationTitle": "¿Por qué?",
+      "complete": "¡Completado!",
+      "seeResults": "Ver resultados",
+      "xpEarned": "XP Ganado",
+      "xpAttempt": "Quiz intentado",
+      "xpPass": "Quiz aprobado",
+      "xpPerfect": "Puntuación perfecta",
+      "xpFirstTry": "Aprobado al primer intento",
+      "xpTotal": "Total",
+      "breakdown": "Desglose por pregunta",
+      "yourAnswer": "Tu respuesta",
+      "correctAnswer": "Respuesta correcta"
+    },
+    "resultsStep": {
+      "congratsTitle": "¡Módulo completado!",
+      "congratsDesc": "Has completado con éxito {module}. ¡Buen trabajo!",
+      "bestScore": "Mejor nota",
+      "correct": "Correctas",
+      "nextModule": "Siguiente: {module}",
+      "upNext": "A continuación"
+    },
+    "stepLocked": "Completa el paso anterior para desbloquear",
+    "quiz": {
+      "basicFoundations": {
+        "q1": {
+          "question": "¿Cuál de las siguientes opciones describe mejor lo que ocurre cuando un alumno usa Realidad Virtual?",
+          "a": "Se añaden elementos digitales sobre el entorno real del aula",
+          "b": "El entorno real se sustituye completamente por uno generado por ordenador — el alumno deja de ver el aula física",
+          "c": "El alumno ve un vídeo de 360 grados en una pantalla plana",
+          "d": "El alumno controla un avatar en un monitor",
+          "explanation": "La VR sustituye la realidad por completo. El alumno se sitúa dentro de un entorno digital de 360° y no puede ver el aula física."
+        },
+        "q2": {
+          "question": "¿Cuál es el propósito educativo principal de usar VR en el aula?",
+          "a": "Entretener a los alumnos con gráficos impresionantes",
+          "b": "Sustituir al profesor durante parte de la clase",
+          "c": "Permitir el aprendizaje experiencial — los alumnos participan activamente en entornos simulados en vez de recibir información de forma pasiva",
+          "d": "Mantener a los alumnos en silencio y concentrados durante más tiempo",
+          "explanation": "El propósito educativo principal de la VR es el aprendizaje experiencial. Los alumnos participan activamente en entornos que serían difíciles, peligrosos o imposibles de acceder en la vida real."
+        },
+        "q3": {
+          "question": "Un alumno con las gafas VR puestas pregunta '¿Me podéis ver?' ¿Qué te dice esto sobre cómo funciona la VR?",
+          "a": "Las gafas están averiadas — los alumnos deberían poder ver a través de ellas",
+          "b": "La VR crea un entorno inmersivo de 360° que sustituye completamente el mundo físico — el alumno realmente no puede ver el aula ni a otras personas",
+          "c": "El alumno está confundido — la VR solo bloquea parte de la visión",
+          "d": "Esto solo pasa con gafas VR caras",
+          "explanation": "Así es exactamente como funciona la VR: sustituye el mundo real por completo. El alumno está dentro de un entorno digital y no puede ver el aula, por eso la supervisión del profesor es importante."
+        },
+        "q4": {
+          "question": "Quieres que los alumnos practiquen un procedimiento de evacuación de emergencia sin peligro real. ¿Qué ventaja de la VR la convierte en la herramienta adecuada?",
+          "a": "Las gafas VR son inalámbricas, así los alumnos se mueven libremente",
+          "b": "La VR tiene mejores gráficos que un diagrama de libro de texto",
+          "c": "La VR ofrece un entorno de práctica seguro donde los alumnos pueden equivocarse y repetir el procedimiento sin consecuencias reales",
+          "d": "La VR permite grabar la sesión para evaluar después",
+          "explanation": "Una de las fortalezas clave de la VR es la repetición segura. Los alumnos pueden practicar procedimientos peligrosos o costosos múltiples veces sin consecuencias reales, ganando confianza y competencia."
+        },
+        "q5": {
+          "question": "Estás planificando una clase VR donde estudiantes de enfermería practicarán el procedimiento de higiene de manos paso a paso. ¿Qué ventaja de la VR estás aprovechando principalmente?",
+          "a": "Inmersión — los alumnos sienten que están en un hospital real",
+          "b": "Ahorro de costes — no necesitas comprar material físico",
+          "c": "Formación procedimental — los alumnos siguen procesos guiados paso a paso en un entorno controlado, reforzando secuencias correctas mediante la repetición",
+          "d": "Aislamiento del alumno — cada uno trabaja solo sin distracciones",
+          "explanation": "La VR destaca en la formación procedimental. Los alumnos siguen procesos guiados paso a paso, repitiéndolos hasta dominar la secuencia correcta — exactamente lo que requiere la formación en higiene de manos."
+        },
+        "q6": {
+          "question": "Un alumno falla un simulacro de incendio en VR y quiere volver a intentarlo. ¿Cómo deberías responder?",
+          "a": "Decirle que solo tiene una oportunidad, igual que en la vida real",
+          "b": "Dejarle repetirlo — el entorno seguro de la VR significa que los errores no tienen consecuencias reales, y la repetición genera confianza y competencia",
+          "c": "Pasarlo a una actividad diferente más fácil",
+          "d": "Mostrarle un vídeo del procedimiento correcto en su lugar",
+          "explanation": "La repetición sin consecuencias es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten hasta sentirse seguros, algo imposible con simulacros reales de emergencia."
+        },
+        "q7": {
+          "question": "¿Por qué la VR es especialmente adecuada para enseñar procedimientos y protocolos?",
+          "a": "Porque tiene mejor calidad visual que un libro de texto",
+          "b": "Porque los alumnos pueden saltarse los pasos que ya saben",
+          "c": "Porque los alumnos siguen procesos guiados paso a paso en un entorno controlado, reforzando secuencias correctas mediante la repetición práctica",
+          "d": "Porque califica automáticamente el rendimiento del alumno",
+          "explanation": "La VR ofrece un entorno controlado donde los alumnos siguen procesos guiados paso a paso. La combinación de interacción práctica y repetición segura la hace ideal para la formación procedimental."
+        },
+        "q8": {
+          "question": "Un compañero dice: 'Usé VR en mi clase de historia — los alumnos vieron un vídeo 360° de la Roma antigua durante 15 minutos.' ¿Cómo evaluarías este uso de la VR?",
+          "a": "Excelente — los vídeos 360° son la mejor forma de usar VR en educación",
+          "b": "Es un punto de partida válido, pero el verdadero potencial de la VR está en que los alumnos hagan e interactúen, no solo en que miren pasivamente",
+          "c": "Fue una pérdida de tiempo — la VR solo debería usarse para ciencias",
+          "d": "Está bien siempre que todos los alumnos tuvieran sus propias gafas",
+          "explanation": "Los casos de uso más potentes de VR implican hacer, no solo mirar. Un vídeo 360° es observación pasiva. La VR brilla cuando los alumnos interactúan, toman decisiones y practican procedimientos."
+        },
+        "q9": {
+          "question": "¿Cuál de estos es el ejemplo más fuerte de uso del potencial completo de la VR en educación?",
+          "a": "Los alumnos ven un tour 360° de un museo",
+          "b": "Los alumnos realizan un experimento virtual de química — midiendo, mezclando y observando reacciones paso a paso",
+          "c": "Los alumnos ven una presentación de diapositivas dentro de unas gafas VR",
+          "d": "Los alumnos escuchan una clase grabada en un aula virtual",
+          "explanation": "El potencial completo de la VR se alcanza cuando los alumnos hacen algo activamente — realizar experimentos, tomar decisiones, practicar procedimientos. La visualización pasiva no aprovecha las fortalezas únicas de la VR."
+        },
+        "q10": {
+          "question": "Un directivo del centro pregunta: '¿En qué ámbitos se usa ya la VR para formación?' ¿Qué respuesta representa mejor el estado actual?",
+          "a": "Solo en desarrollo de videojuegos y entretenimiento",
+          "b": "Salud, formación profesional, educación y entornos empresariales — desde práctica quirúrgica hasta excursiones virtuales y simulaciones de gestión de crisis",
+          "c": "Solo en universidades con grandes presupuestos tecnológicos",
+          "d": "Principalmente en apps de aprendizaje de idiomas",
+          "explanation": "La VR ya se usa en salud (formación quirúrgica, respuesta a emergencias), formación profesional (operación de equipos, protocolos de seguridad), educación (excursiones virtuales, laboratorios) y entornos empresariales (incorporación, gestión de crisis)."
+        }
+      },
+      "gettingVrReady": {
+        "q1": {
+          "question": "Un alumno dice que la imagen está borrosa en su primera sesión VR. ¿Qué deberías hacer primero?",
+          "a": "Decirle que cierre un ojo para reducir la borrosidad",
+          "b": "Ajustar la rueda de IPD hasta que la imagen sea nítida para ese alumno",
+          "c": "Reiniciar las gafas — probablemente sea un fallo de software",
+          "d": "Bajar el brillo de la pantalla en ajustes"
+        },
+        "q2": {
+          "question": "El WiFi se cae durante una sesión VR. La mitad de la clase no ha tenido su turno. ¿Cuál es tu prioridad?",
+          "a": "Cancelar el resto de la actividad VR y pasar a una lección alternativa",
+          "b": "Enviar a un alumno a la oficina de informática para arreglar el WiFi",
+          "c": "Cambiar a una app VR offline y reorganizar el horario de rotación",
+          "d": "Esperar 15 minutos — el WiFi del colegio suele volver solo"
+        },
+        "q3": {
+          "question": "Un padre te escribe preocupado por la seguridad VR para su hijo. ¿Cuál es la mejor respuesta?",
+          "a": "Responder que VR es perfectamente seguro y no hay de qué preocuparse",
+          "b": "Compartir las medidas de seguridad específicas que usas (límites de sesión, Guardian, supervisión) y ofrecer hablar más",
+          "c": "Reenviar el email al director para que lo gestione",
+          "d": "Eximir al niño de todas las actividades VR inmediatamente"
+        },
+        "q4": {
+          "question": "Faltan 30 minutos para clase. Solo 3 de tus 5 gafas se cargaron durante la noche. ¿Qué haces?",
+          "a": "Cancelar la clase VR — necesitas las 5 gafas",
+          "b": "Intentar cargar rápido las 5 durante 30 minutos — debería ser suficiente",
+          "c": "Usar las 3 cargadas ahora, enchufar las otras 2 y rotarlas cuando tengan carga",
+          "d": "Usar solo las 3 cargadas y no preocuparte por las otras 2"
+        },
+        "q5": {
+          "question": "Un alumno se niega a ponerse las gafas VR y parece ansioso. ¿Qué haces?",
+          "a": "Insistir — necesita participar para obtener su nota",
+          "b": "Respetar su decisión y asignarle un rol alternativo como observador o controlador del casting",
+          "c": "Ponerle las gafas tú mismo para demostrar que no da miedo",
+          "d": "Enviarlo al orientador del colegio"
+        },
+        "q6": {
+          "question": "Estás haciendo casting al proyector del aula pero hay un retraso de 3 segundos. ¿Qué deberías probar?",
+          "a": "Nada — algo de lag es inevitable con casting inalámbrico",
+          "b": "Acercar el router WiFi a las gafas y al proyector, y reducir otro tráfico de red",
+          "c": "Usar un cable HDMI más largo para conectar las gafas directamente",
+          "d": "Bajar la calidad gráfica de las gafas en ajustes de desarrollador"
+        },
+        "q7": {
+          "question": "La app VR que planeaste necesita una actualización de 2 GB. Faltan 10 minutos para clase. ¿Qué haces?",
+          "a": "Iniciar la actualización y retrasar el inicio de la clase",
+          "b": "Usar unas gafas para actualizar mientras haces la clase con las demás",
+          "c": "Intentar abrir la versión actual. Si no funciona, cambiar a una app de respaldo probada",
+          "d": "Saltar VR completamente y hacer otra actividad"
+        },
+        "q8": {
+          "question": "Dos alumnos chocan entre sí mientras ambos llevan gafas VR. ¿Cuál es tu primera acción?",
+          "a": "Decirles que tengan más cuidado y continuar la sesión",
+          "b": "Parar a ambos, comprobar que están bien, y reconfigurar Guardian aumentando la separación entre zonas",
+          "c": "Quitar las gafas a ambos alumnos como consecuencia",
+          "d": "Mover a un alumno a otra habitación"
+        },
+        "q9": {
+          "question": "Notas que unas gafas se calientan notablemente tras 20 minutos de uso continuo. ¿Qué deberías hacer?",
+          "a": "Apagarlas, dejar enfriar 10 minutos y cambiarlas por otras gafas",
+          "b": "Ignorarlo — las gafas siempre se calientan un poco con el uso",
+          "c": "Ponerlas en la nevera para enfriarlas rápido",
+          "d": "Colocar un ventilador directamente sobre las gafas mientras el alumno sigue usándolas"
+        },
+        "q10": {
+          "question": "El director del colegio te pide una demo de VR al claustro en 5 minutos. ¿Cuál es tu enfoque?",
+          "a": "Rechazar — necesitas al menos una hora para preparar una demo",
+          "b": "Darle las gafas al director y que se las arregle",
+          "c": "Mostrar primero passthrough para romper el hielo, luego una app corta e impresionante con casting a la pantalla",
+          "d": "Mostrar un vídeo VR pregrabado en tu portátil"
+        }
+      }
+    },
+    "contentMissions": {
+      "scenarioLabel": "Escenario",
+      "scenarioPrompt": "Situación",
+      "whatWouldYouDo": "¿Qué harías tú? Pulsa cada opción para ver su consecuencia.",
+      "tapToReveal": "Pulsa para ver qué pasa",
+      "keepExploring": "Sigue explorando — encuentra la mejor opción para completar la misión.",
+      "markCompleted": "Marcar misión como completada",
+      "checklistLabel": "Checklist",
+      "checked": "casillas",
+      "missingItems": "Faltan: {items}",
+      "allDone": "Todas las verificaciones hechas. ¡Misión completada!",
+      "missionScore": "Puntuación: {score}/{max}",
+      "xpReward": "+{amount} XP"
+    },
+    "missions": {
+      "gettingVrReady": {
+        "gettingStarted": {
+          "scenario": "Acabas de recibir nuevos Quest 3 para tu aula. Los desempaquetas y tienes 20 minutos antes de la primera sesión de VR con alumnos.",
+          "options": {
+            "a": "Ponerte unas gafas y dejar que los alumnos las prueben directamente",
+            "b": "Ajustar el IPD y la posición de las lentes en cada headset, poner el idioma y cargarlas",
+            "c": "Cargar las gafas pero saltarse el ajuste de IPD para ahorrar tiempo",
+            "d": "Usar la app Meta Quest del móvil para configurar todo a distancia antes de encender las gafas"
+          },
+          "consequences": {
+            "a": "Las gafas no están cargadas y el IPD no está ajustado — los alumnos ven borroso y la batería se agota en minutos. ¡La primera impresión importa para la adopción de VR!",
+            "b": "¡Buena decisión! Ajustar el IPD garantiza visión clara para cada alumno, y cargar primero asegura una sesión completa y sin interrupciones. Este es el flujo de configuración recomendado.",
+            "c": "Cargar está bien, pero saltarse el ajuste de IPD significa que los alumnos verán borroso. La fatiga visual aparece rápido y la primera impresión de VR importa mucho. Siempre tómate un momento para ajustar las lentes.",
+            "d": "La app del móvil ayuda con algunos ajustes, pero aún necesitas ajustar físicamente el IPD y las correas de cada gafa. Es un buen comienzo pero no reemplaza la configuración práctica para el aula."
+          }
+        },
+        "classroomSetup": {
+          "scenario": "Faltan 5 minutos para clase. Tienes 5 Quest 3 para 25 alumnos. El aula tiene mesas en forma de U con espacio limitado.",
+          "options": {
+            "a": "Poner las 5 gafas en el centro del aula y que los alumnos se turnen libremente",
+            "b": "Encender, configurar cuenta/Wi-Fi, definir Guardian en zonas separadas y organizar grupos de rotación",
+            "c": "Apartar todas las mesas a las paredes y que los 5 alumnos usen VR a la vez en el centro",
+            "d": "Colocar estaciones VR en mesas individuales y que los alumnos solo usen experiencias VR sentados"
+          },
+          "consequences": {
+            "a": "Sin zonas de Guardian separadas, varios alumnos en la misma zona corren el riesgo de chocar entre sí y con los muebles. Turnos libres sin estructura generan caos y tiempo perdido.",
+            "b": "¡Excelente! Primero la seguridad con Guardian en zonas definidas, más rotaciones organizadas que aseguran que todos los alumnos participen durante la clase.",
+            "c": "Mover las mesas crea espacio, pero 5 alumnos en VR a la vez en la misma zona abierta arriesga colisiones — no se ven entre sí! Sin zonas Guardian definidas y un plan de rotación, esto es un riesgo de seguridad.",
+            "d": "VR sentado en mesas es seguro y manejable, pero limita a los alumnos a solo ciertas apps y se pierde la experiencia inmersiva a escala de habitación. Bueno como alternativa, pero no la configuración óptima."
+          }
+        },
+        "storeInstall": {
+          "prompt": "Antes de clase, instala las apps necesarias desde la Meta Quest Store y confirma que están listas.",
+          "items": {
+            "1": "Abre la Store desde el menú del headset o desde la app Meta Quest",
+            "2": "Busca la app por nombre (o explora categorías)",
+            "3": "Pulsa Obtener / Comprar",
+            "4": "Espera a que termine la descarga e instalación",
+            "5": "Comprueba que la app aparece en la biblioteca"
+          }
+        },
+        "casting": {
+          "scenario": "Necesitas que 25 alumnos vean lo que un alumno experimenta en VR. Tu aula tiene un proyector conectado a WiFi y la app Meta Quest instalada en tu teléfono.",
+          "options": {
+            "a": "Que cada alumno pruebe las gafas uno por uno mientras el resto mira por detrás",
+            "b": "Hacer casting de las gafas al proyector del aula usando la app Meta Quest",
+            "c": "Conectar el Quest 3 al proyector con un cable HDMI",
+            "d": "Hacer capturas de pantalla dentro de VR y enviarlas por email después de clase"
+          },
+          "consequences": {
+            "a": "Esto tarda demasiado — con 25 alumnos y unas gafas, cada uno apenas tiene un minuto. El resto de la clase está parado y pierde interés. Hacer casting a una pantalla compartida es mucho más eficiente.",
+            "b": "¡Excelente elección! El casting refleja la vista VR en tiempo real en el proyector, para que toda la clase siga el contenido. Puedes narrar, pausar y debatir lo que todos ven. Este es el método recomendado para demostraciones grupales.",
+            "c": "¡El Quest 3 no tiene puerto HDMI! Solo tiene USB-C. Para visualización inalámbrica, usa la función de casting a través de la app Meta Quest o un dispositivo compatible con Chromecast.",
+            "d": "Las capturas pierden el aspecto inmersivo y en tiempo real de VR. Los alumnos no ven movimiento, relaciones espaciales ni pueden interactuar con el momento. El casting es en vivo y mucho más atractivo para el aula."
+          }
+        },
+        "preClassChecklist": {
+          "prompt": "Completa esta verificación antes de que lleguen los alumnos. Repasa cada punto y confirma que está listo.",
+          "items": {
+            "1": "Todas las gafas cargadas al menos al 80%",
+            "2": "WiFi conectado y funcionando en todas las gafas",
+            "3": "Límites Guardian configurados en cada zona VR",
+            "4": "Apps objetivo instaladas, actualizadas y probadas",
+            "5": "Correas de cabeza ajustadas para distintos tamaños",
+            "6": "Casting probado en proyector o pantalla externa",
+            "7": "Grupos de rotación planificados y escritos en la pizarra"
+          }
+        }
+      }
+    },
+    "wizardMissions": {
+      "label": "Misión interactiva",
+      "bossLabel": "NIVEL JEFE",
+      "stepOf": "Paso {current} de {total}",
+      "tipLabel": "Consejo",
+      "chooseAction": "¿Qué harías?",
+      "gotIt": "Entendido, siguiente",
+      "confirmAction": "Confirmo",
+      "nextStep": "Siguiente paso",
+      "finishMission": "Completar misión",
+      "missionComplete": "¡Misión completada!",
+      "perfectRun": "¡Ronda perfecta! ¡Todas las decisiones correctas!",
+      "stepsCorrect": "{correct}/{total} decisiones correctas",
+      "tone": {
+        "correct": "¡Correcto!",
+        "partial": "Parcialmente correcto",
+        "incorrect": "No del todo"
+      },
+      "encourage": {
+        "nice": "¡Bien!",
+        "keepGoing": "¡Sigue así!",
+        "awesome": "¡Genial!",
+        "almostThere": "¡Ya casi!",
+        "greatJob": "¡Buen trabajo!"
+      },
+      "firstSetup": {
+        "title": "Primera configuración",
+        "description": "Desempaqueta y prepara unas Quest 3 por primera vez.",
+        "steps": {
+          "s1": {
+            "context": "Acabas de recibir Quest 3 nuevas para tu aula. Antes de que nadie se las ponga, hay pasos importantes de configuración.",
+            "body": "Una buena configuración inicial garantiza imagen nítida, comodidad y una primera experiencia fluida para los alumnos."
+          },
+          "s2": {
+            "context": "Coges las primeras gafas. El LED está apagado y no sabes el nivel de batería.",
+            "tip": "El color del LED indica el estado de batería: naranja significa cargando, blanco fijo significa encendidas.",
+            "choices": {
+              "a": "Encender las gafas inmediatamente y empezar a usarlas",
+              "b": "Conectar el cargador USB-C y comprobar el indicador LED",
+              "c": "Pedir a un alumno que averigüe el estado de la batería"
+            },
+            "feedback": {
+              "a": "Encender sin comprobar la batería arriesga que se apaguen en medio de la sesión. ¡Siempre comprueba primero!",
+              "b": "¡Correcto! El LED te dice si necesitan carga. Naranja significa cargando — espera al blanco antes de usar.",
+              "c": "Es mejor que tú gestiones la configuración para saber el estado exacto de cada dispositivo antes de clase."
+            }
+          },
+          "s3": {
+            "context": "Las gafas están cargadas. Ahora necesitas configurar el idioma para que los alumnos vean la interfaz correcta.",
+            "choices": {
+              "a": "Omitirlo — el inglés por defecto está bien para todos",
+              "b": "Ir a Ajustes > Sistema > Idioma y seleccionar el idioma de tus alumnos",
+              "c": "Usar la app Meta Quest del móvil para cambiar el idioma remotamente"
+            },
+            "feedback": {
+              "a": "Si tus alumnos hablan otro idioma, les costará navegar. Siempre ajusta el idioma al del grupo.",
+              "b": "¡Perfecto! Configurar el idioma correcto asegura que los alumnos naveguen menús y entiendan indicaciones.",
+              "c": "La app del móvil funciona, pero es más rápido hacerlo directamente en las gafas."
+            }
+          },
+          "s4": {
+            "context": "Toca ajustar la IPD (distancia interpupilar). Un alumno usará estas gafas en la próxima clase.",
+            "tip": "La IPD afecta la nitidez de la imagen. Una IPD incorrecta causa visión borrosa o doble y fatiga visual.",
+            "choices": {
+              "a": "Omitir la IPD — los alumnos pueden ajustarla solos cuando noten borrosidad",
+              "b": "Usar la rueda de IPD para poner una posición intermedia neutra como punto de partida",
+              "c": "Ponerla en la posición más ancha para máximo campo de visión"
+            },
+            "feedback": {
+              "a": "Los alumnos no suelen saber qué es la IPD. Pon un buen valor por defecto para una primera experiencia nítida.",
+              "b": "¡Buena decisión! Una posición intermedia funciona para la mayoría. Puedes ajustarla por alumno durante la sesión.",
+              "c": "La posición más ancha solo funciona para ojos muy separados. La mayoría vería imagen borrosa y distorsionada."
+            }
+          },
+          "s5": {
+            "context": "Las gafas están casi listas. Último paso: ajustar correctamente la correa.",
+            "choices": {
+              "a": "Apretar la correa al máximo para que las gafas no se muevan",
+              "b": "Ajustarla para que quede firme pero cómoda, con el peso bien distribuido",
+              "c": "Dejarla floja para que los alumnos se las pongan y quiten rápido"
+            },
+            "feedback": {
+              "a": "Apretar demasiado causa molestias, marcas de presión y dolor de cabeza.",
+              "b": "¡Correcto! Un ajuste firme con peso bien distribuido mantiene la imagen nítida y previene molestias.",
+              "c": "Una correa floja hace que las gafas se muevan, causando borrosidad y riesgo de caída."
+            }
+          },
+          "s6": {
+            "context": "Has completado la primera configuración. Hora de una comprobación final.",
+            "confirm": "He verificado: pantalla nítida, idioma correcto, correa cómoda y batería suficiente"
+          }
+        }
+      },
+      "classroomSetup": {
+        "title": "Preparar el aula",
+        "description": "Prepara el espacio del aula y las gafas para una sesión de VR.",
+        "steps": {
+          "s1": {
+            "context": "Faltan 15 minutos para clase. Tienes 5 Quest 3 para 25 alumnos.",
+            "body": "Un aula bien organizada previene accidentes, ahorra tiempo y asegura que cada alumno tenga su turno."
+          },
+          "s2": {
+            "context": "Necesitas reorganizar el aula. Actualmente hay mesas en filas con pasillos estrechos.",
+            "choices": {
+              "a": "Dejar las mesas como están — los alumnos usarán VR sentados",
+              "b": "Crear 5 zonas VR designadas con al menos 2m entre ellas, apartando mesas",
+              "c": "Empujar todos los muebles contra las paredes para crear un gran espacio abierto"
+            },
+            "feedback": {
+              "a": "VR sentado funciona para algunas apps, pero muchas necesitan estar de pie. Las filas limitan el movimiento.",
+              "b": "¡Excelente! Zonas separadas con límites claros previenen colisiones y dan espacio seguro a cada alumno.",
+              "c": "Un gran espacio abierto dificulta gestionar Guardian y los alumnos pueden acercarse entre sí."
+            }
+          },
+          "s3": {
+            "context": "El aula está lista. Ahora necesitas conectar todas las gafas al WiFi.",
+            "tip": "Las apps VR descargan archivos grandes. Una conexión WiFi fuerte y estable previene interrupciones.",
+            "choices": {
+              "a": "Confiar en que el WiFi del colegio funcione — normalmente va bien",
+              "b": "Pre-conectar cada gafas al WiFi y probar la señal en cada zona VR",
+              "c": "Usar el hotspot de tu móvil para las 5 gafas"
+            },
+            "feedback": {
+              "a": "¡Nunca asumas! El WiFi escolar puede fallar con 5 gafas transmitiendo simultáneamente.",
+              "b": "¡Perfecto! Probar el WiFi en cada zona detecta zonas muertas antes de que los alumnos las encuentren.",
+              "c": "Un hotspot de móvil no puede con 5 gafas VR. El ancho de banda causará problemas."
+            }
+          },
+          "s4": {
+            "context": "WiFi confirmado. Toca configurar las fronteras Guardian en cada zona.",
+            "choices": {
+              "a": "Omitir Guardian — las zonas están marcadas con cinta en el suelo",
+              "b": "Dibujar una frontera Guardian en cada zona VR designada",
+              "c": "Configurar una frontera Guardian grande que cubra toda el aula"
+            },
+            "feedback": {
+              "a": "¡La cinta en el suelo es invisible dentro de VR! Guardian es la única frontera que los alumnos ven.",
+              "b": "¡Correcto! Fronteras individuales por zona mantienen a cada alumno seguro dentro de su espacio.",
+              "c": "Una frontera para todo el aula anula el propósito — no habrá avisos al acercarse a otra zona."
+            }
+          },
+          "s5": {
+            "context": "Tienes 25 alumnos y 5 gafas. ¿Cómo organizas las rotaciones?",
+            "choices": {
+              "a": "Numerar cada gafas y asignar 5 grupos con horario de rotación en la pizarra",
+              "b": "Poner todas las gafas en una mesa y que los alumnos se acerquen cuando quieran",
+              "c": "Dejar que los alumnos formen sus propios grupos y se organicen"
+            },
+            "feedback": {
+              "a": "¡Inteligente! Grupos claros y horario visible significa cero confusión y tiempo igual para todos.",
+              "b": "Esto crea aglomeración y lleva a turnos injustos y tiempo perdido en transiciones.",
+              "c": "Las rotaciones auto-organizadas casi siempre resultan en que algunos acaparan tiempo."
+            }
+          },
+          "s6": {
+            "context": "¿Deberías hacer una prueba final en unas gafas antes de que lleguen los alumnos?",
+            "choices": {
+              "a": "Solo comprobar que enciende — si arranca, funciona",
+              "b": "Abrir la app, probar Guardian, verificar casting y cronometrar la experiencia",
+              "c": "No hace falta — probaste la semana pasada y nada ha cambiado"
+            },
+            "feedback": {
+              "a": "Que arranque no confirma que la app funciona ni que el casting va bien.",
+              "b": "¡A fondo! Probar el flujo completo detecta problemas antes de que 25 alumnos estén mirando.",
+              "c": "Las actualizaciones y cambios de WiFi ocurren constantemente. La prueba de la semana pasada no vale."
+            }
+          }
+        }
+      },
+      "installApps": {
+        "title": "Instalar apps",
+        "description": "Encuentra, instala y verifica apps educativas VR en todas las gafas.",
+        "steps": {
+          "s1": {
+            "context": "Necesitas instalar una app educativa VR en las 5 gafas antes de la clase de mañana.",
+            "body": "Instalar apps con antelación evita retrasos durante la clase."
+          },
+          "s2": {
+            "context": "¿Dónde buscas la app?",
+            "choices": {
+              "a": "Buscar en Google desde el móvil el enlace de descarga",
+              "b": "Abrir la Meta Quest Store desde las propias gafas y buscar la app",
+              "c": "Pedir a los alumnos que la busquen e instalen desde sus móviles"
+            },
+            "feedback": {
+              "a": "Google puede llevarte al enlace, pero igualmente necesitas instalar desde las propias gafas.",
+              "b": "¡Correcto! La Meta Quest Store es la fuente oficial. Buscar desde las gafas es lo más rápido.",
+              "c": "Los alumnos no pueden instalar apps en las gafas del aula desde sus móviles."
+            }
+          },
+          "s3": {
+            "context": "Buscas la app pero no aparece en los resultados de la tienda.",
+            "tip": "Algunas apps están en App Lab (acceso anticipado de Meta) y no aparecen en la búsqueda principal.",
+            "choices": {
+              "a": "Rendirte y buscar otra app",
+              "b": "Comprobar App Lab, probar el enlace directo o buscar desde la app móvil",
+              "c": "Asumir que eliminaron la app de la tienda"
+            },
+            "feedback": {
+              "a": "¡No te rindas! Muchas apps educativas están en App Lab, que requiere enlace directo.",
+              "b": "¡Inteligente! Muchas apps educativas VR viven en App Lab. El enlace directo suele encontrarlas.",
+              "c": "La búsqueda de la tienda puede ser poco fiable. Siempre prueba App Lab primero."
+            }
+          },
+          "s4": {
+            "context": "La app se instala en 4 gafas, pero la 5ª muestra 'Espacio insuficiente'.",
+            "choices": {
+              "a": "Saltarse estas gafas — con 4 es suficiente",
+              "b": "Ir a Ajustes > Almacenamiento, desinstalar apps que no se usen y reintentar",
+              "c": "Hacer reset de fábrica para borrar todo y empezar de cero"
+            },
+            "feedback": {
+              "a": "Con 25 alumnos y rotaciones, cada gafas cuenta. Arreglar el espacio merece 5 minutos.",
+              "b": "¡Correcto! Eliminar apps que no se usan es rápido y preciso.",
+              "c": "Un reset borra TODO: WiFi, Guardian, apps. Demasiado drástico para un problema de espacio."
+            }
+          },
+          "s5": {
+            "context": "Las 5 gafas ya tienen la app instalada. Hora de la verificación final.",
+            "confirm": "He verificado: la app aparece en la biblioteca de todas las gafas, se abre correctamente y es la última versión"
+          }
+        }
+      },
+      "castShare": {
+        "title": "Casting y compartir",
+        "description": "Configura el casting para que toda la clase vea lo que pasa en VR.",
+        "steps": {
+          "s1": {
+            "context": "Quieres que toda la clase (25 alumnos) vea lo que experimenta un alumno dentro de VR.",
+            "body": "El casting permite que los alumnos sin gafas participen y aprendan de la experiencia del usuario VR."
+          },
+          "s2": {
+            "context": "¿Cómo compartirás la vista de las gafas con la clase?",
+            "choices": {
+              "a": "Pasar las gafas para que todos miren dentro",
+              "b": "Hacer casting inalámbrico al proyector usando la app Meta Quest",
+              "c": "Conectar un cable HDMI de las gafas al proyector",
+              "d": "Grabar la sesión VR y reproducirla después"
+            },
+            "feedback": {
+              "a": "Pasar gafas es lento, poco higiénico y solo un alumno ve a la vez.",
+              "b": "¡Perfecto! El casting inalámbrico muestra la vista VR en cualquier pantalla en tiempo real.",
+              "c": "Las Quest 3 no tienen puerto HDMI. Solo soportan casting inalámbrico o USB-C a PC.",
+              "d": "La reproducción mata el engagement en tiempo real. Los alumnos no pueden reaccionar en directo."
+            }
+          },
+          "s3": {
+            "context": "El casting funciona pero hay un retraso de 3 segundos y la imagen va a tirones.",
+            "tip": "La calidad del casting depende del WiFi. Las gafas y la pantalla deben estar en la misma red.",
+            "choices": {
+              "a": "Decir a los alumnos que ignoren el lag",
+              "b": "Acercar el router WiFi, reducir tráfico de red y usar la banda de 5GHz",
+              "c": "Cambiar a conexión por cable USB-C al proyector"
+            },
+            "feedback": {
+              "a": "El lag hace imposible que los observadores sigan la acción.",
+              "b": "¡Correcto! El lag de casting casi siempre es un problema de WiFi. 5GHz y proximidad lo resuelven.",
+              "c": "USB-C al proyector requiere un PC compatible como intermediario."
+            }
+          },
+          "s4": {
+            "context": "El vídeo ya va fluido. Pero la clase no oye el audio de la app VR.",
+            "choices": {
+              "a": "Pedirle al usuario VR que describa en voz alta lo que oye",
+              "b": "Conectar altavoces externos a la pantalla o usar Bluetooth emparejado a las gafas",
+              "c": "Que los alumnos se pongan sus propios auriculares"
+            },
+            "feedback": {
+              "a": "Que el usuario VR narre rompe su inmersión. El audio debe ser parte de la experiencia compartida.",
+              "b": "¡Correcto! Altavoces externos dan audio claro a toda el aula junto con el vídeo.",
+              "c": "Los auriculares individuales no pueden recibir el audio de las gafas VR."
+            }
+          },
+          "s5": {
+            "context": "El casting está completamente configurado: vídeo fluido y audio claro.",
+            "confirm": "He verificado: casting fluido en el proyector, audio audible en toda el aula y retraso mínimo"
+          }
+        }
+      },
+      "preClassCheck": {
+        "title": "Checklist pre-clase",
+        "description": "Comprobación final antes de que lleguen los alumnos.",
+        "steps": {
+          "s1": {
+            "context": "Los alumnos llegan en 10 minutos. Hora de la comprobación final.",
+            "body": "Una comprobación rápida detecta problemas de último minuto. Mejor descubrirlos ahora que cuando un alumno espera."
+          },
+          "s2": {
+            "context": "Comprueba que todas las gafas están cargadas al menos al 80%.",
+            "confirm": "Todas las gafas verificadas al 80%+ de batería"
+          },
+          "s3": {
+            "context": "Confirma la conectividad WiFi en todas las gafas.",
+            "confirm": "WiFi conectado y probado en todas las gafas"
+          },
+          "s4": {
+            "context": "Verifica que las fronteras Guardian están configuradas en cada zona.",
+            "confirm": "Fronteras Guardian configuradas en todas las zonas"
+          },
+          "s5": {
+            "context": "Verifica que la app objetivo está lista en todas las gafas.",
+            "confirm": "App instalada, probada y casting verificado en todas las gafas"
+          },
+          "s6": {
+            "context": "Unas gafas no encienden. Pulsas el botón de encendido — no pasa nada.",
+            "tip": "Unas gafas que no responden pueden tener la batería agotada. Pulsación larga (10+ seg) fuerza reinicio.",
+            "choices": {
+              "a": "Apartarlas y hacer la clase con unas gafas menos",
+              "b": "Intentar reinicio largo, enchufar cargador, y si falla, redistribuir grupos de rotación",
+              "c": "Cancelar la parte de VR de la clase de hoy"
+            },
+            "feedback": {
+              "a": "Funciona, pero el reinicio largo a menudo arregla el problema en 30 segundos.",
+              "b": "¡Enfoque perfecto! El reinicio largo es lo primero. Si falla, ajustar grupos mantiene la lección.",
+              "c": "Unas gafas rotas de cinco no es motivo para cancelar. Adapta la rotación."
+            }
+          }
+        }
+      },
+      "fullPrep": {
+        "title": "Nivel Jefe: Preparación VR completa",
+        "description": "Combina todo lo aprendido. Prepara tu primera clase VR desde cero.",
+        "steps": {
+          "s1": {
+            "context": "Mañana es tu primera clase VR. Tienes 8 Quest 3, 32 alumnos y 50 minutos.",
+            "body": "Esto va en serio. Recorrerás toda la preparación — desde la noche anterior hasta después de la sesión. ¡Cada decisión cuenta!"
+          },
+          "s2": {
+            "context": "Es la noche anterior. Tienes 3 horas. ¿Cuál es tu primera prioridad?",
+            "choices": {
+              "a": "Cargar las 8 gafas, instalar y probar la app en cada una",
+              "b": "Crear tu plan de clase y decidir qué app usar",
+              "c": "Ver tutoriales de YouTube sobre enseñanza con VR"
+            },
+            "feedback": {
+              "a": "¡Correcto! La preparación del hardware va primero — cargar tarda horas. El plan ya debería estar hecho.",
+              "b": "El plan debería estar listo desde hace días. La noche anterior es para equipamiento.",
+              "c": "Ver vídeos es investigación, no preparación. ¡Las gafas necesitan estar cargadas esta noche!"
+            }
+          },
+          "s3": {
+            "context": "Por la mañana. Llegas 30 minutos antes. ¿Cómo preparas el aula?",
+            "choices": {
+              "a": "Crear 8 estaciones VR con límites marcados, obstáculos retirados y horario en la pizarra",
+              "b": "Empujar las mesas a los lados y crear un gran espacio VR abierto",
+              "c": "Dejar las mesas como están — los alumnos usarán VR sentados"
+            },
+            "feedback": {
+              "a": "¡Perfecto! Estaciones designadas con plan de rotación visible mantiene a 32 alumnos organizados y seguros.",
+              "b": "Un gran espacio con 8 alumnos en VR es receta para colisiones. Zonas individuales son más seguras.",
+              "c": "Para tu primera clase, VR de pie da la mejor experiencia 'wow'."
+            }
+          },
+          "s4": {
+            "context": "Estaciones listas. Necesitas configurar WiFi y Guardian en las 8 gafas.",
+            "tip": "Con 8 gafas en WiFi simultáneamente, la carga de red es significativa.",
+            "choices": {
+              "a": "Conectar las 8 al WiFi 5GHz, configurar Guardian por estación y probar todas a la vez",
+              "b": "Conectar WiFi y Guardian en solo 2 — si funcionan, las demás también",
+              "c": "Saltar el WiFi — la mayoría de apps VR funcionan offline"
+            },
+            "feedback": {
+              "a": "¡Correcto! Probar las 8 simultáneamente detecta problemas de ancho de banda. Guardian por estación es esencial.",
+              "b": "Que funcionen 2 no garantiza que funcionen 8. El ancho de banda se comparte.",
+              "c": "Muchas apps educativas necesitan WiFi para streaming y casting. Nunca asumas offline."
+            }
+          },
+          "s5": {
+            "context": "Una gafas muestra 'Actualización requerida' de 1.5 GB. Faltan 20 minutos para clase.",
+            "choices": {
+              "a": "Iniciar la actualización y esperar que termine a tiempo",
+              "b": "Saltar la actualización e intentar abrir la versión actual. Si falla, usar app de respaldo",
+              "c": "Retirar esas gafas de la rotación y funcionar con 7"
+            },
+            "feedback": {
+              "a": "1.5 GB en WiFi escolar puede tardar más de 20 minutos. Demasiado arriesgado.",
+              "b": "¡Inteligente! Las versiones anteriores a menudo siguen funcionando. Tener plan B demuestra buena planificación.",
+              "c": "Quitar unas gafas debería ser el último recurso. Intenta la alternativa primero — tarda 2 minutos."
+            }
+          },
+          "s6": {
+            "context": "Los alumnos están llegando. ¿Cómo les informas sobre VR antes de empezar?",
+            "choices": {
+              "a": "Repartir las gafas inmediatamente — aprenden haciendo",
+              "b": "Briefing de seguridad de 3 min: Guardian, protocolo de mareo, higiene y rotaciones",
+              "c": "Mostrar un vídeo de seguridad VR de 15 minutos antes de empezar"
+            },
+            "feedback": {
+              "a": "Sin briefing, no sabrán de Guardian ni protocolos de mareo. El caos está garantizado.",
+              "b": "¡Perfecto! Un briefing corto cubre lo esencial sin consumir tiempo VR. 3 min ahorran 15 de confusión.",
+              "c": "15 minutos de 50 es demasiado. Los alumnos se desconectarán."
+            }
+          },
+          "s7": {
+            "context": "A mitad de sesión: un alumno se quita las gafas pálido y dice que está mareado.",
+            "choices": {
+              "a": "Decirle que aguante — el mareo VR pasa rápido",
+              "b": "Sentarlo, retirar las gafas, que enfoque un objeto real lejano y beba agua",
+              "c": "Dar las gafas a otro alumno para que la sesión siga"
+            },
+            "feedback": {
+              "a": "NUNCA se fuerza con el mareo VR. Puede escalar a náuseas. La seguridad siempre va primero.",
+              "b": "¡Correcto! Protocolo estándar: parar, sentar, punto de enfoque real, hidratar.",
+              "c": "Atiende al bienestar del alumno antes de preocuparte por las gafas."
+            }
+          },
+          "s8": {
+            "context": "La mitad de la clase espera turno VR. Se aburren. ¿Cómo los enganchas?",
+            "choices": {
+              "a": "Casting al proyector para que toda la clase vea, con ficha de preguntas para observadores",
+              "b": "Decirles que hagan deberes de otras asignaturas",
+              "c": "Dejar que usen sus móviles mientras esperan"
+            },
+            "feedback": {
+              "a": "¡Excelente! El casting crea experiencia compartida. La ficha convierte observadores en participantes activos.",
+              "b": "Esto desperdicia el potencial de la clase VR.",
+              "c": "Los móviles crean distracción. La clase debería sentirse como una experiencia compartida."
+            }
+          },
+          "s9": {
+            "context": "El periodo está terminando. ¿Cómo cierras la sesión VR?",
+            "choices": {
+              "a": "Decir a los alumnos que dejen las gafas en las mesas e ir a la siguiente clase",
+              "b": "Empezar a recoger gafas mientras los alumnos aún las usan",
+              "c": "Aviso de 5 min, cada grupo apaga y coloca gafas en la estación de carga, debrief de 2 min"
+            },
+            "feedback": {
+              "a": "Las gafas dejadas encendidas gastan batería y pierden la oportunidad de un debrief reflexivo.",
+              "b": "Terminar VR abruptamente es brusco. Siempre da aviso para que finalicen su experiencia.",
+              "c": "¡Cierre perfecto! El aviso da cierre, aprenden a cuidar el equipo y el debrief refuerza el aprendizaje."
+            }
+          }
+        }
+      }
+    },
+    "xp": {
+      "label": "XP",
+      "totalXP": "XP Total",
+      "earnUpTo": "Gana hasta ~{amount} XP",
+      "gained": "+{amount} XP",
+      "levelUp": "¡Subiste de nivel!",
+      "youReached": "Alcanzaste",
+      "toNextLevel": "{current}/{needed} XP para el siguiente nivel",
+      "levels": {
+        "novice": "Novato VR",
+        "explorer": "Explorador VR",
+        "practitioner": "Practicante VR",
+        "champion": "Campeón VR",
+        "master": "Maestro VR"
+      }
+    },
+    "badges": {
+      "title": "Insignias",
+      "earned": "Insignias obtenidas",
+      "new": "NUEVA",
+      "available": "Insignias disponibles",
+      "emptyState": "¡Completa módulos para ganar insignias!",
+      "hardwareHero": { "name": "Héroe del Hardware", "description": "Completa el módulo Prepararse para VR" },
+      "sharpEye": { "name": "Ojo Agudo", "description": "Obtén 100% en cualquier quiz" },
+      "quickLearner": { "name": "Aprendizaje Rápido", "description": "Aprueba un quiz al primer intento" },
+      "explorer": { "name": "Explorador", "description": "Completa el tour interactivo del hardware" },
+      "missionMaster": { "name": "Maestro de Misiones", "description": "Elige la mejor opción en todos los escenarios" },
+      "xp100": { "name": "Estrella Naciente", "description": "Gana 100 XP" },
+      "xp300": { "name": "Aprendiz Dedicado", "description": "Gana 300 XP" },
+      "xp600": { "name": "Entusiasta VR", "description": "Gana 600 XP" },
+      "xp1000": { "name": "Leyenda VR", "description": "Gana 1000 XP" }
+    },
+    "celebrations": {
+      "quizPassed": "¡Aprobaste!",
+      "moduleComplete": "¡Módulo Completado!",
+      "badgeEarned": "¡Insignia Obtenida!",
+      "keepGoing": "¡Sigue así!"
+    }
   },
   "docs": {
     "referenceMode": "Modo referencia",
@@ -106,8 +1053,12 @@
     "bootcampCta": "El Bootcamp ofrece una ruta estructurada por estos temas con seguimiento de progreso y actividades prácticas.",
     "startBootcamp": "Comenzar el Bootcamp",
     "modulesLabel": "Módulos",
+    "documentationModulesNav": "Módulos de documentación",
+    "collapseModule": "Contraer módulo",
+    "expandModule": "Expandir módulo",
     "sectionContentComingSoon": "El contenido de esta sección estará disponible pronto.",
     "tocLabel": "En esta página",
+    "tableOfContents": "Tabla de contenidos",
     "onThisPage": "EN ESTA PÁGINA",
     "updated": "Actualizado",
     "copyLink": "Copiar enlace a esta sección",
@@ -135,6 +1086,7 @@
       "stepOf": "Paso {current} de {total}",
       "prev": "← Anterior",
       "next": "Siguiente →",
+      "nextPreview": "Siguiente:",
       "finish": "Volver a documentación",
       "exitFlow": "Salir de la guía"
     },
@@ -319,5 +1271,14 @@
     "a7": "En la página de Documentación puedes escribir en el cuadro de búsqueda para filtrar los módulos por texto (títulos y contenido). También puedes usar el filtro de Categorías en la barra lateral para acotar por tema (por ejemplo Fundamentos de VR, Configuración de hardware, Diseño pedagógico, Implementación).",
     "q8": "¿Con qué frecuencia se actualiza el contenido?",
     "a8": "Actualizamos la documentación cuando hay nuevos módulos listos y cuando cambian el hardware o las buenas prácticas. El Bootcamp se publicará por etapas. Visita la web de vez en cuando o explora la Documentación para ver las guías y recomendaciones más recientes."
+  },
+  "ui": {
+    "loading": "Cargando…",
+    "loadingDocs": "Cargando documentación",
+    "errorTitle": "Algo salió mal",
+    "errorDescription": "No pudimos cargar esta página. Inténtalo de nuevo.",
+    "retry": "Reintentar",
+    "notFoundTitle": "Página no encontrada",
+    "notFoundDescription": "La página que buscas no existe o puede haberse movido."
   }
 }

@@ -37,23 +37,46 @@ export function Footer() {
           </div>
           <div>
             <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">{t("learningPaths")}</h4>
-            <p className="mt-1 text-xs text-gray-400 font-normal normal-case">{t("comingSoon")}</p>
+            <p className="mt-1 text-xs text-gray-500 font-normal normal-case">{t("comingSoon")}</p>
             <ul className="mt-2 space-y-1.5">
               {(["vrFundamentals", "hardwareSetup", "pedagogicalDesign", "implementation"] as const).map((key) => (
                 <li key={key}>
-                  <span className="text-sm text-gray-400 cursor-default" aria-disabled="true">{t(key)}</span>
+                  <span className="text-sm text-gray-500 cursor-default">
+                    {t(key)}
+                    <span className="sr-only"> {t("comingSoonSr")}</span>
+                  </span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
             <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">{t("company")}</h4>
-            <p className="mt-1 text-xs text-gray-400 font-normal normal-case">{t("comingSoon")}</p>
+            <p className="mt-1 text-xs text-gray-500 font-normal normal-case">{t("comingSoon")}</p>
             <ul className="mt-2 space-y-1.5">
-              <li><span className="text-sm text-gray-400 cursor-default" aria-disabled="true">{t("aboutUs")}</span></li>
-              <li><span className="text-sm text-gray-400 cursor-default" aria-disabled="true">{t("contact")}</span></li>
-              <li><span className="text-sm text-gray-400 cursor-default" aria-disabled="true">{t("privacyPolicy")}</span></li>
-              <li><span className="text-sm text-gray-400 cursor-default" aria-disabled="true">{t("termsOfService")}</span></li>
+              <li>
+                <span className="text-sm text-gray-500 cursor-default">
+                  {t("aboutUs")}
+                  <span className="sr-only"> {t("comingSoonSr")}</span>
+                </span>
+              </li>
+              <li>
+                <span className="text-sm text-gray-500 cursor-default">
+                  {t("contact")}
+                  <span className="sr-only"> {t("comingSoonSr")}</span>
+                </span>
+              </li>
+              <li>
+                <span className="text-sm text-gray-500 cursor-default">
+                  {t("privacyPolicy")}
+                  <span className="sr-only"> {t("comingSoonSr")}</span>
+                </span>
+              </li>
+              <li>
+                <span className="text-sm text-gray-500 cursor-default">
+                  {t("termsOfService")}
+                  <span className="sr-only"> {t("comingSoonSr")}</span>
+                </span>
+              </li>
             </ul>
           </div>
         </div>

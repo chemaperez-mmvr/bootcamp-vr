@@ -209,7 +209,7 @@ export function DocSearchBar({
                   }}
                 >
                   <span className="font-medium text-foreground">{t(item.section.titleKey)}</span>
-                  <span className="text-gray-400 font-normal ml-1">
+                  <span className="text-gray-500 font-normal ml-1">
                     — {t(item.module.titleKey)}
                   </span>
                   {item.snippet && (

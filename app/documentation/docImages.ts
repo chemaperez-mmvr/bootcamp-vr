@@ -55,11 +55,102 @@ const module0Images: DocImagesByModule = {
 };
 
 const module1Images: DocImagesByModule = {
-  "types-account": {
-    src: "/images/types-account.jpg",
+  "work-meta-dashboard": {
+    src: "/images/work-meta-dashboard.png",
     alt: {
-      en: "Meta Quest account types: personal, shared, and institutional",
-      es: "Tipos de cuenta Meta Quest: personal, compartida e institucional",
+      en: "Work for Meta admin dashboard — overview with configuration plans and device management",
+      es: "Panel de administración de Work for Meta — vista general con planes de configuración y gestión de dispositivos",
+    },
+  },
+  "work-meta-people": {
+    src: "/images/work-meta-people.png",
+    alt: {
+      en: "People management panel in Work for Meta — users, roles and permissions",
+      es: "Panel de personas en Work for Meta — usuarios, roles y permisos",
+    },
+  },
+  "work-meta-templates": {
+    src: "/images/work-meta-templates.png",
+    alt: {
+      en: "Device configuration templates in Work for Meta",
+      es: "Plantillas de configuración de dispositivos en Work for Meta",
+    },
+  },
+  "work-meta-create-group": {
+    src: "/images/work-meta-create-group.png",
+    alt: {
+      en: "Create device group dialog in Work for Meta",
+      es: "Diálogo para crear grupo de dispositivos en Work for Meta",
+    },
+  },
+  "work-meta-add-app": {
+    src: "/images/work-meta-add-app.png",
+    alt: {
+      en: "Import app dialog in Work for Meta — adding a private app to the organisation",
+      es: "Diálogo de importar app en Work for Meta — añadiendo una app privada a la organización",
+    },
+  },
+  "work-meta-apps": {
+    src: "/images/work-meta-apps.png",
+    alt: {
+      en: "Applications and content management panel in Work for Meta",
+      es: "Panel de gestión de aplicaciones y contenido en Work for Meta",
+    },
+  },
+  "work-meta-activate-instructions": {
+    src: "/images/work-meta-activate-instructions.png",
+    alt: {
+      en: "Device activation instructions panel in Work for Meta — Wi-Fi method steps",
+      es: "Panel de instrucciones de activación de dispositivos en Work for Meta — pasos del método Wi-Fi",
+    },
+  },
+  "work-meta-activation-wifi": {
+    src: "/images/work-meta-activation-wifi.png",
+    alt: {
+      en: "Device activation dialog via Wi-Fi — enter the 6-digit code shown on the headset",
+      es: "Diálogo de activación de dispositivo por Wi-Fi — introducir el código de 6 dígitos de las gafas",
+    },
+  },
+  "work-meta-device-linked": {
+    src: "/images/work-meta-device-linked.png",
+    alt: {
+      en: "Device successfully linked to the organisation in Work for Meta — group and template assignment options",
+      es: "Dispositivo vinculado a la organización en Work for Meta — opciones de asignación a grupo y plantilla",
+    },
+  },
+  "work-meta-headset-configured": {
+    src: "/images/work-meta-headset-configured.png",
+    alt: {
+      en: "Headset view after configuration — assigned apps appear installed and ready",
+      es: "Vista del headset tras la configuración — las apps asignadas aparecen instaladas y listas",
+    },
+  },
+  "work-meta-tool-download": {
+    src: "/images/work-meta-tool-download.png",
+    alt: {
+      en: "Download dialog for the Meta Horizon device configuration tool for PC/Mac",
+      es: "Diálogo de descarga de la herramienta de configuración de dispositivos Meta Horizon para PC/Mac",
+    },
+  },
+  "work-meta-cable-connect": {
+    src: "/images/work-meta-cable-connect.png",
+    alt: {
+      en: "Connect a device dialog — instructions for USB cable setup with headset powered off",
+      es: "Diálogo de conectar dispositivo — instrucciones para configuración por cable USB con las gafas apagadas",
+    },
+  },
+  "work-meta-activation-cable": {
+    src: "/images/work-meta-activation-cable.png",
+    alt: {
+      en: "Device configuration via USB cable — language, Wi-Fi network and automatic setup form",
+      es: "Configuración de dispositivo por cable USB — idioma, red Wi-Fi y formulario de configuración automática",
+    },
+  },
+  "work-meta-headset-configured-cable": {
+    src: "/images/work-meta-headset-configured-cable.png",
+    alt: {
+      en: "Headset view after cable configuration — apps installed automatically without touching the headset",
+      es: "Vista del headset tras configuración por cable — apps instaladas automáticamente sin tocar las gafas",
     },
   },
   "quest-3-components": {

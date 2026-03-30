@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --teal-500: #00a8ab;
-  --teal-600: #008A8D;
-  --teal-700: #006d70;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-600: #4b5563;
@@ -70,18 +67,26 @@ main {
   overflow-anchor: none;
 }
 
-/* Enlaces: color teal solo en p?rrafos y texto, no en botones/CTAs */
+/* Enlaces: color teal en flujo de texto (p/listas/markdown), no en islas .not-prose ni nav */
 p a[href],
 li a[href],
-.prose a[href],
-article a[href] {
-  color: var(--teal-600);
+.prose p a[href],
+.prose li a[href],
+.prose blockquote a[href],
+.prose td a[href],
+.prose th a[href],
+.prose figcaption a[href] {
+  color: theme("colors.teal.600");
 }
 p a[href]:hover,
 li a[href]:hover,
-.prose a[href]:hover,
-article a[href]:hover {
-  color: var(--teal-700);
+.prose p a[href]:hover,
+.prose li a[href]:hover,
+.prose blockquote a[href]:hover,
+.prose td a[href]:hover,
+.prose th a[href]:hover,
+.prose figcaption a[href]:hover {
+  color: theme("colors.teal.700");
 }
 
 /* FAQs: evitar que el scroll se mueva al abrir/cerrar un acorde?n */
@@ -94,17 +99,17 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 [tabindex="0"]:focus-visible {
-  outline: 2px solid var(--teal-500);
+  outline: 2px solid theme("colors.teal.500");
   outline-offset: 2px;
 }
 
 /* Selecci?n de texto: color de la web (teal) con transparencia */
 ::selection {
-  background-color: rgba(0, 168, 171, 0.25);
+  background-color: theme("colors.teal.500 / 25%");
   color: inherit;
 }
 ::-moz-selection {
-  background-color: rgba(0, 168, 171, 0.25);
+  background-color: theme("colors.teal.500 / 25%");
   color: inherit;
 }
 
@@ -309,19 +314,82 @@ input:focus-visible,
   animation: doc-highlight-blink 1.4s ease-out forwards;
 }
 
+@keyframes tour-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.tour-card-enter {
+  animation: tour-card-enter 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes bootcamp-glow-float {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(10px, -12px, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.bootcamp-hero-glow {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(24px);
+  opacity: 0.45;
+  animation: bootcamp-glow-float 8s ease-in-out infinite;
+}
+
+.bootcamp-hero-glow-1 {
+  width: 320px;
+  height: 320px;
+  right: -80px;
+  top: -80px;
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.bootcamp-hero-glow-2 {
+  width: 260px;
+  height: 260px;
+  left: -60px;
+  bottom: -90px;
+  background: rgba(45, 212, 191, 0.52);
+  animation-delay: 1.2s;
+}
+
+.bootcamp-module-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.bootcamp-module-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px -16px rgba(15, 23, 42, 0.35);
+  border-color: rgba(20, 184, 166, 0.4);
+}
+
 /* Resaltado al navegar a una ancla: parpadeo + se mantiene hasta interacci?n */
 @keyframes anchor-highlight-blink {
   0%, 100% {
-    background-color: rgba(0, 168, 171, 0.08);
+    background-color: theme("colors.teal.500 / 8%");
   }
   30% {
-    background-color: rgba(0, 168, 171, 0.18);
+    background-color: theme("colors.teal.500 / 18%");
   }
   60% {
-    background-color: rgba(0, 168, 171, 0.08);
+    background-color: theme("colors.teal.500 / 8%");
   }
   80% {
-    background-color: rgba(0, 168, 171, 0.14);
+    background-color: theme("colors.teal.500 / 14%");
   }
 }
 
@@ -330,7 +398,75 @@ input:focus-visible,
 }
 
 .anchor-highlight-persist {
-  background-color: rgba(0, 168, 171, 0.08);
+  background-color: theme("colors.teal.500 / 8%");
+}
+
+/* Checklist stepper: scale bounce on check */
+@keyframes scale-bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+  100% { transform: scale(1.1); }
+}
+
+.animate-scale-bounce {
+  animation: scale-bounce 0.3s ease-out;
+}
+
+/* Wizard mission animations */
+@keyframes wizard-step-enter {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-wizard-step-enter {
+  animation: wizard-step-enter 0.3s ease-out forwards;
+}
+
+@keyframes wizard-feedback-reveal {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: scaleY(0.95);
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+    transform: scaleY(1);
+  }
+}
+
+.animate-wizard-feedback {
+  animation: wizard-feedback-reveal 0.25s ease-out forwards;
+  transform-origin: top;
+}
+
+@keyframes wizard-encourage {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.9);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0) scale(1.05);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.95);
+  }
+}
+
+.animate-wizard-encourage {
+  animation: wizard-encourage 1.5s ease-out forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -383,5 +519,28 @@ input:focus-visible,
 
   .anchor-highlight-blink {
     animation: none !important;
+  }
+
+  .animate-scale-bounce {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .animate-wizard-step-enter {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animate-wizard-feedback {
+    animation: none !important;
+    opacity: 1 !important;
+    max-height: none !important;
+    transform: none !important;
+  }
+
+  .animate-wizard-encourage {
+    animation: none !important;
+    opacity: 1 !important;
   }
 }
