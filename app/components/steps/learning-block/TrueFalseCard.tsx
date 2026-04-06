@@ -13,7 +13,7 @@ export function TrueFalseCard({
   check: MicroCheckTrueFalse;
   onPass: () => void;
   onFail: () => void;
-  t: (key: string, values?: Record<string, unknown>) => string;
+  t: (key: string, values?: Record<string, string | number | Date>) => string;
 }) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answeredCorrectly, setAnsweredCorrectly] = useState(0);

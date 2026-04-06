@@ -24,7 +24,7 @@ export function MicroCheckCard({
   questions: MicroCheckQuestion[];
   onPass: () => void;
   onFail: () => void;
-  t: (key: string, values?: Record<string, unknown>) => string;
+  t: (key: string, values?: Record<string, string | number | Date>) => string;
 }) {
   // New-style: single typed micro-check
   const first = questions[0];
@@ -86,7 +86,7 @@ function ClassicMicroCheckCard({
   questions: MicroCheckClassic[];
   onPass: () => void;
   onFail: () => void;
-  t: (key: string, values?: Record<string, unknown>) => string;
+  t: (key: string, values?: Record<string, string | number | Date>) => string;
 }) {
   const [currentQ, setCurrentQ] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);

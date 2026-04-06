@@ -11,7 +11,7 @@ export function OrderingCard({
 }: {
   exercise: OrderingExercise;
   onPass: () => void;
-  t: (key: string, values?: Record<string, unknown>) => string;
+  t: (key: string, values?: Record<string, string | number | Date>) => string;
 }) {
   // Shuffle items for initial order
   const [order, setOrder] = useState<string[]>(() =>
