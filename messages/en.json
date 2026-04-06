@@ -1377,6 +1377,11 @@
       "moduleComplete": "Module Complete!",
       "badgeEarned": "Badge Earned!",
       "keepGoing": "Keep going!"
+    },
+    "closing": {
+      "title": "Ready to start your VR journey?",
+      "description": "Begin with the fundamentals and build your confidence step by step. Each module is designed for educators like you.",
+      "cta": "Start the first module"
     }
   },
   "docs": {

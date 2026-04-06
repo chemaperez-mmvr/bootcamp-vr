@@ -1377,6 +1377,11 @@
       "moduleComplete": "¡Módulo Completado!",
       "badgeEarned": "¡Insignia Obtenida!",
       "keepGoing": "¡Sigue así!"
+    },
+    "closing": {
+      "title": "¿Listo para empezar tu camino en VR?",
+      "description": "Comienza con los fundamentos y desarrolla tu confianza paso a paso. Cada módulo está diseñado para educadores como tú.",
+      "cta": "Empezar el primer módulo"
     }
   },
   "docs": {

@@ -563,6 +563,14 @@ input:focus-visible,
     opacity: 1 !important;
     transform: none !important;
   }
+
+  .animate-bounce {
+    animation: none !important;
+  }
+
+  .timeline-flow-pulse {
+    animation: none !important;
+  }
 }
 
 /* =============================================
