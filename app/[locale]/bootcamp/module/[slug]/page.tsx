@@ -12,7 +12,7 @@ import { Header } from "../../../../components/Header";
 import { Footer } from "../../../../components/Footer";
 import { bootcampCatalog, getBootcampModuleBySlug } from "@/app/bootcamp/catalog";
 import { BootcampModuleClient } from "../../../../components/BootcampModuleClient";
-import { CelebrationProvider } from "../../../../components/Celebrations";
+
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -68,9 +68,7 @@ export default async function BootcampModulePage({ params }: Props) {
       <Header />
       <main id="main-content" tabIndex={-1} className="flex-1 pt-10 sm:pt-12">
         <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-          <CelebrationProvider>
-            <BootcampModuleClient module={module} />
-          </CelebrationProvider>
+          <BootcampModuleClient module={module} />
         </div>
       </main>
       <Footer />

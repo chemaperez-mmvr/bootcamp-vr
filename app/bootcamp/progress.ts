@@ -1,6 +1,9 @@
 import { bootcampCatalog } from "./catalog";
+import { getQuizForModule } from "./quizzes";
+import { hasPassedQuiz } from "./quiz-progress";
 
 const BOOTCAMP_PROGRESS_STORAGE_KEY = "vr-education-hub:bootcamp-progress:v1";
+const OVERVIEW_VISITED_KEY = "vr-education-hub:overview-visited:v1";
 
 type ProgressData = {
   completedLessons: Record<string, true>;
@@ -54,6 +57,22 @@ export function setLessonCompleted(moduleSlug: string, lessonId: string, complet
   saveProgress(progress);
 }
 
+/* ------------------------------------------------------------------ */
+/*  Step-based progress (overview → tour? → content → quiz? → done)   */
+/* ------------------------------------------------------------------ */
+
+function isOverviewVisitedLocal(moduleSlug: string): boolean {
+  if (!canUseStorage()) return false;
+  try {
+    const raw = window.localStorage.getItem(OVERVIEW_VISITED_KEY);
+    if (!raw) return false;
+    const data = JSON.parse(raw) as Record<string, boolean>;
+    return Boolean(data[moduleSlug]);
+  } catch {
+    return false;
+  }
+}
+
 export function getModuleProgress(moduleSlug: string): {
   completed: number;
   total: number;
@@ -64,11 +83,33 @@ export function getModuleProgress(moduleSlug: string): {
   if (!module) {
     return { completed: 0, total: 0, status: "not_started", percent: 0 };
   }
-  const total = module.lessons.length;
-  const completed = module.lessons.reduce(
-    (acc, lesson) => acc + (isLessonCompleted(module.slug, lesson.id) ? 1 : 0),
-    0
-  );
+
+  const milestones: boolean[] = [];
+
+  // 1. Overview visited
+  milestones.push(isOverviewVisitedLocal(moduleSlug));
+
+  // 2. Tour completed (if module has a tour lesson)
+  const tourLesson = module.lessons.find((l) => l.type === "tour");
+  if (tourLesson) {
+    milestones.push(isLessonCompleted(moduleSlug, tourLesson.id));
+  }
+
+  // 3. Content completed (all non-tour lessons done)
+  const contentLessons = module.lessons.filter((l) => l.type !== "tour");
+  const contentDone =
+    contentLessons.length > 0 &&
+    contentLessons.every((l) => isLessonCompleted(moduleSlug, l.id));
+  milestones.push(contentDone);
+
+  // 4. Quiz passed (if module has a quiz)
+  const quiz = getQuizForModule(moduleSlug);
+  if (quiz) {
+    milestones.push(hasPassedQuiz(moduleSlug));
+  }
+
+  const total = milestones.length;
+  const completed = milestones.filter(Boolean).length;
   const status =
     completed === 0 ? "not_started" : completed >= total ? "completed" : "in_progress";
   const percent = total === 0 ? 0 : Math.round((completed / total) * 100);
@@ -80,14 +121,15 @@ export function getGlobalProgress(): {
   total: number;
   percent: number;
 } {
-  const allLessons = bootcampCatalog.flatMap((module) =>
-    module.lessons.map((lesson) => ({ moduleSlug: module.slug, lessonId: lesson.id }))
-  );
-  const total = allLessons.length;
-  const completed = allLessons.reduce(
-    (acc, lesson) => acc + (isLessonCompleted(lesson.moduleSlug, lesson.lessonId) ? 1 : 0),
-    0
-  );
-  const percent = total === 0 ? 0 : Math.round((completed / total) * 100);
-  return { completed, total, percent };
+  let totalSteps = 0;
+  let completedSteps = 0;
+
+  for (const module of bootcampCatalog) {
+    const mp = getModuleProgress(module.slug);
+    totalSteps += mp.total;
+    completedSteps += mp.completed;
+  }
+
+  const percent = totalSteps === 0 ? 0 : Math.round((completedSteps / totalSteps) * 100);
+  return { completed: completedSteps, total: totalSteps, percent };
 }

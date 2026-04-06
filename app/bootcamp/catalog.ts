@@ -20,6 +20,10 @@ export type BootcampModule = {
   titleKey: string;
   descriptionKey: string;
   documentationModuleSlug: string;
+  /** Optional hero image path (relative to /public). Falls back to gradient. */
+  heroImage?: string;
+  /** Whether the module content is ready and accessible. */
+  enabled: boolean;
   lessons: BootcampLesson[];
 };
 
@@ -64,39 +68,70 @@ function buildModuleLessons(module: DocumentationModule): BootcampLesson[] {
   }));
 }
 
-export const bootcampCatalog: BootcampModule[] = documentationModules.map((module) => {
-  const lessons = buildModuleLessons(module);
+/** Slugs of modules currently enabled in the bootcamp (added incrementally). */
+const enabledBootcampSlugs = new Set([
+  "basic-foundations", // M0
+]);
 
-  if (module.slug === "getting-vr-ready") {
-    const tourSectionId = lessons[0]?.sectionId ?? "";
-    lessons.unshift({
-      id: "tour-quest3",
-      type: "tour",
-      titleKey: "tourLesson.title",
-      descriptionKey: "tourLesson.description",
-      durationMin: 6,
-      sectionId: tourSectionId,
-    });
+/** All modules shown in the bootcamp timeline (enabled + upcoming placeholders). */
+const visibleBootcampSlugs = new Set([
+  "basic-foundations",             // M0
+  "getting-vr-ready",             // M1
+  "designing-meaningful-learning", // M2
+  "classroom-implementation",      // M3
+  "safety-wellbeing-accessibility",// M4
+  "briefing-and-debriefing",       // M5
+  "solving-common-vr-problems",    // M6
+  "vr-educational-apps",           // M7
+]);
 
-    // Boss level mission — integrating final challenge
-    lessons.push({
-      id: "boss-full-prep",
-      type: "practice",
-      titleKey: "wizardMissions.fullPrep.title",
-      descriptionKey: "wizardMissions.fullPrep.description",
-      durationMin: 15,
-      sectionId: "full-prep-boss",
-    });
-  }
+export const bootcampCatalog: BootcampModule[] = documentationModules
+  .filter((module) => visibleBootcampSlugs.has(module.slug))
+  .map((module) => {
+    const lessons = buildModuleLessons(module);
 
-  return {
-    slug: module.slug,
-    titleKey: module.titleKey,
-    descriptionKey: module.descriptionKey,
-    documentationModuleSlug: module.slug,
-    lessons,
-  };
-});
+    if (module.slug === "getting-vr-ready") {
+      const tourSectionId = lessons[0]?.sectionId ?? "";
+      lessons.unshift({
+        id: "tour-quest3",
+        type: "tour",
+        titleKey: "tourLesson.title",
+        descriptionKey: "tourLesson.description",
+        durationMin: 6,
+        sectionId: tourSectionId,
+      });
+
+      lessons.push({
+        id: "boss-full-prep",
+        type: "practice",
+        titleKey: "wizardMissions.fullPrep.title",
+        descriptionKey: "wizardMissions.fullPrep.description",
+        durationMin: 15,
+        sectionId: "full-prep-boss",
+      });
+    }
+
+    const heroImages: Record<string, string> = {
+      "basic-foundations": "/images/vr-classroom-student-headset.jpg",
+      "getting-vr-ready": "/images/meta-quest-3-components.png",
+      "designing-meaningful-learning": "/images/learning-pyramid-see-vs-do.jpg",
+      "classroom-implementation": "/images/vr-use-cases-grid.jpg",
+      "safety-wellbeing-accessibility": "/images/quest-3-ipd.jpg",
+      "briefing-and-debriefing": "/images/student-ar-glasses.jpg",
+      "solving-common-vr-problems": "/images/standalone-vs-pc-vr.jpg",
+      "vr-educational-apps": "/images/uses-ar.jpg",
+    };
+
+    return {
+      slug: module.slug,
+      titleKey: module.titleKey,
+      descriptionKey: module.descriptionKey,
+      documentationModuleSlug: module.slug,
+      heroImage: heroImages[module.slug],
+      enabled: enabledBootcampSlugs.has(module.slug),
+      lessons,
+    };
+  });
 
 export function getBootcampModuleBySlug(slug: string): BootcampModule | undefined {
   return bootcampCatalog.find((module) => module.slug === slug);

@@ -367,15 +367,7 @@ input:focus-visible,
   animation-delay: 1.2s;
 }
 
-.bootcamp-module-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.bootcamp-module-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 28px -16px rgba(15, 23, 42, 0.35);
-  border-color: rgba(20, 184, 166, 0.4);
-}
+/* (bootcamp-module-card removed — replaced by timeline card layout) */
 
 /* Resaltado al navegar a una ancla: parpadeo + se mantiene hasta interacci?n */
 @keyframes anchor-highlight-blink {
@@ -469,6 +461,16 @@ input:focus-visible,
   animation: wizard-encourage 1.5s ease-out forwards;
 }
 
+/* Insight emphasis pulse (micro-check retry) */
+@keyframes insight-emphasis-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+  50% { box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.3); }
+}
+
+.animate-insight-emphasis {
+  animation: insight-emphasis-pulse 1.5s ease-in-out 2;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -542,5 +544,153 @@ input:focus-visible,
   .animate-wizard-encourage {
     animation: none !important;
     opacity: 1 !important;
+  }
+
+  .animate-insight-emphasis {
+    animation: none !important;
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.3) !important;
+  }
+
+  .timeline-pulse {
+    animation: none !important;
+  }
+
+  .timeline-node-active {
+    animation: none !important;
+  }
+
+  .timeline-card-enter {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* =============================================
+   Vertical Timeline with Animated Pulse Effects
+   ============================================= */
+
+/* timeline-line — the vertical line of the timeline */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  top: 0;
+  bottom: 0;
+  background: #e5e7eb; /* gray-200 */
+}
+
+@media (max-width: 767px) {
+  .timeline-line {
+    left: 20px;
+  }
+}
+
+/* timeline-line-progress — the filled/completed portion overlaid on the line */
+.timeline-line-progress {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  top: 0;
+  background: linear-gradient(to bottom, #14b8a6, #0d9488); /* teal-500 to teal-600 */
+  transition: height 0.6s ease;
+}
+
+@media (max-width: 767px) {
+  .timeline-line-progress {
+    left: 20px;
+  }
+}
+
+/* timeline-pulse — subtle glowing pulse on the progress line */
+.timeline-pulse {
+  animation: timelinePulse 2.5s ease-in-out infinite;
+}
+
+@keyframes timelinePulse {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(20, 184, 166, 0.3);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(20, 184, 166, 0.6), 0 0 24px rgba(20, 184, 166, 0.2);
+    opacity: 0.9;
+  }
+}
+
+/* timeline-node — base circle for timeline nodes */
+.timeline-node {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+/* timeline-node-active — pulsing ring on the active/in-progress node */
+.timeline-node-active {
+  animation: nodeActivePulse 2s ease-in-out infinite;
+}
+
+@keyframes nodeActivePulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(20, 184, 166, 0);
+  }
+}
+
+/* timeline-card — hover animation for module cards */
+.timeline-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-2px);
+}
+
+/* timeline-connector — horizontal line connecting node to card */
+.timeline-connector {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  background: #e5e7eb;
+  width: 24px;
+}
+
+.timeline-connector-completed {
+  background: linear-gradient(to right, #14b8a6, #0d9488);
+}
+
+.timeline-connector-left {
+  right: -24px;
+}
+
+.timeline-connector-right {
+  left: -24px;
+}
+
+/* Scroll-driven reveal: transform & opacity set inline via JS */
+.timeline-card-enter {
+  will-change: transform, opacity;
+}
+
+/* Flow energy pulse — bright dash traveling along the filled path.
+   Animation is handled by SVG <animate> (not CSS keyframes) to avoid
+   browser interpolation issues with calc(var()) in stroke-dashoffset. */
+.timeline-flow-pulse {
+  opacity: 0.9;
+  filter: blur(0.3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-flow-pulse {
+    opacity: 0 !important;
   }
 }

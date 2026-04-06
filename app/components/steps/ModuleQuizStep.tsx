@@ -4,8 +4,6 @@ import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { getQuizForModule, calculateQuizScore } from "@/app/bootcamp/quizzes";
 import { saveQuizAttempt, getQuizAttempts } from "@/app/bootcamp/quiz-progress";
-import { addXP, hasXPEvent, XP_VALUES } from "@/app/bootcamp/xp";
-import { useCelebration } from "@/app/components/Celebrations";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -16,11 +14,6 @@ type ScoreResult = {
   total: number;
   percent: number;
   passed: boolean;
-};
-
-type XPBreakdown = {
-  label: string;
-  xp: number;
 };
 
 /* ------------------------------------------------------------------ */
@@ -69,8 +62,6 @@ export function ModuleQuizStep({
 }) {
   const t = useTranslations("bootcamp");
   const quiz = useMemo(() => getQuizForModule(moduleSlug), [moduleSlug]);
-  const { fireConfetti, showXPGain } = useCelebration();
-
   // State
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -82,8 +73,6 @@ export function ModuleQuizStep({
   const [expandedQuestions, setExpandedQuestions] = useState<Set<string>>(
     new Set()
   );
-  const [xpEarned, setXpEarned] = useState<XPBreakdown[]>([]);
-
   const totalQuestions = quiz?.questions.length ?? 0;
   const isSummary = currentIndex >= totalQuestions;
   const currentQuestion = quiz?.questions[currentIndex] ?? null;
@@ -117,47 +106,6 @@ export function ModuleQuizStep({
         passed: scoreResult.passed,
         attemptedAt: new Date().toISOString(),
       });
-
-      // XP awards
-      const earned: XPBreakdown[] = [];
-      let totalXpGained = 0;
-
-      // Always award quiz_attempt
-      const attemptResult = addXP("quiz_attempt", moduleSlug);
-      earned.push({ label: t("quizStep.xpAttempt"), xp: XP_VALUES.quiz_attempt });
-      totalXpGained += attemptResult.xpGained;
-
-      if (scoreResult.passed) {
-        if (!hasXPEvent("quiz_pass", moduleSlug)) {
-          const passResult = addXP("quiz_pass", moduleSlug);
-          earned.push({ label: t("quizStep.xpPass"), xp: XP_VALUES.quiz_pass });
-          totalXpGained += passResult.xpGained;
-        }
-
-        if (scoreResult.percent === 100 && !hasXPEvent("perfect_quiz", moduleSlug)) {
-          const perfectResult = addXP("perfect_quiz", moduleSlug);
-          earned.push({ label: t("quizStep.xpPerfect"), xp: XP_VALUES.perfect_quiz });
-          totalXpGained += perfectResult.xpGained;
-        }
-
-        // first_try_pass: attemptCount was already incremented above, so check if it's now 1
-        const currentAttempts = getQuizAttempts(moduleSlug).length;
-        if (currentAttempts === 1 && !hasXPEvent("first_try_pass", moduleSlug)) {
-          const firstTryResult = addXP("first_try_pass", moduleSlug);
-          earned.push({ label: t("quizStep.xpFirstTry"), xp: XP_VALUES.first_try_pass });
-          totalXpGained += firstTryResult.xpGained;
-        }
-
-        // Fire confetti on pass
-        setTimeout(() => {
-          fireConfetti();
-          if (totalXpGained > 0) showXPGain(totalXpGained);
-        }, 600);
-      } else if (totalXpGained > 0) {
-        setTimeout(() => showXPGain(totalXpGained), 400);
-      }
-
-      setXpEarned(earned);
     }
 
     setCurrentIndex(nextIndex);
@@ -166,9 +114,6 @@ export function ModuleQuizStep({
     totalQuestions,
     answers,
     moduleSlug,
-    t,
-    fireConfetti,
-    showXPGain,
   ]);
 
   const handleRetry = useCallback(() => {
@@ -177,7 +122,6 @@ export function ModuleQuizStep({
     setResult(null);
     setCurrentIndex(0);
     setExpandedQuestions(new Set());
-    setXpEarned([]);
   }, []);
 
   const toggleExpanded = useCallback((questionId: string) => {
@@ -245,8 +189,7 @@ export function ModuleQuizStep({
           <div key={currentIndex} className="animate-content-enter">
             {/* Judgment badge */}
             {isJudgment && (
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
-                <span>🏫</span>
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
                 {t("quizStep.judgmentScenario")}
               </div>
             )}
@@ -342,12 +285,9 @@ export function ModuleQuizStep({
             {/* Explanation (shown after reveal) */}
             {revealed && currentQuestion.explanationKey && (
               <div className="mt-4 rounded-xl bg-blue-50 border border-blue-200 p-4 animate-content-enter">
-                <div className="flex gap-2">
-                  <span className="text-lg shrink-0">💡</span>
-                  <p className="text-sm text-blue-800 leading-relaxed">
-                    {t(currentQuestion.explanationKey)}
-                  </p>
-                </div>
+                <p className="text-sm text-blue-800 leading-relaxed">
+                  {t(currentQuestion.explanationKey)}
+                </p>
               </div>
             )}
 
@@ -382,7 +322,6 @@ export function ModuleQuizStep({
         quiz={quiz}
         result={result}
         answers={answers}
-        xpEarned={xpEarned}
         expandedQuestions={expandedQuestions}
         toggleExpanded={toggleExpanded}
         onRetry={handleRetry}
@@ -404,7 +343,6 @@ function SummaryScreen({
   quiz,
   result,
   answers,
-  xpEarned,
   expandedQuestions,
   toggleExpanded,
   onRetry,
@@ -415,7 +353,6 @@ function SummaryScreen({
   quiz: NonNullable<ReturnType<typeof getQuizForModule>>;
   result: ScoreResult;
   answers: Record<string, string>;
-  xpEarned: XPBreakdown[];
   expandedQuestions: Set<string>;
   toggleExpanded: (id: string) => void;
   onRetry: () => void;
@@ -424,7 +361,6 @@ function SummaryScreen({
   attemptCount: number;
 }) {
   const displayPercent = useCountUp(result.percent, 1000);
-  const totalXP = xpEarned.reduce((sum, e) => sum + e.xp, 0);
 
   return (
     <div className="space-y-4 animate-content-enter">
@@ -452,13 +388,11 @@ function SummaryScreen({
           key="summary"
           className="animate-content-enter text-center py-6"
         >
-          <div className="text-6xl mb-2">
-            {result.passed ? "🎉" : "📝"}
-          </div>
           <div
             className={`text-7xl sm:text-8xl font-black tabular-nums mb-2 ${
               result.passed ? "text-green-500" : "text-red-500"
             }`}
+            aria-label={`${displayPercent}% — ${result.passed ? t("quizStep.passTitle") : t("quizStep.failTitle")}`}
           >
             {displayPercent}%
           </div>
@@ -479,40 +413,6 @@ function SummaryScreen({
             })}
           </p>
         </div>
-
-        {/* XP earned */}
-        {xpEarned.length > 0 && (
-          <div className="rounded-xl bg-amber-50 border border-amber-200 p-4 mb-6">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">⚡</span>
-              <span className="text-sm font-bold text-amber-800">
-                {t("quizStep.xpEarned")}
-              </span>
-            </div>
-            <div className="space-y-1">
-              {xpEarned.map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-between text-sm"
-                >
-                  <span className="text-amber-700">{item.label}</span>
-                  <span className="font-semibold text-amber-900">
-                    +{item.xp} XP
-                  </span>
-                </div>
-              ))}
-              {xpEarned.length > 1 && (
-                <>
-                  <div className="border-t border-amber-200 my-1" />
-                  <div className="flex items-center justify-between text-sm font-bold">
-                    <span className="text-amber-800">{t("quizStep.xpTotal")}</span>
-                    <span className="text-amber-900">+{totalXP} XP</span>
-                  </div>
-                </>
-              )}
-            </div>
-          </div>
-        )}
 
         {/* Question breakdown */}
         <div className="mb-6">
@@ -596,14 +496,9 @@ function SummaryScreen({
                         {/* Explanation */}
                         {question.explanationKey && (
                           <div className="rounded-lg bg-blue-50 border border-blue-200 p-3 mt-2">
-                            <div className="flex gap-2">
-                              <span className="text-sm shrink-0">
-                                💡
-                              </span>
-                              <p className="text-xs text-blue-800 leading-relaxed">
-                                {t(question.explanationKey)}
-                              </p>
-                            </div>
+                            <p className="text-xs text-blue-800 leading-relaxed">
+                              {t(question.explanationKey)}
+                            </p>
                           </div>
                         )}
                       </div>

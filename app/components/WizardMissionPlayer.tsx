@@ -6,43 +6,17 @@ import type {
   WizardMissionDef,
   WizardStep,
   WizardChoice,
-  WizardStepFeedbackTone,
 } from "@/app/bootcamp/wizard-types";
 import {
   getWizardProgress,
   saveWizardStepResult,
   completeWizardMission,
 } from "@/app/bootcamp/wizard-progress";
-import { addXP, hasXPEvent } from "@/app/bootcamp/xp";
-import { useCelebration } from "@/app/components/Celebrations";
-
-/* ------------------------------------------------------------------ */
-/*  Encouraging messages (Duolingo-style)                              */
-/* ------------------------------------------------------------------ */
-
-const ENCOURAGE_KEYS = [
-  "wizardMissions.encourage.nice",
-  "wizardMissions.encourage.keepGoing",
-  "wizardMissions.encourage.awesome",
-  "wizardMissions.encourage.almostThere",
-  "wizardMissions.encourage.greatJob",
-];
-
-/* ------------------------------------------------------------------ */
-/*  Tone styling map                                                   */
-/* ------------------------------------------------------------------ */
-
-const TONE_STYLES: Record<WizardStepFeedbackTone, { border: string; bg: string; text: string; icon: string }> = {
-  correct:   { border: "border-green-300", bg: "bg-green-50", text: "text-green-800", icon: "check-circle" },
-  partial:   { border: "border-amber-300", bg: "bg-amber-50", text: "text-amber-800", icon: "alert-circle" },
-  incorrect: { border: "border-red-300",   bg: "bg-red-50",   text: "text-red-800",   icon: "x-circle" },
-};
-
-const TONE_ICONS: Record<string, string> = {
-  "check-circle": "\u2705",
-  "alert-circle": "\u26A0\uFE0F",
-  "x-circle": "\u274C",
-};
+import {
+  WIZARD_TONE as TONE_STYLES,
+  ENCOURAGE_KEYS,
+  ENCOURAGE_PROBABILITY,
+} from "@/app/bootcamp/tone-styles";
 
 /* ------------------------------------------------------------------ */
 /*  Main Component                                                     */
@@ -60,15 +34,12 @@ export function WizardMissionPlayer({
   onComplete: () => void;
 }) {
   const t = useTranslations("bootcamp");
-  const { showXPGain, fireConfetti } = useCelebration();
 
   const [currentStepIdx, setCurrentStepIdx] = useState(0);
   const [selectedChoiceId, setSelectedChoiceId] = useState<string | null>(null);
   const [feedbackRevealed, setFeedbackRevealed] = useState(false);
   const [confirmed, setConfirmed] = useState(false);
-  const [stepXP, setStepXP] = useState(0);
   const [totalCorrect, setTotalCorrect] = useState(0);
-  const [totalXP, setTotalXP] = useState(0);
   const [missionDone, setMissionDone] = useState(isCompleted);
   const [encourageKey, setEncourageKey] = useState<string | null>(null);
   const hasCompletedRef = useRef(false);
@@ -86,11 +57,9 @@ export function WizardMissionPlayer({
       setMissionDone(true);
       setCurrentStepIdx(totalSteps);
       setTotalCorrect(saved.stepResults.filter((r) => r.wasCorrect).length);
-      setTotalXP(saved.totalXpEarned);
     } else if (saved && saved.currentStepIndex > 0 && saved.currentStepIndex < totalSteps) {
       setCurrentStepIdx(saved.currentStepIndex);
       setTotalCorrect(saved.stepResults.filter((r) => r.wasCorrect).length);
-      setTotalXP(saved.totalXpEarned);
     }
   }, [moduleSlug, mission.missionId, totalSteps]);
 
@@ -113,16 +82,10 @@ export function WizardMissionPlayer({
     if (feedbackRevealed) return;
     setSelectedChoiceId(choice.id);
     setFeedbackRevealed(true);
-    setStepXP(choice.xpBonus);
-
-    if (choice.xpBonus > 0) {
-      showXPGain(choice.xpBonus);
-    }
 
     if (choice.isCorrect) {
       setTotalCorrect((prev) => prev + 1);
     }
-    setTotalXP((prev) => prev + choice.xpBonus);
 
     // Save step result
     saveWizardStepResult(moduleSlug, mission.missionId, {
@@ -131,7 +94,7 @@ export function WizardMissionPlayer({
       wasCorrect: choice.isCorrect,
       xpEarned: choice.xpBonus,
     });
-  }, [feedbackRevealed, moduleSlug, mission.missionId, currentStep, showXPGain]);
+  }, [feedbackRevealed, moduleSlug, mission.missionId, currentStep]);
 
   const handleConfirm = useCallback(() => {
     setConfirmed(true);
@@ -149,33 +112,13 @@ export function WizardMissionPlayer({
       setMissionDone(true);
       setCurrentStepIdx(totalSteps);
 
-      // Award XP
-      const xpKey = `${moduleSlug}:${mission.missionId}`;
-      if (!hasXPEvent("mission_complete", xpKey)) {
-        const result = addXP("mission_complete", xpKey);
-        showXPGain(result.xpGained);
-      }
-
-      // Award boss XP
-      if (mission.isBossLevel && !hasXPEvent("boss_complete", xpKey)) {
-        const result = addXP("boss_complete", xpKey);
-        if (result.xpGained > 0) showXPGain(result.xpGained);
-      }
-
-      // Check for perfect run
-      const choiceSteps = mission.steps.filter((s) => s.stepType === "choice");
-      const perfectRun = totalCorrect === choiceSteps.length && choiceSteps.length > 0;
-      if (perfectRun) {
-        fireConfetti();
-      }
-
       if (!hasCompletedRef.current) {
         hasCompletedRef.current = true;
         onComplete();
       }
     } else {
       // Show encouragement randomly
-      if (Math.random() < 0.4) {
+      if (Math.random() < ENCOURAGE_PROBABILITY) {
         const key = ENCOURAGE_KEYS[Math.floor(Math.random() * ENCOURAGE_KEYS.length)];
         setEncourageKey(key);
         setTimeout(() => setEncourageKey(null), 1500);
@@ -186,7 +129,6 @@ export function WizardMissionPlayer({
       setSelectedChoiceId(null);
       setFeedbackRevealed(false);
       setConfirmed(false);
-      setStepXP(0);
 
       // Focus step card for accessibility
       requestAnimationFrame(() => {
@@ -194,8 +136,8 @@ export function WizardMissionPlayer({
       });
     }
   }, [
-    isLastStep, totalSteps, moduleSlug, mission, totalCorrect,
-    showXPGain, fireConfetti, onComplete,
+    isLastStep, totalSteps, moduleSlug, mission,
+    onComplete,
   ]);
 
   const handleInfoNext = useCallback(() => {
@@ -470,7 +412,7 @@ function ChoiceStepContent({
                   {feedbackRevealed && isSelected && (
                     <div className={`mt-3 rounded-lg border-l-4 p-3 text-sm leading-relaxed animate-wizard-feedback ${style.border} ${style.bg}`}>
                       <div className="flex items-start gap-2">
-                        <span className="text-base shrink-0">{TONE_ICONS[style.icon]}</span>
+                        <span className="text-base shrink-0">{style.icon}</span>
                         <div>
                           <p className={`font-semibold ${style.text} mb-1`}>
                             {t(`wizardMissions.tone.${choice.feedbackTone}`)}

@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { QuestTourInteractive } from "../QuestTourInteractive";
-import { addXP, hasXPEvent, XP_VALUES } from "@/app/bootcamp/xp";
-import { useCelebration } from "@/app/components/Celebrations";
+import { IconCheck } from "@/app/components/icons";
 
 export function ModuleTourStep({
   moduleSlug,
@@ -19,7 +18,6 @@ export function ModuleTourStep({
 }) {
   const t = useTranslations("bootcamp");
   const [justCompleted, setJustCompleted] = useState(false);
-  const { showXPGain } = useCelebration();
 
   function handleTourComplete() {
     if (!isCompleted) {
@@ -28,21 +26,15 @@ export function ModuleTourStep({
     }
   }
 
-  // Award XP when tour is first completed
-  useEffect(() => {
-    if ((isCompleted || justCompleted) && !hasXPEvent("tour_complete", moduleSlug)) {
-      const result = addXP("tour_complete", moduleSlug);
-      showXPGain(result.xpGained);
-    }
-  }, [isCompleted, justCompleted, moduleSlug, showXPGain]);
-
   return (
     <div className="space-y-6 animate-content-enter">
       <QuestTourInteractive onComplete={handleTourComplete} />
 
       {(isCompleted || justCompleted) && (
         <div className="rounded-2xl border border-green-200 bg-green-50 p-6 shadow-sm text-center">
-          <div className="text-3xl mb-2">✓</div>
+          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-500 text-white mx-auto mb-3">
+            <IconCheck className="w-5 h-5" />
+          </div>
           <p className="text-green-800 font-semibold text-lg">{t("tourStep.completedTitle")}</p>
           <p className="text-green-700 text-sm mt-1">{t("tourStep.completedDesc")}</p>
           <button

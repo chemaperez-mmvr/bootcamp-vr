@@ -51,7 +51,7 @@ export default async function BootcampPage({ params }: Props) {
   await getTranslations("bootcamp");
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col">
       <Header />
       <main id="main-content" tabIndex={-1} className="flex-1">
         <BootcampHomeClient />

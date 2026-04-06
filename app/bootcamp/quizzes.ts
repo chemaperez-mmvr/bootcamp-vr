@@ -92,7 +92,7 @@ const moduleQuizzes: Record<string, ModuleQuiz> = {
           { id: "c", labelKey: "quiz.basicFoundations.q5.c" },
           { id: "d", labelKey: "quiz.basicFoundations.q5.d" },
         ],
-        correctOptionId: "c",
+        correctOptionId: "b",
         explanationKey: "quiz.basicFoundations.q5.explanation",
       },
       {
@@ -118,7 +118,7 @@ const moduleQuizzes: Record<string, ModuleQuiz> = {
           { id: "c", labelKey: "quiz.basicFoundations.q7.c" },
           { id: "d", labelKey: "quiz.basicFoundations.q7.d" },
         ],
-        correctOptionId: "c",
+        correctOptionId: "b",
         explanationKey: "quiz.basicFoundations.q7.explanation",
       },
       {

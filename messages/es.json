@@ -78,7 +78,7 @@
     "title": "Bootcamp",
     "metaTitle": "Bootcamp | VR Education Hub",
     "metaDesc": "Ruta de aprendizaje de VR con seguimiento de progreso y actividades prácticas. Domina la integración de la realidad virtual paso a paso.",
-    "subtitle": "Aprende VR con una ruta flexible orientada a docentes. Completa lecciones prácticas a tu ritmo y consulta la documentación cuando necesites profundizar.",
+    "subtitle": "Elige cualquier módulo y empieza a aprender. Explora a tu ritmo y desarrolla tus habilidades de enseñanza con VR paso a paso.",
     "inDevelopment": "Esta sección está en desarrollo. Pronto podrás acceder al itinerario completo de aprendizaje.",
     "backHome": "Volver al inicio",
     "lessonNumber": "Lección {current} de {total}",
@@ -88,7 +88,8 @@
     "status": {
       "not_started": "Sin empezar",
       "in_progress": "En progreso",
-      "completed": "Completado"
+      "completed": "Completado",
+      "coming_soon": "Próximamente"
     },
     "actions": {
       "continue": "Continuar recomendación",
@@ -101,12 +102,23 @@
     },
     "progress": {
       "global": "Progreso global",
-      "module": "{completed}/{total} lecciones completadas ({percent}%)"
+      "module": "{completed}/{total} pasos ({percent}%)"
     },
     "stats": {
       "completed": "Completados",
       "active": "Activos",
-      "minutes": "min"
+      "minutes": "min",
+      "modules": "Módulos"
+    },
+    "taglines": {
+      "basic-foundations": "Entiende qué son la VR, AR y XR — y por qué importan en educación.",
+      "getting-vr-ready": "Configura tu visor, cuentas y espacio del aula desde cero.",
+      "designing-meaningful-learning": "Diseña lecciones de VR que vayan más allá del efecto sorpresa y generen aprendizaje real.",
+      "classroom-implementation": "Dirige una sesión de VR fluida de principio a fin con una clase real.",
+      "safety-wellbeing-accessibility": "Mantén a los estudiantes seguros, cómodos e incluidos durante las experiencias de VR.",
+      "briefing-and-debriefing": "Enmarca las sesiones de VR para que los estudiantes reflexionen, conecten y retengan lo aprendido.",
+      "solving-common-vr-problems": "Resuelve los problemas de VR más frecuentes que enfrentan los docentes en aulas reales.",
+      "vr-educational-apps": "Elige las apps de VR adecuadas para tu asignatura, nivel y objetivos de aprendizaje."
     },
     "filters": {
       "all": "Todos los módulos",
@@ -206,7 +218,10 @@
       }
     },
     "steps": {
+      "navigation": "Pasos del módulo",
       "overview": "Resumen",
+      "introVideo": "Video Intro",
+      "continueAfterVideo": "Continuar",
       "tour": "Tour",
       "content": "Misiones",
       "learn": "Aprender",
@@ -242,7 +257,7 @@
       "basicFoundations": {
         "video": {
           "title": "Fundamentos de VR, AR y XR",
-          "subtitle": "Mira esta breve introduccion y luego repasa los conceptos clave en las siguientes diapositivas."
+          "subtitle": "Mira esta breve introduccion antes de continuar con el contenido del modulo."
         },
         "s1": {
           "title": "¿Qué es la Realidad Virtual?",
@@ -268,6 +283,345 @@
           "p3": "Educación: excursiones virtuales, simulaciones de laboratorio, aprendizaje inmersivo de idiomas",
           "p4": "Empresa: incorporación, atención al cliente con role-play, gestión de crisis",
           "highlight": "Los mejores usos de VR en educación implican hacer, no solo mirar. Si los alumnos solo observan, no estás aprovechando todo el potencial."
+        },
+        "s4": {
+          "title": "VR, AR y XR — ¿Cuál es la diferencia?",
+          "subtitle": "Saber qué herramienta encaja con cada objetivo de aprendizaje",
+          "p1": "VR (Realidad Virtual) sustituye la realidad por completo — el alumno está dentro de un entorno totalmente digital y no puede ver el mundo físico",
+          "p2": "AR (Realidad Aumentada) añade elementos digitales sobre el mundo real — el alumno sigue viendo el entorno físico a su alrededor",
+          "p3": "XR (Realidad Extendida) es el término paraguas que engloba VR, AR y todo lo intermedio — úsalo cuando la tecnología concreta importa menos que el objetivo de aprendizaje",
+          "highlight": "Regla rápida: ¿El alumno necesita estar DENTRO de una experiencia? → VR. ¿La experiencia necesita AÑADIRSE al mundo real? → AR. ¿No estás seguro? → Piensa en términos de XR."
+        }
+      }
+    },
+    "learningBlocks": {
+      "blockProgress": "Tema {current} de {total}",
+      "scenarioLabel": "Escenario de aula",
+      "scenarioPrompt": "¿Qué harías tú?",
+      "explorePrompt": "Toca cada opción para explorar qué pasaría.",
+      "tapToExplore": "Toca para explorar",
+      "keepExploring": "Explora más opciones para continuar",
+      "continueToInsight": "Ver conceptos clave",
+      "continueToCheck": "Verificación rápida",
+      "continueToNext": "Siguiente tema",
+      "microCheckTitle": "Verificación rápida",
+      "microCheckRetry": "Revisar los conceptos clave",
+      "microCheckCorrect": "¡Correcto!",
+      "microCheckWrong": "No del todo — lee la explicación a continuación",
+      "trueFalseTitle": "¿Verdadero o Falso?",
+      "trueFalseTrue": "Verdadero",
+      "trueFalseFalse": "Falso",
+      "trueFalseCorrect": "¡Correcto!",
+      "trueFalseWrong": "No del todo",
+      "classifyTitle": "Clasifica",
+      "classifyCorrect": "¡Bien hecho — todo clasificado correctamente!",
+      "classifyWrong": "{wrong} de {total} estaban en la categoría equivocada",
+      "classifyItemCorrect": "Correcto",
+      "classifyItemWrong": "Debería ser: {category}",
+      "matchingTitle": "Conecta los pares",
+      "matchingInstruction": "Toca un elemento de cualquier lado, luego su pareja del otro",
+      "matchingWrong": "{wrong} de {total} pares estaban mal — ¡inténtalo de nuevo!",
+      "matchingCorrect": "¡Todos los pares conectados correctamente!",
+      "matchingReset": "Intentar de nuevo",
+      "matchingClearAll": "Borrar todo",
+      "orderingTitle": "Ordena",
+      "orderingInstruction": "Arrastra para reordenar, o toca para intercambiar posiciones",
+      "orderingWrong": "No está en el orden correcto — ¡inténtalo de nuevo!",
+      "orderingCorrect": "¡Orden perfecto!",
+      "orderingReset": "Intentar de nuevo",
+      "exerciseDone": "Continuar",
+      "reviewCarefully": "Presta atención al concepto destacado — está relacionado con lo que fallaste.",
+      "insightReveal": "Revelar",
+      "insightThinkFirst": "Piénsalo primero, luego pulsa para revelar la respuesta",
+      "insightKeyTakeaway": "Conclusión clave",
+      "insightAllRevealed": "¡Todos los conceptos descubiertos!",
+      "allBlocksComplete": "¡Todos los temas cubiertos!",
+      "allBlocksCompleteDesc": "Ahora tienes una base sólida. Veamos cómo aplicas estos conceptos.",
+      "continueToQuiz": "Continuar al quiz",
+      "basicFoundations": {
+        "b1": {
+          "title": "¿Qué es la Realidad Virtual?",
+          "exercise": {
+            "instruction": "Conecta cada descripción con el concepto VR correcto",
+            "left": {
+              "p1": "El alumno no puede ver el aula ni al profesor",
+              "p2": "El mundo físico se sustituye por uno digital",
+              "p3": "El alumno ve un vídeo 360° sin interactuar",
+              "p4": "El alumno realiza experimentos en un laboratorio virtual"
+            },
+            "right": {
+              "p1": "Inmersión total",
+              "p2": "Sustitución del entorno",
+              "p3": "Observación pasiva",
+              "p4": "Participación activa"
+            }
+          },
+          "scenario": {
+            "context": "Un compañero te cuenta: 'Usé VR en mi clase de historia — los alumnos vieron un vídeo 360° de la Roma antigua durante 15 minutos con las gafas puestas.'",
+            "question": "¿Cómo evaluarías este uso de la VR?",
+            "choices": {
+              "a": "Es un buen comienzo — los vídeos 360° hacen que los alumnos se sientan inmersos en el tema",
+              "b": "Es un punto de partida válido, pero el verdadero poder de la VR está en que los alumnos HAGAN cosas e interactúen, no solo en que miren pasivamente",
+              "c": "Eso no es VR en absoluto — la VR solo funciona para asignaturas de ciencias"
+            },
+            "feedback": {
+              "a": "Un vídeo 360° aporta cierta sensación de inmersión, pero sigue siendo observación pasiva. La fortaleza única de la VR es la participación activa — interactuar, tomar decisiones, practicar. Mirar es solo el primer paso.",
+              "b": "Exacto. Un vídeo 360° es observación pasiva. La VR brilla de verdad cuando los alumnos interactúan con el entorno — realizando experimentos, practicando procedimientos, tomando decisiones. La diferencia está entre hacer y mirar.",
+              "c": "La VR funciona en todas las asignaturas — historia, idiomas, formación profesional y más. La distinción clave no es la asignatura, sino si los alumnos participan activamente o miran pasivamente."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Tu directora entra en el aula durante una sesión VR y saluda a un alumno con la mano. El alumno no reacciona en absoluto.",
+              "question": "¿Por qué no responde el alumno?",
+              "choices": {
+                "a": "El alumno está siendo maleducado e ignorando a la directora",
+                "b": "La VR bloquea completamente el mundo real — el alumno genuinamente no puede ver a la directora ni nada del aula",
+                "c": "La cámara de las gafas está apagada"
+              },
+              "feedback": {
+                "a": "No es mala educación — el alumno literalmente no puede ver a la directora. La VR sustituye todo el campo visual por un entorno digital. El aula física es completamente invisible para el alumno.",
+                "b": "Exacto. Este es el núcleo de la VR: el mundo real desaparece por completo. El alumno está dentro de un entorno digital de 360° y no tiene acceso visual al aula física. Por eso la supervisión del profesor es importante — los alumnos no pueden ver posibles peligros.",
+                "c": "No es un problema de cámara. Las gafas VR no muestran el mundo real por diseño — lo sustituyen por un entorno digital. El alumno solo ve el mundo virtual, no el aula."
+              }
+            },
+            "c2": {
+              "context": "Un compañero argumenta: 'Puedo conseguir los mismos resultados de aprendizaje mostrando un vídeo en el proyector del aula. Las gafas VR son solo una pantalla cara.'",
+              "question": "¿Cuál es el fallo fundamental de este argumento?",
+              "choices": {
+                "a": "No hay fallo — la VR y un vídeo proyectado ofrecen la misma experiencia",
+                "b": "En VR, los alumnos están DENTRO de la experiencia sin borde de pantalla y sin aula visible — un proyector les muestra algo, la VR les lleva a algún sitio. La sensación de presencia cambia cómo se involucran.",
+                "c": "La VR tiene mejor resolución que la mayoría de proyectores"
+              },
+              "feedback": {
+                "a": "Hay una diferencia importante. Un proyector muestra contenido en una superficie plana mientras los alumnos están sentados en un aula. La VR elimina el aula por completo — los alumnos sienten que están en otro lugar. Esta sensación de presencia cambia fundamentalmente la implicación y el aprendizaje.",
+                "b": "Esta es la distinción clave. Un proyector añade contenido al aula; la VR sustituye el aula. Cuando los alumnos sienten que están genuinamente presentes en otro lugar — de pie en Marte, dentro de una célula, en un edificio en llamas — se involucran de forma diferente que cuando miran un rectángulo en una pared.",
+                "c": "La resolución no es el punto. Incluso un proyector 8K perfecto mantiene a los alumnos en su aula mirando una imagen plana. La ventaja de la VR es la presencia — estar en otro lugar, rodeado por la experiencia — lo que cambia la profundidad con la que los alumnos se involucran."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": "La VR sustituye completamente el entorno real — el alumno no puede ver el aula",
+              "s1.explanation": "¡Correcto! La VR crea un mundo digital de 360° totalmente inmersivo. El aula física desaparece por completo para el alumno.",
+              "s2": "Un vídeo 360° con gafas es la forma más interactiva de VR",
+              "s2.explanation": "Un vídeo 360° es pasivo — el alumno solo mira. La VR interactiva permite a los alumnos hacer cosas: tocar, moverse, decidir. Mirar no es lo mismo que hacer.",
+              "s3": "En VR, el profesor puede captar la atención del alumno haciéndole señas",
+              "s3.explanation": "El alumno realmente no puede ver al profesor ni el aula. La VR sustituye la realidad por completo — necesitas otras estrategias (señales de audio, tocar el hombro) para captar su atención."
+            }
+          }
+        },
+        "b2": {
+          "title": "Por qué la VR funciona para aprender",
+          "exercise": {
+            "instruction": "Ordena estas actividades de aula de menos efectiva a más efectiva como uso de VR",
+            "scaleStart": "Menos efectiva",
+            "scaleEnd": "Más efectiva",
+            "i1": "Leer una lista de verificación en PDF dentro de las gafas VR",
+            "i2": "Ver un vídeo 360° de una enfermera realizando el procedimiento",
+            "i3": "Ver una demo VR interactiva con pasos narrados",
+            "i4": "Practicar el procedimiento tú mismo con feedback en tiempo real y reintentos ilimitados"
+          },
+          "scenario": {
+            "context": "Estás planificando una sesión VR donde estudiantes de enfermería aprenderán el procedimiento de higiene de manos. Tienes 30 minutos y un set de gafas para la clase.",
+            "question": "¿Qué enfoque aprovecha mejor las fortalezas educativas de la VR?",
+            "choices": {
+              "a": "Mostrar un vídeo VR de una enfermera realizando el procedimiento de higiene de manos para que los alumnos observen la técnica correcta",
+              "b": "Usar una simulación VR donde los alumnos practiquen cada paso — enjabonar, frotar, enjuagar — con feedback en tiempo real y la posibilidad de repetir hasta hacerlo bien",
+              "c": "Mostrar la lista de verificación de higiene de manos como PDF dentro de las gafas VR para que los alumnos la lean en un entorno inmersivo"
+            },
+            "feedback": {
+              "a": "Ver un procedimiento es útil, pero no aprovecha las fortalezas clave de la VR. Los alumnos pueden ver un vídeo en cualquier pantalla. La VR destaca cuando los alumnos practican los pasos por sí mismos en un entorno seguro y repetible.",
+              "b": "Esto es la VR en su mejor momento. Los alumnos siguen un proceso guiado paso a paso, reciben feedback inmediato sobre su técnica y pueden repetir sin consecuencias. Combina las tres fortalezas de la VR: simulación, práctica segura y formación procedimental.",
+              "c": "Leer una lista de verificación no requiere VR — una hoja impresa o una tablet funcionarían igual de bien. El valor de la VR viene de la interacción y la inmersión, no de mostrar texto en un espacio 3D."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Una profesora de química necesita que sus alumnos aprendan a manipular ácido clorhídrico de forma segura. El colegio no puede permitirse el equipo de seguridad para una sesión de laboratorio real con 30 alumnos.",
+              "question": "¿Cómo resuelve la VR el problema de esta profesora?",
+              "choices": {
+                "a": "Los alumnos practican todo el procedimiento de manipulación de ácido en VR — verter, medir, neutralizar — cometiendo errores de forma segura hasta dominar la técnica, sin ningún riesgo químico real",
+                "b": "Los alumnos ven un vídeo VR de un químico manipulando el ácido correctamente",
+                "c": "La VR no puede ayudar aquí — necesitas químicos reales para aprender química"
+              },
+              "feedback": {
+                "a": "Esta es la fortaleza de simulación de la VR. Los alumnos enfrentan escenarios que son peligrosos, costosos o imposibles de recrear de forma segura en la vida real. Cometen errores, ven consecuencias y repiten — todo sin riesgo. Por eso la VR se usa en formación quirúrgica, respuesta a emergencias y manejo de materiales peligrosos.",
+                "b": "Ver — incluso en VR — sigue siendo pasivo. El poder de la VR para escenarios peligrosos está en que los alumnos HACEN el procedimiento ellos mismos. Pueden derramar ácido virtual, ver las consecuencias simuladas y aprender de ello sin que nadie resulte herido.",
+                "c": "La VR está diseñada específicamente para situaciones como esta. Los alumnos practican el procedimiento exacto — verter, medir, neutralizar — en una simulación realista. Desarrollan la memoria muscular y el criterio necesarios antes de tocar químicos reales."
+              }
+            },
+            "c2": {
+              "context": "Un alumno en tu simulacro de evacuación de incendios en VR se pone nervioso, gira en la dirección equivocada y 'falla' la simulación. Parece avergonzado y dice 'La he fastidiado, todos lo han visto.'",
+              "question": "¿Cómo aprovechas este momento?",
+              "choices": {
+                "a": "Pasarlo a otra actividad — la simulación VR claramente le genera demasiado estrés",
+                "b": "Decirle que no se preocupe porque solo es un juego",
+                "c": "Decirle que para esto exactamente practicamos en VR — los errores aquí no tienen consecuencias reales, y puede volver a intentarlo ahora mismo hasta sentirse seguro"
+              },
+              "feedback": {
+                "a": "Evitar el reto elimina la oportunidad de aprendizaje. El punto de la VR es que los alumnos PUEDEN fallar de forma segura. Este alumno acaba de aprender algo valioso sobre cómo reacciona bajo presión — ahora puede practicar hasta hacerlo bien.",
+                "b": "Llamarlo 'solo un juego' resta valor al aprendizaje. La formación en VR SE toma en serio en sanidad, ejército y aviación precisamente porque la práctica es realista. El mensaje clave es: la práctica es real, pero las consecuencias no.",
+                "c": "Así funciona la ventaja del espacio seguro de la VR. En un incendio real, ese giro equivocado podría ser fatal. En VR, es un momento de aprendizaje. El alumno puede reintentar inmediatamente, ganando confianza y competencia mediante la repetición sin ningún peligro real."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": "En VR, un alumno que falla una simulación puede volver a intentarlo sin consecuencias reales",
+              "s1.explanation": "¡Correcto! La repetición segura es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten — los errores no tienen riesgo real.",
+              "s2": "La VR es más efectiva cuando los alumnos ven a un experto realizar un procedimiento",
+              "s2.explanation": "Ver es pasivo. El verdadero poder de la VR es cuando los alumnos HACEN el procedimiento ellos mismos — practicando pasos, tomando decisiones, recibiendo feedback.",
+              "s3": "La repetición en un entorno VR seguro genera confianza y competencia",
+              "s3.explanation": "¡Correcto! Cada reintento refuerza el enfoque correcto. Los alumnos desarrollan memoria muscular y habilidades de toma de decisiones mediante la práctica segura repetida."
+            }
+          }
+        },
+        "b3": {
+          "title": "La VR en el mundo real",
+          "exercise": {
+            "instruction": "Conecta cada aplicación VR con el sector donde se usa",
+            "left": {
+              "p1": "Práctica quirúrgica y triaje de emergencia",
+              "p2": "Excursiones virtuales y simulaciones de laboratorio",
+              "p3": "Operación de equipos y protocolos de seguridad",
+              "p4": "Incorporación y gestión de crisis"
+            },
+            "right": {
+              "p1": "Salud",
+              "p2": "Educación",
+              "p3": "Formación profesional",
+              "p4": "Empresarial"
+            }
+          },
+          "scenario": {
+            "context": "Tu director de centro pregunta: '¿Por qué deberíamos invertir en gafas VR cuando ya tenemos una gran videoteca? Convénceme de que la VR aporta algo que un vídeo no puede.'",
+            "question": "¿Cuál es tu argumento más fuerte?",
+            "choices": {
+              "a": "Las gafas VR son más impresionantes y modernas — a los padres les encantará ver a los alumnos usando tecnología de última generación",
+              "b": "Con VR, los alumnos practican decisiones reales en condiciones realistas — no solo ven un procedimiento, lo realizan. Un vídeo muestra; la VR les deja hacer.",
+              "c": "La VR es tecnología más nueva, así que debe ser más efectiva que el vídeo para aprender"
+            },
+            "feedback": {
+              "a": "Parecer impresionante no es un argumento educativo. Los directivos necesitan oír sobre resultados de aprendizaje, no sobre estética. El valor real de la VR está en lo que los alumnos hacen, no en cómo se ve desde fuera.",
+              "b": "Este es el argumento central. El valor único de la VR es la participación activa — los alumnos practican procedimientos, toman decisiones y experimentan consecuencias en un entorno seguro. El vídeo es pasivo; la VR es activa. Esa es la diferencia que justifica la inversión.",
+              "c": "Más nuevo no significa mejor. Un vídeo bien hecho puede ser excelente para muchos objetivos de aprendizaje. La ventaja de la VR es específica: permite a los alumnos HACER cosas que serían peligrosas, costosas o imposibles en la vida real."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Una directora de formación de un hospital te dice: 'Nuestras enfermeras nuevas necesitan practicar triaje de emergencia — decidir a quién atender primero cuando llegan múltiples pacientes a la vez. No podemos practicar esto con pacientes reales.'",
+              "question": "¿Qué hace que la VR sea la herramienta adecuada para esta formación?",
+              "choices": {
+                "a": "La VR puede simular una sala de urgencias realista donde las enfermeras toman decisiones de triaje bajo presión, ven las consecuencias de sus elecciones y repiten hasta afilar su criterio — todo sin poner en riesgo a pacientes reales",
+                "b": "La VR puede mostrar a las enfermeras un vídeo de médicos experimentados realizando triaje",
+                "c": "Un caso de estudio escrito funcionaría igual de bien para practicar la toma de decisiones"
+              },
+              "feedback": {
+                "a": "Este es un caso de uso perfecto para VR. La formación sanitaria es una de las aplicaciones VR más establecidas — desde práctica quirúrgica hasta respuesta a emergencias. La clave: las enfermeras TOMAN decisiones bajo presión realista, ven resultados y repiten. Ningún libro de texto ni vídeo proporciona ese aprendizaje activo basado en consecuencias.",
+                "b": "Ver a otros hacer triaje es útil para el aprendizaje inicial, pero el valor único de la VR es que las enfermeras tomen las decisiones ellas mismas. La presión, las consecuencias, la repetición — eso es lo que construye criterio real.",
+                "c": "Los casos de estudio escritos son valiosos pero carecen de presión temporal, estrés emocional y la experiencia corporal de estar en la sala. La VR añade el contexto realista que hace que la práctica de toma de decisiones se sienta genuina."
+              }
+            },
+            "c2": {
+              "context": "Estás evaluando dos propuestas VR para una clase de ciencias:\n\nPropuesta A: Los alumnos ven un precioso documental 360° sobre vida marina durante 20 minutos.\nPropuesta B: Los alumnos bucean virtualmente, recogen muestras de agua, analizan niveles de pH e identifican especies — completando tareas y tomando decisiones durante toda la sesión.",
+              "question": "¿Qué propuesta aprovecha mejor el potencial de la VR, y por qué?",
+              "choices": {
+                "a": "La Propuesta A — los efectos visuales bonitos harán que los alumnos amen la ciencia",
+                "b": "Ambas son igual de buenas porque ambas usan gafas",
+                "c": "La Propuesta B — los alumnos están HACIENDO cosas (recoger, analizar, identificar), no solo mirando. La ventaja única de la VR es la participación activa, no la visualización pasiva"
+              },
+              "feedback": {
+                "a": "Los efectos visuales bonitos pueden inspirar a los alumnos, pero un vídeo 360° podría mostrarse en una pantalla con un impacto similar. El valor único de la VR no es la calidad visual — es la interactividad. Cuando los alumnos recogen, analizan y deciden, aprenden activamente.",
+                "b": "Usar gafas no significa automáticamente usar bien la VR. La Propuesta A es esencialmente una película elegante — los alumnos observan pasivamente. La Propuesta B tiene a los alumnos tomando decisiones y completando tareas. Las gafas son las mismas; el aprendizaje es completamente diferente.",
+                "c": "Esta es la regla de oro de la VR en educación: hacer supera a mirar. La Propuesta B aprovecha lo que hace única a la VR — los alumnos interactúan con el entorno, toman decisiones, ven resultados. Si los alumnos solo observan, podrías conseguir resultados similares con un vídeo."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada actividad: ¿aprovecha todo el potencial de la VR o es observación pasiva?",
+              "cat": {
+                "full": "Potencial completo",
+                "passive": "Observación pasiva"
+              },
+              "i1": "Los alumnos realizan un experimento virtual de química — midiendo, mezclando, observando reacciones",
+              "i2": "Los alumnos ven un documental 360° sobre vida marina",
+              "i3": "Enfermeras practican triaje de emergencia — tomando decisiones bajo presión con consecuencias",
+              "i4": "Los alumnos escuchan una clase grabada en un aula virtual"
+            }
+          }
+        },
+        "b4": {
+          "title": "VR, AR y XR — Elegir la herramienta correcta",
+          "exercise": {
+            "instruction": "Ordena estos escenarios de 'más AR' (añade al mundo real) a 'más VR' (sustituye el mundo real)",
+            "scaleStart": "Más AR",
+            "scaleEnd": "Más VR",
+            "i1": "Las tablets muestran etiquetas 3D sobre un esqueleto real en la mesa",
+            "i2": "Los alumnos escanean un libro y aparece un castillo 3D sobre él",
+            "i3": "Instrucciones de reparación superpuestas en un motor real via gafas AR",
+            "i4": "Los alumnos exploran el interior de una célula humana con gafas VR",
+            "i5": "Los alumnos son transportados al interior de un volcán — el aula desaparece"
+          },
+          "scenario": {
+            "context": "Un compañero describe tres escenarios de aula y te pide consejo:\n\n1. Alumnos de biología usan tablets para ver etiquetas 3D y animaciones superpuestas sobre un modelo anatómico físico\n2. Los alumnos se ponen las gafas y son transportados al interior de un volcán para observar el flujo de magma\n3. Alumnos de historia escanean una página del libro de texto y aparece un castillo 3D sobre su mesa",
+            "question": "¿Cuáles son VR y cuáles son AR?",
+            "choices": {
+              "a": "Los escenarios 1 y 3 son AR (añaden digital al mundo real), el escenario 2 es VR (sustituye la realidad por un entorno digital)",
+              "b": "Los tres son VR porque todos usan contenido digital",
+              "c": "Los escenarios 1 y 3 son VR, el escenario 2 es AR"
+            },
+            "feedback": {
+              "a": "Exactamente. En los escenarios 1 y 3, los alumnos siguen viendo el mundo real — el contenido digital se añade encima (eso es AR). En el escenario 2, los alumnos son transportados a un entorno completamente diferente y no pueden ver el aula (eso es VR). La pregunta clave: ¿el mundo real sigue visible?",
+              "b": "Usar contenido digital no convierte algo en VR automáticamente. La diferencia clave es si el mundo real sigue visible (AR) o se sustituye por completo (VR). Los escenarios 1 y 3 añaden elementos digitales al mundo real — eso es AR.",
+              "c": "Es al revés. En los escenarios 1 y 3, los alumnos siguen viendo el mundo real con superposiciones digitales — eso es AR. En el escenario 2, el alumno está completamente dentro de un volcán digital — eso es VR. Recuerda: VR sustituye, AR añade."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Una profesora de ciencias quiere que los alumnos vean animaciones 3D etiquetadas del sistema digestivo superpuestas sobre un modelo de torso físico que está en la mesa. Los alumnos usan tablets para apuntar al modelo y ver los órganos animarse.",
+              "question": "¿Esto es VR o AR?",
+              "choices": {
+                "a": "Esto es AR — el mundo real (el modelo de torso, la mesa, el aula) sigue visible, y el contenido digital (etiquetas 3D, animaciones) se añade encima",
+                "b": "Esto es VR — cualquier uso de contenido digital 3D es Realidad Virtual",
+                "c": "Esto es otra cosa completamente diferente — es solo una superposición de vídeo"
+              },
+              "feedback": {
+                "a": "Correcto. Esto es Realidad Aumentada. Los alumnos siguen viendo el aula real y el modelo físico — las animaciones digitales se añaden ENCIMA de la realidad. La clave: el mundo real sigue visible y sirve como ancla para el contenido digital.",
+                "b": "No todo el contenido digital 3D es VR. La distinción clave: ¿pueden los alumnos seguir viendo el mundo real? Aquí ven el modelo real Y las superposiciones digitales. Eso es AR (añadir a la realidad), no VR (sustituir la realidad).",
+                "c": "Esto es AR (Realidad Aumentada) — una tecnología bien establecida usada en educación. El contenido digital está anclado espacialmente a un objeto real, no es solo un vídeo reproduciéndose en una pantalla."
+              }
+            },
+            "c2": {
+              "context": "Tu colegio tiene presupuesto para UNA inversión tecnológica. Un compañero pregunta: '¿Compramos gafas VR o tablets AR?' El currículo incluye tanto trabajo práctico de laboratorio (donde los alumnos necesitan ver equipos reales) COMO experiencias inmersivas (excursiones virtuales, simulaciones).",
+              "question": "¿Cuál es la mejor forma de pensar en esta decisión?",
+              "choices": {
+                "a": "Siempre elegir VR — es más inmersiva e impresionante",
+                "b": "Pensar en términos de XR: empezar por los objetivos de aprendizaje y luego elegir la tecnología que encaje. Laboratorios con equipo real → AR (añadir info al mundo real). Excursiones virtuales y simulaciones → VR (sustituir la realidad). Las necesidades del currículo dictan la herramienta, no al revés.",
+                "c": "Saltarse ambas e invertir en mejores proyectores"
+              },
+              "feedback": {
+                "a": "Más inmersivo no siempre es mejor. Para trabajo práctico de laboratorio donde los alumnos necesitan ver y tocar equipos reales, la VR sería peor — bloquea el mundo real. La herramienta correcta depende del objetivo de aprendizaje, no de cuál es más llamativa.",
+                "b": "Esto es pensar en XR — Realidad Extendida como marco de trabajo. En vez de ser fiel a una tecnología, emparejas la herramienta con el objetivo de aprendizaje. ¿Necesitas que los alumnos estén DENTRO de una experiencia? → VR. ¿Necesitas AÑADIR información a objetos reales? → AR. Este enfoque de objetivo primero evita comprar equipos caros que acumulan polvo.",
+                "c": "Los proyectores son útiles, pero no pueden proporcionar la inmersión de la VR ni la superposición espacial de la AR. La pregunta no es la calidad de pantalla — es si los alumnos necesitan estar dentro de una experiencia (VR) o necesitan información digital superpuesta a la realidad (AR)."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada escenario: ¿es VR o AR?",
+              "cat": {
+                "vr": "VR",
+                "ar": "AR"
+              },
+              "i1": "Los alumnos son transportados al interior de un volcán — no pueden ver el aula",
+              "i2": "Las tablets muestran etiquetas 3D sobre un modelo anatómico real en la mesa",
+              "i3": "Una profesora quiere instrucciones de reparación superpuestas sobre un motor real",
+              "i4": "Los alumnos exploran el interior de una célula humana a través de las gafas",
+              "i5": "Los alumnos escanean una página del libro y aparece un castillo 3D sobre la mesa"
+            }
+          }
         }
       }
     },
@@ -306,7 +660,8 @@
       "bestScore": "Mejor nota",
       "correct": "Correctas",
       "nextModule": "Siguiente: {module}",
-      "upNext": "A continuación"
+      "upNext": "A continuación",
+      "topicsCovered": "Lo que cubriste"
     },
     "stepLocked": "Completa el paso anterior para desbloquear",
     "quiz": {
@@ -344,12 +699,12 @@
           "explanation": "Una de las fortalezas clave de la VR es la repetición segura. Los alumnos pueden practicar procedimientos peligrosos o costosos múltiples veces sin consecuencias reales, ganando confianza y competencia."
         },
         "q5": {
-          "question": "Estás planificando una clase VR donde estudiantes de enfermería practicarán el procedimiento de higiene de manos paso a paso. ¿Qué ventaja de la VR estás aprovechando principalmente?",
-          "a": "Inmersión — los alumnos sienten que están en un hospital real",
-          "b": "Ahorro de costes — no necesitas comprar material físico",
-          "c": "Formación procedimental — los alumnos siguen procesos guiados paso a paso en un entorno controlado, reforzando secuencias correctas mediante la repetición",
-          "d": "Aislamiento del alumno — cada uno trabaja solo sin distracciones",
-          "explanation": "La VR destaca en la formación procedimental. Los alumnos siguen procesos guiados paso a paso, repitiéndolos hasta dominar la secuencia correcta — exactamente lo que requiere la formación en higiene de manos."
+          "question": "Un compañero describe dos actividades: (1) Los alumnos usan tablets para ver etiquetas 3D aparecer sobre un modelo de esqueleto real que está en la mesa. (2) Los alumnos se ponen las gafas y exploran el interior de una célula humana como si caminaran por dentro. ¿Qué tecnologías se están usando?",
+          "a": "Ambas son VR porque ambas usan contenido digital",
+          "b": "La actividad 1 es AR (superposiciones digitales sobre el mundo real), la actividad 2 es VR (sustituye la realidad por un entorno digital)",
+          "c": "La actividad 1 es VR, la actividad 2 es AR",
+          "d": "Ambas son AR porque ambas usan contenido 3D",
+          "explanation": "La AR añade contenido digital sobre el mundo real — los alumnos siguen viendo el esqueleto y el aula. La VR sustituye la realidad por completo — los alumnos están dentro de una célula digital y no pueden ver el aula. La pregunta clave: ¿el mundo real sigue visible?"
         },
         "q6": {
           "question": "Un alumno falla un simulacro de incendio en VR y quiere volver a intentarlo. ¿Cómo deberías responder?",
@@ -360,12 +715,12 @@
           "explanation": "La repetición sin consecuencias es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten hasta sentirse seguros, algo imposible con simulacros reales de emergencia."
         },
         "q7": {
-          "question": "¿Por qué la VR es especialmente adecuada para enseñar procedimientos y protocolos?",
-          "a": "Porque tiene mejor calidad visual que un libro de texto",
-          "b": "Porque los alumnos pueden saltarse los pasos que ya saben",
-          "c": "Porque los alumnos siguen procesos guiados paso a paso en un entorno controlado, reforzando secuencias correctas mediante la repetición práctica",
-          "d": "Porque califica automáticamente el rendimiento del alumno",
-          "explanation": "La VR ofrece un entorno controlado donde los alumnos siguen procesos guiados paso a paso. La combinación de interacción práctica y repetición segura la hace ideal para la formación procedimental."
+          "question": "Quieres que 20 alumnos identifiquen colaborativamente las partes de un motor de coche real mientras ven etiquetas digitales e instrucciones paso a paso superpuestas sobre el motor. ¿Qué tecnología encaja mejor con este objetivo de aprendizaje?",
+          "a": "VR — la inmersión total ayudará a los alumnos a concentrarse en las piezas del motor",
+          "b": "AR — los alumnos necesitan ver y tocar el motor real mientras se añade información digital encima",
+          "c": "Cualquiera de las dos funcionaría igual de bien para este escenario",
+          "d": "Ninguna — un manual impreso es más efectivo",
+          "explanation": "Este escenario requiere colaboración (alumnos trabajando juntos), objetos físicos (el motor real) e información anclada al contexto (etiquetas sobre piezas reales). Estos son exactamente los criterios que hacen que la AR sea más apropiada que la VR. La VR bloquearía la visión del motor real, haciendo imposible trabajar con él."
         },
         "q8": {
           "question": "Un compañero dice: 'Usé VR en mi clase de historia — los alumnos vieron un vídeo 360° de la Roma antigua durante 15 minutos.' ¿Cómo evaluarías este uso de la VR?",

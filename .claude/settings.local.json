@@ -75,7 +75,29 @@
       "Bash(cp \"C:\\\\Users\\\\jeiko\\\\AppData\\\\Local\\\\Temp\\\\meta-docx\\\\extracted\\\\word\\\\media\\\\image6.png\" work-meta-device-linked.png)",
       "Bash(cp \"C:\\\\Users\\\\jeiko\\\\AppData\\\\Local\\\\Temp\\\\meta-docx\\\\extracted\\\\word\\\\media\\\\image8.png\" work-meta-activate-instructions.png)",
       "Bash(npx next:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(rtk next:*)",
+      "Bash(rtk lint:*)",
+      "Bash(timeout 8 cat C:/Users/jeiko/AppData/Local/Temp/claude/C--LTC-bootcamp-vr/48723f5d-c0fd-41ce-bbdf-7a13a99c5647/tasks/blcrffkw9.output)",
+      "Bash(grep -E \"\\\\.\\(tsx|ts\\)$\")",
+      "Bash(rtk npx:*)",
+      "WebFetch(domain:x.com)",
+      "Bash(npx claude-code-templates@latest --skill creative-design/frontend-design)",
+      "Bash(rtk npm:*)",
+      "mcp__blender__search_sketchfab_models",
+      "WebFetch(domain:github.com)",
+      "Bash(npx autoskills:*)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -r \"animate-\" /c/LTC/bootcamp-vr/app/components/steps/*.tsx)",
+      "Bash(grep -r \"aria-\\\\|role=\\\\|tabIndex\" /c/LTC/bootcamp-vr/app/components/steps/*.tsx)",
+      "Bash(xargs cat:*)",
+      "Bash(wc:*)",
+      "Bash(grep -E \"\\\\.\\(ts|tsx|js\\)$\")",
+      "WebFetch(domain:localhost)",
+      "Bash(rtk tsc:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(rtk git:*)"
     ]
   }
 }

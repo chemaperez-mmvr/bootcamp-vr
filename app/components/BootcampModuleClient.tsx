@@ -16,6 +16,7 @@ import {
   getSavedStepIndex,
   saveStepIndex,
   markOverviewVisited,
+  markIntroVideoWatched,
   type ModuleStepDef,
 } from "@/app/bootcamp/steps";
 import { hasPassedQuiz } from "@/app/bootcamp/quiz-progress";
@@ -25,7 +26,10 @@ import { ModuleContentStep } from "./steps/ModuleContentStep";
 import { TheorySliderStep } from "./steps/TheorySliderStep";
 import { ModuleQuizStep } from "./steps/ModuleQuizStep";
 import { ModuleResultsStep } from "./steps/ModuleResultsStep";
-import { getSlidesForModule } from "@/app/bootcamp/slides";
+import { LearningBlockStep } from "./steps/LearningBlockStep";
+import { getSlidesForModule, type VideoSlide } from "@/app/bootcamp/slides";
+import { getLearningBlocksForModule } from "@/app/bootcamp/learning-blocks";
+import { VideoSlideContent } from "./slides/VideoSlideContent";
 
 export function BootcampModuleClient({ module }: { module: BootcampModule }) {
   const t = useTranslations("bootcamp");
@@ -103,43 +107,59 @@ export function BootcampModuleClient({ module }: { module: BootcampModule }) {
     goToStep(currentStep + 1);
   }
 
+  function handleIntroVideoComplete(): void {
+    markIntroVideoWatched(module.slug);
+    goToStep(currentStep + 1);
+  }
+
+  const introVideoSlide = useMemo(
+    () =>
+      getSlidesForModule(module.slug).find(
+        (s) => s.type === "video" && s.videoUrl
+      ) as VideoSlide | undefined,
+    [module.slug]
+  );
+
   const stepDef = steps[currentStep];
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <header className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div>
-            <Link
-              href="/bootcamp"
-              className="inline-flex items-center gap-2 text-sm text-teal-700 hover:text-teal-800"
-            >
-              ← {t("actions.backToBootcamp")}
-            </Link>
-            <h1 className="text-2xl font-bold text-gray-900 mt-2">
-              {tDocs(module.titleKey)}
-            </h1>
-          </div>
-          <p className="text-sm text-gray-600">
-            {t("progress.module", {
-              completed: moduleProgress.completed,
-              total: moduleProgress.total,
-              percent: moduleProgress.percent,
-            })}
-          </p>
-        </div>
-      </header>
+      {/* Header + Step indicator — hidden on overview step */}
+      {stepDef?.type !== "overview" && (
+        <>
+          <header className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div>
+                <Link
+                  href="/bootcamp"
+                  className="inline-flex items-center gap-2 text-sm text-teal-700 hover:text-teal-800"
+                >
+                  ← {t("actions.backToBootcamp")}
+                </Link>
+                <h1 className="text-2xl font-bold text-gray-900 mt-2">
+                  {tDocs(module.titleKey)}
+                </h1>
+              </div>
+              <p className="text-sm text-gray-600">
+                {t("progress.module", {
+                  completed: moduleProgress.completed,
+                  total: moduleProgress.total,
+                  percent: moduleProgress.percent,
+                })}
+              </p>
+            </div>
+          </header>
 
-      {/* Step indicator */}
-      <StepIndicator
-        steps={steps}
-        currentStep={currentStep}
-        completedMap={completedMap}
-        module={module}
-        onStepClick={goToStep}
-        t={t}
-      />
+          <StepIndicator
+            steps={steps}
+            currentStep={currentStep}
+            completedMap={completedMap}
+            module={module}
+            onStepClick={goToStep}
+            t={t}
+          />
+        </>
+      )}
 
       {/* Step content */}
       {stepDef?.type === "overview" && (
@@ -147,6 +167,13 @@ export function BootcampModuleClient({ module }: { module: BootcampModule }) {
           module={module}
           steps={steps}
           onContinue={handleOverviewContinue}
+        />
+      )}
+      {stepDef?.type === "intro-video" && introVideoSlide && (
+        <IntroVideoStep
+          slide={introVideoSlide}
+          onComplete={handleIntroVideoComplete}
+          t={t}
         />
       )}
       {stepDef?.type === "tour" && (
@@ -161,17 +188,30 @@ export function BootcampModuleClient({ module }: { module: BootcampModule }) {
           )}
         />
       )}
-      {stepDef?.type === "content" && theoreticalSlugs.has(module.slug) && (
-        <TheorySliderStep
-          slides={getSlidesForModule(module.slug)}
-          onComplete={() => {
-            module.lessons.forEach((l) => {
-              if (!completedMap[l.id]) onToggleLesson(l.id);
-            });
-            advanceToNext();
-          }}
-        />
-      )}
+      {stepDef?.type === "content" && theoreticalSlugs.has(module.slug) &&
+        (getLearningBlocksForModule(module.slug) ? (
+          <LearningBlockStep
+            moduleSlug={module.slug}
+            blockSet={getLearningBlocksForModule(module.slug)!}
+            slides={getSlidesForModule(module.slug)}
+            onComplete={() => {
+              module.lessons.forEach((l) => {
+                if (!completedMap[l.id]) onToggleLesson(l.id);
+              });
+              advanceToNext();
+            }}
+          />
+        ) : (
+          <TheorySliderStep
+            slides={getSlidesForModule(module.slug)}
+            onComplete={() => {
+              module.lessons.forEach((l) => {
+                if (!completedMap[l.id]) onToggleLesson(l.id);
+              });
+              advanceToNext();
+            }}
+          />
+        ))}
       {stepDef?.type === "content" && !theoreticalSlugs.has(module.slug) && (
         <ModuleContentStep
           module={module}
@@ -187,6 +227,43 @@ export function BootcampModuleClient({ module }: { module: BootcampModule }) {
         />
       )}
       {stepDef?.type === "results" && <ModuleResultsStep module={module} />}
+    </div>
+  );
+}
+
+function IntroVideoStep({
+  slide,
+  onComplete,
+  t,
+}: {
+  slide: import("@/app/bootcamp/slides").VideoSlide;
+  onComplete: () => void;
+  t: ReturnType<typeof useTranslations>;
+}) {
+  const [videoEnded, setVideoEnded] = useState(false);
+
+  return (
+    <div className="space-y-6 animate-content-enter">
+      <VideoSlideContent
+        slide={slide}
+        t={t}
+        onEnded={() => setVideoEnded(true)}
+      />
+      <div className="flex justify-end">
+        <button
+          type="button"
+          onClick={onComplete}
+          disabled={!videoEnded}
+          className={`inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm ${
+            videoEnded
+              ? "text-white bg-teal-600 hover:bg-teal-700"
+              : "text-gray-400 bg-gray-100 cursor-not-allowed"
+          }`}
+        >
+          {t("steps.continueAfterVideo")}
+          <span aria-hidden>→</span>
+        </button>
+      </div>
     </div>
   );
 }
@@ -207,8 +284,8 @@ function StepIndicator({
   t: ReturnType<typeof useTranslations>;
 }) {
   return (
-    <nav className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm overflow-x-auto">
-      <ol className="flex items-center gap-1 min-w-max">
+    <nav aria-label={t("steps.navigation")} className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm overflow-x-auto">
+      <ol className="flex items-center gap-1 sm:min-w-max">
         {steps.map((step, i) => {
           const unlocked = isStepUnlocked(module, steps, i, completedMap);
           const isCurrent = i === currentStep;
@@ -216,7 +293,7 @@ function StepIndicator({
 
           let circleClasses =
             "flex items-center justify-center w-8 h-8 rounded-full text-xs font-bold shrink-0 transition-colors";
-          let labelClasses = "text-xs font-medium whitespace-nowrap transition-colors";
+          let labelClasses = "hidden sm:inline text-xs font-medium whitespace-nowrap transition-colors";
 
           if (isCurrent) {
             circleClasses += " bg-teal-600 text-white";
@@ -238,7 +315,9 @@ function StepIndicator({
                 type="button"
                 onClick={() => unlocked && onStepClick(i)}
                 disabled={!unlocked}
-                className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
+                aria-label={t(step.labelKey)}
+                aria-current={isCurrent ? "step" : undefined}
+                className={`flex items-center gap-2 px-2 sm:px-3 py-2 rounded-lg transition-colors ${
                   unlocked && !isCurrent
                     ? "hover:bg-gray-50 cursor-pointer"
                     : isCurrent
@@ -253,7 +332,7 @@ function StepIndicator({
               </button>
               {i < steps.length - 1 && (
                 <div
-                  className={`w-6 h-0.5 shrink-0 ${
+                  className={`w-4 sm:w-6 h-0.5 shrink-0 ${
                     isPast ? "bg-teal-300" : "bg-gray-200"
                   }`}
                 />

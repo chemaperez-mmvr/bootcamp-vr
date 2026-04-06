@@ -35,7 +35,7 @@ const slidesByModule: Record<string, TheorySlide[]> = {
       type: "video",
       titleKey: "slides.basicFoundations.video.title",
       subtitleKey: "slides.basicFoundations.video.subtitle",
-      videoUrl: undefined, // Replace with actual URL when video is produced
+      videoUrl: "/videos/m0-intro.mp4",
     },
     {
       id: "what-is-vr",
@@ -73,6 +73,18 @@ const slidesByModule: Record<string, TheorySlide[]> = {
         { key: "slides.basicFoundations.s3.p4", icon: "💼" },
       ],
       highlightKey: "slides.basicFoundations.s3.highlight",
+    },
+    {
+      id: "vr-ar-xr",
+      type: "content",
+      titleKey: "slides.basicFoundations.s4.title",
+      subtitleKey: "slides.basicFoundations.s4.subtitle",
+      points: [
+        { key: "slides.basicFoundations.s4.p1", icon: "🥽" },
+        { key: "slides.basicFoundations.s4.p2", icon: "📱" },
+        { key: "slides.basicFoundations.s4.p3", icon: "🌐" },
+      ],
+      highlightKey: "slides.basicFoundations.s4.highlight",
     },
   ],
 };
