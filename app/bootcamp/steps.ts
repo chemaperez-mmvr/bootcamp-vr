@@ -65,8 +65,10 @@ export function isStepUnlocked(
     case "intro-video":
       return isOverviewVisited(module.slug);
 
-    case "tour":
-      return isIntroVideoWatched(module.slug);
+    case "tour": {
+      const hasIntroVideoStep = steps.some(s => s.type === "intro-video");
+      return hasIntroVideoStep ? isIntroVideoWatched(module.slug) : isOverviewVisited(module.slug);
+    }
 
     case "content": {
       if (prevStep.type === "tour") {

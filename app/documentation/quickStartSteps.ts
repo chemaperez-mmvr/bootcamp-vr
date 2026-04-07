@@ -28,27 +28,6 @@ export const quickStartSteps: QuickStartStep[] = [
     moduleSlug: "getting-vr-ready",
     sectionId: "pre-class-checklist",
   },
-  {
-    step: 3,
-    titleKey: "quickStart.step3Title",
-    descKey: "quickStart.step3Desc",
-    moduleSlug: "designing-meaningful-learning",
-    sectionId: "objectives-that-work",
-  },
-  {
-    step: 4,
-    titleKey: "quickStart.step4Title",
-    descKey: "quickStart.step4Desc",
-    moduleSlug: "classroom-implementation",
-    sectionId: "student-briefing",
-  },
-  {
-    step: 5,
-    titleKey: "quickStart.step5Title",
-    descKey: "quickStart.step5Desc",
-    moduleSlug: "safety-wellbeing-accessibility",
-    sectionId: "physical-safety-wellbeing",
-  },
 ];
 
 export const QUICK_START_TOTAL = quickStartSteps.length;

@@ -292,6 +292,48 @@
           "p3": "XR (Realidad Extendida) es el término paraguas que engloba VR, AR y todo lo intermedio — úsalo cuando la tecnología concreta importa menos que el objetivo de aprendizaje",
           "highlight": "Regla rápida: ¿El alumno necesita estar DENTRO de una experiencia? → VR. ¿La experiencia necesita AÑADIRSE al mundo real? → AR. ¿No estás seguro? → Piensa en términos de XR."
         }
+      },
+      "gettingVrReady": {
+        "s1": {
+          "title": "Configuración inicial del Quest 3",
+          "subtitle": "Desembalaje, carga, IPD e idioma — las cuatro cosas que hay que hacer bien antes de cualquier otra cosa",
+          "p1": "Carga las gafas completamente la noche anterior — un Quest 3 tarda unas 2 horas en cargarse desde cero y dura aproximadamente 2 horas de uso activo",
+          "p2": "Ajusta la rueda de IPD (distancia interpupilar) para cada alumno — un IPD incorrecto provoca visión borrosa y dolores de cabeza en minutos",
+          "p3": "Configura el idioma y completa la actualización inicial de firmware — ambas cosas requieren WiFi y pueden tardar 10–20 minutos la primera vez",
+          "highlight": "Unas gafas que no estén cargadas, ajustadas y actualizadas causarán problemas en los primeros cinco minutos de clase. Hazlo una vez, hazlo bien."
+        },
+        "s2": {
+          "title": "Preparación del aula",
+          "subtitle": "La disposición del espacio, el WiFi y los límites de Guardian determinan el éxito o fracaso de una sesión VR",
+          "p1": "Despeja al menos 2×2 metros por puesto de alumno — sillas, mochilas y mesas son peligros invisibles una vez que se ponen las gafas",
+          "p2": "Verifica que el WiFi pueda soportar todas las gafas simultáneamente — un Quest 3 consume 15–30 Mbps en streaming; multiplícalo por el número de gafas de tu clase",
+          "p3": "Dibuja los límites de Guardian en cada puesto antes de la clase — esto evita que los alumnos choquen con paredes, muebles o entre sí",
+          "highlight": "El aula es tu escenario. Si el espacio físico no está listo, la experiencia virtual no funcionará — por muy buena que sea la app."
+        },
+        "s3": {
+          "title": "Buscar e instalar apps",
+          "subtitle": "Dónde encontrar apps VR educativas y cómo gestionarlas en un set de gafas para la clase",
+          "p1": "La Meta Store es la fuente principal — busca por nombre o explora la categoría de Educación para títulos seleccionados",
+          "p2": "App Lab alberga apps experimentales e independientes que no aparecen en la tienda principal — accede a ellas mediante enlaces directos o códigos de búsqueda",
+          "p3": "Instala y prueba cada app antes del día de clase — las descargas pueden ser grandes (1–4 GB) y los primeros arranques suelen requerir configuración adicional",
+          "highlight": "Nunca instales una app por primera vez durante la clase. Descárgala, pruébala y verifica que funciona en cada gafa el día anterior."
+        },
+        "s4": {
+          "title": "Casting y compartir",
+          "subtitle": "Cómo mostrar lo que un alumno ve en VR en una pantalla del aula",
+          "p1": "El casting refleja de forma inalámbrica la vista de las gafas en un teléfono, tablet o navegador — ideal para que toda la clase vea lo que experimenta un alumno",
+          "p2": "Todos los dispositivos deben estar en la misma red WiFi — el casting falla silenciosamente si las gafas y el dispositivo de visualización están en redes diferentes",
+          "p3": "Espera 1–3 segundos de retardo — el casting no es en tiempo real, así que narra lo que el alumno está haciendo para mantener la atención del público",
+          "highlight": "El casting convierte la VR de una experiencia individual en un momento compartido en el aula. Planifica para el retardo y narra la acción."
+        },
+        "s5": {
+          "title": "Lista de verificación pre-clase",
+          "subtitle": "Una revisión sistemática la noche anterior y la mañana del día previene el 90% de los problemas en sesiones VR",
+          "p1": "La noche anterior: conecta todas las gafas a cargar, verifica las credenciales del WiFi y confirma que la app objetivo está instalada y actualizada en cada dispositivo",
+          "p2": "La mañana del día: comprueba los niveles de batería (>80%), prueba Guardian en unas gafas, abre la app para confirmar que carga y configura el casting",
+          "p3": "Ten un plan de respaldo: sabe a qué app offline cambiar si falla el WiFi, y mantén unas gafas extra cargadas como repuesto",
+          "highlight": "Las mejores sesiones VR parecen sencillas porque el profesor lo revisó todo dos veces. La lista de verificación es tu red de seguridad."
+        }
       }
     },
     "learningBlocks": {
@@ -402,12 +444,9 @@
           },
           "micro": {
             "tf": {
-              "s1": "La VR sustituye completamente el entorno real — el alumno no puede ver el aula",
-              "s1.explanation": "¡Correcto! La VR crea un mundo digital de 360° totalmente inmersivo. El aula física desaparece por completo para el alumno.",
-              "s2": "Un vídeo 360° con gafas es la forma más interactiva de VR",
-              "s2.explanation": "Un vídeo 360° es pasivo — el alumno solo mira. La VR interactiva permite a los alumnos hacer cosas: tocar, moverse, decidir. Mirar no es lo mismo que hacer.",
-              "s3": "En VR, el profesor puede captar la atención del alumno haciéndole señas",
-              "s3.explanation": "El alumno realmente no puede ver al profesor ni el aula. La VR sustituye la realidad por completo — necesitas otras estrategias (señales de audio, tocar el hombro) para captar su atención."
+              "s1": { "statement": "La VR sustituye completamente el entorno real — el alumno no puede ver el aula", "explanation": "¡Correcto! La VR crea un mundo digital de 360° totalmente inmersivo. El aula física desaparece por completo para el alumno." },
+              "s2": { "statement": "Un vídeo 360° con gafas es la forma más interactiva de VR", "explanation": "Un vídeo 360° es pasivo — el alumno solo mira. La VR interactiva permite a los alumnos hacer cosas: tocar, moverse, decidir. Mirar no es lo mismo que hacer." },
+              "s3": { "statement": "En VR, el profesor puede captar la atención del alumno haciéndole señas", "explanation": "El alumno realmente no puede ver al profesor ni el aula. La VR sustituye la realidad por completo — necesitas otras estrategias (señales de audio, tocar el hombro) para captar su atención." }
             }
           }
         },
@@ -468,12 +507,9 @@
           },
           "micro": {
             "tf": {
-              "s1": "En VR, un alumno que falla una simulación puede volver a intentarlo sin consecuencias reales",
-              "s1.explanation": "¡Correcto! La repetición segura es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten — los errores no tienen riesgo real.",
-              "s2": "La VR es más efectiva cuando los alumnos ven a un experto realizar un procedimiento",
-              "s2.explanation": "Ver es pasivo. El verdadero poder de la VR es cuando los alumnos HACEN el procedimiento ellos mismos — practicando pasos, tomando decisiones, recibiendo feedback.",
-              "s3": "La repetición en un entorno VR seguro genera confianza y competencia",
-              "s3.explanation": "¡Correcto! Cada reintento refuerza el enfoque correcto. Los alumnos desarrollan memoria muscular y habilidades de toma de decisiones mediante la práctica segura repetida."
+              "s1": { "statement": "En VR, un alumno que falla una simulación puede volver a intentarlo sin consecuencias reales", "explanation": "¡Correcto! La repetición segura es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten — los errores no tienen riesgo real." },
+              "s2": { "statement": "La VR es más efectiva cuando los alumnos ven a un experto realizar un procedimiento", "explanation": "Ver es pasivo. El verdadero poder de la VR es cuando los alumnos HACEN el procedimiento ellos mismos — practicando pasos, tomando decisiones, recibiendo feedback." },
+              "s3": { "statement": "La repetición en un entorno VR seguro genera confianza y competencia", "explanation": "¡Correcto! Cada reintento refuerza el enfoque correcto. Los alumnos desarrollan memoria muscular y habilidades de toma de decisiones mediante la práctica segura repetida." }
             }
           }
         },
@@ -623,6 +659,349 @@
             }
           }
         }
+      },
+      "gettingVrReady": {
+        "b1": {
+          "title": "Configuración inicial del Quest 3",
+          "exercise": {
+            "instruction": "Conecta cada paso de configuración con el problema que previene",
+            "left": {
+              "p1": "Ajustar la rueda de IPD para cada alumno",
+              "p2": "Cargar las gafas completamente la noche anterior",
+              "p3": "Configurar el idioma de la interfaz",
+              "p4": "Ajustar la correa de cabeza correctamente"
+            },
+            "right": {
+              "p1": "Visión borrosa y dolores de cabeza",
+              "p2": "Las gafas se apagan a mitad de sesión",
+              "p3": "Los alumnos no pueden navegar por los menús",
+              "p4": "Las gafas se resbalan o presionan de forma incómoda"
+            }
+          },
+          "scenario": {
+            "context": "Acabas de recibir 8 gafas Quest 3 nuevas para tu aula. Faltan 20 minutos para tu primera sesión VR con alumnos. Las gafas siguen en sus cajas.",
+            "question": "¿Qué deberías priorizar en esos 20 minutos?",
+            "choices": {
+              "a": "Desembalar las 8, encenderlas y repartirlas de inmediato para que los alumnos empiecen a explorar",
+              "b": "Posponer la sesión — 20 minutos no son suficientes para configurar 8 gafas correctamente. Usa el tiempo para cargar, ajustar IPD y actualizar firmware",
+              "c": "Desembalar y cargarlas, pero saltar el ajuste de IPD y la configuración de idioma para ahorrar tiempo"
+            },
+            "feedback": {
+              "a": "Repartir gafas sin cargar ni ajustar causará problemas de inmediato — imágenes borrosas, baterías agotadas, mensajes de firmware. La primera impresión de tus alumnos sobre la VR será frustración, no asombro.",
+              "b": "Buena decisión. Una mala primera experiencia genera resistencia a futuras sesiones VR. Usar estos 20 minutos para cargar, ajustar y actualizar significa que la sesión de mañana arrancará bien. Las primeras impresiones importan — protégelas.",
+              "c": "Cargar es esencial, pero saltar el ajuste de IPD significa que la mitad de tus alumnos verán una imagen borrosa y tendrán dolores de cabeza. Una primera experiencia incómoda es difícil de revertir — esos alumnos pueden rechazar la VR la próxima vez."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un alumno se pone unas Quest 3 y dice: 'Todo está borroso y me duelen los ojos.' Notas que la rueda de IPD no se ha ajustado.",
+              "question": "¿Por qué un IPD incorrecto causa estos síntomas?",
+              "choices": {
+                "a": "La pantalla de las gafas está defectuosa — necesita un reemplazo",
+                "b": "Las lentes no están alineadas con los ojos del alumno — la distancia entre los ojos de cada persona es diferente, y la rueda de IPD mueve las lentes para ajustarse. Una alineación incorrecta obliga a los ojos a esforzarse, causando borrosidad y dolor.",
+                "c": "El alumno probablemente necesita gafas graduadas y debería usarlas dentro de las gafas VR"
+              },
+              "feedback": {
+                "a": "No es un defecto de hardware. Las lentes del Quest 3 necesitan estar alineadas con la distancia entre los ojos de cada usuario. La rueda de IPD ajusta esto — tarda 5 segundos y marca la diferencia entre una visión nítida y unas gafas inutilizables.",
+                "b": "Exacto. El IPD (distancia interpupilar) varía entre 56 mm y 72 mm según la persona. La rueda del Quest 3 mueve físicamente las lentes para ajustarse. Cuando están desalineadas, el cerebro intenta compensar, causando tensión, borrosidad y dolores de cabeza en minutos.",
+                "c": "Las gafas graduadas se pueden usar dentro del Quest 3, pero es un tema aparte. La borrosidad aquí la causa la desalineación de las lentes, no la corrección visual. Ajustar la rueda de IPD es lo primero que hay que probar — resuelve la mayoría de las quejas de 'imagen borrosa' al instante."
+              }
+            },
+            "c2": {
+              "context": "Son las 8:00 de la mañana y tu sesión VR empieza a las 9:00. Descubres que 3 de tus 8 gafas están al 15% de batería. Una carga completa tarda unas 2 horas.",
+              "question": "¿Cuál es tu mejor enfoque?",
+              "choices": {
+                "a": "Conectar las 3 gafas bajas y esperar que se carguen lo suficiente en 60 minutos — el Quest 3 carga rápido, así que del 15% al 80% en una hora debería funcionar",
+                "b": "Cancelar la sesión — necesitas las 8 gafas para la actividad",
+                "c": "Usar las 5 gafas cargadas para empezar la sesión con un horario de rotación, conectar las 3 bajas e incorporarlas cuando lleguen al menos al 50% — suficiente para una rotación de 30 minutos"
+              },
+              "feedback": {
+                "a": "El Quest 3 carga a un ritmo de aproximadamente 30-40% por hora, así que después de 60 minutos esas gafas podrían llegar al 45-55% — usable pero arriesgado para una sesión completa. Un plan mejor es empezar con las 5 cargadas y rotar las otras cuando se carguen.",
+                "b": "No necesitas las 8 a la vez. Las sesiones VR con rotación son habituales y efectivas — 5 alumnos en VR mientras 3 hacen una actividad relacionada sin VR, y luego cambian. Cancelar desperdicia la preparación y las gafas cargadas.",
+                "c": "Este es el movimiento del buen profesor. Empieza la sesión con lo que funciona, maximiza el tiempo de los alumnos en VR mediante rotación, e incorpora las gafas en carga cuando alcancen niveles utilizables. La adaptabilidad es una habilidad clave en el aula VR."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": { "statement": "Cada alumno necesita su propio ajuste de IPD — no vale una configuración única para todos", "explanation": "¡Correcto! El IPD varía entre 56 mm y 72 mm según la persona. Usar un ajuste incorrecto causa visión borrosa y tensión ocular en minutos." },
+              "s2": { "statement": "Un Quest 3 se puede usar directamente sacado de la caja sin ninguna configuración", "explanation": "Un Quest 3 nuevo requiere carga (más de 2 horas), actualizaciones de firmware (necesita WiFi), ajuste de IPD y configuración de idioma antes de estar listo para el aula." },
+              "s3": { "statement": "Cargar las gafas la noche anterior a la clase es el paso de preparación más importante", "explanation": "¡Correcto! Unas gafas sin batería son unas gafas inútiles. La carga nocturna asegura batería completa (más de 2 horas de uso) y evita el problema VR de aula más prevenible." }
+            }
+          }
+        },
+        "b2": {
+          "title": "Preparación del aula",
+          "exercise": {
+            "instruction": "Ordena estos pasos de preparación del aula en el orden correcto",
+            "scaleStart": "Hacer primero",
+            "scaleEnd": "Hacer último",
+            "i1": "Despejar muebles para crear puestos abiertos con 2×2 m de separación",
+            "i2": "Probar la conexión WiFi con unas gafas",
+            "i3": "Configurar los límites de Guardian en cada puesto",
+            "i4": "Hacer una prueba rápida de la app VR en unas gafas"
+          },
+          "scenario": {
+            "context": "Estás preparando una sesión VR para 25 alumnos en un aula estándar. Tienes 8 gafas y los pupitres están en filas tradicionales.",
+            "question": "¿Cuál es tu primera prioridad?",
+            "choices": {
+              "a": "Dejar los pupitres como están — los alumnos pueden ponerse de pie entre las filas mientras llevan las gafas",
+              "b": "Empujar los pupitres hacia las paredes para crear 8 puestos despejados con al menos 2×2 metros cada uno, con una zona de seguridad entre ellos",
+              "c": "Ir al gimnasio — las aulas no son lo bastante grandes para VR"
+            },
+            "feedback": {
+              "a": "Estar de pie entre filas es peligroso. Los alumnos con VR no pueden ver pupitres, sillas ni a los demás. Incluso movimientos pequeños — alcanzar un objeto virtual, girarse — pueden causar colisiones. El espacio despejado no es negociable.",
+              "b": "Este es el enfoque estándar. Empujar los pupitres hacia las paredes crea zonas despejadas donde los alumnos se pueden mover con seguridad. 2×2 metros por puesto con zonas de separación entre ellos previene colisiones. Marca los puestos con cinta adhesiva si es posible.",
+              "c": "El gimnasio funciona pero no es necesario. Un aula estándar con los pupitres contra las paredes proporciona espacio suficiente para 6-8 puestos VR. Reserva el gimnasio para actividades que requieran movimiento a gran escala."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Has configurado los límites de Guardian en las 8 gafas, pero la red WiFi del aula solo muestra 3 barras de señal. Un compañero dice: 'Tres barras están bien — empecemos.'",
+              "question": "¿Por qué deberías probar la carga del WiFi antes de empezar?",
+              "choices": {
+                "a": "Tres barras de señal no significan nada cuando 8 dispositivos se conectan a la vez. Cada Quest 3 transmitiendo una app consume 15–30 Mbps. Prueba conectando todas las gafas a la vez y lanzando la app — si hay lag, reduce el número de usuarios simultáneos.",
+                "b": "Tres barras está bien — el WiFi solo importa para descargar apps, no para ejecutarlas",
+                "c": "Cambia al hotspot del móvil — es más fiable que el WiFi del colegio"
+              },
+              "feedback": {
+                "a": "Exacto. La intensidad de la señal (barras) mide un dispositivo. El ancho de banda es compartido — 8 gafas consumiendo cada una 15-30 Mbps significa que tu WiFi necesita 120-240 Mbps de capacidad real. Las redes escolares a menudo no pueden ofrecer esto. Siempre prueba con todas las gafas conectadas antes de la clase.",
+                "b": "Muchas apps VR requieren WiFi continuo para streaming de contenido, casting y guardado en la nube. Incluso apps que funcionan offline pueden fallar al arrancar si detectan que no hay conexión. La calidad del WiFi bajo carga es crítica, no opcional.",
+                "c": "Un hotspot móvil típicamente tiene un tope de 30-50 Mbps compartidos entre todos los dispositivos — no es suficiente para 8 gafas. El WiFi del colegio, aunque sea imperfecto, tiene más ancho de banda. La solución es probar y optimizar el WiFi del colegio, no evitarlo."
+              }
+            },
+            "c2": {
+              "context": "Durante tu primera sesión VR, un alumno camina directamente hacia la zona de otro alumno. Los límites de Guardian no evitaron la colisión porque las zonas estaban configuradas con solo 30 cm entre ellas.",
+              "question": "¿Qué salió mal y cómo lo solucionas?",
+              "choices": {
+                "a": "Los límites de Guardian solo avisan al usuario — no crean paredes. El alumno puede atravesar la advertencia. Se necesita más espacio entre zonas.",
+                "b": "Configura los límites de Guardian de cada alumno para que los límites adyacentes se solapen — esto crea una zona segura compartida en el medio",
+                "c": "Guardian es solo una advertencia visual — deberías marcar físicamente las zonas en el suelo con cinta y dejar al menos 1 metro entre límites"
+              },
+              "feedback": {
+                "a": "Observación correcta pero solución incompleta. Guardian muestra una cuadrícula virtual cuando te acercas al borde, pero no te detiene físicamente. Necesitas espacio de separación Y marcas en el suelo para que los alumnos conozcan sus límites incluso antes de ponerse las gafas.",
+                "b": "Los límites solapados harían que la advertencia apareciera demasiado pronto para ambos alumnos, haciendo la VR inutilizable. Quieres que el Guardian de cada alumno se ajuste a su puesto con espacio de separación ENTRE zonas, no solapándolas.",
+                "c": "Esta es la solución completa. Guardian avisa al usuario VR, pero la cinta en el suelo guía al profesor y a los alumnos cercanos. Deja al menos 1 metro entre los bordes de Guardian para que, incluso si un alumno ignora la advertencia, no alcance la zona de otra persona."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada paso de preparación como esencial u opcional para una sesión VR básica",
+              "cat": {
+                "essential": "Esencial",
+                "optional": "Recomendable"
+              },
+              "i1": "Configurar los límites de Guardian en cada puesto",
+              "i2": "Decorar los puestos VR con etiquetas impresas",
+              "i3": "Probar el WiFi con todas las gafas conectadas simultáneamente",
+              "i4": "Poner música de fondo durante la sesión VR"
+            }
+          }
+        },
+        "b3": {
+          "title": "Buscar e instalar apps",
+          "exercise": {
+            "instruction": "Conecta cada fuente de apps con su característica principal",
+            "left": {
+              "p1": "Meta Quest Store (tienda principal)",
+              "p2": "App Lab",
+              "p3": "Apps de demostración preinstaladas",
+              "p4": "WebXR basado en navegador"
+            },
+            "right": {
+              "p1": "Revisada y seleccionada — fiable pero con menor variedad",
+              "p2": "Experimental e independiente — se accede mediante enlaces o códigos",
+              "p3": "Vienen con las gafas — útiles para demos rápidas y pruebas",
+              "p4": "No necesita instalación — se ejecuta en el navegador de las gafas"
+            }
+          },
+          "scenario": {
+            "context": "Un compañero de ciencias te pide que instales una app VR de laboratorio de química para la clase de mañana. Buscas en la Meta Quest Store y no la encuentras por nombre.",
+            "question": "¿Qué haces?",
+            "choices": {
+              "a": "Decir a tu compañero que la app no existe para Quest 3 — si no está en la tienda, no está disponible",
+              "b": "Buscar en App Lab usando el nombre exacto de la app o el enlace del desarrollador — muchas apps educativas se distribuyen a través de App Lab en vez de la tienda principal. Si aún no la encuentras, revisa la web del desarrollador para un enlace directo.",
+              "c": "Descargar otra app de química que parezca similar — probablemente sea lo mismo con otro nombre"
+            },
+            "feedback": {
+              "a": "La tienda principal es selectiva y no muestra todo. Muchas apps educativas y de investigación están en App Lab — el canal de distribución secundario de Meta para apps experimentales. Siempre comprueba App Lab antes de concluir que una app no existe.",
+              "b": "Buen enfoque. App Lab está diseñado específicamente para apps educativas, experimentales y de nicho que no han pasado la revisión completa de la tienda. Muchas de las mejores apps VR educativas solo están disponibles a través de App Lab o enlaces directos del desarrollador. Ten siempre la URL del desarrollador preparada.",
+              "c": "Sustituir apps sin probar es arriesgado. Una app 'similar' puede tener contenido, controles o calidad diferentes. Tu compañero eligió una app específica por una razón — encuentra la correcta a través de App Lab o del desarrollador, o discutid alternativas juntos."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Has instalado la app VR en unas gafas y funciona perfectamente. Necesitas instalarla en 7 gafas más para la clase de mañana. Cada gafa requiere su propia descarga (1,8 GB por dispositivo).",
+              "question": "¿Cuál es el enfoque más eficiente?",
+              "choices": {
+                "a": "Iniciar las 7 descargas simultáneamente en el WiFi del colegio — el ancho de banda no importa ya que las descargas se hacen en segundo plano",
+                "b": "Descargar en 2-3 gafas a la vez para no saturar el WiFi, y verificar que cada instalación arranca correctamente antes de pasar al siguiente lote",
+                "c": "Copiar la app de las primeras gafas a las demás usando un USB — es más rápido que descargar 7 veces"
+              },
+              "feedback": {
+                "a": "Siete descargas simultáneas de 1,8 GB (12,6 GB en total) pueden saturar el WiFi del colegio y hacer que todas fallen o vayan muy lentas. Escalona las descargas en lotes de 2-3 para mantener la red usable tanto para ti como para el resto del colegio.",
+                "b": "Este es el enfoque práctico. Escalonar las descargas evita la saturación del WiFi, y probar cada instalación detecta problemas pronto. Una descarga fallida en unas gafas no significa que fallará en todas — pero probar cada una asegura que lo sepas antes de la clase.",
+                "c": "Las apps de Quest no se pueden copiar por USB como archivos normales — están vinculadas a la cuenta de Meta y requieren instalación a través de la tienda o App Lab. Cada gafa debe descargar su propia copia."
+              }
+            },
+            "c2": {
+              "context": "Unas gafas muestran 'Almacenamiento lleno' al intentar instalar una nueva app educativa. La app necesita 2,3 GB y las gafas tienen 800 MB libres.",
+              "question": "¿Cuál es tu mejor enfoque?",
+              "choices": {
+                "a": "Comprar una tarjeta microSD para ampliar el almacenamiento",
+                "b": "Comprimir los archivos de la app para hacerlos más pequeños",
+                "c": "Eliminar apps que no uses y borrar datos en caché — revisa Ajustes > Almacenamiento para identificar los mayores consumidores de espacio, elimina demos y juegos que los alumnos no usen en clase, y borra archivos temporales"
+              },
+              "feedback": {
+                "a": "El Quest 3 no tiene ranura para tarjeta microSD. El almacenamiento es fijo: 128 GB o 512 GB según el modelo. La única forma de liberar espacio es eliminar contenido.",
+                "b": "No puedes comprimir apps instaladas en Quest. Los archivos ya están optimizados por el desarrollador. La única solución es liberar espacio existente eliminando contenido que no necesites.",
+                "c": "Este es el camino. Ve a Ajustes > Almacenamiento para ver qué ocupa espacio. Las demos preinstaladas, las apps antiguas y los datos en caché suelen ocupar gigabytes. Elimina lo que no necesites para las próximas clases. Acostúmbrate a limpiar el almacenamiento cada mes."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": { "statement": "Siempre deberías instalar y probar las apps VR al menos un día antes de la clase — nunca durante el horario de clase", "explanation": "¡Correcto! Las descargas pueden ser lentas, las instalaciones pueden fallar, y las apps a veces necesitan configuración en el primer arranque. Descubrir estos problemas durante la clase desperdicia el tiempo de todos." },
+              "s2": { "statement": "Si una app no está en la Meta Quest Store principal, no existe para el Quest 3", "explanation": "Muchas apps educativas solo están en App Lab — el canal secundario de Meta para apps experimentales y de nicho. Siempre comprueba App Lab y la web del desarrollador antes de concluir que una app no está disponible." },
+              "s3": { "statement": "Cada gafa necesita su propia descarga de la app — no se pueden copiar apps entre gafas por USB", "explanation": "¡Correcto! Las apps de Quest están vinculadas a la cuenta y deben descargarse individualmente en cada dispositivo a través de la tienda o App Lab." }
+            }
+          }
+        },
+        "b4": {
+          "title": "Casting y compartir",
+          "exercise": {
+            "instruction": "Ordena estos pasos de configuración de casting en el orden correcto",
+            "scaleStart": "Hacer primero",
+            "scaleEnd": "Hacer último",
+            "i1": "Conectar el dispositivo de visualización (portátil/teléfono/tablet) a la misma red WiFi que las gafas",
+            "i2": "Abrir la página o app de casting de Meta Quest en el dispositivo de visualización",
+            "i3": "Iniciar el casting desde dentro de las gafas (Ajustes rápidos > Transmitir)",
+            "i4": "Probar el audio y verificar que el retardo es aceptable para tu actividad"
+          },
+          "scenario": {
+            "context": "Estás haciendo una demostración de una app VR de anatomía a la directora del colegio. Transmites la vista de las gafas a tu portátil y la proyectas. La directora ve la imagen pero hay un retardo de 3 segundos, y el audio está desincronizado.",
+            "question": "¿Qué deberías hacer?",
+            "choices": {
+              "a": "Disculparte y explicar que el retardo es inevitable con el casting VR — no puedes hacer nada al respecto",
+              "b": "Detener la demo y depurar el WiFi — 3 segundos de retardo significa que la red está sobrecargada",
+              "c": "Narrar lo que estás haciendo en tiempo real mientras el vídeo retrasado se pone al día. Muévete despacio, haz pausas en los momentos clave y señala los detalles a medida que aparecen en pantalla. Después de la demo, comprueba si otros dispositivos están consumiendo ancho de banda del WiFi."
+            },
+            "feedback": {
+              "a": "Algo de retardo (1-2 segundos) es normal con casting inalámbrico, pero 3 segundos es excesivo y normalmente tiene solución. No lo aceptes como inevitable — la congestión de red, la distancia al router u otros dispositivos transmitiendo pueden causarlo.",
+              "b": "Detener la demo rompe el ritmo y hace que la tecnología parezca poco fiable. El retardo probablemente tiene solución, pero este no es el momento de diagnosticar el WiFi. Un mejor enfoque es adaptar tu técnica de presentación y arreglar la red después de la demo.",
+              "c": "Esta es la habilidad docente que hace que las demos VR funcionen. Narrar en tiempo real cubre el retardo, y hacer pausas en momentos clave permite que la pantalla se ponga al día. Después de la demo, reduce la congestión del WiFi desconectando dispositivos innecesarios y acercándote al router."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Una profesora quiere transmitir dos gafas simultáneamente para que la clase pueda comparar lo que dos alumnos están viendo lado a lado.",
+              "question": "¿Es posible, y qué debería considerar la profesora?",
+              "choices": {
+                "a": "Sí — transmite cada gafa a una pestaña de navegador o dispositivo diferente, luego muestra ambas en el proyector usando pantalla dividida. Ten en cuenta que dos transmisiones simultáneas duplican la carga del WiFi y el retardo.",
+                "b": "No — solo puedes transmitir una gafa Quest a la vez por red",
+                "c": "Sí — pero necesitas una app especial que combine ambas transmisiones en una sola vista"
+              },
+              "feedback": {
+                "a": "Correcto. Puedes transmitir varias gafas a diferentes dispositivos o pestañas del navegador simultáneamente. La contrapartida: cada transmisión consume ancho de banda, así que dos transmisiones significan más retardo y mayor carga del WiFi. Prueba esto antes de la clase — algunas redes escolares no pueden soportarlo.",
+                "b": "Varias gafas PUEDEN transmitir simultáneamente — cada una a su propio dispositivo o pestaña del navegador. La limitación no es técnica sino práctica: cada transmisión adicional aumenta la carga del WiFi y el retardo. Prueba con tu red específica para ver cuántas transmisiones soporta.",
+                "c": "No se necesita ninguna app especial. Cada gafa transmite independientemente a su propio dispositivo o pestaña del navegador. Organizas las ventanas en la pantalla del proyector manualmente usando la gestión de ventanas de tu sistema operativo."
+              }
+            },
+            "c2": {
+              "context": "Durante una sesión VR en el aula, notas que el casting se desconecta cada pocos minutos. Cada vez, tienes que reiniciar la transmisión desde el menú de las gafas.",
+              "question": "¿Cuál es la causa más probable y cómo lo solucionas?",
+              "choices": {
+                "a": "Las gafas están defectuosas — contacta con el soporte de Meta para un reemplazo",
+                "b": "Las gafas y el dispositivo de casting probablemente están en diferentes bandas WiFi (2,4 GHz vs 5 GHz), o la señal WiFi es débil. Asegúrate de que ambos dispositivos estén en la misma banda y frecuencia, acércate al router y reduce la congestión de la red.",
+                "c": "El casting siempre se desconecta durante apps VR intensivas — es una limitación conocida"
+              },
+              "feedback": {
+                "a": "Las desconexiones del casting casi nunca son defectos de hardware. Son problemas de red — banda WiFi incorrecta, señal débil o congestión de la red. Comprueba la configuración de la conexión antes de sospechar del hardware.",
+                "b": "Este es el problema de casting más común. Muchos routers emiten 2,4 GHz y 5 GHz como redes separadas. Si las gafas están en 5 GHz y el dispositivo de casting en 2,4 GHz, la conexión se corta intermitentemente. Pon ambos en la misma red y banda.",
+                "c": "El casting durante apps intensivas sí consume más ancho de banda, pero no debería desconectarse. Las desconexiones repetidas indican un problema de red — banda incorrecta, señal débil o demasiados dispositivos. Son solucionables con una configuración de red adecuada."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada característica del casting como cableada o inalámbrica",
+              "cat": {
+                "wired": "Cableado (USB-C a HDMI)",
+                "wireless": "Inalámbrico (casting por WiFi)"
+              },
+              "i1": "Funciona a través del menú de casting de Meta Quest",
+              "i2": "Cero retardo — visualización en tiempo real sin retraso",
+              "i3": "Requiere que todos los dispositivos estén en la misma red WiFi",
+              "i4": "Necesita un adaptador o cable compatible",
+              "i5": "Tiene un retardo inherente de 1-3 segundos"
+            }
+          }
+        },
+        "b5": {
+          "title": "Lista de verificación pre-clase",
+          "exercise": {
+            "instruction": "Ordena estos pasos de preparación pre-clase en el orden correcto (de la noche anterior al inicio de la clase)",
+            "scaleStart": "Noche anterior",
+            "scaleEnd": "Empieza la clase",
+            "i1": "Conectar todas las gafas a cargar durante la noche",
+            "i2": "Verificar las credenciales del WiFi y probar la conexión",
+            "i3": "Confirmar que la app objetivo está instalada y actualizada en cada gafa",
+            "i4": "Comprobar niveles de batería y configurar los límites de Guardian",
+            "i5": "Prueba rápida de la app y el casting en unas gafas"
+          },
+          "scenario": {
+            "context": "Faltan 15 minutos para tu sesión VR. Revisas las gafas y descubres: 2 de 5 gafas no se conectan al WiFi, y 1 tiene la batería agotada.",
+            "question": "¿Cuál es tu enfoque?",
+            "choices": {
+              "a": "Retrasar la sesión 30 minutos mientras depuras las 3 gafas — los alumnos pueden hacer una ficha de trabajo",
+              "b": "Cancelar la VR y cambiar completamente a una lección alternativa sin VR",
+              "c": "Empezar la sesión con las 2 gafas que funcionan usando un horario de rotación. Conectar la que tiene la batería agotada. Para el problema de WiFi: olvidar y reconectar la red en ambas gafas. Si eso falla, usarlas con una app offline."
+            },
+            "feedback": {
+              "a": "Un retraso de 30 minutos desperdicia tiempo valioso de clase y puede que ni siquiera resuelva el problema del WiFi. Es mejor empezar con lo que funciona y depurar en paralelo. Los alumnos con VR siguen aprendiendo mientras tú arreglas las gafas restantes.",
+              "b": "Cancelar por 3 gafas cuando 2 todavía funcionan desperdicia la preparación y el hardware que sí funciona. Las sesiones VR con rotación son habituales — incluso 2 gafas pueden crear una experiencia significativa para toda la clase.",
+              "c": "Esto es enseñanza adaptativa. Empieza inmediatamente con lo que funciona, maximiza el tiempo de los alumnos en VR mediante rotación y depura el resto en paralelo. La solución del WiFi (olvidar/reconectar) resuelve la mayoría de los problemas de conexión. La batería agotada solo necesita tiempo en el cargador."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Tu colegio requiere un plan de sesión VR enviado con 48 horas de antelación. Un compañero pregunta: '¿Por qué necesitas DOS días? Solo hay que encender las gafas y elegir una app.'",
+              "question": "¿Por qué es esencial la preparación anticipada para sesiones VR?",
+              "choices": {
+                "a": "Es solo burocracia — la VR es plug-and-play y no necesita planificación previa",
+                "b": "48 horas te dan tiempo para: cargar las gafas, descargar y probar la app en cada dispositivo, verificar la capacidad del WiFi, planificar la distribución del aula, preparar un horario de rotación y tener un plan de respaldo listo. Cada uno de estos pasos ha fallado en algún momento al primer intento.",
+                "c": "Necesitas 48 horas principalmente para leer el manual de instrucciones de la app"
+              },
+              "feedback": {
+                "a": "La VR NO es plug-and-play en un aula de 25 alumnos con 8 gafas. Las descargas fallan, las baterías se agotan, el WiFi se satura, las apps necesitan actualizaciones y la disposición del aula lleva tiempo. Los profesores que se saltan la preparación pasan la clase depurando en vez de enseñando.",
+                "b": "Por esto los profesores VR con experiencia planifican con antelación. Cada paso — carga, descarga, pruebas, preparación del aula, planificación de rotaciones — lleva tiempo y puede revelar problemas. Encontrar incidencias 48 horas antes de la clase significa que puedes solucionarlas. Encontrarlas 5 minutos antes significa caos.",
+                "c": "Leer las instrucciones es una pequeña parte de la preparación. El trabajo real es asegurar que cada pieza de hardware y software funciona en tu aula específica, con tu WiFi específico, para tu número específico de alumnos. Ahí es donde 48 horas de margen te salvan."
+              }
+            },
+            "c2": {
+              "context": "Siempre preparas un 'Plan B' antes de cada sesión VR: una app VR offline que funciona sin WiFi, más una actividad sin VR sobre el mismo tema. Un compañero nuevo pregunta: '¿No es esfuerzo desperdiciado si la sesión va bien?'",
+              "question": "¿Cómo justificas el plan de respaldo?",
+              "choices": {
+                "a": "Tu compañero tiene razón — si preparas todo bien, no necesitarás un respaldo",
+                "b": "Un plan de respaldo lleva 10 minutos de preparación y ahorra 45 minutos de caos cuando se cae el WiFi, una app se cuelga o las gafas fallan. Usas el respaldo 1 de cada 5 sesiones. Esa única vez, tú eres el único profesor cuya clase sigue funcionando.",
+                "c": "El respaldo es principalmente para cuando los alumnos terminan la actividad VR antes de tiempo"
+              },
+              "feedback": {
+                "a": "Ninguna preparación puede prevenir todos los fallos posibles. Caídas de WiFi, cuelgues de apps, actualizaciones sorpresa de firmware y cortes de luz están fuera de tu control. Un plan de respaldo no es cuestión de calidad de preparación — es resiliencia profesional.",
+                "b": "Esta es la mentalidad del profesor con experiencia. Una inversión de 10 minutos en un plan de respaldo tiene un retorno infinito cuando las cosas van mal. Y en las sesiones VR, las cosas van mal más a menudo que en las clases tradicionales porque dependes de más capas tecnológicas — gafas, WiFi, apps, casting.",
+                "c": "Una actividad para cuando terminan pronto es algo útil, pero no es el propósito principal del plan de respaldo. El respaldo existe para cuando la actividad PRINCIPAL falla — sin WiFi, gafas sin batería, app colgada. Mantiene el aprendizaje aunque la tecnología falle."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": { "statement": "Cargar las gafas la noche anterior es más fiable que cargarlas la mañana de la clase", "explanation": "¡Correcto! Un Quest 3 tarda unas 2 horas en cargarse completamente. La carga por la mañana no deja margen — un corte de luz, un cable defectuoso o un cargador olvidado significa gafas sin batería a la hora de clase." },
+              "s2": { "statement": "Si la app VR funciona en unas gafas, funcionará en todas sin necesidad de probar", "explanation": "Cada gafa puede tener diferentes versiones de firmware, espacio de almacenamiento o permisos de cuenta. Las apps pueden fallar en unas gafas mientras funcionan en otras. Prueba cada dispositivo individualmente." },
+              "s3": { "statement": "Tener un plan de respaldo (app offline + actividad sin VR) es esencial para cada sesión VR", "explanation": "¡Correcto! Las caídas de WiFi, los cuelgues de apps y los fallos de hardware son lo bastante frecuentes como para que un plan de respaldo no sea opcional — es práctica profesional. El respaldo asegura que el aprendizaje continúe independientemente de los problemas tecnológicos." }
+            }
+          }
+        }
       }
     },
     "quizStep": {
@@ -753,70 +1132,40 @@
           "a": "Decirle que cierre un ojo para reducir la borrosidad",
           "b": "Ajustar la rueda de IPD hasta que la imagen sea nítida para ese alumno",
           "c": "Reiniciar las gafas — probablemente sea un fallo de software",
-          "d": "Bajar el brillo de la pantalla en ajustes"
+          "d": "Bajar el brillo de la pantalla en ajustes",
+          "explanation": "La visión borrosa casi siempre se debe a un IPD (distancia interpupilar) incorrecto. La rueda de IPD mueve las lentes para adaptarse a la separación ocular de cada alumno — un ajuste de 5 segundos que resuelve el problema al instante."
         },
         "q2": {
           "question": "El WiFi se cae durante una sesión VR. La mitad de la clase no ha tenido su turno. ¿Cuál es tu prioridad?",
           "a": "Cancelar el resto de la actividad VR y pasar a una lección alternativa",
           "b": "Enviar a un alumno a la oficina de informática para arreglar el WiFi",
           "c": "Cambiar a una app VR offline y reorganizar el horario de rotación",
-          "d": "Esperar 15 minutos — el WiFi del colegio suele volver solo"
+          "d": "Esperar 15 minutos — el WiFi del colegio suele volver solo",
+          "explanation": "La adaptabilidad es clave. Tener una app VR offline probada como respaldo significa que la caída del WiFi no acaba con la sesión. Reorganiza la rotación para mantener a todos los alumnos involucrados mientras se resuelve el problema de red."
         },
         "q3": {
           "question": "Un padre te escribe preocupado por la seguridad VR para su hijo. ¿Cuál es la mejor respuesta?",
           "a": "Responder que VR es perfectamente seguro y no hay de qué preocuparse",
           "b": "Compartir las medidas de seguridad específicas que usas (límites de sesión, Guardian, supervisión) y ofrecer hablar más",
           "c": "Reenviar el email al director para que lo gestione",
-          "d": "Eximir al niño de todas las actividades VR inmediatamente"
+          "d": "Eximir al niño de todas las actividades VR inmediatamente",
+          "explanation": "La transparencia genera confianza. Compartir tus protocolos de seguridad específicos — límites de tiempo, Guardian, supervisión activa — demuestra profesionalismo e invita al diálogo en lugar de cerrar las preocupaciones."
         },
         "q4": {
           "question": "Faltan 30 minutos para clase. Solo 3 de tus 5 gafas se cargaron durante la noche. ¿Qué haces?",
           "a": "Cancelar la clase VR — necesitas las 5 gafas",
           "b": "Intentar cargar rápido las 5 durante 30 minutos — debería ser suficiente",
           "c": "Usar las 3 cargadas ahora, enchufar las otras 2 y rotarlas cuando tengan carga",
-          "d": "Usar solo las 3 cargadas y no preocuparte por las otras 2"
+          "d": "Usar solo las 3 cargadas y no preocuparte por las otras 2",
+          "explanation": "Empieza con lo que funciona. Un esquema de rotación con 3 gafas mientras las otras 2 cargan significa que cada alumno sigue teniendo tiempo en VR. Enchufar las descargadas les da batería suficiente para unirse a la rotación después."
         },
         "q5": {
           "question": "Un alumno se niega a ponerse las gafas VR y parece ansioso. ¿Qué haces?",
           "a": "Insistir — necesita participar para obtener su nota",
           "b": "Respetar su decisión y asignarle un rol alternativo como observador o controlador del casting",
           "c": "Ponerle las gafas tú mismo para demostrar que no da miedo",
-          "d": "Enviarlo al orientador del colegio"
-        },
-        "q6": {
-          "question": "Estás haciendo casting al proyector del aula pero hay un retraso de 3 segundos. ¿Qué deberías probar?",
-          "a": "Nada — algo de lag es inevitable con casting inalámbrico",
-          "b": "Acercar el router WiFi a las gafas y al proyector, y reducir otro tráfico de red",
-          "c": "Usar un cable HDMI más largo para conectar las gafas directamente",
-          "d": "Bajar la calidad gráfica de las gafas en ajustes de desarrollador"
-        },
-        "q7": {
-          "question": "La app VR que planeaste necesita una actualización de 2 GB. Faltan 10 minutos para clase. ¿Qué haces?",
-          "a": "Iniciar la actualización y retrasar el inicio de la clase",
-          "b": "Usar unas gafas para actualizar mientras haces la clase con las demás",
-          "c": "Intentar abrir la versión actual. Si no funciona, cambiar a una app de respaldo probada",
-          "d": "Saltar VR completamente y hacer otra actividad"
-        },
-        "q8": {
-          "question": "Dos alumnos chocan entre sí mientras ambos llevan gafas VR. ¿Cuál es tu primera acción?",
-          "a": "Decirles que tengan más cuidado y continuar la sesión",
-          "b": "Parar a ambos, comprobar que están bien, y reconfigurar Guardian aumentando la separación entre zonas",
-          "c": "Quitar las gafas a ambos alumnos como consecuencia",
-          "d": "Mover a un alumno a otra habitación"
-        },
-        "q9": {
-          "question": "Notas que unas gafas se calientan notablemente tras 20 minutos de uso continuo. ¿Qué deberías hacer?",
-          "a": "Apagarlas, dejar enfriar 10 minutos y cambiarlas por otras gafas",
-          "b": "Ignorarlo — las gafas siempre se calientan un poco con el uso",
-          "c": "Ponerlas en la nevera para enfriarlas rápido",
-          "d": "Colocar un ventilador directamente sobre las gafas mientras el alumno sigue usándolas"
-        },
-        "q10": {
-          "question": "El director del colegio te pide una demo de VR al claustro en 5 minutos. ¿Cuál es tu enfoque?",
-          "a": "Rechazar — necesitas al menos una hora para preparar una demo",
-          "b": "Darle las gafas al director y que se las arregle",
-          "c": "Mostrar primero passthrough para romper el hielo, luego una app corta e impresionante con casting a la pantalla",
-          "d": "Mostrar un vídeo VR pregrabado en tu portátil"
+          "d": "Enviarlo al orientador del colegio",
+          "explanation": "Respetar la decisión del alumno mientras le ofreces alternativas significativas mantiene su inclusión sin forzarlo. Los roles de observador, tomador de notas y controlador de casting contribuyen a la clase y reducen la ansiedad ante futuras sesiones."
         }
       }
     },

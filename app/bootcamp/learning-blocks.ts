@@ -6,6 +6,8 @@ import type { LearningBlockSetDef } from "./learning-block-types";
 
 const P = "learningBlocks.basicFoundations";
 
+const Q = "learningBlocks.gettingVrReady";
+
 const blocksByModule: Record<string, LearningBlockSetDef> = {
   "basic-foundations": {
     moduleSlug: "basic-foundations",
@@ -67,9 +69,9 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
             type: "trueFalse",
             id: "b1-tf",
             statements: [
-              { id: "s1", statementKey: `${P}.b1.micro.tf.s1`, isTrue: true, explanationKey: `${P}.b1.micro.tf.s1.explanation` },
-              { id: "s2", statementKey: `${P}.b1.micro.tf.s2`, isTrue: false, explanationKey: `${P}.b1.micro.tf.s2.explanation` },
-              { id: "s3", statementKey: `${P}.b1.micro.tf.s3`, isTrue: false, explanationKey: `${P}.b1.micro.tf.s3.explanation` },
+              { id: "s1", statementKey: `${P}.b1.micro.tf.s1.statement`, isTrue: true, explanationKey: `${P}.b1.micro.tf.s1.explanation` },
+              { id: "s2", statementKey: `${P}.b1.micro.tf.s2.statement`, isTrue: false, explanationKey: `${P}.b1.micro.tf.s2.explanation` },
+              { id: "s3", statementKey: `${P}.b1.micro.tf.s3.statement`, isTrue: false, explanationKey: `${P}.b1.micro.tf.s3.explanation` },
             ],
           },
         ],
@@ -133,9 +135,9 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
             type: "trueFalse",
             id: "b2-tf",
             statements: [
-              { id: "s1", statementKey: `${P}.b2.micro.tf.s1`, isTrue: true, explanationKey: `${P}.b2.micro.tf.s1.explanation` },
-              { id: "s2", statementKey: `${P}.b2.micro.tf.s2`, isTrue: false, explanationKey: `${P}.b2.micro.tf.s2.explanation` },
-              { id: "s3", statementKey: `${P}.b2.micro.tf.s3`, isTrue: true, explanationKey: `${P}.b2.micro.tf.s3.explanation` },
+              { id: "s1", statementKey: `${P}.b2.micro.tf.s1.statement`, isTrue: true, explanationKey: `${P}.b2.micro.tf.s1.explanation` },
+              { id: "s2", statementKey: `${P}.b2.micro.tf.s2.statement`, isTrue: false, explanationKey: `${P}.b2.micro.tf.s2.explanation` },
+              { id: "s3", statementKey: `${P}.b2.micro.tf.s3.statement`, isTrue: true, explanationKey: `${P}.b2.micro.tf.s3.explanation` },
             ],
           },
         ],
@@ -280,6 +282,351 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
               { id: "i3", labelKey: `${P}.b4.micro.cls.i3`, correctCategoryId: "ar" },
               { id: "i4", labelKey: `${P}.b4.micro.cls.i4`, correctCategoryId: "vr" },
               { id: "i5", labelKey: `${P}.b4.micro.cls.i5`, correctCategoryId: "ar" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  "getting-vr-ready": {
+    moduleSlug: "getting-vr-ready",
+    blocks: [
+      /* ============================================================ */
+      /*  Block 1 — Initial Quest 3 Setup                              */
+      /* ============================================================ */
+      {
+        blockId: "getting-started",
+        titleKey: `${Q}.b1.title`,
+        iconEmoji: "📦",
+        exercise: {
+          type: "matching",
+          id: "b1-match",
+          instructionKey: `${Q}.b1.exercise.instruction`,
+          pairs: [
+            { id: "p1", leftKey: `${Q}.b1.exercise.left.p1`, rightKey: `${Q}.b1.exercise.right.p1` },
+            { id: "p2", leftKey: `${Q}.b1.exercise.left.p2`, rightKey: `${Q}.b1.exercise.right.p2` },
+            { id: "p3", leftKey: `${Q}.b1.exercise.left.p3`, rightKey: `${Q}.b1.exercise.right.p3` },
+            { id: "p4", leftKey: `${Q}.b1.exercise.left.p4`, rightKey: `${Q}.b1.exercise.right.p4` },
+          ],
+        },
+        scenario: {
+          id: "b1-s0",
+          contextKey: `${Q}.b1.scenario.context`,
+          questionKey: `${Q}.b1.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${Q}.b1.scenario.choices.a`, feedbackKey: `${Q}.b1.scenario.feedback.a`, feedbackTone: "partial", isCorrect: false },
+            { id: "b", labelKey: `${Q}.b1.scenario.choices.b`, feedbackKey: `${Q}.b1.scenario.feedback.b`, feedbackTone: "correct", isCorrect: true },
+            { id: "c", labelKey: `${Q}.b1.scenario.choices.c`, feedbackKey: `${Q}.b1.scenario.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b1-c1",
+            contextKey: `${Q}.b1.concepts.c1.context`,
+            questionKey: `${Q}.b1.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b1.concepts.c1.choices.a`, feedbackKey: `${Q}.b1.concepts.c1.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "b", labelKey: `${Q}.b1.concepts.c1.choices.b`, feedbackKey: `${Q}.b1.concepts.c1.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${Q}.b1.concepts.c1.choices.c`, feedbackKey: `${Q}.b1.concepts.c1.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+          {
+            id: "b1-c2",
+            contextKey: `${Q}.b1.concepts.c2.context`,
+            questionKey: `${Q}.b1.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b1.concepts.c2.choices.a`, feedbackKey: `${Q}.b1.concepts.c2.feedback.a`, feedbackTone: "partial", isCorrect: false },
+              { id: "b", labelKey: `${Q}.b1.concepts.c2.choices.b`, feedbackKey: `${Q}.b1.concepts.c2.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "c", labelKey: `${Q}.b1.concepts.c2.choices.c`, feedbackKey: `${Q}.b1.concepts.c2.feedback.c`, feedbackTone: "correct", isCorrect: true },
+            ],
+          },
+        ],
+        insightSlideId: "getting-started",
+        microChecks: [
+          {
+            type: "trueFalse",
+            id: "b1-tf",
+            statements: [
+              { id: "s1", statementKey: `${Q}.b1.micro.tf.s1.statement`, isTrue: true, explanationKey: `${Q}.b1.micro.tf.s1.explanation` },
+              { id: "s2", statementKey: `${Q}.b1.micro.tf.s2.statement`, isTrue: false, explanationKey: `${Q}.b1.micro.tf.s2.explanation` },
+              { id: "s3", statementKey: `${Q}.b1.micro.tf.s3.statement`, isTrue: true, explanationKey: `${Q}.b1.micro.tf.s3.explanation` },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 2 — Classroom Setup                                    */
+      /* ============================================================ */
+      {
+        blockId: "classroom-setup",
+        titleKey: `${Q}.b2.title`,
+        iconEmoji: "🏫",
+        exercise: {
+          type: "ordering",
+          id: "b2-order",
+          instructionKey: `${Q}.b2.exercise.instruction`,
+          scaleStartKey: `${Q}.b2.exercise.scaleStart`,
+          scaleEndKey: `${Q}.b2.exercise.scaleEnd`,
+          items: [
+            { id: "i1", labelKey: `${Q}.b2.exercise.i1`, correctPosition: 0 },
+            { id: "i2", labelKey: `${Q}.b2.exercise.i2`, correctPosition: 1 },
+            { id: "i3", labelKey: `${Q}.b2.exercise.i3`, correctPosition: 2 },
+            { id: "i4", labelKey: `${Q}.b2.exercise.i4`, correctPosition: 3 },
+          ],
+        },
+        scenario: {
+          id: "b2-s0",
+          contextKey: `${Q}.b2.scenario.context`,
+          questionKey: `${Q}.b2.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${Q}.b2.scenario.choices.a`, feedbackKey: `${Q}.b2.scenario.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+            { id: "b", labelKey: `${Q}.b2.scenario.choices.b`, feedbackKey: `${Q}.b2.scenario.feedback.b`, feedbackTone: "correct", isCorrect: true },
+            { id: "c", labelKey: `${Q}.b2.scenario.choices.c`, feedbackKey: `${Q}.b2.scenario.feedback.c`, feedbackTone: "partial", isCorrect: false },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b2-c1",
+            contextKey: `${Q}.b2.concepts.c1.context`,
+            questionKey: `${Q}.b2.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b2.concepts.c1.choices.a`, feedbackKey: `${Q}.b2.concepts.c1.feedback.a`, feedbackTone: "correct", isCorrect: true },
+              { id: "b", labelKey: `${Q}.b2.concepts.c1.choices.b`, feedbackKey: `${Q}.b2.concepts.c1.feedback.b`, feedbackTone: "partial", isCorrect: false },
+              { id: "c", labelKey: `${Q}.b2.concepts.c1.choices.c`, feedbackKey: `${Q}.b2.concepts.c1.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+            ],
+          },
+          {
+            id: "b2-c2",
+            contextKey: `${Q}.b2.concepts.c2.context`,
+            questionKey: `${Q}.b2.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b2.concepts.c2.choices.a`, feedbackKey: `${Q}.b2.concepts.c2.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "b", labelKey: `${Q}.b2.concepts.c2.choices.b`, feedbackKey: `${Q}.b2.concepts.c2.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${Q}.b2.concepts.c2.choices.c`, feedbackKey: `${Q}.b2.concepts.c2.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+        ],
+        insightSlideId: "classroom-setup",
+        microChecks: [
+          {
+            type: "classify",
+            id: "b2-cls",
+            instructionKey: `${Q}.b2.micro.cls.instruction`,
+            categories: [
+              { id: "essential", labelKey: `${Q}.b2.micro.cls.cat.essential` },
+              { id: "optional", labelKey: `${Q}.b2.micro.cls.cat.optional` },
+            ],
+            items: [
+              { id: "i1", labelKey: `${Q}.b2.micro.cls.i1`, correctCategoryId: "essential" },
+              { id: "i2", labelKey: `${Q}.b2.micro.cls.i2`, correctCategoryId: "optional" },
+              { id: "i3", labelKey: `${Q}.b2.micro.cls.i3`, correctCategoryId: "essential" },
+              { id: "i4", labelKey: `${Q}.b2.micro.cls.i4`, correctCategoryId: "optional" },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 3 — Installing Apps                                    */
+      /* ============================================================ */
+      {
+        blockId: "store-install",
+        titleKey: `${Q}.b3.title`,
+        iconEmoji: "📲",
+        exercise: {
+          type: "matching",
+          id: "b3-match",
+          instructionKey: `${Q}.b3.exercise.instruction`,
+          pairs: [
+            { id: "p1", leftKey: `${Q}.b3.exercise.left.p1`, rightKey: `${Q}.b3.exercise.right.p1` },
+            { id: "p2", leftKey: `${Q}.b3.exercise.left.p2`, rightKey: `${Q}.b3.exercise.right.p2` },
+            { id: "p3", leftKey: `${Q}.b3.exercise.left.p3`, rightKey: `${Q}.b3.exercise.right.p3` },
+            { id: "p4", leftKey: `${Q}.b3.exercise.left.p4`, rightKey: `${Q}.b3.exercise.right.p4` },
+          ],
+        },
+        scenario: {
+          id: "b3-s0",
+          contextKey: `${Q}.b3.scenario.context`,
+          questionKey: `${Q}.b3.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${Q}.b3.scenario.choices.a`, feedbackKey: `${Q}.b3.scenario.feedback.a`, feedbackTone: "partial", isCorrect: false },
+            { id: "b", labelKey: `${Q}.b3.scenario.choices.b`, feedbackKey: `${Q}.b3.scenario.feedback.b`, feedbackTone: "correct", isCorrect: true },
+            { id: "c", labelKey: `${Q}.b3.scenario.choices.c`, feedbackKey: `${Q}.b3.scenario.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b3-c1",
+            contextKey: `${Q}.b3.concepts.c1.context`,
+            questionKey: `${Q}.b3.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b3.concepts.c1.choices.a`, feedbackKey: `${Q}.b3.concepts.c1.feedback.a`, feedbackTone: "correct", isCorrect: true },
+              { id: "b", labelKey: `${Q}.b3.concepts.c1.choices.b`, feedbackKey: `${Q}.b3.concepts.c1.feedback.b`, feedbackTone: "partial", isCorrect: false },
+              { id: "c", labelKey: `${Q}.b3.concepts.c1.choices.c`, feedbackKey: `${Q}.b3.concepts.c1.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+            ],
+          },
+          {
+            id: "b3-c2",
+            contextKey: `${Q}.b3.concepts.c2.context`,
+            questionKey: `${Q}.b3.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b3.concepts.c2.choices.a`, feedbackKey: `${Q}.b3.concepts.c2.feedback.a`, feedbackTone: "partial", isCorrect: false },
+              { id: "b", labelKey: `${Q}.b3.concepts.c2.choices.b`, feedbackKey: `${Q}.b3.concepts.c2.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "c", labelKey: `${Q}.b3.concepts.c2.choices.c`, feedbackKey: `${Q}.b3.concepts.c2.feedback.c`, feedbackTone: "correct", isCorrect: true },
+            ],
+          },
+        ],
+        insightSlideId: "store-install",
+        microChecks: [
+          {
+            type: "trueFalse",
+            id: "b3-tf",
+            statements: [
+              { id: "s1", statementKey: `${Q}.b3.micro.tf.s1.statement`, isTrue: true, explanationKey: `${Q}.b3.micro.tf.s1.explanation` },
+              { id: "s2", statementKey: `${Q}.b3.micro.tf.s2.statement`, isTrue: false, explanationKey: `${Q}.b3.micro.tf.s2.explanation` },
+              { id: "s3", statementKey: `${Q}.b3.micro.tf.s3.statement`, isTrue: true, explanationKey: `${Q}.b3.micro.tf.s3.explanation` },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 4 — Casting & Sharing                                  */
+      /* ============================================================ */
+      {
+        blockId: "casting",
+        titleKey: `${Q}.b4.title`,
+        iconEmoji: "📺",
+        exercise: {
+          type: "ordering",
+          id: "b4-order",
+          instructionKey: `${Q}.b4.exercise.instruction`,
+          scaleStartKey: `${Q}.b4.exercise.scaleStart`,
+          scaleEndKey: `${Q}.b4.exercise.scaleEnd`,
+          items: [
+            { id: "i1", labelKey: `${Q}.b4.exercise.i1`, correctPosition: 0 },
+            { id: "i2", labelKey: `${Q}.b4.exercise.i2`, correctPosition: 1 },
+            { id: "i3", labelKey: `${Q}.b4.exercise.i3`, correctPosition: 2 },
+            { id: "i4", labelKey: `${Q}.b4.exercise.i4`, correctPosition: 3 },
+          ],
+        },
+        scenario: {
+          id: "b4-s0",
+          contextKey: `${Q}.b4.scenario.context`,
+          questionKey: `${Q}.b4.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${Q}.b4.scenario.choices.a`, feedbackKey: `${Q}.b4.scenario.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+            { id: "b", labelKey: `${Q}.b4.scenario.choices.b`, feedbackKey: `${Q}.b4.scenario.feedback.b`, feedbackTone: "partial", isCorrect: false },
+            { id: "c", labelKey: `${Q}.b4.scenario.choices.c`, feedbackKey: `${Q}.b4.scenario.feedback.c`, feedbackTone: "correct", isCorrect: true },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b4-c1",
+            contextKey: `${Q}.b4.concepts.c1.context`,
+            questionKey: `${Q}.b4.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b4.concepts.c1.choices.a`, feedbackKey: `${Q}.b4.concepts.c1.feedback.a`, feedbackTone: "correct", isCorrect: true },
+              { id: "b", labelKey: `${Q}.b4.concepts.c1.choices.b`, feedbackKey: `${Q}.b4.concepts.c1.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "c", labelKey: `${Q}.b4.concepts.c1.choices.c`, feedbackKey: `${Q}.b4.concepts.c1.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+          {
+            id: "b4-c2",
+            contextKey: `${Q}.b4.concepts.c2.context`,
+            questionKey: `${Q}.b4.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b4.concepts.c2.choices.a`, feedbackKey: `${Q}.b4.concepts.c2.feedback.a`, feedbackTone: "partial", isCorrect: false },
+              { id: "b", labelKey: `${Q}.b4.concepts.c2.choices.b`, feedbackKey: `${Q}.b4.concepts.c2.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${Q}.b4.concepts.c2.choices.c`, feedbackKey: `${Q}.b4.concepts.c2.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+            ],
+          },
+        ],
+        insightSlideId: "casting",
+        microChecks: [
+          {
+            type: "classify",
+            id: "b4-cls",
+            instructionKey: `${Q}.b4.micro.cls.instruction`,
+            categories: [
+              { id: "wired", labelKey: `${Q}.b4.micro.cls.cat.wired` },
+              { id: "wireless", labelKey: `${Q}.b4.micro.cls.cat.wireless` },
+            ],
+            items: [
+              { id: "i1", labelKey: `${Q}.b4.micro.cls.i1`, correctCategoryId: "wireless" },
+              { id: "i2", labelKey: `${Q}.b4.micro.cls.i2`, correctCategoryId: "wired" },
+              { id: "i3", labelKey: `${Q}.b4.micro.cls.i3`, correctCategoryId: "wireless" },
+              { id: "i4", labelKey: `${Q}.b4.micro.cls.i4`, correctCategoryId: "wired" },
+              { id: "i5", labelKey: `${Q}.b4.micro.cls.i5`, correctCategoryId: "wireless" },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 5 — Pre-Class Checklist                                */
+      /* ============================================================ */
+      {
+        blockId: "pre-class-checklist",
+        titleKey: `${Q}.b5.title`,
+        iconEmoji: "📋",
+        exercise: {
+          type: "ordering",
+          id: "b5-order",
+          instructionKey: `${Q}.b5.exercise.instruction`,
+          scaleStartKey: `${Q}.b5.exercise.scaleStart`,
+          scaleEndKey: `${Q}.b5.exercise.scaleEnd`,
+          items: [
+            { id: "i1", labelKey: `${Q}.b5.exercise.i1`, correctPosition: 0 },
+            { id: "i2", labelKey: `${Q}.b5.exercise.i2`, correctPosition: 1 },
+            { id: "i3", labelKey: `${Q}.b5.exercise.i3`, correctPosition: 2 },
+            { id: "i4", labelKey: `${Q}.b5.exercise.i4`, correctPosition: 3 },
+            { id: "i5", labelKey: `${Q}.b5.exercise.i5`, correctPosition: 4 },
+          ],
+        },
+        scenario: {
+          id: "b5-s0",
+          contextKey: `${Q}.b5.scenario.context`,
+          questionKey: `${Q}.b5.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${Q}.b5.scenario.choices.a`, feedbackKey: `${Q}.b5.scenario.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+            { id: "b", labelKey: `${Q}.b5.scenario.choices.b`, feedbackKey: `${Q}.b5.scenario.feedback.b`, feedbackTone: "partial", isCorrect: false },
+            { id: "c", labelKey: `${Q}.b5.scenario.choices.c`, feedbackKey: `${Q}.b5.scenario.feedback.c`, feedbackTone: "correct", isCorrect: true },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b5-c1",
+            contextKey: `${Q}.b5.concepts.c1.context`,
+            questionKey: `${Q}.b5.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b5.concepts.c1.choices.a`, feedbackKey: `${Q}.b5.concepts.c1.feedback.a`, feedbackTone: "partial", isCorrect: false },
+              { id: "b", labelKey: `${Q}.b5.concepts.c1.choices.b`, feedbackKey: `${Q}.b5.concepts.c1.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${Q}.b5.concepts.c1.choices.c`, feedbackKey: `${Q}.b5.concepts.c1.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+            ],
+          },
+          {
+            id: "b5-c2",
+            contextKey: `${Q}.b5.concepts.c2.context`,
+            questionKey: `${Q}.b5.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${Q}.b5.concepts.c2.choices.a`, feedbackKey: `${Q}.b5.concepts.c2.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "b", labelKey: `${Q}.b5.concepts.c2.choices.b`, feedbackKey: `${Q}.b5.concepts.c2.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${Q}.b5.concepts.c2.choices.c`, feedbackKey: `${Q}.b5.concepts.c2.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+        ],
+        insightSlideId: "pre-class-checklist",
+        microChecks: [
+          {
+            type: "trueFalse",
+            id: "b5-tf",
+            statements: [
+              { id: "s1", statementKey: `${Q}.b5.micro.tf.s1.statement`, isTrue: true, explanationKey: `${Q}.b5.micro.tf.s1.explanation` },
+              { id: "s2", statementKey: `${Q}.b5.micro.tf.s2.statement`, isTrue: false, explanationKey: `${Q}.b5.micro.tf.s2.explanation` },
+              { id: "s3", statementKey: `${Q}.b5.micro.tf.s3.statement`, isTrue: true, explanationKey: `${Q}.b5.micro.tf.s3.explanation` },
             ],
           },
         ],

@@ -30,9 +30,7 @@ export type BootcampModule = {
 /** Theoretical modules: video + quiz only (no interactive missions). */
 export const theoreticalSlugs = new Set([
   "basic-foundations",             // M0
-  "designing-meaningful-learning", // M2
-  "briefing-and-debriefing",       // M5
-  "vr-educational-apps",           // M7
+  "getting-vr-ready",             // M1
 ]);
 
 function getEssentialSections(module: DocumentationModule): ModuleSection[] {
@@ -71,6 +69,7 @@ function buildModuleLessons(module: DocumentationModule): BootcampLesson[] {
 /** Slugs of modules currently enabled in the bootcamp (added incrementally). */
 const enabledBootcampSlugs = new Set([
   "basic-foundations", // M0
+  "getting-vr-ready",  // M1
 ]);
 
 /** All modules shown in the bootcamp timeline (enabled + upcoming placeholders). */
@@ -101,14 +100,6 @@ export const bootcampCatalog: BootcampModule[] = documentationModules
         sectionId: tourSectionId,
       });
 
-      lessons.push({
-        id: "boss-full-prep",
-        type: "practice",
-        titleKey: "wizardMissions.fullPrep.title",
-        descriptionKey: "wizardMissions.fullPrep.description",
-        durationMin: 15,
-        sectionId: "full-prep-boss",
-      });
     }
 
     const heroImages: Record<string, string> = {

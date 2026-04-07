@@ -292,6 +292,48 @@
           "p3": "XR (Extended Reality) is the umbrella term that covers VR, AR, and everything in between — use it when the specific technology matters less than the learning goal",
           "highlight": "Quick rule: Does the student need to be INSIDE an experience? → VR. Does the experience need to be ADDED to the real world? → AR. Not sure yet? → Think in terms of XR."
         }
+      },
+      "gettingVrReady": {
+        "s1": {
+          "title": "Initial Quest 3 Setup",
+          "subtitle": "Unboxing, charging, IPD, and language — the four things to get right before anything else",
+          "p1": "Charge headsets fully the night before — a Quest 3 takes about 2 hours from empty and lasts roughly 2 hours of active use",
+          "p2": "Adjust the IPD (inter-pupillary distance) wheel for each student — wrong IPD causes blurry vision and headaches within minutes",
+          "p3": "Set the language and complete the initial firmware update — both require WiFi and can take 10–20 minutes the first time",
+          "highlight": "A headset that isn't charged, adjusted, and updated will cause problems in the first five minutes of class. Do these once, do them right."
+        },
+        "s2": {
+          "title": "Classroom Setup",
+          "subtitle": "Room layout, WiFi, and Guardian boundaries make or break a VR session",
+          "p1": "Clear at least 2×2 meters per student station — chairs, bags, and desks are invisible hazards once headsets go on",
+          "p2": "Verify WiFi can handle all headsets simultaneously — one Quest 3 uses 15–30 Mbps when streaming; multiply by your class set",
+          "p3": "Draw Guardian boundaries at each station before class — this prevents students from walking into walls, furniture, or each other",
+          "highlight": "The room is your stage. If the physical space isn't ready, the virtual experience won't work — no matter how good the app is."
+        },
+        "s3": {
+          "title": "Finding and Installing Apps",
+          "subtitle": "Where to find educational VR apps and how to manage them across a class set",
+          "p1": "The Meta Store is the main source — search by name, or browse the Education category for curated titles",
+          "p2": "App Lab hosts experimental and indie apps not listed in the main store — access them via direct links or search codes",
+          "p3": "Install and test every app before class day — downloads can be large (1–4 GB) and first launches often require additional setup",
+          "highlight": "Never install an app for the first time during class. Download, test, and verify it works on every headset the day before."
+        },
+        "s4": {
+          "title": "Casting & Sharing",
+          "subtitle": "How to show what a student sees in VR on a classroom screen",
+          "p1": "Casting wirelessly mirrors the headset view to a phone, tablet, or browser — great for the whole class to see what one student experiences",
+          "p2": "All devices must be on the same WiFi network — casting fails silently if the headset and display device are on different networks",
+          "p3": "Expect 1–3 seconds of lag — casting is not real-time, so narrate what the student is doing to keep the audience engaged",
+          "highlight": "Casting turns VR from an individual experience into a shared classroom moment. Plan for lag and narrate the action."
+        },
+        "s5": {
+          "title": "Pre-Class Checklist",
+          "subtitle": "A systematic check the night before and morning of prevents 90% of VR session problems",
+          "p1": "Night before: plug in all headsets, verify WiFi credentials, and confirm the target app is installed and updated on every device",
+          "p2": "Morning of: check battery levels (>80%), test Guardian on one headset, launch the app to confirm it loads, and set up casting",
+          "p3": "Have a backup plan: know which offline app to switch to if WiFi fails, and keep one extra headset charged as a spare",
+          "highlight": "The best VR sessions look effortless because the teacher checked everything twice. The checklist is your safety net."
+        }
       }
     },
     "learningBlocks": {
@@ -402,12 +444,9 @@
           },
           "micro": {
             "tf": {
-              "s1": "VR completely replaces the real environment — the student cannot see the classroom",
-              "s1.explanation": "Correct! VR creates a fully immersive 360° digital world. The physical classroom disappears entirely for the student.",
-              "s2": "A 360° video on a headset is the most interactive form of VR",
-              "s2.explanation": "A 360° video is passive — the student only watches. Interactive VR lets students do things: touch, move, decide. Watching is not the same as doing.",
-              "s3": "In VR, the teacher can get the student's attention by waving at them",
-              "s3.explanation": "The student genuinely cannot see the teacher or the classroom. VR replaces reality completely — you need other strategies (audio cues, tapping their shoulder) to get attention."
+              "s1": { "statement": "VR completely replaces the real environment — the student cannot see the classroom", "explanation": "Correct! VR creates a fully immersive 360° digital world. The physical classroom disappears entirely for the student." },
+              "s2": { "statement": "A 360° video on a headset is the most interactive form of VR", "explanation": "A 360° video is passive — the student only watches. Interactive VR lets students do things: touch, move, decide. Watching is not the same as doing." },
+              "s3": { "statement": "In VR, the teacher can get the student's attention by waving at them", "explanation": "The student genuinely cannot see the teacher or the classroom. VR replaces reality completely — you need other strategies (audio cues, tapping their shoulder) to get attention." }
             }
           }
         },
@@ -468,12 +507,9 @@
           },
           "micro": {
             "tf": {
-              "s1": "In VR, a student who fails a simulation can try again with no real consequences",
-              "s1.explanation": "Correct! Safe repetition is a core VR advantage. Students can practice as many times as needed — mistakes carry no real-world risk.",
-              "s2": "VR is most effective when students watch an expert perform a procedure",
-              "s2.explanation": "Watching is passive. VR's real power is when students DO the procedure themselves — practicing steps, making decisions, getting feedback.",
-              "s3": "Repetition in a safe VR environment builds confidence and competence",
-              "s3.explanation": "Correct! Each retry reinforces the correct approach. Students build muscle memory and decision-making skills through repeated safe practice."
+              "s1": { "statement": "In VR, a student who fails a simulation can try again with no real consequences", "explanation": "Correct! Safe repetition is a core VR advantage. Students can practice as many times as needed — mistakes carry no real-world risk." },
+              "s2": { "statement": "VR is most effective when students watch an expert perform a procedure", "explanation": "Watching is passive. VR's real power is when students DO the procedure themselves — practicing steps, making decisions, getting feedback." },
+              "s3": { "statement": "Repetition in a safe VR environment builds confidence and competence", "explanation": "Correct! Each retry reinforces the correct approach. Students build muscle memory and decision-making skills through repeated safe practice." }
             }
           }
         },
@@ -623,6 +659,349 @@
             }
           }
         }
+      },
+      "gettingVrReady": {
+        "b1": {
+          "title": "Initial Quest 3 Setup",
+          "exercise": {
+            "instruction": "Connect each setup step with the problem it prevents",
+            "left": {
+              "p1": "Adjusting the IPD wheel for each student",
+              "p2": "Charging headsets fully the night before",
+              "p3": "Setting the interface language",
+              "p4": "Adjusting the head strap properly"
+            },
+            "right": {
+              "p1": "Blurry vision and headaches",
+              "p2": "Headsets dying mid-session",
+              "p3": "Students unable to navigate menus",
+              "p4": "Headset sliding or pressing uncomfortably"
+            }
+          },
+          "scenario": {
+            "context": "You just received 8 new Quest 3 headsets for your classroom. You have 20 minutes before your first VR session with students. The headsets are still in their boxes.",
+            "question": "What should you prioritize in those 20 minutes?",
+            "choices": {
+              "a": "Unbox all 8, turn them on, and hand them out immediately so students can start exploring",
+              "b": "Postpone the session — 20 minutes isn't enough to set up 8 headsets properly. Use the time to charge, adjust IPD, and update firmware instead",
+              "c": "Unbox and charge them, but skip IPD adjustment and language setup to save time"
+            },
+            "feedback": {
+              "a": "Handing out uncharged, unadjusted headsets will cause problems immediately — blurry visuals, dead batteries, firmware prompts. Students' first impression of VR will be frustration, not wonder.",
+              "b": "Smart call. A bad first experience creates resistance to future VR sessions. Using these 20 minutes to charge, adjust, and update means tomorrow's session starts clean. First impressions matter — protect them.",
+              "c": "Charging is essential, but skipping IPD adjustment means half your students will see a blurry image and get headaches. An uncomfortable first experience is hard to undo — those students may resist VR next time."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A student puts on a Quest 3 and says: 'Everything is blurry and my eyes hurt.' You notice the IPD wheel hasn't been adjusted.",
+              "question": "Why does wrong IPD cause these symptoms?",
+              "choices": {
+                "a": "The headset screen is defective — it needs a replacement",
+                "b": "The lenses aren't aligned with the student's eyes — each person's eye spacing is different, and the IPD wheel moves the lenses to match. Wrong alignment forces the eyes to strain, causing blur and pain.",
+                "c": "The student probably needs glasses and should wear them inside the headset"
+              },
+              "feedback": {
+                "a": "It's not a hardware defect. The Quest 3 lenses need to be aligned with each user's unique eye spacing. The IPD wheel adjusts this — it takes 5 seconds and makes the difference between clear vision and an unusable headset.",
+                "b": "Exactly. IPD (inter-pupillary distance) varies between 56mm and 72mm across people. The Quest 3's wheel physically moves the lenses to match. When misaligned, the brain tries to compensate, causing strain, blur, and headaches within minutes.",
+                "c": "Glasses can be worn inside the Quest 3, but that's a separate issue. The blurriness here is caused by lens misalignment, not vision correction. Adjusting the IPD wheel is the first fix to try — it resolves most 'blurry image' complaints instantly."
+              }
+            },
+            "c2": {
+              "context": "It's 8:00 AM and your VR session starts at 9:00 AM. You discover that 3 of your 8 headsets are at 15% battery. A full charge takes about 2 hours.",
+              "question": "What's your best approach?",
+              "choices": {
+                "a": "Plug in the 3 low headsets and hope they charge enough in 60 minutes — Quest 3 charges fast, so 15% to 80% in an hour should work",
+                "b": "Cancel the session — you need all 8 headsets to run the activity",
+                "c": "Use the 5 charged headsets to start the session with a rotation schedule, plug in the 3 low ones, and swap them in when they reach at least 50% — enough for a 30-minute rotation"
+              },
+              "feedback": {
+                "a": "Quest 3 charges at roughly 30-40% per hour, so after 60 minutes those headsets might reach 45-55% — usable but risky for a full session. A better plan is to start with the 5 charged ones and rotate the others in as they charge.",
+                "b": "You don't need all 8 at once. Rotation-based VR sessions are common and effective — 5 students in VR while 3 do a related non-VR activity, then swap. Canceling wastes the preparation and the charged headsets.",
+                "c": "This is the teacher move. Start the session with what works, build a rotation that keeps all students engaged, and bring the charging headsets online as they reach usable levels. Adaptability is a core VR classroom skill."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": { "statement": "Every student needs their own IPD adjustment — one size does not fit all", "explanation": "Correct! IPD ranges from 56mm to 72mm across people. Using the wrong setting causes blurry vision and eye strain within minutes." },
+              "s2": { "statement": "A Quest 3 can be used straight out of the box without any setup", "explanation": "A new Quest 3 requires charging (2+ hours), firmware updates (WiFi needed), IPD adjustment, and language setup before it's classroom-ready." },
+              "s3": { "statement": "Charging headsets the night before class is the single most important preparation step", "explanation": "Correct! A dead headset is a useless headset. Overnight charging ensures full battery (2+ hours of use) and avoids the #1 preventable classroom VR problem." }
+            }
+          }
+        },
+        "b2": {
+          "title": "Classroom Setup",
+          "exercise": {
+            "instruction": "Put these classroom preparation steps in the correct order",
+            "scaleStart": "Do first",
+            "scaleEnd": "Do last",
+            "i1": "Clear furniture to create open stations with 2×2m spacing",
+            "i2": "Test WiFi connection with one headset",
+            "i3": "Set up Guardian boundaries at each station",
+            "i4": "Run a quick test of the VR app on one headset"
+          },
+          "scenario": {
+            "context": "You're setting up a VR session for 25 students in a standard classroom. You have 8 headsets and desks arranged in traditional rows.",
+            "question": "What's your first priority?",
+            "choices": {
+              "a": "Leave the desks as they are — students can stand between the rows while wearing headsets",
+              "b": "Push desks to the walls to create 8 clear stations with at least 2×2 meters each, with a safe buffer zone between them",
+              "c": "Move to the gym instead — classrooms aren't big enough for VR"
+            },
+            "feedback": {
+              "a": "Standing between rows is dangerous. Students in VR can't see desks, chairs, or each other. Even small movements — reaching for a virtual object, turning around — can cause collisions. Clear space is non-negotiable.",
+              "b": "This is the standard approach. Pushing desks to the walls creates clear zones where students can move safely. 2×2 meters per station with buffer zones between them prevents collisions. Mark stations with tape if possible.",
+              "c": "A gym works but isn't necessary. A standard classroom with desks pushed to the walls provides enough space for 6-8 VR stations. Save gym moves for activities that require large-scale movement."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "You've set up Guardian boundaries on all 8 headsets, but the classroom WiFi network only shows 3 bars of signal strength. A colleague says: 'Three bars is fine — let's just start.'",
+              "question": "Why should you test WiFi load before starting?",
+              "choices": {
+                "a": "Three bars of signal strength means nothing when 8 devices connect simultaneously. Each Quest 3 streaming an app uses 15–30 Mbps. Test by connecting all headsets at once and launching the app — if it lags, reduce the number of simultaneous users.",
+                "b": "Three bars is fine — WiFi only matters for downloading apps, not for running them",
+                "c": "Switch to mobile hotspot from your phone — it's more reliable than school WiFi"
+              },
+              "feedback": {
+                "a": "Exactly. Signal strength (bars) measures one device. Bandwidth is shared — 8 headsets each pulling 15-30 Mbps means your WiFi needs 120-240 Mbps of real throughput. School networks often can't deliver this. Always test with all headsets connected before class.",
+                "b": "Many VR apps require continuous WiFi for streaming content, casting, and cloud saves. Even apps that work offline may fail to launch if they detect no connection. WiFi quality under load is critical, not optional.",
+                "c": "A mobile hotspot typically caps at 30-50 Mbps shared across all devices — not enough for 8 headsets. School WiFi, even if imperfect, has more bandwidth. The solution is to test and optimize school WiFi, not bypass it."
+              }
+            },
+            "c2": {
+              "context": "During your first VR session, a student walks straight into another student's zone. Their Guardian boundaries didn't prevent the collision because the zones were set up with only 30cm between them.",
+              "question": "What went wrong and how do you fix it?",
+              "choices": {
+                "a": "Guardian boundaries only warn the user — they don't create walls. The student can walk through the warning. More space between zones is needed.",
+                "b": "Set Guardian boundaries for each student so that adjacent boundaries overlap — this creates a shared safe zone in the middle",
+                "c": "Guardian is just a visual warning — you should physically mark zones on the floor with tape and leave at least 1 meter between boundaries"
+              },
+              "feedback": {
+                "a": "Correct observation but incomplete solution. Guardian shows a virtual grid when you approach the edge, but it doesn't physically stop you. You need buffer space AND floor markings so students know their limits even before putting headsets on.",
+                "b": "Overlapping boundaries would make the warning appear too early for both students, making VR unusable. You want each student's Guardian to fit their station with buffer space BETWEEN zones, not overlapping them.",
+                "c": "This is the complete solution. Guardian warns the VR user, but floor tape guides the teacher and nearby students. Leave at least 1 meter between Guardian edges so even if a student ignores the warning, they won't reach another person's zone."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each setup step as essential or optional for a basic VR session",
+              "cat": {
+                "essential": "Essential",
+                "optional": "Nice to have"
+              },
+              "i1": "Setting up Guardian boundaries at every station",
+              "i2": "Decorating the VR stations with printed labels",
+              "i3": "Testing WiFi with all headsets connected simultaneously",
+              "i4": "Playing background music during the VR session"
+            }
+          }
+        },
+        "b3": {
+          "title": "Finding and Installing Apps",
+          "exercise": {
+            "instruction": "Connect each app source with its key characteristic",
+            "left": {
+              "p1": "Meta Quest Store (main store)",
+              "p2": "App Lab",
+              "p3": "Pre-loaded demo apps",
+              "p4": "Browser-based WebXR"
+            },
+            "right": {
+              "p1": "Reviewed and curated — reliable but smaller selection",
+              "p2": "Experimental and indie — accessed via links or codes",
+              "p3": "Come with the headset — useful for quick demos and testing",
+              "p4": "No install needed — runs in the headset browser"
+            }
+          },
+          "scenario": {
+            "context": "A science colleague asks you to install a VR chemistry lab app for tomorrow's class. You search the Meta Quest Store and can't find it by name.",
+            "question": "What do you do?",
+            "choices": {
+              "a": "Tell your colleague the app doesn't exist for Quest 3 — if it's not in the store, it's not available",
+              "b": "Search App Lab using the exact app name or developer link — many educational apps are distributed through App Lab rather than the main store. If still not found, check the developer's website for a direct link.",
+              "c": "Download a different chemistry app that looks similar — it's probably the same thing with a different name"
+            },
+            "feedback": {
+              "a": "The main store is curated and doesn't list everything. Many educational and research apps are on App Lab — Meta's secondary distribution channel for experimental apps. Always check App Lab before concluding an app doesn't exist.",
+              "b": "Smart approach. App Lab is specifically designed for educational, experimental, and niche apps that haven't gone through full store review. Many top VR education apps are only available through App Lab or direct developer links. Always have the developer URL ready.",
+              "c": "Substituting untested apps is risky. A 'similar' app may have different content, controls, or quality. Your colleague chose a specific app for a reason — find the right one through App Lab or the developer, or discuss alternatives together."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "You've installed the VR app on one headset and it works perfectly. You need it on 7 more headsets for class tomorrow. Each headset requires its own download (1.8 GB per device).",
+              "question": "What's the most efficient approach?",
+              "choices": {
+                "a": "Start all 7 downloads simultaneously on the school WiFi — bandwidth doesn't matter since downloads happen in the background",
+                "b": "Download to 2-3 headsets at a time to avoid saturating the WiFi, and verify each install launches correctly before moving to the next batch",
+                "c": "Copy the app from the first headset to the others using a USB drive — it's faster than downloading 7 times"
+              },
+              "feedback": {
+                "a": "Seven simultaneous 1.8 GB downloads (12.6 GB total) can saturate school WiFi and cause all downloads to fail or crawl. Stagger downloads in batches of 2-3 to keep the network usable for both you and the rest of the school.",
+                "b": "This is the practical approach. Staggering downloads prevents WiFi saturation, and testing each install catches issues early. A failed download on one headset doesn't mean it will fail on all — but testing each one ensures you know before class starts.",
+                "c": "Quest apps can't be copied via USB like regular files — they're tied to the Meta account and require proper installation through the store or App Lab. Each headset must download its own copy."
+              }
+            },
+            "c2": {
+              "context": "A headset shows 'Storage Full' when you try to install a new educational app. The app needs 2.3 GB and the headset has 800 MB free.",
+              "question": "What's your best approach?",
+              "choices": {
+                "a": "Buy a microSD card to expand the storage",
+                "b": "Compress the app files to make them smaller",
+                "c": "Delete unused apps and clear cached data — check Settings > Storage to identify the biggest space users, remove demo apps and games students don't use for class, and clear temporary files"
+              },
+              "feedback": {
+                "a": "The Quest 3 does not have a microSD card slot. Storage is fixed at 128 GB or 512 GB depending on the model. The only way to free space is to remove content.",
+                "b": "You cannot compress installed apps on Quest. The files are already optimized by the developer. The only solution is to free existing space by removing content you don't need.",
+                "c": "This is the way. Go to Settings > Storage to see what's using space. Pre-loaded demos, old apps, and cached data often take gigabytes. Remove anything not needed for upcoming classes. Keep a habit of cleaning storage monthly."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": { "statement": "You should always install and test VR apps at least one day before class — never during class time", "explanation": "Correct! Downloads can be slow, installs can fail, and apps sometimes need first-launch setup. Discovering these issues during class wastes everyone's time." },
+              "s2": { "statement": "If an app isn't in the main Meta Quest Store, it doesn't exist for the Quest 3", "explanation": "Many educational apps are only on App Lab — Meta's secondary channel for experimental and niche apps. Always check App Lab and the developer's website before concluding an app is unavailable." },
+              "s3": { "statement": "Each headset needs its own app download — you cannot copy apps between headsets via USB", "explanation": "Correct! Quest apps are account-linked and must be downloaded individually to each device through the store or App Lab." }
+            }
+          }
+        },
+        "b4": {
+          "title": "Casting & Sharing",
+          "exercise": {
+            "instruction": "Put these casting setup steps in the correct order",
+            "scaleStart": "Do first",
+            "scaleEnd": "Do last",
+            "i1": "Connect the display device (laptop/phone/tablet) to the same WiFi as the headsets",
+            "i2": "Open the Meta Quest casting page or app on the display device",
+            "i3": "Start casting from inside the headset (Quick Settings > Cast)",
+            "i4": "Test the audio and verify the lag is acceptable for your activity"
+          },
+          "scenario": {
+            "context": "You're demonstrating a VR anatomy app to the school principal. You cast the headset view to your laptop and project it. The principal sees the image but there's a 3-second delay, and the audio is out of sync.",
+            "question": "What should you do?",
+            "choices": {
+              "a": "Apologize and explain that lag is unavoidable with VR casting — there's nothing you can do about it",
+              "b": "Stop the demo and troubleshoot the WiFi — 3 seconds of lag means the network is overloaded",
+              "c": "Narrate what you're doing in real-time while the delayed video catches up. Move slowly, pause at key moments, and point out details as they appear on screen. After the demo, check if other devices are consuming WiFi bandwidth."
+            },
+            "feedback": {
+              "a": "Some lag (1-2 seconds) is normal with wireless casting, but 3 seconds is excessive and usually fixable. Don't accept it as inevitable — network congestion, distance from the router, or other devices streaming can all cause it.",
+              "b": "Stopping the demo breaks the flow and makes the technology look unreliable. The lag is likely fixable, but this isn't the moment to diagnose WiFi. A better approach is to adapt your presentation technique and fix the network after the demo.",
+              "c": "This is the teacher skill that makes VR demos work. Narrating in real-time covers the lag, and pausing at key moments lets the display catch up. After the demo, reduce WiFi congestion by disconnecting unnecessary devices and moving closer to the router."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A teacher wants to cast two headsets simultaneously so the class can compare what two students are seeing side by side.",
+              "question": "Is this possible, and what should the teacher consider?",
+              "choices": {
+                "a": "Yes — cast each headset to a different browser tab or device, then display both on the projector using split-screen. Be aware that two simultaneous streams double the WiFi load and lag.",
+                "b": "No — you can only cast one Quest headset at a time per network",
+                "c": "Yes — but you need a special app that combines both streams into one view"
+              },
+              "feedback": {
+                "a": "Correct. You can cast multiple headsets to different devices or browser tabs simultaneously. The tradeoff: each stream uses bandwidth, so two streams mean more lag and higher WiFi load. Test this before class — some school networks can't handle it.",
+                "b": "Multiple headsets CAN cast simultaneously — each to its own device or browser tab. The limitation isn't technical but practical: every additional stream increases WiFi load and lag. Test with your specific network to see how many streams it supports.",
+                "c": "No special app is needed. Each headset casts independently to its own device or browser tab. You arrange the windows on your projector screen manually using your operating system's window management."
+              }
+            },
+            "c2": {
+              "context": "During a classroom VR session, you notice that casting keeps disconnecting every few minutes. Each time, you have to restart casting from the headset menu.",
+              "question": "What's the most likely cause and fix?",
+              "choices": {
+                "a": "The headset is defective — contact Meta support for a replacement",
+                "b": "The headset and casting device are probably on different WiFi bands (2.4 GHz vs 5 GHz), or the WiFi signal is weak. Ensure both devices are on the same band and frequency, move closer to the router, and reduce network congestion.",
+                "c": "Casting always disconnects during intensive VR apps — it's a known limitation"
+              },
+              "feedback": {
+                "a": "Casting disconnects are almost never hardware defects. They're network issues — wrong WiFi band, weak signal, or network congestion. Check the connection setup before suspecting hardware.",
+                "b": "This is the most common casting issue. Many routers broadcast 2.4 GHz and 5 GHz as separate networks. If the headset is on 5 GHz and the casting device is on 2.4 GHz, the connection drops intermittently. Put both on the same network and band.",
+                "c": "Casting during intensive apps does use more bandwidth, but it shouldn't disconnect. Repeated disconnections indicate a network issue — wrong band, weak signal, or too many devices. These are fixable with proper network setup."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each casting characteristic as wired or wireless",
+              "cat": {
+                "wired": "Wired (USB-C to HDMI)",
+                "wireless": "Wireless (WiFi casting)"
+              },
+              "i1": "Works through the Meta Quest casting menu",
+              "i2": "Zero lag — real-time display with no delay",
+              "i3": "Requires all devices on the same WiFi network",
+              "i4": "Needs an adapter or compatible cable",
+              "i5": "Has 1-3 seconds of inherent delay"
+            }
+          }
+        },
+        "b5": {
+          "title": "Pre-Class Checklist",
+          "exercise": {
+            "instruction": "Put these pre-class preparation steps in the correct order (from night before to class start)",
+            "scaleStart": "Night before",
+            "scaleEnd": "Class starts",
+            "i1": "Plug in all headsets to charge overnight",
+            "i2": "Verify WiFi credentials and test connection",
+            "i3": "Confirm target app is installed and updated on every headset",
+            "i4": "Check battery levels and set up Guardian boundaries",
+            "i5": "Quick-test the app and casting on one headset"
+          },
+          "scenario": {
+            "context": "It's 15 minutes before your VR session. You check headsets and discover: 2 of 5 headsets won't connect to WiFi, and 1 has a dead battery.",
+            "question": "What's your approach?",
+            "choices": {
+              "a": "Delay the session 30 minutes while you troubleshoot all 3 headsets — students can do a worksheet",
+              "b": "Cancel VR and switch to a non-VR backup lesson entirely",
+              "c": "Start the session with the 2 working headsets using a rotation schedule. Plug in the dead one. For the WiFi issue: forget and reconnect the network on both headsets. If that fails, use them with an offline app."
+            },
+            "feedback": {
+              "a": "A 30-minute delay wastes prime class time and may not even fix the WiFi issue. It's better to start with what works and troubleshoot in parallel. Students in VR keep learning while you fix the remaining headsets.",
+              "b": "Canceling over 3 headsets when 2 still work wastes the preparation and the working hardware. VR sessions with rotation are common — even 2 headsets can create a meaningful experience for a full class.",
+              "c": "This is adaptive teaching. Start immediately with what works, maximize student time in VR through rotation, and troubleshoot the rest in parallel. The WiFi fix (forget/reconnect) solves most connection issues. The dead battery just needs time on the charger."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Your school requires a VR session plan submitted 48 hours in advance. A colleague asks: 'Why do you need TWO days? You just turn on the headsets and pick an app.'",
+              "question": "Why is advance preparation essential for VR sessions?",
+              "choices": {
+                "a": "It's just bureaucracy — VR is plug-and-play and doesn't need advance planning",
+                "b": "48 hours gives you time to: charge headsets, download and test the app on every device, verify WiFi capacity, plan the room layout, prepare a rotation schedule, and have a backup plan ready. Every one of these steps has failed on first attempt at some point.",
+                "c": "You need 48 hours mainly to read the app's instruction manual"
+              },
+              "feedback": {
+                "a": "VR is NOT plug-and-play in a classroom of 25 students with 8 headsets. Downloads fail, batteries die, WiFi buckles under load, apps need updates, and room layout takes time. Teachers who skip preparation spend their class troubleshooting instead of teaching.",
+                "b": "This is why experienced VR teachers plan ahead. Each step — charging, downloading, testing, room prep, rotation planning — takes time and can reveal problems. Finding issues 48 hours before class means you can fix them. Finding them 5 minutes before means chaos.",
+                "c": "Reading instructions is a small part of preparation. The real work is ensuring every piece of hardware and software actually functions in your specific classroom, with your specific WiFi, for your specific number of students. This is where 48 hours of buffer saves you."
+              }
+            },
+            "c2": {
+              "context": "You always prepare a 'Plan B' before every VR session: an offline VR app that works without WiFi, plus a non-VR activity using the same topic. A new colleague asks: 'Isn't that wasted effort if the session goes fine?'",
+              "question": "How do you justify the backup plan?",
+              "choices": {
+                "a": "Your colleague is right — if you prepare well enough, you won't need a backup",
+                "b": "A backup plan takes 10 minutes to prepare and saves 45 minutes of chaos when WiFi drops, an app crashes, or headsets fail. You use the backup 1 in every 5 sessions. That one time, you're the only teacher whose class keeps running.",
+                "c": "The backup is mainly for when students finish the VR activity early"
+              },
+              "feedback": {
+                "a": "No amount of preparation can prevent every possible failure. WiFi outages, app crashes, surprise firmware updates, and power failures are outside your control. A backup plan isn't about preparation quality — it's about professional resilience.",
+                "b": "This is the experienced teacher's mindset. A 10-minute investment in a backup plan has infinite ROI when things go wrong. And in VR sessions, things go wrong more often than in traditional lessons because you depend on more technology layers — headsets, WiFi, apps, casting.",
+                "c": "An early-finish activity is nice to have, but that's not the primary purpose of a backup plan. The backup exists for when the PRIMARY activity fails — no WiFi, dead headsets, crashed app. It keeps learning happening despite technical failures."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": { "statement": "Charging headsets the night before is more reliable than charging them the morning of class", "explanation": "Correct! A Quest 3 takes about 2 hours to fully charge. Morning charging gives you no margin — a power outage, a bad cable, or a forgotten charger means dead headsets at class time." },
+              "s2": { "statement": "If the VR app works on one headset, it will work on all of them without testing", "explanation": "Each headset may have different firmware versions, storage space, or account permissions. Apps can fail on one headset while working on another. Test every device individually." },
+              "s3": { "statement": "Having a backup plan (offline app + non-VR activity) is essential for every VR session", "explanation": "Correct! WiFi outages, app crashes, and hardware failures are common enough that a backup plan isn't optional — it's professional practice. The backup ensures learning continues regardless of technology issues." }
+            }
+          }
+        }
       }
     },
     "quizStep": {
@@ -753,70 +1132,40 @@
           "a": "Tell them to close one eye to reduce the blur",
           "b": "Adjust the IPD wheel until the image is clear for that student",
           "c": "Restart the headset — it's probably a software glitch",
-          "d": "Lower the screen brightness in settings"
+          "d": "Lower the screen brightness in settings",
+          "explanation": "Blurry vision is almost always caused by incorrect IPD (inter-pupillary distance). The IPD wheel moves the lenses to match each student's unique eye spacing — a 5-second adjustment that fixes the problem immediately."
         },
         "q2": {
           "question": "WiFi drops during a VR session. Half the class hasn't had their turn yet. What's your priority?",
           "a": "Cancel the rest of the VR activity and move to a backup lesson",
           "b": "Switch to an offline VR app and reorganize the rotation schedule",
           "c": "Send a student to the IT office to fix the WiFi",
-          "d": "Wait 15 minutes — school WiFi usually comes back on its own"
+          "d": "Wait 15 minutes — school WiFi usually comes back on its own",
+          "explanation": "Adaptability is key. Having a tested offline VR app ready as backup means WiFi failure doesn't end the session. Reorganize the rotation to keep all students engaged while the network issue resolves."
         },
         "q3": {
           "question": "A parent emails you concerned about VR safety for their child. What's the best response?",
           "a": "Reply that VR is perfectly safe and there's nothing to worry about",
           "b": "Share specific safety measures you use (session limits, Guardian, supervision) and offer to discuss further",
           "c": "Forward the email to the principal to handle",
-          "d": "Exempt the child from all VR activities immediately"
+          "d": "Exempt the child from all VR activities immediately",
+          "explanation": "Transparency builds trust. Sharing your specific safety protocols — session time limits, Guardian boundaries, active supervision — shows professionalism and invites dialogue rather than shutting down concerns."
         },
         "q4": {
           "question": "It's 30 minutes before class. Only 3 of your 5 headsets charged overnight. What do you do?",
           "a": "Cancel the VR lesson — you need all 5 headsets",
           "b": "Use the 3 charged headsets now, plug in the other 2, and rotate them in once they have enough charge",
           "c": "Try to fast-charge all 5 for 30 minutes — that should be enough",
-          "d": "Use only the 3 charged headsets and don't worry about the other 2"
+          "d": "Use only the 3 charged headsets and don't worry about the other 2",
+          "explanation": "Start with what works. A rotation schedule using 3 headsets while 2 charge means every student still gets VR time. Plugging in the uncharged ones gives them enough battery to join the rotation later."
         },
         "q5": {
           "question": "A student refuses to put on the VR headset and looks anxious. What do you do?",
           "a": "Insist — they need to participate to get their grade",
           "b": "Respect their decision and assign them an alternative role like observer, note-taker, or casting controller",
           "c": "Put the headset on them yourself to show it's not scary",
-          "d": "Send them to the school counselor"
-        },
-        "q6": {
-          "question": "You're casting to the classroom projector but there's a 3-second lag. What should you try?",
-          "a": "Nothing — some lag is unavoidable with wireless casting",
-          "b": "Move the WiFi router closer to the headset and projector, and reduce other network traffic",
-          "c": "Use a longer HDMI cable to connect the headset directly",
-          "d": "Lower the headset's graphics quality in developer settings"
-        },
-        "q7": {
-          "question": "The VR app you planned to use needs a 2 GB update. Class starts in 10 minutes. What do you do?",
-          "a": "Start the update and push back the lesson start time",
-          "b": "Try launching the current version. If it won't run, switch to a tested backup app",
-          "c": "Skip VR entirely and do a different activity",
-          "d": "Use one headset to update while running the class with the rest"
-        },
-        "q8": {
-          "question": "Two students bump into each other while both wearing VR headsets. What's your first action?",
-          "a": "Tell them to be more careful and continue the session",
-          "b": "Stop both students, check they're okay, then reconfigure Guardian boundaries and increase zone separation",
-          "c": "Take away both students' headsets as a consequence",
-          "d": "Move one student to a different room"
-        },
-        "q9": {
-          "question": "You notice a headset getting noticeably warm after 20 minutes of continuous use. What should you do?",
-          "a": "Ignore it — headsets always get a bit warm during use",
-          "b": "Power it off, let it cool for 10 minutes, then swap it with another headset",
-          "c": "Put it in the refrigerator to cool down quickly",
-          "d": "Place a fan directly on the headset while the student keeps using it"
-        },
-        "q10": {
-          "question": "The school principal asks you to demo VR to the staff in 5 minutes at a meeting. What's your approach?",
-          "a": "Decline — you need at least an hour to prepare a proper demo",
-          "b": "Show passthrough mode first to ease people in, then launch one short impressive app and cast to the room's display",
-          "c": "Hand the principal a headset and let them figure it out",
-          "d": "Show a pre-recorded VR video on your laptop instead"
+          "d": "Send them to the school counselor",
+          "explanation": "Respecting a student's choice while offering meaningful alternatives keeps them included in the learning without forcing them. Observer, note-taker, and casting controller roles contribute to the class and reduce anxiety about future sessions."
         }
       }
     },

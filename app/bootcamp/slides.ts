@@ -87,6 +87,68 @@ const slidesByModule: Record<string, TheorySlide[]> = {
       highlightKey: "slides.basicFoundations.s4.highlight",
     },
   ],
+  "getting-vr-ready": [
+    {
+      id: "getting-started",
+      type: "content",
+      titleKey: "slides.gettingVrReady.s1.title",
+      subtitleKey: "slides.gettingVrReady.s1.subtitle",
+      points: [
+        { key: "slides.gettingVrReady.s1.p1", icon: "📦" },
+        { key: "slides.gettingVrReady.s1.p2", icon: "🔋" },
+        { key: "slides.gettingVrReady.s1.p3", icon: "👁️" },
+      ],
+      highlightKey: "slides.gettingVrReady.s1.highlight",
+    },
+    {
+      id: "classroom-setup",
+      type: "content",
+      titleKey: "slides.gettingVrReady.s2.title",
+      subtitleKey: "slides.gettingVrReady.s2.subtitle",
+      points: [
+        { key: "slides.gettingVrReady.s2.p1", icon: "🏫" },
+        { key: "slides.gettingVrReady.s2.p2", icon: "📶" },
+        { key: "slides.gettingVrReady.s2.p3", icon: "🛡️" },
+      ],
+      highlightKey: "slides.gettingVrReady.s2.highlight",
+    },
+    {
+      id: "store-install",
+      type: "content",
+      titleKey: "slides.gettingVrReady.s3.title",
+      subtitleKey: "slides.gettingVrReady.s3.subtitle",
+      points: [
+        { key: "slides.gettingVrReady.s3.p1", icon: "🏪" },
+        { key: "slides.gettingVrReady.s3.p2", icon: "📲" },
+        { key: "slides.gettingVrReady.s3.p3", icon: "💾" },
+      ],
+      highlightKey: "slides.gettingVrReady.s3.highlight",
+    },
+    {
+      id: "casting",
+      type: "content",
+      titleKey: "slides.gettingVrReady.s4.title",
+      subtitleKey: "slides.gettingVrReady.s4.subtitle",
+      points: [
+        { key: "slides.gettingVrReady.s4.p1", icon: "📺" },
+        { key: "slides.gettingVrReady.s4.p2", icon: "🔗" },
+        { key: "slides.gettingVrReady.s4.p3", icon: "🎬" },
+      ],
+      highlightKey: "slides.gettingVrReady.s4.highlight",
+    },
+    {
+      id: "pre-class-checklist",
+      type: "content",
+      titleKey: "slides.gettingVrReady.s5.title",
+      subtitleKey: "slides.gettingVrReady.s5.subtitle",
+      points: [
+        { key: "slides.gettingVrReady.s5.p1", icon: "✅" },
+        { key: "slides.gettingVrReady.s5.p2", icon: "🔋" },
+        { key: "slides.gettingVrReady.s5.p3", icon: "📋" },
+      ],
+      highlightKey: "slides.gettingVrReady.s5.highlight",
+    },
+  ],
 };
 
 export function getSlidesForModule(moduleSlug: string): TheorySlide[] {

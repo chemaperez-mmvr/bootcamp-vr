@@ -168,14 +168,9 @@ const module1Images: DocImagesByModule = {
     },
   },
 };
-const module2Images: DocImagesByModule = {};
-const module3Images: DocImagesByModule = {};
-
 const docImagesByModuleSlug: Record<string, DocImagesByModule> = {
   "basic-foundations": module0Images,
   "getting-vr-ready": module1Images,
-  "designing-meaningful-learning": module2Images,
-  "classroom-implementation": module3Images,
 };
 
 /**

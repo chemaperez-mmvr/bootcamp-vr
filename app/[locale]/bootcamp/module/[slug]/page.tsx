@@ -20,7 +20,9 @@ type Props = {
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    bootcampCatalog.map((module) => ({ locale, slug: module.slug }))
+    bootcampCatalog
+      .filter((module) => module.enabled)
+      .map((module) => ({ locale, slug: module.slug }))
   );
 }
 
@@ -61,7 +63,7 @@ export default async function BootcampModulePage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const module = getBootcampModuleBySlug(slug);
-  if (!module) notFound();
+  if (!module || !module.enabled) notFound();
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
