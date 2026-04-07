@@ -101,7 +101,7 @@
       "backToBootcamp": "Volver al Bootcamp"
     },
     "progress": {
-      "global": "Progreso global",
+      "global": "Progreso hacia el certificado",
       "module": "{completed}/{total} pasos ({percent}%)"
     },
     "stats": {
@@ -1731,6 +1731,25 @@
       "title": "¿Listo para empezar tu camino en VR?",
       "description": "Comienza con los fundamentos y desarrolla tu confianza paso a paso. Cada módulo está diseñado para educadores como tú.",
       "cta": "Empezar el primer módulo"
+    },
+    "certificate": {
+      "heading": "Tu Certificado",
+      "lockedDesc": "Completa {remaining, plural, one {el módulo restante} other {los # módulos restantes}} para desbloquear tu certificado.",
+      "unlockedDesc": "¡Felicidades! Has completado todos los módulos. Descarga tu certificado personalizado.",
+      "progress": "Módulos completados",
+      "downloadBtn": "Descargar certificado",
+      "lockedBtn": "Certificado bloqueado",
+      "modalTitle": "Tu certificado",
+      "modalDesc": "Introduce tu nombre completo tal como quieres que aparezca en el certificado.",
+      "namePlaceholder": "Tu nombre completo",
+      "cancel": "Cancelar",
+      "certTitle": "Certificado de Finalización",
+      "certAwardedTo": "Se certifica que",
+      "certCompleted": "ha completado con éxito el",
+      "certProgram": "Bootcamp de Educación en VR",
+      "certProgramDesc": "Programa de formación integral para educadores que integran VR en el aula",
+      "certBranding": "Programa de Formación en Realidad Virtual para Educación",
+      "goTo": "Ir al certificado"
     }
   },
   "docs": {

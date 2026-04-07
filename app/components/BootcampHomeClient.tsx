@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { bootcampCatalog } from "@/app/bootcamp/catalog";
 import { getGlobalProgress, getModuleProgress } from "@/app/bootcamp/progress";
 import { ModuleCard } from "./ModuleCard";
+import { CertificateDownload } from "./CertificateDownload";
 
 type ModuleProgress = ReturnType<typeof getModuleProgress>;
 
@@ -40,6 +41,21 @@ function buildSerpentinePath(moduleCount: number): string {
     d += ` C ${cp1X} ${cp1Y}, ${cp2X} ${cp2Y}, ${nodeX} ${nodeY}`;
   }
 
+  return d;
+}
+
+function buildSerpentinePathFromPositions(positions: { x: number; y: number }[]): string {
+  if (positions.length === 0) return "";
+  let d = `M ${positions[0].x} ${positions[0].y}`;
+  for (let i = 1; i < positions.length; i++) {
+    const prev = positions[i - 1];
+    const curr = positions[i];
+    const cp1X = prev.x;
+    const cp1Y = prev.y + (curr.y - prev.y) * 0.5;
+    const cp2X = curr.x;
+    const cp2Y = curr.y - (curr.y - prev.y) * 0.5;
+    d += ` C ${cp1X} ${cp1Y}, ${cp2X} ${cp2Y}, ${curr.x} ${curr.y}`;
+  }
   return d;
 }
 
@@ -81,6 +97,7 @@ export function BootcampHomeClient() {
   const completedModulesCount = modulesWithProgress.filter(
     ({ progress }) => progress.status === "completed"
   ).length;
+  const enabledModulesCount = bootcampCatalog.filter((m) => m.enabled).length;
   const totalEstimatedMinutes = bootcampCatalog.reduce(
     (sum, module) => sum + module.lessons.reduce((acc, lesson) => acc + lesson.durationMin, 0),
     0
@@ -88,6 +105,8 @@ export function BootcampHomeClient() {
 
   /* ── Hover-based path fill ── */
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const hoveredIndexRef = useRef<number | null>(null);
+  hoveredIndexRef.current = hoveredIndex;
   const maxConnectedRef = useRef(0); // module 0 is always connected
   const handleHover = (index: number) => {
     if (index <= maxConnectedRef.current) setHoveredIndex(index);
@@ -96,10 +115,16 @@ export function BootcampHomeClient() {
   /* ── SVG path length measurement ── */
   const desktopPathRef = useRef<SVGPathElement>(null);
   const desktopBgPathRef = useRef<SVGPathElement>(null);
+  const desktopMaskPathRef = useRef<SVGPathElement>(null);
+  const flowPulsePathRef = useRef<SVGPathElement>(null);
+  const measurePathRef = useRef<SVGPathElement>(null);
   const [desktopPathLength, setDesktopPathLength] = useState(1000);
   const [desktopNodeLengths, setDesktopNodeLengths] = useState<number[]>([]);
   const desktopNodeLengthsRef = useRef<number[]>([]);
   desktopNodeLengthsRef.current = desktopNodeLengths;
+  const nodeRatiosRef = useRef<number[]>([]);
+  const dynamicTotalLenRef = useRef(1000);
+  const dynamicPositionsRef = useRef<{ x: number; y: number }[]>([]);
 
   /* ── Scroll-driven card reveal + path drawing ── */
   const timelineRef = useRef<HTMLDivElement>(null);
@@ -149,10 +174,68 @@ export function BootcampHomeClient() {
       });
       maxConnectedRef.current = maxIdx;
 
+      // Compute dynamic node positions accounting for entrance animation
+      const containerWidth = rootRect.width;
+      const positions: { x: number; y: number }[] = [];
+      allCards.forEach((el) => {
+        const idx = Number(el.dataset.idx);
+        if (isNaN(idx)) return;
+        const isEven = idx % 2 === 0;
+        const baseX = isEven ? LEFT_X : RIGHT_X;
+        const baseY = ROW_HEIGHT * 0.5 + idx * ROW_HEIGHT;
+
+        if (prefersReducedMotion || !el.classList.contains("timeline-card-enter")) {
+          positions[idx] = { x: baseX, y: baseY };
+          return;
+        }
+
+        const elRect = el.getBoundingClientRect();
+        const progress = Math.min(1, Math.max(0, (vh - elRect.top) / (vh * 0.55)));
+        const ease = progress * progress;
+        const dir = el.dataset.dir === "left" ? -1 : 1;
+        const offsetPx = SLIDE_PX * (1 - ease) * dir;
+        const scale = 0.85 + 0.15 * ease;
+
+        const scaledX = 50 + (baseX - 50) * scale;
+        const svgOffsetX = containerWidth > 0 ? (offsetPx / containerWidth) * 100 : 0;
+        positions[idx] = { x: scaledX + svgOffsetX, y: baseY };
+      });
+
+      // Rebuild SVG path from actual node positions
+      const dynamicD = buildSerpentinePathFromPositions(positions);
+      dynamicPositionsRef.current = positions;
+
       if (desktopBgPathRef.current) {
+        desktopBgPathRef.current.setAttribute("d", dynamicD);
+        desktopBgPathRef.current.style.strokeDasharray = '';
+        desktopBgPathRef.current.style.strokeDashoffset = '';
         const len = desktopBgPathRef.current.getTotalLength();
-        desktopBgPathRef.current.style.strokeDasharray = String(len);
-        desktopBgPathRef.current.style.strokeDashoffset = String(len * (1 - scrollProgress));
+        dynamicTotalLenRef.current = len;
+      }
+
+      // Update progress path and mask (hover) imperatively
+      const len = dynamicTotalLenRef.current;
+      const hi = hoveredIndexRef.current;
+      let dynamicFilledLen = 0;
+      if (hi !== null && measurePathRef.current && positions[hi]) {
+        const subD = buildSerpentinePathFromPositions(positions.slice(0, hi + 1));
+        measurePathRef.current.setAttribute("d", subD);
+        dynamicFilledLen = measurePathRef.current.getTotalLength();
+      }
+      const offset = hi !== null ? len - dynamicFilledLen : len;
+
+      if (desktopPathRef.current) {
+        desktopPathRef.current.setAttribute("d", dynamicD);
+        desktopPathRef.current.style.strokeDasharray = String(len);
+        desktopPathRef.current.style.strokeDashoffset = String(offset);
+      }
+      if (desktopMaskPathRef.current) {
+        desktopMaskPathRef.current.setAttribute("d", dynamicD);
+        desktopMaskPathRef.current.style.strokeDasharray = String(len);
+        desktopMaskPathRef.current.style.strokeDashoffset = String(offset);
+      }
+      if (flowPulsePathRef.current) {
+        flowPulsePathRef.current.setAttribute("d", dynamicD);
       }
     }
 
@@ -171,6 +254,29 @@ export function BootcampHomeClient() {
       window.removeEventListener("resize", onScroll);
     };
   }, [modulesWithProgress.length]);
+
+  // Update progress path on hover changes (between scroll events)
+  useEffect(() => {
+    const len = dynamicTotalLenRef.current;
+    const hi = hoveredIndex;
+    const positions = dynamicPositionsRef.current;
+    let dynamicFilledLen = 0;
+    if (hi !== null && measurePathRef.current && positions[hi]) {
+      const subD = buildSerpentinePathFromPositions(positions.slice(0, hi + 1));
+      measurePathRef.current.setAttribute("d", subD);
+      dynamicFilledLen = measurePathRef.current.getTotalLength();
+    }
+    const offset = hi !== null ? len - dynamicFilledLen : len;
+
+    if (desktopPathRef.current) {
+      desktopPathRef.current.style.strokeDasharray = String(len);
+      desktopPathRef.current.style.strokeDashoffset = String(offset);
+    }
+    if (desktopMaskPathRef.current) {
+      desktopMaskPathRef.current.style.strokeDasharray = String(len);
+      desktopMaskPathRef.current.style.strokeDashoffset = String(offset);
+    }
+  }, [hoveredIndex]);
 
   useEffect(() => {
     function measureSubPathLengths(
@@ -204,6 +310,7 @@ export function BootcampHomeClient() {
       );
       setDesktopPathLength(total);
       setDesktopNodeLengths(nodeLengths);
+      nodeRatiosRef.current = nodeLengths.map((len) => len / total);
     }
   }, [modulesWithProgress.length]);
 
@@ -212,10 +319,6 @@ export function BootcampHomeClient() {
   const totalSvgHeight = moduleCount * ROW_HEIGHT;
   const desktopPathD = buildSerpentinePath(moduleCount);
 
-  const desktopProgressOffset =
-    hoveredIndex !== null && desktopNodeLengths[hoveredIndex] != null
-      ? desktopPathLength - desktopNodeLengths[hoveredIndex]
-      : desktopPathLength;
 
   return (
     <div className="animate-content-enter">
@@ -291,8 +394,20 @@ export function BootcampHomeClient() {
                 </div>
               </div>
 
+              {/* Certificate link */}
+              <a
+                href="#certificate"
+                className="mt-3 flex items-center justify-center gap-2 rounded-lg border border-teal-500/30 bg-teal-500/10 px-3 py-2 text-xs font-semibold text-teal-300 transition-colors hover:bg-teal-500/20"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                </svg>
+                {tBootcamp("certificate.goTo")}
+                <span aria-hidden>&#8595;</span>
+              </a>
+
               {/* Stats row */}
-              <div className="mt-4 grid grid-cols-3 gap-3 border-t border-white/10 pt-4 text-center">
+              <div className="mt-4 grid grid-cols-2 gap-3 border-t border-white/10 pt-4 text-center">
                 <div>
                   <p className="text-xl font-semibold tabular-nums text-white">{completedModulesCount}</p>
                   <p className="text-xs text-gray-300">{tBootcamp("stats.completed")}</p>
@@ -300,10 +415,6 @@ export function BootcampHomeClient() {
                 <div>
                   <p className="text-xl font-semibold tabular-nums text-white">{inProgressCount}</p>
                   <p className="text-xs text-gray-300">{tBootcamp("stats.active")}</p>
-                </div>
-                <div>
-                  <p className="text-xl font-semibold tabular-nums text-white">{totalEstimatedMinutes}</p>
-                  <p className="text-xs text-gray-300">{tBootcamp("stats.minutes")}</p>
                 </div>
               </div>
             </div>
@@ -334,16 +445,15 @@ export function BootcampHomeClient() {
             {/* ════════════════════════════════════
                 MOBILE: Simple vertical timeline
                ════════════════════════════════════ */}
-            <div className="md:hidden">
-              <div className="relative flex flex-col gap-6">
-                {/* Vertical timeline line */}
+            <div className="lg:hidden">
+              <div className="relative flex flex-col gap-4 sm:gap-6 md:gap-8 md:mx-auto md:max-w-2xl">
+                {/* Vertical timeline line — left on mobile, hidden on tablet (nodes are centered) */}
                 <div
-                  className="absolute top-0 bottom-0 w-px bg-white/15"
-                  style={{ left: "calc(20% - 0.5px)" }}
+                  className="absolute top-0 bottom-0 w-px bg-white/15 left-[19px] md:hidden"
                   aria-hidden="true"
                 />
 
-                {/* Mobile module rows */}
+                {/* Module rows */}
                 {modulesWithProgress.map(({ module, progress }, index) => {
                   const isCompleted = progress.status === "completed";
                   const isActive = progress.status === "in_progress";
@@ -355,49 +465,49 @@ export function BootcampHomeClient() {
                   return (
                     <div
                       key={module.slug}
-                      className={`relative flex items-start gap-4${index > 0 ? " timeline-card-enter" : ""}`}
+                      className={`relative${index > 0 ? " timeline-card-enter" : ""}`}
                       data-dir={index % 2 === 0 ? "right" : "left"}
                       data-idx={index}
                     >
-                      {/* Node circle */}
-                      <div
-                        className="relative z-20 flex-shrink-0 pt-4"
-                        style={{ width: 40, marginLeft: "calc(20% - 20px)" }}
-                      >
-                        <div
-                          className={`flex h-10 w-10 items-center justify-center rounded-full shadow-sm ${
-                            isCompleted
-                              ? "bg-teal-500 text-white"
-                              : isActive
-                                ? "border-2 border-teal-500 bg-white/10 backdrop-blur-sm timeline-node-active"
-                                : "border-2 border-white/30 bg-white/10 backdrop-blur-sm"
-                          }`}
-                        >
-                          {isCompleted ? (
-                            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                            </svg>
-                          ) : (
-                            <span className="text-sm font-semibold text-gray-300">
-                              {index}
-                            </span>
-                          )}
+                      {/* Mobile: side-by-side | Tablet: stacked centered */}
+                      <div className="flex items-start gap-3 sm:gap-4 md:flex-col md:items-center md:gap-3">
+                        {/* Node circle */}
+                        <div className="relative z-20 flex-shrink-0 pt-4 md:pt-0">
+                          <div
+                            className={`flex h-9 w-9 sm:h-10 sm:w-10 md:h-11 md:w-11 items-center justify-center rounded-full shadow-sm ${
+                              isCompleted
+                                ? "bg-teal-500 text-white"
+                                : isActive
+                                  ? "border-2 border-teal-500 bg-white/10 backdrop-blur-sm timeline-node-active"
+                                  : "border-2 border-white/30 bg-white/10 backdrop-blur-sm"
+                            }`}
+                          >
+                            {isCompleted ? (
+                              <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                              </svg>
+                            ) : (
+                              <span className="text-xs sm:text-sm font-semibold text-gray-300">
+                                {index}
+                              </span>
+                            )}
+                          </div>
                         </div>
-                      </div>
 
-                      {/* Card */}
-                      <div
-                        className="flex-1 min-w-0 pr-2"
-                        onMouseEnter={() => handleHover(index)}
-                        onMouseLeave={() => setHoveredIndex(null)}
-                      >
-                        <ModuleCard
-                          module={module}
-                          progress={progress}
-                          moduleMinutes={moduleMinutes}
-                          tBootcamp={tBootcamp}
-                          tDocs={tDocs}
-                        />
+                        {/* Card */}
+                        <div
+                          className="flex-1 min-w-0 md:w-full"
+                          onMouseEnter={() => handleHover(index)}
+                          onMouseLeave={() => setHoveredIndex(null)}
+                        >
+                          <ModuleCard
+                            module={module}
+                            progress={progress}
+                            moduleMinutes={moduleMinutes}
+                            tBootcamp={tBootcamp}
+                            tDocs={tDocs}
+                          />
+                        </div>
                       </div>
                     </div>
                   );
@@ -408,7 +518,7 @@ export function BootcampHomeClient() {
             {/* ════════════════════════════════════
                 DESKTOP: Curved serpentine timeline
                ════════════════════════════════════ */}
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div
                 className="relative"
                 style={{ minHeight: `${totalSvgHeight}px` }}
@@ -420,6 +530,8 @@ export function BootcampHomeClient() {
                   preserveAspectRatio="none"
                   fill="none"
                 >
+                  {/* Hidden path for dynamic sub-path measurement */}
+                  <path ref={measurePathRef} style={{ visibility: 'hidden' }} />
                   {/* Background path */}
                   <path
                     ref={desktopBgPathRef}
@@ -429,7 +541,7 @@ export function BootcampHomeClient() {
                     fill="none"
                     strokeLinecap="round"
                   />
-                  {/* Progress path */}
+                  {/* Progress path — strokeDash set imperatively in update() */}
                   <path
                     ref={desktopPathRef}
                     d={desktopPathD}
@@ -437,17 +549,15 @@ export function BootcampHomeClient() {
                     strokeWidth="0.3"
                     fill="none"
                     strokeLinecap="round"
-                    strokeDasharray={desktopPathLength}
-                    strokeDashoffset={desktopProgressOffset}
-                    className="transition-all duration-700 ease-in-out"
                   />
                   {/* Flow energy pulse */}
                   {hoveredIndex !== null && (() => {
                     const filledLen = desktopNodeLengths[hoveredIndex] ?? 0;
                     if (filledLen < 10) return null;
-                    const dashSize = Math.max(filledLen * 0.06, 4);
+                    const dashSize = Math.max(desktopPathLength * 0.015, 4);
                     return (
                       <path
+                        ref={flowPulsePathRef}
                         key={`flow-desktop-${hoveredIndex}`}
                         d={desktopPathD}
                         stroke="url(#flowGlowDesktop)"
@@ -461,10 +571,9 @@ export function BootcampHomeClient() {
                         <animate
                           attributeName="stroke-dashoffset"
                           values={`0;${-filledLen}`}
-                          dur="1.8s"
+                          dur={`${Math.max(filledLen / 600, 0.4)}s`}
                           repeatCount="indefinite"
-                          calcMode="spline"
-                          keySplines="0.4 0 0.2 1"
+                          calcMode="linear"
                         />
                       </path>
                     );
@@ -472,14 +581,12 @@ export function BootcampHomeClient() {
                   <defs>
                     <mask id="progressMaskDesktop" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height={totalSvgHeight}>
                       <path
+                        ref={desktopMaskPathRef}
                         d={desktopPathD}
                         stroke="white"
                         strokeWidth="2"
                         fill="none"
                         strokeLinecap="round"
-                        strokeDasharray={desktopPathLength}
-                        strokeDashoffset={desktopProgressOffset}
-                        className="transition-all duration-700 ease-in-out"
                       />
                     </mask>
                     <linearGradient id="tealGradientDesktop" x1="0" y1="0" x2="0" y2="1">
@@ -555,8 +662,8 @@ export function BootcampHomeClient() {
                         }`}
                         style={
                           isEven
-                            ? { right: `${100 - LEFT_X + 1}%`, width: "3%", left: "auto" }
-                            : { left: `${RIGHT_X + 1}%`, width: "3%" }
+                            ? { right: `${100 - LEFT_X + 2}%`, width: "3%", left: "auto" }
+                            : { left: `${RIGHT_X + 2}%`, width: "3%" }
                         }
                         aria-hidden="true"
                       />
@@ -566,8 +673,8 @@ export function BootcampHomeClient() {
                         className="absolute top-1/2 -translate-y-1/2"
                         style={
                           isEven
-                            ? { right: `${100 - LEFT_X + 2}%`, maxWidth: "420px", width: "100%" }
-                            : { left: `${RIGHT_X + 2}%`, maxWidth: "420px", width: "100%" }
+                            ? { right: `${100 - LEFT_X + 6}%`, maxWidth: "520px", width: "100%" }
+                            : { left: `${RIGHT_X + 6}%`, maxWidth: "520px", width: "100%" }
                         }
                         onMouseEnter={() => handleHover(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
@@ -603,23 +710,13 @@ export function BootcampHomeClient() {
         )}
 
         {/* ════════════════════════════════════
-            CLOSING CTA
+            CERTIFICATE GOAL
            ════════════════════════════════════ */}
-        <div className="mt-16 rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl sm:p-12">
-          <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            {tBootcamp("closing.title")}
-          </h2>
-          <p className="mx-auto mt-3 max-w-lg text-base leading-relaxed text-gray-300">
-            {tBootcamp("closing.description")}
-          </p>
-          <Link
-            href="/bootcamp/module/basic-foundations"
-            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-teal-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-500"
-          >
-            {tBootcamp("closing.cta")}
-            <span aria-hidden="true">&#8594;</span>
-          </Link>
-        </div>
+        <CertificateDownload
+          unlocked={enabledModulesCount > 0 && completedModulesCount >= enabledModulesCount}
+          enabledCount={enabledModulesCount}
+          completedCount={completedModulesCount}
+        />
       </div>
     </div>
   );
