@@ -1,3 +1,6 @@
+# Claude Code local settings (may contain approved commands with secrets)
+.claude/settings.local.json
+
 # Dependencies
 node_modules/
 .pnp
