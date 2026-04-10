@@ -30,7 +30,7 @@ export function WizardMissionCard({
   module: BootcampModule;
 }) {
   return (
-    <article className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+    <article className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
       {/* Header */}
       <div className={`border-b border-gray-100 px-5 py-4 sm:px-6 ${
         wizardDef.isBossLevel
@@ -39,7 +39,7 @@ export function WizardMissionCard({
       }`}>
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+            <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
               {t("lessonNumber", { current: index + 1, total })}
               {wizardDef.isBossLevel && (
                 <span className="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-[10px] font-bold uppercase tracking-wider">
@@ -47,7 +47,7 @@ export function WizardMissionCard({
                 </span>
               )}
             </p>
-            <h2 className="text-lg font-semibold text-gray-900 mt-1">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
               <span className="mr-2">{wizardDef.iconEmoji}</span>
               {t(wizardDef.titleKey)}
             </h2>
@@ -58,7 +58,7 @@ export function WizardMissionCard({
             </span>
           )}
         </div>
-        <p className="mt-1 text-sm text-gray-600">{t(wizardDef.descriptionKey)}</p>
+        <p className="mt-1 text-sm sm:text-base text-gray-600">{t(wizardDef.descriptionKey)}</p>
       </div>
 
       {/* Wizard Player */}
@@ -75,7 +75,7 @@ export function WizardMissionCard({
           <div className="mt-4 pt-4 border-t border-gray-100">
             <Link
               href={`/documentation/module/${moduleSlug}#${lesson.sectionId}`}
-              className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium text-teal-700 bg-teal-50 rounded-lg hover:bg-teal-100 transition-colors"
+              className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium text-teal-700 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               {t("actions.openDocs")}
               <span aria-hidden>→</span>

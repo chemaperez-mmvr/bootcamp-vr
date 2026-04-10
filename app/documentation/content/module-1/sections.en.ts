@@ -363,17 +363,9 @@ The first time you open an application, it will launch directly. Updates are not
 
 - [Transfer files from a Windows PC to Meta Quest 3(S)](https://www.meta.com/help/quest/) (via USB cable or official tools).`,
 
-  "cleaning": `Keeping the headset and controllers clean is important for hygiene when multiple users share them.
+  "cleaning": `Clean headsets and controllers after every use with a non-abrasive, non-alcoholic wipe. Clean lenses only with a dry microfiber cloth — never spray liquid directly on lenses. Allow surfaces to air-dry before the next user.
 
-**Official guides**
-
-- [How to clean Meta Quest 3](https://knowledge.vr-expert.com/kb/how-to-clean-meta-quest-3/)
-- Charging, maintenance, and care: see **Meta Quest 3S** documentation on Meta’s support site.
-
-**General recommendations**
-
-- Wipe the facial interface (face pad) and contact areas after each use with wipes or a cloth and non-abrasive, non-alcoholic product as recommended by Meta.
-- Clean the lenses only with a microfiber cloth; do not apply liquid directly to the lenses to avoid damaging the coating.`,
+> For complete cleaning workflows and hygiene protocols for shared classroom use, see **Module 4: Safety, Wellbeing, and Accessibility**.`,
 
   "accessories": `Optional accessories can improve comfort and durability in educational settings.
 

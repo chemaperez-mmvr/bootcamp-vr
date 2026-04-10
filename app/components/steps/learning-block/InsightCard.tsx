@@ -28,7 +28,7 @@ function MiniScenarioCard({
   const exploredEnough = revealedIds.size >= 2;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm animate-content-enter">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Context */}
       <div className="rounded-xl border border-gray-200 bg-gray-50/50 p-5 mb-5">
         <p className="text-sm text-gray-800 leading-relaxed whitespace-pre-line">
@@ -55,7 +55,7 @@ function MiniScenarioCard({
               <button
                 type="button"
                 onClick={() => handleReveal(choice.id)}
-                className={`w-full rounded-xl border-2 p-4 text-left transition-all duration-200 ${
+                className={`w-full rounded-xl border-2 p-4 text-left transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
                   isRevealed
                     ? `${style.border} ${style.bg}`
                     : "border-gray-200 hover:border-teal-300 hover:shadow-md hover:-translate-y-0.5 cursor-pointer"
@@ -107,7 +107,7 @@ function MiniScenarioCard({
           <button
             type="button"
             onClick={onDone}
-            className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-teal-700 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-teal-700 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.continueToNext")}
             <span aria-hidden>→</span>
@@ -194,12 +194,12 @@ export function InsightCard({
       {allDone && (
         <>
           <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden animate-content-enter">
-            <div className="bg-gradient-to-br from-teal-600 to-teal-700 px-6 py-5 sm:px-8">
-              <h3 className="text-lg font-bold text-white">
+            <div className="bg-gradient-to-br from-teal-600 to-teal-700 px-5 py-5 sm:px-6">
+              <h3 className="text-lg font-semibold text-white">
                 {t(slide.titleKey)}
               </h3>
             </div>
-            <div className="p-6 sm:p-8">
+            <div className="p-5 sm:p-6">
               <div className="rounded-xl bg-amber-50 border border-amber-200 p-5">
                 <div className="flex items-start gap-3">
                   <IconLightbulb className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
@@ -220,7 +220,7 @@ export function InsightCard({
             <button
               type="button"
               onClick={onContinue}
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               {t("learningBlocks.continueToCheck")}
               <span aria-hidden>→</span>

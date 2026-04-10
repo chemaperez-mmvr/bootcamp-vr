@@ -97,7 +97,31 @@
       "Bash(rtk tsc:*)",
       "WebFetch(domain:www.npmjs.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(rtk git:*)"
+      "Bash(rtk git:*)",
+      "Bash(git commit:*)",
+      "Bash(python3)",
+      "Bash(grep:*)",
+      "Bash(find /c/LTC/bootcamp-vr -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" -o -name \"*.json\" \\\\\\) ! -path \"*/node_modules/*\" ! -path \"*/.next/*\" ! -path \"*/.claude/*\" ! -path \"*/.git/*\" -exec grep -l \"designing-meaningful-learning\\\\|classroom-implementation\\\\|safety-wellbeing-accessibility\\\\|briefing-and-debriefing\\\\|solving-common-vr-problems\\\\|vr-educational-apps\\\\|module-[2-7]\" {} \\\\;)",
+      "Bash(find /c/LTC/bootcamp-vr/app/documentation/content/module-[2-7] -type f)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"node.*next\")",
+      "Bash(pkill -f \"next-server\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill:*)",
+      "Bash(python3 -c \"import sys, json; data = json.load\\(sys.stdin\\); print\\(json.dumps\\(data.get\\('documentation', {}\\).get\\('modules', {}\\), indent=2\\)\\)\")",
+      "Bash(rtk ls:*)",
+      "Read(//c/LTC/bootcamp-vr/**)",
+      "Read(//c/c/Users/jeiko/**)",
+      "Bash(mv \"/c/LTC/bootcamp-vr/public/images/Enfermeras practican triaje de emergencia.png\" /c/LTC/bootcamp-vr/public/images/vr-nursing-triage.png)",
+      "Bash(mv \"/c/LTC/bootcamp-vr/public/images/Los alumnos escuchan una clase grabada en un aula virtual.png\" /c/LTC/bootcamp-vr/public/images/vr-passive-lecture.png)",
+      "Bash(mv \"/c/LTC/bootcamp-vr/public/images/Quest 3 no enciende.png\" /c/LTC/bootcamp-vr/public/images/quest3-black-screen.png)",
+      "Bash(mv \"/c/LTC/bootcamp-vr/public/images/Lección VR sobre el ciclo del agua.png\" /c/LTC/bootcamp-vr/public/images/vr-water-cycle-lesson.png)",
+      "Bash(GEMINI_API_KEY=\"$GEMINI_API_KEY\" node scripts/generate-images.mjs)",
+      "Bash(awk '{print $5/1024 \"KB\", $NF}')",
+      "Bash(npx eslint:*)",
+      "Bash(GEMINI_API_KEY=\"$GEMINI_API_KEY\" node:*)",
+      "Bash(mv \"RV__Gestionar_Visores_Limitados.mp4\" \"m3-intro-es.mp4\")",
+      "Bash(mv \"VR__The_Limited_Headset_Playbook.mp4\" \"m3-intro-en.mp4\")"
     ]
   }
 }

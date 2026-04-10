@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState, useCallback, useEffect } from "react";
+import { useRef, useState, useCallback, useEffect, useMemo } from "react";
+import { useLocale } from "next-intl";
 import type { VideoSlide } from "@/app/bootcamp/slides";
 
 /* ------------------------------------------------------------------ */
@@ -78,6 +79,12 @@ export function VideoSlideContent({
   t: (key: string) => string;
   onEnded?: () => void;
 }) {
+  const locale = useLocale();
+  const resolvedVideoUrl = useMemo(
+    () => slide.videoUrl?.replace("{locale}", locale),
+    [slide.videoUrl, locale]
+  );
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
@@ -191,7 +198,7 @@ export function VideoSlideContent({
     };
   }, [onEnded, scheduleHide]);
 
-  if (!slide.videoUrl) {
+  if (!resolvedVideoUrl) {
     // Placeholder when no video URL yet
     return (
       <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
@@ -229,7 +236,7 @@ export function VideoSlideContent({
       >
         <video
           ref={videoRef}
-          src={slide.videoUrl}
+          src={resolvedVideoUrl}
           playsInline
           aria-label={t(slide.titleKey)}
           className="w-full aspect-video"

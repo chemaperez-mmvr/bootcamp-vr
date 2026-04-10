@@ -40,7 +40,7 @@ export function ModuleContentStep({
   const allDone = completedCount === contentLessons.length;
 
   return (
-    <div className="space-y-5 animate-content-enter">
+    <div className="space-y-6 animate-content-enter">
       <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
         <h3 className="text-lg font-semibold text-gray-900">{t("contentStep.title")}</h3>
         <p className="mt-1 text-sm text-gray-600">{t("contentStep.subtitle")}</p>
@@ -78,7 +78,7 @@ export function ModuleContentStep({
           <button
             type="button"
             onClick={onContinue}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("contentStep.continueButton")}
             <span aria-hidden>→</span>

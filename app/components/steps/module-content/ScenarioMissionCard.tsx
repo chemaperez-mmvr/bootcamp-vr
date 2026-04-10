@@ -39,7 +39,7 @@ function ScenarioOptionCard({
       type="button"
       onClick={onReveal}
       disabled={allDone}
-      className={`w-full rounded-xl border p-4 transition-all cursor-pointer text-left ${borderColor} ${allDone ? "pointer-events-none" : ""}`}
+      className={`w-full rounded-xl border p-4 transition-all cursor-pointer text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${borderColor} ${allDone ? "pointer-events-none" : ""}`}
     >
       <div className="flex items-start gap-3">
         <span className={`flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold shrink-0 ${
@@ -132,18 +132,18 @@ export function ScenarioMissionCard({
   }
 
   return (
-    <article className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+    <article className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
       {/* header */}
       <div className="bg-gradient-to-r from-indigo-50 to-violet-50 border-b border-gray-100 px-5 py-4 sm:px-6">
         <div className="flex items-center justify-between">
-          <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wide">
+          <p className="text-xs font-medium text-indigo-600 uppercase tracking-wide">
             {t("lessonNumber", { current: index + 1, total })} · {t("contentMissions.scenarioLabel")}
           </p>
         </div>
-        <h2 className="text-lg font-semibold text-gray-900 mt-1">{tDocs(lesson.titleKey)}</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-1">{tDocs(lesson.titleKey)}</h2>
       </div>
 
-      <div className="p-5 sm:p-6 space-y-5">
+      <div className="p-5 sm:p-6 space-y-6">
         {/* scenario description */}
         <div className="rounded-lg bg-indigo-50/60 border border-indigo-100 p-4">
           <div className="flex items-start gap-3">
@@ -222,7 +222,7 @@ export function ScenarioMissionCard({
         <div className="flex flex-wrap items-center gap-3 pt-2">
           <Link
             href={`/documentation/module/${moduleSlug}#${lesson.sectionId}`}
-            className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium text-teal-700 bg-teal-50 rounded-lg hover:bg-teal-100 transition-colors"
+            className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium text-teal-700 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("actions.openDocs")}
             <span aria-hidden>→</span>
@@ -234,7 +234,7 @@ export function ScenarioMissionCard({
             type="button"
             onClick={handleComplete}
             disabled={!done && !missionComplete}
-            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-lg transition-colors shrink-0 ${
+            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-xl transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
               done
                 ? "text-green-700 bg-green-50 hover:bg-green-100"
                 : "text-white bg-teal-600 hover:bg-teal-700"

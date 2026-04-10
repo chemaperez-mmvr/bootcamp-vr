@@ -43,6 +43,28 @@ Two parallel data systems feed both Bootcamp and Documentation:
 - **Documentation modules** (`app/documentation/modules.ts`): defines module structure (slugs, sections, categories, priorities). Section content lives in `app/documentation/content/module-N/sections.{en,es}.ts` — one file per locale per module.
 - **Bootcamp catalog** (`app/bootcamp/catalog.ts`): derives bootcamp lessons from documentation modules (filters "essential" sections). Supporting logic in `app/bootcamp/` (progress, missions, quizzes, steps, wizard system).
 
+### Bootcamp Data Layer (`app/bootcamp/`)
+
+- `catalog.ts` — Module definitions (`bootcampCatalog` array). Controls which modules are enabled/visible.
+- `progress.ts` — localStorage-based progress tracking (`vr-education-hub:bootcamp-progress:v1`). Milestone-based: overview visited → tour done → content done → quiz passed.
+- `steps.ts` — Step navigation logic for module detail flow (overview → intro-video → tour → content → quiz → results).
+- `quizzes.ts` / `quiz-progress.ts` — Quiz definitions and localStorage-based quiz state.
+- `missions.ts` — Scenario/checklist mission definitions for practical modules.
+- `wizard-missions.ts` / `wizard-progress.ts` / `wizard-types.ts` — Interactive wizard-style missions.
+- `learning-blocks.ts` / `learning-block-progress.ts` / `learning-block-types.ts` — Interactive learning block content and progress.
+- `slides.ts` — Slide deck definitions for theory-type lessons.
+- `tone-styles.ts` — Visual styling constants for wizard/mission feedback UI.
+
+### Bootcamp Component Structure
+
+- **Server page**: `app/[locale]/bootcamp/page.tsx` — metadata, layout wrapper
+- **Home client**: `app/components/BootcampHomeClient.tsx` — timeline with serpentine SVG path, scroll animations, module cards
+- **Module client**: `app/components/BootcampModuleClient.tsx` — step-based module navigation
+- `app/components/ModuleCard.tsx` — Individual module card (glassmorphic design)
+- `app/components/CertificateDownload.tsx` — Canvas-based certificate PNG generator
+- `app/components/serpentine-path.ts` — Pure SVG path geometry functions
+- `app/components/useSerpentineScroll.ts` — Scroll/hover animation hook for the timeline
+
 ### Components
 
 All in `app/components/`. Key patterns:
@@ -72,3 +94,4 @@ Configured in `next.config.mjs`: `X-Content-Type-Options`, `X-Frame-Options`, `X
 - `params` in Next.js 14 page/layout props is `Promise<{ locale: string }>` — must be awaited
 - When adding translation keys, update both `messages/en.json` and `messages/es.json`
 - Tests use `__tests__` directories colocated with the code they test (e.g., `app/[locale]/documentation/__tests__/`)
+- Gamification features (XP, badges, levels) were intentionally removed — do not re-add

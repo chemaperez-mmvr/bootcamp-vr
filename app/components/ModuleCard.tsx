@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { bootcampCatalog } from "@/app/bootcamp/catalog";
 import { useTranslations } from "next-intl";
-import { IconClock } from "./icons";
 
 /* ═══════════════════════════════════════════════════════════════════
    Module Card — glassmorphic design for video background
@@ -11,13 +10,11 @@ import { IconClock } from "./icons";
 export function ModuleCard({
   module,
   progress,
-  moduleMinutes,
   tBootcamp,
   tDocs,
 }: {
   module: (typeof bootcampCatalog)[number];
   progress: { completed: number; total: number; status: string; percent: number };
-  moduleMinutes: number;
   tBootcamp: ReturnType<typeof useTranslations>;
   tDocs: ReturnType<typeof useTranslations>;
 }) {
@@ -51,7 +48,7 @@ export function ModuleCard({
         </div>
 
         {/* Body */}
-        <div className="p-3 sm:p-4 md:p-5">
+        <div className="p-4 sm:p-5">
           <h3 className="text-base sm:text-lg font-semibold text-gray-300 leading-snug">
             {tDocs(module.titleKey as Parameters<typeof tDocs>[0])}
           </h3>
@@ -74,7 +71,7 @@ export function ModuleCard({
 
   /* ── Enabled card (glassmorphic) ── */
   return (
-    <article className="overflow-hidden rounded-xl border border-white/15 bg-white/10 shadow-lg shadow-black/10 backdrop-blur-xl transition-all hover:bg-white/15 hover:shadow-xl hover:shadow-black/20">
+    <article className="overflow-hidden rounded-xl border border-white/15 bg-white/[0.07] shadow-lg shadow-black/10 backdrop-blur-xl transition-all hover:bg-white/[0.12] hover:border-white/25 hover:shadow-xl hover:shadow-black/20">
       {/* Hero image */}
       <div className="relative h-28 sm:h-36 md:h-40 w-full overflow-hidden">
         {module.heroImage ? (
@@ -100,16 +97,16 @@ export function ModuleCard({
       </div>
 
       {/* Card body */}
-      <div className="p-3 sm:p-4 md:p-5">
-        <h3 className="text-base sm:text-lg font-semibold text-white leading-snug">
+      <div className="p-4 sm:p-5">
+        <h3 className="text-base sm:text-lg font-semibold tracking-tight text-white leading-snug">
           {tDocs(module.titleKey as Parameters<typeof tDocs>[0])}
         </h3>
-        <p className="mt-1 sm:mt-1.5 text-xs sm:text-sm leading-relaxed text-gray-300 line-clamp-2">
+        <p className="mt-1 sm:mt-1.5 text-xs sm:text-sm leading-relaxed text-gray-400/90 line-clamp-2">
           {tDocs(module.descriptionKey as Parameters<typeof tDocs>[0])}
         </p>
 
         {/* Progress bar */}
-        <div className="mt-3 sm:mt-4 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
+        <div className="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
           <div
             className="h-full rounded-full bg-teal-500 transition-all duration-500"
             style={{ width: `${progress.percent}%` }}
@@ -117,16 +114,16 @@ export function ModuleCard({
         </div>
 
         {/* Progress text */}
-        <div className="mt-1.5 sm:mt-2 text-xs text-gray-400">
+        <div className="mt-2 text-[11px] font-medium tracking-wide text-gray-500">
           <span>
-            {progress.completed}/{progress.total} ({progress.percent}%)
+            {progress.completed}/{progress.total}
           </span>
         </div>
 
         {/* CTA */}
         <Link
           href={`/bootcamp/module/${module.slug}`}
-          className="mt-3 sm:mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-teal-600/30 px-3 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm font-medium text-teal-300 transition-colors hover:bg-teal-600/50 border border-teal-500/30"
+          className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-teal-600/30 px-3 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm font-medium text-teal-300 transition-all hover:bg-teal-600/50 active:scale-[0.98] border border-teal-500/30"
         >
           {progress.completed > 0
             ? tBootcamp("actions.resume")

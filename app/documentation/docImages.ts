@@ -168,9 +168,103 @@ const module1Images: DocImagesByModule = {
     },
   },
 };
+const module2Images: DocImagesByModule = {
+  "learning-pyramid": {
+    src: "/images/learning-pyramid-see-vs-do.jpg",
+    alt: {
+      en: "Learning pyramid: seeing vs doing — active practice dramatically improves retention compared to passive observation",
+      es: "Pirámide del aprendizaje: ver vs hacer — la práctica activa mejora drásticamente la retención comparada con la observación pasiva",
+    },
+  },
+  "vr-classroom-session": {
+    src: "/images/vr-classroom-student-headset.jpg",
+    alt: {
+      en: "Student using a VR headset during a guided classroom session while the instructor observes",
+      es: "Estudiante usando gafas VR durante una sesión guiada en el aula mientras el instructor observa",
+    },
+  },
+  "activity-types-grid": {
+    src: "/images/vr-use-cases-grid.jpg",
+    alt: {
+      en: "VR activity types: guided exploration, simulation with practice, and evaluation — mapped to learning objectives",
+      es: "Tipos de actividad VR: exploración guiada, simulación con práctica y evaluación — mapeados a objetivos de aprendizaje",
+    },
+  },
+};
+
+const module3Images: DocImagesByModule = {
+  "classroom-vr-session": {
+    src: "/images/vr-classroom-student-headset.jpg",
+    alt: {
+      en: "Classroom VR session — students using headsets while instructor monitors the activity",
+      es: "Sesión VR en el aula — estudiantes usando gafas mientras el instructor supervisa la actividad",
+    },
+  },
+  "vr-use-cases-stations": {
+    src: "/images/vr-use-cases-grid.jpg",
+    alt: {
+      en: "Station-based learning: VR experience, observation, and complementary activities running in parallel",
+      es: "Aprendizaje por estaciones: experiencia VR, observación y actividades complementarias en paralelo",
+    },
+  },
+};
+
+const module4Images: DocImagesByModule = {
+  "vr-student-safety": {
+    src: "/images/que-es-vr-estudiante-gafas-vr-aula.jpg",
+    alt: {
+      en: "Student wearing VR headset in a supervised classroom environment with clear boundaries",
+      es: "Estudiante usando gafas VR en un aula supervisada con límites claros",
+    },
+  },
+};
+
+const module5Images: DocImagesByModule = {
+  "briefing-classroom": {
+    src: "/images/vr-classroom-student-headset.jpg",
+    alt: {
+      en: "Instructor guiding a student through a VR briefing before the immersive experience begins",
+      es: "Instructor guiando a un estudiante durante el briefing previo a la experiencia inmersiva",
+    },
+  },
+};
+
+const module6Images: DocImagesByModule = {
+  "quest-3-hardware": {
+    src: "/images/meta-quest-3-components.png",
+    alt: {
+      en: "Meta Quest 3 components: headset, controllers, and charging cable — reference for troubleshooting",
+      es: "Componentes del Meta Quest 3: gafas, controladores y cable de carga — referencia para resolución de problemas",
+    },
+  },
+  "ipd-adjustment": {
+    src: "/images/quest-3-ipd.jpg",
+    alt: {
+      en: "Close-up of IPD adjustment wheel on Meta Quest 3 — key fix for blurry or distorted image",
+      es: "Detalle de la rueda de ajuste IPD en Meta Quest 3 — solución clave para imagen borrosa o distorsionada",
+    },
+  },
+};
+
+const module7Images: DocImagesByModule = {
+  "app-types-overview": {
+    src: "/images/vr-use-cases-grid.jpg",
+    alt: {
+      en: "Overview of VR educational app types: exploration, simulation, guided training, evaluation, and communication",
+      es: "Resumen de tipos de apps VR educativas: exploración, simulación, entrenamiento guiado, evaluación y comunicación",
+    },
+  },
+};
+
 const docImagesByModuleSlug: Record<string, DocImagesByModule> = {
   "basic-foundations": module0Images,
   "getting-vr-ready": module1Images,
+  "designing-meaningful-learning": module2Images,
+  "classroom-implementation": module3Images,
+  "safety-wellbeing-accessibility": module4Images,
+  "briefing-and-debriefing": module5Images,
+  "solving-common-vr-problems": module6Images,
+  "vr-educational-apps": module7Images,
 };
 
 /**

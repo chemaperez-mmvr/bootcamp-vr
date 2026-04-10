@@ -105,13 +105,12 @@ function ClassicMicroCheckCard({
 
   const handleNext = () => {
     if (!isCorrect) {
-      onFail();
-      return;
+      onFail(); // track retry count
     }
 
     const nextQ = currentQ + 1;
     if (nextQ >= questions.length) {
-      onPass();
+      onPass(); // always continue
     } else {
       setCurrentQ(nextQ);
       setSelectedId(null);
@@ -121,7 +120,7 @@ function ClassicMicroCheckCard({
   };
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm animate-content-enter">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-4">
         {t("learningBlocks.microCheckTitle")}
         {questions.length > 1 && (
@@ -145,7 +144,7 @@ function ClassicMicroCheckCard({
               revealed && isSelected && option.id !== question.correctOptionId;
 
             let optionClasses =
-              "flex items-center gap-3 p-4 rounded-xl border-2 text-sm font-medium transition-all duration-200";
+              "flex items-center gap-3 p-4 rounded-xl border-2 text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
 
             if (revealed) {
               if (isOptionCorrect) {
@@ -230,18 +229,12 @@ function ClassicMicroCheckCard({
               <button
                 type="button"
                 onClick={handleNext}
-                className={`inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm ${
-                  isCorrect
-                    ? "text-white bg-teal-600 hover:bg-teal-700"
-                    : "text-amber-800 bg-amber-100 hover:bg-amber-200"
-                }`}
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
               >
-                {isCorrect
-                  ? currentQ < questions.length - 1
-                    ? t("learningBlocks.continueToCheck")
-                    : t("learningBlocks.continueToNext")
-                  : t("learningBlocks.microCheckRetry")}
-                <span aria-hidden>{isCorrect ? "→" : "↩"}</span>
+                {currentQ < questions.length - 1
+                  ? t("learningBlocks.continueToCheck")
+                  : t("learningBlocks.continueToNext")}
+                <span aria-hidden>→</span>
               </button>
             </div>
           </div>

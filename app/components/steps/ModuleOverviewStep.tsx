@@ -90,7 +90,7 @@ export function ModuleOverviewStep({
             <button
               type="button"
               onClick={onContinue}
-              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-500 transition-colors shadow-md w-full sm:w-auto justify-center sm:justify-start sm:ml-auto focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-md w-full sm:w-auto justify-center sm:justify-start sm:ml-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
             >
               {t("overview.startButton")}
               <span aria-hidden>→</span>
@@ -102,7 +102,7 @@ export function ModuleOverviewStep({
       {/* ============================================================ */}
       {/*  Learning Path — Horizontal Timeline                          */}
       {/* ============================================================ */}
-      <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
+      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
         <h3 className="text-lg font-semibold text-gray-900 mb-6">
           {t("overview.roadmap")}
         </h3>
@@ -166,7 +166,7 @@ export function ModuleOverviewStep({
       {/*  Topics Covered                                               */}
       {/* ============================================================ */}
       {sections.length > 0 && (
-        <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
+        <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
             {t("overview.topicsCovered")}
           </h3>
@@ -174,7 +174,7 @@ export function ModuleOverviewStep({
             {sections.map((section) => (
               <li
                 key={section.id}
-                className="flex items-start gap-2.5 text-sm text-gray-700"
+                className="flex items-start gap-2.5 text-sm sm:text-base text-gray-700"
               >
                 <span
                   className="mt-1.5 inline-block w-2 h-2 rounded-full shrink-0 bg-teal-500"

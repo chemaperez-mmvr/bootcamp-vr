@@ -334,6 +334,140 @@
           "p3": "Have a backup plan: know which offline app to switch to if WiFi fails, and keep one extra headset charged as a spare",
           "highlight": "The best VR sessions look effortless because the teacher checked everything twice. The checklist is your safety net."
         }
+      },
+      "designingMeaningfulLearning": {
+        "video": {
+          "title": "Designing Meaningful Learning with VR",
+          "subtitle": "Watch this short introduction before diving into the module content."
+        },
+        "s1": {
+          "title": "Objectives That Work in VR",
+          "subtitle": "Not every learning goal benefits from immersion — know which ones do",
+          "p1": "VR excels at objectives that require performing procedures, practicing protocols, and making decisions in context",
+          "p2": "Decision-making, realistic responses, and interactive communication are ideal for immersive environments",
+          "p3": "Memorisation, passive content consumption, and simple factual recall are better served by traditional tools",
+          "highlight": "VR is most effective when learners DO, not when they watch. If the objective doesn't involve action, VR probably isn't the right tool."
+        },
+        "s2": {
+          "title": "Writing Strong VR Objectives",
+          "subtitle": "Describe what the learner does — not what they 'understand'",
+          "p1": "Use action verbs: perform, apply, practice, respond, demonstrate, execute — words that describe observable behaviour",
+          "p2": "A strong VR objective includes an action, a context, and a success criterion",
+          "p3": "Formula: [Action verb] + [what] + [in what context] + [to what standard]",
+          "highlight": "Weak: 'Students will understand emergency procedures.' Strong: 'Students will perform the correct emergency response sequence in a simulated building evacuation.'"
+        },
+        "s3": {
+          "title": "Seeing vs. Doing",
+          "subtitle": "The critical difference between passive observation and active practice in VR",
+          "p1": "Seeing (passive): 360° videos, guided tours, fly-throughs — the learner watches but doesn't act",
+          "p2": "Doing (active): decision-making scenarios, procedural practice, interactive simulations — the learner manipulates, chooses, and receives feedback",
+          "p3": "VR learners trained 4x faster, felt 275% more confident, and were 3.75x more emotionally connected to content (PwC study)",
+          "highlight": "The real power of VR is not what students see — it's what they do. People retain ~10% of what they read but up to 75% of what they practice."
+        },
+        "s4": {
+          "title": "The VR Session Flow",
+          "subtitle": "Every effective VR lesson has three phases: briefing, experience, and debriefing",
+          "p1": "Before VR (briefing, under 60 sec): state the objective, describe the task, set the time limit, define success",
+          "p2": "During VR (5–15 min): learners perform the task; instructor observes via casting and notes strengths and errors",
+          "p3": "After VR (debriefing, 5–10 min): What happened? What worked? What would you do differently? How does this connect to real practice?",
+          "highlight": "Without debriefing, VR becomes entertainment, not education. The learning happens when students reflect on what they did."
+        },
+        "s5": {
+          "title": "VR Activity Types",
+          "subtitle": "Three activity types, each suited to a different learning goal",
+          "p1": "Guided Exploration: learners explore an environment with a specific observational purpose — ideal for introducing new contexts",
+          "p2": "Simulation with Practice: learners perform tasks, follow procedures, and make decisions — the strongest VR use case for skill development",
+          "p3": "Evaluation / Skill Check: learners demonstrate competence under assessment conditions — used after practice, for certification or validation",
+          "highlight": "Match the activity type to the learning objective — not the other way around. Exploration → Practice → Evaluation is the natural sequence."
+        }
+      },
+      "classroomImplementation": {
+        "video": {
+          "title": "The Limited Headset Playbook",
+          "subtitle": "Watch this short introduction before moving on to the module content."
+        },
+        "s1": {
+          "title": "Room Setup & Safety",
+          "subtitle": "A VR-ready room prevents most session problems before they start",
+          "p1": "Define a VR active zone with clear floor markers — at least 2x2 meters per station, furniture pushed to walls",
+          "p2": "Control lighting: close blinds to prevent tracking interference, but keep the room bright enough for instructor supervision",
+          "p3": "Set up a storage table near the door for headsets, controllers, and hygiene supplies. Mark observation areas with clear sightlines.",
+          "highlight": "The room layout IS your safety plan. If a student can trip over something, it will happen during VR — clear the space before they arrive."
+        },
+        "s2": {
+          "title": "Student Briefing",
+          "subtitle": "What students hear before headsets go on determines what happens after",
+          "p1": "State rules first: stay inside your zone, keep wrist straps on, stop when the instructor says stop, report any discomfort immediately",
+          "p2": "Announce groups and assign roles: VR user (wears headset), observer (watches cast and takes notes), facilitator (assists and manages time)",
+          "p3": "Set expectations: how long the session is, what the learning task is, and what happens after (group discussion, worksheet, or debrief)",
+          "highlight": "A 3-minute briefing prevents 15 minutes of chaos. Never skip it — especially with first-time VR users."
+        },
+        "s3": {
+          "title": "Device Readiness",
+          "subtitle": "A checklist you run before students arrive saves you from scrambling in front of 25 students",
+          "p1": "Charge: all headsets at 100%, controllers with fresh batteries, spare charging cables accessible",
+          "p2": "WiFi & Apps: confirm every headset is connected and the target app is installed, updated, and tested",
+          "p3": "Label and organize: number each headset-controller set, sanitize face pads, line them up on the storage table in order",
+          "highlight": "The readiness checklist takes 10 minutes the night before but saves you from device failures during class."
+        },
+        "s4": {
+          "title": "Running the Session",
+          "subtitle": "What the instructor does while students are in VR",
+          "p1": "Students: stay in your zone, keep wrist straps on, focus on the assigned task, raise a hand if you feel unwell",
+          "p2": "Instructor: cast at least one headset to a shared screen, circulate the room, maintain line of sight to all VR stations",
+          "p3": "Take observation notes: who struggles with the task, who finishes early, who seems disengaged — these feed the debriefing",
+          "highlight": "Your job during VR is to watch, not teach. Monitor for safety, note learning moments, and save the teaching for after headsets come off."
+        },
+        "s5": {
+          "title": "Rotation & Time Management",
+          "subtitle": "How to give everyone a turn when you have fewer headsets than students",
+          "p1": "Station rotation: VR station (active headset use), observation station (watching cast + notes), complementary station (worksheet or discussion)",
+          "p2": "Keep rotations to 10–15 minutes per station. Use a visible timer. Build in 2-minute transition windows between rotations.",
+          "p3": "End-of-session routine: headsets off, wipe face pads, plug in for charging, brief whole-class wrap-up before the bell",
+          "highlight": "With 4 headsets and 12 students, three 10-minute rotations fit a 50-minute class with time for briefing and wrap-up."
+        }
+      },
+      "safetyWellbeingAccessibility": {
+        "s1": {
+          "title": "Physical Safety & Space Requirements",
+          "subtitle": "Clear rules and measured spaces prevent most VR incidents",
+          "p1": "Establish and communicate safety rules before every session — most incidents are preventable with simple preparation",
+          "p2": "Space requirements vary by activity: seated (1×1m), standing (2×2m), room-scale (3×3m)",
+          "p3": "Always measure and mark boundaries before the session — remove obstacles like chairs, bags, and cables from the play zone",
+          "highlight": "Plan the space before the session, not during it. Clear rules + measured boundaries = safe VR."
+        },
+        "s2": {
+          "title": "Supervision & Boundary Management",
+          "subtitle": "The most important safety measure is an instructor who can see every student",
+          "p1": "Maintain direct line of sight to all VR users at all times — supervision is not optional",
+          "p2": "Always configure the Guardian/boundary system on every headset before use",
+          "p3": "Limit simultaneous VR users if you're the only instructor — others observe, do companion tasks, or wait",
+          "highlight": "If you cannot see them, they should not be in VR. Limit active users to the number you can safely monitor."
+        },
+        "s3": {
+          "title": "Motion Sickness & Response Protocol",
+          "subtitle": "Recognise symptoms early and respond calmly with a clear protocol",
+          "p1": "Cybersickness symptoms: dizziness, nausea, headache, eye strain, loss of balance",
+          "p2": "Prevention: keep sessions to 5–15 minutes, avoid forced movement, encourage breaks, offer seated mode",
+          "p3": "Response protocol: stop movement → remove headset → sit down → rest → do not rush back",
+          "highlight": "Students should never be forced to continue if they report discomfort. The 5-step response protocol keeps everyone calm and safe."
+        },
+        "s4": {
+          "title": "Hygiene & Equipment Care",
+          "subtitle": "A 60-second cleaning routine between users prevents problems",
+          "p1": "Clean all contact surfaces between users: face pad, straps, controller grips",
+          "p2": "Use non-alcoholic wipes for surfaces and microfibre cloth for lenses — never paper towels",
+          "p3": "End-of-day deep clean: remove face pads, wipe entire shell, inspect lenses, store in clean dry location",
+          "highlight": "Sixty seconds of cleaning between users saves hours of maintenance later. Make it routine, not optional."
+        },
+        "s5": {
+          "title": "Accessibility & Inclusive Practices",
+          "subtitle": "Every student can participate meaningfully — with or without a headset",
+          "p1": "VR participation is always voluntary — never force a student to use a headset",
+          "p2": "Three alternatives: active observer role, complementary learning task, or rotational participation",
+          "p3": "Observers need structured tasks (checklists, questions, focus areas) to make observation active, not passive",
+          "highlight": "Accessibility is about offering meaningful alternatives, not identical experiences. Not wearing a headset does not mean not learning."
+        }
       }
     },
     "learningBlocks": {
@@ -372,6 +506,91 @@
       "orderingCorrect": "Perfect order!",
       "orderingReset": "Try again",
       "exerciseDone": "Continue",
+      "mythBustersTitle": "Myth or Fact?",
+      "mythBustersMythLabel": "Myth",
+      "mythBustersFact": "Fact",
+      "mythBustersCorrect": "Correct!",
+      "mythBustersWrong": "Not quite!",
+      "mythBustersScore": "{correct} out of {total} correct",
+      "mythBustersTryAgain": "Try again",
+      "mythBustersViewResults": "See results",
+      "memoryMatchTitle": "Memory match",
+      "memoryMatchMoves": "Moves: {count}",
+      "memoryMatchComplete": "All pairs found!",
+      "conceptMapTitle": "Concept map",
+      "conceptMapInstruction": "Tap two nodes to connect them",
+      "conceptMapCheck": "Check connections",
+      "conceptMapCorrect": "All connections correct!",
+      "conceptMapWrong": "{wrong} connection(s) incorrect — removed. Complete the remaining ones.",
+      "conceptMapReset": "Clear all",
+      "troubleshootingTitle": "Troubleshooting",
+      "troubleshootingSolved": "Problem solved!",
+      "troubleshootingWrong": "That didn't work — try another approach",
+      "troubleshootingContinue": "Next step",
+      "troubleshootingReport": "Problem report",
+      "troubleshootingChoose": "What would you do?",
+      "troubleshootingRetry": "Try another approach",
+      "triageSortTitle": "Priority sort",
+      "triageSortPool": "Tasks to sort",
+      "triageSortCheck": "Check",
+      "triageSortCorrect": "All priorities correct!",
+      "triageSortWrong": "{wrong} item(s) in the wrong category",
+      "triageSortInstruction": "Tap an item, then tap a category to sort it",
+      "triageSortPoolEmpty": "All items sorted!",
+      "triageSortDropHere": "Tap to place here",
+      "classroomPlannerTitle": "Classroom planner",
+      "classroomPlannerPalette": "Items to place",
+      "classroomPlannerCheckLayout": "Check layout",
+      "classroomPlannerCorrect": "Great layout!",
+      "classroomPlannerWrong": "{wrong} item(s) misplaced",
+      "classroomPlannerReset": "Clear layout",
+      "classroomPlannerInstruction": "Tap an item, then tap a cell to place it",
+      "classroomPlannerCell": "Cell",
+      "classroomPlannerAllPlaced": "All items placed!",
+      "classroomPlannerClearAll": "Clear all",
+      "fillGapsTitle": "Fill the blanks",
+      "fillGapsWordBank": "Word bank",
+      "fillGapsCheck": "Check",
+      "fillGapsCorrect": "All blanks correct!",
+      "fillGapsWrong": "{wrong} blank(s) incorrect",
+      "fillGapsInstruction": "Tap a word, then tap a blank to place it",
+      "fillGapsEmptyBlank": "___",
+      "fillGapsAllPlaced": "All blanks filled!",
+      "fillGapsRetry": "Try again",
+      "decisionTreeTitle": "Choose your path",
+      "decisionTreeGood": "Great choice!",
+      "decisionTreeOkay": "Acceptable, but there's a better option",
+      "decisionTreePoor": "This could cause issues",
+      "decisionTreeContinue": "Continue",
+      "decisionTreeResult": "Your journey",
+      "decisionTreeTryAgain": "Try a different path",
+      "decisionTreeJourney": "Your journey",
+      "decisionTreeGoodEnd": "Well done! Your choices led to a great outcome.",
+      "decisionTreeBadEnd": "Your choices could be improved. Try again!",
+      "decisionTreeSummary": "{good} good choice(s) out of {total}",
+      "decisionTreeRetry": "Try again",
+      "lessonPlanBuilderTitle": "Lesson plan builder",
+      "lessonPlanBuilderPreview": "Your lesson plan",
+      "lessonPlanBuilderBest": "Excellent choice!",
+      "lessonPlanBuilderGood": "Good choice",
+      "lessonPlanBuilderPoor": "This could be improved",
+      "lessonPlanBuilderResult": "Plan evaluation",
+      "lessonPlanBuilderPass": "Solid lesson plan!",
+      "lessonPlanBuilderFail": "Plan needs improvement",
+      "lessonPlanBuilderRebuild": "Rebuild plan",
+      "lessonPlanBuilderReview": "Review your plan",
+      "resourceAllocationTitle": "Resource planner",
+      "resourceAllocationBudget": "Total: {used}/{total} {unit}",
+      "resourceAllocationSubmit": "Submit plan",
+      "resourceAllocationCorrect": "Well-balanced plan!",
+      "resourceAllocationWrong": "Some allocations are outside ideal ranges",
+      "resourceAllocationAdjust": "Adjust",
+      "resourceAllocationIdeal": "Ideal: {min}–{max} {unit}",
+      "resourceAllocationOver": "{amount} {unit} over budget",
+      "resourceAllocationRemaining": "{amount} {unit} remaining",
+      "resourceAllocationAdjustBtn": "Adjust allocations",
+      "resourceAllocationPass": "All allocations within ideal ranges!",
+      "resourceAllocationRetry": "Adjust and retry",
       "reviewCarefully": "Pay attention to the highlighted concept — it relates to what you missed.",
       "insightReveal": "Reveal",
       "insightThinkFirst": "Think about it, then tap to reveal the answer",
@@ -384,18 +603,26 @@
         "b1": {
           "title": "What is Virtual Reality?",
           "exercise": {
-            "instruction": "Connect each description with the correct VR concept",
-            "left": {
-              "p1": "The student can't see the classroom or teacher",
-              "p2": "The physical world is replaced by a digital one",
-              "p3": "Student watches a 360° video without interacting",
-              "p4": "Student performs experiments in a virtual lab"
+            "instruction": "Are these statements about VR true or false?",
+            "s1": {
+              "statement": "VR completely blocks the real world — students cannot see the classroom",
+              "explanation": "FACT. VR replaces the entire visual field with a digital environment. The physical classroom is invisible to the wearer."
             },
-            "right": {
-              "p1": "Full immersion",
-              "p2": "Environment replacement",
-              "p3": "Passive observation",
-              "p4": "Active participation"
+            "s2": {
+              "statement": "VR works the same as watching a 360° video on a flat screen",
+              "explanation": "MYTH. VR creates a sense of presence — being inside the experience. A flat screen shows content; VR puts you somewhere."
+            },
+            "s3": {
+              "statement": "VR is only useful for science and technology subjects",
+              "explanation": "MYTH. VR is used across all subjects: history, languages, art, vocational training, physical education, and more."
+            },
+            "s4": {
+              "statement": "In VR, students can interact with objects and perform actions, not just watch",
+              "explanation": "FACT. Interactive VR lets students touch, move, experiment, and make decisions — that is what makes it powerful for learning."
+            },
+            "s5": {
+              "statement": "A teacher can get a VR student's attention by waving at them",
+              "explanation": "MYTH. The student cannot see the physical world at all. You need audio cues, a tap on the shoulder, or in-app tools to communicate."
             }
           },
           "scenario": {
@@ -444,22 +671,49 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "VR completely replaces the real environment — the student cannot see the classroom", "explanation": "Correct! VR creates a fully immersive 360° digital world. The physical classroom disappears entirely for the student." },
-              "s2": { "statement": "A 360° video on a headset is the most interactive form of VR", "explanation": "A 360° video is passive — the student only watches. Interactive VR lets students do things: touch, move, decide. Watching is not the same as doing." },
-              "s3": { "statement": "In VR, the teacher can get the student's attention by waving at them", "explanation": "The student genuinely cannot see the teacher or the classroom. VR replaces reality completely — you need other strategies (audio cues, tapping their shoulder) to get attention." }
+              "s1": {
+                "statement": "VR completely replaces the real environment — the student cannot see the classroom",
+                "explanation": "Correct! VR creates a fully immersive 360° digital world. The physical classroom disappears entirely for the student."
+              },
+              "s2": {
+                "statement": "A 360° video on a headset is the most interactive form of VR",
+                "explanation": "A 360° video is passive — the student only watches. Interactive VR lets students do things: touch, move, decide. Watching is not the same as doing."
+              },
+              "s3": {
+                "statement": "In VR, the teacher can get the student's attention by waving at them",
+                "explanation": "The student genuinely cannot see the teacher or the classroom. VR replaces reality completely — you need other strategies (audio cues, tapping their shoulder) to get attention."
+              }
             }
           }
         },
         "b2": {
           "title": "Why VR works for learning",
           "exercise": {
-            "instruction": "Order these classroom activities from least effective to most effective use of VR",
-            "scaleStart": "Least effective",
-            "scaleEnd": "Most effective",
-            "i1": "Reading a PDF checklist inside the VR headset",
-            "i2": "Watching a 360° video of a nurse performing the procedure",
-            "i3": "Watching an interactive VR demo with narrated steps",
-            "i4": "Practicing the procedure yourself with real-time feedback and unlimited retries"
+            "instruction": "Match each learning concept with its definition",
+            "p1": {
+              "term": "Presence",
+              "def": "Feeling of genuinely being inside a virtual environment"
+            },
+            "p2": {
+              "term": "Embodiment",
+              "def": "Having a virtual body that moves as you move"
+            },
+            "p3": {
+              "term": "Active learning",
+              "def": "Learning by doing rather than watching"
+            },
+            "p4": {
+              "term": "Spatial memory",
+              "def": "Remembering information by linking it to physical locations"
+            },
+            "p5": {
+              "term": "Emotional engagement",
+              "def": "Deeper learning through emotionally impactful experiences"
+            },
+            "p6": {
+              "term": "Multi-sensory input",
+              "def": "Combining visual, auditory, and kinesthetic stimulation"
+            }
           },
           "scenario": {
             "context": "You're planning a VR session where nursing students will learn the hand hygiene procedure. You have 30 minutes and a class set of headsets.",
@@ -507,9 +761,18 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "In VR, a student who fails a simulation can try again with no real consequences", "explanation": "Correct! Safe repetition is a core VR advantage. Students can practice as many times as needed — mistakes carry no real-world risk." },
-              "s2": { "statement": "VR is most effective when students watch an expert perform a procedure", "explanation": "Watching is passive. VR's real power is when students DO the procedure themselves — practicing steps, making decisions, getting feedback." },
-              "s3": { "statement": "Repetition in a safe VR environment builds confidence and competence", "explanation": "Correct! Each retry reinforces the correct approach. Students build muscle memory and decision-making skills through repeated safe practice." }
+              "s1": {
+                "statement": "In VR, a student who fails a simulation can try again with no real consequences",
+                "explanation": "Correct! Safe repetition is a core VR advantage. Students can practice as many times as needed — mistakes carry no real-world risk."
+              },
+              "s2": {
+                "statement": "VR is most effective when students watch an expert perform a procedure",
+                "explanation": "Watching is passive. VR's real power is when students DO the procedure themselves — practicing steps, making decisions, getting feedback."
+              },
+              "s3": {
+                "statement": "Repetition in a safe VR environment builds confidence and competence",
+                "explanation": "Correct! Each retry reinforces the correct approach. Students build muscle memory and decision-making skills through repeated safe practice."
+              }
             }
           }
         },
@@ -591,14 +854,19 @@
         "b4": {
           "title": "VR, AR, and XR — Choosing the right tool",
           "exercise": {
-            "instruction": "Order these scenarios from 'most AR' (adds to the real world) to 'most VR' (replaces the real world)",
-            "scaleStart": "Most AR",
-            "scaleEnd": "Most VR",
-            "i1": "Tablets show 3D labels on a real skeleton on the desk",
-            "i2": "Students scan a textbook and a 3D castle appears on it",
-            "i3": "Repair instructions overlaid on a real engine via AR glasses",
-            "i4": "Students explore the inside of a human cell through headsets",
-            "i5": "Students are transported inside a volcano — classroom disappears"
+            "instruction": "Connect the technologies to show how they relate to each other",
+            "nodes": {
+              "xr": "Extended Reality (XR)",
+              "vr": "Virtual Reality (VR)",
+              "ar": "Augmented Reality (AR)",
+              "mr": "Mixed Reality (MR)"
+            },
+            "conn": {
+              "xrVr": "includes",
+              "xrAr": "includes",
+              "xrMr": "includes",
+              "arMr": "MR extends AR"
+            }
           },
           "scenario": {
             "context": "A colleague describes three classroom scenarios and asks for your advice:\n\n1. Biology students use tablets to see 3D labels and animations overlaid on a physical anatomical model\n2. Students put on headsets and are transported inside a volcano to observe magma flow\n3. History students scan a textbook page and a 3D castle appears on their desk",
@@ -664,18 +932,48 @@
         "b1": {
           "title": "Initial Quest 3 Setup",
           "exercise": {
-            "instruction": "Connect each setup step with the problem it prevents",
-            "left": {
-              "p1": "Adjusting the IPD wheel for each student",
-              "p2": "Charging headsets fully the night before",
-              "p3": "Setting the interface language",
-              "p4": "Adjusting the head strap properly"
+            "instruction": "Help diagnose and fix this setup problem",
+            "scenario": "A teacher reports: \"I just unboxed the Meta Quest 3 and pressed the power button, but the screen stays black. Nothing appears in the headset.\"",
+            "n1": {
+              "prompt": "The headset screen is completely black. What should you check first?",
+              "a": {
+                "label": "Check if the headset is charged",
+                "feedback": "Good call! A new Quest 3 often arrives with low battery. Let's check the charging indicator."
+              },
+              "b": {
+                "label": "Reinstall the firmware",
+                "feedback": "That's too advanced for a first step. Start with the basics — the issue might be much simpler."
+              },
+              "c": {
+                "label": "Return it — it must be defective",
+                "feedback": "Don't give up yet! Most \"dead on arrival\" headsets just need charging. Start simple."
+              }
             },
-            "right": {
-              "p1": "Blurry vision and headaches",
-              "p2": "Headsets dying mid-session",
-              "p3": "Students unable to navigate menus",
-              "p4": "Headset sliding or pressing uncomfortably"
+            "n2": {
+              "prompt": "You plugged it in and see an orange LED. After 30 minutes, you try again — still black. What now?",
+              "a": {
+                "label": "Wait 24 hours for a full charge",
+                "feedback": "30 minutes should be enough for it to boot. The issue is likely something else."
+              },
+              "b": {
+                "label": "Hold the power button for 30 seconds to force restart",
+                "feedback": "Correct! A force restart often resolves a frozen boot. Hold power for 30 seconds, wait, then press again."
+              },
+              "c": {
+                "label": "Try a different USB cable",
+                "feedback": "The orange LED means it IS charging. The cable is fine — the issue is with the boot process."
+              }
+            },
+            "n3": {
+              "prompt": "After the force restart, the Meta logo appears! But it's asking for Wi-Fi. What's the best approach?",
+              "a": {
+                "label": "Connect to the school's Wi-Fi network to complete setup",
+                "feedback": "The headset needs internet to finish initial setup and download updates. School Wi-Fi is the right choice!"
+              },
+              "b": {
+                "label": "Skip Wi-Fi and set it up offline",
+                "feedback": "The initial setup requires internet — you can't skip this step on a new Quest 3."
+              }
             }
           },
           "scenario": {
@@ -724,22 +1022,37 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "Every student needs their own IPD adjustment — one size does not fit all", "explanation": "Correct! IPD ranges from 56mm to 72mm across people. Using the wrong setting causes blurry vision and eye strain within minutes." },
-              "s2": { "statement": "A Quest 3 can be used straight out of the box without any setup", "explanation": "A new Quest 3 requires charging (2+ hours), firmware updates (WiFi needed), IPD adjustment, and language setup before it's classroom-ready." },
-              "s3": { "statement": "Charging headsets the night before class is the single most important preparation step", "explanation": "Correct! A dead headset is a useless headset. Overnight charging ensures full battery (2+ hours of use) and avoids the #1 preventable classroom VR problem." }
+              "s1": {
+                "statement": "Every student needs their own IPD adjustment — one size does not fit all",
+                "explanation": "Correct! IPD ranges from 56mm to 72mm across people. Using the wrong setting causes blurry vision and eye strain within minutes."
+              },
+              "s2": {
+                "statement": "A Quest 3 can be used straight out of the box without any setup",
+                "explanation": "A new Quest 3 requires charging (2+ hours), firmware updates (WiFi needed), IPD adjustment, and language setup before it's classroom-ready."
+              },
+              "s3": {
+                "statement": "Charging headsets the night before class is the single most important preparation step",
+                "explanation": "Correct! A dead headset is a useless headset. Overnight charging ensures full battery (2+ hours of use) and avoids the #1 preventable classroom VR problem."
+              }
             }
           }
         },
         "b2": {
           "title": "Classroom Setup",
           "exercise": {
-            "instruction": "Put these classroom preparation steps in the correct order",
-            "scaleStart": "Do first",
-            "scaleEnd": "Do last",
-            "i1": "Clear furniture to create open stations with 2×2m spacing",
-            "i2": "Test WiFi connection with one headset",
-            "i3": "Set up Guardian boundaries at each station",
-            "i4": "Run a quick test of the VR app on one headset"
+            "instruction": "Arrange items in the classroom to create a safe VR setup. Place each item in the correct zone.",
+            "items": {
+              "teacher": "Teacher desk",
+              "vrStation": "VR Station 1",
+              "vrStation2": "VR Station 2",
+              "screen": "Display screen",
+              "charger": "Charging station"
+            },
+            "zones": {
+              "front": "Front of classroom",
+              "vrArea": "Open VR activity area",
+              "support": "Support / storage area"
+            }
           },
           "scenario": {
             "context": "You're setting up a VR session for 25 students in a standard classroom. You have 8 headsets and desks arranged in traditional rows.",
@@ -862,22 +1175,36 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "You should always install and test VR apps at least one day before class — never during class time", "explanation": "Correct! Downloads can be slow, installs can fail, and apps sometimes need first-launch setup. Discovering these issues during class wastes everyone's time." },
-              "s2": { "statement": "If an app isn't in the main Meta Quest Store, it doesn't exist for the Quest 3", "explanation": "Many educational apps are only on App Lab — Meta's secondary channel for experimental and niche apps. Always check App Lab and the developer's website before concluding an app is unavailable." },
-              "s3": { "statement": "Each headset needs its own app download — you cannot copy apps between headsets via USB", "explanation": "Correct! Quest apps are account-linked and must be downloaded individually to each device through the store or App Lab." }
+              "s1": {
+                "statement": "You should always install and test VR apps at least one day before class — never during class time",
+                "explanation": "Correct! Downloads can be slow, installs can fail, and apps sometimes need first-launch setup. Discovering these issues during class wastes everyone's time."
+              },
+              "s2": {
+                "statement": "If an app isn't in the main Meta Quest Store, it doesn't exist for the Quest 3",
+                "explanation": "Many educational apps are only on App Lab — Meta's secondary channel for experimental and niche apps. Always check App Lab and the developer's website before concluding an app is unavailable."
+              },
+              "s3": {
+                "statement": "Each headset needs its own app download — you cannot copy apps between headsets via USB",
+                "explanation": "Correct! Quest apps are account-linked and must be downloaded individually to each device through the store or App Lab."
+              }
             }
           }
         },
         "b4": {
           "title": "Casting & Sharing",
           "exercise": {
-            "instruction": "Put these casting setup steps in the correct order",
-            "scaleStart": "Do first",
-            "scaleEnd": "Do last",
-            "i1": "Connect the display device (laptop/phone/tablet) to the same WiFi as the headsets",
-            "i2": "Open the Meta Quest casting page or app on the display device",
-            "i3": "Start casting from inside the headset (Quick Settings > Cast)",
-            "i4": "Test the audio and verify the lag is acceptable for your activity"
+            "instruction": "Sort these tasks by when they should be done",
+            "cat": {
+              "before": "Right before class",
+              "dayBefore": "Day before",
+              "weekly": "Weekly maintenance"
+            },
+            "i1": "Verify casting connection works",
+            "i2": "Update headset firmware",
+            "i3": "Charge all headsets to 100%",
+            "i4": "Download new educational apps",
+            "i5": "Test Wi-Fi signal in classroom",
+            "i6": "Clean headset lenses and straps"
           },
           "scenario": {
             "context": "You're demonstrating a VR anatomy app to the school principal. You cast the headset view to your laptop and project it. The principal sees the image but there's a 3-second delay, and the audio is out of sync.",
@@ -996,9 +1323,1271 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "Charging headsets the night before is more reliable than charging them the morning of class", "explanation": "Correct! A Quest 3 takes about 2 hours to fully charge. Morning charging gives you no margin — a power outage, a bad cable, or a forgotten charger means dead headsets at class time." },
-              "s2": { "statement": "If the VR app works on one headset, it will work on all of them without testing", "explanation": "Each headset may have different firmware versions, storage space, or account permissions. Apps can fail on one headset while working on another. Test every device individually." },
-              "s3": { "statement": "Having a backup plan (offline app + non-VR activity) is essential for every VR session", "explanation": "Correct! WiFi outages, app crashes, and hardware failures are common enough that a backup plan isn't optional — it's professional practice. The backup ensures learning continues regardless of technology issues." }
+              "s1": {
+                "statement": "Charging headsets the night before is more reliable than charging them the morning of class",
+                "explanation": "Correct! A Quest 3 takes about 2 hours to fully charge. Morning charging gives you no margin — a power outage, a bad cable, or a forgotten charger means dead headsets at class time."
+              },
+              "s2": {
+                "statement": "If the VR app works on one headset, it will work on all of them without testing",
+                "explanation": "Each headset may have different firmware versions, storage space, or account permissions. Apps can fail on one headset while working on another. Test every device individually."
+              },
+              "s3": {
+                "statement": "Having a backup plan (offline app + non-VR activity) is essential for every VR session",
+                "explanation": "Correct! WiFi outages, app crashes, and hardware failures are common enough that a backup plan isn't optional — it's professional practice. The backup ensures learning continues regardless of technology issues."
+              }
+            }
+          }
+        }
+      },
+      "designingMeaningfulLearning": {
+        "b1": {
+          "title": "Objectives That Work",
+          "exercise": {
+            "instruction": "Complete the learning objective by filling in the missing words",
+            "template": "A well-written VR learning objective should be __blank1__, focus on what students will __blank2__ (not just see), and be __blank3__ through observation or assessment.",
+            "blank1": "specific",
+            "blank2": "do",
+            "blank3": "measurable",
+            "distractor1": "entertaining",
+            "distractor2": "long"
+          },
+          "scenario": {
+            "context": "A colleague says: 'I want to use VR so students can memorise the periodic table faster. The immersion should help them remember the elements.'",
+            "question": "How would you respond?",
+            "choices": {
+              "a": "Great idea — VR makes everything more memorable",
+              "b": "Memorisation doesn't need immersion. VR is most effective when students DO something — practice procedures, make decisions, respond to situations. For memorisation, spaced repetition tools are more efficient.",
+              "c": "VR can't be used for science at all"
+            },
+            "feedback": {
+              "a": "VR does enhance engagement, but memorisation is about repetition and recall, not immersion. Flashcards with spaced repetition are faster and cheaper for pure memorisation. VR shines when students need to act, not just remember.",
+              "b": "Exactly. VR's strength is experiential learning — doing, not recalling. Memorising the periodic table doesn't require being inside an environment. VR would add cost and complexity without leveraging its core advantage: active practice.",
+              "c": "VR works very well for science — virtual chemistry labs, anatomy exploration, physics simulations. The issue isn't the subject, it's the learning objective. Memorisation doesn't require immersion, but performing a lab procedure does."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "You're designing a training for nurses. The objective is: 'Nurses will respond to a cardiac arrest scenario by performing CPR and using an AED within 3 minutes.'",
+              "question": "Is this a good objective for VR?",
+              "choices": {
+                "a": "No — cardiac arrest training should only be done on physical mannequins",
+                "b": "Yes — it involves performing a procedure under pressure in a realistic context, which is exactly what VR excels at",
+                "c": "Partially — VR can show the steps but can't provide the physical feedback of real CPR"
+              },
+              "feedback": {
+                "a": "Physical mannequins are valuable, but VR adds the realistic context — the sounds, the stress, the decision-making. Many training programs combine both for maximum effectiveness.",
+                "b": "Correct. This objective involves action (performing CPR), context (cardiac arrest scenario), and a criterion (within 3 minutes). VR adds realistic pressure and allows unlimited safe practice — a perfect match.",
+                "c": "You're right that VR lacks haptic feedback for chest compressions. However, the decision-making, sequence recall, and stress management aspects of the scenario are perfectly suited for VR. It complements physical training."
+              }
+            },
+            "c2": {
+              "context": "A teacher wants students to 'appreciate the beauty of Renaissance art' using VR headsets to view 360° tours of museums.",
+              "question": "Is this a strong use of VR?",
+              "choices": {
+                "a": "Yes — VR museum tours are always a great use of VR",
+                "b": "No — VR headsets should never be used for art",
+                "c": "It's passive observation, not active practice. A stronger use would have students identify specific techniques, compare works, or make curatorial decisions inside the virtual museum."
+              },
+              "feedback": {
+                "a": "Museum tours can be engaging, but 'appreciate beauty' is a passive, unmeasurable objective. Without a task — something to find, compare, or decide — students are just sightseeing. Add an active task to leverage VR's strengths.",
+                "b": "VR can work well for art education! The issue isn't the subject but the objective. Viewing is passive. If students had to identify brushstroke techniques, compare two paintings, or curate a virtual exhibition, VR would add real value.",
+                "c": "Exactly. 'Appreciate beauty' is passive and unmeasurable. But if students had a focus task — identify three uses of perspective, compare two artists' techniques, or arrange an exhibition — VR becomes a powerful active learning tool."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each objective: does it work well in VR, or is it better served without VR?",
+              "cat": {
+                "vr": "Works in VR",
+                "novr": "Better without VR"
+              },
+              "i1": "Perform a fire evacuation procedure in a simulated building",
+              "i2": "Memorise the names of all 50 US states",
+              "i3": "Respond to a simulated patient showing signs of stroke",
+              "i4": "Read and summarise a chapter from a history textbook",
+              "i5": "Practice assembling a machine following the correct sequence"
+            }
+          }
+        },
+        "b2": {
+          "title": "Writing VR Objectives",
+          "exercise": {
+            "instruction": "Build a VR lesson plan by selecting the best option at each step",
+            "s1": {
+              "label": "Learning Objective",
+              "desc": "What should students achieve in this VR session?",
+              "a": {
+                "label": "Students will explore a VR environment",
+                "desc": "Open-ended exploration without clear goals",
+                "feedback": "Exploration is a start, but without a measurable outcome, how do you know they learned?"
+              },
+              "b": {
+                "label": "Students will identify 3 safety hazards in a virtual lab",
+                "desc": "Specific, measurable, and action-oriented",
+                "feedback": "Excellent! This is specific (3 hazards), measurable (you can count them), and uses VR's strengths (spatial observation)."
+              },
+              "c": {
+                "label": "Students will learn about lab safety",
+                "desc": "General topic without measurable outcome",
+                "feedback": "This is too vague. How many hazards? What specific behavior proves they \"learned\"? Add specificity."
+              }
+            },
+            "s2": {
+              "label": "VR App Selection",
+              "desc": "Which VR application will you use?",
+              "a": {
+                "label": "The newest, most popular VR game",
+                "desc": "Trendy but not aligned with the objective",
+                "feedback": "Popular doesn't mean pedagogically appropriate. Always match the app to your learning objective."
+              },
+              "b": {
+                "label": "A virtual lab simulation with interactive hazard scenarios",
+                "desc": "Directly supports the learning objective",
+                "feedback": "The app directly supports your objective — students can actually find and interact with safety hazards."
+              },
+              "c": {
+                "label": "A 360° video tour of a real lab",
+                "desc": "Related content but passive experience",
+                "feedback": "A video shows hazards but students can't interact. For an \"identify\" objective, they need to actively discover."
+              }
+            },
+            "s3": {
+              "label": "Student Activity",
+              "desc": "What will students do during the VR session?",
+              "a": {
+                "label": "Free exploration — let them discover at their own pace",
+                "desc": "Unstructured discovery time",
+                "feedback": "Some structure helps. Without guidance, students may miss key hazards or get distracted by non-essential elements."
+              },
+              "b": {
+                "label": "Watch the teacher demonstrate first, then repeat",
+                "desc": "Teacher-led demonstration model",
+                "feedback": "This reduces VR's advantage. The whole point is students discovering hazards themselves, not copying a demo."
+              },
+              "c": {
+                "label": "Guided investigation with a checklist of areas to inspect",
+                "desc": "Structured discovery with clear tasks",
+                "feedback": "This balances freedom with focus. Students explore actively but have a framework to ensure they cover key areas."
+              }
+            },
+            "s4": {
+              "label": "Assessment Method",
+              "desc": "How will you verify learning?",
+              "a": {
+                "label": "Exit ticket: students list hazards found and explain why each is dangerous",
+                "desc": "Written reflection linking VR experience to knowledge",
+                "feedback": "Connects the VR experience to demonstrated understanding. Students must recall AND explain — deeper processing."
+              },
+              "b": {
+                "label": "Participation grade — if they wore the headset, they pass",
+                "desc": "Attendance-based assessment",
+                "feedback": "Wearing a headset doesn't prove learning. A student could stare at the ceiling the whole time."
+              },
+              "c": {
+                "label": "Group discussion about the VR experience",
+                "desc": "Verbal reflection with peers",
+                "feedback": "Discussions are valuable but hard to assess individually. Consider combining with a written component."
+              }
+            }
+          },
+          "scenario": {
+            "context": "A colleague shares their VR lesson objective: 'Students will understand the importance of hygiene protocols in a hospital setting.'",
+            "question": "What feedback would you give?",
+            "choices": {
+              "a": "It's perfect — understanding is a valid learning goal",
+              "b": "The verb 'understand' is passive and unmeasurable. Rewrite it with an action verb: 'Students will perform a hand hygiene sequence on a virtual patient, following all five WHO steps in the correct order.'",
+              "c": "It just needs to mention VR — add 'using VR headsets' to the end"
+            },
+            "feedback": {
+              "a": "'Understand' is the most common trap in objective writing. You can't observe or measure understanding. VR objectives must describe what students DO — perform, demonstrate, execute — so you can see whether they achieved it.",
+              "b": "Perfect feedback. You've replaced a vague verb with a specific action (perform), added context (virtual patient), and included measurable criteria (five WHO steps, correct order). This objective fully leverages VR's strengths.",
+              "c": "Adding 'using VR' doesn't fix the core problem. The objective needs an observable action verb. 'Understand' can't be seen or measured — 'perform', 'demonstrate', or 'execute' can. The tool matters less than what students do with it."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "You need to write a VR objective for a culinary arts class. The topic is knife safety.",
+              "question": "Which objective is best?",
+              "choices": {
+                "a": "Students will demonstrate the correct grip, cutting motion, and safety positioning for three knife types in a virtual kitchen, with zero unsafe hand placements.",
+                "b": "Students will watch a video about knife safety and understand the risks.",
+                "c": "Students will learn about proper knife handling techniques."
+              },
+              "feedback": {
+                "a": "Excellent. 'Demonstrate' is an action verb. 'Three knife types in a virtual kitchen' sets the context. 'Zero unsafe hand placements' is a measurable criterion. This objective fully leverages VR.",
+                "b": "Watching a video is passive — VR's value is in doing, not watching. And 'understand the risks' can't be observed or measured. This objective doesn't need VR at all.",
+                "c": "'Learn about' is as vague as 'understand.' There's no action to observe and no way to measure success. Rewrite with a verb like 'demonstrate,' 'perform,' or 'execute.'"
+              }
+            },
+            "c2": {
+              "context": "A VR objective reads: 'Students will apply the correct triage protocol to categorise five virtual patients by severity, justifying each decision within 2 minutes per patient.'",
+              "question": "How would you rate this objective?",
+              "choices": {
+                "a": "It's too complex — VR objectives should be simpler",
+                "b": "Strong — it has an action verb (apply), context (five virtual patients), and criteria (correct categorisation, justification, time limit). All three components are present.",
+                "c": "It's good but the time limit is unnecessary"
+              },
+              "feedback": {
+                "a": "Complexity is fine when it matches the real task. Triage IS complex — the objective should reflect that. All three components (action + context + criteria) are present and well-defined.",
+                "b": "Exactly. This is a model VR objective. 'Apply' = action, 'five virtual patients by severity' = context, 'justifying each decision within 2 minutes' = criteria. It's specific, measurable, and perfectly suited for VR simulation.",
+                "c": "The time limit is actually important — it adds realistic pressure and makes the criterion measurable. In real triage, speed matters. Removing it would weaken the objective by losing a key assessment metric."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "A strong VR objective uses action verbs like 'perform', 'demonstrate', or 'execute' — not 'understand' or 'learn about'",
+                "explanation": "Correct! Action verbs describe observable behaviour. 'Understand' can't be seen or measured; 'perform' can."
+              },
+              "s2": {
+                "statement": "Adding 'in VR' to any objective automatically makes it a good VR objective",
+                "explanation": "The tool doesn't fix the verb. 'Students will understand X in VR' is still a weak objective. The action verb and measurable criteria matter more than the medium."
+              },
+              "s3": {
+                "statement": "A well-written VR objective includes three components: an action, a context, and a success criterion",
+                "explanation": "Correct! Action (what they do), Context (where/under what conditions), and Criterion (how you know it was done correctly) form the complete objective formula."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "Seeing vs. Doing",
+          "exercise": {
+            "instruction": "Make teaching decisions and see how they affect student learning",
+            "scenario": "You're planning a VR lesson about the water cycle for 8th graders. You have 30 minutes of VR time and 15 Meta Quest 3 headsets for 25 students.",
+            "n1": {
+              "prompt": "How will students experience the water cycle in VR?",
+              "a": {
+                "label": "Students manipulate water molecules through each stage",
+                "feedback": "Active manipulation creates deep understanding. Students feel the energy changes and see cause-effect relationships."
+              },
+              "b": {
+                "label": "Students watch a narrated 360° animation of the water cycle",
+                "feedback": "Watching is passive. Students see the process but don't experience WHY it happens. This could be done with a video."
+              },
+              "c": {
+                "label": "Students explore a virtual landscape and observe water cycle stages",
+                "feedback": "Observation is better than narration, but students aren't causing the changes. They're still spectators."
+              }
+            },
+            "n2": {
+              "prompt": "Since you have 15 headsets for 25 students, how will you manage the rotation?",
+              "a": {
+                "label": "First 15 use VR while others wait, then swap",
+                "feedback": "Sitting and waiting for 15 minutes isn't great use of time. The waiting group disengages."
+              },
+              "b": {
+                "label": "VR group does the activity while non-VR group completes a companion worksheet",
+                "feedback": "Both groups are actively learning. The worksheet primes the non-VR group so they get more from their VR turn."
+              },
+              "c": {
+                "label": "Skip VR for half the class — they can do it another day",
+                "feedback": "This creates an uneven experience and wastes half the class period for half the students."
+              }
+            },
+            "n3": {
+              "prompt": "Review your teaching approach",
+              "endFeedback": "Your choices shaped the learning experience. Active doing beats passive watching, and parallel activities keep everyone engaged. These principles apply to every VR lesson you design."
+            }
+          },
+          "scenario": {
+            "context": "Your school purchased VR headsets. A teacher plans to use them exclusively for 360° virtual field trips — students will watch tours of museums, historical sites, and natural wonders.",
+            "question": "What would you advise?",
+            "choices": {
+              "a": "Virtual field trips are the best use of VR — keep doing them",
+              "b": "360° tours are a valid starting point, but they're passive observation. VR's real power is in active participation — add tasks like finding specific artefacts, making decisions, or solving problems within the environment.",
+              "c": "360° tours are good enough — not every VR session needs to be interactive"
+            },
+            "feedback": {
+              "a": "Virtual field trips are engaging, but they're essentially watching. Students don't DO anything. VR's unique advantage — active practice with feedback — is completely unused. Adding interactive tasks would transform these from entertainment into learning.",
+              "b": "Exactly. 360° tours are a starting point, not the destination. Adding a task — 'find three safety hazards,' 'identify the architectural style,' 'compare two exhibits' — turns passive watching into active learning. That's where VR's real impact lives.",
+              "c": "For occasional enrichment, a 360° tour is fine. But if VR is a regular tool, passive observation alone doesn't justify the investment. Students retain ~10% of what they watch but up to 75% of what they practice. VR should tip toward active use."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A biology teacher says: 'I use VR to let students walk through a virtual cell. They can look around and see all the organelles up close.'",
+              "question": "How could this be improved?",
+              "choices": {
+                "a": "Add a task: have students identify each organelle's function, diagnose a sick cell, or assemble a cell from its parts — turning observation into interaction.",
+                "b": "It's already perfect — exploring a cell in VR is inherently interactive.",
+                "c": "Replace VR with a microscope — real observation is always better."
+              },
+              "feedback": {
+                "a": "Exactly. Walking through a cell is passive exploration. Adding a task — identify, diagnose, assemble — transforms it into active learning. The student goes from tourist to scientist.",
+                "b": "Looking around is not interacting. True interaction means making choices, manipulating objects, or solving problems. Exploration without a task is virtual tourism.",
+                "c": "Microscopes show real samples, but VR can show things impossible to see physically — like walking inside a cell. The issue isn't the tool, it's the lack of an active task."
+              }
+            },
+            "c2": {
+              "context": "Two teachers are debating. Teacher A: 'My students watch a VR documentary about climate change.' Teacher B: 'My students make decisions as a city planner in a VR simulation, choosing policies and seeing their environmental impact over 50 years.'",
+              "question": "Which approach leverages VR better?",
+              "choices": {
+                "a": "Teacher A — documentaries convey more information",
+                "b": "Both are equally effective since both use VR headsets",
+                "c": "Teacher B — the simulation requires students to make decisions, see consequences, and learn through action, which is what VR does best"
+              },
+              "feedback": {
+                "a": "Documentaries can convey lots of information, but a VR documentary is still passive viewing. A flat screen would deliver the same content more comfortably. VR is justified when students DO something.",
+                "b": "Using the same hardware doesn't mean the same learning outcome. Watching (Teacher A) is passive. Deciding and seeing consequences (Teacher B) is active. The activity design matters far more than the device.",
+                "c": "Correct. Teacher B's simulation requires decision-making, consequence awareness, and iteration — all active learning. The student isn't watching climate change; they're causing and responding to it. That's VR's unique strength."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each VR activity as Seeing (passive) or Doing (active)",
+              "cat": {
+                "seeing": "Seeing (passive)",
+                "doing": "Doing (active)"
+              },
+              "i1": "Watching a 360° guided tour of a factory",
+              "i2": "Operating virtual machinery following a step-by-step procedure",
+              "i3": "Making triage decisions on virtual patients in an emergency room",
+              "i4": "Viewing a fly-through of the human circulatory system",
+              "i5": "Assembling a virtual engine by selecting and placing parts correctly"
+            }
+          }
+        },
+        "b4": {
+          "title": "The VR Session Flow",
+          "exercise": {
+            "instruction": "Distribute the 40-minute VR class time across these phases",
+            "scenario": "You have a 40-minute VR session with 25 students and 15 headsets. Allocate time for each phase to create a balanced lesson.",
+            "res": {
+              "intro": "Introduction & briefing",
+              "vr": "VR activity time",
+              "debrief": "Debrief & reflection",
+              "transition": "Transitions & setup"
+            }
+          },
+          "scenario": {
+            "context": "A teacher hands out VR headsets, says 'explore the virtual lab,' and collects them 20 minutes later. There's no briefing before and no discussion after.",
+            "question": "What's wrong with this approach?",
+            "choices": {
+              "a": "The session is too long — 20 minutes causes eye strain",
+              "b": "Nothing wrong — letting students explore freely is the best approach",
+              "c": "Without briefing, students don't know what to focus on. Without debriefing, the experience stays as entertainment, not learning. A VR session needs all three phases: brief, experience, debrief."
+            },
+            "feedback": {
+              "a": "Session length is a concern (15 min is better), but the bigger problem is the missing structure. Without a briefing to set the objective and a debrief to process the experience, even a perfectly timed session produces minimal learning.",
+              "b": "Free exploration without a goal is virtual tourism. Students need a clear task (briefing), focused time to complete it (experience), and structured reflection (debriefing). Without this structure, VR is just an expensive toy.",
+              "c": "Correct. The three phases are essential: Briefing gives purpose (what to do, what to look for). The experience is the active learning window. Debriefing transforms the experience into transferable knowledge. Skip any phase and learning suffers."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "During a VR session, you notice a student has stopped moving and seems confused. They've been standing still for 2 minutes.",
+              "question": "What should you do?",
+              "choices": {
+                "a": "Wait until the session ends — don't interrupt VR experiences",
+                "b": "Offer one brief, specific prompt to get them unstuck — 'Try looking to your left for the next clue' — then step back",
+                "c": "Take the headset off and show them what to do on the cast screen"
+              },
+              "feedback": {
+                "a": "Two minutes of confusion wastes learning time and can frustrate the student. The instructor's role during VR is to observe and provide a brief prompt when someone is clearly stuck.",
+                "b": "Correct. A brief, targeted prompt preserves the student's autonomy while unblocking them. The goal is minimal intervention — just enough to get them moving again, not to solve the task for them.",
+                "c": "Removing the headset breaks immersion entirely. A verbal prompt or gentle tap is less disruptive and keeps the student in the experience."
+              }
+            },
+            "c2": {
+              "context": "After a VR session on emergency triage, you begin debriefing. A student says: 'It was cool.' Others nod and seem ready to move on.",
+              "question": "How do you respond?",
+              "choices": {
+                "a": "Use structured questions: 'Walk me through your first decision. What did you notice about the patient? What made you choose that priority level?' — dig into specific moments and choices.",
+                "b": "Accept it and move to the next activity — if students say it was cool, they learned something.",
+                "c": "Show the 'correct' answers and move on."
+              },
+              "feedback": {
+                "a": "Correct. 'It was cool' means the experience was engaging, but learning hasn't been articulated yet. Structured questions force students to reconstruct their decisions, identify what worked, and connect the experience to real practice.",
+                "b": "'Cool' is an emotional response, not a learning outcome. Without reflection, students remember the feeling but not the lesson. Debriefing questions extract the learning from the experience.",
+                "c": "Showing correct answers turns debriefing into a lecture. The goal is to help students discover insights by reflecting on their own actions — 'What did YOU decide and why?' — not to tell them the right answer."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "A VR briefing should be under 60 seconds: state the objective, describe the task, set the time limit",
+                "explanation": "Correct! Long briefings kill momentum. Keep it short: what to do, how long, what success looks like. Students learn the rest by doing."
+              },
+              "s2": {
+                "statement": "Debriefing is optional — the VR experience itself is enough for learning to occur",
+                "explanation": "Without debriefing, VR becomes entertainment. Students need to reflect on what they did, what worked, and how it connects to real practice. Debriefing is where the learning crystallises."
+              },
+              "s3": {
+                "statement": "The instructor's role during VR is to observe via casting and only intervene when a student is clearly stuck",
+                "explanation": "Correct! The instructor monitors, notes strengths and errors for debriefing, and offers a brief prompt only when absolutely needed. The goal is minimal intervention to preserve student autonomy."
+              }
+            }
+          }
+        },
+        "b5": {
+          "title": "VR Activity Types",
+          "exercise": {
+            "instruction": "Match each learning goal to the most appropriate VR activity type",
+            "left": {
+              "p1": "Students need to familiarise themselves with a virtual hospital before a simulation",
+              "p2": "Students must practice the fire evacuation procedure until they can do it correctly",
+              "p3": "Students must demonstrate they can perform triage without any guidance",
+              "p4": "Students are encountering a virtual archaeological site for the first time"
+            },
+            "right": {
+              "p1": "Guided Exploration",
+              "p2": "Simulation with Practice",
+              "p3": "Evaluation / Skill Check",
+              "p4": "Guided Exploration"
+            }
+          },
+          "scenario": {
+            "context": "You're planning a VR unit for nursing students. The topic is patient assessment. Students have never used VR before and have never seen the virtual hospital environment.",
+            "question": "Which activity sequence would you use?",
+            "choices": {
+              "a": "Start with Guided Exploration (familiarise with the virtual hospital), then Simulation with Practice (perform patient assessments), then Evaluation (demonstrate competence without guidance)",
+              "b": "Go straight to Simulation with Practice — students learn by doing",
+              "c": "Only use Evaluation / Skill Check — the goal is to assess, not teach"
+            },
+            "feedback": {
+              "a": "Perfect sequence. Exploration first builds spatial familiarity so students aren't lost during the simulation. Practice develops the skill with feedback. Evaluation confirms competence. Each stage builds on the previous one.",
+              "b": "Jumping to practice without exploration means students spend their first minutes figuring out where things are instead of focusing on the task. A short exploration phase (5 min) saves time in the simulation.",
+              "c": "You can't evaluate a skill students haven't practiced. Evaluation comes after exploration and practice — it's the final checkpoint, not the starting point."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A vocational instructor wants students to learn to operate a CNC milling machine. The students have studied the theory but have never seen one in operation.",
+              "question": "Which VR activity type should come first?",
+              "choices": {
+                "a": "Start with an Evaluation to see what they already know",
+                "b": "Start with Guided Exploration — let them walk around the virtual machine, observe its parts, and identify components before they operate it",
+                "c": "Skip VR — just use the real machine"
+              },
+              "feedback": {
+                "a": "Evaluating students who haven't practiced sets them up for failure. Start with exploration so they understand the environment, then practice operating the machine, then evaluate.",
+                "b": "Correct. Guided Exploration lets students build mental models of the machine — where the controls are, what the parts do — without the pressure of operating it. This spatial familiarity pays off when they start the simulation.",
+                "c": "Starting on real equipment without any practice is risky and expensive. VR exploration and simulation allow safe practice before students touch the real machine, building confidence and reducing errors."
+              }
+            },
+            "c2": {
+              "context": "Students have completed three VR practice sessions on surgical hand hygiene. Their instructor wants to confirm they can perform the procedure independently before they enter the real operating room.",
+              "question": "Which VR activity type fits this goal?",
+              "choices": {
+                "a": "Another round of Guided Exploration",
+                "b": "More Simulation with Practice sessions",
+                "c": "Evaluation / Skill Check — students demonstrate the full procedure under assessment conditions, with no prompts or assistance"
+              },
+              "feedback": {
+                "a": "Exploration is for familiarisation with new environments. These students already know the space — they need to prove they can perform independently. That's assessment, not exploration.",
+                "b": "More practice could help, but the instructor's goal is confirmation of competence. At some point, practice must transition to evaluation. Three sessions is sufficient preparation for a skill check.",
+                "c": "Exactly. After sufficient practice, Evaluation / Skill Check verifies that students can perform independently under realistic conditions. This is the 'prove it' stage — no hints, no guidance, just performance."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each VR activity: is it Guided Exploration or Simulation with Practice?",
+              "cat": {
+                "exploration": "Guided Exploration",
+                "simulation": "Simulation with Practice"
+              },
+              "i1": "Students walk through a virtual emergency department and identify potential safety hazards",
+              "i2": "Students practice administering an injection on a virtual patient with real-time feedback",
+              "i3": "Students perform a fire evacuation procedure, guiding virtual occupants to the correct exits",
+              "i4": "Students explore a virtual archaeological site and list the artefacts they find",
+              "i5": "Students assemble a virtual engine following the correct maintenance sequence"
+            }
+          }
+        }
+      },
+      "classroomImplementation": {
+        "b1": {
+          "title": "Preparing Your Space",
+          "exercise": {
+            "instruction": "Arrange the classroom items into the correct zones for a safe VR session",
+            "items": {
+              "teacher": "Teacher",
+              "vrStation1": "VR Station 1",
+              "vrStation2": "VR Station 2",
+              "observation": "Observation Area",
+              "storage": "Storage Table",
+              "screen": "Casting Screen"
+            },
+            "zones": {
+              "front": "Front of room",
+              "vrZone": "VR Active Zone",
+              "sideZone": "Side / Support Zone"
+            }
+          },
+          "scenario": {
+            "context": "Your school gives you a medium-sized classroom with large windows on one wall and rows of fixed desks. You need to run a VR session for 12 students next week.",
+            "question": "What is the FIRST thing you should address in this room?",
+            "choices": {
+              "a": "Install blackout curtains on all the windows to prevent tracking issues",
+              "b": "Push desks to the walls to create open VR stations with clear floor space, then deal with lighting",
+              "c": "Request a bigger room — this one probably isn't suitable for VR"
+            },
+            "feedback": {
+              "a": "Curtains can help, but they're not the first priority. You can't run VR without clear floor space — students will trip on desks and bags. Address the physical layout first, then fine-tune lighting.",
+              "b": "Exactly. The number one priority is clear, safe floor space. Desks, bags, and chairs become invisible hazards once headsets go on. Once the space is cleared and VR zones are marked, you can adjust blinds and lighting.",
+              "c": "Most classrooms can work for VR with some rearrangement. Before requesting a new room, try clearing the existing space — you'll be surprised how well it works with just furniture pushed to the walls."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "During a test run, you notice the headset tracking jitters near the windows in bright afternoon sunlight.",
+              "question": "What should you do?",
+              "choices": {
+                "a": "Move all VR stations to the wall opposite the windows",
+                "b": "Close all the blinds and turn off the room lights entirely",
+                "c": "Ignore it — the headset will adjust automatically"
+              },
+              "feedback": {
+                "a": "Smart move. Repositioning VR stations away from direct sunlight fixes the tracking problem while keeping the room bright enough for supervision. You can also close the blinds on just the sunny side.",
+                "b": "Closing blinds on the sunny side helps, but turning off all lights makes the room too dark to supervise safely. You need enough ambient light to see students, walk the room, and manage the session.",
+                "c": "The headset won't adjust — inside-out tracking cameras are sensitive to direct sunlight and can produce jitter or lose tracking entirely. And worse, direct sunlight through the lenses can permanently damage the display."
+              }
+            },
+            "c2": {
+              "context": "A colleague walks through your VR zone during setup and trips over a backpack a student left on the floor.",
+              "question": "What does this tell you about your room preparation?",
+              "choices": {
+                "a": "Backpacks should be stored at students' desks instead",
+                "b": "The VR zone needs to be clearly marked and the floor must be completely cleared of loose items before any session",
+                "c": "The colleague should have been more careful walking through the area"
+              },
+              "feedback": {
+                "a": "Storing backpacks at desks is one solution, but the real issue is that the VR zone wasn't cleared and marked. Any loose item on the floor is a tripping hazard — especially for students who can't see the floor while in VR.",
+                "b": "Exactly. A VR zone must be visibly marked (tape, cones) and completely clear of obstacles. If an adult trips over a backpack, a student wearing a headset absolutely will too — and they can't see it coming.",
+                "c": "If a sighted adult trips, a student wearing a VR headset has zero chance of avoiding the same obstacle. The issue is the room preparation, not the person walking through it."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Which room features are essential for a VR session and which are nice-to-have?",
+              "cat": {
+                "essential": "Essential",
+                "optional": "Nice-to-have"
+              },
+              "i1": "Clear floor space (2x2m per station)",
+              "i2": "Carpet or foam mats on the floor",
+              "i3": "Instructor line of sight to all stations",
+              "i4": "Bluetooth speaker for background music",
+              "i5": "Storage table near the exit for devices"
+            }
+          }
+        },
+        "b2": {
+          "title": "Briefing Students",
+          "exercise": {
+            "instruction": "Put the briefing steps in the correct order",
+            "scaleStart": "First",
+            "scaleEnd": "Last",
+            "i1": "State the rules and safety expectations",
+            "i2": "Announce groups and assign roles",
+            "i3": "Explain the learning task and success criteria",
+            "i4": "Set the time limit and rotation schedule",
+            "i5": "Distribute headsets and begin"
+          },
+          "scenario": {
+            "context": "You're about to run your first VR session. Students are excited and already reaching for headsets on the table. A few are putting them on without waiting.",
+            "question": "What should you do?",
+            "choices": {
+              "a": "Let the eager students start — their enthusiasm is valuable and shouldn't be dampened",
+              "b": "Have all students sit down, deliver the full briefing (rules, groups, roles, task), THEN distribute headsets",
+              "c": "Give a very quick 30-second overview and then hand out headsets to save time"
+            },
+            "feedback": {
+              "a": "Enthusiasm is great, but students who start without a briefing don't know the rules, the task, or their role. This leads to wasted VR time, safety issues, and students doing whatever they want instead of the learning activity.",
+              "b": "Correct. No headsets until the briefing is complete. Students need to know the rules, their group, their role, the task, and the time limit before touching any device. Two minutes of structure prevents fifteen minutes of chaos.",
+              "c": "A 30-second overview isn't enough. Students need to hear rules, know their group, understand their role, and know the specific task. Rushing the briefing means spending the entire VR session managing confusion."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "You assign roles: VR user, observer, facilitator. One student complains: 'I don't want to be an observer — I want to use VR.'",
+              "question": "How do you handle this?",
+              "choices": {
+                "a": "Explain that everyone rotates through all roles, and the observer's notes will be used in the debrief discussion — their contribution matters",
+                "b": "Let that student use VR first to avoid conflict and maintain class energy",
+                "c": "Remove the role system entirely since students don't like it"
+              },
+              "feedback": {
+                "a": "Perfect response. When students understand that every role rotates AND that each role contributes to the learning (observer notes feed the debrief), complaints drop significantly. The key is making every role feel purposeful.",
+                "b": "Giving in sets a precedent that complaining gets you what you want. Other students will notice. The rotation system is fair — everyone gets equal VR time. Stand by it and explain why it matters.",
+                "c": "Roles exist because they keep non-VR students engaged and learning. Without roles, students waiting for their turn have nothing to do, leading to boredom and behaviour problems. The system works — it just needs explanation."
+              }
+            },
+            "c2": {
+              "context": "During the briefing, a student asks: 'What happens if I feel dizzy in VR?'",
+              "question": "What's the best response?",
+              "choices": {
+                "a": "Tell the student not to worry — dizziness is very rare and probably won't happen",
+                "b": "Explain clearly: remove the headset slowly, sit down, tell the instructor. It's normal, nothing to be embarrassed about, and you'll check on them.",
+                "c": "Say you'll deal with it if it happens — no need to worry about it now"
+              },
+              "feedback": {
+                "a": "Dismissing the concern doesn't prepare the student. Motion sickness does happen, especially with first-time users. If it occurs and the student wasn't told what to do, they may panic or suffer silently instead of asking for help.",
+                "b": "Excellent. Clear, calm instructions before VR starts mean students know exactly what to do if they feel unwell. Normalizing it ('it's nothing to be embarrassed about') also prevents students from hiding discomfort to avoid looking weak.",
+                "c": "Leaving it to chance means the student has no plan if it happens during VR. They might keep the headset on despite feeling sick, or panic. A 15-second explanation now prevents a problem later."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "The briefing should happen BEFORE students touch the headsets",
+                "explanation": "Correct. Once headsets are on, students can't hear or see you effectively. All instructions, rules, group assignments, and task explanations must happen before any device is distributed."
+              },
+              "s2": {
+                "statement": "Assigning roles (VR user, observer, facilitator) wastes valuable class time",
+                "explanation": "False. Roles keep ALL students engaged, not just those wearing headsets. Observers take notes for the debrief, facilitators assist with setup — every role contributes to the learning. Without roles, non-VR students have nothing to do."
+              },
+              "s3": {
+                "statement": "Students should know the specific learning task before they put on the headset",
+                "explanation": "Correct. If students don't know what they're supposed to do in VR, they'll explore randomly instead of completing the learning activity. State the task and success criteria during the briefing."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "Device Readiness",
+          "exercise": {
+            "instruction": "Sort each preparation task by when it should be done",
+            "cat": {
+              "weekly": "Weekly",
+              "nightBefore": "Night before",
+              "justBefore": "Just before class"
+            },
+            "i1": "Deep-clean all face pads and straps",
+            "i2": "Charge all headsets to 100%",
+            "i3": "Verify the target app is installed and updated",
+            "i4": "Check battery levels are above 80%",
+            "i5": "Test Guardian boundaries at each station",
+            "i6": "Inventory controllers and check for damage",
+            "i7": "Confirm WiFi credentials on each device",
+            "i8": "Line up numbered headsets on the storage table"
+          },
+          "scenario": {
+            "context": "You arrive at school 30 minutes before your VR class. You open the storage cabinet and discover that 2 of your 4 headsets didn't charge overnight — they're at 15% battery.",
+            "question": "What do you do?",
+            "choices": {
+              "a": "Cancel the VR activity and run a backup lesson instead",
+              "b": "Plug in the 2 dead headsets, start with the 2 working headsets and adjust rotation groups. Add the others when they have enough charge.",
+              "c": "Run the session anyway — 15% should last long enough for one rotation"
+            },
+            "feedback": {
+              "a": "Cancelling is an overreaction. You still have 2 working headsets, which is enough to run a rotation with adjusted groups. Adaptability is a core VR teaching skill — work with what you have.",
+              "b": "Perfect. Start the session with your 2 charged headsets and plug in the dead ones. Adjust from 3 rotation groups to 2 temporarily. When the charging headsets hit 50–60%, add them to the rotation. No VR time is lost.",
+              "c": "15% battery won't last a full rotation. A Quest 3 at 15% might die mid-session, disrupting the student's experience and wasting their VR time. Plug them in and use the working ones first."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Students keep mixing up controllers between headsets. Controllers paired to the wrong headset cause connection issues and delays.",
+              "question": "What's the best prevention strategy?",
+              "choices": {
+                "a": "Label each headset and its controllers with matching numbers or coloured tape, and store each set in its own labelled container",
+                "b": "Let students figure it out — they'll learn which controller goes with which headset",
+                "c": "Only use one headset at a time so there's no confusion"
+              },
+              "feedback": {
+                "a": "This is the standard best practice. Numbered or colour-coded sets (headset #1 = red tape, controllers #1 = red tape) take minutes to set up and eliminate pairing confusion permanently. Storing them together prevents mixing.",
+                "b": "Students don't know which controller pairs with which headset — the pairing is invisible. They'll grab whatever is closest, causing connection failures and wasting 5–10 minutes per session. Labels solve this instantly.",
+                "c": "Using one headset at a time means 24 of 25 students sit idle. The whole point of having multiple headsets is to maximise VR time. Labels and organisation let you run all headsets simultaneously."
+              }
+            },
+            "c2": {
+              "context": "You have 4 headsets ready on the table. 12 students are seated after the briefing. It's time to distribute.",
+              "question": "What's the most efficient distribution method?",
+              "choices": {
+                "a": "Let students come up to the table and grab a headset",
+                "b": "Have students raise hands and distribute headsets randomly",
+                "c": "Call up the first rotation group by name, hand each student their numbered headset, confirm the fit, then begin"
+              },
+              "feedback": {
+                "a": "Letting students grab headsets creates a rush to the table, arguments over who gets which device, and chaos. Control the distribution — it takes 60 seconds and prevents 5 minutes of disorder.",
+                "b": "Random distribution ignores your planned groups and makes tracking harder. If headset #3 goes to a random student, you can't find it later if there's a problem. Follow the group plan.",
+                "c": "Exactly right. Calling groups by name maintains order. Handing each student their numbered headset keeps pairing correct. Confirming fit (straps, IPD) before saying 'go' prevents mid-session interruptions."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "You should install and test every app on every headset the day BEFORE class, not during class",
+                "explanation": "Correct. App downloads and updates can take 10–30 minutes and require stable WiFi. Discovering a missing app during class wastes everyone's VR time. Test everything the night before."
+              },
+              "s2": {
+                "statement": "If a headset is at 50% battery, it's fine for a full 50-minute class",
+                "explanation": "False. A Quest 3 at 50% has roughly 1 hour of active use. With overhead from casting, WiFi, and multiple rotations, 50% may not last the full session. Always start at 80% or higher."
+              },
+              "s3": {
+                "statement": "Numbering headsets and matching controllers with coloured labels prevents pairing problems during class",
+                "explanation": "Correct. Colour-coded or numbered sets eliminate the #1 time waster in VR classrooms: students grabbing the wrong controllers. A sticker on each device takes 2 minutes to set up and saves hundreds of minutes over the year."
+              }
+            }
+          }
+        },
+        "b4": {
+          "title": "Running the Session",
+          "exercise": {
+            "instruction": "Navigate the decisions you face during a live VR session",
+            "scenario": "You're 5 minutes into a VR rotation. Four students are in headsets, four are observing the cast screen, four are at the complementary station.",
+            "n1": {
+              "prompt": "You notice a VR student has stopped doing the assigned task and is wandering around the virtual environment exploring freely.",
+              "a": {
+                "label": "Walk over and quietly redirect: 'Remember, your task is to find the three safety hazards. You have 6 minutes left.'",
+                "feedback": "Good choice. A calm, specific verbal redirect keeps the student on task without startling them or disrupting others. Naming the task and the time left gives them clear direction."
+              },
+              "b": {
+                "label": "Immediately remove the headset — they're wasting VR time",
+                "feedback": "Removing a headset abruptly is startling and embarrassing. It should only be used for safety emergencies. For off-task behaviour, a verbal redirect is more effective and respectful."
+              },
+              "c": {
+                "label": "Ignore it — they'll get back on task eventually",
+                "feedback": "They probably won't. Without redirection, the student will spend the entire rotation exploring and miss the learning activity. A brief verbal cue takes 5 seconds and saves the whole rotation."
+              }
+            },
+            "n2": {
+              "prompt": "An observer raises her hand: 'The casting screen just went black. We can't see what the VR students are doing.'",
+              "a": {
+                "label": "Tell observers to just wait — you'll fix the casting after the rotation ends",
+                "feedback": "Leaving observers with nothing to see for the rest of the rotation wastes their learning time. Casting is their window into the VR experience. A quick fix now keeps everyone productive."
+              },
+              "b": {
+                "label": "Ask the observer to check the casting device's WiFi connection while you continue circulating",
+                "feedback": "Great delegation. Having an observer troubleshoot the casting (check WiFi, restart the cast) empowers students and keeps you free to monitor VR students. If it doesn't work, you can step in after your round."
+              },
+              "c": {
+                "label": "Stop the entire session so everyone can troubleshoot the casting together",
+                "feedback": "Stopping VR for a casting issue disrupts students mid-task. Casting loss is inconvenient but not a safety issue. Keep VR students going while resolving the casting separately."
+              }
+            },
+            "n3": {
+              "prompt": "Session recap",
+              "endFeedback": "Effective session management means redirecting gently, delegating small fixes, and keeping the session moving. You don't need to solve every problem yourself — and you should never pull a student out of VR unless safety is at risk."
+            }
+          },
+          "scenario": {
+            "context": "During a live VR session, a student in VR calls out: 'This is boring, I already finished.' Meanwhile, you notice another VR student has stepped outside their taped boundary and is getting close to a desk.",
+            "question": "What's your priority?",
+            "choices": {
+              "a": "Address the student who finished early — boredom leads to misbehaviour",
+              "b": "Address the student outside their boundary — physical safety is always the top priority",
+              "c": "Pause the entire session and re-explain the boundary rules to everyone"
+            },
+            "feedback": {
+              "a": "Boredom is a pedagogical concern, but the student outside their boundary is a physical safety risk. They can't see the desk they're about to hit. Safety always comes before pedagogy — redirect the boundary student first, then give the early finisher a new task.",
+              "b": "Exactly right. A student outside their marked zone while wearing a headset is a collision risk — they can't see obstacles. Walk to them calmly, use their name, and guide them back. The early finisher can wait 30 seconds; the boundary student cannot.",
+              "c": "Stopping everything penalises the students who are on task and in their zones. Address the boundary issue individually, then the early finisher. A full stop is only needed for genuine whole-class safety problems."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "You have 4 headsets active but your casting setup can only display one headset's view at a time on the projector.",
+              "question": "Which student should you cast?",
+              "choices": {
+                "a": "Cast the student who's struggling most — you can coach them from outside",
+                "b": "Rotate the cast every 3–4 minutes across different students so observers see varied approaches",
+                "c": "Cast the strongest student to model the correct way to complete the task"
+              },
+              "feedback": {
+                "a": "Coaching a struggling student through casting can work, but observers learn more from seeing varied approaches. If only one student is cast the whole time, observers see one perspective. Rotating keeps them engaged and shows different strategies.",
+                "b": "Rotating the cast gives observers multiple perspectives — they see different strategies, different mistakes, and different pacing. This creates richer material for the debriefing discussion and keeps observers actively watching instead of zoning out.",
+                "c": "Showing only the best student means observers see one 'right' way. They miss the learning that comes from seeing mistakes, different strategies, and varied pacing. Variety is more educational than perfection."
+              }
+            },
+            "c2": {
+              "context": "While circulating the room during a VR session, you notice that one student keeps restarting the scenario from the beginning instead of progressing forward.",
+              "question": "What should you note for the debrief?",
+              "choices": {
+                "a": "Note it as off-task behaviour to address privately after class",
+                "b": "Note the specific point where they restart — this likely indicates a confusing instruction or interface element. Discuss in the debrief to help the whole class.",
+                "c": "Don't note anything — it's the student's problem to solve on their own"
+              },
+              "feedback": {
+                "a": "Restarting isn't necessarily off-task — the student may be confused about what to do next. Treating it as misbehaviour misses the opportunity to identify and fix a common confusion point that other students might share.",
+                "b": "Exactly. Repeated restarts usually signal a misunderstanding — unclear instructions, a confusing interface, or a step the student can't figure out. Noting the exact restart point lets you address it in the debrief, helping everyone who might hit the same wall.",
+                "c": "Observation notes are one of the instructor's most important tools. If a student is stuck, that's information you need for the debrief. Ignoring it means losing a teaching opportunity."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each responsibility as belonging to the student or the instructor during a live VR session",
+              "cat": {
+                "student": "Student",
+                "instructor": "Instructor"
+              },
+              "i1": "Stay inside the taped boundary zone",
+              "i2": "Cast at least one headset to the shared screen",
+              "i3": "Keep wrist straps on at all times",
+              "i4": "Take observation notes on learning behaviours",
+              "i5": "Raise a hand if feeling dizzy or unwell"
+            }
+          }
+        },
+        "b5": {
+          "title": "Rotation & Time Management",
+          "exercise": {
+            "instruction": "Distribute 50 minutes across the phases of a VR class with 4 headsets and 12 students (3 groups)",
+            "scenario": "You have a 50-minute class, 4 VR headsets, and 12 students. Plan time for briefing, 3 rotations, transitions between them, and a wrap-up.",
+            "res": {
+              "briefing": "Briefing",
+              "rotation1": "Rotation 1",
+              "rotation2": "Rotation 2",
+              "rotation3": "Rotation 3",
+              "transitions": "Transitions (total)",
+              "wrapUp": "Wrap-up & shutdown"
+            }
+          },
+          "scenario": {
+            "context": "You have 6 VR headsets but 24 students in class. The period is 50 minutes. A colleague suggests running 4 groups of 6 students, with each group getting 12 minutes of VR time.",
+            "question": "What is the main problem with this approach?",
+            "choices": {
+              "a": "12 minutes of VR per rotation is too long — students will lose focus",
+              "b": "4 rotations x 12 min = 48 min — with no time left for briefing, transitions, or wrap-up. You need to plan the full 50 minutes, not just VR time.",
+              "c": "6 headsets at once is too many for one teacher to supervise safely"
+            },
+            "feedback": {
+              "a": "12 minutes is actually within the recommended range of 10–15 minutes. The problem isn't duration — it's that the math ignores all the non-VR time. Briefing, transitions, and wrap-up need minutes too.",
+              "b": "Exactly. Beginners plan VR time and forget everything else. A realistic plan: 4 min briefing + 4 x 10 min rotations + 3 x 2 min transitions = 50 min exactly. Or reduce to 3 rotations with 2 groups doubled up. Always plan the full period.",
+              "c": "6 headsets is manageable for an experienced teacher, especially with the casting screen. The real issue is the math — there's no room for briefing or wrap-up in the plan."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "During a 3-station rotation (VR / observation / complementary), students at the complementary station finish their worksheet in 3 minutes and have nothing to do for the remaining 7 minutes.",
+              "question": "How do you fix this?",
+              "choices": {
+                "a": "Design a more substantial complementary activity: research task, discussion questions, or preparation for their VR turn",
+                "b": "Shorten the rotation so the complementary station finishes at the same time as the others",
+                "c": "Eliminate the complementary station — students can just wait for their VR turn"
+              },
+              "feedback": {
+                "a": "Perfect. The complementary station should be as engaging as the VR station. A research task ('Find three examples of how this concept applies in the real world'), discussion cards, or preparing observation questions for the next rotation keeps students productive the entire time.",
+                "b": "Shortening the rotation penalises VR and observation students who need the full time. The fix is a better complementary activity, not less time for everyone else.",
+                "c": "Students with nothing to do for 10 minutes will become disruptive. Every station needs a purposeful activity. The complementary station isn't filler — it's where students process and prepare for their VR turn."
+              }
+            },
+            "c2": {
+              "context": "It's your students' very first VR session ever. You planned 3 rotations of 10 minutes each with a complex simulation app.",
+              "question": "Is this a good plan for a first session?",
+              "choices": {
+                "a": "It's too aggressive — plan extra time for headset fitting, Guardian tutorial, and orientation. Use a simple app and consider only 2 rotations.",
+                "b": "It's fine — students will figure it out as they go, and excitement will carry them through",
+                "c": "Add more rotations so every student gets extra VR time on their first day"
+              },
+              "feedback": {
+                "a": "Correct. First sessions need extra time for everything: adjusting straps, explaining controllers, setting up Guardian boundaries, and managing excitement. Use the simplest possible app (a 360° tour, not a simulation) and expect to lose time to logistics. Two 8-minute rotations is more realistic.",
+                "b": "Excitement creates chaos, not learning. First-timers need time to adjust the headset, learn the controllers, and feel comfortable. Jumping into a complex simulation without this foundation means students spend VR time confused instead of learning.",
+                "c": "More rotations on day one means more transitions, more headset-fitting delays, and more overwhelm. Keep it simple: shorter rotations, simple app, focus on comfort. Save the complex activities for session two."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "A 3-station rotation (VR, observation, complementary) keeps all students engaged even with limited headsets",
+                "explanation": "Correct. Station rotation means every student has a purposeful task at all times — not just the ones wearing headsets. Observers learn from the cast, complementary station students prepare or reflect. Nobody sits idle."
+              },
+              "s2": {
+                "statement": "Transitions between rotations don't need to be planned — students will switch quickly on their own",
+                "explanation": "False. Unplanned transitions waste 3–5 minutes per switch as students argue, fumble with headsets, and lose focus. Plan 2-minute transitions with clear signals (timer, bell) and assigned roles for headset handoff."
+              },
+              "s3": {
+                "statement": "The shutdown routine (headsets off, wipe, charge) should be built into the 50-minute plan, not treated as an afterthought",
+                "explanation": "Correct. If you don't plan 3–5 minutes for shutdown, class ends with headsets scattered, face pads unsanitized, and batteries draining overnight. A consistent routine protects your equipment and sets up the next session."
+              }
+            }
+          }
+        }
+      },
+      "safetyWellbeingAccessibility": {
+        "b1": {
+          "title": "Physical Safety & Space",
+          "exercise": {
+            "instruction": "Match each VR activity type or safety feature to its correct description",
+            "p1": { "term": "Seated VR (controllers only)", "def": "1 × 1 metre minimum" },
+            "p2": { "term": "Standing VR (turning, leaning)", "def": "2 × 2 metres minimum" },
+            "p3": { "term": "Room-scale VR (walking, crouching)", "def": "3 × 3 metres minimum" },
+            "p4": { "term": "Boundary cameras", "def": "Activate when the user steps outside the play area" }
+          },
+          "scenario": {
+            "context": "Your school's science lab has a 4×6m open area in the centre, but desks line the walls and there are backpacks on the floor. You need to run a room-scale VR activity tomorrow.",
+            "question": "What is your first priority?",
+            "choices": {
+              "a": "Calculate how many students can use VR at once based on the 3×3m per station requirement",
+              "b": "Clear all obstacles from the floor, mark boundaries with tape, then determine how many stations fit safely",
+              "c": "Switch to a seated experience instead — the room is too small for room-scale"
+            },
+            "feedback": {
+              "a": "Calculating stations is important, but the first priority is clearing the physical space. Backpacks and loose items are invisible hazards for students wearing headsets — clear first, then measure.",
+              "b": "Exactly. The number one step is clearing the physical space of obstacles. Backpacks, cables, and loose items are tripping hazards for VR users who can't see the floor. Once the space is clear and marked, you can determine station count.",
+              "c": "A 4×6m area actually fits one 3×3m room-scale station comfortably. Don't default to less immersive experiences when the space works — just clear and mark it properly."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A student in VR is walking toward the wall. The Guardian boundary grid appears, but the student ignores it and keeps moving.",
+              "question": "What should have been set up differently?",
+              "choices": {
+                "a": "The Guardian boundaries should be set tighter so the grid appears earlier, giving the student more warning distance from walls",
+                "b": "Guardian alone is not enough — the instructor should be watching and give a verbal warning before the student reaches any wall",
+                "c": "The room should have foam padding on all walls to prevent injuries"
+              },
+              "feedback": {
+                "a": "Good thinking. Setting Guardian boundaries a comfortable distance from walls gives students more reaction time. Combined with instructor supervision, this creates a double layer of safety.",
+                "b": "Relying on instructor reaction time alone is risky. The Guardian system provides an automatic visual warning before the student reaches the edge. Setting it tighter gives more buffer. The best approach combines both: tighter Guardian + active supervision.",
+                "c": "Wall padding addresses the symptom, not the cause. The real fix is proper Guardian configuration and instructor supervision to prevent students from reaching walls at all."
+              }
+            },
+            "c2": {
+              "context": "You only have a 3×2 metre area available for VR in your classroom.",
+              "question": "Which experience type should you choose?",
+              "choices": {
+                "a": "Room-scale — students can still move if they're careful",
+                "b": "Standing or seated — both fit safely within this space",
+                "c": "Cancel VR — this space is too small for any VR activity"
+              },
+              "feedback": {
+                "a": "Room-scale requires 3×3m minimum. A 3×2m area doesn't meet this requirement, and 'being careful' is not a safety strategy. Students in VR can't see the real world — they need sufficient space.",
+                "b": "Correct. Standing VR needs 2×2m and seated needs 1×1m — both fit within 3×2m. Matching the experience to the available space is a key safety decision.",
+                "c": "A 3×2m area is plenty for standing (2×2m) and seated (1×1m) VR experiences. Don't cancel VR when the space works for other activity types."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Which space category does each VR setup belong to?",
+              "cat": {
+                "seated": "Seated (1×1m)",
+                "standing": "Standing (2×2m)",
+                "roomscale": "Room-scale (3×3m)"
+              },
+              "i1": "Controllers only, user stays in a chair",
+              "i2": "Walking, crouching, and reaching freely",
+              "i3": "Turning and leaning in place, no walking"
+            }
+          }
+        },
+        "b2": {
+          "title": "Supervision & Boundaries",
+          "exercise": {
+            "instruction": "Label each statement as Fact or Myth about VR supervision",
+            "s1": {
+              "statement": "It's okay to step out briefly if students are experienced VR users",
+              "explanation": "Myth. Never leave VR users unsupervised, regardless of experience level. Accidents happen without warning — an experienced user can still trip, feel dizzy, or bump into someone."
+            },
+            "s2": {
+              "statement": "You should configure the Guardian system on every headset before each session",
+              "explanation": "Fact. The Guardian boundary system is a critical safety layer. It must be set up on every headset before any student puts it on, every session."
+            },
+            "s3": {
+              "statement": "An instructor can safely supervise up to 30 students in VR simultaneously",
+              "explanation": "Myth. You can only safely supervise the number of VR users you can maintain direct line of sight to. With 30 students, only a small group should be in VR while others observe or do companion tasks."
+            },
+            "s4": {
+              "statement": "Students not in VR can observe via screen casting while waiting for their turn",
+              "explanation": "Fact. Screen casting lets non-VR students see what VR users are experiencing. This keeps them engaged, supports observation-based learning, and reduces idle waiting time."
+            },
+            "s5": {
+              "statement": "The Guardian system makes instructor supervision unnecessary",
+              "explanation": "Myth. Guardian is an automated boundary warning, not a substitute for human supervision. It cannot detect obstacles that move (like other students), respond to dizziness, or manage session logistics."
+            }
+          },
+          "scenario": {
+            "context": "You have 20 students and 5 VR headsets. A colleague suggests all 5 students can be in VR simultaneously while you supervise from your desk at the front.",
+            "question": "What is your main concern?",
+            "choices": {
+              "a": "Five students at once is fine — the Guardian system will keep them safe",
+              "b": "Only if you can maintain direct line of sight to all 5 stations from where you're positioned — rearrange if needed",
+              "c": "You should only have 1 student in VR at a time to be completely safe"
+            },
+            "feedback": {
+              "a": "The Guardian system is helpful but doesn't replace supervision. It can't detect moving obstacles, respond to students feeling unwell, or manage session logistics. You still need line of sight.",
+              "b": "Correct. The key question is whether you can see all active VR users from your position. If your desk doesn't give you line of sight to every station, move to a central position or reduce the number of simultaneous users.",
+              "c": "One at a time is extremely safe but impractical — with 20 students and 50 minutes, each would get only 2.5 minutes of VR. Supervising 3–5 users simultaneously is realistic if you have clear sightlines."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "During a VR session, a colleague calls you from the hallway asking for a quick word. Three students are currently wearing headsets.",
+              "question": "What do you do?",
+              "choices": {
+                "a": "Stay in the room — you cannot leave VR users unsupervised, even briefly. Ask the colleague to wait or come to you.",
+                "b": "Step out quickly — it will only take a minute and the students are in the middle of their activity",
+                "c": "Ask a student who isn't in VR to watch the three VR users while you step out"
+              },
+              "feedback": {
+                "a": "Correct. The rule is absolute: never leave VR users unsupervised. If the colleague needs you, they can step into the room or wait until the session is over.",
+                "b": "Even 'just a minute' is too long. In that time, a student could walk into a wall, feel dizzy and fall, or collide with another student. If you must leave, headsets come off first.",
+                "c": "An untrained student is not a substitute for instructor supervision. They don't know how to handle Guardian alerts, dizziness, or collisions. Stay in the room."
+              }
+            },
+            "c2": {
+              "context": "You notice a student has turned off the Guardian boundary because they find the grid overlay distracting during their VR experience.",
+              "question": "What do you do?",
+              "choices": {
+                "a": "Let them continue — if the grid is distracting, it could interfere with the learning experience",
+                "b": "Increase the room lighting so you can supervise better without the Guardian",
+                "c": "Turn the Guardian back on immediately — it's a non-negotiable safety feature, even if it's briefly visible during the experience"
+              },
+              "feedback": {
+                "a": "The Guardian is not optional. Without it, the student has no warning before walking into walls, furniture, or other people. A brief visual grid is a minor inconvenience compared to a collision.",
+                "b": "Room lighting helps you see the students, but it doesn't help the student inside VR see the real world. Only the Guardian boundary system provides that warning.",
+                "c": "Correct. The Guardian system is non-negotiable. It's the student's only automated warning that they're approaching a physical boundary. Explain why it matters and adjust the sensitivity if the grid appears too often."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "The instructor must maintain direct line of sight to all VR users throughout the entire session",
+                "explanation": "True. This is the most important supervision rule. If you cannot see a VR user, you cannot respond to safety issues."
+              },
+              "s2": {
+                "statement": "Experienced VR users can be left unsupervised for short periods",
+                "explanation": "False. Experience does not prevent dizziness, tripping, or unexpected incidents. The no-unsupervised-VR rule applies to all users, always."
+              },
+              "s3": {
+                "statement": "If you are the only instructor, you should limit the number of students in VR at the same time",
+                "explanation": "True. One instructor can only safely monitor a limited number of active VR users. The remaining students should observe via casting, do companion tasks, or wait for their rotation."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "Motion Sickness & Response",
+          "exercise": {
+            "instruction": "Arrange the five steps of the disorientation response protocol in the correct order",
+            "scaleStart": "First step",
+            "scaleEnd": "Last step",
+            "i1": "Ask the student to stop all movement",
+            "i2": "Help remove the headset gently",
+            "i3": "Guide them to sit down",
+            "i4": "Allow recovery time — let them rest quietly",
+            "i5": "Do not rush them back to VR this session"
+          },
+          "scenario": {
+            "context": "A student removes their headset mid-session and says 'I feel weird.' Their face looks pale and they're unsteady on their feet.",
+            "question": "What do you do first?",
+            "choices": {
+              "a": "Tell them to sit back down and try again in 5 minutes — it usually passes quickly",
+              "b": "Guide them to sit down immediately, offer water, let them rest, and do not pressure them to return to VR this session",
+              "c": "Send them to the school nurse immediately — they might have a serious condition"
+            },
+            "feedback": {
+              "a": "Never tell a student experiencing VR discomfort to 'try again.' Pushing through makes symptoms worse, not better. The student needs to sit, rest, and skip VR for the remainder of the session.",
+              "b": "Correct. The priority is getting them seated safely and letting them recover. Disorientation typically passes within minutes. No water, rest, calm voice — and absolutely no pressure to go back into VR during this session.",
+              "c": "Most VR disorientation is mild and resolves in minutes with rest. Sending them to the nurse immediately is an overreaction unless symptoms persist beyond 10 minutes or include vomiting or severe headache."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "You're choosing between two VR apps for a class session. App A involves flying through a city at high speed. App B lets students walk at their own pace through a virtual museum.",
+              "question": "Which is better for preventing motion sickness?",
+              "choices": {
+                "a": "App A — the excitement will distract students from any discomfort",
+                "b": "App B — self-paced movement with no forced locomotion is much less likely to cause cybersickness",
+                "c": "Neither — motion sickness in VR is purely random and can't be prevented by app choice"
+              },
+              "feedback": {
+                "a": "Excitement doesn't prevent cybersickness — forced, fast movement is one of its primary triggers. Flying simulations and roller coasters are among the worst offenders for motion sickness.",
+                "b": "Correct. Self-paced movement where the student controls their own locomotion is far less likely to cause cybersickness. Avoid apps with forced movement (flying, roller coasters, fast vehicles) especially for beginners.",
+                "c": "App choice matters significantly. Forced high-speed movement is a known trigger for cybersickness. Self-paced, walking-speed experiences with user-controlled locomotion dramatically reduce the risk."
+              }
+            },
+            "c2": {
+              "context": "A student finished their VR session 5 minutes ago but still feels dizzy and slightly nauseous.",
+              "question": "What do you do?",
+              "choices": {
+                "a": "Let them continue resting — most symptoms resolve within a few more minutes. If it persists past 10 minutes, they should skip VR for the rest of the day.",
+                "b": "Put them back in VR with a calmer app — sometimes re-exposure helps the brain adjust",
+                "c": "Ignore it — they probably just stood up too fast after sitting in VR"
+              },
+              "feedback": {
+                "a": "Correct. Five minutes of lingering symptoms is within normal range. Let them rest, offer water, and monitor. If symptoms don't improve after 10 minutes total, VR is done for the day. Never rush recovery.",
+                "b": "Never re-expose a symptomatic student to VR. Re-entering VR while still dizzy will make symptoms significantly worse. The student needs full recovery before any consideration of returning — and not in this session.",
+                "c": "Dismissing a student's symptoms is unsafe and undermines trust. Dizziness after VR is a recognised phenomenon (cybersickness) that requires rest, not dismissal."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Is this a prevention strategy or a response action?",
+              "cat": {
+                "prevention": "Prevention",
+                "response": "Response"
+              },
+              "i1": "Keep VR sessions to 5–15 minutes",
+              "i2": "Help remove the headset gently",
+              "i3": "Avoid apps with forced high-speed movement",
+              "i4": "Guide the student to sit down and rest",
+              "i5": "Offer seated mode when the app supports it"
+            }
+          }
+        },
+        "b4": {
+          "title": "Hygiene & Equipment Care",
+          "exercise": {
+            "instruction": "Sort each cleaning task into the correct category",
+            "cat": {
+              "between": "Between students (~60s)",
+              "endOfDay": "End of day (~5min)",
+              "never": "Never do"
+            },
+            "i1": "Wipe face pad with non-alcoholic disinfectant wipe",
+            "i2": "Remove and wash detachable face pad thoroughly",
+            "i3": "Clean lenses with paper towels",
+            "i4": "Wipe controller grips and buttons",
+            "i5": "Inspect lenses and clean with microfibre cloth (circular motions)",
+            "i6": "Use alcohol-based cleaner on foam face pad",
+            "i7": "Allow 30 seconds of air drying before next user",
+            "i8": "Store headsets in a clean, dry location with lenses away from light"
+          },
+          "scenario": {
+            "context": "Between rotations, a student hands you a headset with visible sweat on the face pad. The next student is waiting.",
+            "question": "What do you do?",
+            "choices": {
+              "a": "Wipe it quickly with your sleeve and hand it over — speed is important during rotations",
+              "b": "Use a non-alcoholic disinfectant wipe on the face pad and controller grips, let it air dry briefly, then hand it to the next student",
+              "c": "Skip this headset and use a different one instead"
+            },
+            "feedback": {
+              "a": "Clothing can harbour bacteria and doesn't disinfect. Using your sleeve is unhygienic for the next user and doesn't address the sweat properly. Always use proper cleaning supplies.",
+              "b": "Correct. A 60-second wipe-down with proper supplies is all it takes. Non-alcoholic disinfectant for the face pad and controller grips, brief air dry, and the headset is ready. This protects both equipment and students.",
+              "c": "Having a spare is nice, but avoidance doesn't solve the problem — the sweaty headset still needs cleaning before anyone else uses it. Build the cleaning step into every rotation handoff."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A colleague suggests using paper towels to quickly clean fingerprints off the VR headset lenses between users.",
+              "question": "Why is this a problem?",
+              "choices": {
+                "a": "Paper towels are too slow — there are faster methods",
+                "b": "Paper towels are abrasive and can scratch the special coatings on VR lenses. Only a dry microfibre cloth should be used, with gentle circular motions.",
+                "c": "Paper towels leave too much moisture on the lenses"
+              },
+              "feedback": {
+                "a": "Speed isn't the issue — lens damage is. Paper towels have wood fibres that scratch the delicate anti-reflective and anti-smudge coatings on VR lenses.",
+                "b": "Correct. VR lenses have specialised coatings that are easily damaged by abrasive materials. Paper towels, tissues, and clothing can all cause micro-scratches. Only a dry microfibre cloth should touch the lenses.",
+                "c": "Moisture isn't the main concern — physical damage is. Paper towel fibres are abrasive enough to scratch lens coatings permanently. The correct tool is always a dry microfibre cloth."
+              }
+            },
+            "c2": {
+              "context": "At the end of the day, you need to store 6 VR headsets until next week's session.",
+              "question": "What's the correct procedure?",
+              "choices": {
+                "a": "Stack them in a box and put it in the storage cupboard",
+                "b": "Do a full deep clean (face pads, shell, controllers, lenses), then store each headset in a clean, dry location with lenses facing away from any light source",
+                "c": "Leave them on the table plugged in to charge — they'll be ready for next week"
+              },
+              "feedback": {
+                "a": "Stacking can damage lenses and straps. Skipping the deep clean means sweat and bacteria sit on the equipment for a week. Both reduce equipment lifespan and hygiene.",
+                "b": "Correct. The end-of-day routine is: clean everything thoroughly, inspect lenses, and store properly. Lenses facing away from light prevents sun damage through windows. A clean, dry location prevents mould on foam padding.",
+                "c": "Leaving headsets on a table risks accidental damage and sun exposure to lenses. Charging them is good, but they also need a deep clean and proper storage."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Alcohol-based cleaners are the best choice for VR headset face pads",
+                "explanation": "False. Alcohol damages foam materials and can cause skin irritation. Use non-alcoholic disinfectant wipes specifically suited for VR equipment."
+              },
+              "s2": {
+                "statement": "The between-student cleaning routine should take about 60 seconds",
+                "explanation": "True. A quick wipe of the face pad, controller grips, and a brief air dry is all that's needed between users. It's fast enough to fit into rotation transitions."
+              },
+              "s3": {
+                "statement": "VR headset lenses should only be cleaned with a dry microfibre cloth using gentle circular motions",
+                "explanation": "True. VR lenses have delicate coatings that are easily scratched by paper towels, tissues, or clothing. Only microfibre cloth preserves the lens quality."
+              }
+            }
+          }
+        },
+        "b5": {
+          "title": "Accessibility & Inclusion",
+          "exercise": {
+            "instruction": "Navigate this scenario: a student tells you they don't want to use VR today",
+            "scenario": "A quiet student approaches you before the VR session and says they'd rather not put on a headset today. They don't give a reason.",
+            "n1": {
+              "prompt": "The student has told you they don't want to use VR. What do you do?",
+              "a": { "label": "Respect their decision and immediately offer an alternative role", "feedback": "Excellent. Participation is always voluntary. By respecting the boundary without questioning it and offering an alternative, you maintain trust and keep the student engaged in learning." },
+              "b": { "label": "Ask them to try it for just 2 minutes to see if they like it", "feedback": "Pressuring a student — even gently — after they've communicated a boundary undermines trust. If they said no, respect it. There may be a reason they don't want to share." },
+              "c": { "label": "Tell them it's part of the grade and they need to participate", "feedback": "VR participation should never be mandatory. Forcing students into VR can create anxiety, worsen existing conditions, or damage trust. Always have a non-VR path to the same learning objective." }
+            },
+            "n2": {
+              "prompt": "You've offered the student an active observer role. What task do you give them?",
+              "a": { "label": "Tell them to just watch the casting screen quietly", "feedback": "Watching without structure is passive — the student will disengage quickly. Observation without a task is not active learning; it's just sitting out." },
+              "b": { "label": "Give them a checklist: note what the VR user does at each step, identify one mistake, and prepare feedback for the debrief", "feedback": "Perfect. A structured observation task makes the observer role genuinely educational. The student engages with the content, develops critical thinking, and contributes to the class discussion." },
+              "c": { "label": "Ask them to take photos of the casting screen for the class journal", "feedback": "This gives them a task, but it's logistical rather than educational. The student captures images but doesn't engage with the learning content. A structured observation checklist would be more valuable." }
+            },
+            "n3": {
+              "prompt": "The observer completes their structured task and is ready for the debriefing.",
+              "endFeedback": "Well handled. The student participated meaningfully without wearing a headset: they observed, analysed, and prepared feedback. During the debrief, their perspective as an outside observer often adds insights the VR users missed. Not wearing a headset does not mean not learning."
+            }
+          },
+          "scenario": {
+            "context": "Three students in your class cannot use VR today — one has a headache, one is prone to cybersickness, and one simply doesn't want to. All three are sitting out.",
+            "question": "How do you handle this?",
+            "choices": {
+              "a": "Excuse all three from the activity and let them do independent study at their desks",
+              "b": "Respect each student's situation, assign them meaningful alternative roles (observer, discussion leader, analyst), and ensure they participate in the debrief",
+              "c": "Try to convince the reluctant student — the other two have valid reasons, but this student should at least try"
+            },
+            "feedback": {
+              "a": "Independent study is exclusion dressed up as flexibility. The students miss the VR-related learning entirely. Alternative roles like observer, analyst, or discussion leader keep them connected to the same learning objectives.",
+              "b": "Correct. Every student's reason is valid — you don't need to rank them. Assign meaningful roles that engage with the same content: active observer, note-taker for the debrief, or discussion leader. All three should contribute during the debrief alongside VR users.",
+              "c": "You don't get to decide which reasons for declining VR are 'valid enough.' Participation is always voluntary, no exceptions. Respect all three boundaries equally and offer the same quality of alternative."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A parent emails saying their child has epilepsy and should not use VR under any circumstances. The next VR session is in two days.",
+              "question": "How do you respond?",
+              "choices": {
+                "a": "Acknowledge the concern, confirm the student will not use VR, and explain the meaningful alternative role they'll have during VR sessions",
+                "b": "Ask for a doctor's note to verify the condition before making accommodations",
+                "c": "Suggest the student stay home on VR days to avoid any issues"
+              },
+              "feedback": {
+                "a": "Correct. Acknowledge, accommodate, and communicate the plan. The parent needs to know their child will still participate in meaningful learning — just through a different pathway. No medical verification is needed; you trust the parent.",
+                "b": "Requiring medical proof creates unnecessary barriers and signals distrust. The parent has informed you of a medical condition — your job is to accommodate, not verify.",
+                "c": "Excluding a student from school because of a medical condition is discriminatory. VR is a tool, not the lesson itself. The student can achieve the same learning objective through alternative roles."
+              }
+            },
+            "c2": {
+              "context": "After a VR session, an observer student says: 'I didn't learn anything because I didn't get to use VR. Everyone who wore a headset had a much better experience.'",
+              "question": "How do you respond?",
+              "choices": {
+                "a": "Promise them they'll definitely get a VR turn next time",
+                "b": "Ask what they observed, what they noticed the VR user did well or poorly, and highlight how their outside perspective gives them insights the VR users didn't have",
+                "c": "Acknowledge they missed out and offer to let them stay after class for a quick VR session"
+              },
+              "feedback": {
+                "a": "Promising a future turn doesn't address the current feeling and implies VR is the 'real' experience while observation is lesser. Instead, validate the observer role itself.",
+                "b": "Correct. Reframe the observer experience as a strength, not a deficit. Ask them to share specific observations: what did they see that VR users missed? Their outside perspective often catches things immersion hides. This validates the role and builds their confidence.",
+                "c": "This well-meaning response reinforces the idea that the observer role is a consolation prize. Instead, validate observation as a genuine learning experience with unique advantages."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Is this activity typically done by the VR user or the active observer?",
+              "cat": {
+                "vrUser": "VR User",
+                "observer": "Active Observer"
+              },
+              "i1": "Performs the simulation inside the headset",
+              "i2": "Predicts outcomes before the VR user acts",
+              "i3": "Takes structured notes via the casting screen",
+              "i4": "Interacts with virtual objects using controllers",
+              "i5": "Identifies mistakes the VR user doesn't notice"
             }
           }
         }
@@ -1054,22 +2643,6 @@
           "explanation": "VR replaces reality entirely. The student is placed inside a 360° digital environment and cannot see the physical classroom."
         },
         "q2": {
-          "question": "What is the primary educational purpose of using VR in the classroom?",
-          "a": "To entertain students with impressive graphics",
-          "b": "To replace the teacher during part of the lesson",
-          "c": "To enable experiential learning — students participate actively in simulated environments instead of receiving information passively",
-          "d": "To keep students quiet and focused for longer periods",
-          "explanation": "VR's main educational purpose is experiential learning. Students actively participate in environments that would be difficult, dangerous, or impossible to access in real life."
-        },
-        "q3": {
-          "question": "A student wearing a VR headset asks 'Can you see me?' What does this tell you about how VR works?",
-          "a": "The headset is malfunctioning — students should be able to see through it",
-          "b": "VR creates a fully immersive 360° environment that completely replaces the physical world — the student genuinely cannot see the classroom or other people",
-          "c": "The student is confused — VR only blocks part of their vision",
-          "d": "This only happens with expensive VR headsets",
-          "explanation": "This is exactly how VR works: it replaces the real world entirely. The student is inside a digital environment and cannot see the classroom, which is why teacher supervision is important."
-        },
-        "q4": {
           "question": "You want students to practice an emergency evacuation procedure without any real danger. Which strength of VR makes this the right tool?",
           "a": "VR headsets are wireless, so students can move around freely",
           "b": "VR has better graphics than a textbook diagram",
@@ -1077,7 +2650,7 @@
           "d": "VR lets you record the session for grading later",
           "explanation": "One of VR's core strengths is safe repetition. Students can practice dangerous or costly procedures multiple times without real consequences, building confidence and competence."
         },
-        "q5": {
+        "q3": {
           "question": "A colleague describes two activities: (1) Students use tablets to see 3D labels appear on a real skeleton model sitting on the table. (2) Students put on headsets and explore the inside of a human cell as if they were walking through it. Which technologies are being used?",
           "a": "Both are VR because they both use digital content",
           "b": "Activity 1 is AR (digital overlays on the real world), Activity 2 is VR (replaces reality with a digital environment)",
@@ -1085,45 +2658,21 @@
           "d": "Both are AR because they both involve 3D content",
           "explanation": "AR adds digital content on top of the real world — students still see the skeleton and classroom. VR replaces reality entirely — students are inside a digital cell and can't see the classroom. The key question: is the real world still visible?"
         },
-        "q6": {
-          "question": "A student fails a simulated fire drill in VR and wants to try again. How should you respond?",
-          "a": "Tell them they only get one chance, just like in real life",
-          "b": "Let them repeat it — VR's safe environment means mistakes have no real consequences, and repetition builds confidence and competence",
-          "c": "Move them to a different, easier activity",
-          "d": "Show them a video of the correct procedure instead",
-          "explanation": "Repetition without consequences is a core advantage of VR. Students can practice as many times as needed until they feel confident, which is impossible with real emergency drills."
-        },
-        "q7": {
-          "question": "You want 20 students to collaboratively identify parts of a real car engine while seeing digital labels and step-by-step instructions overlaid on the engine. Which technology fits this learning goal better?",
-          "a": "VR — full immersion will help students focus on the engine parts",
-          "b": "AR — students need to see and touch the real engine while digital information is added on top",
-          "c": "Either would work equally well for this scenario",
-          "d": "Neither — a printed manual is more effective",
-          "explanation": "This scenario requires collaboration (students working together), physical objects (the real engine), and context-anchored information (labels on real parts). These are exactly the criteria that make AR more appropriate than VR. VR would block the real engine from view, making it impossible to work on it."
-        },
-        "q8": {
+        "q4": {
           "question": "A colleague says: 'I used VR in my history class — students watched a 360° video of ancient Rome for 15 minutes.' How would you evaluate this use of VR?",
           "a": "Excellent — 360° videos are the best way to use VR in education",
-          "b": "It's a valid starting point, but VR's full potential comes from students doing and interacting, not just watching passively",
-          "c": "It was a waste of time — VR should only be used for science subjects",
+          "b": "It was a waste of time — VR should only be used for science subjects",
+          "c": "It's a valid starting point, but VR's full potential comes from students doing and interacting, not just watching passively",
           "d": "It's fine as long as all students had their own headset",
           "explanation": "The strongest VR use cases involve doing, not just watching. A 360° video is passive observation. VR shines when students interact, make decisions, and practice procedures."
         },
-        "q9": {
+        "q5": {
           "question": "Which of these is the strongest example of using VR's full potential in education?",
           "a": "Students watch a 360° tour of a museum",
-          "b": "Students perform a virtual chemistry experiment — measuring, mixing, and observing reactions step by step",
-          "c": "Students view a slideshow inside a VR headset",
-          "d": "Students listen to a recorded lecture in a virtual classroom",
+          "b": "Students view a slideshow inside a VR headset",
+          "c": "Students listen to a recorded lecture in a virtual classroom",
+          "d": "Students perform a virtual chemistry experiment — measuring, mixing, and observing reactions step by step",
           "explanation": "VR's full potential is realized when students actively do something — performing experiments, making decisions, practicing procedures. Passive viewing doesn't leverage VR's unique strengths."
-        },
-        "q10": {
-          "question": "A school administrator asks: 'In which areas is VR already being used for training?' Which answer best represents the current state?",
-          "a": "Only in video game development and entertainment",
-          "b": "Healthcare, vocational training, education, and corporate settings — from surgical practice to virtual field trips to crisis management simulations",
-          "c": "Only in universities with large technology budgets",
-          "d": "Mainly in language learning apps",
-          "explanation": "VR is already used across healthcare (surgical training, emergency response), vocational training (equipment operation, safety protocols), education (virtual field trips, science labs), and corporate settings (onboarding, crisis management)."
         }
       },
       "gettingVrReady": {
@@ -1146,8 +2695,8 @@
         "q3": {
           "question": "A parent emails you concerned about VR safety for their child. What's the best response?",
           "a": "Reply that VR is perfectly safe and there's nothing to worry about",
-          "b": "Share specific safety measures you use (session limits, Guardian, supervision) and offer to discuss further",
-          "c": "Forward the email to the principal to handle",
+          "b": "Forward the email to the principal to handle",
+          "c": "Share specific safety measures you use (session limits, Guardian, supervision) and offer to discuss further",
           "d": "Exempt the child from all VR activities immediately",
           "explanation": "Transparency builds trust. Sharing your specific safety protocols — session time limits, Guardian boundaries, active supervision — shows professionalism and invites dialogue rather than shutting down concerns."
         },
@@ -1161,11 +2710,137 @@
         },
         "q5": {
           "question": "A student refuses to put on the VR headset and looks anxious. What do you do?",
-          "a": "Insist — they need to participate to get their grade",
-          "b": "Respect their decision and assign them an alternative role like observer, note-taker, or casting controller",
+          "a": "Respect their decision and assign them an alternative role like observer, note-taker, or casting controller",
+          "b": "Insist — they need to participate to get their grade",
           "c": "Put the headset on them yourself to show it's not scary",
           "d": "Send them to the school counselor",
           "explanation": "Respecting a student's choice while offering meaningful alternatives keeps them included in the learning without forcing them. Observer, note-taker, and casting controller roles contribute to the class and reduce anxiety about future sessions."
+        }
+      },
+      "designingMeaningfulLearning": {
+        "q1": {
+          "question": "Which of the following learning objectives is best suited for VR?",
+          "a": "Students will memorise the names of all bones in the human body",
+          "b": "Students will understand the importance of workplace safety",
+          "c": "Students will perform the correct lockout/tagout procedure on a virtual industrial machine, completing all six steps in the correct order",
+          "d": "Students will read about the history of surgical techniques",
+          "explanation": "VR excels when learners DO something — performing procedures, making decisions, practicing skills. The lockout/tagout objective involves observable action, specific context, and measurable criteria."
+        },
+        "q2": {
+          "question": "A colleague writes this VR objective: 'Students will learn about fire safety.' What is the main problem?",
+          "a": "It doesn't mention VR headsets",
+          "b": "'Learn about' is passive and unmeasurable. A strong VR objective uses action verbs like 'perform,' 'demonstrate,' or 'execute' and includes a specific context and success criteria.",
+          "c": "Fire safety isn't a good topic for VR",
+          "d": "The objective is too short",
+          "explanation": "'Learn about' describes no observable action — you can't see or measure 'learning about' something. VR objectives need action verbs that describe what students DO, not what they vaguely absorb."
+        },
+        "q3": {
+          "question": "Students spend 15 minutes watching a 360° virtual tour of the International Space Station. A colleague calls this 'interactive VR learning.' Do you agree?",
+          "a": "Yes — wearing a headset and looking around is interactive",
+          "b": "No — VR can't be used for space education",
+          "c": "Yes — any VR experience is interactive by definition",
+          "d": "No — watching a 360° video is passive observation (seeing). Interactive VR means students make decisions, manipulate objects, or perform tasks (doing). Looking around is not the same as interacting.",
+          "explanation": "Passive observation (watching, looking around) is 'seeing.' Interactive learning (making choices, performing tasks, solving problems) is 'doing.' VR's real power is in 'doing' — active participation, not passive viewing."
+        },
+        "q4": {
+          "question": "A teacher runs a VR session without any briefing beforehand. Students put on headsets and explore freely for 20 minutes, then move to the next subject. What's the most critical problem?",
+          "a": "The session is too long",
+          "b": "VR shouldn't be used without a specific app",
+          "c": "Without briefing, students don't know what to focus on. Without debriefing, the experience is never processed into learning. The session lacks both purpose and reflection.",
+          "d": "Students should explore for at least 30 minutes",
+          "explanation": "The three-phase structure (briefing → experience → debriefing) is essential. Briefing gives purpose, the experience is the learning window, and debriefing transforms the experience into knowledge. Skipping briefing and debriefing turns VR into entertainment."
+        },
+        "q5": {
+          "question": "Students are about to use a virtual chemistry lab for the first time. They've never seen the environment. Which VR activity type should you use first?",
+          "a": "Guided Exploration — let them walk through the lab with a focus question ('Find and name the safety equipment') before starting any experiments",
+          "b": "Evaluation / Skill Check — test what they know",
+          "c": "Go straight to Simulation with Practice — they'll figure out the layout as they go",
+          "d": "Show them a video tour instead of using VR",
+          "explanation": "When students encounter a new VR environment, Guided Exploration helps them build spatial familiarity. Without it, they spend simulation time lost and confused instead of focused on the learning task."
+        }
+      },
+      "classroomImplementation": {
+        "q1": {
+          "question": "You're setting up a classroom for VR. The room has large south-facing windows that flood it with direct sunlight in the afternoon. Headset tracking keeps glitching near the windows. What's the best approach?",
+          "a": "Switch to a different room without windows",
+          "b": "Turn off all the lights to minimise tracking interference",
+          "c": "Close the blinds on the sunny side, position VR stations away from the windows, and keep ceiling lights on so you can still supervise",
+          "d": "Ignore the tracking issues — students won't notice during the activity",
+          "explanation": "Direct sunlight interferes with inside-out tracking and can permanently damage lenses. The solution is to reduce sunlight where VR stations are positioned while keeping the room bright enough for instructor supervision. Total darkness prevents you from monitoring students safely."
+        },
+        "q2": {
+          "question": "Students arrive for a VR session. Half the class used VR last week, but the other half is brand new. Should you still do a full briefing?",
+          "a": "No — experienced students already know the rules; just brief the newcomers separately",
+          "b": "Yes — every session needs a full briefing because the rules, roles, groups, and learning task are session-specific, even if students have used VR before",
+          "c": "Only if the new students ask questions",
+          "d": "Skip the briefing entirely to maximise VR time",
+          "explanation": "The briefing isn't just about VR mechanics — it establishes the learning task, assigns roles and groups, and sets expectations for THIS specific session. Even experienced VR users need to know what they're doing, with whom, and for how long."
+        },
+        "q3": {
+          "question": "During your pre-class device check, you discover that one headset's target app crashed during an overnight update and won't launch. Class starts in 20 minutes. What do you do?",
+          "a": "Uninstall and reinstall the app on that headset — it might finish in time",
+          "b": "Force all students to share the remaining headsets in pairs",
+          "c": "Set that headset aside, reorganise groups to use your remaining headsets, and troubleshoot the broken one after class",
+          "d": "Cancel the VR portion of the lesson entirely",
+          "explanation": "Adaptability is a core VR teaching skill. One broken headset shouldn't derail the session. Adjust group sizes, proceed with what works, and fix the problem after class. Attempting a reinstall risks starting late with a half-working device."
+        },
+        "q4": {
+          "question": "During a VR session, you see through the casting screen that one student has completed the task early and is now exploring freely. Meanwhile, another student is physically stepping outside their taped boundary toward a desk. What do you do first?",
+          "a": "Address the early finisher first — they need a new task to stay engaged",
+          "b": "Address the boundary student first — physical safety always takes priority over pedagogical concerns. Then give the early finisher an extension task.",
+          "c": "Pause everyone and re-explain the boundary rules to the whole class",
+          "d": "Let both situations resolve naturally — students usually self-correct",
+          "explanation": "Physical safety always comes first. A student outside their boundary while wearing a headset cannot see obstacles and could collide with furniture or another student. The early finisher is not in danger — they can wait 30 seconds. Always prioritise safety over pedagogy."
+        },
+        "q5": {
+          "question": "You have 4 headsets, 20 students, and a 50-minute class. You planned 5 groups of 4 with 10-minute VR rotations. After the briefing takes 5 minutes, you realise there's no time left for transitions and wrap-up. What's the best adaptation?",
+          "a": "Skip the wrap-up — just collect headsets when the bell rings",
+          "b": "Reduce each rotation to 8 minutes, keep 2-minute transitions and a 3-minute wrap-up — every student still gets VR time",
+          "c": "Cut to 3 rotations and tell the other 2 groups they'll go next class",
+          "d": "Extend the class by asking the next teacher for 10 extra minutes",
+          "explanation": "Flexible time management is essential. Reducing each rotation by 2 minutes keeps all 5 groups cycling through VR while preserving transitions and wrap-up. Skipping wrap-up wastes the reflection opportunity; cutting groups is unfair and breaks trust."
+        }
+      },
+      "safetyWellbeingAccessibility": {
+        "q1": {
+          "question": "You have a 2.5 × 2.5 metre open area in your classroom. Which VR activity types can you safely run in this space?",
+          "a": "Room-scale (walking freely) — the space is big enough for one student",
+          "b": "Standing (turning, leaning) and seated (controllers only) — both fit safely within this space",
+          "c": "Only seated — standing VR requires at least 3 × 3 metres",
+          "d": "None — VR requires at least 3 × 3 metres regardless of activity type",
+          "explanation": "Standing VR needs 2×2m minimum (you have 2.5×2.5m), and seated needs just 1×1m — both fit. Room-scale requires 3×3m, which doesn't fit. Matching the activity type to available space is a key safety decision."
+        },
+        "q2": {
+          "question": "During a VR session, a colleague asks you to step into the hallway for a quick conversation. Three students are currently wearing headsets. What do you do?",
+          "a": "Go ahead — it will only take a minute and the students are experienced users",
+          "b": "Ask the three students to remove their headsets first, then step out",
+          "c": "Decline or ask them to wait — you cannot leave VR users unsupervised, not even briefly",
+          "d": "Ask another student to watch the VR users while you're gone",
+          "explanation": "The rule is absolute: never leave VR users unsupervised, even briefly. If you must leave, headsets come off first. An untrained student is not a substitute for instructor supervision."
+        },
+        "q3": {
+          "question": "A student using VR says they feel dizzy but want to keep going because their turn is almost over. What do you do?",
+          "a": "Let them finish — they said they want to continue and it's almost done",
+          "b": "Tell them to close their eyes inside the headset until the dizziness passes",
+          "c": "Stop the session for that student immediately — help remove the headset, guide them to sit, and do not let them return to VR this session",
+          "d": "Switch them to a different, less intense VR experience",
+          "explanation": "Students should never continue when they report discomfort. Pushing through makes symptoms worse. The correct response is always: stop → remove headset → sit → rest → no return this session."
+        },
+        "q4": {
+          "question": "Between students, you notice fingerprints on the VR headset lenses. What should you use to clean them?",
+          "a": "Paper towels with a small amount of window cleaner",
+          "b": "A dry microfibre cloth, using gentle circular motions",
+          "c": "An alcohol-based disinfectant wipe — the same one used for the face pad",
+          "d": "Your shirt sleeve — it's faster and works fine for fingerprints",
+          "explanation": "VR lenses have special coatings easily damaged by abrasive materials. Only use a dry microfibre cloth with gentle circular motions. Paper towels, alcohol, and clothing can scratch or destroy the lens coating permanently."
+        },
+        "q5": {
+          "question": "A student tells you privately that they don't want to use VR today. They don't give a reason. What is the correct response?",
+          "a": "Ask them why — you need to understand the reason before deciding what to do",
+          "b": "Respect their decision without requiring a reason and immediately offer a meaningful alternative like the active observer role",
+          "c": "Tell them VR is an important part of the lesson and they should at least try for a few minutes",
+          "d": "Let them sit out entirely and do independent work at their desk",
+          "explanation": "VR participation is always voluntary. A student doesn't need to justify declining — respect the boundary, offer a structured alternative that achieves the same learning objective, and move on. 'Sitting out' without an alternative is exclusion, not inclusion."
         }
       }
     },
@@ -1687,45 +3362,418 @@
             }
           }
         }
+      },
+      "objectivesAudit": {
+        "title": "Objectives Audit",
+        "description": "Evaluate whether learning objectives are suitable for VR.",
+        "steps": {
+          "s1": {
+            "context": "Your school is launching a VR program. Several departments have submitted learning objectives they want to achieve using VR headsets.",
+            "body": "Your job is to review each objective and decide whether VR is the right tool. Remember: VR works best when students DO — practice procedures, make decisions, respond to situations."
+          },
+          "s2": {
+            "context": "Objective from the History department: 'Students will memorise key dates of the French Revolution.'",
+            "choices": {
+              "a": "Approve — VR immersion helps memorisation",
+              "b": "Reject — memorisation doesn't require immersion. Spaced repetition tools are more effective and cheaper.",
+              "c": "Approve with changes — add a VR timeline experience"
+            },
+            "feedback": {
+              "a": "Memorising dates is pure recall — it doesn't benefit from immersion. Flashcards with spaced repetition are proven to be faster and cheaper for this type of learning.",
+              "b": "Correct. Memorisation is not an action — it's recall. VR adds no value to rote learning. Suggest the department use spaced repetition tools instead.",
+              "c": "A timeline experience would be visually interesting but still passive. If the goal is memorisation, VR isn't the efficient choice."
+            }
+          },
+          "s3": {
+            "context": "Objective from the Nursing department: 'Students will perform a primary patient assessment on a virtual trauma patient, identifying all life-threatening conditions within four minutes.'",
+            "tip": "Look for action verbs, specific context, and measurable criteria.",
+            "choices": {
+              "a": "Approve — this has an action verb (perform), specific context (virtual trauma patient), and criteria (all conditions, four minutes). Perfect for VR.",
+              "b": "Reject — patient assessment should only be done on real patients",
+              "c": "Approve but remove the time limit"
+            },
+            "feedback": {
+              "a": "Excellent evaluation. This objective has all three components: action (perform), context (virtual trauma patient), and criteria (identify all conditions within four minutes). VR is the ideal tool for safe, repeatable practice.",
+              "b": "Real patients are the end goal, but you can't practice on real trauma patients safely. VR provides unlimited safe repetition before students ever touch a real patient.",
+              "c": "The time limit is intentional — it simulates the real pressure of trauma assessment. Removing it weakens the realism that makes VR valuable."
+            }
+          },
+          "s4": {
+            "context": "Objective from the English department: 'Students will appreciate the beauty of Shakespeare's language by watching a VR performance of Hamlet.'",
+            "choices": {
+              "a": "Approve — watching Shakespeare in VR is culturally enriching",
+              "b": "Reject — English literature has nothing to do with VR",
+              "c": "Reject — 'appreciate' is passive and unmeasurable. If rewritten to include active tasks (e.g., 'students will identify three dramatic techniques and explain their impact'), VR could work."
+            },
+            "feedback": {
+              "a": "Culturally enriching, but passive. 'Appreciate' cannot be observed or measured. A projector would deliver the same viewing experience more comfortably. VR needs an active task.",
+              "b": "VR can work for literature! Imagine students interacting with characters, making plot decisions, or staging scenes. The issue is the passive objective, not the subject.",
+              "c": "Correct. The problem is 'appreciate' — it's passive and unmeasurable. With active tasks (identify techniques, make staging decisions, interact with characters), VR could add genuine value to literature study."
+            }
+          },
+          "s5": {
+            "context": "Objective from the Safety department: 'Students will execute the complete fire evacuation protocol in a simulated office building, correctly guiding all occupants to designated assembly points within six minutes.'",
+            "choices": {
+              "a": "Approve — action verb (execute), specific context (simulated office), measurable criteria (all occupants, assembly points, six minutes). This is exactly what VR was made for.",
+              "b": "Reject — fire drills should be done in real buildings",
+              "c": "Approve but simplify it — too many criteria"
+            },
+            "feedback": {
+              "a": "Perfect evaluation. This objective leverages VR's core strengths: safe practice of a dangerous scenario, unlimited repetition, realistic pressure, and measurable outcomes. This is a model VR objective.",
+              "b": "Real drills are important, but you can't safely simulate a real fire. VR lets students practice the complete protocol — including the stress and decision-making — before the real event.",
+              "c": "Multiple criteria reflect the complexity of the real task. Fire evacuation requires getting everything right — timing, routes, accountability. Simplifying the objective would misrepresent the skill."
+            }
+          },
+          "s6": {
+            "context": "You've reviewed all the objectives. Time to summarise your recommendations.",
+            "confirm": "I've evaluated each objective against VR suitability criteria: action verbs, specific context, measurable criteria, and the need for immersive practice."
+          }
+        }
+      },
+      "writeObjectives": {
+        "title": "Write Strong Objectives",
+        "description": "Practice rewriting weak objectives into strong VR-ready ones.",
+        "steps": {
+          "s1": {
+            "context": "You've been asked to help three departments rewrite their VR learning objectives. Each objective needs improvement.",
+            "body": "Remember the formula: [Action verb] + [what] + [in what context] + [to what standard]. Strong VR objectives describe what students DO, not what they 'understand.'"
+          },
+          "s2": {
+            "context": "Original objective: 'Students will understand the importance of hand hygiene in healthcare settings.'",
+            "tip": "Replace the passive verb with an observable action. Add context and criteria.",
+            "choices": {
+              "a": "Students will understand hand hygiene better after using VR",
+              "b": "Students will perform the WHO five-step hand hygiene procedure on a virtual patient in a hospital simulation, completing all steps in the correct order without contamination.",
+              "c": "Students will watch a VR video about hand hygiene"
+            },
+            "feedback": {
+              "a": "This is the same passive objective with 'after using VR' appended. 'Understand better' is still unmeasurable. The verb needs to change.",
+              "b": "Excellent rewrite! 'Perform' is an observable action. 'WHO five-step procedure on a virtual patient' is the context. 'All steps in correct order without contamination' is the criterion. This fully leverages VR.",
+              "c": "Watching a video is passive — the verb is still 'watch,' not an action verb. VR's value is in doing, not viewing."
+            }
+          },
+          "s3": {
+            "context": "Original objective: 'Students will learn about earthquake safety procedures.'",
+            "choices": {
+              "a": "Students will learn about earthquake safety using VR headsets",
+              "b": "Students will be aware of the importance of earthquake preparedness",
+              "c": "Students will execute the drop-cover-hold procedure during a simulated earthquake in a virtual classroom, reaching safety within 15 seconds of the first tremor."
+            },
+            "feedback": {
+              "a": "Adding 'using VR headsets' doesn't fix the passive verb. 'Learn about' is still unmeasurable. The action needs to change.",
+              "b": "'Be aware' is even vaguer than 'learn about.' This goes backwards — from unmeasurable to even more unmeasurable.",
+              "c": "Perfect! 'Execute' is an action verb. 'Simulated earthquake in a virtual classroom' is the context. 'Within 15 seconds' is the criterion. This is specific, measurable, and perfectly suited for VR."
+            }
+          },
+          "s4": {
+            "context": "Original objective: 'Students will be familiar with laboratory safety equipment.'",
+            "choices": {
+              "a": "Students will identify, locate, and demonstrate the correct use of four safety devices (fire extinguisher, eye wash station, fume hood, emergency shower) in a virtual laboratory within 3 minutes.",
+              "b": "Students will become more familiar with lab safety equipment through VR",
+              "c": "Students will appreciate the importance of laboratory safety"
+            },
+            "feedback": {
+              "a": "Outstanding. Three action verbs (identify, locate, demonstrate), specific context (four safety devices in a virtual lab), and a clear criterion (correct use within 3 minutes). This is a model objective.",
+              "b": "'Become more familiar' is still passive and unmeasurable. How would you know if a student is 'more familiar'? The objective needs observable actions.",
+              "c": "'Appreciate' is passive and unmeasurable — a classic trap verb. Rewrite with action verbs like 'identify,' 'locate,' or 'demonstrate.'"
+            }
+          },
+          "s5": {
+            "context": "You've rewritten three objectives. Time to verify your understanding.",
+            "confirm": "I can now write VR objectives using the formula: Action verb + what + context + criteria. I avoid passive verbs like 'understand,' 'learn about,' and 'appreciate.'"
+          }
+        }
+      },
+      "passiveToActive": {
+        "title": "Passive to Active",
+        "description": "Convert passive VR activities into active learning experiences.",
+        "steps": {
+          "s1": {
+            "context": "Several teachers at your school are using VR, but most activities are passive — students watch and observe but don't interact.",
+            "body": "Your mission is to help each teacher transform their passive VR activity into an active one. Remember: the shift from 'seeing' to 'doing' is what makes VR truly effective."
+          },
+          "s2": {
+            "context": "History teacher: 'Students watch a 360° tour of ancient Egyptian pyramids for 10 minutes.'",
+            "choices": {
+              "a": "This is already active — VR headsets make everything interactive",
+              "b": "Add a task: 'Students explore the pyramid and identify three engineering techniques used in construction, then explain how each technique solved a specific building challenge.'",
+              "c": "Replace VR with a textbook — pyramids don't need VR"
+            },
+            "feedback": {
+              "a": "Wearing a headset doesn't make an activity active. Looking around is still passive observation. Active learning requires a task — something to find, decide, or create.",
+              "b": "Correct! Now students have a purpose (identify techniques), a task (explain how each solved a challenge), and a reason to engage actively with the environment. They're investigating, not just sightseeing.",
+              "c": "VR can bring ancient structures to life in ways a textbook can't. The issue isn't VR — it's the lack of an active task."
+            }
+          },
+          "s3": {
+            "context": "Science teacher: 'Students view a fly-through animation of the human circulatory system inside VR.'",
+            "tip": "Think about what task would turn observation into interaction.",
+            "choices": {
+              "a": "Transform it: 'Students trace the path of a blood cell through the circulatory system, making decisions at each junction (Which chamber? Which valve?) and diagnosing a patient with a blocked artery.'",
+              "b": "Add more fly-through videos of other body systems",
+              "c": "It's fine as is — the visuals are impressive enough"
+            },
+            "feedback": {
+              "a": "Excellent transformation. Students go from passengers on a pre-recorded tour to active navigators making decisions. Following a blood cell with choices at each junction is discovery-based learning at its best.",
+              "b": "More passive content doesn't become active through volume. One interactive experience produces more learning than ten passive fly-throughs.",
+              "c": "Impressive visuals engage students momentarily, but they retain very little from passive viewing (~10%). Active practice boosts retention to 75%. The visuals are the starting point, not the destination."
+            }
+          },
+          "s4": {
+            "context": "Safety trainer: 'Workers watch a 360° video of a warehouse showing various hazards.'",
+            "choices": {
+              "a": "Add more 360° videos from different angles",
+              "b": "Replace VR with a PowerPoint presentation of hazard photos",
+              "c": "Transform it: 'Workers walk through the virtual warehouse and physically tag each hazard they spot, categorise it by risk level, and propose a corrective action — with a timer adding realistic pressure.'"
+            },
+            "feedback": {
+              "a": "More angles of passive viewing is still passive viewing. The missing piece is a task that requires workers to actively identify, categorise, and respond to hazards.",
+              "b": "PowerPoint removes the immersion entirely. The goal is to add interactivity to the VR experience, not to abandon VR.",
+              "c": "Perfect transformation. Workers go from passive viewers to active investigators — finding hazards, categorising them, and proposing solutions under time pressure. This is exactly how VR should be used for safety training."
+            }
+          },
+          "s5": {
+            "context": "You've converted three passive activities into active ones.",
+            "confirm": "I understand the difference between seeing (passive observation) and doing (active interaction), and I can transform passive VR activities into active learning experiences."
+          }
+        }
+      },
+      "sessionPlanning": {
+        "title": "Session Planning",
+        "description": "Plan a complete VR learning session with briefing, experience, and debriefing.",
+        "steps": {
+          "s1": {
+            "context": "You're planning a VR session for a group of trainee paramedics. The topic is initial patient assessment at an accident scene.",
+            "body": "A complete VR session has three phases: briefing (under 60 seconds), active experience (5–15 minutes), and debriefing (5–10 minutes). Let's design each phase."
+          },
+          "s2": {
+            "context": "Phase 1: Briefing. You have 60 seconds before students put on headsets. What should you say?",
+            "tip": "A good briefing covers four things: objective, task, time limit, and what success looks like.",
+            "choices": {
+              "a": "Just say 'Put on your headsets and explore the accident scene'",
+              "b": "'Your task: perform a primary assessment on the virtual patient at the accident scene. You have 8 minutes. Success means identifying all life-threatening conditions and calling for the correct resources.'",
+              "c": "Give a 10-minute lecture on patient assessment theory before they start"
+            },
+            "feedback": {
+              "a": "'Explore' gives no direction. Students won't know what to focus on and will waste time wandering. Briefing must state the specific task and success criteria.",
+              "b": "Perfect briefing. You've covered all four elements: objective (primary assessment), task (assess the patient), time limit (8 minutes), and success criteria (identify all conditions, call correct resources). Clear and under 60 seconds.",
+              "c": "A 10-minute lecture before VR kills momentum and overloads working memory. Students learn by doing, not by listening to theory right before doing. Keep the briefing under 60 seconds."
+            }
+          },
+          "s3": {
+            "context": "Phase 2: During the VR experience. Students are in the simulation performing patient assessments. You're watching via casting.",
+            "choices": {
+              "a": "Step in frequently to correct every small mistake in real time",
+              "b": "Leave the room — students need to figure it out alone",
+              "c": "Observe via casting, note strengths and specific errors for debriefing, and only intervene with a brief prompt if a student is clearly stuck for more than a minute"
+            },
+            "feedback": {
+              "a": "Constant corrections interrupt flow, destroy immersion, and prevent students from learning from their own mistakes. Save your observations for debriefing.",
+              "b": "Students need you present — to handle technical issues, notice if someone is stuck, and collect observations for debriefing. Unsupervised VR is risky and misses learning opportunities.",
+              "c": "Correct. Observe, take notes, and let students learn from the experience. Intervene only when truly stuck (not just struggling — struggling is learning). Your notes become the basis for effective debriefing."
+            }
+          },
+          "s4": {
+            "context": "Phase 3: Debriefing. Headsets are off. Students look energised but you need to extract learning from the experience.",
+            "choices": {
+              "a": "Ask structured questions: 'Walk me through your first decision. What did you notice about the patient? What would you do differently?' — then connect to real-world practice.",
+              "b": "Ask 'Did you enjoy it?' and move to the next topic if they say yes.",
+              "c": "Show the correct procedure on a slideshow and tell them what they should have done."
+            },
+            "feedback": {
+              "a": "Correct approach. Structured reflection questions force students to reconstruct their experience, analyse their decisions, and articulate what they learned. Connecting to real practice completes the transfer.",
+              "b": "Enjoyment confirms engagement, not learning. Without structured reflection, the experience stays as a memory of 'something cool' rather than a transferable skill. Always follow up with 'What did you decide? Why?'",
+              "c": "Lecturing about the correct answer after the experience defeats the purpose of debriefing. Students learn more from reflecting on their own choices than from being told the right answer."
+            }
+          },
+          "s5": {
+            "context": "Timing: You have a 30-minute slot. How would you allocate the time?",
+            "choices": {
+              "a": "25 minutes VR, 5 minutes debriefing",
+              "b": "5 minutes briefing, 15 minutes VR experience, 10 minutes debriefing",
+              "c": "15 minutes briefing, 15 minutes VR"
+            },
+            "feedback": {
+              "a": "25 minutes in VR is too long — attention drops sharply after 15 minutes. And 5 minutes of debriefing is barely enough. The experience-to-reflection ratio should be closer to 1:1.",
+              "b": "Well balanced. Brief and focused briefing (even less time is fine), a solid VR experience within the optimal attention window, and enough debriefing time to extract genuine learning. This is the recommended allocation.",
+              "c": "A 15-minute briefing is far too long — you've used half the session on theory before students even start. Keep briefing under 5 minutes and give that time to the experience and debriefing."
+            }
+          },
+          "s6": {
+            "context": "Your session plan is complete: briefing → experience → debriefing, all within 30 minutes.",
+            "confirm": "I've planned a complete three-phase VR session with proper timing, clear briefing structure, appropriate instructor behaviour during VR, and structured debriefing questions."
+          }
+        }
+      },
+      "activitySelection": {
+        "title": "Activity Selection",
+        "description": "Choose the right VR activity type for different learning goals.",
+        "steps": {
+          "s1": {
+            "context": "Three teachers need help choosing the right VR activity type for their upcoming lessons.",
+            "body": "Remember the three types: Guided Exploration (familiarise with an environment), Simulation with Practice (perform tasks and develop skills), and Evaluation / Skill Check (demonstrate competence under assessment conditions)."
+          },
+          "s2": {
+            "context": "Teacher 1: 'My architecture students have never seen a Gothic cathedral up close. I want them to understand the structural elements before we start the design unit.'",
+            "choices": {
+              "a": "Guided Exploration — students walk through the virtual cathedral with focus questions like 'Identify three load-bearing structural elements and explain their function.'",
+              "b": "Simulation with Practice — students should build a cathedral immediately",
+              "c": "Evaluation — test what they already know about Gothic architecture"
+            },
+            "feedback": {
+              "a": "Correct. Students need to familiarise themselves with Gothic structures before designing anything. Guided Exploration with a focus question turns virtual tourism into active observation.",
+              "b": "Building is premature — students haven't seen or studied the structures yet. Exploration must precede practice when the environment is new.",
+              "c": "You can't evaluate knowledge students don't have yet. Assessment comes after exploration and practice."
+            }
+          },
+          "s3": {
+            "context": "Teacher 2: 'My nursing students have been studying CPR theory for two weeks. Now they need to practice performing it correctly before their clinical placement next month.'",
+            "tip": "Match the learning goal (practice a skill) to the right activity type.",
+            "choices": {
+              "a": "Guided Exploration — let them walk around a virtual hospital first",
+              "b": "Simulation with Practice — students perform CPR on a virtual patient, receiving real-time feedback on compression depth, rate, and hand placement.",
+              "c": "Show them a VR video of someone performing CPR"
+            },
+            "feedback": {
+              "a": "Students already know the theory — they need practice, not more exploration. Hospital familiarisation could be useful, but the primary need is skill practice.",
+              "b": "Correct. After two weeks of theory, students need to apply what they've learned. Simulation with Practice provides the repetition, feedback, and safe failure space that builds competence.",
+              "c": "Watching CPR is passive. Students need to PERFORM CPR to develop the skill. VR's value is in the practice, not the viewing."
+            }
+          },
+          "s4": {
+            "context": "Teacher 3: 'My students have completed five VR practice sessions on equipment operation. I need to verify they can do it independently before they work on the real machines.'",
+            "choices": {
+              "a": "More Guided Exploration of the equipment",
+              "b": "Another round of Simulation with Practice",
+              "c": "Evaluation / Skill Check — students demonstrate the complete procedure under assessment conditions, with no prompts or guidance, and performance is scored on accuracy, sequence, and timing."
+            },
+            "feedback": {
+              "a": "After five practice sessions, students know the equipment. More exploration would be a step backward.",
+              "b": "At some point, practice must transition to evaluation. Five sessions is sufficient preparation. The goal now is to confirm competence.",
+              "c": "Correct. After sufficient practice, Evaluation / Skill Check confirms that students can perform independently under realistic conditions. This is the final checkpoint before they work on real equipment."
+            }
+          },
+          "s5": {
+            "context": "You've helped all three teachers choose the right activity type.",
+            "confirm": "I can match learning goals to VR activity types: Guided Exploration for familiarisation, Simulation with Practice for skill development, and Evaluation / Skill Check for competency validation."
+          }
+        }
+      },
+      "lessonDesign": {
+        "title": "Design a VR Lesson",
+        "description": "Apply everything you've learned to design a complete VR learning experience from scratch.",
+        "steps": {
+          "s1": {
+            "context": "You're the VR coordinator at a medical training centre. A new cohort of paramedic students starts next week, and you need to design a complete VR lesson on initial trauma assessment.",
+            "body": "This boss mission combines all Module 2 concepts: writing objectives, choosing activity types, planning session flow, and ensuring active (not passive) learning. Let's design this lesson step by step."
+          },
+          "s2": {
+            "context": "Step 1: Write the learning objective. The topic is initial trauma assessment — students need to be able to assess a patient at an accident scene.",
+            "choices": {
+              "a": "Students will understand trauma assessment procedures",
+              "b": "Students will perform a primary trauma assessment on a virtual accident patient, identifying all life-threatening conditions and initiating correct treatment within 5 minutes.",
+              "c": "Students will watch a trauma assessment simulation in VR"
+            },
+            "feedback": {
+              "a": "'Understand' is passive and unmeasurable. You've fallen into the classic trap verb. What should students DO?",
+              "b": "Perfect objective. Action verb (perform), specific context (virtual accident patient), and measurable criteria (all conditions identified, correct treatment, 5-minute limit). This is ready for VR.",
+              "c": "'Watch' is passive observation. Paramedics don't watch — they act. The objective should describe performing the assessment, not viewing it."
+            }
+          },
+          "s3": {
+            "context": "Step 2: Students have never seen the virtual accident scene before. Which activity type do you use for their first session?",
+            "choices": {
+              "a": "Start with Guided Exploration — students walk through the accident scene and identify key elements (patient location, hazards, available equipment) before they perform any assessment.",
+              "b": "Jump straight to the simulation — they'll figure it out",
+              "c": "Start with Evaluation — test their baseline knowledge"
+            },
+            "feedback": {
+              "a": "Correct. New environment = exploration first. Students familiarise themselves with the scene layout, spot hazards, and locate equipment. This spatial awareness pays off when the simulation begins.",
+              "b": "In a new, complex environment, students will spend the first few minutes lost and confused instead of focusing on the assessment. A short exploration phase prevents this.",
+              "c": "Evaluating students before they've practiced guarantees failure and frustration. Assessment comes after exploration and practice."
+            }
+          },
+          "s4": {
+            "context": "Step 3: Plan the briefing. You have 60 seconds before students put on headsets for the exploration phase.",
+            "tip": "Cover: objective, task, time limit, success criteria.",
+            "choices": {
+              "a": "Give a 10-minute lecture on trauma assessment theory",
+              "b": "'Walk through the accident scene. You have 5 minutes. Find the patient, identify three hazards, and locate the medical kit. When time is up, remove your headsets — we'll discuss what you found.'",
+              "c": "Just say 'Explore the scene and have fun'"
+            },
+            "feedback": {
+              "a": "A lecture before VR kills momentum and overloads working memory. The briefing should be a quick, clear statement of what to do — not a theory review.",
+              "b": "Excellent briefing. Specific task (find patient, identify hazards, locate kit), clear time limit (5 minutes), and defined success criteria. Under 60 seconds. Students know exactly what to do.",
+              "c": "'Have fun' gives no direction. Students will wander randomly instead of observing systematically. Always give a focus task during exploration."
+            }
+          },
+          "s5": {
+            "context": "Step 4: After exploration, students move to the main simulation — performing the trauma assessment. How long should the active VR experience last?",
+            "choices": {
+              "a": "30 minutes — longer is better for skill development",
+              "b": "5 minutes — keep it very short",
+              "c": "10–15 minutes — enough time for a complete assessment attempt while staying within the optimal attention window"
+            },
+            "feedback": {
+              "a": "30 minutes in VR causes attention drops, eye strain, and diminishing returns. After 15 minutes, cognitive focus drops sharply. Multiple shorter sessions are more effective than one long one.",
+              "b": "5 minutes may not be enough for a complete trauma assessment. Students need time to work through the full procedure. 10–15 minutes balances depth with attention capacity.",
+              "c": "Correct. 10–15 minutes provides enough time for a complete assessment attempt while keeping students in the optimal cognitive engagement window. Shorter sessions can be repeated for practice."
+            }
+          },
+          "s6": {
+            "context": "Step 5: During the simulation, a student has been standing still for 2 minutes, staring at the patient without acting.",
+            "choices": {
+              "a": "Offer a brief, specific prompt: 'Start with the airway — check if the patient is breathing.' Then step back and let them continue.",
+              "b": "Give detailed instructions for the entire assessment sequence",
+              "c": "Let them figure it out — struggling is learning"
+            },
+            "feedback": {
+              "a": "Correct. A minimal prompt unblocks the student without doing the task for them. One specific nudge ('Start with the airway') is enough to get them moving while preserving autonomy.",
+              "b": "Giving the full procedure defeats the purpose of simulation. Students need to recall and apply the steps themselves. A small nudge is enough.",
+              "c": "Struggling with a challenge is learning. But standing still for 2+ minutes means the student is stuck, not struggling. A brief prompt prevents frustration while keeping the learning experience productive."
+            }
+          },
+          "s7": {
+            "context": "Step 6: The simulation is over. Headsets are off. Time to debrief. A student says 'That was intense.' Others nod.",
+            "choices": {
+              "a": "Say 'Great!' and move to the next topic",
+              "b": "Show a video of the correct procedure",
+              "c": "Ask: 'Walk me through your first action at the scene. What did you check first? What did you find? If you were called to a real accident tomorrow, what would you do the same — and what would you change?'"
+            },
+            "feedback": {
+              "a": "'Intense' is an emotional response, not learning. Without structured reflection, students remember the feeling but not the lessons. Always follow up with specific questions.",
+              "b": "Showing the correct answer turns debriefing into a lecture. Students learn more by reconstructing their own decisions than by being told what they should have done.",
+              "c": "Excellent debriefing approach. You start with recall (what did you do), move to analysis (what worked, what didn't), and end with transfer (what would you do in real life). This extracts maximum learning from the experience."
+            }
+          },
+          "s8": {
+            "context": "Step 7: During debriefing, a student says: 'I panicked when I saw the blood and forgot the assessment sequence completely.'",
+            "choices": {
+              "a": "Tell them they failed and need to study more",
+              "b": "Normalise it: 'That's exactly why we practice in VR — so you can experience that panic in a safe environment. Next time, you'll remember to start with the airway check because you've now felt what it's like to forget.' Schedule another practice session.",
+              "c": "Avoid discussing the panic — focus only on what went right"
+            },
+            "feedback": {
+              "a": "Calling it failure discourages the student. VR is a safe practice environment — the whole point is to make mistakes without consequences. Use the mistake as a learning moment.",
+              "b": "Perfect response. You've normalised the experience (panic is natural), shown the value of VR practice (safe environment for mistakes), identified the lesson (start with airway), and offered a path forward (another session). This is supportive, constructive debriefing.",
+              "c": "The panic IS the learning opportunity. By addressing it directly, you help the student develop strategies for managing stress in real situations. Avoiding it wastes a valuable teachable moment."
+            }
+          },
+          "s9": {
+            "context": "Step 8: After several practice sessions, you want to confirm students are ready for their clinical placement. Which activity type do you use?",
+            "choices": {
+              "a": "Another Guided Exploration of the accident scene",
+              "b": "Evaluation / Skill Check — students perform the full trauma assessment under exam conditions: no prompts, no guidance, scored on accuracy, sequence, timing, and decision quality.",
+              "c": "A written theory exam about trauma assessment"
+            },
+            "feedback": {
+              "a": "Students already know the environment from multiple sessions. More exploration adds nothing at this stage. They need to demonstrate competence.",
+              "b": "Correct. After sufficient practice, Evaluation / Skill Check is the appropriate final step. It confirms that students can perform independently under realistic conditions — the last checkpoint before real clinical work.",
+              "c": "A written exam tests recall, not performance. Paramedics need to demonstrate the physical and cognitive skills in context. VR assessment is more authentic than a paper test for procedural skills."
+            }
+          }
+        }
       }
-    },
-    "xp": {
-      "label": "XP",
-      "totalXP": "Total XP",
-      "earnUpTo": "Earn up to ~{amount} XP",
-      "gained": "+{amount} XP",
-      "levelUp": "Level Up!",
-      "youReached": "You reached",
-      "toNextLevel": "{current}/{needed} XP to next level",
-      "levels": {
-        "novice": "VR Novice",
-        "explorer": "VR Explorer",
-        "practitioner": "VR Practitioner",
-        "champion": "VR Champion",
-        "master": "VR Master"
-      }
-    },
-    "badges": {
-      "title": "Badges",
-      "earned": "Earned badges",
-      "new": "NEW",
-      "available": "Available badges",
-      "emptyState": "Complete modules to earn badges!",
-      "hardwareHero": { "name": "Hardware Hero", "description": "Complete the Getting VR Ready module" },
-      "sharpEye": { "name": "Sharp Eye", "description": "Score 100% on any quiz" },
-      "quickLearner": { "name": "Quick Learner", "description": "Pass a quiz on the first attempt" },
-      "explorer": { "name": "Explorer", "description": "Complete the interactive hardware tour" },
-      "missionMaster": { "name": "Mission Master", "description": "Pick the best option on all scenarios" },
-      "xp100": { "name": "Rising Star", "description": "Earn 100 XP" },
-      "xp300": { "name": "Dedicated Learner", "description": "Earn 300 XP" },
-      "xp600": { "name": "VR Enthusiast", "description": "Earn 600 XP" },
-      "xp1000": { "name": "VR Legend", "description": "Earn 1000 XP" }
-    },
-    "celebrations": {
-      "quizPassed": "You passed!",
-      "moduleComplete": "Module Complete!",
-      "badgeEarned": "Badge Earned!",
-      "keepGoing": "Keep going!"
     },
     "closing": {
       "title": "Ready to start your VR journey?",

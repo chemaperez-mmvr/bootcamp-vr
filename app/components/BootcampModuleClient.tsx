@@ -132,7 +132,7 @@ export function BootcampModuleClient({ module }: { module: BootcampModule }) {
               <div>
                 <Link
                   href="/bootcamp"
-                  className="inline-flex items-center gap-2 text-sm text-teal-700 hover:text-teal-800"
+                  className="inline-flex items-center gap-2 text-sm text-teal-700 hover:text-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 rounded-lg"
                 >
                   ← {t("actions.backToBootcamp")}
                 </Link>
@@ -254,7 +254,7 @@ function IntroVideoStep({
           type="button"
           onClick={onComplete}
           disabled={!videoEnded}
-          className={`inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm ${
+          className={`inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
             videoEnded
               ? "text-white bg-teal-600 hover:bg-teal-700"
               : "text-gray-400 bg-gray-100 cursor-not-allowed"
@@ -284,7 +284,7 @@ function StepIndicator({
   t: ReturnType<typeof useTranslations>;
 }) {
   return (
-    <nav aria-label={t("steps.navigation")} className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm overflow-x-auto">
+    <nav aria-label={t("steps.navigation")} className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm overflow-x-auto">
       <ol className="flex items-center gap-1 sm:min-w-max">
         {steps.map((step, i) => {
           const unlocked = isStepUnlocked(module, steps, i, completedMap);
@@ -317,7 +317,7 @@ function StepIndicator({
                 disabled={!unlocked}
                 aria-label={t(step.labelKey)}
                 aria-current={isCurrent ? "step" : undefined}
-                className={`flex items-center gap-2 px-2 sm:px-3 py-2 rounded-lg transition-colors ${
+                className={`flex items-center gap-2 px-2 sm:px-3 py-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
                   unlocked && !isCurrent
                     ? "hover:bg-gray-50 cursor-pointer"
                     : isCurrent
@@ -332,7 +332,7 @@ function StepIndicator({
               </button>
               {i < steps.length - 1 && (
                 <div
-                  className={`w-4 sm:w-6 h-0.5 shrink-0 ${
+                  className={`w-4 sm:w-6 h-2 rounded-full shrink-0 ${
                     isPast ? "bg-teal-300" : "bg-gray-200"
                   }`}
                 />

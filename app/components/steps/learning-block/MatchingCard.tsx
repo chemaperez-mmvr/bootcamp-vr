@@ -177,7 +177,7 @@ export function MatchingCard({
   };
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-8 shadow-sm animate-content-enter">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Badge */}
       <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
         {t("learningBlocks.matchingTitle")}
@@ -257,7 +257,7 @@ export function MatchingCard({
               const isTargetable = selectedRight && !checked;
 
               let classes =
-                "w-full p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative";
+                "w-full p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
               if (checked) {
                 if (isCorrectChecked) {
                   classes += " border-green-400 bg-green-50 text-green-800";
@@ -334,7 +334,7 @@ export function MatchingCard({
               const isCorrectChecked = checked && isConnected && !isWrong;
 
               let classes =
-                "w-full p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative";
+                "w-full p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
               if (checked) {
                 if (isCorrectChecked) {
                   classes += " border-green-400 bg-green-50 text-green-800";
@@ -396,7 +396,7 @@ export function MatchingCard({
           <button
             type="button"
             onClick={handleReset}
-            className="inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold text-gray-600 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold text-gray-600 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.matchingClearAll")}
           </button>
@@ -406,7 +406,7 @@ export function MatchingCard({
           <button
             type="button"
             onClick={handleCheck}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.exerciseDone")}
             <span aria-hidden>→</span>
@@ -417,7 +417,7 @@ export function MatchingCard({
           <button
             type="button"
             onClick={handleReset}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-amber-800 bg-amber-100 rounded-xl hover:bg-amber-200 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-amber-800 bg-amber-100 rounded-xl hover:bg-amber-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.matchingReset")}
             <span aria-hidden>↩</span>
@@ -428,7 +428,7 @@ export function MatchingCard({
           <button
             type="button"
             onClick={handleContinue}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.exerciseDone")}
             <span aria-hidden>→</span>

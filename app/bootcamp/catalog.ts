@@ -31,6 +31,9 @@ export type BootcampModule = {
 export const theoreticalSlugs = new Set([
   "basic-foundations",             // M0
   "getting-vr-ready",             // M1
+  "designing-meaningful-learning", // M2
+  "classroom-implementation",      // M3
+  "safety-wellbeing-accessibility",// M4
 ]);
 
 function getEssentialSections(module: DocumentationModule): ModuleSection[] {
@@ -70,6 +73,9 @@ function buildModuleLessons(module: DocumentationModule): BootcampLesson[] {
 const enabledBootcampSlugs = new Set([
   "basic-foundations", // M0
   "getting-vr-ready",  // M1
+  "designing-meaningful-learning", // M2
+  "classroom-implementation", // M3
+  "safety-wellbeing-accessibility", // M4
 ]);
 
 /** All modules shown in the bootcamp timeline (enabled + upcoming placeholders). */
@@ -105,9 +111,9 @@ export const bootcampCatalog: BootcampModule[] = documentationModules
     const heroImages: Record<string, string> = {
       "basic-foundations": "/images/vr-classroom-student-headset.jpg",
       "getting-vr-ready": "/images/meta-quest-3-components.png",
-      "designing-meaningful-learning": "/images/learning-pyramid-see-vs-do.jpg",
-      "classroom-implementation": "/images/vr-use-cases-grid.jpg",
-      "safety-wellbeing-accessibility": "/images/quest-3-ipd.jpg",
+      "designing-meaningful-learning": "/images/hero-designing-meaningful-learning.png",
+      "classroom-implementation": "/images/hero-classroom-implementation.png",
+      "safety-wellbeing-accessibility": "/images/hero-safety-wellbeing-accessibility.png",
       "briefing-and-debriefing": "/images/student-ar-glasses.jpg",
       "solving-common-vr-problems": "/images/standalone-vs-pc-vr.jpg",
       "vr-educational-apps": "/images/uses-ar.jpg",

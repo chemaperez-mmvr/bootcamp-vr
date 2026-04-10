@@ -363,17 +363,9 @@ La primera vez que abras una aplicación, se iniciará directamente. Las actuali
 
 - [Transferir archivos desde un PC Windows a Meta Quest 3(S)](https://www.meta.com/help/quest/) (por cable USB o herramientas oficiales).`,
 
-  "cleaning": `Mantener las gafas y los mandos limpios es importante para la higiene cuando varios usuarios las comparten.
+  "cleaning": `Limpia las gafas y mandos después de cada uso con una toallita no abrasiva y sin alcohol. Limpia las lentes solo con un paño de microfibra seco — nunca rocíes líquido directamente. Deja secar las superficies antes del siguiente usuario.
 
-**Guías oficiales**
-
-- [Cómo limpiar Meta Quest 3](https://knowledge.vr-expert.com/kb/how-to-clean-meta-quest-3/)
-- Carga, mantenimiento y cuidado: consulta la documentación de **Meta Quest 3S** (charging, maintenance and care) en el sitio de soporte de Meta.
-
-**Recomendaciones generales**
-
-- Limpia la interfaz facial (face pad) y las zonas de contacto después de cada uso con toallitas o paño con producto no abrasivo y no alcohólico, según indique Meta.
-- Limpia las lentes solo con paño de microfibra; no uses líquidos directamente sobre las lentes para no dañar el recubrimiento.`,
+> Para flujos de limpieza completos y protocolos de higiene en aulas compartidas, consulta el **Módulo 4: Seguridad, bienestar y accesibilidad**.`,
 
   "accessories": `Los accesorios opcionales pueden mejorar el confort y la durabilidad en entornos educativos.
 

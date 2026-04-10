@@ -334,6 +334,140 @@
           "p3": "Ten un plan de respaldo: sabe a qué app offline cambiar si falla el WiFi, y mantén unas gafas extra cargadas como repuesto",
           "highlight": "Las mejores sesiones VR parecen sencillas porque el profesor lo revisó todo dos veces. La lista de verificación es tu red de seguridad."
         }
+      },
+      "designingMeaningfulLearning": {
+        "video": {
+          "title": "Diseñar aprendizaje significativo con RV",
+          "subtitle": "Mira esta breve introducción antes de empezar con el contenido del módulo."
+        },
+        "s1": {
+          "title": "Objetivos que funcionan",
+          "subtitle": "Qué metas de aprendizaje se adaptan bien a la RV",
+          "p1": "La RV destaca con objetivos que implican procedimientos, toma de decisiones y situaciones realistas",
+          "p2": "Los objetivos deben describir una acción observable — no basta con 'comprender' o 'conocer'",
+          "p3": "La memorización y el consumo pasivo de contenido no necesitan inmersión — funcionan mejor con herramientas tradicionales",
+          "highlight": "La RV es más efectiva cuando los alumnos HACEN, no cuando miran."
+        },
+        "s2": {
+          "title": "Escribir objetivos de RV",
+          "subtitle": "Describe lo que el alumno hace, no lo que 'comprende'",
+          "p1": "Usa verbos de acción: realizar, aplicar, practicar, demostrar, ejecutar — palabras que describen comportamiento observable",
+          "p2": "Evita verbos pasivos: comprender, conocer, aprender sobre, apreciar — son imposibles de medir en RV",
+          "p3": "Estructura: verbo de acción + qué + en qué contexto + con qué estándar",
+          "highlight": "Débil: 'Los estudiantes comprenderán los procedimientos de emergencia.' Fuerte: 'Los estudiantes ejecutarán la secuencia correcta de respuesta a emergencias en una evacuación simulada de un edificio.'"
+        },
+        "s3": {
+          "title": "Ver vs. Hacer",
+          "subtitle": "La diferencia crítica entre observación pasiva y práctica activa en RV",
+          "p1": "Ver (pasivo): vídeos 360°, visitas guiadas, recorridos — el alumno mira pero no actúa",
+          "p2": "Hacer (activo): toma de decisiones, práctica procedimental, simulaciones interactivas — el alumno manipula, elige y recibe retroalimentación",
+          "p3": "Los alumnos en RV se formaron 4 veces más rápido, se sintieron un 275% más seguros y estuvieron 3,75 veces más conectados emocionalmente con el contenido (estudio PwC)",
+          "highlight": "El verdadero poder de la RV no es lo que los estudiantes ven — es lo que hacen. Las personas retienen ~10% de lo que leen pero hasta el 75% de lo que practican."
+        },
+        "s4": {
+          "title": "El flujo de la sesión de RV",
+          "subtitle": "Cada lección de RV efectiva tiene tres fases: introducción, experiencia y reflexión",
+          "p1": "Antes de la RV (introducción, menos de 60 seg): indicar el objetivo, describir la tarea, establecer el tiempo límite y definir el éxito",
+          "p2": "Durante la RV (5-15 min): el alumno realiza la tarea; el instructor observa por casting y anota fortalezas y errores",
+          "p3": "Después de la RV (reflexión, 5-10 min): ¿Qué pasó? ¿Qué funcionó? ¿Qué harías diferente? ¿Cómo se conecta con la práctica real?",
+          "highlight": "Sin reflexión posterior, la RV se convierte en entretenimiento, no en educación. El aprendizaje ocurre cuando los estudiantes reflexionan sobre lo que hicieron."
+        },
+        "s5": {
+          "title": "Tipos de actividad en RV",
+          "subtitle": "Tres tipos de actividad, cada uno adaptado a un objetivo de aprendizaje diferente",
+          "p1": "Exploración Guiada: los alumnos exploran un entorno con un propósito observacional específico — ideal para introducir nuevos contextos",
+          "p2": "Simulación con Práctica: los alumnos realizan tareas, siguen procedimientos y toman decisiones — el caso de uso más fuerte de la RV para desarrollo de habilidades",
+          "p3": "Evaluación / Verificación de competencias: los alumnos demuestran competencia bajo condiciones de evaluación — se usa después de la práctica, para certificación o validación",
+          "highlight": "Elige el tipo de actividad según el objetivo de aprendizaje, no al revés. Exploración → Práctica → Evaluación es la secuencia natural."
+        }
+      },
+      "classroomImplementation": {
+        "video": {
+          "title": "Gestionar Visores Limitados",
+          "subtitle": "Mira esta breve introducción antes de pasar al contenido del módulo."
+        },
+        "s1": {
+          "title": "Preparación del espacio",
+          "subtitle": "Un aula preparada para VR previene la mayoría de los problemas antes de que ocurran",
+          "p1": "Define una zona activa de VR con marcas visibles en el suelo — al menos 2x2 metros por estación, mobiliario contra las paredes",
+          "p2": "Controla la iluminación: cierra las persianas para evitar interferencias de tracking, pero mantén la sala suficientemente iluminada para supervisar",
+          "p3": "Prepara una mesa de almacenamiento cerca de la puerta para headsets, controles y suministros de higiene. Marca las áreas de observación con línea de visión clara.",
+          "highlight": "La distribución del aula ES tu plan de seguridad. Si un estudiante puede tropezar con algo, sucederá durante VR — despeja el espacio antes de que lleguen."
+        },
+        "s2": {
+          "title": "Briefing para estudiantes",
+          "subtitle": "Lo que los estudiantes escuchan antes de ponerse los headsets determina lo que pasa después",
+          "p1": "Primero las reglas: permanece en tu zona, mantén las correas de muñeca, detente cuando el instructor lo indique, reporta cualquier malestar de inmediato",
+          "p2": "Anuncia los grupos y asigna roles: usuario VR (lleva el headset), observador (ve la transmisión y toma notas), facilitador (asiste y controla el tiempo)",
+          "p3": "Establece expectativas: duración de la sesión, cuál es la tarea de aprendizaje y qué sucede después (discusión grupal, hoja de trabajo o debriefing)",
+          "highlight": "Un briefing de 3 minutos previene 15 minutos de caos. Nunca lo omitas — especialmente con usuarios de VR por primera vez."
+        },
+        "s3": {
+          "title": "Preparación de dispositivos",
+          "subtitle": "Una lista de verificación que ejecutas antes de que lleguen los estudiantes te ahorra improvisar frente a 25 alumnos",
+          "p1": "Carga: todos los headsets al 100%, controles con baterías nuevas, cables de carga de repuesto accesibles",
+          "p2": "WiFi y apps: confirma que cada headset esté conectado y que la app objetivo esté instalada, actualizada y probada",
+          "p3": "Etiqueta y organiza: numera cada set headset-control, desinfecta los protectores faciales, alinéalos en la mesa de almacenamiento en orden",
+          "highlight": "La lista de verificación toma 10 minutos la noche anterior pero te ahorra fallos de dispositivos durante la clase."
+        },
+        "s4": {
+          "title": "Durante la sesión",
+          "subtitle": "Qué hace el instructor mientras los estudiantes están en VR",
+          "p1": "Estudiantes: permanece en tu zona, mantén las correas, enfócate en la tarea asignada, levanta la mano si te sientes mal",
+          "p2": "Instructor: transmite al menos un headset a una pantalla compartida, recorre el aula, mantén línea de visión con todas las estaciones VR",
+          "p3": "Toma notas de observación: quién tiene dificultades con la tarea, quién termina antes, quién parece desconectado — esto alimenta el debriefing",
+          "highlight": "Tu trabajo durante VR es observar, no enseñar. Monitorea la seguridad, anota momentos de aprendizaje y guarda la enseñanza para cuando se quiten los headsets."
+        },
+        "s5": {
+          "title": "Rotación y gestión del tiempo",
+          "subtitle": "Cómo dar turno a todos cuando tienes menos headsets que estudiantes",
+          "p1": "Rotación por estaciones: estación VR (uso activo), estación de observación (ver transmisión + notas), estación complementaria (hoja de trabajo o discusión)",
+          "p2": "Mantén las rotaciones en 10–15 minutos por estación. Usa un temporizador visible. Incluye ventanas de transición de 2 minutos entre rotaciones.",
+          "p3": "Rutina de cierre: headsets apagados, limpiar protectores faciales, conectar para carga, breve cierre grupal antes del timbre",
+          "highlight": "Con 4 headsets y 12 estudiantes, tres rotaciones de 10 minutos caben en una clase de 50 minutos con tiempo para briefing y cierre."
+        }
+      },
+      "safetyWellbeingAccessibility": {
+        "s1": {
+          "title": "Seguridad Física y Requisitos de Espacio",
+          "subtitle": "Reglas claras y espacios medidos previenen la mayoría de incidentes en RV",
+          "p1": "Establece y comunica las reglas de seguridad antes de cada sesión — la mayoría de incidentes se previenen con preparación sencilla",
+          "p2": "Los requisitos de espacio varían según la actividad: sentado (1×1m), de pie (2×2m), escala de habitación (3×3m)",
+          "p3": "Siempre mide y marca los límites antes de la sesión — retira obstáculos como sillas, mochilas y cables de la zona de juego",
+          "highlight": "Planifica el espacio antes de la sesión, no durante ella. Reglas claras + límites medidos = RV segura."
+        },
+        "s2": {
+          "title": "Supervisión y Gestión de Límites",
+          "subtitle": "La medida de seguridad más importante es un instructor que pueda ver a cada estudiante",
+          "p1": "Mantén línea de visión directa hacia todos los usuarios de RV en todo momento — la supervisión no es opcional",
+          "p2": "Siempre configura el sistema Guardian/límites en cada visor antes de usarlo",
+          "p3": "Limita los usuarios simultáneos de RV si eres el único instructor — los demás observan, hacen tareas complementarias o esperan",
+          "highlight": "Si no puedes verlos, no deberían estar en RV. Limita los usuarios activos al número que puedas supervisar de forma segura."
+        },
+        "s3": {
+          "title": "Mareo y Protocolo de Respuesta",
+          "subtitle": "Reconoce los síntomas temprano y responde con calma siguiendo un protocolo claro",
+          "p1": "Síntomas de cibermareo: mareo, náuseas, dolor de cabeza, fatiga visual, pérdida de equilibrio",
+          "p2": "Prevención: mantén sesiones de 5–15 minutos, evita movimiento forzado, fomenta descansos, ofrece modo sentado",
+          "p3": "Protocolo de respuesta: detener movimiento → retirar visor → sentar → descansar → no volver a la RV",
+          "highlight": "Nunca se debe obligar a un estudiante a continuar si reporta malestar. El protocolo de 5 pasos mantiene a todos tranquilos y seguros."
+        },
+        "s4": {
+          "title": "Higiene y Cuidado del Equipo",
+          "subtitle": "Una rutina de limpieza de 60 segundos entre usuarios previene problemas",
+          "p1": "Limpia todas las superficies de contacto entre usuarios: almohadilla facial, correas, empuñaduras de controladores",
+          "p2": "Usa toallitas sin alcohol para superficies y paño de microfibra para lentes — nunca toallas de papel",
+          "p3": "Limpieza profunda al final del día: retirar almohadillas, limpiar carcasa completa, inspeccionar lentes, guardar en lugar limpio y seco",
+          "highlight": "Sesenta segundos de limpieza entre usuarios ahorran horas de mantenimiento después. Hazlo rutina, no opcional."
+        },
+        "s5": {
+          "title": "Accesibilidad y Prácticas Inclusivas",
+          "subtitle": "Cada estudiante puede participar de forma significativa — con o sin visor",
+          "p1": "La participación en RV siempre es voluntaria — nunca obligues a un estudiante a usar un visor",
+          "p2": "Tres alternativas: rol de observador activo, tarea de aprendizaje complementaria o participación rotativa",
+          "p3": "Los observadores necesitan tareas estructuradas (listas de verificación, preguntas, áreas de enfoque) para que la observación sea activa, no pasiva",
+          "highlight": "La accesibilidad consiste en ofrecer alternativas significativas, no experiencias idénticas. No llevar un visor no significa no aprender."
+        }
       }
     },
     "learningBlocks": {
@@ -372,6 +506,91 @@
       "orderingCorrect": "¡Orden perfecto!",
       "orderingReset": "Intentar de nuevo",
       "exerciseDone": "Continuar",
+      "mythBustersTitle": "¿Mito o Realidad?",
+      "mythBustersMythLabel": "Mito",
+      "mythBustersFact": "Realidad",
+      "mythBustersCorrect": "¡Correcto!",
+      "mythBustersWrong": "¡No del todo!",
+      "mythBustersScore": "{correct} de {total} correctas",
+      "mythBustersTryAgain": "Intentar de nuevo",
+      "mythBustersViewResults": "Ver resultados",
+      "memoryMatchTitle": "Memoria",
+      "memoryMatchMoves": "Movimientos: {count}",
+      "memoryMatchComplete": "¡Todas las parejas encontradas!",
+      "conceptMapTitle": "Mapa conceptual",
+      "conceptMapInstruction": "Toca dos nodos para conectarlos",
+      "conceptMapCheck": "Comprobar conexiones",
+      "conceptMapCorrect": "¡Todas las conexiones correctas!",
+      "conceptMapWrong": "{wrong} conexión(es) incorrecta(s) — eliminadas. Completa las restantes.",
+      "conceptMapReset": "Borrar todo",
+      "troubleshootingTitle": "Resolución de problemas",
+      "troubleshootingSolved": "¡Problema resuelto!",
+      "troubleshootingWrong": "Eso no funcionó — prueba otro enfoque",
+      "troubleshootingContinue": "Siguiente paso",
+      "troubleshootingReport": "Informe del problema",
+      "troubleshootingChoose": "¿Qué harías?",
+      "troubleshootingRetry": "Prueba otro enfoque",
+      "triageSortTitle": "Ordenar por prioridad",
+      "triageSortPool": "Tareas por clasificar",
+      "triageSortCheck": "Comprobar",
+      "triageSortCorrect": "¡Todas las prioridades correctas!",
+      "triageSortWrong": "{wrong} elemento(s) en la categoría incorrecta",
+      "triageSortInstruction": "Toca un elemento, luego toca una categoría para clasificarlo",
+      "triageSortPoolEmpty": "¡Todos los elementos clasificados!",
+      "triageSortDropHere": "Toca para colocar aquí",
+      "classroomPlannerTitle": "Planificador del aula",
+      "classroomPlannerPalette": "Elementos a colocar",
+      "classroomPlannerCheckLayout": "Comprobar diseño",
+      "classroomPlannerCorrect": "¡Buen diseño!",
+      "classroomPlannerWrong": "{wrong} elemento(s) mal colocados",
+      "classroomPlannerReset": "Limpiar diseño",
+      "classroomPlannerInstruction": "Toca un elemento, luego toca una celda para colocarlo",
+      "classroomPlannerCell": "Celda",
+      "classroomPlannerAllPlaced": "¡Todos los elementos colocados!",
+      "classroomPlannerClearAll": "Limpiar todo",
+      "fillGapsTitle": "Rellena los huecos",
+      "fillGapsWordBank": "Banco de palabras",
+      "fillGapsCheck": "Comprobar",
+      "fillGapsCorrect": "¡Todos los huecos correctos!",
+      "fillGapsWrong": "{wrong} hueco(s) incorrecto(s)",
+      "fillGapsInstruction": "Toca una palabra, luego toca un hueco para colocarla",
+      "fillGapsEmptyBlank": "___",
+      "fillGapsAllPlaced": "¡Todos los huecos rellenos!",
+      "fillGapsRetry": "Intentar de nuevo",
+      "decisionTreeTitle": "Elige tu camino",
+      "decisionTreeGood": "¡Buena elección!",
+      "decisionTreeOkay": "Aceptable, pero hay una mejor opción",
+      "decisionTreePoor": "Esto podría causar problemas",
+      "decisionTreeContinue": "Continuar",
+      "decisionTreeResult": "Tu recorrido",
+      "decisionTreeTryAgain": "Intentar un camino diferente",
+      "decisionTreeJourney": "Tu recorrido",
+      "decisionTreeGoodEnd": "¡Bien hecho! Tus decisiones llevaron a un buen resultado.",
+      "decisionTreeBadEnd": "Tus decisiones podrían mejorar. ¡Inténtalo de nuevo!",
+      "decisionTreeSummary": "{good} buena(s) elección(es) de {total}",
+      "decisionTreeRetry": "Intentar de nuevo",
+      "lessonPlanBuilderTitle": "Constructor de lecciones",
+      "lessonPlanBuilderPreview": "Tu plan de clase",
+      "lessonPlanBuilderBest": "¡Excelente elección!",
+      "lessonPlanBuilderGood": "Buena elección",
+      "lessonPlanBuilderPoor": "Esto podría mejorar",
+      "lessonPlanBuilderResult": "Evaluación del plan",
+      "lessonPlanBuilderPass": "¡Plan de clase sólido!",
+      "lessonPlanBuilderFail": "El plan necesita mejoras",
+      "lessonPlanBuilderRebuild": "Reconstruir plan",
+      "lessonPlanBuilderReview": "Revisa tu plan",
+      "resourceAllocationTitle": "Planificador de recursos",
+      "resourceAllocationBudget": "Total: {used}/{total} {unit}",
+      "resourceAllocationSubmit": "Enviar plan",
+      "resourceAllocationCorrect": "¡Plan bien equilibrado!",
+      "resourceAllocationWrong": "Algunas asignaciones están fuera de los rangos ideales",
+      "resourceAllocationAdjust": "Ajustar",
+      "resourceAllocationIdeal": "Ideal: {min}–{max} {unit}",
+      "resourceAllocationOver": "{amount} {unit} por encima del presupuesto",
+      "resourceAllocationRemaining": "{amount} {unit} restantes",
+      "resourceAllocationAdjustBtn": "Ajustar asignaciones",
+      "resourceAllocationPass": "¡Todas las asignaciones dentro de los rangos ideales!",
+      "resourceAllocationRetry": "Ajustar e intentar de nuevo",
       "reviewCarefully": "Presta atención al concepto destacado — está relacionado con lo que fallaste.",
       "insightReveal": "Revelar",
       "insightThinkFirst": "Piénsalo primero, luego pulsa para revelar la respuesta",
@@ -384,18 +603,26 @@
         "b1": {
           "title": "¿Qué es la Realidad Virtual?",
           "exercise": {
-            "instruction": "Conecta cada descripción con el concepto VR correcto",
-            "left": {
-              "p1": "El alumno no puede ver el aula ni al profesor",
-              "p2": "El mundo físico se sustituye por uno digital",
-              "p3": "El alumno ve un vídeo 360° sin interactuar",
-              "p4": "El alumno realiza experimentos en un laboratorio virtual"
+            "instruction": "¿Estas afirmaciones sobre la RV son verdaderas o falsas?",
+            "s1": {
+              "statement": "La RV bloquea completamente el mundo real — los estudiantes no pueden ver el aula",
+              "explanation": "REALIDAD. La RV reemplaza todo el campo visual con un entorno digital. El aula física es invisible para quien lleva el casco."
             },
-            "right": {
-              "p1": "Inmersión total",
-              "p2": "Sustitución del entorno",
-              "p3": "Observación pasiva",
-              "p4": "Participación activa"
+            "s2": {
+              "statement": "La RV funciona igual que ver un vídeo 360° en una pantalla plana",
+              "explanation": "MITO. La RV crea una sensación de presencia — estar dentro de la experiencia. Una pantalla muestra contenido; la RV te lleva a un lugar."
+            },
+            "s3": {
+              "statement": "La RV solo es útil para asignaturas de ciencias y tecnología",
+              "explanation": "MITO. La RV se usa en todas las asignaturas: historia, idiomas, arte, formación profesional, educación física y más."
+            },
+            "s4": {
+              "statement": "En RV, los estudiantes pueden interactuar con objetos y realizar acciones, no solo mirar",
+              "explanation": "REALIDAD. La RV interactiva permite tocar, mover, experimentar y tomar decisiones — eso es lo que la hace poderosa para el aprendizaje."
+            },
+            "s5": {
+              "statement": "Un profesor puede llamar la atención de un estudiante en RV agitando la mano",
+              "explanation": "MITO. El estudiante no puede ver el mundo físico en absoluto. Necesitas señales de audio, un toque en el hombro o herramientas dentro de la app."
             }
           },
           "scenario": {
@@ -444,22 +671,49 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "La VR sustituye completamente el entorno real — el alumno no puede ver el aula", "explanation": "¡Correcto! La VR crea un mundo digital de 360° totalmente inmersivo. El aula física desaparece por completo para el alumno." },
-              "s2": { "statement": "Un vídeo 360° con gafas es la forma más interactiva de VR", "explanation": "Un vídeo 360° es pasivo — el alumno solo mira. La VR interactiva permite a los alumnos hacer cosas: tocar, moverse, decidir. Mirar no es lo mismo que hacer." },
-              "s3": { "statement": "En VR, el profesor puede captar la atención del alumno haciéndole señas", "explanation": "El alumno realmente no puede ver al profesor ni el aula. La VR sustituye la realidad por completo — necesitas otras estrategias (señales de audio, tocar el hombro) para captar su atención." }
+              "s1": {
+                "statement": "La VR sustituye completamente el entorno real — el alumno no puede ver el aula",
+                "explanation": "¡Correcto! La VR crea un mundo digital de 360° totalmente inmersivo. El aula física desaparece por completo para el alumno."
+              },
+              "s2": {
+                "statement": "Un vídeo 360° con gafas es la forma más interactiva de VR",
+                "explanation": "Un vídeo 360° es pasivo — el alumno solo mira. La VR interactiva permite a los alumnos hacer cosas: tocar, moverse, decidir. Mirar no es lo mismo que hacer."
+              },
+              "s3": {
+                "statement": "En VR, el profesor puede captar la atención del alumno haciéndole señas",
+                "explanation": "El alumno realmente no puede ver al profesor ni el aula. La VR sustituye la realidad por completo — necesitas otras estrategias (señales de audio, tocar el hombro) para captar su atención."
+              }
             }
           }
         },
         "b2": {
           "title": "Por qué la VR funciona para aprender",
           "exercise": {
-            "instruction": "Ordena estas actividades de aula de menos efectiva a más efectiva como uso de VR",
-            "scaleStart": "Menos efectiva",
-            "scaleEnd": "Más efectiva",
-            "i1": "Leer una lista de verificación en PDF dentro de las gafas VR",
-            "i2": "Ver un vídeo 360° de una enfermera realizando el procedimiento",
-            "i3": "Ver una demo VR interactiva con pasos narrados",
-            "i4": "Practicar el procedimiento tú mismo con feedback en tiempo real y reintentos ilimitados"
+            "instruction": "Empareja cada concepto de aprendizaje con su definición",
+            "p1": {
+              "term": "Presencia",
+              "def": "Sensación de estar realmente dentro de un entorno virtual"
+            },
+            "p2": {
+              "term": "Corporalización",
+              "def": "Tener un cuerpo virtual que se mueve como tú te mueves"
+            },
+            "p3": {
+              "term": "Aprendizaje activo",
+              "def": "Aprender haciendo en lugar de mirando"
+            },
+            "p4": {
+              "term": "Memoria espacial",
+              "def": "Recordar información vinculándola a ubicaciones físicas"
+            },
+            "p5": {
+              "term": "Compromiso emocional",
+              "def": "Aprendizaje más profundo a través de experiencias emocionalmente impactantes"
+            },
+            "p6": {
+              "term": "Entrada multisensorial",
+              "def": "Combinar estimulación visual, auditiva y kinestésica"
+            }
           },
           "scenario": {
             "context": "Estás planificando una sesión VR donde estudiantes de enfermería aprenderán el procedimiento de higiene de manos. Tienes 30 minutos y un set de gafas para la clase.",
@@ -507,9 +761,18 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "En VR, un alumno que falla una simulación puede volver a intentarlo sin consecuencias reales", "explanation": "¡Correcto! La repetición segura es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten — los errores no tienen riesgo real." },
-              "s2": { "statement": "La VR es más efectiva cuando los alumnos ven a un experto realizar un procedimiento", "explanation": "Ver es pasivo. El verdadero poder de la VR es cuando los alumnos HACEN el procedimiento ellos mismos — practicando pasos, tomando decisiones, recibiendo feedback." },
-              "s3": { "statement": "La repetición en un entorno VR seguro genera confianza y competencia", "explanation": "¡Correcto! Cada reintento refuerza el enfoque correcto. Los alumnos desarrollan memoria muscular y habilidades de toma de decisiones mediante la práctica segura repetida." }
+              "s1": {
+                "statement": "En VR, un alumno que falla una simulación puede volver a intentarlo sin consecuencias reales",
+                "explanation": "¡Correcto! La repetición segura es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten — los errores no tienen riesgo real."
+              },
+              "s2": {
+                "statement": "La VR es más efectiva cuando los alumnos ven a un experto realizar un procedimiento",
+                "explanation": "Ver es pasivo. El verdadero poder de la VR es cuando los alumnos HACEN el procedimiento ellos mismos — practicando pasos, tomando decisiones, recibiendo feedback."
+              },
+              "s3": {
+                "statement": "La repetición en un entorno VR seguro genera confianza y competencia",
+                "explanation": "¡Correcto! Cada reintento refuerza el enfoque correcto. Los alumnos desarrollan memoria muscular y habilidades de toma de decisiones mediante la práctica segura repetida."
+              }
             }
           }
         },
@@ -591,14 +854,19 @@
         "b4": {
           "title": "VR, AR y XR — Elegir la herramienta correcta",
           "exercise": {
-            "instruction": "Ordena estos escenarios de 'más AR' (añade al mundo real) a 'más VR' (sustituye el mundo real)",
-            "scaleStart": "Más AR",
-            "scaleEnd": "Más VR",
-            "i1": "Las tablets muestran etiquetas 3D sobre un esqueleto real en la mesa",
-            "i2": "Los alumnos escanean un libro y aparece un castillo 3D sobre él",
-            "i3": "Instrucciones de reparación superpuestas en un motor real via gafas AR",
-            "i4": "Los alumnos exploran el interior de una célula humana con gafas VR",
-            "i5": "Los alumnos son transportados al interior de un volcán — el aula desaparece"
+            "instruction": "Conecta las tecnologías para mostrar cómo se relacionan entre sí",
+            "nodes": {
+              "xr": "Realidad Extendida (XR)",
+              "vr": "Realidad Virtual (VR)",
+              "ar": "Realidad Aumentada (AR)",
+              "mr": "Realidad Mixta (MR)"
+            },
+            "conn": {
+              "xrVr": "incluye",
+              "xrAr": "incluye",
+              "xrMr": "incluye",
+              "arMr": "MR extiende AR"
+            }
           },
           "scenario": {
             "context": "Un compañero describe tres escenarios de aula y te pide consejo:\n\n1. Alumnos de biología usan tablets para ver etiquetas 3D y animaciones superpuestas sobre un modelo anatómico físico\n2. Los alumnos se ponen las gafas y son transportados al interior de un volcán para observar el flujo de magma\n3. Alumnos de historia escanean una página del libro de texto y aparece un castillo 3D sobre su mesa",
@@ -664,18 +932,48 @@
         "b1": {
           "title": "Configuración inicial del Quest 3",
           "exercise": {
-            "instruction": "Conecta cada paso de configuración con el problema que previene",
-            "left": {
-              "p1": "Ajustar la rueda de IPD para cada alumno",
-              "p2": "Cargar las gafas completamente la noche anterior",
-              "p3": "Configurar el idioma de la interfaz",
-              "p4": "Ajustar la correa de cabeza correctamente"
+            "instruction": "Ayuda a diagnosticar y resolver este problema de configuración",
+            "scenario": "Un profesor reporta: \"Acabo de desembalar el Meta Quest 3 y pulsé el botón de encendido, pero la pantalla se queda en negro. No aparece nada en el casco.\"",
+            "n1": {
+              "prompt": "La pantalla del casco está completamente en negro. ¿Qué deberías comprobar primero?",
+              "a": {
+                "label": "Comprobar si el casco está cargado",
+                "feedback": "¡Buena idea! Un Quest 3 nuevo suele llegar con batería baja. Comprobemos el indicador de carga."
+              },
+              "b": {
+                "label": "Reinstalar el firmware",
+                "feedback": "Eso es demasiado avanzado para un primer paso. Empieza por lo básico — el problema podría ser mucho más simple."
+              },
+              "c": {
+                "label": "Devolverlo — debe estar defectuoso",
+                "feedback": "¡No te rindas aún! La mayoría de cascos \"muertos al llegar\" solo necesitan carga. Empieza simple."
+              }
             },
-            "right": {
-              "p1": "Visión borrosa y dolores de cabeza",
-              "p2": "Las gafas se apagan a mitad de sesión",
-              "p3": "Los alumnos no pueden navegar por los menús",
-              "p4": "Las gafas se resbalan o presionan de forma incómoda"
+            "n2": {
+              "prompt": "Lo conectaste y ves un LED naranja. Después de 30 minutos, lo intentas de nuevo — sigue en negro. ¿Qué haces?",
+              "a": {
+                "label": "Esperar 24 horas para una carga completa",
+                "feedback": "30 minutos deberían ser suficientes para que arranque. El problema probablemente es otro."
+              },
+              "b": {
+                "label": "Mantener el botón de encendido 30 segundos para forzar reinicio",
+                "feedback": "¡Correcto! Un reinicio forzado suele resolver un arranque congelado. Mantén el botón 30 segundos, espera y pulsa de nuevo."
+              },
+              "c": {
+                "label": "Probar un cable USB diferente",
+                "feedback": "El LED naranja significa que SÍ está cargando. El cable está bien — el problema está en el proceso de arranque."
+              }
+            },
+            "n3": {
+              "prompt": "Después del reinicio forzado, ¡aparece el logo de Meta! Pero pide Wi-Fi. ¿Cuál es el mejor enfoque?",
+              "a": {
+                "label": "Conectar al Wi-Fi del colegio para completar la configuración",
+                "feedback": "El casco necesita internet para terminar la configuración inicial y descargar actualizaciones. ¡El Wi-Fi del colegio es la opción correcta!"
+              },
+              "b": {
+                "label": "Saltar el Wi-Fi y configurarlo sin conexión",
+                "feedback": "La configuración inicial requiere internet — no puedes saltar este paso en un Quest 3 nuevo."
+              }
             }
           },
           "scenario": {
@@ -724,22 +1022,37 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "Cada alumno necesita su propio ajuste de IPD — no vale una configuración única para todos", "explanation": "¡Correcto! El IPD varía entre 56 mm y 72 mm según la persona. Usar un ajuste incorrecto causa visión borrosa y tensión ocular en minutos." },
-              "s2": { "statement": "Un Quest 3 se puede usar directamente sacado de la caja sin ninguna configuración", "explanation": "Un Quest 3 nuevo requiere carga (más de 2 horas), actualizaciones de firmware (necesita WiFi), ajuste de IPD y configuración de idioma antes de estar listo para el aula." },
-              "s3": { "statement": "Cargar las gafas la noche anterior a la clase es el paso de preparación más importante", "explanation": "¡Correcto! Unas gafas sin batería son unas gafas inútiles. La carga nocturna asegura batería completa (más de 2 horas de uso) y evita el problema VR de aula más prevenible." }
+              "s1": {
+                "statement": "Cada alumno necesita su propio ajuste de IPD — no vale una configuración única para todos",
+                "explanation": "¡Correcto! El IPD varía entre 56 mm y 72 mm según la persona. Usar un ajuste incorrecto causa visión borrosa y tensión ocular en minutos."
+              },
+              "s2": {
+                "statement": "Un Quest 3 se puede usar directamente sacado de la caja sin ninguna configuración",
+                "explanation": "Un Quest 3 nuevo requiere carga (más de 2 horas), actualizaciones de firmware (necesita WiFi), ajuste de IPD y configuración de idioma antes de estar listo para el aula."
+              },
+              "s3": {
+                "statement": "Cargar las gafas la noche anterior a la clase es el paso de preparación más importante",
+                "explanation": "¡Correcto! Unas gafas sin batería son unas gafas inútiles. La carga nocturna asegura batería completa (más de 2 horas de uso) y evita el problema VR de aula más prevenible."
+              }
             }
           }
         },
         "b2": {
           "title": "Preparación del aula",
           "exercise": {
-            "instruction": "Ordena estos pasos de preparación del aula en el orden correcto",
-            "scaleStart": "Hacer primero",
-            "scaleEnd": "Hacer último",
-            "i1": "Despejar muebles para crear puestos abiertos con 2×2 m de separación",
-            "i2": "Probar la conexión WiFi con unas gafas",
-            "i3": "Configurar los límites de Guardian en cada puesto",
-            "i4": "Hacer una prueba rápida de la app VR en unas gafas"
+            "instruction": "Organiza los elementos en el aula para crear una configuración de RV segura. Coloca cada elemento en la zona correcta.",
+            "items": {
+              "teacher": "Mesa del profesor",
+              "vrStation": "Estación VR 1",
+              "vrStation2": "Estación VR 2",
+              "screen": "Pantalla",
+              "charger": "Estación de carga"
+            },
+            "zones": {
+              "front": "Frente del aula",
+              "vrArea": "Área abierta de actividad VR",
+              "support": "Área de soporte / almacenamiento"
+            }
           },
           "scenario": {
             "context": "Estás preparando una sesión VR para 25 alumnos en un aula estándar. Tienes 8 gafas y los pupitres están en filas tradicionales.",
@@ -862,22 +1175,36 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "Siempre deberías instalar y probar las apps VR al menos un día antes de la clase — nunca durante el horario de clase", "explanation": "¡Correcto! Las descargas pueden ser lentas, las instalaciones pueden fallar, y las apps a veces necesitan configuración en el primer arranque. Descubrir estos problemas durante la clase desperdicia el tiempo de todos." },
-              "s2": { "statement": "Si una app no está en la Meta Quest Store principal, no existe para el Quest 3", "explanation": "Muchas apps educativas solo están en App Lab — el canal secundario de Meta para apps experimentales y de nicho. Siempre comprueba App Lab y la web del desarrollador antes de concluir que una app no está disponible." },
-              "s3": { "statement": "Cada gafa necesita su propia descarga de la app — no se pueden copiar apps entre gafas por USB", "explanation": "¡Correcto! Las apps de Quest están vinculadas a la cuenta y deben descargarse individualmente en cada dispositivo a través de la tienda o App Lab." }
+              "s1": {
+                "statement": "Siempre deberías instalar y probar las apps VR al menos un día antes de la clase — nunca durante el horario de clase",
+                "explanation": "¡Correcto! Las descargas pueden ser lentas, las instalaciones pueden fallar, y las apps a veces necesitan configuración en el primer arranque. Descubrir estos problemas durante la clase desperdicia el tiempo de todos."
+              },
+              "s2": {
+                "statement": "Si una app no está en la Meta Quest Store principal, no existe para el Quest 3",
+                "explanation": "Muchas apps educativas solo están en App Lab — el canal secundario de Meta para apps experimentales y de nicho. Siempre comprueba App Lab y la web del desarrollador antes de concluir que una app no está disponible."
+              },
+              "s3": {
+                "statement": "Cada gafa necesita su propia descarga de la app — no se pueden copiar apps entre gafas por USB",
+                "explanation": "¡Correcto! Las apps de Quest están vinculadas a la cuenta y deben descargarse individualmente en cada dispositivo a través de la tienda o App Lab."
+              }
             }
           }
         },
         "b4": {
           "title": "Casting y compartir",
           "exercise": {
-            "instruction": "Ordena estos pasos de configuración de casting en el orden correcto",
-            "scaleStart": "Hacer primero",
-            "scaleEnd": "Hacer último",
-            "i1": "Conectar el dispositivo de visualización (portátil/teléfono/tablet) a la misma red WiFi que las gafas",
-            "i2": "Abrir la página o app de casting de Meta Quest en el dispositivo de visualización",
-            "i3": "Iniciar el casting desde dentro de las gafas (Ajustes rápidos > Transmitir)",
-            "i4": "Probar el audio y verificar que el retardo es aceptable para tu actividad"
+            "instruction": "Clasifica estas tareas según cuándo deben realizarse",
+            "cat": {
+              "before": "Justo antes de clase",
+              "dayBefore": "Día anterior",
+              "weekly": "Mantenimiento semanal"
+            },
+            "i1": "Verificar que la conexión de casting funciona",
+            "i2": "Actualizar el firmware del casco",
+            "i3": "Cargar todos los cascos al 100%",
+            "i4": "Descargar nuevas apps educativas",
+            "i5": "Comprobar la señal Wi-Fi en el aula",
+            "i6": "Limpiar lentes y correas de los cascos"
           },
           "scenario": {
             "context": "Estás haciendo una demostración de una app VR de anatomía a la directora del colegio. Transmites la vista de las gafas a tu portátil y la proyectas. La directora ve la imagen pero hay un retardo de 3 segundos, y el audio está desincronizado.",
@@ -996,9 +1323,1271 @@
           },
           "micro": {
             "tf": {
-              "s1": { "statement": "Cargar las gafas la noche anterior es más fiable que cargarlas la mañana de la clase", "explanation": "¡Correcto! Un Quest 3 tarda unas 2 horas en cargarse completamente. La carga por la mañana no deja margen — un corte de luz, un cable defectuoso o un cargador olvidado significa gafas sin batería a la hora de clase." },
-              "s2": { "statement": "Si la app VR funciona en unas gafas, funcionará en todas sin necesidad de probar", "explanation": "Cada gafa puede tener diferentes versiones de firmware, espacio de almacenamiento o permisos de cuenta. Las apps pueden fallar en unas gafas mientras funcionan en otras. Prueba cada dispositivo individualmente." },
-              "s3": { "statement": "Tener un plan de respaldo (app offline + actividad sin VR) es esencial para cada sesión VR", "explanation": "¡Correcto! Las caídas de WiFi, los cuelgues de apps y los fallos de hardware son lo bastante frecuentes como para que un plan de respaldo no sea opcional — es práctica profesional. El respaldo asegura que el aprendizaje continúe independientemente de los problemas tecnológicos." }
+              "s1": {
+                "statement": "Cargar las gafas la noche anterior es más fiable que cargarlas la mañana de la clase",
+                "explanation": "¡Correcto! Un Quest 3 tarda unas 2 horas en cargarse completamente. La carga por la mañana no deja margen — un corte de luz, un cable defectuoso o un cargador olvidado significa gafas sin batería a la hora de clase."
+              },
+              "s2": {
+                "statement": "Si la app VR funciona en unas gafas, funcionará en todas sin necesidad de probar",
+                "explanation": "Cada gafa puede tener diferentes versiones de firmware, espacio de almacenamiento o permisos de cuenta. Las apps pueden fallar en unas gafas mientras funcionan en otras. Prueba cada dispositivo individualmente."
+              },
+              "s3": {
+                "statement": "Tener un plan de respaldo (app offline + actividad sin VR) es esencial para cada sesión VR",
+                "explanation": "¡Correcto! Las caídas de WiFi, los cuelgues de apps y los fallos de hardware son lo bastante frecuentes como para que un plan de respaldo no sea opcional — es práctica profesional. El respaldo asegura que el aprendizaje continúe independientemente de los problemas tecnológicos."
+              }
+            }
+          }
+        }
+      },
+      "designingMeaningfulLearning": {
+        "b1": {
+          "title": "Objetivos que funcionan",
+          "exercise": {
+            "instruction": "Completa el objetivo de aprendizaje rellenando las palabras que faltan",
+            "template": "Un objetivo de aprendizaje VR bien escrito debe ser __blank1__, centrarse en lo que los estudiantes van a __blank2__ (no solo ver), y ser __blank3__ mediante observación o evaluación.",
+            "blank1": "específico",
+            "blank2": "hacer",
+            "blank3": "medible",
+            "distractor1": "entretenido",
+            "distractor2": "largo"
+          },
+          "scenario": {
+            "context": "Un colega dice: 'Quiero usar RV para que los alumnos memoricen la tabla periódica más rápido. La inmersión debería ayudarles a recordar los elementos.'",
+            "question": "¿Cómo responderías?",
+            "choices": {
+              "a": "Buena idea — la RV hace que todo sea más memorable",
+              "b": "La memorización no necesita inmersión. La RV es más efectiva cuando los alumnos HACEN algo — practican procedimientos, toman decisiones, responden a situaciones. Para memorización, las herramientas de repetición espaciada son más eficientes.",
+              "c": "La RV no se puede usar para ciencias"
+            },
+            "feedback": {
+              "a": "La RV mejora el compromiso, pero la memorización depende de la repetición y el recuerdo, no de la inmersión. Las tarjetas con repetición espaciada son más rápidas y económicas para la memorización pura. La RV brilla cuando los alumnos necesitan actuar, no solo recordar.",
+              "b": "Exacto. La fortaleza de la RV es el aprendizaje experiencial — hacer, no recordar. Memorizar la tabla periódica no requiere estar dentro de un entorno. La RV añadiría coste y complejidad sin aprovechar su ventaja principal: la práctica activa.",
+              "c": "La RV funciona muy bien para ciencias — laboratorios virtuales de química, exploración anatómica, simulaciones de física. El problema no es la asignatura, sino el objetivo de aprendizaje. La memorización no requiere inmersión, pero realizar un procedimiento de laboratorio sí."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Estás diseñando una formación para enfermeras. El objetivo es: 'Las enfermeras responderán a un escenario de paro cardíaco realizando RCP y usando un DEA en menos de 3 minutos.'",
+              "question": "¿Es un buen objetivo para RV?",
+              "choices": {
+                "a": "No — la formación en paro cardíaco solo debería hacerse con maniquíes físicos",
+                "b": "Sí — implica realizar un procedimiento bajo presión en un contexto realista, que es exactamente en lo que la RV destaca",
+                "c": "Parcialmente — la RV puede mostrar los pasos pero no puede dar la retroalimentación física del RCP real"
+              },
+              "feedback": {
+                "a": "Los maniquíes físicos son valiosos, pero la RV añade el contexto realista — los sonidos, el estrés, la toma de decisiones. Muchos programas combinan ambos para máxima efectividad.",
+                "b": "Correcto. Este objetivo implica acción (realizar RCP), contexto (escenario de paro cardíaco) y criterio (en menos de 3 minutos). La RV añade presión realista y permite práctica segura ilimitada — una combinación perfecta.",
+                "c": "Tienes razón en que la RV carece de retroalimentación háptica para las compresiones torácicas. Sin embargo, los aspectos de toma de decisiones, recuerdo de secuencia y gestión del estrés son perfectos para RV. Complementa la formación física."
+              }
+            },
+            "c2": {
+              "context": "Un profesor quiere que los alumnos 'aprecien la belleza del arte renacentista' usando gafas VR para ver visitas virtuales de 360° a museos.",
+              "question": "¿Es un buen uso de la RV?",
+              "choices": {
+                "a": "Sí — las visitas virtuales a museos siempre son un gran uso de la RV",
+                "b": "No — las gafas VR nunca deberían usarse para arte",
+                "c": "Es observación pasiva, no práctica activa. Un mejor uso tendría a los alumnos identificando técnicas específicas, comparando obras o tomando decisiones curatoriales dentro del museo virtual."
+              },
+              "feedback": {
+                "a": "Las visitas a museos pueden ser atractivas, pero 'apreciar la belleza' es un objetivo pasivo e imposible de medir. Sin una tarea — algo que encontrar, comparar o decidir — los alumnos simplemente están haciendo turismo. Añade una tarea activa para aprovechar las fortalezas de la RV.",
+                "b": "¡La RV puede funcionar bien para la educación artística! El problema no es la asignatura sino el objetivo. Ver es pasivo. Si los alumnos tuvieran que identificar técnicas de pincelada, comparar dos pintores o curar una exposición virtual, la RV aportaría valor real.",
+                "c": "Exacto. 'Apreciar la belleza' es pasivo e imposible de medir. Pero si los alumnos tuvieran una tarea — identificar tres usos de la perspectiva, comparar técnicas de dos artistas o montar una exposición — la RV se convierte en una herramienta de aprendizaje activo poderosa."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada objetivo: ¿funciona bien en RV o es mejor sin RV?",
+              "cat": {
+                "vr": "Funciona en RV",
+                "novr": "Mejor sin RV"
+              },
+              "i1": "Realizar un procedimiento de evacuación de incendios en un edificio simulado",
+              "i2": "Memorizar los nombres de los 50 estados de EE.UU.",
+              "i3": "Responder a un paciente simulado que muestra signos de ictus",
+              "i4": "Leer y resumir un capítulo de un libro de historia",
+              "i5": "Practicar el montaje de una máquina siguiendo la secuencia correcta"
+            }
+          }
+        },
+        "b2": {
+          "title": "Escribir objetivos de RV",
+          "exercise": {
+            "instruction": "Construye un plan de clase VR seleccionando la mejor opción en cada paso",
+            "s1": {
+              "label": "Objetivo de aprendizaje",
+              "desc": "¿Qué deben lograr los estudiantes en esta sesión VR?",
+              "a": {
+                "label": "Los estudiantes explorarán un entorno VR",
+                "desc": "Exploración abierta sin objetivos claros",
+                "feedback": "Explorar es un comienzo, pero sin un resultado medible, ¿cómo sabes que aprendieron?"
+              },
+              "b": {
+                "label": "Los estudiantes identificarán 3 peligros de seguridad en un laboratorio virtual",
+                "desc": "Específico, medible y orientado a la acción",
+                "feedback": "¡Excelente! Es específico (3 peligros), medible (puedes contarlos) y usa las fortalezas de la RV (observación espacial)."
+              },
+              "c": {
+                "label": "Los estudiantes aprenderán sobre seguridad en el laboratorio",
+                "desc": "Tema general sin resultado medible",
+                "feedback": "Esto es demasiado vago. ¿Cuántos peligros? ¿Qué comportamiento específico demuestra que \"aprendieron\"? Añade especificidad."
+              }
+            },
+            "s2": {
+              "label": "Selección de app VR",
+              "desc": "¿Qué aplicación VR usarás?",
+              "a": {
+                "label": "El juego VR más nuevo y popular",
+                "desc": "De moda pero no alineado con el objetivo",
+                "feedback": "Popular no significa pedagógicamente apropiado. Siempre alinea la app con tu objetivo de aprendizaje."
+              },
+              "b": {
+                "label": "Una simulación de laboratorio virtual con escenarios de peligro interactivos",
+                "desc": "Apoya directamente el objetivo de aprendizaje",
+                "feedback": "La app apoya directamente tu objetivo — los estudiantes pueden encontrar e interactuar con los peligros."
+              },
+              "c": {
+                "label": "Un vídeo 360° de un laboratorio real",
+                "desc": "Contenido relacionado pero experiencia pasiva",
+                "feedback": "Un vídeo muestra peligros pero los estudiantes no pueden interactuar. Para un objetivo de \"identificar\", necesitan descubrir activamente."
+              }
+            },
+            "s3": {
+              "label": "Actividad del estudiante",
+              "desc": "¿Qué harán los estudiantes durante la sesión VR?",
+              "a": {
+                "label": "Exploración libre — que descubran a su ritmo",
+                "desc": "Tiempo de descubrimiento sin estructura",
+                "feedback": "Algo de estructura ayuda. Sin guía, los estudiantes pueden perderse peligros clave o distraerse con elementos no esenciales."
+              },
+              "b": {
+                "label": "Ver al profesor demostrar primero, luego repetir",
+                "desc": "Modelo de demostración dirigida por el profesor",
+                "feedback": "Esto reduce la ventaja de la RV. El punto es que los estudiantes descubran los peligros por sí mismos, no copiar una demo."
+              },
+              "c": {
+                "label": "Investigación guiada con una lista de áreas a inspeccionar",
+                "desc": "Descubrimiento estructurado con tareas claras",
+                "feedback": "Equilibra libertad con enfoque. Los estudiantes exploran activamente pero tienen un marco para cubrir áreas clave."
+              }
+            },
+            "s4": {
+              "label": "Método de evaluación",
+              "desc": "¿Cómo verificarás el aprendizaje?",
+              "a": {
+                "label": "Ticket de salida: los estudiantes listan peligros encontrados y explican por qué son peligrosos",
+                "desc": "Reflexión escrita vinculando la experiencia VR al conocimiento",
+                "feedback": "Conecta la experiencia VR con la comprensión demostrada. Los estudiantes deben recordar Y explicar — procesamiento más profundo."
+              },
+              "b": {
+                "label": "Nota por participación — si se pusieron el casco, aprueban",
+                "desc": "Evaluación basada en asistencia",
+                "feedback": "Ponerse un casco no demuestra aprendizaje. Un estudiante podría mirar al techo todo el tiempo."
+              },
+              "c": {
+                "label": "Discusión en grupo sobre la experiencia VR",
+                "desc": "Reflexión verbal con compañeros",
+                "feedback": "Las discusiones son valiosas pero difíciles de evaluar individualmente. Considera combinar con un componente escrito."
+              }
+            }
+          },
+          "scenario": {
+            "context": "Un colega comparte su objetivo de lección VR: 'Los alumnos comprenderán la importancia de los protocolos de higiene en un entorno hospitalario.'",
+            "question": "¿Qué retroalimentación le darías?",
+            "choices": {
+              "a": "Es perfecto — comprender es un objetivo de aprendizaje válido",
+              "b": "El verbo 'comprender' es pasivo e imposible de medir. Reescríbelo con un verbo de acción: 'Los alumnos realizarán una secuencia de higiene de manos en un paciente virtual, siguiendo los cinco pasos de la OMS en el orden correcto.'",
+              "c": "Solo necesita mencionar RV — añade 'usando gafas VR' al final"
+            },
+            "feedback": {
+              "a": "'Comprender' es la trampa más común al escribir objetivos. No puedes observar ni medir la comprensión. Los objetivos de RV deben describir lo que los alumnos HACEN — realizar, demostrar, ejecutar — para poder ver si lo han logrado.",
+              "b": "Retroalimentación perfecta. Has reemplazado un verbo vago con una acción específica (realizar), añadido contexto (paciente virtual) e incluido criterios medibles (cinco pasos de la OMS, orden correcto). Este objetivo aprovecha al máximo las fortalezas de la RV.",
+              "c": "Añadir 'usando RV' no arregla el problema central. El objetivo necesita un verbo de acción observable. 'Comprender' no se puede ver ni medir — 'realizar', 'demostrar' o 'ejecutar' sí. La herramienta importa menos que lo que los alumnos hacen con ella."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Necesitas escribir un objetivo de RV para una clase de artes culinarias. El tema es la seguridad con cuchillos.",
+              "question": "¿Qué objetivo es mejor?",
+              "choices": {
+                "a": "Los alumnos demostrarán el agarre correcto, el movimiento de corte y la posición de seguridad para tres tipos de cuchillos en una cocina virtual, con cero posiciones inseguras de la mano.",
+                "b": "Los alumnos verán un vídeo sobre seguridad con cuchillos y comprenderán los riesgos.",
+                "c": "Los alumnos aprenderán sobre técnicas adecuadas de manejo de cuchillos."
+              },
+              "feedback": {
+                "a": "Excelente. 'Demostrarán' es un verbo de acción. 'Tres tipos de cuchillos en una cocina virtual' establece el contexto. 'Cero posiciones inseguras' es un criterio medible. Este objetivo aprovecha al máximo la RV.",
+                "b": "Ver un vídeo es pasivo — el valor de la RV está en hacer, no en mirar. Y 'comprenderán los riesgos' no se puede observar ni medir. Este objetivo no necesita RV en absoluto.",
+                "c": "'Aprenderán sobre' es tan vago como 'comprenderán'. No hay acción que observar ni forma de medir el éxito. Reescribe con un verbo como 'demostrar', 'realizar' o 'ejecutar'."
+              }
+            },
+            "c2": {
+              "context": "Un objetivo de RV dice: 'Los alumnos aplicarán el protocolo de triaje correcto para categorizar cinco pacientes virtuales por gravedad, justificando cada decisión en menos de 2 minutos por paciente.'",
+              "question": "¿Cómo valorarías este objetivo?",
+              "choices": {
+                "a": "Es demasiado complejo — los objetivos de RV deberían ser más simples",
+                "b": "Fuerte — tiene un verbo de acción (aplicar), contexto (cinco pacientes virtuales) y criterios (categorización correcta, justificación, límite de tiempo). Los tres componentes están presentes.",
+                "c": "Es bueno pero el límite de tiempo es innecesario"
+              },
+              "feedback": {
+                "a": "La complejidad está bien cuando refleja la tarea real. El triaje ES complejo — el objetivo debería reflejarlo. Los tres componentes (acción + contexto + criterio) están presentes y bien definidos.",
+                "b": "Exacto. Este es un objetivo de RV modelo. 'Aplicar' = acción, 'cinco pacientes virtuales por gravedad' = contexto, 'justificando cada decisión en menos de 2 minutos' = criterio. Es específico, medible y perfecto para simulación en RV.",
+                "c": "El límite de tiempo es realmente importante — añade presión realista y hace el criterio medible. En un triaje real, la velocidad importa. Eliminarlo debilitaría el objetivo al perder una métrica clave de evaluación."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Un buen objetivo de RV usa verbos de acción como 'realizar', 'demostrar' o 'ejecutar' — no 'comprender' o 'aprender sobre'",
+                "explanation": "¡Correcto! Los verbos de acción describen comportamiento observable. 'Comprender' no se puede ver ni medir; 'realizar' sí."
+              },
+              "s2": {
+                "statement": "Añadir 'en RV' a cualquier objetivo lo convierte automáticamente en un buen objetivo de RV",
+                "explanation": "La herramienta no arregla el verbo. 'Los alumnos comprenderán X en RV' sigue siendo un objetivo débil. El verbo de acción y los criterios medibles importan más que el medio."
+              },
+              "s3": {
+                "statement": "Un objetivo de RV bien escrito incluye tres componentes: una acción, un contexto y un criterio de éxito",
+                "explanation": "¡Correcto! Acción (lo que hacen), Contexto (dónde/bajo qué condiciones) y Criterio (cómo sabes que se hizo correctamente) forman la fórmula completa del objetivo."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "Ver vs. Hacer",
+          "exercise": {
+            "instruction": "Toma decisiones pedagógicas y observa cómo afectan al aprendizaje",
+            "scenario": "Estás planificando una lección VR sobre el ciclo del agua para alumnos de 2º ESO. Tienes 30 minutos de tiempo VR y 15 Meta Quest 3 para 25 estudiantes.",
+            "n1": {
+              "prompt": "¿Cómo experimentarán los estudiantes el ciclo del agua en VR?",
+              "a": {
+                "label": "Los estudiantes manipulan moléculas de agua a través de cada etapa",
+                "feedback": "La manipulación activa crea comprensión profunda. Los estudiantes sienten los cambios de energía y ven relaciones causa-efecto."
+              },
+              "b": {
+                "label": "Los estudiantes ven una animación 360° narrada del ciclo del agua",
+                "feedback": "Ver es pasivo. Los estudiantes ven el proceso pero no experimentan POR QUÉ sucede. Esto podría hacerse con un vídeo."
+              },
+              "c": {
+                "label": "Los estudiantes exploran un paisaje virtual y observan las etapas del ciclo del agua",
+                "feedback": "Observar es mejor que narrar, pero los estudiantes no causan los cambios. Siguen siendo espectadores."
+              }
+            },
+            "n2": {
+              "prompt": "Tienes 15 cascos para 25 estudiantes. ¿Cómo gestionas la rotación?",
+              "a": {
+                "label": "Los primeros 15 usan VR mientras los demás esperan, luego cambian",
+                "feedback": "Sentarse y esperar 15 minutos no es buen uso del tiempo. El grupo que espera se desconecta."
+              },
+              "b": {
+                "label": "El grupo VR hace la actividad mientras el grupo sin VR completa una ficha complementaria",
+                "feedback": "Ambos grupos aprenden activamente. La ficha prepara al grupo sin VR para aprovechar mejor su turno."
+              },
+              "c": {
+                "label": "Saltar la VR para la mitad de la clase — pueden hacerlo otro día",
+                "feedback": "Esto crea una experiencia desigual y desperdicia medio período de clase para la mitad de los estudiantes."
+              }
+            },
+            "n3": {
+              "prompt": "Revisa tu enfoque pedagógico",
+              "endFeedback": "Tus decisiones moldearon la experiencia de aprendizaje. Hacer activamente supera a mirar pasivamente, y las actividades paralelas mantienen a todos comprometidos. Estos principios aplican a cada lección VR que diseñes."
+            }
+          },
+          "scenario": {
+            "context": "Tu colegio compró gafas VR. Un profesor planea usarlas exclusivamente para excursiones virtuales de 360° — los alumnos verán recorridos de museos, sitios históricos y maravillas naturales.",
+            "question": "¿Qué le aconsejarías?",
+            "choices": {
+              "a": "Las excursiones virtuales son el mejor uso de la RV — sigue haciéndolas",
+              "b": "Los recorridos 360° son un punto de partida válido, pero son observación pasiva. El verdadero poder de la RV está en la participación activa — añade tareas como encontrar artefactos específicos, tomar decisiones o resolver problemas dentro del entorno.",
+              "c": "Los recorridos 360° son suficientes — no todas las sesiones VR necesitan ser interactivas"
+            },
+            "feedback": {
+              "a": "Las excursiones virtuales son atractivas, pero básicamente es mirar. Los alumnos no HACEN nada. La ventaja única de la RV — práctica activa con retroalimentación — queda completamente sin usar. Añadir tareas interactivas transformaría esto de entretenimiento en aprendizaje.",
+              "b": "Exacto. Los recorridos 360° son un punto de partida, no el destino. Añadir una tarea — 'encuentra tres riesgos de seguridad', 'identifica el estilo arquitectónico', 'compara dos exposiciones' — convierte la observación pasiva en aprendizaje activo. Ahí es donde vive el verdadero impacto de la RV.",
+              "c": "Para enriquecimiento ocasional, un recorrido 360° está bien. Pero si la RV es una herramienta regular, la observación pasiva sola no justifica la inversión. Los alumnos retienen ~10% de lo que miran pero hasta el 75% de lo que practican. La RV debería orientarse hacia el uso activo."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor de biología dice: 'Uso RV para que los alumnos caminen por una célula virtual. Pueden mirar alrededor y ver todos los orgánulos de cerca.'",
+              "question": "¿Cómo podría mejorarse?",
+              "choices": {
+                "a": "Añade una tarea: que los alumnos identifiquen la función de cada orgánulo, diagnostiquen una célula enferma o ensamblen una célula a partir de sus partes — convirtiendo la observación en interacción.",
+                "b": "Ya es perfecto — explorar una célula en RV es inherentemente interactivo.",
+                "c": "Reemplaza la RV con un microscopio — la observación real siempre es mejor."
+              },
+              "feedback": {
+                "a": "Exacto. Caminar por una célula es exploración pasiva. Añadir una tarea — identificar, diagnosticar, ensamblar — lo transforma en aprendizaje activo. El alumno pasa de turista a científico.",
+                "b": "Mirar alrededor no es interactuar. La verdadera interacción significa tomar decisiones, manipular objetos o resolver problemas. Exploración sin tarea es turismo virtual.",
+                "c": "Los microscopios muestran muestras reales, pero la RV puede mostrar cosas imposibles de ver físicamente — como caminar dentro de una célula. El problema no es la herramienta, sino la falta de una tarea activa."
+              }
+            },
+            "c2": {
+              "context": "Dos profesores debaten. Profesor A: 'Mis alumnos ven un documental VR sobre el cambio climático.' Profesor B: 'Mis alumnos toman decisiones como urbanista en una simulación VR, eligiendo políticas y viendo su impacto ambiental en 50 años.'",
+              "question": "¿Qué enfoque aprovecha mejor la RV?",
+              "choices": {
+                "a": "Profesor A — los documentales transmiten más información",
+                "b": "Ambos son igual de efectivos porque ambos usan gafas VR",
+                "c": "Profesor B — la simulación requiere que los alumnos tomen decisiones, vean consecuencias y aprendan a través de la acción, que es lo que la RV hace mejor"
+              },
+              "feedback": {
+                "a": "Los documentales pueden transmitir mucha información, pero un documental VR sigue siendo visualización pasiva. Una pantalla plana entregaría el mismo contenido más cómodamente. La RV se justifica cuando los alumnos HACEN algo.",
+                "b": "Usar el mismo hardware no significa el mismo resultado de aprendizaje. Ver (Profesor A) es pasivo. Decidir y ver consecuencias (Profesor B) es activo. El diseño de la actividad importa mucho más que el dispositivo.",
+                "c": "Correcto. La simulación del Profesor B requiere toma de decisiones, conciencia de consecuencias e iteración — todo aprendizaje activo. El alumno no está viendo el cambio climático; lo está causando y respondiendo a él. Esa es la fortaleza única de la RV."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada actividad VR como Ver (pasivo) o Hacer (activo)",
+              "cat": {
+                "seeing": "Ver (pasivo)",
+                "doing": "Hacer (activo)"
+              },
+              "i1": "Ver un recorrido guiado 360° de una fábrica",
+              "i2": "Operar maquinaria virtual siguiendo un procedimiento paso a paso",
+              "i3": "Tomar decisiones de triaje con pacientes virtuales en urgencias",
+              "i4": "Ver un recorrido animado del sistema circulatorio humano",
+              "i5": "Ensamblar un motor virtual seleccionando y colocando piezas correctamente"
+            }
+          }
+        },
+        "b4": {
+          "title": "El flujo de la sesión de RV",
+          "exercise": {
+            "instruction": "Distribuye los 40 minutos de clase VR entre estas fases",
+            "scenario": "Tienes una sesión VR de 40 minutos con 25 estudiantes y 15 cascos. Asigna tiempo a cada fase para crear una lección equilibrada.",
+            "res": {
+              "intro": "Introducción y explicación",
+              "vr": "Tiempo de actividad VR",
+              "debrief": "Reflexión y cierre",
+              "transition": "Transiciones y preparación"
+            }
+          },
+          "scenario": {
+            "context": "Un profesor reparte las gafas VR, dice 'explorad el laboratorio virtual' y las recoge 20 minutos después. No hay briefing antes ni discusión después.",
+            "question": "¿Qué falla en este enfoque?",
+            "choices": {
+              "a": "La sesión es demasiado larga — 20 minutos causa fatiga visual",
+              "b": "No hay nada mal — dejar que los alumnos exploren libremente es el mejor enfoque",
+              "c": "Sin briefing, los alumnos no saben en qué enfocarse. Sin reflexión posterior, la experiencia queda como entretenimiento, no aprendizaje. Una sesión VR necesita las tres fases: briefing, experiencia y reflexión."
+            },
+            "feedback": {
+              "a": "La duración es una preocupación (15 min es mejor), pero el problema mayor es la falta de estructura. Sin un briefing para establecer el objetivo y una reflexión para procesar la experiencia, incluso una sesión perfectamente cronometrada produce un aprendizaje mínimo.",
+              "b": "La exploración libre sin objetivo es turismo virtual. Los alumnos necesitan una tarea clara (briefing), tiempo concentrado para completarla (experiencia) y reflexión estructurada (debriefing). Sin esta estructura, la RV es solo un juguete caro.",
+              "c": "Correcto. Las tres fases son esenciales: el briefing da propósito (qué hacer, qué buscar). La experiencia es la ventana de aprendizaje activo. La reflexión transforma la experiencia en conocimiento transferible. Salta cualquier fase y el aprendizaje se resiente."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Durante una sesión VR, notas que un alumno ha dejado de moverse y parece confundido. Lleva 2 minutos quieto.",
+              "question": "¿Qué deberías hacer?",
+              "choices": {
+                "a": "Esperar hasta que acabe la sesión — no interrumpas experiencias VR",
+                "b": "Ofrecer una indicación breve y específica para desbloquearlo — 'Intenta mirar a tu izquierda para encontrar la siguiente pista' — y retirarte",
+                "c": "Quitarle las gafas y mostrarle qué hacer en la pantalla del casting"
+              },
+              "feedback": {
+                "a": "Dos minutos de confusión desperdician tiempo de aprendizaje y pueden frustrar al alumno. El rol del instructor durante la RV es observar y dar una indicación breve cuando alguien está claramente atascado.",
+                "b": "Correcto. Una indicación breve y específica preserva la autonomía del alumno mientras lo desbloquea. El objetivo es intervención mínima — justo lo suficiente para que avance, no resolver la tarea por él.",
+                "c": "Quitar las gafas rompe la inmersión por completo. Una indicación verbal o un toque suave es menos disruptivo y mantiene al alumno en la experiencia."
+              }
+            },
+            "c2": {
+              "context": "Tras una sesión VR sobre triaje de emergencia, comienzas la reflexión. Un alumno dice: 'Estuvo guay.' Otros asienten y parecen listos para pasar a otra cosa.",
+              "question": "¿Cómo respondes?",
+              "choices": {
+                "a": "Usa preguntas estructuradas: 'Cuéntame tu primera decisión. ¿Qué notaste del paciente? ¿Por qué elegiste ese nivel de prioridad?' — profundiza en momentos y decisiones específicas.",
+                "b": "Acéptalo y pasa a la siguiente actividad — si los alumnos dicen que estuvo guay, algo aprendieron.",
+                "c": "Muestra las respuestas 'correctas' y continúa."
+              },
+              "feedback": {
+                "a": "Correcto. 'Estuvo guay' significa que la experiencia fue atractiva, pero el aprendizaje aún no se ha articulado. Las preguntas estructuradas obligan a los alumnos a reconstruir sus decisiones, identificar qué funcionó y conectar la experiencia con la práctica real.",
+                "b": "'Guay' es una respuesta emocional, no un resultado de aprendizaje. Sin reflexión, los alumnos recuerdan la sensación pero no la lección. Las preguntas de reflexión extraen el aprendizaje de la experiencia.",
+                "c": "Mostrar respuestas correctas convierte la reflexión en una clase magistral. El objetivo es ayudar a los alumnos a descubrir ideas reflexionando sobre sus propias acciones — '¿Qué decidiste TÚ y por qué?' — no decirles la respuesta correcta."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Un briefing VR debería durar menos de 60 segundos: indicar el objetivo, describir la tarea y establecer el tiempo límite",
+                "explanation": "¡Correcto! Los briefings largos matan el impulso. Sé breve: qué hacer, cuánto tiempo, cómo se ve el éxito. Los alumnos aprenden el resto haciendo."
+              },
+              "s2": {
+                "statement": "La reflexión posterior es opcional — la experiencia VR por sí sola es suficiente para que ocurra el aprendizaje",
+                "explanation": "Sin reflexión, la RV se convierte en entretenimiento. Los alumnos necesitan reflexionar sobre lo que hicieron, qué funcionó y cómo se conecta con la práctica real. La reflexión es donde cristaliza el aprendizaje."
+              },
+              "s3": {
+                "statement": "El rol del instructor durante la RV es observar por casting e intervenir solo cuando un alumno está claramente atascado",
+                "explanation": "¡Correcto! El instructor monitoriza, anota fortalezas y errores para la reflexión, y ofrece una indicación breve solo cuando es absolutamente necesario. El objetivo es intervención mínima para preservar la autonomía del alumno."
+              }
+            }
+          }
+        },
+        "b5": {
+          "title": "Tipos de actividad en RV",
+          "exercise": {
+            "instruction": "Relaciona cada objetivo de aprendizaje con el tipo de actividad VR más apropiado",
+            "left": {
+              "p1": "Los alumnos necesitan familiarizarse con un hospital virtual antes de una simulación",
+              "p2": "Los alumnos deben practicar el procedimiento de evacuación hasta hacerlo correctamente",
+              "p3": "Los alumnos deben demostrar que pueden realizar triaje sin ayuda",
+              "p4": "Los alumnos visitan un yacimiento arqueológico virtual por primera vez"
+            },
+            "right": {
+              "p1": "Exploración Guiada",
+              "p2": "Simulación con Práctica",
+              "p3": "Evaluación / Verificación",
+              "p4": "Exploración Guiada"
+            }
+          },
+          "scenario": {
+            "context": "Estás planificando una unidad VR para estudiantes de enfermería. El tema es la evaluación del paciente. Los alumnos nunca han usado RV y nunca han visto el entorno del hospital virtual.",
+            "question": "¿Qué secuencia de actividades usarías?",
+            "choices": {
+              "a": "Empezar con Exploración Guiada (familiarizarse con el hospital virtual), luego Simulación con Práctica (realizar evaluaciones de pacientes), luego Evaluación (demostrar competencia sin guía)",
+              "b": "Ir directo a Simulación con Práctica — los alumnos aprenden haciendo",
+              "c": "Solo usar Evaluación / Verificación — el objetivo es evaluar, no enseñar"
+            },
+            "feedback": {
+              "a": "Secuencia perfecta. La exploración primero crea familiaridad espacial para que los alumnos no se pierdan durante la simulación. La práctica desarrolla la habilidad con retroalimentación. La evaluación confirma la competencia. Cada etapa se construye sobre la anterior.",
+              "b": "Saltar a la práctica sin exploración significa que los alumnos pasan sus primeros minutos averiguando dónde están las cosas en vez de enfocarse en la tarea. Una breve fase de exploración (5 min) ahorra tiempo en la simulación.",
+              "c": "No puedes evaluar una habilidad que los alumnos no han practicado. La evaluación viene después de la exploración y la práctica — es el punto de control final, no el punto de partida."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un instructor de formación profesional quiere que los alumnos aprendan a operar una fresadora CNC. Los alumnos han estudiado la teoría pero nunca han visto una en funcionamiento.",
+              "question": "¿Qué tipo de actividad VR debería ser la primera?",
+              "choices": {
+                "a": "Empezar con una Evaluación para ver qué saben ya",
+                "b": "Empezar con Exploración Guiada — dejar que caminen alrededor de la máquina virtual, observen sus partes e identifiquen componentes antes de operarla",
+                "c": "Saltarse la RV — usar directamente la máquina real"
+              },
+              "feedback": {
+                "a": "Evaluar a alumnos que no han practicado los prepara para el fracaso. Empieza con exploración para que entiendan el entorno, luego practica operar la máquina, y después evalúa.",
+                "b": "Correcto. La Exploración Guiada permite a los alumnos construir modelos mentales de la máquina — dónde están los controles, qué hacen las partes — sin la presión de operarla. Esta familiaridad espacial rinde cuando empiezan la simulación.",
+                "c": "Empezar con equipos reales sin ninguna práctica es arriesgado y costoso. La exploración y simulación en RV permiten práctica segura antes de que los alumnos toquen la máquina real, construyendo confianza y reduciendo errores."
+              }
+            },
+            "c2": {
+              "context": "Los alumnos han completado tres sesiones de práctica VR sobre higiene quirúrgica de manos. Su instructor quiere confirmar que pueden realizar el procedimiento de forma independiente antes de entrar al quirófano real.",
+              "question": "¿Qué tipo de actividad VR encaja con este objetivo?",
+              "choices": {
+                "a": "Otra ronda de Exploración Guiada",
+                "b": "Más sesiones de Simulación con Práctica",
+                "c": "Evaluación / Verificación — los alumnos demuestran el procedimiento completo bajo condiciones de evaluación, sin indicaciones ni asistencia"
+              },
+              "feedback": {
+                "a": "La exploración es para familiarizarse con entornos nuevos. Estos alumnos ya conocen el espacio — necesitan demostrar que pueden actuar de forma independiente. Eso es evaluación, no exploración.",
+                "b": "Más práctica podría ayudar, pero el objetivo del instructor es confirmar competencia. En algún punto, la práctica debe transicionar a evaluación. Tres sesiones son preparación suficiente para una verificación de habilidades.",
+                "c": "Exacto. Después de suficiente práctica, la Evaluación / Verificación confirma que los alumnos pueden actuar de forma independiente bajo condiciones realistas. Esta es la fase de 'demuéstralo' — sin pistas, sin guía, solo rendimiento."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada actividad VR: ¿es Exploración Guiada o Simulación con Práctica?",
+              "cat": {
+                "exploration": "Exploración Guiada",
+                "simulation": "Simulación con Práctica"
+              },
+              "i1": "Los alumnos recorren un servicio de urgencias virtual e identifican posibles riesgos de seguridad",
+              "i2": "Los alumnos practican administrar una inyección a un paciente virtual con retroalimentación en tiempo real",
+              "i3": "Los alumnos realizan un procedimiento de evacuación de incendios, guiando a ocupantes virtuales a las salidas correctas",
+              "i4": "Los alumnos exploran un yacimiento arqueológico virtual y listan los artefactos que encuentran",
+              "i5": "Los alumnos ensamblan un motor virtual siguiendo la secuencia correcta de mantenimiento"
+            }
+          }
+        }
+      },
+      "classroomImplementation": {
+        "b1": {
+          "title": "Preparación del espacio",
+          "exercise": {
+            "instruction": "Coloca los elementos del aula en las zonas correctas para una sesión VR segura",
+            "items": {
+              "teacher": "Profesor/a",
+              "vrStation1": "Estación VR 1",
+              "vrStation2": "Estación VR 2",
+              "observation": "Área de observación",
+              "storage": "Mesa de almacenamiento",
+              "screen": "Pantalla de transmisión"
+            },
+            "zones": {
+              "front": "Frente del aula",
+              "vrZone": "Zona activa VR",
+              "sideZone": "Zona lateral / apoyo"
+            }
+          },
+          "scenario": {
+            "context": "Tu escuela te asigna un aula mediana con ventanas grandes en una pared y filas de escritorios fijos. Debes realizar una sesión VR para 12 estudiantes la próxima semana.",
+            "question": "¿Qué es lo PRIMERO que debes abordar en este aula?",
+            "choices": {
+              "a": "Instalar cortinas opacas en todas las ventanas para evitar problemas de tracking",
+              "b": "Mover los escritorios contra las paredes para crear estaciones VR con piso despejado, luego ocuparse de la iluminación",
+              "c": "Pedir un aula más grande — esta probablemente no es adecuada para VR"
+            },
+            "feedback": {
+              "a": "Las cortinas pueden ayudar, pero no son la primera prioridad. No puedes usar VR sin espacio libre en el piso — los estudiantes tropezarán con escritorios y mochilas. Primero la distribución física, luego ajusta la iluminación.",
+              "b": "Exacto. La prioridad número uno es un piso despejado y seguro. Escritorios, mochilas y sillas se convierten en obstáculos invisibles una vez que los headsets se ponen. Despeja el espacio, marca las zonas VR, y luego ajusta persianas e iluminación.",
+              "c": "La mayoría de las aulas pueden funcionar para VR con algo de reorganización. Antes de pedir otra aula, intenta despejar el espacio existente — te sorprenderá lo bien que funciona con solo mover el mobiliario contra las paredes."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Durante una prueba, notas que el tracking del headset tiembla cerca de las ventanas con luz solar directa de la tarde.",
+              "question": "¿Qué deberías hacer?",
+              "choices": {
+                "a": "Mover todas las estaciones VR a la pared opuesta a las ventanas",
+                "b": "Cerrar todas las persianas y apagar las luces del aula por completo",
+                "c": "Ignorarlo — el headset se ajustará automáticamente"
+              },
+              "feedback": {
+                "a": "Buena decisión. Reposicionar las estaciones VR lejos de la luz solar directa soluciona el problema de tracking manteniendo el aula suficientemente iluminada para supervisar. También puedes cerrar solo las persianas del lado soleado.",
+                "b": "Cerrar las persianas del lado soleado ayuda, pero apagar todas las luces deja el aula demasiado oscura para supervisar con seguridad. Necesitas suficiente luz ambiental para ver a los estudiantes, recorrer el aula y gestionar la sesión.",
+                "c": "El headset no se ajustará — las cámaras de tracking son sensibles a la luz solar directa y pueden producir temblores o perder el tracking por completo. Y peor aún, la luz solar directa a través de los lentes puede dañar permanentemente la pantalla."
+              }
+            },
+            "c2": {
+              "context": "Un colega camina por tu zona VR durante la preparación y tropieza con una mochila que un estudiante dejó en el piso.",
+              "question": "¿Qué te dice esto sobre la preparación de tu aula?",
+              "choices": {
+                "a": "Las mochilas deberían guardarse en los escritorios de los estudiantes",
+                "b": "La zona VR debe estar claramente marcada y el piso completamente despejado de objetos sueltos antes de cualquier sesión",
+                "c": "El colega debería haber tenido más cuidado al caminar por el área"
+              },
+              "feedback": {
+                "a": "Guardar mochilas en los escritorios es una solución, pero el problema real es que la zona VR no estaba despejada ni marcada. Cualquier objeto suelto en el piso es un peligro de tropiezo — especialmente para estudiantes que no pueden ver el piso con VR puesto.",
+                "b": "Exacto. Una zona VR debe estar visiblemente marcada (cinta, conos) y completamente libre de obstáculos. Si un adulto que puede ver tropieza con una mochila, un estudiante con headset absolutamente tropezará también — y no puede verlo venir.",
+                "c": "Si un adulto con visión tropieza, un estudiante con headset VR tiene cero probabilidad de evitar el mismo obstáculo. El problema es la preparación del aula, no la persona que caminó por ella."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿Qué elementos del aula son esenciales para una sesión VR y cuáles son opcionales?",
+              "cat": {
+                "essential": "Esencial",
+                "optional": "Opcional"
+              },
+              "i1": "Espacio libre en el piso (2x2m por estación)",
+              "i2": "Alfombra o colchonetas en el suelo",
+              "i3": "Línea de visión del instructor a todas las estaciones",
+              "i4": "Altavoz Bluetooth para música de fondo",
+              "i5": "Mesa de almacenamiento cerca de la salida para dispositivos"
+            }
+          }
+        },
+        "b2": {
+          "title": "Briefing para estudiantes",
+          "exercise": {
+            "instruction": "Ordena los pasos del briefing en el orden correcto",
+            "scaleStart": "Primero",
+            "scaleEnd": "Último",
+            "i1": "Establecer las reglas y expectativas de seguridad",
+            "i2": "Anunciar los grupos y asignar roles",
+            "i3": "Explicar la tarea de aprendizaje y los criterios de éxito",
+            "i4": "Establecer el tiempo límite y el calendario de rotación",
+            "i5": "Distribuir los headsets y comenzar"
+          },
+          "scenario": {
+            "context": "Estás a punto de realizar tu primera sesión VR. Los estudiantes están emocionados y ya están alcanzando los headsets de la mesa. Algunos se los están poniendo sin esperar.",
+            "question": "¿Qué deberías hacer?",
+            "choices": {
+              "a": "Dejar que los estudiantes entusiastas comiencen — su energía es valiosa y no hay que frenarla",
+              "b": "Hacer que todos se sienten, dar el briefing completo (reglas, grupos, roles, tarea), y LUEGO distribuir los headsets",
+              "c": "Dar un resumen muy rápido de 30 segundos y luego repartir los headsets para ahorrar tiempo"
+            },
+            "feedback": {
+              "a": "El entusiasmo es genial, pero los estudiantes que empiezan sin briefing no conocen las reglas, la tarea ni su rol. Esto lleva a tiempo de VR desperdiciado, problemas de seguridad y estudiantes haciendo lo que quieran en vez de la actividad de aprendizaje.",
+              "b": "Correcto. Nada de headsets hasta que el briefing se complete. Los estudiantes necesitan conocer las reglas, su grupo, su rol, la tarea y el tiempo límite antes de tocar cualquier dispositivo. Dos minutos de estructura previenen quince minutos de caos.",
+              "c": "Un resumen de 30 segundos no es suficiente. Los estudiantes necesitan escuchar las reglas, saber su grupo, entender su rol y conocer la tarea específica. Apresurar el briefing significa pasar toda la sesión VR gestionando confusión."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Asignas roles: usuario VR, observador, facilitador. Un estudiante se queja: 'No quiero ser observador — quiero usar VR.'",
+              "question": "¿Cómo manejas esto?",
+              "choices": {
+                "a": "Explica que todos rotarán por todos los roles, y que las notas del observador se usarán en la discusión del debriefing — su contribución importa",
+                "b": "Dejar que ese estudiante use VR primero para evitar conflicto y mantener la energía de la clase",
+                "c": "Eliminar el sistema de roles por completo ya que a los estudiantes no les gusta"
+              },
+              "feedback": {
+                "a": "Respuesta perfecta. Cuando los estudiantes entienden que cada rol rota Y que cada rol contribuye al aprendizaje (las notas del observador alimentan el debriefing), las quejas disminuyen significativamente. La clave es hacer que cada rol se sienta con propósito.",
+                "b": "Ceder establece un precedente de que quejarse te consigue lo que quieres. Otros estudiantes lo notarán. El sistema de rotación es justo — todos obtienen el mismo tiempo de VR. Mantén la posición y explica por qué importa.",
+                "c": "Los roles existen porque mantienen ocupados y aprendiendo a los estudiantes sin VR. Sin roles, los estudiantes esperando su turno no tienen nada que hacer, lo que lleva al aburrimiento y problemas de comportamiento. El sistema funciona — solo necesita explicación."
+              }
+            },
+            "c2": {
+              "context": "Durante el briefing, un estudiante pregunta: '¿Qué pasa si me mareo en VR?'",
+              "question": "¿Cuál es la mejor respuesta?",
+              "choices": {
+                "a": "Decirle al estudiante que no se preocupe — el mareo es muy raro y probablemente no pasará",
+                "b": "Explicar claramente: quítate el headset despacio, siéntate, avisa al instructor. Es normal, no hay nada de qué avergonzarse, y te revisarán.",
+                "c": "Decir que lo resolverán si ocurre — no hay que preocuparse ahora"
+              },
+              "feedback": {
+                "a": "Desestimar la preocupación no prepara al estudiante. El mareo por movimiento sí ocurre, especialmente con usuarios primerizos. Si pasa y el estudiante no sabe qué hacer, puede entrar en pánico o sufrir en silencio en vez de pedir ayuda.",
+                "b": "Excelente. Instrucciones claras y calmadas antes de que empiece VR significan que los estudiantes saben exactamente qué hacer si se sienten mal. Normalizarlo ('no hay nada de qué avergonzarse') también previene que los estudiantes oculten su malestar para no parecer débiles.",
+                "c": "Dejarlo al azar significa que el estudiante no tiene plan si le pasa durante VR. Podría mantener el headset puesto pese a sentirse mal, o entrar en pánico. Una explicación de 15 segundos ahora previene un problema después."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "El briefing debe hacerse ANTES de que los estudiantes toquen los headsets",
+                "explanation": "Correcto. Una vez que los headsets están puestos, los estudiantes no pueden verte ni oírte efectivamente. Todas las instrucciones, reglas, asignaciones de grupo y explicaciones de tarea deben suceder antes de distribuir cualquier dispositivo."
+              },
+              "s2": {
+                "statement": "Asignar roles (usuario VR, observador, facilitador) desperdicia tiempo valioso de clase",
+                "explanation": "Falso. Los roles mantienen a TODOS los estudiantes ocupados, no solo a quienes llevan headsets. Los observadores toman notas para el debriefing, los facilitadores asisten con la configuración — cada rol contribuye al aprendizaje. Sin roles, los estudiantes sin VR no tienen nada que hacer."
+              },
+              "s3": {
+                "statement": "Los estudiantes deben conocer la tarea específica de aprendizaje antes de ponerse el headset",
+                "explanation": "Correcto. Si los estudiantes no saben qué deben hacer en VR, explorarán aleatoriamente en vez de completar la actividad de aprendizaje. Establece la tarea y los criterios de éxito durante el briefing."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "Preparación de dispositivos",
+          "exercise": {
+            "instruction": "Clasifica cada tarea de preparación según cuándo debe realizarse",
+            "cat": {
+              "weekly": "Semanal",
+              "nightBefore": "Noche anterior",
+              "justBefore": "Justo antes de clase"
+            },
+            "i1": "Limpieza profunda de todos los protectores faciales y correas",
+            "i2": "Cargar todos los headsets al 100%",
+            "i3": "Verificar que la app objetivo esté instalada y actualizada",
+            "i4": "Comprobar que los niveles de batería estén sobre 80%",
+            "i5": "Probar los límites Guardian en cada estación",
+            "i6": "Inventariar controles y verificar daños",
+            "i7": "Confirmar las credenciales WiFi en cada dispositivo",
+            "i8": "Alinear los headsets numerados en la mesa de almacenamiento"
+          },
+          "scenario": {
+            "context": "Llegas a la escuela 30 minutos antes de tu clase de VR. Abres el armario de almacenamiento y descubres que 2 de tus 4 headsets no se cargaron durante la noche — están al 15% de batería.",
+            "question": "¿Qué haces?",
+            "choices": {
+              "a": "Cancelar la actividad VR y dar una clase de respaldo",
+              "b": "Conectar los 2 headsets descargados, comenzar con los 2 funcionales y ajustar los grupos de rotación. Agregar los otros cuando tengan suficiente carga.",
+              "c": "Realizar la sesión de todos modos — el 15% debería durar lo suficiente para una rotación"
+            },
+            "feedback": {
+              "a": "Cancelar es una reacción exagerada. Aún tienes 2 headsets funcionales, suficiente para una rotación con grupos ajustados. La adaptabilidad es una habilidad clave del docente VR — trabaja con lo que tienes.",
+              "b": "Perfecto. Comienza la sesión con tus 2 headsets cargados y conecta los descargados. Ajusta de 3 a 2 grupos de rotación temporalmente. Cuando los que están cargando lleguen al 50–60%, agrégalos a la rotación. No se pierde tiempo de VR.",
+              "c": "El 15% de batería no durará una rotación completa. Un Quest 3 al 15% podría apagarse durante la sesión, interrumpiendo la experiencia del estudiante y desperdiciando su tiempo de VR. Conéctalos y usa los funcionales primero."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Los estudiantes siguen mezclando los controles entre headsets. Los controles emparejados con el headset equivocado causan problemas de conexión y retrasos.",
+              "question": "¿Cuál es la mejor estrategia de prevención?",
+              "choices": {
+                "a": "Etiquetar cada headset y sus controles con números o cinta de colores coincidentes, y guardar cada set en su propio contenedor etiquetado",
+                "b": "Dejar que los estudiantes lo resuelvan solos — aprenderán qué control va con qué headset",
+                "c": "Usar solo un headset a la vez para que no haya confusión"
+              },
+              "feedback": {
+                "a": "Esta es la mejor práctica estándar. Sets numerados o con código de colores (headset #1 = cinta roja, controles #1 = cinta roja) toman minutos para configurar y eliminan la confusión de emparejamiento permanentemente. Guardarlos juntos previene la mezcla.",
+                "b": "Los estudiantes no saben qué control se empareja con qué headset — el emparejamiento es invisible. Agarrarán lo que esté más cerca, causando fallos de conexión y desperdiciando 5–10 minutos por sesión. Las etiquetas resuelven esto al instante.",
+                "c": "Usar un headset a la vez significa que 24 de 25 estudiantes están sin hacer nada. El objetivo de tener múltiples headsets es maximizar el tiempo de VR. Las etiquetas y la organización te permiten usar todos simultáneamente."
+              }
+            },
+            "c2": {
+              "context": "Tienes 4 headsets listos en la mesa. 12 estudiantes están sentados después del briefing. Es hora de distribuir.",
+              "question": "¿Cuál es el método de distribución más eficiente?",
+              "choices": {
+                "a": "Dejar que los estudiantes se acerquen a la mesa y agarren un headset",
+                "b": "Hacer que los estudiantes levanten la mano y distribuir aleatoriamente",
+                "c": "Llamar al primer grupo de rotación por nombre, entregar a cada estudiante su headset numerado, confirmar el ajuste y luego comenzar"
+              },
+              "feedback": {
+                "a": "Dejar que los estudiantes agarren headsets crea una avalancha hacia la mesa, discusiones sobre quién se lleva qué dispositivo y caos. Controla la distribución — toma 60 segundos y previene 5 minutos de desorden.",
+                "b": "La distribución aleatoria ignora tus grupos planificados y dificulta el seguimiento. Si el headset #3 va a un estudiante aleatorio, no puedes encontrarlo después si hay un problema. Sigue el plan de grupos.",
+                "c": "Exactamente correcto. Llamar a los grupos por nombre mantiene el orden. Entregar a cada estudiante su headset numerado mantiene el emparejamiento correcto. Confirmar el ajuste (correas, IPD) antes de decir 'adelante' previene interrupciones durante la sesión."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Debes instalar y probar cada app en cada headset el día ANTERIOR a la clase, no durante la clase",
+                "explanation": "Correcto. Las descargas y actualizaciones de apps pueden tomar 10–30 minutos y requieren WiFi estable. Descubrir que falta una app durante la clase desperdicia el tiempo de VR de todos. Prueba todo la noche anterior."
+              },
+              "s2": {
+                "statement": "Si un headset está al 50% de batería, está bien para una clase completa de 50 minutos",
+                "explanation": "Falso. Un Quest 3 al 50% tiene aproximadamente 1 hora de uso activo. Con la transmisión, WiFi y múltiples rotaciones, el 50% podría no alcanzar para toda la sesión. Siempre comienza al 80% o más."
+              },
+              "s3": {
+                "statement": "Numerar los headsets y emparejar los controles con etiquetas de colores previene problemas de emparejamiento durante la clase",
+                "explanation": "Correcto. Los sets con código de colores o numerados eliminan el principal desperdicio de tiempo en las aulas VR: estudiantes agarrando los controles equivocados. Un sticker en cada dispositivo toma 2 minutos de configurar y ahorra cientos de minutos durante el año."
+              }
+            }
+          }
+        },
+        "b4": {
+          "title": "Durante la sesión",
+          "exercise": {
+            "instruction": "Navega las decisiones que enfrentas durante una sesión VR en vivo",
+            "scenario": "Llevas 5 minutos en una rotación VR. Cuatro estudiantes tienen headsets puestos, cuatro observan la pantalla de transmisión y cuatro están en la estación complementaria.",
+            "n1": {
+              "prompt": "Notas que un estudiante con VR dejó de hacer la tarea asignada y está explorando libremente el entorno virtual.",
+              "a": {
+                "label": "Acércate y redirige en voz baja: 'Recuerda, tu tarea es encontrar los tres riesgos de seguridad. Te quedan 6 minutos.'",
+                "feedback": "Buena elección. Una redirección verbal calmada y específica mantiene al estudiante en la tarea sin asustarlo ni interrumpir a los demás. Nombrar la tarea y el tiempo restante le da una dirección clara."
+              },
+              "b": {
+                "label": "Retirar el headset inmediatamente — está desperdiciando tiempo de VR",
+                "feedback": "Retirar un headset abruptamente es sobresaltante y vergonzoso. Solo debe usarse para emergencias de seguridad. Para comportamiento fuera de tarea, una redirección verbal es más efectiva y respetuosa."
+              },
+              "c": {
+                "label": "Ignorarlo — eventualmente volverá a la tarea",
+                "feedback": "Probablemente no lo hará. Sin redirección, el estudiante pasará toda la rotación explorando y perderá la actividad de aprendizaje. Una indicación verbal breve toma 5 segundos y salva toda la rotación."
+              }
+            },
+            "n2": {
+              "prompt": "Una observadora levanta la mano: 'La pantalla de transmisión se puso negra. No podemos ver lo que hacen los estudiantes con VR.'",
+              "a": {
+                "label": "Decir a los observadores que esperen — arreglarás la transmisión cuando termine la rotación",
+                "feedback": "Dejar a los observadores sin nada que ver durante el resto de la rotación desperdicia su tiempo de aprendizaje. La transmisión es su ventana a la experiencia VR. Una solución rápida ahora mantiene a todos productivos."
+              },
+              "b": {
+                "label": "Pedir a la observadora que verifique la conexión WiFi del dispositivo de transmisión mientras tú sigues circulando",
+                "feedback": "Excelente delegación. Que una observadora solucione la transmisión (verificar WiFi, reiniciar la transmisión) empodera a los estudiantes y te deja libre para monitorear a los estudiantes con VR. Si no funciona, puedes intervenir después de tu ronda."
+              },
+              "c": {
+                "label": "Detener toda la sesión para que todos solucionen la transmisión juntos",
+                "feedback": "Detener VR por un problema de transmisión interrumpe a los estudiantes en medio de la tarea. La pérdida de transmisión es inconveniente pero no es un problema de seguridad. Mantén a los estudiantes con VR activos mientras resuelves la transmisión por separado."
+              }
+            },
+            "n3": {
+              "prompt": "Resumen de la sesión",
+              "endFeedback": "La gestión efectiva de sesiones significa redirigir con amabilidad, delegar arreglos menores y mantener la sesión en movimiento. No necesitas resolver cada problema tú mismo — y nunca debes sacar a un estudiante de VR a menos que la seguridad esté en riesgo."
+            }
+          },
+          "scenario": {
+            "context": "Durante una sesión VR en vivo, un estudiante con VR grita: 'Esto es aburrido, ya terminé.' Mientras tanto, notas que otro estudiante con VR ha salido de su zona marcada con cinta y se acerca a un escritorio.",
+            "question": "¿Cuál es tu prioridad?",
+            "choices": {
+              "a": "Atender al estudiante que terminó antes — el aburrimiento lleva al mal comportamiento",
+              "b": "Atender al estudiante fuera de su zona — la seguridad física siempre es la máxima prioridad",
+              "c": "Pausar toda la sesión y re-explicar las reglas de los límites a todos"
+            },
+            "feedback": {
+              "a": "El aburrimiento es una preocupación pedagógica, pero el estudiante fuera de su zona es un riesgo de seguridad física. No puede ver el escritorio al que se acerca. La seguridad siempre va antes que la pedagogía — redirige primero al estudiante del límite, luego dale una nueva tarea al que terminó antes.",
+              "b": "Exactamente. Un estudiante fuera de su zona marcada mientras lleva headset es un riesgo de colisión — no puede ver obstáculos. Acércate con calma, usa su nombre y guíalo de vuelta. El que terminó antes puede esperar 30 segundos; el estudiante del límite no.",
+              "c": "Detener todo penaliza a los estudiantes que están en su tarea y en sus zonas. Aborda el problema del límite individualmente, luego al que terminó antes. Una pausa total solo se necesita para problemas de seguridad que afecten a toda la clase."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Tienes 4 headsets activos pero tu configuración de transmisión solo puede mostrar la vista de un headset a la vez en el proyector.",
+              "question": "¿A qué estudiante deberías transmitir?",
+              "choices": {
+                "a": "Transmitir al estudiante que más dificultades tiene — puedes guiarlo desde fuera",
+                "b": "Rotar la transmisión cada 3–4 minutos entre diferentes estudiantes para que los observadores vean enfoques variados",
+                "c": "Transmitir al mejor estudiante para modelar la forma correcta de completar la tarea"
+              },
+              "feedback": {
+                "a": "Guiar a un estudiante con dificultades a través de la transmisión puede funcionar, pero los observadores aprenden más viendo enfoques variados. Si solo un estudiante se transmite todo el tiempo, los observadores ven una sola perspectiva. Rotar los mantiene atentos y muestra diferentes estrategias.",
+                "b": "Rotar la transmisión da a los observadores múltiples perspectivas — ven diferentes estrategias, diferentes errores y diferentes ritmos. Esto crea material más rico para la discusión del debriefing y mantiene a los observadores observando activamente en vez de desconectarse.",
+                "c": "Mostrar solo al mejor estudiante significa que los observadores ven una sola manera 'correcta'. Se pierden el aprendizaje que viene de ver errores, diferentes estrategias y ritmos variados. La variedad es más educativa que la perfección."
+              }
+            },
+            "c2": {
+              "context": "Mientras recorres el aula durante una sesión VR, notas que un estudiante sigue reiniciando el escenario desde el principio en vez de progresar.",
+              "question": "¿Qué deberías anotar para el debriefing?",
+              "choices": {
+                "a": "Anotarlo como comportamiento fuera de tarea para abordarlo en privado después de clase",
+                "b": "Anotar el punto específico donde reinicia — esto probablemente indica una instrucción confusa o un elemento de interfaz poco claro. Discútelo en el debriefing para ayudar a toda la clase.",
+                "c": "No anotar nada — es problema del estudiante resolverlo solo"
+              },
+              "feedback": {
+                "a": "Reiniciar no es necesariamente estar fuera de tarea — el estudiante podría estar confundido sobre qué hacer después. Tratarlo como mal comportamiento pierde la oportunidad de identificar y corregir un punto de confusión común que otros estudiantes podrían compartir.",
+                "b": "Exacto. Los reinicios repetidos usualmente señalan un malentendido — instrucciones poco claras, una interfaz confusa o un paso que el estudiante no puede descifrar. Anotar el punto exacto de reinicio te permite abordarlo en el debriefing, ayudando a todos los que podrían encontrar el mismo obstáculo.",
+                "c": "Las notas de observación son una de las herramientas más importantes del instructor. Si un estudiante está atascado, eso es información que necesitas para el debriefing. Ignorarlo significa perder una oportunidad de enseñanza."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada responsabilidad como del estudiante o del instructor durante una sesión VR en vivo",
+              "cat": {
+                "student": "Estudiante",
+                "instructor": "Instructor"
+              },
+              "i1": "Permanecer dentro de la zona marcada con cinta",
+              "i2": "Transmitir al menos un headset a la pantalla compartida",
+              "i3": "Mantener las correas de muñeca puestas en todo momento",
+              "i4": "Tomar notas de observación sobre comportamientos de aprendizaje",
+              "i5": "Levantar la mano si se siente mareado o con malestar"
+            }
+          }
+        },
+        "b5": {
+          "title": "Rotación y gestión del tiempo",
+          "exercise": {
+            "instruction": "Distribuye 50 minutos entre las fases de una clase VR con 4 headsets y 12 estudiantes (3 grupos)",
+            "scenario": "Tienes una clase de 50 minutos, 4 headsets VR y 12 estudiantes. Planifica tiempo para briefing, 3 rotaciones, transiciones entre ellas y un cierre.",
+            "res": {
+              "briefing": "Briefing",
+              "rotation1": "Rotación 1",
+              "rotation2": "Rotación 2",
+              "rotation3": "Rotación 3",
+              "transitions": "Transiciones (total)",
+              "wrapUp": "Cierre y apagado"
+            }
+          },
+          "scenario": {
+            "context": "Tienes 6 headsets VR pero 24 estudiantes en clase. El período es de 50 minutos. Un colega sugiere hacer 4 grupos de 6 estudiantes, con cada grupo recibiendo 12 minutos de tiempo VR.",
+            "question": "¿Cuál es el problema principal de este enfoque?",
+            "choices": {
+              "a": "12 minutos de VR por rotación es demasiado — los estudiantes perderán la concentración",
+              "b": "4 rotaciones x 12 min = 48 min — sin tiempo para briefing, transiciones ni cierre. Debes planificar los 50 minutos completos, no solo el tiempo de VR.",
+              "c": "6 headsets a la vez son demasiados para que un profesor supervise con seguridad"
+            },
+            "feedback": {
+              "a": "12 minutos está dentro del rango recomendado de 10–15 minutos. El problema no es la duración — es que las cuentas ignoran todo el tiempo fuera de VR. El briefing, las transiciones y el cierre también necesitan minutos.",
+              "b": "Exacto. Los principiantes planifican el tiempo de VR y olvidan todo lo demás. Un plan realista: 4 min briefing + 4 x 10 min rotaciones + 3 x 2 min transiciones = 50 min exactos. O reduce a 3 rotaciones con 2 grupos combinados. Siempre planifica el período completo.",
+              "c": "6 headsets son manejables para un profesor con experiencia, especialmente con la pantalla de transmisión. El problema real son las cuentas — no hay espacio para briefing ni cierre en el plan."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Durante una rotación de 3 estaciones (VR / observación / complementaria), los estudiantes en la estación complementaria terminan su hoja de trabajo en 3 minutos y no tienen nada que hacer durante los 7 minutos restantes.",
+              "question": "¿Cómo solucionas esto?",
+              "choices": {
+                "a": "Diseñar una actividad complementaria más sustancial: tarea de investigación, preguntas de discusión o preparación para su turno de VR",
+                "b": "Acortar la rotación para que la estación complementaria termine al mismo tiempo que las demás",
+                "c": "Eliminar la estación complementaria — los estudiantes pueden simplemente esperar su turno de VR"
+              },
+              "feedback": {
+                "a": "Perfecto. La estación complementaria debe ser tan atractiva como la estación VR. Una tarea de investigación ('Encuentra tres ejemplos de cómo este concepto se aplica en la vida real'), tarjetas de discusión o preparar preguntas de observación para la siguiente rotación mantiene a los estudiantes productivos todo el tiempo.",
+                "b": "Acortar la rotación penaliza a los estudiantes de VR y observación que necesitan el tiempo completo. La solución es una mejor actividad complementaria, no menos tiempo para todos los demás.",
+                "c": "Estudiantes sin nada que hacer durante 10 minutos se volverán disruptivos. Cada estación necesita una actividad con propósito. La estación complementaria no es relleno — es donde los estudiantes procesan y se preparan para su turno de VR."
+              }
+            },
+            "c2": {
+              "context": "Es la primera sesión VR de tus estudiantes. Planificaste 3 rotaciones de 10 minutos cada una con una app de simulación compleja.",
+              "question": "¿Es un buen plan para una primera sesión?",
+              "choices": {
+                "a": "Es demasiado agresivo — planifica tiempo extra para ajustar headsets, tutorial del Guardian y orientación. Usa una app simple y considera solo 2 rotaciones.",
+                "b": "Está bien — los estudiantes lo resolverán sobre la marcha y la emoción los llevará",
+                "c": "Agregar más rotaciones para que cada estudiante tenga más tiempo de VR en su primer día"
+              },
+              "feedback": {
+                "a": "Correcto. Las primeras sesiones necesitan tiempo extra para todo: ajustar correas, explicar controles, configurar los límites Guardian y manejar la emoción. Usa la app más simple posible (un recorrido 360°, no una simulación) y espera perder tiempo en logística. Dos rotaciones de 8 minutos es más realista.",
+                "b": "La emoción crea caos, no aprendizaje. Los primerizos necesitan tiempo para ajustar el headset, aprender los controles y sentirse cómodos. Saltar a una simulación compleja sin esta base significa que los estudiantes pasarán el tiempo de VR confundidos en vez de aprendiendo.",
+                "c": "Más rotaciones en el primer día significa más transiciones, más retrasos de ajuste de headsets y más agobio. Mantén la simpleza: rotaciones cortas, app simple, enfoque en la comodidad. Guarda las actividades complejas para la segunda sesión."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Una rotación de 3 estaciones (VR, observación, complementaria) mantiene a todos los estudiantes ocupados incluso con headsets limitados",
+                "explanation": "Correcto. La rotación por estaciones significa que cada estudiante tiene una tarea con propósito en todo momento — no solo los que llevan headsets. Los observadores aprenden de la transmisión, los de la estación complementaria preparan o reflexionan. Nadie está sin hacer nada."
+              },
+              "s2": {
+                "statement": "Las transiciones entre rotaciones no necesitan planificarse — los estudiantes cambiarán rápidamente por su cuenta",
+                "explanation": "Falso. Las transiciones no planificadas desperdician 3–5 minutos por cambio mientras los estudiantes discuten, manipulan headsets y pierden el enfoque. Planifica transiciones de 2 minutos con señales claras (temporizador, campana) y roles asignados para el traspaso de headsets."
+              },
+              "s3": {
+                "statement": "La rutina de cierre (headsets apagados, limpieza, carga) debe incluirse en el plan de 50 minutos, no tratarse como algo secundario",
+                "explanation": "Correcto. Si no planificas 3–5 minutos para el cierre, la clase termina con headsets dispersos, protectores faciales sin desinfectar y baterías descargándose durante la noche. Una rutina consistente protege tu equipo y prepara la siguiente sesión."
+              }
+            }
+          }
+        }
+      },
+      "safetyWellbeingAccessibility": {
+        "b1": {
+          "title": "Seguridad Física y Espacio",
+          "exercise": {
+            "instruction": "Relaciona cada tipo de actividad VR o función de seguridad con su descripción correcta",
+            "p1": { "term": "RV sentado (solo controladores)", "def": "1 × 1 metro mínimo" },
+            "p2": { "term": "RV de pie (girar, inclinarse)", "def": "2 × 2 metros mínimo" },
+            "p3": { "term": "RV a escala de habitación (caminar, agacharse)", "def": "3 × 3 metros mínimo" },
+            "p4": { "term": "Cámaras de límite", "def": "Se activan cuando el usuario sale del área de juego" }
+          },
+          "scenario": {
+            "context": "El laboratorio de ciencias de tu escuela tiene un área abierta de 4×6m en el centro, pero los escritorios rodean las paredes y hay mochilas en el suelo. Necesitas realizar una actividad de RV a escala de habitación mañana.",
+            "question": "¿Cuál es tu primera prioridad?",
+            "choices": {
+              "a": "Calcular cuántos estudiantes pueden usar RV a la vez según el requisito de 3×3m por estación",
+              "b": "Retirar todos los obstáculos del suelo, marcar los límites con cinta y luego determinar cuántas estaciones caben de forma segura",
+              "c": "Cambiar a una experiencia sentado — el aula es demasiado pequeña para escala de habitación"
+            },
+            "feedback": {
+              "a": "Calcular estaciones es importante, pero la primera prioridad es despejar el espacio físico. Las mochilas y objetos sueltos son peligros invisibles para estudiantes con visores puestos — primero despeja, luego mide.",
+              "b": "Exacto. El primer paso es despejar el espacio físico de obstáculos. Mochilas, cables y objetos sueltos son peligros de tropiezo para usuarios de RV que no pueden ver el suelo. Una vez despejado y marcado, puedes determinar el número de estaciones.",
+              "c": "Un área de 4×6m puede acomodar cómodamente una estación de 3×3m para escala de habitación. No optes por experiencias menos inmersivas cuando el espacio funciona — solo despéjalo y márcalo correctamente."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un estudiante en RV camina hacia la pared. La cuadrícula del Guardian aparece, pero el estudiante la ignora y sigue avanzando.",
+              "question": "¿Qué debería haberse configurado de manera diferente?",
+              "choices": {
+                "a": "Los límites del Guardian deberían ajustarse más cerca para que la cuadrícula aparezca antes, dando más distancia de advertencia desde las paredes",
+                "b": "El Guardian solo no es suficiente — el instructor debería estar observando y dar una advertencia verbal antes de que el estudiante llegue a cualquier pared",
+                "c": "La sala debería tener almohadillas de espuma en todas las paredes para prevenir lesiones"
+              },
+              "feedback": {
+                "a": "Buena idea. Ajustar los límites del Guardian a una distancia cómoda de las paredes da más tiempo de reacción. Combinado con la supervisión del instructor, esto crea una doble capa de seguridad.",
+                "b": "Depender solo del tiempo de reacción del instructor es arriesgado. El sistema Guardian proporciona una advertencia visual automática antes de que el estudiante llegue al borde. Ajustarlo más cerca da más margen. Lo mejor combina ambos: Guardian más ajustado + supervisión activa.",
+                "c": "El almohadillado de paredes aborda el síntoma, no la causa. La solución real es una configuración adecuada del Guardian y supervisión del instructor para evitar que los estudiantes lleguen a las paredes."
+              }
+            },
+            "c2": {
+              "context": "Solo tienes un área de 3×2 metros disponible para RV en tu aula.",
+              "question": "¿Qué tipo de experiencia deberías elegir?",
+              "choices": {
+                "a": "Escala de habitación — los estudiantes aún pueden moverse si tienen cuidado",
+                "b": "De pie o sentado — ambas caben de forma segura en este espacio",
+                "c": "Cancelar la RV — este espacio es demasiado pequeño para cualquier actividad de RV"
+              },
+              "feedback": {
+                "a": "La escala de habitación requiere 3×3m mínimo. Un área de 3×2m no cumple este requisito, y 'tener cuidado' no es una estrategia de seguridad. Los estudiantes en RV no pueden ver el mundo real — necesitan espacio suficiente.",
+                "b": "Correcto. RV de pie necesita 2×2m y sentado necesita 1×1m — ambas caben en 3×2m. Adaptar la experiencia al espacio disponible es una decisión clave de seguridad.",
+                "c": "Un área de 3×2m es suficiente para experiencias de RV de pie (2×2m) y sentado (1×1m). No canceles la RV cuando el espacio funciona para otros tipos de actividad."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿A qué categoría de espacio pertenece cada configuración de RV?",
+              "cat": {
+                "seated": "Sentado (1×1m)",
+                "standing": "De pie (2×2m)",
+                "roomscale": "Escala de habitación (3×3m)"
+              },
+              "i1": "Solo controladores, el usuario permanece en una silla",
+              "i2": "Caminar, agacharse y estirarse libremente",
+              "i3": "Girar e inclinarse en el sitio, sin caminar"
+            }
+          }
+        },
+        "b2": {
+          "title": "Supervisión y Límites",
+          "exercise": {
+            "instruction": "Etiqueta cada afirmación como Hecho o Mito sobre la supervisión en RV",
+            "s1": {
+              "statement": "Está bien salir brevemente si los estudiantes son usuarios experimentados de RV",
+              "explanation": "Mito. Nunca dejes a los usuarios de RV sin supervisión, sin importar su nivel de experiencia. Los accidentes ocurren sin aviso — un usuario experimentado también puede tropezar, marearse o chocar con alguien."
+            },
+            "s2": {
+              "statement": "Debes configurar el sistema Guardian en cada visor antes de cada sesión",
+              "explanation": "Hecho. El sistema de límites Guardian es una capa de seguridad crítica. Debe configurarse en cada visor antes de que cualquier estudiante se lo ponga, en cada sesión."
+            },
+            "s3": {
+              "statement": "Un instructor puede supervisar de forma segura hasta 30 estudiantes en RV simultáneamente",
+              "explanation": "Mito. Solo puedes supervisar de forma segura el número de usuarios de RV a los que puedas mantener línea de visión directa. Con 30 estudiantes, solo un grupo pequeño debería estar en RV mientras otros observan o hacen tareas complementarias."
+            },
+            "s4": {
+              "statement": "Los estudiantes que no están en RV pueden observar mediante transmisión de pantalla mientras esperan su turno",
+              "explanation": "Hecho. La transmisión de pantalla permite a los estudiantes sin RV ver lo que experimentan los usuarios de RV. Esto los mantiene involucrados, apoya el aprendizaje basado en observación y reduce el tiempo de espera."
+            },
+            "s5": {
+              "statement": "El sistema Guardian hace innecesaria la supervisión del instructor",
+              "explanation": "Mito. El Guardian es una advertencia de límites automatizada, no un sustituto de la supervisión humana. No puede detectar obstáculos que se mueven (como otros estudiantes), responder al mareo o gestionar la logística de la sesión."
+            }
+          },
+          "scenario": {
+            "context": "Tienes 20 estudiantes y 5 visores de RV. Un colega sugiere que los 5 estudiantes pueden estar en RV simultáneamente mientras supervisas desde tu escritorio al frente.",
+            "question": "¿Cuál es tu principal preocupación?",
+            "choices": {
+              "a": "Cinco estudiantes a la vez está bien — el sistema Guardian los mantendrá seguros",
+              "b": "Solo si puedes mantener línea de visión directa a las 5 estaciones desde donde estás posicionado — reorganiza si es necesario",
+              "c": "Deberías tener solo 1 estudiante en RV a la vez para estar completamente seguro"
+            },
+            "feedback": {
+              "a": "El sistema Guardian es útil pero no reemplaza la supervisión. No puede detectar obstáculos móviles, responder a estudiantes que se sienten mal o gestionar la logística de la sesión. Aún necesitas línea de visión.",
+              "b": "Correcto. La pregunta clave es si puedes ver a todos los usuarios activos de RV desde tu posición. Si tu escritorio no te da línea de visión a cada estación, muévete a una posición central o reduce el número de usuarios simultáneos.",
+              "c": "Uno a la vez es extremadamente seguro pero impracticable — con 20 estudiantes y 50 minutos, cada uno tendría solo 2,5 minutos de RV. Supervisar 3–5 usuarios simultáneamente es realista si tienes líneas de visión claras."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Durante una sesión de RV, un colega te llama desde el pasillo pidiendo una conversación rápida. Tres estudiantes llevan visores puestos actualmente.",
+              "question": "¿Qué haces?",
+              "choices": {
+                "a": "Quédate en el aula — no puedes dejar a los usuarios de RV sin supervisión, ni siquiera brevemente. Pide al colega que espere o que venga a ti.",
+                "b": "Sal rápido — solo tomará un minuto y los estudiantes están en medio de su actividad",
+                "c": "Pide a un estudiante que no está en RV que vigile a los tres usuarios de RV mientras sales"
+              },
+              "feedback": {
+                "a": "Correcto. La regla es absoluta: nunca dejes a los usuarios de RV sin supervisión. Si el colega te necesita, puede entrar al aula o esperar hasta que termine la sesión.",
+                "b": "Incluso 'solo un minuto' es demasiado tiempo. En ese tiempo, un estudiante podría caminar hacia una pared, sentir mareo y caer, o chocar con otro estudiante. Si debes salir, los visores se quitan primero.",
+                "c": "Un estudiante sin entrenamiento no es un sustituto de la supervisión del instructor. No sabe cómo manejar alertas del Guardian, mareos o colisiones. Quédate en el aula."
+              }
+            },
+            "c2": {
+              "context": "Notas que un estudiante ha desactivado el límite Guardian porque la cuadrícula superpuesta le distrae durante la experiencia de RV.",
+              "question": "¿Qué haces?",
+              "choices": {
+                "a": "Déjalo continuar — si la cuadrícula distrae, podría interferir con la experiencia de aprendizaje",
+                "b": "Aumenta la iluminación del aula para poder supervisar mejor sin el Guardian",
+                "c": "Reactiva el Guardian inmediatamente — es una función de seguridad innegociable, incluso si es brevemente visible durante la experiencia"
+              },
+              "feedback": {
+                "a": "El Guardian no es opcional. Sin él, el estudiante no tiene advertencia antes de caminar hacia paredes, muebles u otras personas. Una cuadrícula visual breve es una molestia menor comparada con una colisión.",
+                "b": "La iluminación del aula te ayuda a ver a los estudiantes, pero no ayuda al estudiante dentro de la RV a ver el mundo real. Solo el sistema de límites Guardian proporciona esa advertencia.",
+                "c": "Correcto. El sistema Guardian es innegociable. Es la única advertencia automatizada del estudiante de que se está acercando a un límite físico. Explica por qué importa y ajusta la sensibilidad si la cuadrícula aparece con demasiada frecuencia."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "El instructor debe mantener línea de visión directa a todos los usuarios de RV durante toda la sesión",
+                "explanation": "Verdadero. Esta es la regla de supervisión más importante. Si no puedes ver a un usuario de RV, no puedes responder a problemas de seguridad."
+              },
+              "s2": {
+                "statement": "Los usuarios experimentados de RV pueden dejarse sin supervisión por períodos cortos",
+                "explanation": "Falso. La experiencia no previene mareos, tropiezos ni incidentes inesperados. La regla de no-RV-sin-supervisión se aplica a todos los usuarios, siempre."
+              },
+              "s3": {
+                "statement": "Si eres el único instructor, debes limitar el número de estudiantes en RV al mismo tiempo",
+                "explanation": "Verdadero. Un instructor solo puede supervisar de forma segura un número limitado de usuarios activos de RV. Los demás estudiantes deben observar mediante transmisión, hacer tareas complementarias o esperar su rotación."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "Mareo y Respuesta",
+          "exercise": {
+            "instruction": "Ordena los cinco pasos del protocolo de respuesta ante desorientación en el orden correcto",
+            "scaleStart": "Primer paso",
+            "scaleEnd": "Último paso",
+            "i1": "Pedir al estudiante que detenga todo movimiento",
+            "i2": "Ayudar a retirar el visor con cuidado",
+            "i3": "Guiarlo a sentarse",
+            "i4": "Permitir tiempo de recuperación — dejarlo descansar tranquilamente",
+            "i5": "No apresurarlo a volver a la RV en esta sesión"
+          },
+          "scenario": {
+            "context": "Un estudiante se quita el visor a mitad de sesión y dice 'me siento raro'. Su cara está pálida e inestable sobre sus pies.",
+            "question": "¿Qué haces primero?",
+            "choices": {
+              "a": "Decirle que se siente de nuevo e intente otra vez en 5 minutos — generalmente pasa rápido",
+              "b": "Guiarlo a sentarse inmediatamente, ofrecerle agua, dejarlo descansar y no presionarlo para volver a la RV en esta sesión",
+              "c": "Enviarlo a la enfermería inmediatamente — podría tener una condición seria"
+            },
+            "feedback": {
+              "a": "Nunca le digas a un estudiante que experimenta malestar en RV que 'intente otra vez'. Forzar la situación empeora los síntomas. El estudiante necesita sentarse, descansar y saltarse la RV por el resto de la sesión.",
+              "b": "Correcto. La prioridad es sentarlo de forma segura y dejarlo recuperarse. La desorientación típicamente pasa en minutos. Agua, descanso, voz tranquila — y absolutamente ninguna presión para volver a la RV durante esta sesión.",
+              "c": "La mayoría de desorientación por RV es leve y se resuelve en minutos con descanso. Enviarlo a enfermería inmediatamente es una reacción exagerada a menos que los síntomas persistan más de 10 minutos o incluyan vómitos o dolor de cabeza severo."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Estás eligiendo entre dos apps de RV para una sesión de clase. La App A implica volar por una ciudad a alta velocidad. La App B permite a los estudiantes caminar a su propio ritmo por un museo virtual.",
+              "question": "¿Cuál es mejor para prevenir el mareo?",
+              "choices": {
+                "a": "La App A — la emoción distraerá a los estudiantes de cualquier malestar",
+                "b": "La App B — el movimiento a ritmo propio sin locomoción forzada tiene mucha menos probabilidad de causar cibermareo",
+                "c": "Ninguna — el mareo en RV es puramente aleatorio y no puede prevenirse con la elección de app"
+              },
+              "feedback": {
+                "a": "La emoción no previene el cibermareo — el movimiento rápido forzado es uno de sus principales desencadenantes. Las simulaciones de vuelo y montañas rusas están entre los peores provocadores de mareo.",
+                "b": "Correcto. El movimiento a ritmo propio donde el estudiante controla su propia locomoción tiene mucha menos probabilidad de causar cibermareo. Evita apps con movimiento forzado (vuelo, montañas rusas, vehículos rápidos) especialmente para principiantes.",
+                "c": "La elección de app importa significativamente. El movimiento forzado a alta velocidad es un desencadenante conocido de cibermareo. Las experiencias a ritmo propio, a velocidad de caminata con locomoción controlada por el usuario reducen dramáticamente el riesgo."
+              }
+            },
+            "c2": {
+              "context": "Un estudiante terminó su sesión de RV hace 5 minutos pero aún se siente mareado y ligeramente nauseoso.",
+              "question": "¿Qué haces?",
+              "choices": {
+                "a": "Dejarlo seguir descansando — la mayoría de síntomas se resuelven en unos minutos más. Si persiste pasados 10 minutos, debe dejar la RV por el resto del día.",
+                "b": "Ponerlo de nuevo en RV con una app más tranquila — a veces la reexposición ayuda al cerebro a adaptarse",
+                "c": "Ignorarlo — probablemente solo se levantó demasiado rápido después de estar sentado en RV"
+              },
+              "feedback": {
+                "a": "Correcto. Cinco minutos de síntomas persistentes está dentro del rango normal. Déjalo descansar, ofrece agua y monitorea. Si los síntomas no mejoran después de 10 minutos en total, la RV se acabó por el día. Nunca apresures la recuperación.",
+                "b": "Nunca reexpongas a un estudiante sintomático a la RV. Volver a entrar en RV mientras aún está mareado empeorará significativamente los síntomas. El estudiante necesita recuperación completa antes de cualquier consideración de regreso — y no en esta sesión.",
+                "c": "Desestimar los síntomas de un estudiante es inseguro y socava la confianza. El mareo después de RV es un fenómeno reconocido (cibermareo) que requiere descanso, no desdén."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿Es una estrategia de prevención o una acción de respuesta?",
+              "cat": {
+                "prevention": "Prevención",
+                "response": "Respuesta"
+              },
+              "i1": "Mantener las sesiones de RV entre 5–15 minutos",
+              "i2": "Ayudar a retirar el visor con cuidado",
+              "i3": "Evitar apps con movimiento forzado a alta velocidad",
+              "i4": "Guiar al estudiante a sentarse y descansar",
+              "i5": "Ofrecer modo sentado cuando la app lo permita"
+            }
+          }
+        },
+        "b4": {
+          "title": "Higiene y Cuidado del Equipo",
+          "exercise": {
+            "instruction": "Clasifica cada tarea de limpieza en la categoría correcta",
+            "cat": {
+              "between": "Entre estudiantes (~60s)",
+              "endOfDay": "Final del día (~5min)",
+              "never": "Nunca hacer"
+            },
+            "i1": "Limpiar almohadilla facial con toallita desinfectante sin alcohol",
+            "i2": "Retirar y lavar la almohadilla facial desmontable a fondo",
+            "i3": "Limpiar lentes con toallas de papel",
+            "i4": "Limpiar empuñaduras y botones de controladores",
+            "i5": "Inspeccionar lentes y limpiar con paño de microfibra (movimientos circulares)",
+            "i6": "Usar limpiador a base de alcohol en la almohadilla facial de espuma",
+            "i7": "Permitir 30 segundos de secado al aire antes del siguiente usuario",
+            "i8": "Guardar visores en lugar limpio y seco con lentes orientados lejos de la luz"
+          },
+          "scenario": {
+            "context": "Entre rotaciones, un estudiante te entrega un visor con sudor visible en la almohadilla facial. El siguiente estudiante está esperando.",
+            "question": "¿Qué haces?",
+            "choices": {
+              "a": "Limpiarlo rápidamente con tu manga y entregarlo — la velocidad es importante durante las rotaciones",
+              "b": "Usar una toallita desinfectante sin alcohol en la almohadilla facial y empuñaduras de controladores, dejar secar brevemente al aire y entregarlo al siguiente estudiante",
+              "c": "Saltar este visor y usar uno diferente en su lugar"
+            },
+            "feedback": {
+              "a": "La ropa puede albergar bacterias y no desinfecta. Usar tu manga es antihigiénico para el siguiente usuario y no trata el sudor correctamente. Siempre usa productos de limpieza adecuados.",
+              "b": "Correcto. Una limpieza de 60 segundos con los productos adecuados es todo lo que se necesita. Desinfectante sin alcohol para la almohadilla facial y empuñaduras de controladores, breve secado al aire, y el visor está listo. Esto protege tanto el equipo como a los estudiantes.",
+              "c": "Tener un repuesto está bien, pero la evasión no resuelve el problema — el visor sudado aún necesita limpieza antes de que alguien más lo use. Integra el paso de limpieza en cada traspaso de rotación."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un colega sugiere usar toallas de papel para limpiar rápidamente las huellas de los lentes del visor de RV entre usuarios.",
+              "question": "¿Por qué esto es un problema?",
+              "choices": {
+                "a": "Las toallas de papel son demasiado lentas — hay métodos más rápidos",
+                "b": "Las toallas de papel son abrasivas y pueden rayar los recubrimientos especiales de los lentes de RV. Solo se debe usar un paño de microfibra seco, con movimientos circulares suaves.",
+                "c": "Las toallas de papel dejan demasiada humedad en los lentes"
+              },
+              "feedback": {
+                "a": "La velocidad no es el problema — el daño a los lentes sí. Las toallas de papel tienen fibras de madera que rayan los delicados recubrimientos antirreflejantes y anti-manchas de los lentes de RV.",
+                "b": "Correcto. Los lentes de RV tienen recubrimientos especializados que se dañan fácilmente con materiales abrasivos. Las toallas de papel, pañuelos y ropa pueden causar micro-rayones. Solo un paño de microfibra seco debe tocar los lentes.",
+                "c": "La humedad no es la preocupación principal — el daño físico sí. Las fibras de las toallas de papel son lo suficientemente abrasivas para rayar los recubrimientos de los lentes de forma permanente. La herramienta correcta es siempre un paño de microfibra seco."
+              }
+            },
+            "c2": {
+              "context": "Al final del día, necesitas guardar 6 visores de RV hasta la sesión de la próxima semana.",
+              "question": "¿Cuál es el procedimiento correcto?",
+              "choices": {
+                "a": "Apilarlos en una caja y ponerla en el armario de almacenamiento",
+                "b": "Hacer una limpieza profunda completa (almohadillas faciales, carcasa, controladores, lentes) y luego guardar cada visor en un lugar limpio y seco con los lentes orientados lejos de cualquier fuente de luz",
+                "c": "Dejarlos en la mesa conectados para cargar — estarán listos para la próxima semana"
+              },
+              "feedback": {
+                "a": "Apilar puede dañar lentes y correas. Saltarse la limpieza profunda significa que el sudor y bacterias permanecen en el equipo durante una semana. Ambos reducen la vida útil del equipo y la higiene.",
+                "b": "Correcto. La rutina de fin de día es: limpiar todo a fondo, inspeccionar lentes y guardar correctamente. Los lentes orientados lejos de la luz previenen daño solar a través de ventanas. Un lugar limpio y seco previene moho en la almohadilla de espuma.",
+                "c": "Dejar los visores en una mesa arriesga daño accidental y exposición solar en los lentes. Cargarlos está bien, pero también necesitan limpieza profunda y almacenamiento adecuado."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Los limpiadores a base de alcohol son la mejor opción para las almohadillas faciales de visores de RV",
+                "explanation": "Falso. El alcohol daña los materiales de espuma y puede causar irritación en la piel. Usa toallitas desinfectantes sin alcohol específicamente adecuadas para equipos de RV."
+              },
+              "s2": {
+                "statement": "La rutina de limpieza entre estudiantes debería tomar aproximadamente 60 segundos",
+                "explanation": "Verdadero. Una limpieza rápida de la almohadilla facial, empuñaduras de controladores y un breve secado al aire es todo lo que se necesita entre usuarios. Es lo suficientemente rápido para encajar en las transiciones de rotación."
+              },
+              "s3": {
+                "statement": "Los lentes del visor de RV solo deben limpiarse con un paño de microfibra seco usando movimientos circulares suaves",
+                "explanation": "Verdadero. Los lentes de RV tienen recubrimientos delicados que se rayan fácilmente con toallas de papel, pañuelos o ropa. Solo el paño de microfibra preserva la calidad del lente."
+              }
+            }
+          }
+        },
+        "b5": {
+          "title": "Accesibilidad e Inclusión",
+          "exercise": {
+            "instruction": "Navega este escenario: un estudiante te dice que no quiere usar RV hoy",
+            "scenario": "Un estudiante reservado se acerca antes de la sesión de RV y dice que prefiere no ponerse el visor hoy. No da una razón.",
+            "n1": {
+              "prompt": "El estudiante te ha dicho que no quiere usar RV. ¿Qué haces?",
+              "a": { "label": "Respetar su decisión y ofrecer inmediatamente un rol alternativo", "feedback": "Excelente. La participación siempre es voluntaria. Al respetar el límite sin cuestionarlo y ofrecer una alternativa, mantienes la confianza y mantienes al estudiante involucrado en el aprendizaje." },
+              "b": { "label": "Pedirle que lo intente solo 2 minutos para ver si le gusta", "feedback": "Presionar a un estudiante — incluso suavemente — después de que ha comunicado un límite socava la confianza. Si dijo que no, respétalo. Puede haber una razón que no quiere compartir." },
+              "c": { "label": "Decirle que es parte de la calificación y necesita participar", "feedback": "La participación en RV nunca debería ser obligatoria. Obligar a los estudiantes a usar RV puede crear ansiedad, empeorar condiciones existentes o dañar la confianza. Siempre ten un camino sin RV hacia el mismo objetivo de aprendizaje." }
+            },
+            "n2": {
+              "prompt": "Le has ofrecido al estudiante un rol de observador activo. ¿Qué tarea le asignas?",
+              "a": { "label": "Decirle que simplemente mire la pantalla de transmisión en silencio", "feedback": "Mirar sin estructura es pasivo — el estudiante se desconectará rápidamente. La observación sin tarea no es aprendizaje activo; es solo sentarse al margen." },
+              "b": { "label": "Darle una lista de verificación: anotar lo que el usuario de RV hace en cada paso, identificar un error y preparar retroalimentación para el debate", "feedback": "Perfecto. Una tarea de observación estructurada hace que el rol de observador sea genuinamente educativo. El estudiante se involucra con el contenido, desarrolla pensamiento crítico y contribuye a la discusión de clase." },
+              "c": { "label": "Pedirle que tome fotos de la pantalla de transmisión para el diario de clase", "feedback": "Esto le da una tarea, pero es logística más que educativa. El estudiante captura imágenes pero no se involucra con el contenido de aprendizaje. Una lista de verificación de observación estructurada sería más valiosa." }
+            },
+            "n3": {
+              "prompt": "El observador completa su tarea estructurada y está listo para el debate.",
+              "endFeedback": "Bien manejado. El estudiante participó de forma significativa sin usar un visor: observó, analizó y preparó retroalimentación. Durante el debate, su perspectiva como observador externo a menudo añade ideas que los usuarios de RV pasaron por alto. No llevar un visor no significa no aprender."
+            }
+          },
+          "scenario": {
+            "context": "Tres estudiantes en tu clase no pueden usar RV hoy — uno tiene dolor de cabeza, otro es propenso al cibermareo y el tercero simplemente no quiere. Los tres están fuera.",
+            "question": "¿Cómo manejas esto?",
+            "choices": {
+              "a": "Excusar a los tres de la actividad y dejarlos hacer estudio independiente en sus escritorios",
+              "b": "Respetar la situación de cada estudiante, asignarles roles alternativos significativos (observador, líder de discusión, analista) y asegurar que participen en el debate",
+              "c": "Intentar convencer al estudiante reticente — los otros dos tienen razones válidas, pero este estudiante debería al menos intentar"
+            },
+            "feedback": {
+              "a": "El estudio independiente es exclusión disfrazada de flexibilidad. Los estudiantes pierden completamente el aprendizaje relacionado con RV. Roles alternativos como observador, analista o líder de discusión los mantienen conectados a los mismos objetivos de aprendizaje.",
+              "b": "Correcto. La razón de cada estudiante es válida — no necesitas clasificarlas. Asigna roles significativos que se relacionen con el mismo contenido: observador activo, tomador de notas para el debate o líder de discusión. Los tres deben contribuir durante el debate junto con los usuarios de RV.",
+              "c": "No te corresponde decidir qué razones para rechazar la RV son 'suficientemente válidas'. La participación siempre es voluntaria, sin excepciones. Respeta los tres límites por igual y ofrece la misma calidad de alternativa."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un padre envía un email diciendo que su hijo tiene epilepsia y no debería usar RV bajo ninguna circunstancia. La próxima sesión de RV es en dos días.",
+              "question": "¿Cómo respondes?",
+              "choices": {
+                "a": "Reconocer la preocupación, confirmar que el estudiante no usará RV y explicar el rol alternativo significativo que tendrá durante las sesiones de RV",
+                "b": "Pedir una nota médica para verificar la condición antes de hacer adaptaciones",
+                "c": "Sugerir que el estudiante se quede en casa los días de RV para evitar cualquier problema"
+              },
+              "feedback": {
+                "a": "Correcto. Reconoce, acomoda y comunica el plan. El padre necesita saber que su hijo seguirá participando en un aprendizaje significativo — solo a través de un camino diferente. No se necesita verificación médica; confía en el padre.",
+                "b": "Requerir pruebas médicas crea barreras innecesarias y señala desconfianza. El padre te ha informado de una condición médica — tu trabajo es acomodar, no verificar.",
+                "c": "Excluir a un estudiante de la escuela por una condición médica es discriminatorio. La RV es una herramienta, no la lección en sí. El estudiante puede lograr el mismo objetivo de aprendizaje a través de roles alternativos."
+              }
+            },
+            "c2": {
+              "context": "Después de una sesión de RV, un estudiante observador dice: 'No aprendí nada porque no pude usar RV. Todos los que usaron el visor tuvieron una experiencia mucho mejor.'",
+              "question": "¿Cómo respondes?",
+              "choices": {
+                "a": "Prometerle que definitivamente tendrá un turno de RV la próxima vez",
+                "b": "Preguntarle qué observó, qué notó que el usuario de RV hizo bien o mal, y resaltar cómo su perspectiva externa le da ideas que los usuarios de RV no tuvieron",
+                "c": "Reconocer que se perdió algo y ofrecerle quedarse después de clase para una sesión rápida de RV"
+              },
+              "feedback": {
+                "a": "Prometer un turno futuro no aborda el sentimiento actual e implica que la RV es la experiencia 'real' mientras la observación es menor. En cambio, valida el rol de observador en sí mismo.",
+                "b": "Correcto. Reenmarca la experiencia de observación como una fortaleza, no un déficit. Pregúntale qué observaciones específicas tiene: ¿qué vio que los usuarios de RV pasaron por alto? Su perspectiva externa a menudo capta cosas que la inmersión oculta. Esto valida el rol y construye su confianza.",
+                "c": "Esta respuesta bienintencionada refuerza la idea de que el rol de observador es un premio de consolación. En cambio, valida la observación como una experiencia de aprendizaje genuina con ventajas únicas."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿Esta actividad la realiza típicamente el usuario de RV o el observador activo?",
+              "cat": {
+                "vrUser": "Usuario de RV",
+                "observer": "Observador Activo"
+              },
+              "i1": "Realiza la simulación dentro del visor",
+              "i2": "Predice resultados antes de que el usuario de RV actúe",
+              "i3": "Toma notas estructuradas mediante la pantalla de transmisión",
+              "i4": "Interactúa con objetos virtuales usando controladores",
+              "i5": "Identifica errores que el usuario de RV no nota"
             }
           }
         }
@@ -1054,22 +2643,6 @@
           "explanation": "La VR sustituye la realidad por completo. El alumno se sitúa dentro de un entorno digital de 360° y no puede ver el aula física."
         },
         "q2": {
-          "question": "¿Cuál es el propósito educativo principal de usar VR en el aula?",
-          "a": "Entretener a los alumnos con gráficos impresionantes",
-          "b": "Sustituir al profesor durante parte de la clase",
-          "c": "Permitir el aprendizaje experiencial — los alumnos participan activamente en entornos simulados en vez de recibir información de forma pasiva",
-          "d": "Mantener a los alumnos en silencio y concentrados durante más tiempo",
-          "explanation": "El propósito educativo principal de la VR es el aprendizaje experiencial. Los alumnos participan activamente en entornos que serían difíciles, peligrosos o imposibles de acceder en la vida real."
-        },
-        "q3": {
-          "question": "Un alumno con las gafas VR puestas pregunta '¿Me podéis ver?' ¿Qué te dice esto sobre cómo funciona la VR?",
-          "a": "Las gafas están averiadas — los alumnos deberían poder ver a través de ellas",
-          "b": "La VR crea un entorno inmersivo de 360° que sustituye completamente el mundo físico — el alumno realmente no puede ver el aula ni a otras personas",
-          "c": "El alumno está confundido — la VR solo bloquea parte de la visión",
-          "d": "Esto solo pasa con gafas VR caras",
-          "explanation": "Así es exactamente como funciona la VR: sustituye el mundo real por completo. El alumno está dentro de un entorno digital y no puede ver el aula, por eso la supervisión del profesor es importante."
-        },
-        "q4": {
           "question": "Quieres que los alumnos practiquen un procedimiento de evacuación de emergencia sin peligro real. ¿Qué ventaja de la VR la convierte en la herramienta adecuada?",
           "a": "Las gafas VR son inalámbricas, así los alumnos se mueven libremente",
           "b": "La VR tiene mejores gráficos que un diagrama de libro de texto",
@@ -1077,7 +2650,7 @@
           "d": "La VR permite grabar la sesión para evaluar después",
           "explanation": "Una de las fortalezas clave de la VR es la repetición segura. Los alumnos pueden practicar procedimientos peligrosos o costosos múltiples veces sin consecuencias reales, ganando confianza y competencia."
         },
-        "q5": {
+        "q3": {
           "question": "Un compañero describe dos actividades: (1) Los alumnos usan tablets para ver etiquetas 3D aparecer sobre un modelo de esqueleto real que está en la mesa. (2) Los alumnos se ponen las gafas y exploran el interior de una célula humana como si caminaran por dentro. ¿Qué tecnologías se están usando?",
           "a": "Ambas son VR porque ambas usan contenido digital",
           "b": "La actividad 1 es AR (superposiciones digitales sobre el mundo real), la actividad 2 es VR (sustituye la realidad por un entorno digital)",
@@ -1085,45 +2658,21 @@
           "d": "Ambas son AR porque ambas usan contenido 3D",
           "explanation": "La AR añade contenido digital sobre el mundo real — los alumnos siguen viendo el esqueleto y el aula. La VR sustituye la realidad por completo — los alumnos están dentro de una célula digital y no pueden ver el aula. La pregunta clave: ¿el mundo real sigue visible?"
         },
-        "q6": {
-          "question": "Un alumno falla un simulacro de incendio en VR y quiere volver a intentarlo. ¿Cómo deberías responder?",
-          "a": "Decirle que solo tiene una oportunidad, igual que en la vida real",
-          "b": "Dejarle repetirlo — el entorno seguro de la VR significa que los errores no tienen consecuencias reales, y la repetición genera confianza y competencia",
-          "c": "Pasarlo a una actividad diferente más fácil",
-          "d": "Mostrarle un vídeo del procedimiento correcto en su lugar",
-          "explanation": "La repetición sin consecuencias es una ventaja central de la VR. Los alumnos pueden practicar tantas veces como necesiten hasta sentirse seguros, algo imposible con simulacros reales de emergencia."
-        },
-        "q7": {
-          "question": "Quieres que 20 alumnos identifiquen colaborativamente las partes de un motor de coche real mientras ven etiquetas digitales e instrucciones paso a paso superpuestas sobre el motor. ¿Qué tecnología encaja mejor con este objetivo de aprendizaje?",
-          "a": "VR — la inmersión total ayudará a los alumnos a concentrarse en las piezas del motor",
-          "b": "AR — los alumnos necesitan ver y tocar el motor real mientras se añade información digital encima",
-          "c": "Cualquiera de las dos funcionaría igual de bien para este escenario",
-          "d": "Ninguna — un manual impreso es más efectivo",
-          "explanation": "Este escenario requiere colaboración (alumnos trabajando juntos), objetos físicos (el motor real) e información anclada al contexto (etiquetas sobre piezas reales). Estos son exactamente los criterios que hacen que la AR sea más apropiada que la VR. La VR bloquearía la visión del motor real, haciendo imposible trabajar con él."
-        },
-        "q8": {
+        "q4": {
           "question": "Un compañero dice: 'Usé VR en mi clase de historia — los alumnos vieron un vídeo 360° de la Roma antigua durante 15 minutos.' ¿Cómo evaluarías este uso de la VR?",
           "a": "Excelente — los vídeos 360° son la mejor forma de usar VR en educación",
-          "b": "Es un punto de partida válido, pero el verdadero potencial de la VR está en que los alumnos hagan e interactúen, no solo en que miren pasivamente",
-          "c": "Fue una pérdida de tiempo — la VR solo debería usarse para ciencias",
+          "b": "Fue una pérdida de tiempo — la VR solo debería usarse para ciencias",
+          "c": "Es un punto de partida válido, pero el verdadero potencial de la VR está en que los alumnos hagan e interactúen, no solo en que miren pasivamente",
           "d": "Está bien siempre que todos los alumnos tuvieran sus propias gafas",
           "explanation": "Los casos de uso más potentes de VR implican hacer, no solo mirar. Un vídeo 360° es observación pasiva. La VR brilla cuando los alumnos interactúan, toman decisiones y practican procedimientos."
         },
-        "q9": {
+        "q5": {
           "question": "¿Cuál de estos es el ejemplo más fuerte de uso del potencial completo de la VR en educación?",
           "a": "Los alumnos ven un tour 360° de un museo",
-          "b": "Los alumnos realizan un experimento virtual de química — midiendo, mezclando y observando reacciones paso a paso",
-          "c": "Los alumnos ven una presentación de diapositivas dentro de unas gafas VR",
-          "d": "Los alumnos escuchan una clase grabada en un aula virtual",
+          "b": "Los alumnos ven una presentación de diapositivas dentro de unas gafas VR",
+          "c": "Los alumnos escuchan una clase grabada en un aula virtual",
+          "d": "Los alumnos realizan un experimento virtual de química — midiendo, mezclando y observando reacciones paso a paso",
           "explanation": "El potencial completo de la VR se alcanza cuando los alumnos hacen algo activamente — realizar experimentos, tomar decisiones, practicar procedimientos. La visualización pasiva no aprovecha las fortalezas únicas de la VR."
-        },
-        "q10": {
-          "question": "Un directivo del centro pregunta: '¿En qué ámbitos se usa ya la VR para formación?' ¿Qué respuesta representa mejor el estado actual?",
-          "a": "Solo en desarrollo de videojuegos y entretenimiento",
-          "b": "Salud, formación profesional, educación y entornos empresariales — desde práctica quirúrgica hasta excursiones virtuales y simulaciones de gestión de crisis",
-          "c": "Solo en universidades con grandes presupuestos tecnológicos",
-          "d": "Principalmente en apps de aprendizaje de idiomas",
-          "explanation": "La VR ya se usa en salud (formación quirúrgica, respuesta a emergencias), formación profesional (operación de equipos, protocolos de seguridad), educación (excursiones virtuales, laboratorios) y entornos empresariales (incorporación, gestión de crisis)."
         }
       },
       "gettingVrReady": {
@@ -1138,34 +2687,160 @@
         "q2": {
           "question": "El WiFi se cae durante una sesión VR. La mitad de la clase no ha tenido su turno. ¿Cuál es tu prioridad?",
           "a": "Cancelar el resto de la actividad VR y pasar a una lección alternativa",
-          "b": "Enviar a un alumno a la oficina de informática para arreglar el WiFi",
-          "c": "Cambiar a una app VR offline y reorganizar el horario de rotación",
+          "b": "Cambiar a una app VR offline y reorganizar el horario de rotación",
+          "c": "Enviar a un alumno a la oficina de informática para arreglar el WiFi",
           "d": "Esperar 15 minutos — el WiFi del colegio suele volver solo",
           "explanation": "La adaptabilidad es clave. Tener una app VR offline probada como respaldo significa que la caída del WiFi no acaba con la sesión. Reorganiza la rotación para mantener a todos los alumnos involucrados mientras se resuelve el problema de red."
         },
         "q3": {
           "question": "Un padre te escribe preocupado por la seguridad VR para su hijo. ¿Cuál es la mejor respuesta?",
           "a": "Responder que VR es perfectamente seguro y no hay de qué preocuparse",
-          "b": "Compartir las medidas de seguridad específicas que usas (límites de sesión, Guardian, supervisión) y ofrecer hablar más",
-          "c": "Reenviar el email al director para que lo gestione",
+          "b": "Reenviar el email al director para que lo gestione",
+          "c": "Compartir las medidas de seguridad específicas que usas (límites de sesión, Guardian, supervisión) y ofrecer hablar más",
           "d": "Eximir al niño de todas las actividades VR inmediatamente",
           "explanation": "La transparencia genera confianza. Compartir tus protocolos de seguridad específicos — límites de tiempo, Guardian, supervisión activa — demuestra profesionalismo e invita al diálogo en lugar de cerrar las preocupaciones."
         },
         "q4": {
           "question": "Faltan 30 minutos para clase. Solo 3 de tus 5 gafas se cargaron durante la noche. ¿Qué haces?",
           "a": "Cancelar la clase VR — necesitas las 5 gafas",
-          "b": "Intentar cargar rápido las 5 durante 30 minutos — debería ser suficiente",
-          "c": "Usar las 3 cargadas ahora, enchufar las otras 2 y rotarlas cuando tengan carga",
+          "b": "Usar las 3 cargadas ahora, enchufar las otras 2 y rotarlas cuando tengan carga",
+          "c": "Intentar cargar rápido las 5 durante 30 minutos — debería ser suficiente",
           "d": "Usar solo las 3 cargadas y no preocuparte por las otras 2",
           "explanation": "Empieza con lo que funciona. Un esquema de rotación con 3 gafas mientras las otras 2 cargan significa que cada alumno sigue teniendo tiempo en VR. Enchufar las descargadas les da batería suficiente para unirse a la rotación después."
         },
         "q5": {
           "question": "Un alumno se niega a ponerse las gafas VR y parece ansioso. ¿Qué haces?",
-          "a": "Insistir — necesita participar para obtener su nota",
-          "b": "Respetar su decisión y asignarle un rol alternativo como observador o controlador del casting",
+          "a": "Respetar su decisión y asignarle un rol alternativo como observador o controlador del casting",
+          "b": "Insistir — necesita participar para obtener su nota",
           "c": "Ponerle las gafas tú mismo para demostrar que no da miedo",
           "d": "Enviarlo al orientador del colegio",
           "explanation": "Respetar la decisión del alumno mientras le ofreces alternativas significativas mantiene su inclusión sin forzarlo. Los roles de observador, tomador de notas y controlador de casting contribuyen a la clase y reducen la ansiedad ante futuras sesiones."
+        }
+      },
+      "designingMeaningfulLearning": {
+        "q1": {
+          "question": "¿Cuál de los siguientes objetivos de aprendizaje es más adecuado para RV?",
+          "a": "Los alumnos memorizarán los nombres de todos los huesos del cuerpo humano",
+          "b": "Los alumnos comprenderán la importancia de la seguridad laboral",
+          "c": "Los alumnos realizarán el procedimiento correcto de bloqueo/etiquetado en una máquina industrial virtual, completando los seis pasos en el orden correcto",
+          "d": "Los alumnos leerán sobre la historia de las técnicas quirúrgicas",
+          "explanation": "La RV destaca cuando los alumnos HACEN algo — realizar procedimientos, tomar decisiones, practicar habilidades. El objetivo de bloqueo/etiquetado implica acción observable, contexto específico y criterios medibles."
+        },
+        "q2": {
+          "question": "Un colega escribe este objetivo de RV: 'Los alumnos aprenderán sobre seguridad contra incendios.' ¿Cuál es el problema principal?",
+          "a": "No menciona gafas VR",
+          "b": "'Aprender sobre' es pasivo e imposible de medir. Un buen objetivo de RV usa verbos de acción como 'realizar', 'demostrar' o 'ejecutar' e incluye un contexto específico y criterios de éxito.",
+          "c": "La seguridad contra incendios no es un buen tema para RV",
+          "d": "El objetivo es demasiado corto",
+          "explanation": "'Aprender sobre' no describe ninguna acción observable — no puedes ver ni medir 'aprender sobre' algo. Los objetivos de RV necesitan verbos de acción que describan lo que los alumnos HACEN, no lo que vagamente absorben."
+        },
+        "q3": {
+          "question": "Los alumnos pasan 15 minutos viendo un recorrido virtual 360° de la Estación Espacial Internacional. Un colega lo llama 'aprendizaje interactivo en RV'. ¿Estás de acuerdo?",
+          "a": "Sí — ponerse unas gafas y mirar alrededor es interactivo",
+          "b": "No — la RV no puede usarse para educación espacial",
+          "c": "Sí — cualquier experiencia VR es interactiva por definición",
+          "d": "No — ver un vídeo 360° es observación pasiva (ver). La RV interactiva significa que los alumnos toman decisiones, manipulan objetos o realizan tareas (hacer). Mirar alrededor no es lo mismo que interactuar.",
+          "explanation": "La observación pasiva (mirar, girar la cabeza) es 'ver'. El aprendizaje interactivo (tomar decisiones, realizar tareas, resolver problemas) es 'hacer'. El verdadero poder de la RV está en 'hacer' — participación activa, no visualización pasiva."
+        },
+        "q4": {
+          "question": "Un profesor realiza una sesión VR sin briefing previo. Los alumnos se ponen las gafas y exploran libremente durante 20 minutos, luego pasan a la siguiente asignatura. ¿Cuál es el problema más crítico?",
+          "a": "La sesión es demasiado larga",
+          "b": "La RV no debería usarse sin una app específica",
+          "c": "Sin briefing, los alumnos no saben en qué enfocarse. Sin reflexión posterior, la experiencia nunca se procesa como aprendizaje. La sesión carece de propósito y de reflexión.",
+          "d": "Los alumnos deberían explorar al menos 30 minutos",
+          "explanation": "La estructura de tres fases (briefing → experiencia → reflexión) es esencial. El briefing da propósito, la experiencia es la ventana de aprendizaje, y la reflexión transforma la experiencia en conocimiento. Saltarse briefing y reflexión convierte la RV en entretenimiento."
+        },
+        "q5": {
+          "question": "Los alumnos van a usar un laboratorio virtual de química por primera vez. Nunca han visto el entorno. ¿Qué tipo de actividad VR deberías usar primero?",
+          "a": "Exploración Guiada — dejar que recorran el laboratorio con una pregunta de enfoque ('Encontrad y nombrad los equipos de seguridad') antes de empezar experimentos",
+          "b": "Evaluación / Verificación — comprobar qué saben",
+          "c": "Ir directo a Simulación con Práctica — irán descubriendo la disposición sobre la marcha",
+          "d": "Mostrarles un vídeo del laboratorio en vez de usar RV",
+          "explanation": "Cuando los alumnos encuentran un entorno VR nuevo, la Exploración Guiada les ayuda a construir familiaridad espacial. Sin ella, pasan el tiempo de simulación perdidos y confundidos en vez de enfocados en la tarea de aprendizaje."
+        }
+      },
+      "classroomImplementation": {
+        "q1": {
+          "question": "Estás preparando un aula para VR. La sala tiene ventanas grandes orientadas al sur que la inundan de luz solar directa por la tarde. El tracking del headset falla constantemente cerca de las ventanas. ¿Cuál es el mejor enfoque?",
+          "a": "Cambiar a otra sala sin ventanas",
+          "b": "Apagar todas las luces para minimizar la interferencia con el tracking",
+          "c": "Cerrar las persianas del lado soleado, posicionar las estaciones VR lejos de las ventanas y mantener las luces del techo encendidas para poder supervisar",
+          "d": "Ignorar los problemas de tracking — los estudiantes no lo notarán durante la actividad",
+          "explanation": "La luz solar directa interfiere con el tracking y puede dañar permanentemente los lentes. La solución es reducir la luz solar donde están las estaciones VR manteniendo la sala suficientemente iluminada para la supervisión. La oscuridad total impide monitorear a los estudiantes con seguridad."
+        },
+        "q2": {
+          "question": "Los estudiantes llegan para una sesión VR. La mitad usó VR la semana pasada, pero la otra mitad es completamente nueva. ¿Deberías hacer un briefing completo?",
+          "a": "No — los estudiantes con experiencia ya conocen las reglas; solo haz el briefing a los nuevos por separado",
+          "b": "Sí — cada sesión necesita un briefing completo porque las reglas, roles, grupos y tarea de aprendizaje son específicos de cada sesión, incluso si los estudiantes ya han usado VR antes",
+          "c": "Solo si los nuevos hacen preguntas",
+          "d": "Omitir el briefing por completo para maximizar el tiempo de VR",
+          "explanation": "El briefing no es solo sobre la mecánica de VR — establece la tarea de aprendizaje, asigna roles y grupos, y fija las expectativas para ESTA sesión específica. Incluso los usuarios experimentados de VR necesitan saber qué van a hacer, con quién y por cuánto tiempo."
+        },
+        "q3": {
+          "question": "Durante tu revisión de dispositivos antes de clase, descubres que la app objetivo de un headset falló durante una actualización nocturna y no abre. La clase empieza en 20 minutos. ¿Qué haces?",
+          "a": "Desinstalar y reinstalar la app en ese headset — quizás termine a tiempo",
+          "b": "Forzar a todos los estudiantes a compartir los headsets restantes en parejas",
+          "c": "Apartar ese headset, reorganizar los grupos para usar los headsets restantes y solucionar el problema después de clase",
+          "d": "Cancelar la parte de VR de la lección por completo",
+          "explanation": "La adaptabilidad es una habilidad clave del docente VR. Un headset roto no debería arruinar la sesión. Ajusta los tamaños de grupo, procede con lo que funciona y soluciona el problema después de clase. Intentar una reinstalación arriesga empezar tarde con un dispositivo a medio funcionar."
+        },
+        "q4": {
+          "question": "Durante una sesión VR, ves por la pantalla de transmisión que un estudiante completó la tarea antes y ahora explora libremente. Mientras tanto, otro estudiante con headset está saliendo de su zona marcada hacia un escritorio. ¿Qué haces primero?",
+          "a": "Atender al que terminó antes — necesita una nueva tarea para mantenerse ocupado",
+          "b": "Atender al estudiante fuera de su zona — la seguridad física siempre tiene prioridad sobre las preocupaciones pedagógicas. Luego dar una tarea de extensión al que terminó antes.",
+          "c": "Pausar a todos y re-explicar las reglas de los límites a toda la clase",
+          "d": "Dejar que ambas situaciones se resuelvan solas — los estudiantes suelen autocorregirse",
+          "explanation": "La seguridad física siempre va primero. Un estudiante fuera de su zona con headset puesto no puede ver los obstáculos y podría chocar con mobiliario u otro estudiante. El que terminó antes no está en peligro — puede esperar 30 segundos. Siempre prioriza la seguridad sobre la pedagogía."
+        },
+        "q5": {
+          "question": "Tienes 4 headsets, 20 estudiantes y una clase de 50 minutos. Planificaste 5 grupos de 4 con rotaciones VR de 10 minutos. Después de que el briefing toma 5 minutos, te das cuenta de que no queda tiempo para transiciones ni cierre. ¿Cuál es la mejor adaptación?",
+          "a": "Omitir el cierre — simplemente recoger los headsets cuando suene el timbre",
+          "b": "Reducir cada rotación a 8 minutos, mantener transiciones de 2 minutos y un cierre de 3 minutos — cada estudiante aún obtiene tiempo de VR",
+          "c": "Reducir a 3 rotaciones y decirles a los otros 2 grupos que irán la próxima clase",
+          "d": "Extender la clase pidiendo al siguiente profesor 10 minutos extra",
+          "explanation": "La gestión flexible del tiempo es esencial. Reducir cada rotación 2 minutos mantiene a los 5 grupos ciclando por VR mientras preserva las transiciones y el cierre. Omitir el cierre desperdicia la oportunidad de reflexión; recortar grupos es injusto y rompe la confianza."
+        }
+      },
+      "safetyWellbeingAccessibility": {
+        "q1": {
+          "question": "Tienes un área abierta de 2,5 × 2,5 metros en tu aula. ¿Qué tipos de actividades de RV puedes realizar de forma segura en este espacio?",
+          "a": "Escala de habitación (caminar libremente) — el espacio es suficiente para un estudiante",
+          "b": "De pie (girar, inclinarse) y sentado (solo controladores) — ambas caben de forma segura en este espacio",
+          "c": "Solo sentado — la RV de pie requiere al menos 3 × 3 metros",
+          "d": "Ninguna — la RV requiere al menos 3 × 3 metros independientemente del tipo de actividad",
+          "explanation": "La RV de pie necesita 2×2m mínimo (tienes 2,5×2,5m), y sentado necesita solo 1×1m — ambas caben. La escala de habitación requiere 3×3m, que no cabe. Adaptar el tipo de actividad al espacio disponible es una decisión clave de seguridad."
+        },
+        "q2": {
+          "question": "Durante una sesión de RV, un colega te pide que salgas al pasillo para una conversación rápida. Tres estudiantes llevan visores puestos actualmente. ¿Qué haces?",
+          "a": "Ve — solo tomará un minuto y los estudiantes son usuarios experimentados",
+          "b": "Pide a los tres estudiantes que se quiten los visores primero, luego sal",
+          "c": "Rechaza o pide que esperen — no puedes dejar a los usuarios de RV sin supervisión, ni siquiera brevemente",
+          "d": "Pide a otro estudiante que vigile a los usuarios de RV mientras te vas",
+          "explanation": "La regla es absoluta: nunca dejes a los usuarios de RV sin supervisión, ni siquiera brevemente. Si debes salir, los visores se quitan primero. Un estudiante sin entrenamiento no es un sustituto de la supervisión del instructor."
+        },
+        "q3": {
+          "question": "Un estudiante usando RV dice que se siente mareado pero quiere seguir porque su turno casi termina. ¿Qué haces?",
+          "a": "Dejarlo terminar — dijo que quiere continuar y ya casi acaba",
+          "b": "Decirle que cierre los ojos dentro del visor hasta que pase el mareo",
+          "c": "Detener la sesión para ese estudiante inmediatamente — ayudar a retirar el visor, guiarlo a sentarse y no dejarlo volver a la RV en esta sesión",
+          "d": "Cambiarlo a una experiencia de RV diferente y menos intensa",
+          "explanation": "Los estudiantes nunca deben continuar cuando reportan malestar. Forzar la situación empeora los síntomas. La respuesta correcta siempre es: detener → retirar visor → sentar → descansar → no volver esta sesión."
+        },
+        "q4": {
+          "question": "Entre estudiantes, notas huellas en los lentes del visor de RV. ¿Qué deberías usar para limpiarlos?",
+          "a": "Toallas de papel con un poco de limpiacristales",
+          "b": "Un paño de microfibra seco, usando movimientos circulares suaves",
+          "c": "Una toallita desinfectante a base de alcohol — la misma que se usa para la almohadilla facial",
+          "d": "La manga de tu camisa — es más rápido y funciona bien para huellas",
+          "explanation": "Los lentes de RV tienen recubrimientos especiales que se dañan fácilmente con materiales abrasivos. Solo usa un paño de microfibra seco con movimientos circulares suaves. Las toallas de papel, el alcohol y la ropa pueden rayar o destruir el recubrimiento del lente de forma permanente."
+        },
+        "q5": {
+          "question": "Un estudiante te dice en privado que no quiere usar RV hoy. No da una razón. ¿Cuál es la respuesta correcta?",
+          "a": "Preguntarle por qué — necesitas entender la razón antes de decidir qué hacer",
+          "b": "Respetar su decisión sin requerir una razón e inmediatamente ofrecer una alternativa significativa como el rol de observador activo",
+          "c": "Decirle que la RV es una parte importante de la lección y debería al menos intentarlo unos minutos",
+          "d": "Dejarlo al margen completamente y que haga trabajo independiente en su escritorio",
+          "explanation": "La participación en RV siempre es voluntaria. Un estudiante no necesita justificar su rechazo — respeta el límite, ofrece una alternativa estructurada que logre el mismo objetivo de aprendizaje y sigue adelante. 'Quedarse al margen' sin alternativa es exclusión, no inclusión."
         }
       }
     },
@@ -1688,44 +3363,6 @@
           }
         }
       }
-    },
-    "xp": {
-      "label": "XP",
-      "totalXP": "XP Total",
-      "earnUpTo": "Gana hasta ~{amount} XP",
-      "gained": "+{amount} XP",
-      "levelUp": "¡Subiste de nivel!",
-      "youReached": "Alcanzaste",
-      "toNextLevel": "{current}/{needed} XP para el siguiente nivel",
-      "levels": {
-        "novice": "Novato VR",
-        "explorer": "Explorador VR",
-        "practitioner": "Practicante VR",
-        "champion": "Campeón VR",
-        "master": "Maestro VR"
-      }
-    },
-    "badges": {
-      "title": "Insignias",
-      "earned": "Insignias obtenidas",
-      "new": "NUEVA",
-      "available": "Insignias disponibles",
-      "emptyState": "¡Completa módulos para ganar insignias!",
-      "hardwareHero": { "name": "Héroe del Hardware", "description": "Completa el módulo Prepararse para VR" },
-      "sharpEye": { "name": "Ojo Agudo", "description": "Obtén 100% en cualquier quiz" },
-      "quickLearner": { "name": "Aprendizaje Rápido", "description": "Aprueba un quiz al primer intento" },
-      "explorer": { "name": "Explorador", "description": "Completa el tour interactivo del hardware" },
-      "missionMaster": { "name": "Maestro de Misiones", "description": "Elige la mejor opción en todos los escenarios" },
-      "xp100": { "name": "Estrella Naciente", "description": "Gana 100 XP" },
-      "xp300": { "name": "Aprendiz Dedicado", "description": "Gana 300 XP" },
-      "xp600": { "name": "Entusiasta VR", "description": "Gana 600 XP" },
-      "xp1000": { "name": "Leyenda VR", "description": "Gana 1000 XP" }
-    },
-    "celebrations": {
-      "quizPassed": "¡Aprobaste!",
-      "moduleComplete": "¡Módulo Completado!",
-      "badgeEarned": "¡Insignia Obtenida!",
-      "keepGoing": "¡Sigue así!"
     },
     "closing": {
       "title": "¿Listo para empezar tu camino en VR?",

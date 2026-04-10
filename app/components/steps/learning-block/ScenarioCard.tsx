@@ -26,7 +26,7 @@ export function ScenarioCard({
   const bestChoice = block.scenario.choices.find((c) => c.isCorrect) ?? block.scenario.choices[0];
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm animate-content-enter">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Scenario badge */}
       <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
         {t("learningBlocks.scenarioLabel")}
@@ -34,13 +34,13 @@ export function ScenarioCard({
 
       {/* Context */}
       <div className="rounded-xl border border-indigo-200 bg-indigo-50/40 p-5 mb-5">
-        <p className="text-base text-gray-900 leading-relaxed whitespace-pre-line">
+        <p className="text-sm sm:text-base text-gray-900 leading-relaxed whitespace-pre-line">
           {t(block.scenario.contextKey)}
         </p>
       </div>
 
       {/* Prompt */}
-      <p className="text-base font-semibold text-gray-900 mb-2">
+      <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">
         {t(block.scenario.questionKey)}
       </p>
       <p className="text-sm text-gray-500 mb-4">
@@ -58,7 +58,7 @@ export function ScenarioCard({
               <button
                 type="button"
                 onClick={() => handleReveal(choice.id)}
-                className={`w-full rounded-xl border-2 p-4 text-left transition-all duration-200 ${
+                className={`w-full rounded-xl border-2 p-4 text-left transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
                   isRevealed
                     ? `${style.border} ${style.bg}`
                     : "border-gray-200 hover:border-indigo-300 hover:shadow-md hover:-translate-y-0.5 cursor-pointer"
@@ -118,7 +118,7 @@ export function ScenarioCard({
           <button
             type="button"
             onClick={() => onChoiceMade(bestChoice)}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.continueToInsight")}
             <span aria-hidden>→</span>

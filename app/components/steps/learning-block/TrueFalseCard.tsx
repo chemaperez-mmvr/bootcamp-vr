@@ -43,15 +43,9 @@ export function TrueFalseCard({
   const handleNext = useCallback(() => {
     const nextIdx = currentIdx + 1;
     if (nextIdx >= total) {
-      // All statements done — pass only if all were correct.
-      // answeredCorrectly already includes this answer (setState batched before re-render).
-      // But to be safe, compute from feedback:
-      const totalCorrect = answeredCorrectly;
-      if (totalCorrect === total) {
-        onPass();
-      } else {
-        onFail();
-      }
+      // All statements done — always continue (user already saw per-statement feedback)
+      if (answeredCorrectly < total) onFail(); // track retry count
+      onPass();
     } else {
       setCurrentIdx(nextIdx);
       setFeedback(null);
@@ -61,7 +55,7 @@ export function TrueFalseCard({
   if (!statement) return null;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm animate-content-enter">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Badge + progress */}
       <div className="flex items-center justify-between mb-5">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold">
@@ -100,7 +94,7 @@ export function TrueFalseCard({
             <button
               type="button"
               onClick={() => handleAnswer(true)}
-              className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-green-200 bg-green-50/50 text-green-700 font-semibold text-base hover:border-green-400 hover:bg-green-100 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97]"
+              className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-green-200 bg-green-50/50 text-green-700 font-semibold text-sm sm:text-base hover:border-green-400 hover:bg-green-100 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               <IconCheck className="w-5 h-5" />
               {t("learningBlocks.trueFalseTrue")}
@@ -108,7 +102,7 @@ export function TrueFalseCard({
             <button
               type="button"
               onClick={() => handleAnswer(false)}
-              className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-red-200 bg-red-50/50 text-red-700 font-semibold text-base hover:border-red-400 hover:bg-red-100 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97]"
+              className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-red-200 bg-red-50/50 text-red-700 font-semibold text-sm sm:text-base hover:border-red-400 hover:bg-red-100 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               <IconClose className="w-5 h-5" />
               {t("learningBlocks.trueFalseFalse")}
@@ -157,7 +151,7 @@ export function TrueFalseCard({
               <button
                 type="button"
                 onClick={handleNext}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
               >
                 {currentIdx < total - 1
                   ? t("learningBlocks.continueToNext")

@@ -67,7 +67,7 @@ export function OrderingCard({
   const itemMap = new Map(exercise.items.map((i) => [i.id, i]));
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm animate-content-enter">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Badge */}
       <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold mb-4">
         {t("learningBlocks.orderingTitle")}
@@ -103,7 +103,7 @@ export function OrderingCard({
           const isCorrectChecked = checked && !isWrong;
 
           let classes =
-            "w-full p-4 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200";
+            "w-full p-4 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
 
           if (checked) {
             if (isCorrectChecked) {
@@ -160,7 +160,7 @@ export function OrderingCard({
           <button
             type="button"
             onClick={handleCheck}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.exerciseDone")}
             <span aria-hidden>→</span>
@@ -171,7 +171,7 @@ export function OrderingCard({
           <button
             type="button"
             onClick={handleReset}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-amber-800 bg-amber-100 rounded-xl hover:bg-amber-200 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-amber-800 bg-amber-100 rounded-xl hover:bg-amber-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.orderingReset")}
             <span aria-hidden>↩</span>
@@ -182,7 +182,7 @@ export function OrderingCard({
           <button
             type="button"
             onClick={onPass}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.exerciseDone")}
             <span aria-hidden>→</span>

@@ -182,27 +182,26 @@ export function ModuleQuizStep({
     const isTrueFalse = currentQuestion.type === "true-false";
 
     return (
-      <div className="space-y-4 animate-content-enter">
-        <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
+      <div className="space-y-6 animate-content-enter">
+        <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
           {progressBar}
 
           <div key={currentIndex} className="animate-content-enter">
-            {/* Judgment badge */}
             {isJudgment && (
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-medium tracking-wide mb-4">
                 {t("quizStep.judgmentScenario")}
               </div>
             )}
 
             {/* Question card */}
             <div
-              className={`rounded-xl border p-5 mb-5 ${
+              className={`rounded-lg border p-5 mb-5 ${
                 isJudgment
                   ? "border-indigo-200 bg-indigo-50/40"
                   : "border-gray-200 bg-gray-50/30"
               }`}
             >
-              <p className="text-base font-medium text-gray-900 leading-relaxed">
+              <p className="text-sm sm:text-base font-medium text-gray-900 leading-relaxed">
                 <span className="text-teal-600 font-bold mr-2">
                   {currentIndex + 1}.
                 </span>
@@ -224,7 +223,7 @@ export function ModuleQuizStep({
                   revealed && isSelected && option.id !== currentQuestion.correctOptionId;
 
                 let optionClasses =
-                  "flex items-center gap-3 p-4 rounded-xl border-2 text-sm font-medium transition-all duration-200";
+                  "flex items-center gap-3 p-4 rounded-lg border-2 text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
 
                 if (revealed) {
                   if (isOptionCorrect) {
@@ -282,9 +281,8 @@ export function ModuleQuizStep({
               })}
             </div>
 
-            {/* Explanation (shown after reveal) */}
             {revealed && currentQuestion.explanationKey && (
-              <div className="mt-4 rounded-xl bg-blue-50 border border-blue-200 p-4 animate-content-enter">
+              <div className="mt-4 rounded-lg bg-blue-50 border border-blue-200 p-4 animate-content-enter">
                 <p className="text-sm text-blue-800 leading-relaxed">
                   {t(currentQuestion.explanationKey)}
                 </p>
@@ -297,7 +295,7 @@ export function ModuleQuizStep({
                 <button
                   type="button"
                   onClick={handleNext}
-                  className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
                 >
                   {currentIndex < totalQuestions - 1
                     ? t("quizStep.nextQuestion")
@@ -363,9 +361,8 @@ function SummaryScreen({
   const displayPercent = useCountUp(result.percent, 1000);
 
   return (
-    <div className="space-y-4 animate-content-enter">
-      <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
-        {/* Progress bar at 100% */}
+    <div className="space-y-6 animate-content-enter">
+      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
         <div className="mb-6">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm font-semibold text-gray-700">
@@ -383,13 +380,12 @@ function SummaryScreen({
           </div>
         </div>
 
-        {/* Score hero */}
         <div
           key="summary"
           className="animate-content-enter text-center py-6"
         >
           <div
-            className={`text-7xl sm:text-8xl font-black tabular-nums mb-2 ${
+            className={`text-5xl sm:text-6xl font-black tabular-nums mb-2 ${
               result.passed ? "text-green-500" : "text-red-500"
             }`}
             aria-label={`${displayPercent}% — ${result.passed ? t("quizStep.passTitle") : t("quizStep.failTitle")}`}
@@ -397,7 +393,7 @@ function SummaryScreen({
             {displayPercent}%
           </div>
           <p
-            className={`text-xl font-bold mb-1 ${
+            className={`text-xl sm:text-2xl font-bold mb-1 ${
               result.passed ? "text-green-700" : "text-red-700"
             }`}
           >
@@ -414,9 +410,8 @@ function SummaryScreen({
           </p>
         </div>
 
-        {/* Question breakdown */}
         <div className="mb-6">
-          <h4 className="text-sm font-semibold text-gray-700 mb-3">
+          <h4 className="text-lg font-semibold text-gray-700 mb-3">
             {t("quizStep.breakdown")}
           </h4>
           <div className="space-y-2">
@@ -428,16 +423,16 @@ function SummaryScreen({
               return (
                 <div
                   key={question.id}
-                  className={`rounded-lg border overflow-hidden transition-all ${
+                  className={`rounded-lg border border-l-4 overflow-hidden transition-all ${
                     isCorrect
-                      ? "border-green-200 bg-green-50/50"
-                      : "border-red-200 bg-red-50/50"
+                      ? "border-green-200 border-l-green-400 bg-green-50/50"
+                      : "border-red-200 border-l-red-400 bg-red-50/50"
                   }`}
                 >
                   <button
                     type="button"
                     onClick={() => toggleExpanded(question.id)}
-                    className="w-full flex items-center gap-3 p-3 text-left hover:bg-black/5 transition-colors"
+                    className="w-full flex items-center gap-3 p-3 text-left hover:bg-black/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
                   >
                     <span
                       className={`flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold text-white shrink-0 ${
@@ -446,7 +441,7 @@ function SummaryScreen({
                     >
                       {isCorrect ? "✓" : "✕"}
                     </span>
-                    <span className="flex-1 text-sm text-gray-800 font-medium truncate">
+                    <span className="flex-1 text-sm sm:text-base text-gray-800 font-medium truncate">
                       <span className="text-gray-500 mr-1">
                         {qIndex + 1}.
                       </span>
@@ -510,13 +505,12 @@ function SummaryScreen({
           </div>
         </div>
 
-        {/* Action buttons */}
         <div className="flex flex-wrap items-center gap-4 justify-end">
           {!result.passed && (
             <button
               type="button"
               onClick={onRetry}
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-teal-700 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-teal-700 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               {t("quizStep.tryAgain")}
             </button>
@@ -525,7 +519,7 @@ function SummaryScreen({
             <button
               type="button"
               onClick={onContinue}
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               {t("quizStep.continueButton")}
               <span aria-hidden>→</span>

@@ -29,6 +29,16 @@ import {
   MatchingCard,
   OrderingCard,
   CompletionCard,
+  MythBustersCard,
+  MemoryMatchCard,
+  ConceptMapCard,
+  TroubleshootingCard,
+  ClassroomPlannerCard,
+  TriageSortCard,
+  FillGapsCard,
+  DecisionTreeCard,
+  LessonPlanBuilderCard,
+  ResourceAllocationCard,
 } from "./learning-block";
 
 /* ================================================================== */
@@ -169,22 +179,10 @@ export function LearningBlockStep({
     }
   }, [moduleSlug, blockSet.blocks, currentBlock, totalBlocks, goToPhase, maybeEncourage]);
 
-  // Micro-check fail handler — loop back to exercise or insight
+  // Micro-check fail handler — just count retries, MicroCheckCard handles showing corrections and continuing
   const handleMicroCheckFail = useCallback(() => {
     incrementMicroCheckRetries(moduleSlug);
-    const block = blockSet.blocks[currentBlock];
-    if (block?.exercise) {
-      // Has exercise → loop back to exercise
-      setCurrentPhase("scenario");
-      updateLearningBlockPhase(moduleSlug, currentBlock, "scenario");
-    } else {
-      // Legacy → loop back to insight with emphasis
-      setInsightEmphasis(true);
-      setCurrentPhase("insight");
-      updateLearningBlockPhase(moduleSlug, currentBlock, "insight");
-    }
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [moduleSlug, currentBlock, blockSet.blocks]);
+  }, [moduleSlug]);
 
   // Resolve current block and its insight slide
   const block = blockSet.blocks[currentBlock];
@@ -265,12 +263,29 @@ export function LearningBlockStep({
             <button
               type="button"
               onClick={() => setVideoViewed(true)}
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               {t("learningBlocks.continueToNext")}
               <span aria-hidden>→</span>
             </button>
           </div>
+        </div>
+      )}
+
+      {/* DEV: Skip button */}
+      {videoViewed && !allDone && (
+        <div className="flex justify-end">
+          <button
+            type="button"
+            onClick={() => {
+              if (currentPhase === "scenario") handleExercisePass();
+              else if (currentPhase === "insight") handleInsightContinue();
+              else if (currentPhase === "microcheck") handleMicroCheckPass();
+            }}
+            className="px-3 py-1 text-xs font-mono text-gray-400 border border-dashed border-gray-300 rounded-lg hover:text-gray-600 hover:border-gray-400 transition-colors"
+          >
+            Skip {currentPhase} →
+          </button>
         </div>
       )}
 
@@ -288,6 +303,86 @@ export function LearningBlockStep({
           {block.exercise?.type === "ordering" && (
             <OrderingCard
               key={`ordering-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "mythBusters" && (
+            <MythBustersCard
+              key={`myth-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "memoryMatch" && (
+            <MemoryMatchCard
+              key={`memory-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "conceptMap" && (
+            <ConceptMapCard
+              key={`cmap-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "troubleshooting" && (
+            <TroubleshootingCard
+              key={`trouble-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "classroomPlanner" && (
+            <ClassroomPlannerCard
+              key={`planner-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "triageSort" && (
+            <TriageSortCard
+              key={`triage-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "fillGaps" && (
+            <FillGapsCard
+              key={`fill-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "decisionTree" && (
+            <DecisionTreeCard
+              key={`dtree-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "lessonPlanBuilder" && (
+            <LessonPlanBuilderCard
+              key={`lesson-${block.blockId}`}
+              exercise={block.exercise}
+              onPass={handleExercisePass}
+              t={t}
+            />
+          )}
+          {block.exercise?.type === "resourceAllocation" && (
+            <ResourceAllocationCard
+              key={`resource-${block.blockId}`}
               exercise={block.exercise}
               onPass={handleExercisePass}
               t={t}
@@ -311,12 +406,12 @@ export function LearningBlockStep({
             /* Exercise flow: show only key takeaway, skip concept scenarios */
             <div className="space-y-4 animate-content-enter">
               <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-                <div className="bg-gradient-to-br from-teal-600 to-teal-700 px-6 py-5 sm:px-8">
-                  <h3 className="text-lg font-bold text-white">
+                <div className="bg-gradient-to-br from-teal-600 to-teal-700 px-5 py-5 sm:px-6">
+                  <h3 className="text-lg font-semibold text-white">
                     {t(insightSlide.titleKey)}
                   </h3>
                 </div>
-                <div className="p-6 sm:p-8">
+                <div className="p-5 sm:p-6">
                   <div className="rounded-xl bg-amber-50 border border-amber-200 p-5">
                     <div className="flex items-start gap-3">
                       <span className="text-amber-600 shrink-0 mt-0.5">💡</span>
@@ -336,7 +431,7 @@ export function LearningBlockStep({
                 <button
                   type="button"
                   onClick={handleInsightContinue}
-                  className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
                 >
                   {t("learningBlocks.continueToCheck")}
                   <span aria-hidden>→</span>

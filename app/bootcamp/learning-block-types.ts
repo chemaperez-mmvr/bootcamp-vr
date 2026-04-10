@@ -57,6 +57,8 @@ export type MicroCheckClassify = {
     id: string;
     labelKey: string;
     correctCategoryId: string;
+    /** Optional image shown alongside the item text. Path relative to /public. */
+    imageUrl?: string;
   }[];
 };
 
@@ -93,7 +95,211 @@ export type OrderingExercise = {
   }[];
 };
 
-export type BlockExercise = MatchingExercise | OrderingExercise;
+/* ------------------------------------------------------------------ */
+/*  New minigame exercise types                                        */
+/* ------------------------------------------------------------------ */
+
+/** Myth Busters — label statements as Myth or Fact. */
+export type MythBustersExercise = {
+  type: "mythBusters";
+  id: string;
+  instructionKey: string;
+  statements: {
+    id: string;
+    statementKey: string;
+    isTrue: boolean;
+    explanationKey: string;
+  }[];
+};
+
+/** Memory Match — flip cards to find matching pairs. */
+export type MemoryMatchExercise = {
+  type: "memoryMatch";
+  id: string;
+  instructionKey: string;
+  pairs: {
+    id: string;
+    termKey: string;
+    definitionKey: string;
+  }[];
+};
+
+/** Concept Map — drag nodes and connect them with valid relationships. */
+export type ConceptMapExercise = {
+  type: "conceptMap";
+  id: string;
+  instructionKey: string;
+  nodes: {
+    id: string;
+    labelKey: string;
+    /** Initial position hint (0-1 range, relative to container). */
+    x: number;
+    y: number;
+  }[];
+  validConnections: {
+    fromId: string;
+    toId: string;
+    labelKey?: string;
+  }[];
+};
+
+/** Troubleshooting — step through a diagnostic decision tree. */
+export type TroubleshootingExercise = {
+  type: "troubleshooting";
+  id: string;
+  instructionKey: string;
+  scenarioKey: string;
+  /** Optional image shown in the scenario header. */
+  scenarioImageUrl?: string;
+  startNodeId: string;
+  nodes: {
+    id: string;
+    promptKey: string;
+    options: {
+      id: string;
+      labelKey: string;
+      nextNodeId: string | null; // null = solution reached
+      feedbackKey: string;
+      isCorrect: boolean;
+    }[];
+  }[];
+};
+
+/** Classroom Planner — arrange items on a classroom grid. */
+export type ClassroomPlannerExercise = {
+  type: "classroomPlanner";
+  id: string;
+  instructionKey: string;
+  gridCols: number;
+  gridRows: number;
+  items: {
+    id: string;
+    labelKey: string;
+    emoji: string;
+    width: number;
+    height: number;
+  }[];
+  zones: {
+    id: string;
+    labelKey: string;
+    requiredItemIds: string[];
+    col: number;
+    row: number;
+    width: number;
+    height: number;
+  }[];
+};
+
+/** Triage Sort — categorize items by priority. */
+export type TriageSortExercise = {
+  type: "triageSort";
+  id: string;
+  instructionKey: string;
+  categories: {
+    id: string;
+    labelKey: string;
+    color: string;
+  }[];
+  items: {
+    id: string;
+    labelKey: string;
+    correctCategoryId: string;
+  }[];
+};
+
+/** Fill the Gaps — drag words into sentence blanks. */
+export type FillGapsExercise = {
+  type: "fillGaps";
+  id: string;
+  instructionKey: string;
+  /** Segments alternate between text and blanks. Blanks use __blankId__ (double underscores). */
+  templateKey: string;
+  blanks: {
+    id: string;
+    correctWordKey: string;
+  }[];
+  /** Extra wrong options to add as distractors. */
+  distractorKeys: string[];
+};
+
+/** Decision Tree — branching narrative with pedagogical choices. */
+export type DecisionTreeExercise = {
+  type: "decisionTree";
+  id: string;
+  instructionKey: string;
+  scenarioKey: string;
+  /** Optional image shown in the scenario header. */
+  scenarioImageUrl?: string;
+  startNodeId: string;
+  nodes: {
+    id: string;
+    promptKey: string;
+    isEnd?: boolean;
+    endFeedbackKey?: string;
+    endIsGood?: boolean;
+    options: {
+      id: string;
+      labelKey: string;
+      nextNodeId: string;
+      feedbackKey: string;
+      quality: "good" | "okay" | "poor";
+    }[];
+  }[];
+};
+
+/** Lesson Plan Builder — select components step-by-step. */
+export type LessonPlanBuilderExercise = {
+  type: "lessonPlanBuilder";
+  id: string;
+  instructionKey: string;
+  steps: {
+    id: string;
+    labelKey: string;
+    descriptionKey: string;
+    options: {
+      id: string;
+      labelKey: string;
+      descriptionKey: string;
+      quality: "best" | "good" | "poor";
+      feedbackKey: string;
+    }[];
+  }[];
+  /** Minimum "best"+"good" choices to pass. */
+  minGoodChoices: number;
+};
+
+/** Resource Allocation — distribute limited resources with constraints. */
+export type ResourceAllocationExercise = {
+  type: "resourceAllocation";
+  id: string;
+  instructionKey: string;
+  scenarioKey: string;
+  resources: {
+    id: string;
+    labelKey: string;
+    min: number;
+    max: number;
+    unit: string;
+    idealMin: number;
+    idealMax: number;
+  }[];
+  totalBudget: number;
+  totalBudgetUnit: string;
+};
+
+export type BlockExercise =
+  | MatchingExercise
+  | OrderingExercise
+  | MythBustersExercise
+  | MemoryMatchExercise
+  | ConceptMapExercise
+  | TroubleshootingExercise
+  | ClassroomPlannerExercise
+  | TriageSortExercise
+  | FillGapsExercise
+  | DecisionTreeExercise
+  | LessonPlanBuilderExercise
+  | ResourceAllocationExercise;
 
 /* ------------------------------------------------------------------ */
 /*  Block definitions                                                   */

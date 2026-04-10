@@ -31,16 +31,16 @@ export function ModuleTourStep({
       <QuestTourInteractive onComplete={handleTourComplete} />
 
       {(isCompleted || justCompleted) && (
-        <div className="rounded-2xl border border-green-200 bg-green-50 p-6 shadow-sm text-center">
+        <div className="rounded-2xl border border-green-200 bg-green-50 p-5 sm:p-6 shadow-sm text-center">
           <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-500 text-white mx-auto mb-3">
             <IconCheck className="w-5 h-5" />
           </div>
           <p className="text-green-800 font-semibold text-lg">{t("tourStep.completedTitle")}</p>
-          <p className="text-green-700 text-sm mt-1">{t("tourStep.completedDesc")}</p>
+          <p className="text-green-700 text-sm sm:text-base mt-1">{t("tourStep.completedDesc")}</p>
           <button
             type="button"
             onClick={onContinue}
-            className="mt-4 inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+            className="mt-4 inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("tourStep.continueButton")}
             <span aria-hidden>→</span>

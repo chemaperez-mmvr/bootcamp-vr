@@ -60,11 +60,8 @@ export function ClassifyCard({
 
   const handleFinish = useCallback(() => {
     const wrongCount = results.filter((r) => !r.correct).length;
-    if (wrongCount === 0) {
-      onPass();
-    } else {
-      onFail();
-    }
+    if (wrongCount > 0) onFail(); // track retry count
+    onPass(); // always continue
   }, [results, onPass, onFail]);
 
   // Summary view
@@ -73,7 +70,7 @@ export function ClassifyCard({
     const allCorrect = wrongCount === 0;
 
     return (
-      <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm animate-content-enter">
+      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-5">
           {t("learningBlocks.classifyTitle")}
         </div>
@@ -140,7 +137,7 @@ export function ClassifyCard({
           <button
             type="button"
             onClick={handleFinish}
-            className={`inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm ${
+            className={`inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
               allCorrect
                 ? "text-white bg-teal-600 hover:bg-teal-700"
                 : "text-amber-800 bg-amber-100 hover:bg-amber-200"
@@ -160,7 +157,7 @@ export function ClassifyCard({
 
   // Classification view — one item at a time
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm animate-content-enter">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Badge + progress */}
       <div className="flex items-center justify-between mb-4">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold">
@@ -192,10 +189,21 @@ export function ClassifyCard({
 
       <div key={item.id} className="animate-content-enter">
         {/* Item card */}
-        <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 mb-5">
-          <p className="text-base font-medium text-gray-900 leading-relaxed text-center">
-            {t(item.labelKey)}
-          </p>
+        <div className="rounded-xl border border-gray-200 bg-gray-50 overflow-hidden mb-5">
+          {item.imageUrl && (
+            <div className="p-4 pb-0">
+              <img
+                src={item.imageUrl}
+                alt=""
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          )}
+          <div className="p-5">
+            <p className="text-base font-medium text-gray-900 leading-relaxed text-center">
+              {t(item.labelKey)}
+            </p>
+          </div>
         </div>
 
         {/* Category buttons */}
@@ -206,7 +214,7 @@ export function ClassifyCard({
                 key={cat.id}
                 type="button"
                 onClick={() => handleClassify(cat.id)}
-                className="py-4 rounded-xl border-2 border-gray-200 bg-white text-gray-700 font-semibold text-base hover:border-teal-400 hover:bg-teal-50 hover:text-teal-700 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97]"
+                className="py-4 rounded-xl border-2 border-gray-200 bg-white text-gray-700 font-semibold text-sm sm:text-base hover:border-teal-400 hover:bg-teal-50 hover:text-teal-700 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
               >
                 {t(cat.labelKey)}
               </button>
@@ -246,7 +254,7 @@ export function ClassifyCard({
               <button
                 type="button"
                 onClick={handleNext}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
               >
                 {currentIdx < total - 1
                   ? t("learningBlocks.continueToNext")

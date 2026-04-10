@@ -67,22 +67,22 @@ export function ChecklistMissionCard({
   }
 
   return (
-    <article className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+    <article className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
       {/* header */}
       <div className="bg-gradient-to-r from-teal-50 to-emerald-50 border-b border-gray-100 px-5 py-4 sm:px-6">
         <div className="flex items-center justify-between">
-          <p className="text-xs font-semibold text-teal-700 uppercase tracking-wide">
+          <p className="text-xs font-medium text-teal-700 uppercase tracking-wide">
             {t("lessonNumber", { current: index + 1, total })} · {t(`lessonTypes.${lesson.type}`)}
           </p>
         </div>
-        <h2 className="text-lg font-semibold text-gray-900 mt-1">{tDocs(lesson.titleKey)}</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-1">{tDocs(lesson.titleKey)}</h2>
       </div>
 
-      <div className="p-5 sm:p-6 space-y-5">
+      <div className="p-5 sm:p-6 space-y-6">
         {/* prompt */}
         <div className="rounded-lg bg-amber-50 border border-amber-100 p-4">
           <p className="text-sm font-semibold text-amber-800">{t("contentMissions.checklistLabel")}</p>
-          <p className="mt-1 text-sm text-amber-900">{t(mission.promptKey)}</p>
+          <p className="mt-1 text-sm sm:text-base text-amber-900">{t(mission.promptKey)}</p>
         </div>
 
         {/* vertical stepper */}
@@ -137,7 +137,7 @@ export function ChecklistMissionCard({
         </div>
 
         {/* progress counter */}
-        <div className="text-xs text-gray-500">
+        <div className="text-xs font-medium tracking-wide text-gray-500">
           {checkedCount}/{itemCount} {t("contentMissions.checked")}
         </div>
 
@@ -161,7 +161,7 @@ export function ChecklistMissionCard({
         <div className="flex flex-wrap items-center gap-3 pt-2">
           <Link
             href={`/documentation/module/${moduleSlug}#${lesson.sectionId}`}
-            className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium text-teal-700 bg-teal-50 rounded-lg hover:bg-teal-100 transition-colors"
+            className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium text-teal-700 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("actions.openDocs")}
             <span aria-hidden>→</span>
@@ -172,7 +172,7 @@ export function ChecklistMissionCard({
           <button
             type="button"
             onClick={handleComplete}
-            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-lg transition-colors shrink-0 ${
+            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-xl transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
               done
                 ? "text-green-700 bg-green-50 hover:bg-green-100"
                 : missionComplete

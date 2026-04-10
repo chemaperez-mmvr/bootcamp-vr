@@ -42,7 +42,7 @@ export function TheorySliderStep({
     <div className="space-y-6 animate-content-enter">
       {/* Progress bar */}
       <div className="flex items-center gap-3">
-        <div className="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
+        <div className="flex-1 h-2 rounded-full bg-gray-100 overflow-hidden">
           <div
             className="h-full bg-teal-500 rounded-full transition-all duration-500 ease-out"
             style={{ width: `${((current + 1) / total) * 100}%` }}
@@ -66,10 +66,10 @@ export function TheorySliderStep({
           type="button"
           onClick={goPrev}
           disabled={isFirst}
-          className={`inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold rounded-xl transition-colors ${
+          className={`inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
             isFirst
               ? "text-gray-300 cursor-not-allowed"
-              : "text-gray-700 bg-gray-100 hover:bg-gray-200"
+              : "text-gray-700 hover:bg-gray-100"
           }`}
         >
           <span aria-hidden>←</span>
@@ -84,7 +84,7 @@ export function TheorySliderStep({
               type="button"
               onClick={() => setCurrent(i)}
               aria-label={`Slide ${i + 1}`}
-              className={`rounded-full transition-all duration-300 ${
+              className={`rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
                 s.type === "video" ? "w-3.5 h-2.5" : "w-2.5 h-2.5"
               } ${
                 i === current
@@ -100,7 +100,7 @@ export function TheorySliderStep({
         <button
           type="button"
           onClick={goNext}
-          className="inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm text-white bg-teal-600 hover:bg-teal-700"
+          className="inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold rounded-xl transition-colors shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
         >
           {isLast ? t("slides.startQuiz") : t("slides.next")}
           <span aria-hidden>→</span>
