@@ -13,7 +13,6 @@ export function ResourceAllocationCard({
   onPass: () => void;
   t: (key: string, values?: Record<string, string | number | Date>) => string;
 }) {
-  // Initialize each resource at its minimum value
   const [allocations, setAllocations] = useState<Record<string, number>>(() => {
     const initial: Record<string, number> = {};
     for (const res of exercise.resources) {
@@ -32,7 +31,7 @@ export function ResourceAllocationCard({
   const isOverBudget = remaining < 0;
   const isExactBudget = remaining === 0;
 
-  const handleSliderChange = useCallback(
+  const handleChange = useCallback(
     (resourceId: string, value: number) => {
       if (submitted) return;
       setAllocations((prev) => ({ ...prev, [resourceId]: value }));
@@ -44,13 +43,9 @@ export function ResourceAllocationCard({
     (res: (typeof exercise.resources)[number]) => {
       const val = allocations[res.id] ?? res.min;
       if (val >= res.idealMin && val <= res.idealMax) return "ideal";
-      // "Close" = within 20% of ideal range width on either side
       const rangeWidth = res.idealMax - res.idealMin;
       const tolerance = Math.max(1, Math.ceil(rangeWidth * 0.3));
-      if (
-        val >= res.idealMin - tolerance &&
-        val <= res.idealMax + tolerance
-      )
+      if (val >= res.idealMin - tolerance && val <= res.idealMax + tolerance)
         return "close";
       return "outside";
     },
@@ -65,7 +60,6 @@ export function ResourceAllocationCard({
   const handleSubmit = useCallback(() => {
     setSubmitted(true);
     if (allInIdealRange) {
-      // Small delay so user sees the success state
       setTimeout(() => onPass(), 600);
     }
   }, [allInIdealRange, onPass]);
@@ -79,13 +73,6 @@ export function ResourceAllocationCard({
     Math.max(0, (totalAllocated / exercise.totalBudget) * 100)
   );
 
-  const statusBorderClass = (res: (typeof exercise.resources)[number]) => {
-    const s = resourceStatus(res);
-    if (s === "ideal") return "border-l-green-500";
-    if (s === "close") return "border-l-amber-500";
-    return "border-l-red-500";
-  };
-
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Badge */}
@@ -94,125 +81,144 @@ export function ResourceAllocationCard({
       </div>
 
       {/* Instruction */}
-      <p className="text-sm text-gray-600 mb-4">
+      <p className="text-base font-semibold text-gray-900 mb-2">
         {t(exercise.instructionKey)}
       </p>
 
       {/* Scenario */}
-      <div className="bg-gradient-to-br from-cyan-50 to-teal-50 border border-cyan-200 rounded-xl p-4 mb-5">
+      <div className="bg-gradient-to-br from-cyan-50 to-teal-50 border border-cyan-200 rounded-xl p-4 mb-6">
         <p className="text-sm sm:text-base text-gray-900 leading-relaxed whitespace-pre-line">
           {t(exercise.scenarioKey)}
         </p>
       </div>
 
-      {/* Budget bar */}
-      <div className="mb-5">
-        <div className="flex items-center justify-between mb-1.5">
+      {/* Budget bar — prominent at top */}
+      <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 mb-6">
+        <div className="flex items-center justify-between mb-2">
           <span className="text-sm font-semibold text-gray-700">
-            {t("learningBlocks.resourceAllocationBudget")}
+            {t("learningBlocks.resourceAllocationBudget", {
+              used: totalAllocated,
+              total: exercise.totalBudget,
+              unit: exercise.totalBudgetUnit,
+            })}
           </span>
           <span
-            className={`text-sm font-bold ${
+            className={`text-sm font-bold tabular-nums ${
               isOverBudget
                 ? "text-red-600"
                 : isExactBudget
                   ? "text-green-600"
-                  : "text-gray-600"
+                  : "text-gray-500"
             }`}
           >
-            {totalAllocated} / {exercise.totalBudget} {exercise.totalBudgetUnit}
+            {remaining >= 0 ? remaining : `+${Math.abs(remaining)}`} {exercise.totalBudgetUnit}{" "}
+            {remaining >= 0
+              ? t("learningBlocks.resourceAllocationLeft")
+              : t("learningBlocks.resourceAllocationOverLabel")}
           </span>
         </div>
         <div className="h-3 rounded-full bg-gray-200 overflow-hidden">
           <div
             className={`h-full rounded-full transition-all duration-300 ${
-              isOverBudget ? "bg-red-500" : "bg-teal-500"
+              isOverBudget
+                ? "bg-red-500"
+                : isExactBudget
+                  ? "bg-green-500"
+                  : "bg-teal-500"
             }`}
             style={{ width: `${Math.min(budgetPercent, 100)}%` }}
           />
         </div>
-        {isOverBudget && (
-          <p className="text-xs text-red-600 mt-1">
-            {t("learningBlocks.resourceAllocationOver", {
-              over: Math.abs(remaining),
-              unit: exercise.totalBudgetUnit,
-            })}
-          </p>
-        )}
-        {!isOverBudget && !isExactBudget && (
-          <p className="text-xs text-gray-500 mt-1">
-            {t("learningBlocks.resourceAllocationRemaining", {
-              remaining,
-              unit: exercise.totalBudgetUnit,
-            })}
-          </p>
-        )}
       </div>
 
       {/* Resource sliders */}
-      <div className="space-y-3 mb-6">
+      <div className="space-y-4 mb-6">
         {exercise.resources.map((res) => {
           const val = allocations[res.id] ?? res.min;
-          const status = resourceStatus(res);
-          const showFeedback = submitted;
+          const status = submitted ? resourceStatus(res) : null;
+          const percent = ((val - res.min) / (res.max - res.min)) * 100;
+
+          // Ideal zone markers for the track
+          const idealStart = ((res.idealMin - res.min) / (res.max - res.min)) * 100;
+          const idealWidth = ((res.idealMax - res.idealMin) / (res.max - res.min)) * 100;
 
           return (
             <div
               key={res.id}
-              className={`p-4 rounded-xl border border-gray-200 bg-gray-50 border-l-4 transition-colors ${statusBorderClass(res)}`}
+              className={`rounded-xl border p-4 transition-all duration-300 ${
+                status === "ideal"
+                  ? "border-green-300 bg-green-50/50"
+                  : status === "close"
+                    ? "border-amber-300 bg-amber-50/50"
+                    : status === "outside"
+                      ? "border-red-300 bg-red-50/50"
+                      : "border-gray-200 bg-white"
+              }`}
             >
               {/* Label + value */}
-              <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center justify-between mb-3">
                 <span className="text-sm font-semibold text-gray-800">
                   {t(res.labelKey)}
                 </span>
                 <span
-                  className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold ${
+                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-sm font-bold tabular-nums ${
                     status === "ideal"
                       ? "bg-green-100 text-green-700"
                       : status === "close"
                         ? "bg-amber-100 text-amber-700"
-                        : "bg-red-100 text-red-700"
+                        : status === "outside"
+                          ? "bg-red-100 text-red-700"
+                          : "bg-gray-100 text-gray-700"
                   }`}
                 >
+                  {status === "ideal" && <IconCheck className="w-3.5 h-3.5" />}
+                  {status === "outside" && <IconClose className="w-3.5 h-3.5" />}
                   {val} {res.unit}
                 </span>
               </div>
 
-              {/* Slider */}
-              <div className="relative">
-                {/* Ideal range visual indicator */}
-                <div className="absolute top-1/2 -translate-y-1/2 h-2 rounded-lg bg-green-200/50 pointer-events-none"
-                  style={{
-                    left: `${((res.idealMin - res.min) / (res.max - res.min)) * 100}%`,
-                    width: `${((res.idealMax - res.idealMin) / (res.max - res.min)) * 100}%`,
-                  }}
+              {/* Slider track */}
+              <div className="relative mb-1">
+                {/* Ideal range indicator (green band behind the track) */}
+                <div
+                  className="absolute top-1/2 -translate-y-1/2 h-3 rounded-full bg-green-200/60 pointer-events-none"
+                  style={{ left: `${idealStart}%`, width: `${idealWidth}%` }}
+                />
+                {/* Filled portion */}
+                <div
+                  className={`absolute top-1/2 -translate-y-1/2 h-3 rounded-full pointer-events-none transition-all duration-150 ${
+                    isOverBudget ? "bg-red-300/60" : "bg-teal-300/60"
+                  }`}
+                  style={{ left: 0, width: `${percent}%` }}
                 />
                 <input
                   type="range"
                   min={res.min}
                   max={res.max}
                   value={val}
-                  onChange={(e) =>
-                    handleSliderChange(res.id, Number(e.target.value))
-                  }
+                  onChange={(e) => handleChange(res.id, Number(e.target.value))}
                   disabled={submitted}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-teal-600 relative z-10 disabled:opacity-60 disabled:cursor-not-allowed"
+                  className="relative w-full h-3 bg-gray-200 rounded-full appearance-none cursor-pointer accent-teal-600 z-10 disabled:opacity-60 disabled:cursor-not-allowed"
+                  style={{ background: "transparent" }}
                 />
               </div>
 
-              {/* Min/max labels */}
-              <div className="flex items-center justify-between mt-1">
-                <span className="text-[10px] text-gray-400">
-                  {res.min} {res.unit}
-                </span>
-                <span className="text-[10px] text-gray-400">
-                  {res.max} {res.unit}
-                </span>
+              {/* Min/max + ideal range labels */}
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] text-gray-400">{res.min} {res.unit}</span>
+                {!submitted && (
+                  <span className="text-[10px] text-green-600 font-medium">
+                    {t("learningBlocks.resourceAllocationIdealRange", {
+                      min: res.idealMin,
+                      max: res.idealMax,
+                    })}
+                  </span>
+                )}
+                <span className="text-[10px] text-gray-400">{res.max} {res.unit}</span>
               </div>
 
               {/* Per-resource feedback on submit */}
-              {showFeedback && (
+              {submitted && (
                 <div
                   className={`mt-2 flex items-center gap-2 text-xs font-medium animate-wizard-feedback ${
                     status === "ideal"
@@ -257,7 +263,7 @@ export function ResourceAllocationCard({
             }`}
           >
             {t("learningBlocks.resourceAllocationSubmit")}
-            <span aria-hidden>→</span>
+            <span aria-hidden>&rarr;</span>
           </button>
         )}
 
@@ -268,7 +274,6 @@ export function ResourceAllocationCard({
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-amber-800 bg-amber-100 rounded-xl hover:bg-amber-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.resourceAllocationAdjustBtn")}
-            <span aria-hidden>↩</span>
           </button>
         )}
       </div>

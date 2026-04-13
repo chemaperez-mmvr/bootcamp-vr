@@ -381,6 +381,77 @@ const moduleQuizzes: Record<string, ModuleQuiz> = {
       },
     ],
   },
+  "briefing-and-debriefing": {
+    moduleSlug: "briefing-and-debriefing",
+    passingScore: 0.7,
+    questions: [
+      {
+        id: "q1",
+        type: "judgment",
+        questionKey: "quiz.briefingAndDebriefing.q1.question",
+        options: [
+          { id: "a", labelKey: "quiz.briefingAndDebriefing.q1.a" },
+          { id: "b", labelKey: "quiz.briefingAndDebriefing.q1.b" },
+          { id: "c", labelKey: "quiz.briefingAndDebriefing.q1.c" },
+          { id: "d", labelKey: "quiz.briefingAndDebriefing.q1.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.briefingAndDebriefing.q1.explanation",
+      },
+      {
+        id: "q2",
+        type: "judgment",
+        questionKey: "quiz.briefingAndDebriefing.q2.question",
+        options: [
+          { id: "a", labelKey: "quiz.briefingAndDebriefing.q2.a" },
+          { id: "b", labelKey: "quiz.briefingAndDebriefing.q2.b" },
+          { id: "c", labelKey: "quiz.briefingAndDebriefing.q2.c" },
+          { id: "d", labelKey: "quiz.briefingAndDebriefing.q2.d" },
+        ],
+        correctOptionId: "c",
+        explanationKey: "quiz.briefingAndDebriefing.q2.explanation",
+      },
+      {
+        id: "q3",
+        type: "judgment",
+        questionKey: "quiz.briefingAndDebriefing.q3.question",
+        options: [
+          { id: "a", labelKey: "quiz.briefingAndDebriefing.q3.a" },
+          { id: "b", labelKey: "quiz.briefingAndDebriefing.q3.b" },
+          { id: "c", labelKey: "quiz.briefingAndDebriefing.q3.c" },
+          { id: "d", labelKey: "quiz.briefingAndDebriefing.q3.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.briefingAndDebriefing.q3.explanation",
+      },
+      {
+        id: "q4",
+        type: "judgment",
+        questionKey: "quiz.briefingAndDebriefing.q4.question",
+        options: [
+          { id: "a", labelKey: "quiz.briefingAndDebriefing.q4.a" },
+          { id: "b", labelKey: "quiz.briefingAndDebriefing.q4.b" },
+          { id: "c", labelKey: "quiz.briefingAndDebriefing.q4.c" },
+          { id: "d", labelKey: "quiz.briefingAndDebriefing.q4.d" },
+        ],
+        correctOptionId: "c",
+        explanationKey: "quiz.briefingAndDebriefing.q4.explanation",
+      },
+      {
+        id: "q5",
+        type: "judgment",
+        questionKey: "quiz.briefingAndDebriefing.q5.question",
+        options: [
+          { id: "a", labelKey: "quiz.briefingAndDebriefing.q5.a" },
+          { id: "b", labelKey: "quiz.briefingAndDebriefing.q5.b" },
+          { id: "c", labelKey: "quiz.briefingAndDebriefing.q5.c" },
+          { id: "d", labelKey: "quiz.briefingAndDebriefing.q5.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.briefingAndDebriefing.q5.explanation",
+      },
+    ],
+  },
 };
 
 export function getQuizForModule(moduleSlug: string): ModuleQuiz | undefined {

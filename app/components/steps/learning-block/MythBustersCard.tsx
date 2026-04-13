@@ -102,7 +102,7 @@ export function MythBustersCard({
             {correctCount} / {total}
           </p>
           <p className="text-sm text-gray-500">
-            {t("learningBlocks.mythBustersScore")}
+            {t("learningBlocks.mythBustersScore", { correct: correctCount, total })}
           </p>
         </div>
 

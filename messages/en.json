@@ -230,13 +230,35 @@
     },
     "overview": {
       "eyebrow": "Module overview",
+      "moduleNumber": "Module {number}",
       "sections": "sections",
       "essential": "essential",
       "roadmap": "Your learning path",
       "topicsCovered": "Topics covered in this module",
       "essentialLegend": "Essential topics for newcomers",
+      "referenceSections": "Also covered",
       "startButton": "Start module",
-      "availableBadges": "Badges you can earn"
+      "continueButton": "Continue module",
+      "availableBadges": "Badges you can earn",
+      "whatYoullDo": "What you'll do",
+      "lessons": "{count} lessons",
+      "quizIncluded": "Quiz",
+      "quizCallout": "This module ends with a quiz. You need {percent}% correct answers to pass.",
+      "activityTypes": "Interactive exercises",
+      "activityLesson": "Lesson",
+      "activityVideo": "Video",
+      "introVideoDesc": "Short introduction to the module",
+      "activityPractice": "Practice",
+      "activityChecklist": "Checklist",
+      "activityTour": "Tour",
+      "stepDesc": {
+        "overview": "Preview the module",
+        "intro-video": "Watch introduction",
+        "tour": "Explore the headset",
+        "content": "Interactive lessons",
+        "quiz": "Test your knowledge",
+        "results": "See your results"
+      }
     },
     "tourStep": {
       "completedTitle": "Tour completed!",
@@ -254,6 +276,7 @@
       "prev": "Previous",
       "startQuiz": "Continue to quiz",
       "videoComingSoon": "Video coming soon",
+      "videoRequiredNote": "You must watch the full video to continue.",
       "basicFoundations": {
         "video": {
           "title": "VR, AR, and XR Fundamentals",
@@ -428,6 +451,10 @@
         }
       },
       "safetyWellbeingAccessibility": {
+        "video": {
+          "title": "Safety, Wellbeing & Accessibility",
+          "subtitle": "Watch this introduction to keeping students safe, comfortable, and included during VR experiences"
+        },
         "s1": {
           "title": "Physical Safety & Space Requirements",
           "subtitle": "Clear rules and measured spaces prevent most VR incidents",
@@ -467,6 +494,52 @@
           "p2": "Three alternatives: active observer role, complementary learning task, or rotational participation",
           "p3": "Observers need structured tasks (checklists, questions, focus areas) to make observation active, not passive",
           "highlight": "Accessibility is about offering meaningful alternatives, not identical experiences. Not wearing a headset does not mean not learning."
+        }
+      },
+      "briefingAndDebriefing": {
+        "video": {
+          "title": "Briefing, Debriefing & Assessment",
+          "subtitle": "Watch this introduction to turning VR experiences into real learning through structured preparation and reflection"
+        },
+        "s1": {
+          "title": "Briefing Fundamentals & the O-R-T-T Framework",
+          "subtitle": "Why structured preparation turns VR from entertainment into education",
+          "p1": "The VR experience alone does not produce learning — what happens before and after the headset determines whether students gain lasting understanding",
+          "p2": "The O-R-T-T framework gives every briefing a clear structure: Objective, Rules, Time, Task",
+          "p3": "Briefing reduces anxiety, clarifies expectations, and directs cognitive resources to the learning goal instead of figuring out controls",
+          "highlight": "Experience without reflection is just activity. A structured briefing ensures students spend their VR time learning, not guessing."
+        },
+        "s2": {
+          "title": "What to Explain (and What Not to)",
+          "subtitle": "The balance between preparation and discovery — knowing what to leave out is just as important",
+          "p1": "Always explain: the learning objective, the task, time available, safety rules, and success criteria",
+          "p2": "Never explain: full hardware details, every possible action, step-by-step solutions, or irrelevant app features",
+          "p3": "Over-briefing kills curiosity and wastes time. Under-briefing causes confusion and wasted VR time",
+          "highlight": "Brief enough to focus, not so much that you steal the discovery. If your briefing is longer than the VR experience, it's too long."
+        },
+        "s3": {
+          "title": "The 60-Second Briefing",
+          "subtitle": "A short, structured, and repeatable template that works for any VR session",
+          "p1": "Objective (15 seconds): State the goal in one clear sentence — what will the learner achieve?",
+          "p2": "Task and Rules (25 seconds): Describe what to do and what boundaries apply — be specific and concise",
+          "p3": "Time and Start Signal (20 seconds): Set the clock, explain how to signal discomfort, and launch the experience",
+          "highlight": "A great briefing is short, structured, and repeatable. 60 seconds is enough — if it takes longer, you're over-briefing."
+        },
+        "s4": {
+          "title": "Structured Debriefing & Reflection Questions",
+          "subtitle": "The debriefing is where learning actually happens — structure it or lose it",
+          "p1": "The GAS model provides a proven structure: Gather observations, Analyze why things happened, Summarize conclusions",
+          "p2": "Four question phases move from surface to depth: What happened? → What did you do? → What would you change? → How does this apply?",
+          "p3": "The transfer question is the most important: connecting virtual experience to real-world professional practice",
+          "highlight": "An unstructured debrief is a missed opportunity. Good questions do the teaching — the instructor just asks them."
+        },
+        "s5": {
+          "title": "What to Assess in VR",
+          "subtitle": "Four assessment areas let you evaluate more than just task completion",
+          "p1": "Skills (technical execution) and Decision-Making (cognitive choices under changing conditions)",
+          "p2": "Procedures (protocol compliance and error correction) capture whether students followed the right process",
+          "p3": "Communication and professional behaviour reveal soft skills that traditional assessments miss",
+          "highlight": "VR shows you not just whether students completed the task, but how they thought, decided, and communicated along the way."
         }
       }
     },
@@ -535,18 +608,22 @@
       "triageSortCheck": "Check",
       "triageSortCorrect": "All priorities correct!",
       "triageSortWrong": "{wrong} item(s) in the wrong category",
-      "triageSortInstruction": "Tap an item, then tap a category to sort it",
-      "triageSortPoolEmpty": "All items sorted!",
-      "triageSortDropHere": "Tap to place here",
+      "triageSortInstruction": "Select an item, then tap the category where it belongs",
+      "triageSortSelectCategory": "Now tap the category where this item belongs",
+      "triageSortRetry": "Try again",
+      "triageSortPoolEmpty": "All items sorted — check your answers!",
+      "triageSortDropHere": "Tap to place items here",
       "classroomPlannerTitle": "Classroom planner",
       "classroomPlannerPalette": "Items to place",
       "classroomPlannerCheckLayout": "Check layout",
       "classroomPlannerCorrect": "Great layout!",
       "classroomPlannerWrong": "{wrong} item(s) misplaced",
       "classroomPlannerReset": "Clear layout",
-      "classroomPlannerInstruction": "Tap an item, then tap a cell to place it",
+      "classroomPlannerInstruction": "Select an item, then tap the zone where it belongs",
+      "classroomPlannerSelectZone": "Now tap a cell on the grid to place it",
       "classroomPlannerCell": "Cell",
-      "classroomPlannerAllPlaced": "All items placed!",
+      "classroomPlannerRetry": "Try again",
+      "classroomPlannerAllPlaced": "All items placed — check your layout!",
       "classroomPlannerClearAll": "Clear all",
       "fillGapsTitle": "Fill the blanks",
       "fillGapsWordBank": "Word bank",
@@ -584,10 +661,13 @@
       "resourceAllocationSubmit": "Submit plan",
       "resourceAllocationCorrect": "Well-balanced plan!",
       "resourceAllocationWrong": "Some allocations are outside ideal ranges",
-      "resourceAllocationAdjust": "Adjust",
-      "resourceAllocationIdeal": "Ideal: {min}–{max} {unit}",
-      "resourceAllocationOver": "{amount} {unit} over budget",
-      "resourceAllocationRemaining": "{amount} {unit} remaining",
+      "resourceAllocationAdjust": "Ideal range: {min}–{max} {unit}",
+      "resourceAllocationIdeal": "Good allocation!",
+      "resourceAllocationOver": "{over} {unit} over budget",
+      "resourceAllocationRemaining": "{remaining} {unit} remaining",
+      "resourceAllocationLeft": "left",
+      "resourceAllocationOverLabel": "over",
+      "resourceAllocationIdealRange": "ideal: {min}–{max}",
       "resourceAllocationAdjustBtn": "Adjust allocations",
       "resourceAllocationPass": "All allocations within ideal ranges!",
       "resourceAllocationRetry": "Adjust and retry",
@@ -2591,6 +2671,375 @@
             }
           }
         }
+      },
+      "briefingAndDebriefing": {
+        "b1": {
+          "title": "Briefing Fundamentals",
+          "exercise": {
+            "instruction": "Put the four components of the O-R-T-T briefing framework in the correct order",
+            "scaleStart": "Start of briefing",
+            "scaleEnd": "End of briefing",
+            "i1": "Objective — state what the learner will accomplish",
+            "i2": "Rules — explain boundaries, safety, what is allowed",
+            "i3": "Time — tell them how long the experience will last",
+            "i4": "Task — describe the specific actions to perform"
+          },
+          "scenario": {
+            "context": "You're about to run a VR safety hazard identification session with 15 students. Most have never used VR before. You have 2 minutes before headsets go on.",
+            "question": "How do you prepare the students?",
+            "choices": {
+              "a": "Hand out the headsets and let students explore freely — they'll figure it out",
+              "b": "Give a structured 60-second briefing: state the objective, explain the rules and task, set the time limit, then hand out headsets",
+              "c": "Spend 10 minutes explaining every button on the controller, all the menus, and how the Guardian system works technically"
+            },
+            "feedback": {
+              "a": "Without a briefing, students don't know what to focus on. They'll spend VR time figuring out controls instead of learning. First-time users especially need clear expectations before entering VR.",
+              "b": "Exactly right. A structured briefing using the O-R-T-T framework (Objective, Rules, Time, Task) gives students everything they need to focus on learning, not guessing. Keep it under 60 seconds.",
+              "c": "This is over-briefing. A 10-minute technical explanation overwhelms students and steals time from the actual VR experience. Limit hardware orientation to 30 seconds — the rest is about the learning objective."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A student looks visibly nervous before putting on a VR headset for the first time. They keep asking what will happen inside.",
+              "question": "What is the most effective response?",
+              "choices": {
+                "a": "Reassure them by briefly stating the objective, what they'll do, how long it lasts, and that they can stop at any time — this is what briefing does",
+                "b": "Show them a video of someone else using VR first so they can see what it looks like",
+                "c": "Tell them not to worry — VR is fun and they'll love it once they try"
+              },
+              "feedback": {
+                "a": "Perfect. One of the key benefits of briefing is anxiety reduction. When learners know what to expect — the goal, the task, the duration, and their ability to stop — uncertainty drops and they can focus on learning.",
+                "b": "A video can help, but it takes extra time and doesn't address the student's specific concerns. A direct, structured briefing that covers what they'll do, how long it lasts, and their option to stop is faster and more effective.",
+                "c": "Dismissing anxiety with 'you'll love it' doesn't help. The student needs information, not reassurance. A briefing that answers their questions directly (what will happen, how long, can I stop?) reduces anxiety far more effectively."
+              }
+            },
+            "c2": {
+              "context": "During a VR session, several students seem confused — they're wandering aimlessly inside the virtual environment and asking each other what they're supposed to do.",
+              "question": "What most likely went wrong?",
+              "choices": {
+                "a": "The VR app is poorly designed and doesn't give clear instructions",
+                "b": "The briefing was missing or incomplete — students didn't receive a clear objective or task description before entering VR",
+                "c": "The students weren't paying attention during the briefing"
+              },
+              "feedback": {
+                "a": "While app design matters, a well-briefed student knows exactly what to do regardless of in-app guidance. The instructor's briefing should always be the primary source of direction, not the app's UI.",
+                "b": "Correct. When students don't know what they're looking for or what they should do, they wander. A proper briefing (Objective + Task) prevents this by giving a clear mission before headsets go on.",
+                "c": "If multiple students are confused, the problem is systemic — either the briefing was unclear, too long, or missing key information. Blaming attention is less productive than improving briefing structure."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Briefing reduces student anxiety by providing clear expectations before entering VR",
+                "explanation": "True. Research from simulation-based education confirms that structured briefings reduce anxiety. When learners know the objective, task, duration, and exit options, uncertainty drops and cognitive resources shift to learning."
+              },
+              "s2": {
+                "statement": "A thorough briefing should explain every feature of the VR application in detail",
+                "explanation": "False. Over-briefing kills curiosity and wastes time. The briefing should cover the learning objective, the task, rules, and time — not a full technical walkthrough. Keep hardware orientation under 30 seconds."
+              },
+              "s3": {
+                "statement": "The O-R-T-T framework stands for Objective, Rules, Time, and Task",
+                "explanation": "True. O-R-T-T is the structured briefing framework: Objective (what to achieve), Rules (boundaries and safety), Time (duration), Task (specific actions). It ensures every briefing covers the essentials without overloading."
+              }
+            }
+          }
+        },
+        "b2": {
+          "title": "What to Explain",
+          "exercise": {
+            "instruction": "Classify each briefing item: should you explain it, let students discover it, or never mention it?",
+            "cat": {
+              "mustExplain": "Must Explain",
+              "letDiscover": "Let Them Discover",
+              "neverMention": "Never Mention"
+            },
+            "i1": "The learning objective — what they will achieve",
+            "i2": "Safety rules — how to signal discomfort or exit",
+            "i3": "The specific task they need to perform",
+            "i4": "What the virtual environment looks like inside",
+            "i5": "Every interactive object they can touch or use",
+            "i6": "Step-by-step solutions to the challenge",
+            "i7": "Irrelevant app features unrelated to the objective",
+            "i8": "Success criteria — how they'll know they did it right"
+          },
+          "scenario": {
+            "context": "You're writing a briefing for a VR chemistry lab simulation. A colleague suggests you include: the learning objective, all 15 interactive objects in the lab, the correct procedure for the experiment, safety rules, and a walkthrough of the VR menu system.",
+            "question": "What's wrong with this briefing plan?",
+            "choices": {
+              "a": "Nothing — comprehensive briefings prevent confusion",
+              "b": "It includes too much: listing all objects and the correct procedure removes the challenge. Brief the objective, task, safety rules, and success criteria — let students discover the environment and solve the procedure themselves",
+              "c": "Drop the menu walkthrough but keep everything else"
+            },
+            "feedback": {
+              "a": "Over-briefing is as problematic as under-briefing. Listing every interactive object and the correct procedure removes discovery and challenge — the very things that make VR learning effective.",
+              "b": "Correct. A briefing should focus on the objective, task, rules, and criteria. The environment details and problem-solving process are what students should discover through the VR experience. Giving them the answers in advance defeats the purpose.",
+              "c": "The menu walkthrough is one problem, but the bigger issue is listing all 15 objects and the correct procedure. This over-briefing removes the learning challenge entirely. Students should discover the environment and figure out the process."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A teacher gives a 7-minute briefing before a 10-minute VR experience. They explain every room, every object, and exactly what students will see. Students put on headsets and complete the task quickly but seem bored.",
+              "question": "Why did the VR experience fall flat?",
+              "choices": {
+                "a": "The VR experience was too short — students needed more time",
+                "b": "The headsets weren't configured properly",
+                "c": "The briefing revealed too much — there was nothing left to discover. Over-briefing killed the curiosity and challenge that make VR engaging"
+              },
+              "feedback": {
+                "a": "Duration wasn't the issue — 10 minutes is a reasonable VR session length. The problem is that students had no surprises or challenges left because the briefing gave everything away.",
+                "b": "Headset configuration doesn't explain boredom. The students completed the task fine — they just weren't engaged because the briefing removed all discovery.",
+                "c": "Exactly. When a briefing reveals the entire environment and solution, the VR experience becomes confirmation, not exploration. Students need enough direction to focus but enough mystery to stay curious."
+              }
+            },
+            "c2": {
+              "context": "A teacher gives a 15-second briefing: 'Put on headsets and do the lab activity.' Three minutes into the session, students are calling out confused questions.",
+              "question": "What's the root cause?",
+              "choices": {
+                "a": "The briefing was too short and missed critical information — students don't know the objective, what to do, or how long they have. Under-briefing causes wasted VR time.",
+                "b": "The students aren't used to VR technology yet",
+                "c": "The VR app should have included better in-app instructions"
+              },
+              "feedback": {
+                "a": "Correct. 'Do the lab activity' tells students nothing about the objective, task, or success criteria. A complete briefing needs O-R-T-T: what to achieve, what rules apply, how long, and what to do. Under-briefing wastes VR time on confusion.",
+                "b": "Technology familiarity is a factor, but even experienced VR users need a briefing with clear objectives. The confusion here is about what to do, not how to use the headset.",
+                "c": "Relying on in-app instructions is risky — they might not cover the learning objective, and students in VR can easily miss or skip them. The instructor's briefing should always be the primary direction."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "A good briefing should explain the step-by-step solution so students know exactly what to do",
+                "explanation": "False. Giving students the solution removes the learning challenge. A briefing explains the objective, task, and criteria — not the answer. Students should discover the solution through the VR experience."
+              },
+              "s2": {
+                "statement": "Safety rules and exit procedures should always be included in a pre-VR briefing",
+                "explanation": "True. Safety is never optional. Students must always know how to signal discomfort, request to stop, or exit VR before entering the experience. This is part of the 'Rules' in O-R-T-T."
+              },
+              "s3": {
+                "statement": "If a briefing takes longer than the VR experience itself, that's fine as long as it's thorough",
+                "explanation": "False. If your briefing is longer than the VR experience, you're over-briefing. A briefing should be concise (under 60 seconds ideally) and focus on essentials. Longer briefings indicate you're explaining too much."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "The 60-Second Briefing",
+          "exercise": {
+            "instruction": "Complete the 60-second briefing script by dragging the correct words into the blanks",
+            "template": "Your __blank1__ is to identify all safety hazards in the virtual workspace. You will __blank2__ through each room and flag every hazard you find. The __blank3__ are: do not skip any room, and raise your hand if you feel uncomfortable. You have __blank4__ minutes. Begin when the environment loads.",
+            "blank1": "objective",
+            "blank2": "walk",
+            "blank3": "rules",
+            "blank4": "ten",
+            "distractor1": "homework",
+            "distractor2": "grade"
+          },
+          "scenario": {
+            "context": "The bell rings in 90 seconds. You have a VR hazard-identification session planned. Students are seated and ready but you haven't briefed them yet.",
+            "question": "What do you do?",
+            "choices": {
+              "a": "Skip the briefing — there's no time. Hand out headsets and tell students to look for hazards",
+              "b": "Postpone VR to next class — a proper briefing takes at least 5 minutes",
+              "c": "Deliver a 60-second structured briefing: state the objective, describe the task and rules, set the time, and launch"
+            },
+            "feedback": {
+              "a": "Even with limited time, skipping the briefing means students don't know the specific task, success criteria, or safety rules. A 60-second briefing is always possible and always worth it.",
+              "b": "A proper briefing does not need 5 minutes. The O-R-T-T framework is designed to work in 60 seconds: 15s objective, 25s task and rules, 20s time and start. Don't postpone when a structured template gets it done.",
+              "c": "Exactly. The 60-second briefing template works under time pressure: Objective (15s) — 'Your goal is to find all safety hazards.' Task and Rules (25s) — 'Walk through each room, flag hazards, don't skip rooms.' Time and Start (20s) — 'You have 10 minutes. Begin now.'"
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A teacher delivers this briefing: 'Today you'll identify hazards in a virtual warehouse. Walk through all three sections and flag every hazard using the pointer. Do not skip any section. If you feel dizzy, raise your hand. You have 8 minutes. Focus on accuracy. Start when the environment loads.'",
+              "question": "How would you rate this briefing?",
+              "choices": {
+                "a": "Excellent — it covers all four O-R-T-T elements (Objective, Rules, Time, Task) concisely and clearly, with a safety exit instruction included",
+                "b": "Good but too long — it should be shorter",
+                "c": "Missing important information — it doesn't explain the controller buttons"
+              },
+              "feedback": {
+                "a": "Exactly. This briefing hits every component: Objective (identify hazards), Task (walk through sections, flag hazards with pointer), Rules (don't skip sections, raise hand if dizzy), Time (8 minutes). It's concise, clear, and actionable.",
+                "b": "This briefing is approximately 15 seconds — that's well within the 60-second target. It's not too long; it's efficient.",
+                "c": "Controller details are hardware orientation, not briefing. Keep hardware instructions to 30 seconds before the briefing. The briefing itself focuses on the learning objective and task."
+              }
+            },
+            "c2": {
+              "context": "A colleague's briefing: 'OK everyone, let's do VR now. The app is really cool, you'll see a warehouse. There's lots of stuff to find. Try to find as many things as you can. Have fun!'",
+              "question": "What's missing from this briefing?",
+              "choices": {
+                "a": "Enthusiasm — the teacher should sound more excited",
+                "b": "Almost everything: there's no clear objective, no specific task description, no rules, no time limit, and no success criteria. Students won't know what 'things' to find or how to know when they're done",
+                "c": "It's fine — the app will guide them once they're inside"
+              },
+              "feedback": {
+                "a": "The issue isn't tone — it's missing structure. 'Stuff to find' is not an objective. 'As many things as you can' is not a task with success criteria. Enthusiasm without structure leads to unfocused VR time.",
+                "b": "Correct. This 'briefing' has none of the O-R-T-T components: no clear Objective (what are they finding? hazards? objects?), no Task (how?), no Rules (boundaries?), no Time (how long?). Students will wander without purpose.",
+                "c": "Relying on in-app guidance is risky. The instructor's briefing provides the learning frame. Without it, students interact with the app but don't know what to focus on for learning."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Which part of the 60-second briefing does each phrase belong to?",
+              "cat": {
+                "objective": "Objective (15s)",
+                "taskRules": "Task & Rules (25s)",
+                "timeStart": "Time & Start (20s)"
+              },
+              "i1": "Your goal is to identify all safety hazards",
+              "i2": "Walk through each room and flag every hazard you find",
+              "i3": "Do not skip any room — check all three sections",
+              "i4": "You have 10 minutes starting now",
+              "i5": "Today you will practise the emergency evacuation procedure",
+              "i6": "If you feel uncomfortable at any point, raise your hand"
+            }
+          }
+        },
+        "b4": {
+          "title": "Structured Debriefing",
+          "exercise": {
+            "instruction": "Put the debriefing question phases in the correct order, from surface recall to deep application",
+            "scaleStart": "First question",
+            "scaleEnd": "Final question",
+            "i1": "\"What happened?\" — Describe what you saw and experienced",
+            "i2": "\"What did you do?\" — Explain your actions and decisions",
+            "i3": "\"What would you do differently?\" — Reflect on alternatives",
+            "i4": "\"How does this apply to the real world?\" — Transfer to practice",
+            "i5": "Facilitator summarises key takeaways and next steps"
+          },
+          "scenario": {
+            "context": "Students just completed a VR fire evacuation simulation. They remove their headsets and look at you expectantly. You have 8 minutes left in the session.",
+            "question": "How do you run the debriefing?",
+            "choices": {
+              "a": "Tell them what they did right and wrong, then dismiss them",
+              "b": "Ask 'Did you like it?' and let them chat informally about the experience",
+              "c": "Follow the GAS model: Gather what happened, Analyze why they made their decisions, then Summarize the key lessons and how they connect to real practice"
+            },
+            "feedback": {
+              "a": "Telling students what they did right and wrong is instructor lecturing, not debriefing. Effective debriefing is learner-centred — students analyse their own performance. The instructor asks questions, not delivers corrections.",
+              "b": "'Did you like it?' starts a conversation about entertainment, not learning. Informal chat can be engaging but doesn't extract educational value. A structured model ensures the conversation moves from description to analysis to transfer.",
+              "c": "Correct. The GAS model (Gather-Analyze-Summarize) gives structure: first collect what happened, then examine why things went right or wrong, then draw conclusions and connect to real-world application. This transforms the VR experience into lasting learning."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "During debriefing, an instructor immediately says: 'You missed the fire extinguisher on the second floor. That was the most important item. Let me explain why...' and lectures for 4 minutes.",
+              "question": "What went wrong?",
+              "choices": {
+                "a": "Nothing — the instructor corrected an important mistake",
+                "b": "The instructor skipped the 'Gather' and 'Analyze' phases and jumped straight to telling. Effective debriefing asks learners to identify their own mistakes before the instructor provides corrections. The 80/20 rule applies: learners should talk 80% of the time.",
+                "c": "The instructor should have waited until the next class to give corrections"
+              },
+              "feedback": {
+                "a": "Correcting mistakes is important, but the method matters. Premature correction short-circuits reflection. When students discover their own errors through guided questions, the lesson is deeper and more durable.",
+                "b": "Exactly. The instructor violated two principles: (1) they skipped gathering student observations first, and (2) they lectured instead of asking. Better approach: 'What did you find on the second floor?' → 'Was there anything you might have missed?' → students self-discover the gap.",
+                "c": "Waiting too long to debrief weakens the connection to the experience. The timing was right — the method was wrong. Debrief immediately, but ask questions instead of lecturing."
+              }
+            },
+            "c2": {
+              "context": "A teacher runs a debriefing using the four question phases. Students describe what happened (Phase 1), explain their decisions (Phase 2), and suggest improvements (Phase 3). Then the bell rings.",
+              "question": "What's the biggest loss from missing Phase 4?",
+              "choices": {
+                "a": "Nothing critical — three phases are enough for a good debrief",
+                "b": "The debrief was too slow and should have been faster to fit all phases",
+                "c": "Phase 4 ('How does this apply to the real world?') is the transfer step — without it, learning stays trapped in the virtual scenario. Students never connect VR decisions to real professional practice, which is the ultimate goal of simulation-based education."
+              },
+              "feedback": {
+                "a": "Three phases create good reflection, but the transfer question is the most valuable. Without it, students may see the VR experience as isolated from their real work. If time runs short, prioritise the transfer question.",
+                "b": "Speed isn't the solution — rushing phases produces shallow reflection. But if time is genuinely short, prioritise Phase 4 (transfer) because it has the highest learning impact. You can compress Phases 1–3 but should never skip Phase 4.",
+                "c": "Correct. Phase 4 is where virtual learning becomes real-world capability. 'How would you apply this in a real fire evacuation?' forces students to bridge the gap between simulation and practice. If time is short, always prioritise the transfer question."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Which phase of the GAS debriefing model does each activity belong to?",
+              "cat": {
+                "gather": "Gather",
+                "analyze": "Analyze",
+                "summarize": "Summarize"
+              },
+              "i1": "Ask students to describe what they saw and experienced",
+              "i2": "Examine why students made the decisions they did",
+              "i3": "State the key lessons and connect them to real practice",
+              "i4": "Collect observations: 'What happened first? What came next?'",
+              "i5": "Ask: 'Why did you choose that action instead of the alternatives?'",
+              "i6": "Conclude with: 'How will you apply this in your real work?'"
+            }
+          }
+        },
+        "b5": {
+          "title": "Assessment in VR",
+          "exercise": {
+            "instruction": "Match each VR assessment area to the type of student performance it evaluates",
+            "p1": { "term": "Skills (Technical execution)", "def": "Did the student complete all procedure steps accurately and in the correct order?" },
+            "p2": { "term": "Decision-Making (Cognitive performance)", "def": "Did the student choose the right response when conditions changed unexpectedly?" },
+            "p3": { "term": "Procedures (Process compliance)", "def": "Did the student follow the protocol checklist without skipping or reordering steps?" },
+            "p4": { "term": "Communication (Professional behaviour)", "def": "Did the student give clear instructions and stay calm under pressure?" }
+          },
+          "scenario": {
+            "context": "After a VR emergency response simulation, you need to assess student performance. One student completed the evacuation fastest but skipped two safety checkpoints. Another was slower but followed every protocol step and communicated clearly with virtual teammates.",
+            "question": "Who performed better?",
+            "choices": {
+              "a": "The fast student — speed and task completion are the most important metrics in an emergency",
+              "b": "Both performed equally — speed and thoroughness are equally valid approaches",
+              "c": "The thorough student — VR assessment should evaluate decision-making, procedure compliance, and communication, not just speed. The fast student missed safety steps, which in a real emergency would be critical errors."
+            },
+            "feedback": {
+              "a": "Speed is one metric, but skipping safety checkpoints in an emergency is a critical failure. VR assessment lets you see not just whether students completed the task, but how they made decisions along the way.",
+              "b": "In an emergency response scenario, thoroughness and protocol compliance are not equal to speed with shortcuts. Skipping safety steps in a real emergency has consequences. VR assessment should capture this distinction.",
+              "c": "Correct. VR assessment captures four areas: skills (execution), decision-making (choices), procedures (compliance), and communication (clarity). A holistic view reveals that the 'slower' student actually demonstrated stronger professional competence across all four areas."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A teacher only assesses VR performance based on whether students completed the simulation task (pass/fail). They ignore how students made decisions, whether they followed the correct procedure, and how they communicated.",
+              "question": "What's the problem with this assessment approach?",
+              "choices": {
+                "a": "It misses three of the four assessment areas. Task completion (skills) is only one dimension. Decision-making quality, procedure compliance, and communication are equally important — and VR uniquely reveals all four.",
+                "b": "Pass/fail is actually the best approach for VR — it's simple and objective",
+                "c": "The teacher should add a written test alongside the VR assessment"
+              },
+              "feedback": {
+                "a": "Exactly. VR's unique advantage is that it captures the full process, not just the outcome. A student who completes a task but makes poor decisions, skips steps, or communicates poorly would fail in a real scenario. Assessing all four areas gives a complete picture.",
+                "b": "Pass/fail captures outcomes but misses the how. Two students can both 'pass' with very different decision quality, procedure adherence, and communication. VR gives you visibility into the process — use it.",
+                "c": "A written test assesses knowledge, not performance. VR already captures skills, decisions, procedures, and communication in action. Adding a test duplicates what VR observation already reveals — focus on observing the four assessment areas during VR instead."
+              }
+            },
+            "c2": {
+              "context": "During a VR surgical preparation simulation, a nursing student performs every step correctly but never verbalises what they're doing. In a real operating room, verbal communication of each step is mandatory for safety.",
+              "question": "How should you assess this student?",
+              "choices": {
+                "a": "Full marks — they performed all steps correctly and that's what matters",
+                "b": "Strong in skills and procedures, but weak in communication. The assessment should note that the student's technical execution was excellent but that verbal communication — a critical professional behaviour in this context — needs development.",
+                "c": "Fail the student — communication is more important than technical accuracy"
+              },
+              "feedback": {
+                "a": "Technical accuracy is excellent, but in a context where verbal communication is a safety requirement (surgical prep), silent execution is a gap. VR assessment should capture all relevant areas, not just task completion.",
+                "b": "Correct. VR assessment lets you identify specific strengths and gaps across all four areas. This student excels in skills and procedures but needs work on communication. This nuanced feedback is far more useful than a simple pass/fail.",
+                "c": "Failing the student ignores their genuine strengths. The goal of assessment is to identify specific areas for improvement, not to apply all-or-nothing judgments. Skills and procedures were strong — communication needs targeted practice."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Which VR assessment area does each observation belong to?",
+              "cat": {
+                "skills": "Skills",
+                "decisions": "Decision-Making",
+                "procedures": "Procedures",
+                "communication": "Communication"
+              },
+              "i1": "Student completed all steps of the injection technique in the correct order",
+              "i2": "Student changed their approach when the virtual patient's condition worsened",
+              "i3": "Student followed the safety checklist without skipping any items",
+              "i4": "Student clearly announced each action to the virtual team",
+              "i5": "Student chose to evacuate when conditions became dangerous instead of continuing the task"
+            }
+          }
+        }
       }
     },
     "quizStep": {
@@ -2841,6 +3290,48 @@
           "c": "Tell them VR is an important part of the lesson and they should at least try for a few minutes",
           "d": "Let them sit out entirely and do independent work at their desk",
           "explanation": "VR participation is always voluntary. A student doesn't need to justify declining — respect the boundary, offer a structured alternative that achieves the same learning objective, and move on. 'Sitting out' without an alternative is exclusion, not inclusion."
+        }
+      },
+      "briefingAndDebriefing": {
+        "q1": {
+          "question": "Before a VR session, a teacher spends 5 minutes explaining every controller button, all the menu options, the Guardian system, and every interactive object in the environment. Students look overwhelmed. What's the core problem?",
+          "a": "5 minutes is fine — thoroughness prevents confusion during VR",
+          "b": "The briefing should focus only on the O-R-T-T framework (Objective, Rules, Time, Task) and take under 60 seconds. Hardware orientation is separate and should take no more than 30 seconds.",
+          "c": "The teacher should have sent a written guide before class instead",
+          "d": "The problem is the controller explanation — everything else is necessary",
+          "explanation": "Over-briefing overwhelms students and steals time from the VR experience. The O-R-T-T framework keeps briefings focused: state the objective, explain rules, set the time, describe the task. Hardware details and environment walkthroughs are either separate (30s max) or unnecessary."
+        },
+        "q2": {
+          "question": "After a 12-minute VR emergency simulation, only 3 minutes remain before the bell. You planned a full debriefing but can't fit all four question phases. What do you prioritise?",
+          "a": "Skip the debrief entirely — there's not enough time to do it properly",
+          "b": "Do a quick 'thumbs up/thumbs down' poll and dismiss",
+          "c": "Go straight to the transfer question: 'How would you apply what you just experienced in a real emergency?' — this is the highest-value debriefing phase",
+          "d": "Start with Phase 1 (description) and get as far as you can",
+          "explanation": "Even a 2-minute debrief is infinitely better than none. When time is short, prioritise the transfer question ('How does this apply to real practice?') because it has the highest learning impact — it forces students to connect the virtual experience to professional reality."
+        },
+        "q3": {
+          "question": "During debriefing, students have described what they saw and experienced in the VR simulation (Phase 1: Description). What should come next?",
+          "a": "Phase 4: Transfer — jump straight to 'How does this apply to real life?'",
+          "b": "Phase 2: Analysis — ask 'What actions did you take? What decisions did you make, and why?'",
+          "c": "Summarise what they described and move on to the next topic",
+          "d": "Correct their mistakes so they know what they did wrong",
+          "explanation": "After gathering descriptions (Phase 1), the natural next step is analysis (Phase 2): examining the reasoning behind actions and decisions. Skipping to transfer misses the critical self-reflection step. Correcting mistakes immediately shuts down the learner's own discovery process."
+        },
+        "q4": {
+          "question": "During debriefing, a student answers every question with one-word responses: 'Fine.' 'Good.' 'Nothing.' The rest of the group stays silent. What do you do?",
+          "a": "Accept the short answers — not all students are verbal learners",
+          "b": "Call on specific students by name to force participation",
+          "c": "Switch to more specific, open-ended questions: 'What was the first thing you noticed when you entered the building?' and maintain the 80/20 principle — learners should talk 80% of the time",
+          "d": "End the debrief early since students aren't engaged",
+          "explanation": "One-word answers usually mean the questions are too broad. 'How was it?' invites 'Fine.' But 'What was the first hazard you spotted?' demands specific recall. Open-ended, targeted questions draw out genuine reflection. The 80/20 rule (learner talk 80%, instructor 20%) keeps the focus on student thinking."
+        },
+        "q5": {
+          "question": "After a VR surgical preparation simulation, you need to assess student performance. One student finished all steps quickly but never communicated what they were doing. In a real operating room, verbal communication of each step is mandatory. How do you evaluate this?",
+          "a": "Full marks — they completed all the required steps correctly",
+          "b": "Strong in skills and procedures, but weak in communication. VR assessment should evaluate all four areas (skills, decision-making, procedures, communication) — and this student needs targeted practice on verbal step announcements.",
+          "c": "Fail — communication is the most important skill in surgery",
+          "d": "Average score — split the difference between good technical work and missing communication",
+          "explanation": "VR assessment captures four areas: skills (execution accuracy), decision-making (cognitive choices), procedures (protocol compliance), and communication (professional behaviour). This student excels in skills and procedures but has a specific gap in communication. Nuanced, multi-dimensional feedback is more useful than a single pass/fail or average score."
         }
       }
     },

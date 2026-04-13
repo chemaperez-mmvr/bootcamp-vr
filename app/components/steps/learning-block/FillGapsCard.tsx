@@ -408,7 +408,7 @@ export function FillGapsCard({
           >
             {allCorrect
               ? t("learningBlocks.fillGapsCorrect")
-              : t("learningBlocks.fillGapsWrong")}
+              : t("learningBlocks.fillGapsWrong", { wrong: Object.values(results).filter((v) => !v).length })}
           </p>
         </div>
       )}

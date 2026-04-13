@@ -7,49 +7,53 @@ import { IconCheck, IconClose } from "@/app/components/icons";
 /** Map category color tokens to Tailwind utility classes. */
 const COLOR_MAP: Record<
   string,
-  { header: string; border: string; bg: string; pill: string; text: string }
+  { border: string; bg: string; bgActive: string; header: string; chip: string; chipPlaced: string }
 > = {
   red: {
-    header: "bg-red-100 border-red-300 text-red-800",
-    border: "border-red-300",
-    bg: "bg-red-50",
-    pill: "bg-red-100 text-red-700 border-red-200",
-    text: "text-red-700",
+    border: "border-red-200",
+    bg: "bg-red-50/50",
+    bgActive: "bg-red-50 border-red-400 shadow-sm ring-2 ring-red-200",
+    header: "text-red-700",
+    chip: "bg-red-100 text-red-800 border-red-200",
+    chipPlaced: "bg-red-50 text-red-700 border-red-200",
   },
   amber: {
-    header: "bg-amber-100 border-amber-300 text-amber-800",
-    border: "border-amber-300",
-    bg: "bg-amber-50",
-    pill: "bg-amber-100 text-amber-700 border-amber-200",
-    text: "text-amber-700",
+    border: "border-amber-200",
+    bg: "bg-amber-50/50",
+    bgActive: "bg-amber-50 border-amber-400 shadow-sm ring-2 ring-amber-200",
+    header: "text-amber-700",
+    chip: "bg-amber-100 text-amber-800 border-amber-200",
+    chipPlaced: "bg-amber-50 text-amber-700 border-amber-200",
   },
   green: {
-    header: "bg-green-100 border-green-300 text-green-800",
-    border: "border-green-300",
-    bg: "bg-green-50",
-    pill: "bg-green-100 text-green-700 border-green-200",
-    text: "text-green-700",
+    border: "border-green-200",
+    bg: "bg-green-50/50",
+    bgActive: "bg-green-50 border-green-400 shadow-sm ring-2 ring-green-200",
+    header: "text-green-700",
+    chip: "bg-green-100 text-green-800 border-green-200",
+    chipPlaced: "bg-green-50 text-green-700 border-green-200",
   },
   blue: {
-    header: "bg-blue-100 border-blue-300 text-blue-800",
-    border: "border-blue-300",
-    bg: "bg-blue-50",
-    pill: "bg-blue-100 text-blue-700 border-blue-200",
-    text: "text-blue-700",
+    border: "border-blue-200",
+    bg: "bg-blue-50/50",
+    bgActive: "bg-blue-50 border-blue-400 shadow-sm ring-2 ring-blue-200",
+    header: "text-blue-700",
+    chip: "bg-blue-100 text-blue-800 border-blue-200",
+    chipPlaced: "bg-blue-50 text-blue-700 border-blue-200",
   },
   purple: {
-    header: "bg-purple-100 border-purple-300 text-purple-800",
-    border: "border-purple-300",
-    bg: "bg-purple-50",
-    pill: "bg-purple-100 text-purple-700 border-purple-200",
-    text: "text-purple-700",
+    border: "border-purple-200",
+    bg: "bg-purple-50/50",
+    bgActive: "bg-purple-50 border-purple-400 shadow-sm ring-2 ring-purple-200",
+    header: "text-purple-700",
+    chip: "bg-purple-100 text-purple-800 border-purple-200",
+    chipPlaced: "bg-purple-50 text-purple-700 border-purple-200",
   },
 };
 
-const FALLBACK_COLOR = COLOR_MAP.blue;
-
+const FALLBACK = COLOR_MAP.blue;
 function getColor(color: string) {
-  return COLOR_MAP[color] ?? FALLBACK_COLOR;
+  return COLOR_MAP[color] ?? FALLBACK;
 }
 
 export function TriageSortCard({
@@ -61,17 +65,13 @@ export function TriageSortCard({
   onPass: () => void;
   t: (key: string, values?: Record<string, string | number | Date>) => string;
 }) {
-  // Items that haven't been placed yet
   const [pool, setPool] = useState<string[]>(() =>
     [...exercise.items].sort(() => Math.random() - 0.5).map((i) => i.id)
   );
-  // Category assignments: categoryId -> itemId[]
   const [assignments, setAssignments] = useState<Record<string, string[]>>(
     () => Object.fromEntries(exercise.categories.map((c) => [c.id, []]))
   );
-  // Currently selected item (tap-to-place)
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
-  // Check results
   const [checked, setChecked] = useState(false);
   const [wrongItemIds, setWrongItemIds] = useState<Set<string>>(new Set());
 
@@ -79,7 +79,6 @@ export function TriageSortCard({
   const allPlaced = pool.length === 0;
   const allCorrect = checked && wrongItemIds.size === 0;
 
-  /** Tap an item in the pool — select it. */
   const handlePoolTap = useCallback(
     (itemId: string) => {
       if (checked) return;
@@ -88,35 +87,26 @@ export function TriageSortCard({
     [checked]
   );
 
-  /** Tap a category — place the selected item there. */
   const handleCategoryTap = useCallback(
     (categoryId: string) => {
       if (checked || !selectedItemId) return;
-
-      // Remove from pool if it's there
       setPool((prev) => prev.filter((id) => id !== selectedItemId));
-
-      // Remove from any other category
       setAssignments((prev) => {
         const next: Record<string, string[]> = {};
         for (const [catId, items] of Object.entries(prev)) {
           next[catId] = items.filter((id) => id !== selectedItemId);
         }
-        // Add to target category
         next[categoryId] = [...(next[categoryId] ?? []), selectedItemId];
         return next;
       });
-
       setSelectedItemId(null);
     },
     [checked, selectedItemId]
   );
 
-  /** Tap an item inside a category — move it back to pool. */
   const handleCategoryItemTap = useCallback(
     (itemId: string, categoryId: string) => {
       if (checked) return;
-
       setAssignments((prev) => ({
         ...prev,
         [categoryId]: prev[categoryId].filter((id) => id !== itemId),
@@ -127,10 +117,8 @@ export function TriageSortCard({
     [checked]
   );
 
-  /** Check all placements. */
   const handleCheck = useCallback(() => {
     const wrong = new Set<string>();
-
     for (const [categoryId, itemIds] of Object.entries(assignments)) {
       for (const itemId of itemIds) {
         const item = itemMap.get(itemId);
@@ -139,26 +127,23 @@ export function TriageSortCard({
         }
       }
     }
-
     setWrongItemIds(wrong);
     setChecked(true);
-
-    // Move wrong items back to pool after a brief delay so animation plays
-    if (wrong.size > 0) {
-      setTimeout(() => {
-        setAssignments((prev) => {
-          const next: Record<string, string[]> = {};
-          for (const [catId, items] of Object.entries(prev)) {
-            next[catId] = items.filter((id) => !wrong.has(id));
-          }
-          return next;
-        });
-        setPool((prev) => [...prev, ...Array.from(wrong)]);
-        setChecked(false);
-        setWrongItemIds(new Set());
-      }, 1800);
-    }
   }, [assignments, itemMap]);
+
+  const handleRetry = useCallback(() => {
+    const wrongArr = Array.from(wrongItemIds);
+    setAssignments((prev) => {
+      const next: Record<string, string[]> = {};
+      for (const [catId, items] of Object.entries(prev)) {
+        next[catId] = items.filter((id) => !wrongItemIds.has(id));
+      }
+      return next;
+    });
+    setPool((prev) => [...prev, ...wrongArr]);
+    setChecked(false);
+    setWrongItemIds(new Set());
+  }, [wrongItemIds]);
 
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
@@ -175,23 +160,17 @@ export function TriageSortCard({
         {t("learningBlocks.triageSortInstruction")}
       </p>
 
-      {/* Unsorted pool */}
-      <div className="mb-5">
-        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-          {t("learningBlocks.triageSortPool")}
-        </p>
-        <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-4 min-h-[56px]">
-          {pool.length === 0 && !checked && (
-            <p className="text-sm text-gray-400 text-center py-1">
-              {t("learningBlocks.triageSortPoolEmpty")}
-            </p>
-          )}
+      {/* Pool of unsorted items */}
+      {pool.length > 0 && (
+        <div className="mb-5">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+            {t("learningBlocks.triageSortPool")}
+          </p>
           <div className="flex flex-wrap gap-2">
             {pool.map((itemId) => {
               const item = itemMap.get(itemId);
               if (!item) return null;
               const isSelected = selectedItemId === itemId;
-              const isWrong = wrongItemIds.has(itemId);
 
               return (
                 <button
@@ -199,13 +178,15 @@ export function TriageSortCard({
                   type="button"
                   onClick={() => handlePoolTap(itemId)}
                   disabled={checked}
-                  className={`px-3.5 py-2 rounded-lg border-2 text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
-                    isWrong
-                      ? "border-red-400 bg-red-50 text-red-800 animate-wizard-feedback"
-                      : isSelected
-                        ? "ring-2 ring-teal-400 shadow-md scale-[1.05] border-teal-400 bg-teal-50 text-teal-800"
-                        : "border-gray-200 bg-white text-gray-700 hover:border-teal-300 hover:bg-teal-50/40 cursor-pointer hover:shadow-sm"
-                  }`}
+                  className={`
+                    px-3.5 py-2 rounded-xl border-2 text-sm font-medium transition-all duration-200
+                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2
+                    ${
+                      isSelected
+                        ? "border-teal-500 bg-teal-50 text-teal-800 shadow-md scale-[1.03]"
+                        : "border-gray-200 bg-white text-gray-700 hover:border-teal-300 hover:bg-teal-50/40 cursor-pointer"
+                    }
+                  `}
                 >
                   {t(item.labelKey)}
                 </button>
@@ -213,82 +194,92 @@ export function TriageSortCard({
             })}
           </div>
         </div>
-      </div>
+      )}
 
-      {/* Category columns */}
-      <div
-        className="grid gap-3"
-        style={{
-          gridTemplateColumns: `repeat(${exercise.categories.length}, minmax(0, 1fr))`,
-        }}
-      >
+      {/* Hint */}
+      {selectedItemId && !checked && (
+        <p className="text-sm text-teal-600 font-medium mb-3 animate-content-enter">
+          {t("learningBlocks.triageSortSelectCategory")}
+        </p>
+      )}
+
+      {/* All sorted message */}
+      {allPlaced && !checked && (
+        <p className="text-sm text-teal-600 font-medium mb-4 text-center">
+          {t("learningBlocks.triageSortPoolEmpty")}
+        </p>
+      )}
+
+      {/* Categories */}
+      <div className="space-y-3">
         {exercise.categories.map((category) => {
           const color = getColor(category.color);
           const items = assignments[category.id] ?? [];
-          const isTargetable = selectedItemId !== null && !checked;
+          const isTarget = selectedItemId !== null && !checked;
 
           return (
-            <button
+            <div
               key={category.id}
-              type="button"
+              role="button"
+              tabIndex={isTarget ? 0 : -1}
               onClick={() => handleCategoryTap(category.id)}
-              disabled={!isTargetable}
-              className={`rounded-xl border-2 transition-all duration-200 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
-                color.border
-              } ${
-                isTargetable
-                  ? `${color.bg} shadow-sm hover:shadow-md hover:scale-[1.01] cursor-pointer`
-                  : color.bg
-              }`}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  handleCategoryTap(category.id);
+                }
+              }}
+              className={`
+                rounded-xl border-2 p-4 transition-all duration-200
+                focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2
+                ${
+                  isTarget
+                    ? `${color.bgActive} cursor-pointer`
+                    : `${color.border} ${color.bg}`
+                }
+              `}
             >
-              {/* Category header */}
-              <div
-                className={`px-3 py-2 rounded-t-[10px] border-b ${color.header}`}
-              >
-                <p className="text-xs sm:text-sm font-bold text-center">
-                  {t(category.labelKey)}
-                </p>
-              </div>
+              {/* Category label */}
+              <p className={`text-sm font-bold ${color.header} mb-2`}>
+                {t(category.labelKey)}
+              </p>
 
-              {/* Placed items */}
-              <div className="p-3 min-h-[64px]">
-                {items.length === 0 && (
-                  <p className="text-xs text-gray-400 text-center py-2">
-                    {t("learningBlocks.triageSortDropHere")}
-                  </p>
-                )}
-                <div className="flex flex-col gap-1.5">
+              {/* Items in this category */}
+              {items.length > 0 ? (
+                <div className="flex flex-wrap gap-2">
                   {items.map((itemId) => {
                     const item = itemMap.get(itemId);
                     if (!item) return null;
-                    const isCorrectChecked =
-                      checked && !wrongItemIds.has(itemId);
+                    const isCorrectChecked = checked && !wrongItemIds.has(itemId);
                     const isWrongChecked = checked && wrongItemIds.has(itemId);
 
                     return (
                       <span
                         key={itemId}
-                        role="button"
-                        tabIndex={checked ? -1 : 0}
+                        role={checked ? undefined : "button"}
+                        tabIndex={checked ? undefined : 0}
                         onClick={(e) => {
                           e.stopPropagation();
                           if (!checked) handleCategoryItemTap(itemId, category.id);
                         }}
                         onKeyDown={(e) => {
-                          if (e.key === "Enter" || e.key === " ") {
+                          if (!checked && (e.key === "Enter" || e.key === " ")) {
                             e.preventDefault();
                             e.stopPropagation();
-                            if (!checked)
-                              handleCategoryItemTap(itemId, category.id);
+                            handleCategoryItemTap(itemId, category.id);
                           }
                         }}
-                        className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border text-xs sm:text-sm font-medium transition-all duration-200 ${
-                          isCorrectChecked
-                            ? "border-green-300 bg-green-100 text-green-800"
-                            : isWrongChecked
-                              ? "border-red-300 bg-red-100 text-red-800 animate-wizard-feedback"
-                              : `${color.pill} hover:opacity-80 cursor-pointer`
-                        }`}
+                        className={`
+                          inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-sm font-medium
+                          transition-all duration-200
+                          ${
+                            isCorrectChecked
+                              ? "border-green-300 bg-green-100 text-green-800"
+                              : isWrongChecked
+                                ? "border-red-300 bg-red-100 text-red-800 animate-wizard-feedback"
+                                : `${color.chipPlaced} hover:opacity-70 cursor-pointer group`
+                          }
+                        `}
                       >
                         {isCorrectChecked && (
                           <IconCheck className="w-3.5 h-3.5 text-green-600 shrink-0" />
@@ -297,28 +288,43 @@ export function TriageSortCard({
                           <IconClose className="w-3.5 h-3.5 text-red-600 shrink-0" />
                         )}
                         {t(item.labelKey)}
+                        {!checked && (
+                          <IconClose className="w-3 h-3 text-gray-400 group-hover:text-red-500 ml-0.5 shrink-0" />
+                        )}
                       </span>
                     );
                   })}
                 </div>
-              </div>
-            </button>
+              ) : (
+                <p className="text-sm text-gray-400 italic">
+                  {t("learningBlocks.triageSortDropHere")}
+                </p>
+              )}
+            </div>
           );
         })}
       </div>
 
       {/* Actions */}
       <div className="mt-6 flex justify-end gap-3">
-        {!checked && allPlaced && !allCorrect && (
+        {!checked && allPlaced && (
           <button
             type="button"
             onClick={handleCheck}
             className="px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.triageSortCheck")}
-            <span className="ml-2" aria-hidden>
-              &rarr;
-            </span>
+            <span className="ml-2" aria-hidden>&rarr;</span>
+          </button>
+        )}
+
+        {checked && !allCorrect && (
+          <button
+            type="button"
+            onClick={handleRetry}
+            className="inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold text-amber-800 bg-amber-100 rounded-xl hover:bg-amber-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+          >
+            {t("learningBlocks.triageSortRetry")}
           </button>
         )}
 
@@ -326,12 +332,10 @@ export function TriageSortCard({
           <button
             type="button"
             onClick={onPass}
-            className="px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             {t("learningBlocks.exerciseDone")}
-            <span className="ml-2" aria-hidden>
-              &rarr;
-            </span>
+            <span aria-hidden>&rarr;</span>
           </button>
         )}
       </div>

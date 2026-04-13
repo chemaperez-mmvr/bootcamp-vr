@@ -77,10 +77,13 @@ export function ModuleQuizStep({
   const isSummary = currentIndex >= totalQuestions;
   const currentQuestion = quiz?.questions[currentIndex] ?? null;
 
+  // Cooldown ref to prevent ghost clicks on options after question transition
+  const cooldownRef = useRef(false);
+
   // Handlers
   const handleSelect = useCallback(
     (optionId: string) => {
-      if (revealed || !currentQuestion) return;
+      if (revealed || !currentQuestion || cooldownRef.current) return;
       setAnswers((prev) => ({ ...prev, [currentQuestion.id]: optionId }));
       setRevealed(true);
     },
@@ -90,6 +93,12 @@ export function ModuleQuizStep({
   const handleNext = useCallback(() => {
     const nextIndex = currentIndex + 1;
     setRevealed(false);
+
+    // Block option clicks during question transition to prevent accidental selections
+    cooldownRef.current = true;
+    setTimeout(() => {
+      cooldownRef.current = false;
+    }, 600);
 
     if (nextIndex >= totalQuestions) {
       // Calculate score and finalize
@@ -122,6 +131,11 @@ export function ModuleQuizStep({
     setResult(null);
     setCurrentIndex(0);
     setExpandedQuestions(new Set());
+    // Block option clicks during transition back to first question
+    cooldownRef.current = true;
+    setTimeout(() => {
+      cooldownRef.current = false;
+    }, 600);
   }, []);
 
   const toggleExpanded = useCallback((questionId: string) => {
@@ -289,9 +303,9 @@ export function ModuleQuizStep({
               </div>
             )}
 
-            {/* Next button */}
+            {/* Next button — no entrance animation so it's immediately clickable */}
             {revealed && (
-              <div className="mt-6 flex justify-end animate-content-enter">
+              <div className="mt-6 flex justify-end">
                 <button
                   type="button"
                   onClick={handleNext}

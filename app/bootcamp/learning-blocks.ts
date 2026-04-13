@@ -14,6 +14,8 @@ const S = "learningBlocks.classroomImplementation";
 
 const T = "learningBlocks.safetyWellbeingAccessibility";
 
+const U = "learningBlocks.briefingAndDebriefing";
+
 const blocksByModule: Record<string, LearningBlockSetDef> = {
   "basic-foundations": {
     moduleSlug: "basic-foundations",
@@ -1834,6 +1836,380 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
               { id: "i3", labelKey: `${T}.b5.micro.cls.i3`, correctCategoryId: "observer" },
               { id: "i4", labelKey: `${T}.b5.micro.cls.i4`, correctCategoryId: "vrUser" },
               { id: "i5", labelKey: `${T}.b5.micro.cls.i5`, correctCategoryId: "observer" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  /* ================================================================== */
+  /*  MODULE 5 — Briefing and Debriefing                                */
+  /* ================================================================== */
+  "briefing-and-debriefing": {
+    moduleSlug: "briefing-and-debriefing",
+    blocks: [
+      /* ============================================================ */
+      /*  Block 1 — Briefing Fundamentals & O-R-T-T                    */
+      /* ============================================================ */
+      {
+        blockId: "briefing-essentials",
+        titleKey: `${U}.b1.title`,
+        iconEmoji: "🗣️",
+        exercise: {
+          type: "ordering",
+          id: "b1-order",
+          instructionKey: `${U}.b1.exercise.instruction`,
+          scaleStartKey: `${U}.b1.exercise.scaleStart`,
+          scaleEndKey: `${U}.b1.exercise.scaleEnd`,
+          items: [
+            { id: "i1", labelKey: `${U}.b1.exercise.i1`, correctPosition: 0 },
+            { id: "i2", labelKey: `${U}.b1.exercise.i2`, correctPosition: 1 },
+            { id: "i3", labelKey: `${U}.b1.exercise.i3`, correctPosition: 2 },
+            { id: "i4", labelKey: `${U}.b1.exercise.i4`, correctPosition: 3 },
+          ],
+        },
+        scenario: {
+          id: "b1-s0",
+          contextKey: `${U}.b1.scenario.context`,
+          questionKey: `${U}.b1.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${U}.b1.scenario.choices.a`, feedbackKey: `${U}.b1.scenario.feedback.a`, feedbackTone: "partial", isCorrect: false },
+            { id: "b", labelKey: `${U}.b1.scenario.choices.b`, feedbackKey: `${U}.b1.scenario.feedback.b`, feedbackTone: "correct", isCorrect: true },
+            { id: "c", labelKey: `${U}.b1.scenario.choices.c`, feedbackKey: `${U}.b1.scenario.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b1-c1",
+            contextKey: `${U}.b1.concepts.c1.context`,
+            questionKey: `${U}.b1.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b1.concepts.c1.choices.a`, feedbackKey: `${U}.b1.concepts.c1.feedback.a`, feedbackTone: "correct", isCorrect: true },
+              { id: "b", labelKey: `${U}.b1.concepts.c1.choices.b`, feedbackKey: `${U}.b1.concepts.c1.feedback.b`, feedbackTone: "partial", isCorrect: false },
+              { id: "c", labelKey: `${U}.b1.concepts.c1.choices.c`, feedbackKey: `${U}.b1.concepts.c1.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+            ],
+          },
+          {
+            id: "b1-c2",
+            contextKey: `${U}.b1.concepts.c2.context`,
+            questionKey: `${U}.b1.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b1.concepts.c2.choices.a`, feedbackKey: `${U}.b1.concepts.c2.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "b", labelKey: `${U}.b1.concepts.c2.choices.b`, feedbackKey: `${U}.b1.concepts.c2.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${U}.b1.concepts.c2.choices.c`, feedbackKey: `${U}.b1.concepts.c2.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+        ],
+        insightSlideId: "briefing-essentials",
+        microChecks: [
+          {
+            type: "trueFalse",
+            id: "b1-tf",
+            statements: [
+              { id: "s1", statementKey: `${U}.b1.micro.tf.s1.statement`, isTrue: true, explanationKey: `${U}.b1.micro.tf.s1.explanation` },
+              { id: "s2", statementKey: `${U}.b1.micro.tf.s2.statement`, isTrue: false, explanationKey: `${U}.b1.micro.tf.s2.explanation` },
+              { id: "s3", statementKey: `${U}.b1.micro.tf.s3.statement`, isTrue: true, explanationKey: `${U}.b1.micro.tf.s3.explanation` },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 2 — What to Explain (and What Not to)                  */
+      /* ============================================================ */
+      {
+        blockId: "what-to-explain",
+        titleKey: `${U}.b2.title`,
+        iconEmoji: "🎯",
+        exercise: {
+          type: "triageSort",
+          id: "b2-triage",
+          instructionKey: `${U}.b2.exercise.instruction`,
+          categories: [
+            { id: "mustExplain", labelKey: `${U}.b2.exercise.cat.mustExplain`, color: "green" },
+            { id: "letDiscover", labelKey: `${U}.b2.exercise.cat.letDiscover`, color: "amber" },
+            { id: "neverMention", labelKey: `${U}.b2.exercise.cat.neverMention`, color: "red" },
+          ],
+          items: [
+            { id: "i1", labelKey: `${U}.b2.exercise.i1`, correctCategoryId: "mustExplain" },
+            { id: "i2", labelKey: `${U}.b2.exercise.i2`, correctCategoryId: "mustExplain" },
+            { id: "i3", labelKey: `${U}.b2.exercise.i3`, correctCategoryId: "mustExplain" },
+            { id: "i4", labelKey: `${U}.b2.exercise.i4`, correctCategoryId: "letDiscover" },
+            { id: "i5", labelKey: `${U}.b2.exercise.i5`, correctCategoryId: "letDiscover" },
+            { id: "i6", labelKey: `${U}.b2.exercise.i6`, correctCategoryId: "neverMention" },
+            { id: "i7", labelKey: `${U}.b2.exercise.i7`, correctCategoryId: "neverMention" },
+            { id: "i8", labelKey: `${U}.b2.exercise.i8`, correctCategoryId: "mustExplain" },
+          ],
+        },
+        scenario: {
+          id: "b2-s0",
+          contextKey: `${U}.b2.scenario.context`,
+          questionKey: `${U}.b2.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${U}.b2.scenario.choices.a`, feedbackKey: `${U}.b2.scenario.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+            { id: "b", labelKey: `${U}.b2.scenario.choices.b`, feedbackKey: `${U}.b2.scenario.feedback.b`, feedbackTone: "correct", isCorrect: true },
+            { id: "c", labelKey: `${U}.b2.scenario.choices.c`, feedbackKey: `${U}.b2.scenario.feedback.c`, feedbackTone: "partial", isCorrect: false },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b2-c1",
+            contextKey: `${U}.b2.concepts.c1.context`,
+            questionKey: `${U}.b2.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b2.concepts.c1.choices.a`, feedbackKey: `${U}.b2.concepts.c1.feedback.a`, feedbackTone: "partial", isCorrect: false },
+              { id: "b", labelKey: `${U}.b2.concepts.c1.choices.b`, feedbackKey: `${U}.b2.concepts.c1.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "c", labelKey: `${U}.b2.concepts.c1.choices.c`, feedbackKey: `${U}.b2.concepts.c1.feedback.c`, feedbackTone: "correct", isCorrect: true },
+            ],
+          },
+          {
+            id: "b2-c2",
+            contextKey: `${U}.b2.concepts.c2.context`,
+            questionKey: `${U}.b2.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b2.concepts.c2.choices.a`, feedbackKey: `${U}.b2.concepts.c2.feedback.a`, feedbackTone: "correct", isCorrect: true },
+              { id: "b", labelKey: `${U}.b2.concepts.c2.choices.b`, feedbackKey: `${U}.b2.concepts.c2.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "c", labelKey: `${U}.b2.concepts.c2.choices.c`, feedbackKey: `${U}.b2.concepts.c2.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+        ],
+        insightSlideId: "what-to-explain",
+        microChecks: [
+          {
+            type: "trueFalse",
+            id: "b2-tf",
+            statements: [
+              { id: "s1", statementKey: `${U}.b2.micro.tf.s1.statement`, isTrue: false, explanationKey: `${U}.b2.micro.tf.s1.explanation` },
+              { id: "s2", statementKey: `${U}.b2.micro.tf.s2.statement`, isTrue: true, explanationKey: `${U}.b2.micro.tf.s2.explanation` },
+              { id: "s3", statementKey: `${U}.b2.micro.tf.s3.statement`, isTrue: false, explanationKey: `${U}.b2.micro.tf.s3.explanation` },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 3 — The 60-Second Briefing                             */
+      /* ============================================================ */
+      {
+        blockId: "sixty-second-briefing",
+        titleKey: `${U}.b3.title`,
+        iconEmoji: "⏱️",
+        exercise: {
+          type: "fillGaps",
+          id: "b3-fill",
+          instructionKey: `${U}.b3.exercise.instruction`,
+          templateKey: `${U}.b3.exercise.template`,
+          blanks: [
+            { id: "blank1", correctWordKey: `${U}.b3.exercise.blank1` },
+            { id: "blank2", correctWordKey: `${U}.b3.exercise.blank2` },
+            { id: "blank3", correctWordKey: `${U}.b3.exercise.blank3` },
+            { id: "blank4", correctWordKey: `${U}.b3.exercise.blank4` },
+          ],
+          distractorKeys: [
+            `${U}.b3.exercise.distractor1`,
+            `${U}.b3.exercise.distractor2`,
+          ],
+        },
+        scenario: {
+          id: "b3-s0",
+          contextKey: `${U}.b3.scenario.context`,
+          questionKey: `${U}.b3.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${U}.b3.scenario.choices.a`, feedbackKey: `${U}.b3.scenario.feedback.a`, feedbackTone: "partial", isCorrect: false },
+            { id: "b", labelKey: `${U}.b3.scenario.choices.b`, feedbackKey: `${U}.b3.scenario.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+            { id: "c", labelKey: `${U}.b3.scenario.choices.c`, feedbackKey: `${U}.b3.scenario.feedback.c`, feedbackTone: "correct", isCorrect: true },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b3-c1",
+            contextKey: `${U}.b3.concepts.c1.context`,
+            questionKey: `${U}.b3.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b3.concepts.c1.choices.a`, feedbackKey: `${U}.b3.concepts.c1.feedback.a`, feedbackTone: "correct", isCorrect: true },
+              { id: "b", labelKey: `${U}.b3.concepts.c1.choices.b`, feedbackKey: `${U}.b3.concepts.c1.feedback.b`, feedbackTone: "partial", isCorrect: false },
+              { id: "c", labelKey: `${U}.b3.concepts.c1.choices.c`, feedbackKey: `${U}.b3.concepts.c1.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+            ],
+          },
+          {
+            id: "b3-c2",
+            contextKey: `${U}.b3.concepts.c2.context`,
+            questionKey: `${U}.b3.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b3.concepts.c2.choices.a`, feedbackKey: `${U}.b3.concepts.c2.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "b", labelKey: `${U}.b3.concepts.c2.choices.b`, feedbackKey: `${U}.b3.concepts.c2.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${U}.b3.concepts.c2.choices.c`, feedbackKey: `${U}.b3.concepts.c2.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+        ],
+        insightSlideId: "sixty-second-briefing",
+        microChecks: [
+          {
+            type: "classify",
+            id: "b3-cls",
+            instructionKey: `${U}.b3.micro.cls.instruction`,
+            categories: [
+              { id: "objective", labelKey: `${U}.b3.micro.cls.cat.objective` },
+              { id: "taskRules", labelKey: `${U}.b3.micro.cls.cat.taskRules` },
+              { id: "timeStart", labelKey: `${U}.b3.micro.cls.cat.timeStart` },
+            ],
+            items: [
+              { id: "i1", labelKey: `${U}.b3.micro.cls.i1`, correctCategoryId: "objective" },
+              { id: "i2", labelKey: `${U}.b3.micro.cls.i2`, correctCategoryId: "taskRules" },
+              { id: "i3", labelKey: `${U}.b3.micro.cls.i3`, correctCategoryId: "taskRules" },
+              { id: "i4", labelKey: `${U}.b3.micro.cls.i4`, correctCategoryId: "timeStart" },
+              { id: "i5", labelKey: `${U}.b3.micro.cls.i5`, correctCategoryId: "objective" },
+              { id: "i6", labelKey: `${U}.b3.micro.cls.i6`, correctCategoryId: "timeStart" },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 4 — Structured Debriefing (GAS Model)                  */
+      /* ============================================================ */
+      {
+        blockId: "structured-debriefing",
+        titleKey: `${U}.b4.title`,
+        iconEmoji: "💬",
+        exercise: {
+          type: "ordering",
+          id: "b4-order",
+          instructionKey: `${U}.b4.exercise.instruction`,
+          scaleStartKey: `${U}.b4.exercise.scaleStart`,
+          scaleEndKey: `${U}.b4.exercise.scaleEnd`,
+          items: [
+            { id: "i1", labelKey: `${U}.b4.exercise.i1`, correctPosition: 0 },
+            { id: "i2", labelKey: `${U}.b4.exercise.i2`, correctPosition: 1 },
+            { id: "i3", labelKey: `${U}.b4.exercise.i3`, correctPosition: 2 },
+            { id: "i4", labelKey: `${U}.b4.exercise.i4`, correctPosition: 3 },
+            { id: "i5", labelKey: `${U}.b4.exercise.i5`, correctPosition: 4 },
+          ],
+        },
+        scenario: {
+          id: "b4-s0",
+          contextKey: `${U}.b4.scenario.context`,
+          questionKey: `${U}.b4.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${U}.b4.scenario.choices.a`, feedbackKey: `${U}.b4.scenario.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+            { id: "b", labelKey: `${U}.b4.scenario.choices.b`, feedbackKey: `${U}.b4.scenario.feedback.b`, feedbackTone: "partial", isCorrect: false },
+            { id: "c", labelKey: `${U}.b4.scenario.choices.c`, feedbackKey: `${U}.b4.scenario.feedback.c`, feedbackTone: "correct", isCorrect: true },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b4-c1",
+            contextKey: `${U}.b4.concepts.c1.context`,
+            questionKey: `${U}.b4.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b4.concepts.c1.choices.a`, feedbackKey: `${U}.b4.concepts.c1.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "b", labelKey: `${U}.b4.concepts.c1.choices.b`, feedbackKey: `${U}.b4.concepts.c1.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${U}.b4.concepts.c1.choices.c`, feedbackKey: `${U}.b4.concepts.c1.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+          {
+            id: "b4-c2",
+            contextKey: `${U}.b4.concepts.c2.context`,
+            questionKey: `${U}.b4.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b4.concepts.c2.choices.a`, feedbackKey: `${U}.b4.concepts.c2.feedback.a`, feedbackTone: "partial", isCorrect: false },
+              { id: "b", labelKey: `${U}.b4.concepts.c2.choices.b`, feedbackKey: `${U}.b4.concepts.c2.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "c", labelKey: `${U}.b4.concepts.c2.choices.c`, feedbackKey: `${U}.b4.concepts.c2.feedback.c`, feedbackTone: "correct", isCorrect: true },
+            ],
+          },
+        ],
+        insightSlideId: "structured-debriefing",
+        microChecks: [
+          {
+            type: "classify",
+            id: "b4-cls",
+            instructionKey: `${U}.b4.micro.cls.instruction`,
+            categories: [
+              { id: "gather", labelKey: `${U}.b4.micro.cls.cat.gather` },
+              { id: "analyze", labelKey: `${U}.b4.micro.cls.cat.analyze` },
+              { id: "summarize", labelKey: `${U}.b4.micro.cls.cat.summarize` },
+            ],
+            items: [
+              { id: "i1", labelKey: `${U}.b4.micro.cls.i1`, correctCategoryId: "gather" },
+              { id: "i2", labelKey: `${U}.b4.micro.cls.i2`, correctCategoryId: "analyze" },
+              { id: "i3", labelKey: `${U}.b4.micro.cls.i3`, correctCategoryId: "summarize" },
+              { id: "i4", labelKey: `${U}.b4.micro.cls.i4`, correctCategoryId: "gather" },
+              { id: "i5", labelKey: `${U}.b4.micro.cls.i5`, correctCategoryId: "analyze" },
+              { id: "i6", labelKey: `${U}.b4.micro.cls.i6`, correctCategoryId: "summarize" },
+            ],
+          },
+        ],
+      },
+
+      /* ============================================================ */
+      /*  Block 5 — Assessment in VR                                   */
+      /* ============================================================ */
+      {
+        blockId: "assessment-in-vr",
+        titleKey: `${U}.b5.title`,
+        iconEmoji: "📋",
+        exercise: {
+          type: "matching",
+          id: "b5-match",
+          instructionKey: `${U}.b5.exercise.instruction`,
+          pairs: [
+            { id: "p1", leftKey: `${U}.b5.exercise.p1.term`, rightKey: `${U}.b5.exercise.p1.def` },
+            { id: "p2", leftKey: `${U}.b5.exercise.p2.term`, rightKey: `${U}.b5.exercise.p2.def` },
+            { id: "p3", leftKey: `${U}.b5.exercise.p3.term`, rightKey: `${U}.b5.exercise.p3.def` },
+            { id: "p4", leftKey: `${U}.b5.exercise.p4.term`, rightKey: `${U}.b5.exercise.p4.def` },
+          ],
+        },
+        scenario: {
+          id: "b5-s0",
+          contextKey: `${U}.b5.scenario.context`,
+          questionKey: `${U}.b5.scenario.question`,
+          choices: [
+            { id: "a", labelKey: `${U}.b5.scenario.choices.a`, feedbackKey: `${U}.b5.scenario.feedback.a`, feedbackTone: "partial", isCorrect: false },
+            { id: "b", labelKey: `${U}.b5.scenario.choices.b`, feedbackKey: `${U}.b5.scenario.feedback.b`, feedbackTone: "incorrect", isCorrect: false },
+            { id: "c", labelKey: `${U}.b5.scenario.choices.c`, feedbackKey: `${U}.b5.scenario.feedback.c`, feedbackTone: "correct", isCorrect: true },
+          ],
+        },
+        conceptScenarios: [
+          {
+            id: "b5-c1",
+            contextKey: `${U}.b5.concepts.c1.context`,
+            questionKey: `${U}.b5.concepts.c1.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b5.concepts.c1.choices.a`, feedbackKey: `${U}.b5.concepts.c1.feedback.a`, feedbackTone: "correct", isCorrect: true },
+              { id: "b", labelKey: `${U}.b5.concepts.c1.choices.b`, feedbackKey: `${U}.b5.concepts.c1.feedback.b`, feedbackTone: "partial", isCorrect: false },
+              { id: "c", labelKey: `${U}.b5.concepts.c1.choices.c`, feedbackKey: `${U}.b5.concepts.c1.feedback.c`, feedbackTone: "incorrect", isCorrect: false },
+            ],
+          },
+          {
+            id: "b5-c2",
+            contextKey: `${U}.b5.concepts.c2.context`,
+            questionKey: `${U}.b5.concepts.c2.question`,
+            choices: [
+              { id: "a", labelKey: `${U}.b5.concepts.c2.choices.a`, feedbackKey: `${U}.b5.concepts.c2.feedback.a`, feedbackTone: "incorrect", isCorrect: false },
+              { id: "b", labelKey: `${U}.b5.concepts.c2.choices.b`, feedbackKey: `${U}.b5.concepts.c2.feedback.b`, feedbackTone: "correct", isCorrect: true },
+              { id: "c", labelKey: `${U}.b5.concepts.c2.choices.c`, feedbackKey: `${U}.b5.concepts.c2.feedback.c`, feedbackTone: "partial", isCorrect: false },
+            ],
+          },
+        ],
+        insightSlideId: "assessment-in-vr",
+        microChecks: [
+          {
+            type: "classify",
+            id: "b5-cls",
+            instructionKey: `${U}.b5.micro.cls.instruction`,
+            categories: [
+              { id: "skills", labelKey: `${U}.b5.micro.cls.cat.skills` },
+              { id: "decisions", labelKey: `${U}.b5.micro.cls.cat.decisions` },
+              { id: "procedures", labelKey: `${U}.b5.micro.cls.cat.procedures` },
+              { id: "communication", labelKey: `${U}.b5.micro.cls.cat.communication` },
+            ],
+            items: [
+              { id: "i1", labelKey: `${U}.b5.micro.cls.i1`, correctCategoryId: "skills" },
+              { id: "i2", labelKey: `${U}.b5.micro.cls.i2`, correctCategoryId: "decisions" },
+              { id: "i3", labelKey: `${U}.b5.micro.cls.i3`, correctCategoryId: "procedures" },
+              { id: "i4", labelKey: `${U}.b5.micro.cls.i4`, correctCategoryId: "communication" },
+              { id: "i5", labelKey: `${U}.b5.micro.cls.i5`, correctCategoryId: "decisions" },
             ],
           },
         ],

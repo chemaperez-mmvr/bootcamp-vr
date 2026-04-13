@@ -230,13 +230,35 @@
     },
     "overview": {
       "eyebrow": "Resumen del módulo",
+      "moduleNumber": "Módulo {number}",
       "sections": "secciones",
       "essential": "esenciales",
       "roadmap": "Tu ruta de aprendizaje",
       "topicsCovered": "Temas incluidos en este módulo",
       "essentialLegend": "Temas esenciales para principiantes",
+      "referenceSections": "También incluido",
       "startButton": "Empezar módulo",
-      "availableBadges": "Insignias que puedes ganar"
+      "continueButton": "Continuar módulo",
+      "availableBadges": "Insignias que puedes ganar",
+      "whatYoullDo": "Lo que harás",
+      "lessons": "{count} lecciones",
+      "quizIncluded": "Quiz",
+      "quizCallout": "Este módulo termina con un quiz. Necesitas {percent}% de respuestas correctas para aprobarlo.",
+      "activityTypes": "Ejercicios interactivos",
+      "activityLesson": "Lección",
+      "activityVideo": "Video",
+      "introVideoDesc": "Breve introducción al módulo",
+      "activityPractice": "Práctica",
+      "activityChecklist": "Checklist",
+      "activityTour": "Tour",
+      "stepDesc": {
+        "overview": "Vista previa del módulo",
+        "intro-video": "Ver la introducción",
+        "tour": "Explorar el visor",
+        "content": "Lecciones interactivas",
+        "quiz": "Pon a prueba lo aprendido",
+        "results": "Ver tus resultados"
+      }
     },
     "tourStep": {
       "completedTitle": "¡Tour completado!",
@@ -254,6 +276,7 @@
       "prev": "Anterior",
       "startQuiz": "Continuar al quiz",
       "videoComingSoon": "Video disponible pronto",
+      "videoRequiredNote": "Para continuar es necesario completar la visualización del vídeo.",
       "basicFoundations": {
         "video": {
           "title": "Fundamentos de VR, AR y XR",
@@ -428,6 +451,10 @@
         }
       },
       "safetyWellbeingAccessibility": {
+        "video": {
+          "title": "Seguridad, Bienestar y Accesibilidad",
+          "subtitle": "Mira esta introducción sobre cómo mantener a los estudiantes seguros, cómodos e incluidos durante las experiencias de RV"
+        },
         "s1": {
           "title": "Seguridad Física y Requisitos de Espacio",
           "subtitle": "Reglas claras y espacios medidos previenen la mayoría de incidentes en RV",
@@ -467,6 +494,52 @@
           "p2": "Tres alternativas: rol de observador activo, tarea de aprendizaje complementaria o participación rotativa",
           "p3": "Los observadores necesitan tareas estructuradas (listas de verificación, preguntas, áreas de enfoque) para que la observación sea activa, no pasiva",
           "highlight": "La accesibilidad consiste en ofrecer alternativas significativas, no experiencias idénticas. No llevar un visor no significa no aprender."
+        }
+      },
+      "briefingAndDebriefing": {
+        "video": {
+          "title": "Briefing, Debriefing y Evaluación",
+          "subtitle": "Mira esta introducción sobre cómo convertir las experiencias de RV en aprendizaje real mediante preparación y reflexión estructuradas"
+        },
+        "s1": {
+          "title": "Fundamentos del Briefing y el Marco O-R-T-T",
+          "subtitle": "Por qué la preparación estructurada convierte la RV de entretenimiento en educación",
+          "p1": "La experiencia en RV por sí sola no produce aprendizaje — lo que ocurre antes y después del visor determina si los estudiantes obtienen comprensión duradera",
+          "p2": "El marco O-R-T-T da a cada briefing una estructura clara: Objetivo, Reglas, Tiempo, Tarea",
+          "p3": "El briefing reduce la ansiedad, clarifica expectativas y dirige los recursos cognitivos al objetivo de aprendizaje en lugar de descifrar los controles",
+          "highlight": "La experiencia sin reflexión es solo actividad. Un briefing estructurado asegura que los estudiantes usen su tiempo en RV para aprender, no para adivinar."
+        },
+        "s2": {
+          "title": "Qué Explicar (y Qué No)",
+          "subtitle": "El equilibrio entre preparación y descubrimiento — saber qué omitir es tan importante como saber qué incluir",
+          "p1": "Siempre explica: el objetivo de aprendizaje, la tarea, el tiempo disponible, las reglas de seguridad y los criterios de éxito",
+          "p2": "Nunca expliques: todos los detalles del hardware, cada acción posible, soluciones paso a paso o funciones irrelevantes de la app",
+          "p3": "El briefing excesivo mata la curiosidad y desperdicia tiempo. El briefing insuficiente causa confusión y tiempo de RV desperdiciado",
+          "highlight": "Suficiente para enfocar, no tanto como para robar el descubrimiento. Si tu briefing dura más que la experiencia en RV, es demasiado largo."
+        },
+        "s3": {
+          "title": "El Briefing de 60 Segundos",
+          "subtitle": "Una plantilla breve, estructurada y repetible que funciona para cualquier sesión de RV",
+          "p1": "Objetivo (15 segundos): Enuncia la meta en una oración clara — ¿qué logrará el estudiante?",
+          "p2": "Tarea y Reglas (25 segundos): Describe qué hacer y qué límites aplican — sé específico y conciso",
+          "p3": "Tiempo y Señal de Inicio (20 segundos): Establece el cronómetro, explica cómo señalar incomodidad y lanza la experiencia",
+          "highlight": "Un gran briefing es breve, estructurado y repetible. 60 segundos son suficientes — si toma más tiempo, estás dando demasiada información."
+        },
+        "s4": {
+          "title": "Debriefing Estructurado y Preguntas de Reflexión",
+          "subtitle": "El debriefing es donde el aprendizaje realmente ocurre — estructúralo o piérdelo",
+          "p1": "El modelo GAS proporciona una estructura probada: Recopilar observaciones, Analizar por qué sucedieron las cosas, Resumir conclusiones",
+          "p2": "Cuatro fases de preguntas van de lo superficial a lo profundo: ¿Qué pasó? → ¿Qué hiciste? → ¿Qué cambiarías? → ¿Cómo aplica esto?",
+          "p3": "La pregunta de transferencia es la más importante: conectar la experiencia virtual con la práctica profesional real",
+          "highlight": "Un debriefing sin estructura es una oportunidad perdida. Las buenas preguntas enseñan — el instructor solo las formula."
+        },
+        "s5": {
+          "title": "Qué Evaluar en RV",
+          "subtitle": "Cuatro áreas de evaluación permiten valorar más que solo la finalización de la tarea",
+          "p1": "Habilidades (ejecución técnica) y Toma de Decisiones (elecciones cognitivas bajo condiciones cambiantes)",
+          "p2": "Procedimientos (cumplimiento de protocolos y corrección de errores) capturan si los estudiantes siguieron el proceso correcto",
+          "p3": "Comunicación y comportamiento profesional revelan habilidades blandas que las evaluaciones tradicionales no captan",
+          "highlight": "La RV muestra no solo si los estudiantes completaron la tarea, sino cómo pensaron, decidieron y se comunicaron en el camino."
         }
       }
     },
@@ -535,18 +608,22 @@
       "triageSortCheck": "Comprobar",
       "triageSortCorrect": "¡Todas las prioridades correctas!",
       "triageSortWrong": "{wrong} elemento(s) en la categoría incorrecta",
-      "triageSortInstruction": "Toca un elemento, luego toca una categoría para clasificarlo",
-      "triageSortPoolEmpty": "¡Todos los elementos clasificados!",
-      "triageSortDropHere": "Toca para colocar aquí",
+      "triageSortInstruction": "Selecciona un elemento y luego toca la categoría donde debe ir",
+      "triageSortSelectCategory": "Ahora toca la categoría donde va este elemento",
+      "triageSortRetry": "Intentar de nuevo",
+      "triageSortPoolEmpty": "¡Todos clasificados — comprueba tus respuestas!",
+      "triageSortDropHere": "Toca para colocar elementos aquí",
       "classroomPlannerTitle": "Planificador del aula",
       "classroomPlannerPalette": "Elementos a colocar",
       "classroomPlannerCheckLayout": "Comprobar diseño",
       "classroomPlannerCorrect": "¡Buen diseño!",
       "classroomPlannerWrong": "{wrong} elemento(s) mal colocados",
       "classroomPlannerReset": "Limpiar diseño",
-      "classroomPlannerInstruction": "Toca un elemento, luego toca una celda para colocarlo",
+      "classroomPlannerInstruction": "Selecciona un elemento y luego toca la zona donde debe ir",
+      "classroomPlannerSelectZone": "Ahora toca una celda del plano para colocarlo",
       "classroomPlannerCell": "Celda",
-      "classroomPlannerAllPlaced": "¡Todos los elementos colocados!",
+      "classroomPlannerRetry": "Intentar de nuevo",
+      "classroomPlannerAllPlaced": "¡Todos los elementos colocados — revisa tu diseño!",
       "classroomPlannerClearAll": "Limpiar todo",
       "fillGapsTitle": "Rellena los huecos",
       "fillGapsWordBank": "Banco de palabras",
@@ -584,10 +661,13 @@
       "resourceAllocationSubmit": "Enviar plan",
       "resourceAllocationCorrect": "¡Plan bien equilibrado!",
       "resourceAllocationWrong": "Algunas asignaciones están fuera de los rangos ideales",
-      "resourceAllocationAdjust": "Ajustar",
-      "resourceAllocationIdeal": "Ideal: {min}–{max} {unit}",
-      "resourceAllocationOver": "{amount} {unit} por encima del presupuesto",
-      "resourceAllocationRemaining": "{amount} {unit} restantes",
+      "resourceAllocationAdjust": "Rango ideal: {min}–{max} {unit}",
+      "resourceAllocationIdeal": "¡Buena asignación!",
+      "resourceAllocationOver": "{over} {unit} por encima del presupuesto",
+      "resourceAllocationRemaining": "{remaining} {unit} restantes",
+      "resourceAllocationLeft": "restantes",
+      "resourceAllocationOverLabel": "de más",
+      "resourceAllocationIdealRange": "ideal: {min}–{max}",
       "resourceAllocationAdjustBtn": "Ajustar asignaciones",
       "resourceAllocationPass": "¡Todas las asignaciones dentro de los rangos ideales!",
       "resourceAllocationRetry": "Ajustar e intentar de nuevo",
@@ -2591,6 +2671,375 @@
             }
           }
         }
+      },
+      "briefingAndDebriefing": {
+        "b1": {
+          "title": "Fundamentos del Briefing",
+          "exercise": {
+            "instruction": "Ordena los cuatro componentes del marco O-R-T-T en el orden correcto",
+            "scaleStart": "Inicio del briefing",
+            "scaleEnd": "Fin del briefing",
+            "i1": "Objetivo — indicar qué va a lograr el estudiante",
+            "i2": "Reglas — explicar límites, seguridad y lo que está permitido",
+            "i3": "Tiempo — decir cuánto durará la experiencia",
+            "i4": "Tarea — describir las acciones específicas a realizar"
+          },
+          "scenario": {
+            "context": "Estás a punto de realizar una sesión de RV de identificación de riesgos de seguridad con 15 estudiantes. La mayoría nunca ha usado RV. Faltan 2 minutos para poner los visores.",
+            "question": "¿Cómo preparas a los estudiantes?",
+            "choices": {
+              "a": "Repartir los visores y dejar que los estudiantes exploren libremente — ya se darán cuenta",
+              "b": "Dar un briefing estructurado de 60 segundos: indicar el objetivo, explicar las reglas y la tarea, establecer el tiempo y luego repartir los visores",
+              "c": "Dedicar 10 minutos a explicar cada botón del controlador, todos los menús y cómo funciona técnicamente el sistema Guardian"
+            },
+            "feedback": {
+              "a": "Sin briefing, los estudiantes no saben en qué enfocarse. Dedicarán el tiempo de RV a descifrar los controles en lugar de aprender. Los usuarios primerizos especialmente necesitan expectativas claras antes de entrar en RV.",
+              "b": "Exactamente. Un briefing estructurado usando el marco O-R-T-T (Objetivo, Reglas, Tiempo, Tarea) da a los estudiantes todo lo que necesitan para enfocarse en aprender, no en adivinar. Mantenlo por debajo de 60 segundos.",
+              "c": "Esto es briefing excesivo. Una explicación técnica de 10 minutos abruma a los estudiantes y roba tiempo a la experiencia de RV. Limita la orientación del hardware a 30 segundos — el resto es sobre el objetivo de aprendizaje."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un estudiante se ve visiblemente nervioso antes de ponerse el visor de RV por primera vez. No deja de preguntar qué va a pasar dentro.",
+              "question": "¿Cuál es la respuesta más efectiva?",
+              "choices": {
+                "a": "Tranquilizarle indicando brevemente el objetivo, qué va a hacer, cuánto dura y que puede parar en cualquier momento — esto es lo que hace el briefing",
+                "b": "Mostrarle un vídeo de otra persona usando RV para que vea cómo es",
+                "c": "Decirle que no se preocupe — la RV es divertida y le encantará cuando la pruebe"
+              },
+              "feedback": {
+                "a": "Perfecto. Uno de los beneficios clave del briefing es la reducción de la ansiedad. Cuando los estudiantes saben qué esperar — el objetivo, la tarea, la duración y su capacidad de parar — la incertidumbre disminuye y pueden enfocarse en aprender.",
+                "b": "Un vídeo puede ayudar, pero toma tiempo extra y no aborda las preocupaciones específicas del estudiante. Un briefing directo y estructurado que cubra qué van a hacer, cuánto dura y su opción de parar es más rápido y efectivo.",
+                "c": "Desestimar la ansiedad con 'te va a encantar' no ayuda. El estudiante necesita información, no tranquilidad vaga. Un briefing que responda sus preguntas directamente (qué pasará, cuánto dura, ¿puedo parar?) reduce la ansiedad mucho más efectivamente."
+              }
+            },
+            "c2": {
+              "context": "Durante una sesión de RV, varios estudiantes parecen confundidos — deambulan sin rumbo dentro del entorno virtual y se preguntan entre ellos qué se supone que deben hacer.",
+              "question": "¿Qué salió mal probablemente?",
+              "choices": {
+                "a": "La aplicación de RV está mal diseñada y no da instrucciones claras",
+                "b": "El briefing faltó o fue incompleto — los estudiantes no recibieron un objetivo claro ni descripción de la tarea antes de entrar en RV",
+                "c": "Los estudiantes no prestaron atención durante el briefing"
+              },
+              "feedback": {
+                "a": "Aunque el diseño de la app importa, un estudiante bien informado sabe exactamente qué hacer independientemente de la guía dentro de la app. El briefing del instructor siempre debe ser la fuente principal de dirección, no la interfaz de la app.",
+                "b": "Correcto. Cuando los estudiantes no saben qué buscan o qué deben hacer, deambulan. Un briefing adecuado (Objetivo + Tarea) previene esto dando una misión clara antes de ponerse los visores.",
+                "c": "Si múltiples estudiantes están confundidos, el problema es sistémico — o el briefing fue poco claro, demasiado largo o le faltó información clave. Culpar a la atención es menos productivo que mejorar la estructura del briefing."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "El briefing reduce la ansiedad del estudiante al proporcionar expectativas claras antes de entrar en RV",
+                "explanation": "Verdadero. La investigación en educación basada en simulación confirma que los briefings estructurados reducen la ansiedad. Cuando los estudiantes conocen el objetivo, la tarea, la duración y las opciones de salida, la incertidumbre disminuye y los recursos cognitivos se dirigen al aprendizaje."
+              },
+              "s2": {
+                "statement": "Un briefing completo debe explicar cada función de la aplicación de RV en detalle",
+                "explanation": "Falso. El briefing excesivo mata la curiosidad y desperdicia tiempo. El briefing debe cubrir el objetivo de aprendizaje, la tarea, las reglas y el tiempo — no un recorrido técnico completo. Limita la orientación del hardware a menos de 30 segundos."
+              },
+              "s3": {
+                "statement": "El marco O-R-T-T significa Objetivo, Reglas, Tiempo y Tarea",
+                "explanation": "Verdadero. O-R-T-T es el marco de briefing estructurado: Objetivo (qué lograr), Reglas (límites y seguridad), Tiempo (duración), Tarea (acciones específicas). Asegura que cada briefing cubra lo esencial sin sobrecargar."
+              }
+            }
+          }
+        },
+        "b2": {
+          "title": "Qué Explicar",
+          "exercise": {
+            "instruction": "Clasifica cada elemento del briefing: ¿debes explicarlo, dejar que lo descubran o nunca mencionarlo?",
+            "cat": {
+              "mustExplain": "Debes Explicar",
+              "letDiscover": "Que lo Descubran",
+              "neverMention": "Nunca Mencionar"
+            },
+            "i1": "El objetivo de aprendizaje — qué van a lograr",
+            "i2": "Reglas de seguridad — cómo señalar incomodidad o salir",
+            "i3": "La tarea específica que necesitan realizar",
+            "i4": "Cómo se ve el entorno virtual por dentro",
+            "i5": "Cada objeto interactivo que pueden tocar o usar",
+            "i6": "Soluciones paso a paso del desafío",
+            "i7": "Funciones de la app irrelevantes para el objetivo",
+            "i8": "Criterios de éxito — cómo sabrán que lo hicieron bien"
+          },
+          "scenario": {
+            "context": "Estás escribiendo un briefing para una simulación de laboratorio de química en RV. Un colega sugiere incluir: el objetivo de aprendizaje, los 15 objetos interactivos del laboratorio, el procedimiento correcto del experimento, las reglas de seguridad y un recorrido del sistema de menús de RV.",
+            "question": "¿Qué tiene de malo este plan de briefing?",
+            "choices": {
+              "a": "Nada — los briefings completos previenen la confusión",
+              "b": "Incluye demasiado: listar todos los objetos y el procedimiento correcto elimina el desafío. Informa sobre el objetivo, la tarea, las reglas de seguridad y los criterios de éxito — deja que los estudiantes descubran el entorno y resuelvan el procedimiento por sí mismos",
+              "c": "Quita el recorrido de menús pero mantén todo lo demás"
+            },
+            "feedback": {
+              "a": "El briefing excesivo es tan problemático como el insuficiente. Listar cada objeto interactivo y el procedimiento correcto elimina el descubrimiento y el desafío — precisamente lo que hace efectivo el aprendizaje en RV.",
+              "b": "Correcto. Un briefing debe enfocarse en el objetivo, la tarea, las reglas y los criterios. Los detalles del entorno y el proceso de resolución son lo que los estudiantes deben descubrir a través de la experiencia en RV. Darles las respuestas de antemano anula el propósito.",
+              "c": "El recorrido de menús es un problema, pero el mayor es listar los 15 objetos y el procedimiento correcto. Este briefing excesivo elimina por completo el desafío de aprendizaje. Los estudiantes deben descubrir el entorno y resolver el proceso."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor da un briefing de 7 minutos antes de una experiencia de RV de 10 minutos. Explica cada habitación, cada objeto y exactamente lo que verán los estudiantes. Los estudiantes se ponen los visores y completan la tarea rápidamente pero parecen aburridos.",
+              "question": "¿Por qué la experiencia de RV no funcionó?",
+              "choices": {
+                "a": "La experiencia de RV fue demasiado corta — los estudiantes necesitaban más tiempo",
+                "b": "Los visores no estaban configurados correctamente",
+                "c": "El briefing reveló demasiado — no quedó nada por descubrir. El briefing excesivo mató la curiosidad y el desafío que hacen atractiva la RV"
+              },
+              "feedback": {
+                "a": "La duración no fue el problema — 10 minutos es una sesión de RV razonable. El problema es que los estudiantes no tuvieron sorpresas ni desafíos porque el briefing lo reveló todo.",
+                "b": "La configuración de los visores no explica el aburrimiento. Los estudiantes completaron la tarea sin problemas — simplemente no estaban comprometidos porque el briefing eliminó todo el descubrimiento.",
+                "c": "Exactamente. Cuando un briefing revela todo el entorno y la solución, la experiencia de RV se convierte en confirmación, no en exploración. Los estudiantes necesitan suficiente dirección para enfocarse pero suficiente misterio para mantener la curiosidad."
+              }
+            },
+            "c2": {
+              "context": "Un profesor da un briefing de 15 segundos: 'Poneos los visores y haced la actividad del laboratorio.' Tres minutos después, los estudiantes gritan preguntas confusos.",
+              "question": "¿Cuál es la causa raíz?",
+              "choices": {
+                "a": "El briefing fue demasiado corto y omitió información crítica — los estudiantes no conocen el objetivo, qué hacer ni cuánto tiempo tienen. El briefing insuficiente desperdicia tiempo de RV.",
+                "b": "Los estudiantes aún no están acostumbrados a la tecnología de RV",
+                "c": "La app de RV debería haber incluido mejores instrucciones internas"
+              },
+              "feedback": {
+                "a": "Correcto. 'Haced la actividad del laboratorio' no dice nada sobre el objetivo, la tarea ni los criterios de éxito. Un briefing completo necesita O-R-T-T: qué lograr, qué reglas aplican, cuánto tiempo y qué hacer. El briefing insuficiente desperdicia tiempo de RV en confusión.",
+                "b": "La familiaridad con la tecnología es un factor, pero incluso los usuarios experimentados de RV necesitan un briefing con objetivos claros. La confusión aquí es sobre qué hacer, no sobre cómo usar el visor.",
+                "c": "Depender de instrucciones dentro de la app es arriesgado — pueden no cubrir el objetivo de aprendizaje, y los estudiantes en RV pueden fácilmente perdérselas u omitirlas. El briefing del instructor siempre debe ser la dirección principal."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Un buen briefing debe explicar la solución paso a paso para que los estudiantes sepan exactamente qué hacer",
+                "explanation": "Falso. Dar a los estudiantes la solución elimina el desafío de aprendizaje. Un briefing explica el objetivo, la tarea y los criterios — no la respuesta. Los estudiantes deben descubrir la solución a través de la experiencia en RV."
+              },
+              "s2": {
+                "statement": "Las reglas de seguridad y los procedimientos de salida siempre deben incluirse en un briefing previo a la RV",
+                "explanation": "Verdadero. La seguridad nunca es opcional. Los estudiantes siempre deben saber cómo señalar incomodidad, solicitar parar o salir de la RV antes de entrar en la experiencia. Esto forma parte de las 'Reglas' en O-R-T-T."
+              },
+              "s3": {
+                "statement": "Si un briefing dura más que la experiencia de RV, está bien siempre que sea completo",
+                "explanation": "Falso. Si tu briefing dura más que la experiencia de RV, es excesivo. Un briefing debe ser conciso (idealmente menos de 60 segundos) y centrarse en lo esencial. Los briefings largos indican que estás explicando demasiado."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "El Briefing de 60 Segundos",
+          "exercise": {
+            "instruction": "Completa el guión del briefing de 60 segundos arrastrando las palabras correctas a los espacios en blanco",
+            "template": "Tu __blank1__ es identificar todos los riesgos de seguridad en el espacio de trabajo virtual. __blank2__ por cada habitación y marca cada riesgo que encuentres. Las __blank3__ son: no te saltes ninguna habitación y levanta la mano si te sientes incómodo. Tienes __blank4__ minutos. Comienza cuando el entorno cargue.",
+            "blank1": "objetivo",
+            "blank2": "Camina",
+            "blank3": "reglas",
+            "blank4": "diez",
+            "distractor1": "deberes",
+            "distractor2": "nota"
+          },
+          "scenario": {
+            "context": "Suena el timbre en 90 segundos. Tienes una sesión de RV de identificación de riesgos planificada. Los estudiantes están sentados y listos pero aún no les has dado el briefing.",
+            "question": "¿Qué haces?",
+            "choices": {
+              "a": "Saltar el briefing — no hay tiempo. Repartir los visores y decir a los estudiantes que busquen riesgos",
+              "b": "Posponer la RV a la próxima clase — un briefing adecuado toma al menos 5 minutos",
+              "c": "Dar un briefing estructurado de 60 segundos: indicar el objetivo, describir la tarea y las reglas, establecer el tiempo y lanzar"
+            },
+            "feedback": {
+              "a": "Incluso con tiempo limitado, saltarse el briefing significa que los estudiantes no conocen la tarea específica, los criterios de éxito ni las reglas de seguridad. Un briefing de 60 segundos siempre es posible y siempre vale la pena.",
+              "b": "Un briefing adecuado no necesita 5 minutos. El marco O-R-T-T está diseñado para funcionar en 60 segundos: 15s objetivo, 25s tarea y reglas, 20s tiempo e inicio. No pospongas cuando una plantilla estructurada lo resuelve.",
+              "c": "Exactamente. La plantilla de briefing de 60 segundos funciona bajo presión de tiempo: Objetivo (15s) — 'Tu meta es encontrar todos los riesgos de seguridad.' Tarea y Reglas (25s) — 'Recorre cada habitación, marca los riesgos, no te saltes ninguna.' Tiempo e Inicio (20s) — 'Tienes 10 minutos. Comienza ahora.'"
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor da este briefing: 'Hoy identificaréis riesgos en un almacén virtual. Recorred las tres secciones y marcad cada riesgo con el puntero. No os saltéis ninguna sección. Si os sentís mareados, levantad la mano. Tenéis 8 minutos. Centraos en la precisión. Empezad cuando cargue el entorno.'",
+              "question": "¿Cómo calificarías este briefing?",
+              "choices": {
+                "a": "Excelente — cubre los cuatro elementos O-R-T-T (Objetivo, Reglas, Tiempo, Tarea) de forma concisa y clara, con instrucciones de salida de seguridad incluidas",
+                "b": "Bueno pero demasiado largo — debería ser más corto",
+                "c": "Le falta información importante — no explica los botones del controlador"
+              },
+              "feedback": {
+                "a": "Exactamente. Este briefing cubre cada componente: Objetivo (identificar riesgos), Tarea (recorrer secciones, marcar riesgos con puntero), Reglas (no saltarse secciones, levantar la mano si hay mareo), Tiempo (8 minutos). Es conciso, claro y accionable.",
+                "b": "Este briefing dura aproximadamente 15 segundos — está muy dentro del objetivo de 60 segundos. No es demasiado largo; es eficiente.",
+                "c": "Los detalles del controlador son orientación del hardware, no briefing. Mantén las instrucciones del hardware en 30 segundos antes del briefing. El briefing en sí se centra en el objetivo de aprendizaje y la tarea."
+              }
+            },
+            "c2": {
+              "context": "El briefing de un colega: 'Vale chicos, vamos a hacer RV ahora. La app es muy guay, veréis un almacén. Hay muchas cosas que encontrar. Intentad encontrar todas las que podáis. ¡Pasadlo bien!'",
+              "question": "¿Qué le falta a este briefing?",
+              "choices": {
+                "a": "Entusiasmo — el profesor debería sonar más animado",
+                "b": "Casi todo: no hay un objetivo claro, ni descripción específica de la tarea, ni reglas, ni límite de tiempo, ni criterios de éxito. Los estudiantes no sabrán qué 'cosas' buscar ni cómo saber cuándo han terminado",
+                "c": "Está bien — la app les guiará una vez dentro"
+              },
+              "feedback": {
+                "a": "El problema no es el tono — es la falta de estructura. 'Cosas que encontrar' no es un objetivo. 'Todas las que podáis' no es una tarea con criterios de éxito. El entusiasmo sin estructura lleva a un tiempo de RV desenfocado.",
+                "b": "Correcto. Este 'briefing' no tiene ninguno de los componentes O-R-T-T: no hay Objetivo claro (¿qué buscan? ¿riesgos? ¿objetos?), ni Tarea (¿cómo?), ni Reglas (¿límites?), ni Tiempo (¿cuánto?). Los estudiantes deambularán sin propósito.",
+                "c": "Depender de la guía dentro de la app es arriesgado. El briefing del instructor proporciona el marco de aprendizaje. Sin él, los estudiantes interactúan con la app pero no saben en qué enfocarse para aprender."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿A qué parte del briefing de 60 segundos pertenece cada frase?",
+              "cat": {
+                "objective": "Objetivo (15s)",
+                "taskRules": "Tarea y Reglas (25s)",
+                "timeStart": "Tiempo e Inicio (20s)"
+              },
+              "i1": "Tu meta es identificar todos los riesgos de seguridad",
+              "i2": "Recorre cada habitación y marca cada riesgo que encuentres",
+              "i3": "No te saltes ninguna habitación — revisa las tres secciones",
+              "i4": "Tienes 10 minutos a partir de ahora",
+              "i5": "Hoy practicaréis el procedimiento de evacuación de emergencia",
+              "i6": "Si te sientes incómodo en algún momento, levanta la mano"
+            }
+          }
+        },
+        "b4": {
+          "title": "Debriefing Estructurado",
+          "exercise": {
+            "instruction": "Ordena las fases de preguntas del debriefing en el orden correcto, del recuerdo superficial a la aplicación profunda",
+            "scaleStart": "Primera pregunta",
+            "scaleEnd": "Última pregunta",
+            "i1": "\"¿Qué pasó?\" — Describir lo que viste y experimentaste",
+            "i2": "\"¿Qué hiciste?\" — Explicar tus acciones y decisiones",
+            "i3": "\"¿Qué harías diferente?\" — Reflexionar sobre alternativas",
+            "i4": "\"¿Cómo aplica esto al mundo real?\" — Transferir a la práctica",
+            "i5": "El facilitador resume las conclusiones clave y los próximos pasos"
+          },
+          "scenario": {
+            "context": "Los estudiantes acaban de completar una simulación de evacuación por incendio en RV. Se quitan los visores y te miran expectantes. Quedan 8 minutos de sesión.",
+            "question": "¿Cómo conduces el debriefing?",
+            "choices": {
+              "a": "Decirles qué hicieron bien y mal, luego despedirles",
+              "b": "Preguntar '¿Os ha gustado?' y dejar que charlen informalmente sobre la experiencia",
+              "c": "Seguir el modelo GAS: Recopilar qué pasó, Analizar por qué tomaron sus decisiones, luego Resumir las lecciones clave y cómo se conectan con la práctica real"
+            },
+            "feedback": {
+              "a": "Decir a los estudiantes qué hicieron bien y mal es dar clase, no hacer debriefing. El debriefing efectivo está centrado en el estudiante — ellos analizan su propio rendimiento. El instructor hace preguntas, no da correcciones.",
+              "b": "'¿Os ha gustado?' inicia una conversación sobre entretenimiento, no sobre aprendizaje. La charla informal puede ser atractiva pero no extrae valor educativo. Un modelo estructurado asegura que la conversación pase de la descripción al análisis y a la transferencia.",
+              "c": "Correcto. El modelo GAS (Recopilar-Analizar-Resumir) da estructura: primero recoger qué pasó, luego examinar por qué las cosas salieron bien o mal, y después sacar conclusiones y conectar con la aplicación al mundo real. Esto transforma la experiencia de RV en aprendizaje duradero."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Durante el debriefing, un instructor dice inmediatamente: 'Os saltasteis el extintor del segundo piso. Era lo más importante. Dejadme explicar por qué...' y da clase durante 4 minutos.",
+              "question": "¿Qué salió mal?",
+              "choices": {
+                "a": "Nada — el instructor corrigió un error importante",
+                "b": "El instructor saltó las fases 'Recopilar' y 'Analizar' y fue directamente a decir. El debriefing efectivo pide a los estudiantes que identifiquen sus propios errores antes de que el instructor los corrija. Se aplica la regla 80/20: los estudiantes deben hablar el 80% del tiempo.",
+                "c": "El instructor debería haber esperado a la siguiente clase para dar correcciones"
+              },
+              "feedback": {
+                "a": "Corregir errores es importante, pero el método importa. La corrección prematura cortocircuita la reflexión. Cuando los estudiantes descubren sus propios errores a través de preguntas guiadas, la lección es más profunda y duradera.",
+                "b": "Exactamente. El instructor violó dos principios: (1) saltó la recopilación de observaciones de los estudiantes, y (2) dio clase en lugar de preguntar. Mejor enfoque: '¿Qué encontrasteis en el segundo piso?' → '¿Había algo que pudierais haberos perdido?' → los estudiantes descubren la laguna por sí mismos.",
+                "c": "Esperar demasiado para el debriefing debilita la conexión con la experiencia. El momento era correcto — el método fue incorrecto. Haz el debriefing inmediatamente, pero haz preguntas en lugar de dar clase."
+              }
+            },
+            "c2": {
+              "context": "Un profesor conduce un debriefing usando las cuatro fases de preguntas. Los estudiantes describen qué pasó (Fase 1), explican sus decisiones (Fase 2) y sugieren mejoras (Fase 3). Entonces suena el timbre.",
+              "question": "¿Cuál es la mayor pérdida por saltarse la Fase 4?",
+              "choices": {
+                "a": "Nada crítico — tres fases son suficientes para un buen debriefing",
+                "b": "El debriefing fue demasiado lento y debería haber sido más rápido para cubrir todas las fases",
+                "c": "La Fase 4 ('¿Cómo aplica esto al mundo real?') es el paso de transferencia — sin ella, el aprendizaje queda atrapado en el escenario virtual. Los estudiantes nunca conectan las decisiones de RV con la práctica profesional real, que es el objetivo final de la educación basada en simulación."
+              },
+              "feedback": {
+                "a": "Tres fases crean buena reflexión, pero la pregunta de transferencia es la más valiosa. Sin ella, los estudiantes pueden ver la experiencia de RV como algo aislado de su trabajo real. Si el tiempo es escaso, prioriza la pregunta de transferencia.",
+                "b": "La velocidad no es la solución — apresurarse produce reflexión superficial. Pero si el tiempo es genuinamente escaso, prioriza la Fase 4 (transferencia) porque tiene el mayor impacto de aprendizaje. Puedes comprimir las Fases 1-3 pero nunca debes saltarte la Fase 4.",
+                "c": "Correcto. La Fase 4 es donde el aprendizaje virtual se convierte en capacidad del mundo real. '¿Cómo aplicarías esto en una evacuación real?' obliga a los estudiantes a tender un puente entre la simulación y la práctica. Si el tiempo es escaso, siempre prioriza la pregunta de transferencia."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿A qué fase del modelo GAS de debriefing pertenece cada actividad?",
+              "cat": {
+                "gather": "Recopilar",
+                "analyze": "Analizar",
+                "summarize": "Resumir"
+              },
+              "i1": "Pedir a los estudiantes que describan lo que vieron y experimentaron",
+              "i2": "Examinar por qué los estudiantes tomaron las decisiones que tomaron",
+              "i3": "Exponer las lecciones clave y conectarlas con la práctica real",
+              "i4": "Recoger observaciones: '¿Qué pasó primero? ¿Qué vino después?'",
+              "i5": "Preguntar: '¿Por qué elegiste esa acción en lugar de las alternativas?'",
+              "i6": "Concluir con: '¿Cómo aplicarás esto en tu trabajo real?'"
+            }
+          }
+        },
+        "b5": {
+          "title": "Evaluación en RV",
+          "exercise": {
+            "instruction": "Relaciona cada área de evaluación en RV con el tipo de rendimiento del estudiante que evalúa",
+            "p1": { "term": "Habilidades (Ejecución técnica)", "def": "¿Completó el estudiante todos los pasos del procedimiento con precisión y en el orden correcto?" },
+            "p2": { "term": "Toma de Decisiones (Desempeño cognitivo)", "def": "¿Eligió el estudiante la respuesta correcta cuando las condiciones cambiaron inesperadamente?" },
+            "p3": { "term": "Procedimientos (Cumplimiento de procesos)", "def": "¿Siguió el estudiante la lista de verificación del protocolo sin saltarse ni reordenar pasos?" },
+            "p4": { "term": "Comunicación (Comportamiento profesional)", "def": "¿Dio el estudiante instrucciones claras y mantuvo la calma bajo presión?" }
+          },
+          "scenario": {
+            "context": "Después de una simulación de respuesta a emergencias en RV, necesitas evaluar el rendimiento de los estudiantes. Un estudiante completó la evacuación más rápido pero se saltó dos puntos de control de seguridad. Otro fue más lento pero siguió cada paso del protocolo y se comunicó claramente con los compañeros virtuales.",
+            "question": "¿Quién rindió mejor?",
+            "choices": {
+              "a": "El estudiante rápido — la velocidad y completar la tarea son las métricas más importantes en una emergencia",
+              "b": "Ambos rindieron igual — la velocidad y la minuciosidad son enfoques igualmente válidos",
+              "c": "El estudiante minucioso — la evaluación en RV debe valorar la toma de decisiones, el cumplimiento de procedimientos y la comunicación, no solo la velocidad. El estudiante rápido se saltó pasos de seguridad, lo cual en una emergencia real serían errores críticos."
+            },
+            "feedback": {
+              "a": "La velocidad es una métrica, pero saltarse puntos de control de seguridad en una emergencia es un fallo crítico. La evaluación en RV te permite ver no solo si los estudiantes completaron la tarea, sino cómo tomaron decisiones en el camino.",
+              "b": "En un escenario de respuesta a emergencias, la minuciosidad y el cumplimiento de protocolos no equivalen a velocidad con atajos. Saltarse pasos de seguridad en una emergencia real tiene consecuencias. La evaluación en RV debe capturar esta distinción.",
+              "c": "Correcto. La evaluación en RV captura cuatro áreas: habilidades (ejecución), toma de decisiones (elecciones), procedimientos (cumplimiento) y comunicación (claridad). Una visión holística revela que el estudiante 'más lento' demostró realmente una competencia profesional más sólida en las cuatro áreas."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor solo evalúa el rendimiento en RV basándose en si los estudiantes completaron la tarea de simulación (aprobado/suspenso). Ignora cómo los estudiantes tomaron decisiones, si siguieron el procedimiento correcto y cómo se comunicaron.",
+              "question": "¿Cuál es el problema con este enfoque de evaluación?",
+              "choices": {
+                "a": "Omite tres de las cuatro áreas de evaluación. Completar la tarea (habilidades) es solo una dimensión. La calidad en la toma de decisiones, el cumplimiento de procedimientos y la comunicación son igualmente importantes — y la RV revela las cuatro de forma única.",
+                "b": "Aprobado/suspenso es realmente el mejor enfoque para RV — es simple y objetivo",
+                "c": "El profesor debería añadir un examen escrito junto con la evaluación en RV"
+              },
+              "feedback": {
+                "a": "Exactamente. La ventaja única de la RV es que captura todo el proceso, no solo el resultado. Un estudiante que completa una tarea pero toma malas decisiones, se salta pasos o se comunica mal fallaría en un escenario real. Evaluar las cuatro áreas da una imagen completa.",
+                "b": "Aprobado/suspenso captura resultados pero pierde el cómo. Dos estudiantes pueden ambos 'aprobar' con calidad de decisión, adherencia a procedimientos y comunicación muy diferentes. La RV te da visibilidad del proceso — úsala.",
+                "c": "Un examen escrito evalúa conocimiento, no rendimiento. La RV ya captura habilidades, decisiones, procedimientos y comunicación en acción. Añadir un examen duplica lo que la observación en RV ya revela — enfócate en observar las cuatro áreas de evaluación durante la RV."
+              }
+            },
+            "c2": {
+              "context": "Durante una simulación de preparación quirúrgica en RV, un estudiante de enfermería realiza cada paso correctamente pero nunca verbaliza lo que está haciendo. En un quirófano real, la comunicación verbal de cada paso es obligatoria por seguridad.",
+              "question": "¿Cómo debes evaluar a este estudiante?",
+              "choices": {
+                "a": "Nota máxima — realizó todos los pasos correctamente y eso es lo que importa",
+                "b": "Fuerte en habilidades y procedimientos, pero débil en comunicación. La evaluación debe señalar que la ejecución técnica del estudiante fue excelente pero que la comunicación verbal — un comportamiento profesional crítico en este contexto — necesita desarrollo.",
+                "c": "Suspender al estudiante — la comunicación es más importante que la precisión técnica"
+              },
+              "feedback": {
+                "a": "La precisión técnica es excelente, pero en un contexto donde la comunicación verbal es un requisito de seguridad (preparación quirúrgica), la ejecución silenciosa es una laguna. La evaluación en RV debe capturar todas las áreas relevantes, no solo la completitud de la tarea.",
+                "b": "Correcto. La evaluación en RV permite identificar fortalezas y lagunas específicas en las cuatro áreas. Este estudiante destaca en habilidades y procedimientos pero necesita trabajar la comunicación. Esta retroalimentación matizada es mucho más útil que un simple aprobado/suspenso.",
+                "c": "Suspender al estudiante ignora sus verdaderas fortalezas. El objetivo de la evaluación es identificar áreas específicas de mejora, no aplicar juicios de todo o nada. Las habilidades y procedimientos fueron fuertes — la comunicación necesita práctica dirigida."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿A qué área de evaluación en RV pertenece cada observación?",
+              "cat": {
+                "skills": "Habilidades",
+                "decisions": "Toma de Decisiones",
+                "procedures": "Procedimientos",
+                "communication": "Comunicación"
+              },
+              "i1": "El estudiante completó todos los pasos de la técnica de inyección en el orden correcto",
+              "i2": "El estudiante cambió su enfoque cuando la condición del paciente virtual empeoró",
+              "i3": "El estudiante siguió la lista de verificación de seguridad sin saltarse ningún elemento",
+              "i4": "El estudiante anunció claramente cada acción al equipo virtual",
+              "i5": "El estudiante decidió evacuar cuando las condiciones se volvieron peligrosas en lugar de continuar la tarea"
+            }
+          }
+        }
       }
     },
     "quizStep": {
@@ -2841,6 +3290,48 @@
           "c": "Decirle que la RV es una parte importante de la lección y debería al menos intentarlo unos minutos",
           "d": "Dejarlo al margen completamente y que haga trabajo independiente en su escritorio",
           "explanation": "La participación en RV siempre es voluntaria. Un estudiante no necesita justificar su rechazo — respeta el límite, ofrece una alternativa estructurada que logre el mismo objetivo de aprendizaje y sigue adelante. 'Quedarse al margen' sin alternativa es exclusión, no inclusión."
+        }
+      },
+      "briefingAndDebriefing": {
+        "q1": {
+          "question": "Antes de una sesión de RV, un profesor pasa 5 minutos explicando cada botón del controlador, todas las opciones de menú, el sistema Guardian y cada objeto interactivo del entorno. Los estudiantes parecen abrumados. ¿Cuál es el problema principal?",
+          "a": "5 minutos está bien — ser minucioso previene la confusión durante la RV",
+          "b": "El briefing debería centrarse solo en el marco O-R-T-T (Objetivo, Reglas, Tiempo, Tarea) y durar menos de 60 segundos. La orientación del hardware es separada y no debería tomar más de 30 segundos.",
+          "c": "El profesor debería haber enviado una guía escrita antes de clase",
+          "d": "El problema es la explicación del controlador — todo lo demás es necesario",
+          "explanation": "El briefing excesivo abruma a los estudiantes y roba tiempo a la experiencia de RV. El marco O-R-T-T mantiene los briefings enfocados: indicar el objetivo, explicar las reglas, establecer el tiempo, describir la tarea. Los detalles del hardware y los recorridos del entorno son separados (máximo 30s) o innecesarios."
+        },
+        "q2": {
+          "question": "Después de una simulación de emergencia en RV de 12 minutos, solo quedan 3 minutos antes del timbre. Habías planificado un debriefing completo pero no caben las cuatro fases de preguntas. ¿Qué priorizas?",
+          "a": "Saltarse el debriefing por completo — no hay tiempo suficiente para hacerlo bien",
+          "b": "Hacer una encuesta rápida de pulgar arriba/pulgar abajo y despedir",
+          "c": "Ir directamente a la pregunta de transferencia: '¿Cómo aplicarías lo que acabas de experimentar en una emergencia real?' — esta es la fase de debriefing de mayor valor",
+          "d": "Empezar con la Fase 1 (descripción) y llegar hasta donde se pueda",
+          "explanation": "Incluso un debriefing de 2 minutos es infinitamente mejor que ninguno. Cuando el tiempo es escaso, prioriza la pregunta de transferencia ('¿Cómo aplica esto a la práctica real?') porque tiene el mayor impacto de aprendizaje — obliga a los estudiantes a conectar la experiencia virtual con la realidad profesional."
+        },
+        "q3": {
+          "question": "Durante el debriefing, los estudiantes han descrito lo que vieron y experimentaron en la simulación de RV (Fase 1: Descripción). ¿Qué debería seguir?",
+          "a": "Fase 4: Transferencia — saltar directamente a '¿Cómo aplica esto a la vida real?'",
+          "b": "Fase 2: Análisis — preguntar '¿Qué acciones tomasteis? ¿Qué decisiones tomasteis y por qué?'",
+          "c": "Resumir lo que describieron y pasar al siguiente tema",
+          "d": "Corregir sus errores para que sepan qué hicieron mal",
+          "explanation": "Después de recopilar descripciones (Fase 1), el siguiente paso natural es el análisis (Fase 2): examinar el razonamiento detrás de las acciones y decisiones. Saltarse a la transferencia omite el paso crítico de autorreflexión. Corregir errores inmediatamente cierra el proceso de descubrimiento propio del estudiante."
+        },
+        "q4": {
+          "question": "Durante el debriefing, un estudiante responde cada pregunta con respuestas de una palabra: 'Bien.' 'Bueno.' 'Nada.' El resto del grupo permanece en silencio. ¿Qué haces?",
+          "a": "Aceptar las respuestas cortas — no todos los estudiantes son aprendices verbales",
+          "b": "Llamar a estudiantes específicos por nombre para forzar la participación",
+          "c": "Cambiar a preguntas más específicas y abiertas: '¿Cuál fue lo primero que notaste al entrar en el edificio?' y mantener el principio 80/20 — los estudiantes deben hablar el 80% del tiempo",
+          "d": "Terminar el debriefing antes ya que los estudiantes no están participando",
+          "explanation": "Las respuestas de una palabra normalmente significan que las preguntas son demasiado amplias. '¿Cómo fue?' invita a 'Bien.' Pero '¿Cuál fue el primer riesgo que detectaste?' exige un recuerdo específico. Las preguntas abiertas y dirigidas provocan reflexión genuina. La regla 80/20 (estudiantes hablan 80%, instructor 20%) mantiene el foco en el pensamiento del estudiante."
+        },
+        "q5": {
+          "question": "Después de una simulación de preparación quirúrgica en RV, necesitas evaluar el rendimiento del estudiante. Un estudiante completó todos los pasos rápidamente pero nunca comunicó lo que estaba haciendo. En un quirófano real, la comunicación verbal de cada paso es obligatoria. ¿Cómo evalúas esto?",
+          "a": "Nota máxima — completó todos los pasos requeridos correctamente",
+          "b": "Fuerte en habilidades y procedimientos, pero débil en comunicación. La evaluación en RV debe valorar las cuatro áreas (habilidades, toma de decisiones, procedimientos, comunicación) — y este estudiante necesita práctica dirigida en anuncios verbales de cada paso.",
+          "c": "Suspender — la comunicación es la habilidad más importante en cirugía",
+          "d": "Nota media — dividir la diferencia entre el buen trabajo técnico y la falta de comunicación",
+          "explanation": "La evaluación en RV captura cuatro áreas: habilidades (precisión de ejecución), toma de decisiones (elecciones cognitivas), procedimientos (cumplimiento de protocolos) y comunicación (comportamiento profesional). Este estudiante destaca en habilidades y procedimientos pero tiene una laguna específica en comunicación. La retroalimentación matizada y multidimensional es más útil que una simple nota de aprobado/suspenso o promedio."
         }
       }
     },

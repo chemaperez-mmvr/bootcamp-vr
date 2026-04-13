@@ -289,6 +289,13 @@ const slidesByModule: Record<string, TheorySlide[]> = {
   ],
   "safety-wellbeing-accessibility": [
     {
+      id: "video-intro-m4",
+      type: "video",
+      titleKey: "slides.safetyWellbeingAccessibility.video.title",
+      subtitleKey: "slides.safetyWellbeingAccessibility.video.subtitle",
+      videoUrl: "/videos/m4-intro-{locale}.mp4",
+    },
+    {
       id: "physical-safety-space",
       type: "content",
       titleKey: "slides.safetyWellbeingAccessibility.s1.title",
@@ -347,6 +354,75 @@ const slidesByModule: Record<string, TheorySlide[]> = {
         { key: "slides.safetyWellbeingAccessibility.s5.p3", icon: "📋" },
       ],
       highlightKey: "slides.safetyWellbeingAccessibility.s5.highlight",
+    },
+  ],
+  "briefing-and-debriefing": [
+    {
+      id: "video-intro-m5",
+      type: "video",
+      titleKey: "slides.briefingAndDebriefing.video.title",
+      subtitleKey: "slides.briefingAndDebriefing.video.subtitle",
+      videoUrl: "/videos/m5-intro-{locale}.mp4",
+    },
+    {
+      id: "briefing-essentials",
+      type: "content",
+      titleKey: "slides.briefingAndDebriefing.s1.title",
+      subtitleKey: "slides.briefingAndDebriefing.s1.subtitle",
+      points: [
+        { key: "slides.briefingAndDebriefing.s1.p1", icon: "🗣️" },
+        { key: "slides.briefingAndDebriefing.s1.p2", icon: "🎯" },
+        { key: "slides.briefingAndDebriefing.s1.p3", icon: "📋" },
+      ],
+      highlightKey: "slides.briefingAndDebriefing.s1.highlight",
+    },
+    {
+      id: "what-to-explain",
+      type: "content",
+      titleKey: "slides.briefingAndDebriefing.s2.title",
+      subtitleKey: "slides.briefingAndDebriefing.s2.subtitle",
+      points: [
+        { key: "slides.briefingAndDebriefing.s2.p1", icon: "✅" },
+        { key: "slides.briefingAndDebriefing.s2.p2", icon: "🚫" },
+        { key: "slides.briefingAndDebriefing.s2.p3", icon: "💡" },
+      ],
+      highlightKey: "slides.briefingAndDebriefing.s2.highlight",
+    },
+    {
+      id: "sixty-second-briefing",
+      type: "content",
+      titleKey: "slides.briefingAndDebriefing.s3.title",
+      subtitleKey: "slides.briefingAndDebriefing.s3.subtitle",
+      points: [
+        { key: "slides.briefingAndDebriefing.s3.p1", icon: "⏱️" },
+        { key: "slides.briefingAndDebriefing.s3.p2", icon: "📝" },
+        { key: "slides.briefingAndDebriefing.s3.p3", icon: "🚀" },
+      ],
+      highlightKey: "slides.briefingAndDebriefing.s3.highlight",
+    },
+    {
+      id: "structured-debriefing",
+      type: "content",
+      titleKey: "slides.briefingAndDebriefing.s4.title",
+      subtitleKey: "slides.briefingAndDebriefing.s4.subtitle",
+      points: [
+        { key: "slides.briefingAndDebriefing.s4.p1", icon: "🔍" },
+        { key: "slides.briefingAndDebriefing.s4.p2", icon: "🧠" },
+        { key: "slides.briefingAndDebriefing.s4.p3", icon: "📊" },
+      ],
+      highlightKey: "slides.briefingAndDebriefing.s4.highlight",
+    },
+    {
+      id: "assessment-in-vr",
+      type: "content",
+      titleKey: "slides.briefingAndDebriefing.s5.title",
+      subtitleKey: "slides.briefingAndDebriefing.s5.subtitle",
+      points: [
+        { key: "slides.briefingAndDebriefing.s5.p1", icon: "🎯" },
+        { key: "slides.briefingAndDebriefing.s5.p2", icon: "🧩" },
+        { key: "slides.briefingAndDebriefing.s5.p3", icon: "💬" },
+      ],
+      highlightKey: "slides.briefingAndDebriefing.s5.highlight",
     },
   ],
 };

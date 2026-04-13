@@ -34,6 +34,7 @@ export const theoreticalSlugs = new Set([
   "designing-meaningful-learning", // M2
   "classroom-implementation",      // M3
   "safety-wellbeing-accessibility",// M4
+  "briefing-and-debriefing",       // M5
 ]);
 
 function getEssentialSections(module: DocumentationModule): ModuleSection[] {
@@ -76,6 +77,7 @@ const enabledBootcampSlugs = new Set([
   "designing-meaningful-learning", // M2
   "classroom-implementation", // M3
   "safety-wellbeing-accessibility", // M4
+  "briefing-and-debriefing", // M5
 ]);
 
 /** All modules shown in the bootcamp timeline (enabled + upcoming placeholders). */
@@ -114,7 +116,7 @@ export const bootcampCatalog: BootcampModule[] = documentationModules
       "designing-meaningful-learning": "/images/hero-designing-meaningful-learning.png",
       "classroom-implementation": "/images/hero-classroom-implementation.png",
       "safety-wellbeing-accessibility": "/images/hero-safety-wellbeing-accessibility.png",
-      "briefing-and-debriefing": "/images/student-ar-glasses.jpg",
+      "briefing-and-debriefing": "/images/hero-briefing-and-debriefing.png",
       "solving-common-vr-problems": "/images/standalone-vs-pc-vr.jpg",
       "vr-educational-apps": "/images/uses-ar.jpg",
     };

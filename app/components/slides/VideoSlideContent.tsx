@@ -94,6 +94,7 @@ export function VideoSlideContent({
   const [duration, setDuration] = useState(0);
   const [muted, setMuted] = useState(false);
   const [ended, setEnded] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState(1);
   const [showControls, setShowControls] = useState(true);
   const hideTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -144,6 +145,15 @@ export function VideoSlideContent({
     if (!v) return;
     v.muted = !v.muted;
     setMuted(v.muted);
+  }, []);
+
+  /* ---- Playback speed ---- */
+  const cycleSpeed = useCallback(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const next = v.playbackRate >= 2 ? 1 : v.playbackRate + 0.5;
+    v.playbackRate = next;
+    setPlaybackRate(next);
   }, []);
 
   /* ---- Fullscreen ---- */
@@ -313,6 +323,15 @@ export function VideoSlideContent({
 
             <button
               type="button"
+              onClick={(e) => { e.stopPropagation(); cycleSpeed(); }}
+              className="text-white hover:text-teal-300 transition-colors text-xs font-bold min-w-[36px] h-7 rounded bg-white/10 hover:bg-white/20"
+              aria-label={`Playback speed ${playbackRate}x`}
+            >
+              {playbackRate}x
+            </button>
+
+            <button
+              type="button"
               onClick={(e) => { e.stopPropagation(); toggleFullscreen(); }}
               className="text-white hover:text-teal-300 transition-colors"
               aria-label="Fullscreen"
@@ -330,6 +349,10 @@ export function VideoSlideContent({
         </h2>
         <p className="mt-1 text-sm text-gray-600">
           {t(slide.subtitleKey)}
+        </p>
+        <p className="mt-3 text-xs text-gray-500 flex items-center gap-1.5">
+          <span>&#9432;</span>
+          {t("slides.videoRequiredNote")}
         </p>
       </div>
     </div>
