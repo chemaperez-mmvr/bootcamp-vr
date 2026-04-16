@@ -407,6 +407,9 @@ Before activating casting, make sure everything is ready:
 1. Make sure the headset and your device are connected to the **same Wi-Fi network**.
 2. On the headset, press [ICON:metabutton] the **Meta button** on the right controller to open the Navigator.
 3. Select [ICON:quicksettings] **Quick controls**.
+
+   [IMAGE:wifi-quick-access]
+
 4. Select **Cast**.
 
    [IMAGE:casting-quick-menu]

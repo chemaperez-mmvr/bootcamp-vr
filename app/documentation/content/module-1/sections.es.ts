@@ -407,6 +407,9 @@ Antes de activar el casting, asegúrate de tener todo preparado:
 1. Asegúrate de que las gafas y tu dispositivo están conectados a la **misma red Wifi**.
 2. En las gafas, pulsa [ICON:metabutton] el **botón Meta** del mando derecho para abrir el Explorador.
 3. Selecciona [ICON:quicksettings] **Controles de acceso rápido**.
+
+   [IMAGE:wifi-quick-access]
+
 4. Selecciona **Transmitir**.
 
    [IMAGE:casting-quick-menu]
