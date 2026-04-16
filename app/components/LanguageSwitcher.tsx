@@ -31,7 +31,8 @@ export function LanguageSwitcher() {
       setOpen(false);
       return;
     }
-    router.replace(pathname, { locale: newLocale });
+    const hash = window.location.hash;
+    router.replace(pathname + hash, { locale: newLocale });
     setOpen(false);
   }
 
