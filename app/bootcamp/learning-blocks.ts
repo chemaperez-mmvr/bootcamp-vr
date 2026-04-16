@@ -2318,7 +2318,7 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
       },
 
       /* ============================================================ */
-      /*  Block 2 — Boundary & Guardian Problems                       */
+      /*  Block 2 — Boundary Problems                                  */
       /* ============================================================ */
       {
         blockId: "boundary-guardian-problems",

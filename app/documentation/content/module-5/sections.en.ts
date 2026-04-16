@@ -32,7 +32,9 @@ This principle is grounded in well-established frameworks:
 - **Time** — how long the experience will last
 - **Task** — the specific actions the learner will perform
 
-> "A clear briefing lets learners spend their VR time learning, not guessing."`,
+> "A clear briefing lets learners spend their VR time learning, not guessing."
+
+[IMAGE:classify-objective]`,
 
   "what-to-explain": `Knowing what to include in a briefing is important, but knowing what to leave out is equally critical. Over-briefing kills curiosity and wastes time.
 
@@ -81,7 +83,11 @@ This principle is grounded in well-established frameworks:
 
 Each model follows the same logic: describe what happened, analyse why, and decide what to do next time. The specific model matters less than having a structure at all.
 
-> "An unstructured debrief is a missed opportunity. A structured one is where learning lives."`,
+> "An unstructured debrief is a missed opportunity. A structured one is where learning lives."
+
+[IMAGE:classify-debrief-gather]
+
+[IMAGE:classify-debrief-analyze]`,
 
   "good-debriefing": `Not all debriefings are equal. The difference between a productive debrief and a wasted one comes down to six characteristics.
 

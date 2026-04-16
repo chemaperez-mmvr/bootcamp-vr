@@ -11,7 +11,7 @@ export const sectionsEn: Record<string, string> = {
 
 **Quick Check**
 
-- Is WiFi enabled in Quick Settings?
+- Is WiFi enabled in Quick controls?
 - Is the correct network selected?
 - Is the signal strength at least two bars?
 
@@ -28,7 +28,9 @@ export const sectionsEn: Record<string, string> = {
 - Try connecting to a phone hotspot to confirm the headset's WiFi hardware works
 - Ask IT whether the school network blocks VR headset traffic or requires a captive portal login
 
-> "A dedicated router for headsets avoids most school-network conflicts."`,
+> "A dedicated router for headsets avoids most school-network conflicts."
+
+[IMAGE:wifi-diagnostic]`,
 
   "pins-access-codes": `PIN and access code errors prevent students from entering the headset entirely. Resolving them quickly keeps the lesson on schedule.
 
@@ -56,11 +58,11 @@ export const sectionsEn: Record<string, string> = {
 
 > "Keep a printed card in each headset case with the current PIN — update it whenever it changes."`,
 
-  "boundary-guardian-problems": `The Guardian boundary system uses the headset's cameras to map your physical space. When it fails, students cannot proceed past the setup screen.
+  "boundary-guardian-problems": `The Boundary (formerly Guardian) system uses the headset's cameras to map your physical space. When it fails, students cannot proceed past the setup screen.
 
 **Problem**
 
-- Guardian boundary refuses to set up, keeps resetting, or shows a "tracking lost" warning
+- Boundary refuses to set up, keeps resetting, or shows a "tracking lost" warning
 
 **Quick Check**
 
@@ -74,7 +76,9 @@ export const sectionsEn: Record<string, string> = {
 
 - Turn on additional lights — the cameras need consistent, even illumination
 - Cover or avoid mirrors and highly reflective surfaces that confuse the tracking cameras
-- Redraw the boundary from scratch: go to Settings → Guardian → Clear Guardian History
+
+[IMAGE:guardian-mirror]
+- Redraw the boundary from scratch: go to Settings → Environment setup → Boundary → Clear Boundary History
 - Make sure the floor is visible and not a single uniform colour
 
 **If Still Not Working**
@@ -82,7 +86,7 @@ export const sectionsEn: Record<string, string> = {
 - Switch to Stationary Boundary mode, which requires less room mapping
 - Clean the headset's external cameras with a dry microfiber cloth
 
-> "Set up Guardian before students arrive — it saves five minutes of class time."`,
+> "Set up Boundary before students arrive — it saves five minutes of class time."`,
 
   "headset-not-turning-on": `A headset that won't power on is alarming but usually has a simple fix related to battery or a frozen system.
 
@@ -94,6 +98,8 @@ export const sectionsEn: Record<string, string> = {
 
 - Is the charging LED lit when you plug in the cable? (Orange = charging, green = full)
 - Have you held the power button for a full three seconds?
+
+[IMAGE:charging-led]
 
 ---
 
@@ -209,9 +215,9 @@ export const sectionsEn: Record<string, string> = {
 
 **Solution Steps**
 
-- Start casting from the headset side: go to Quick Settings → Cast → select the target device
+- Start casting from the headset side: go to Quick controls → Cast → select the target device
 - Restart both the headset and the receiving device
-- If using browser casting, open **oculus.com/casting** in Chrome on the same network
+- If using browser casting, open **horizon.meta.com/casting** in Chrome on the same network
 - Try casting via the Meta app on a phone as an alternative path
 
 **If Still Not Working**
@@ -219,7 +225,9 @@ export const sectionsEn: Record<string, string> = {
 - Check router settings — some networks isolate devices from each other (AP isolation), which blocks casting
 - Use a screen-mirroring app on a laptop connected via USB as a wired fallback
 
-> "Test casting to your classroom screen before students arrive. It takes thirty seconds."`,
+> "Test casting to your classroom screen before students arrive. It takes thirty seconds."
+
+[IMAGE:casting-setup]`,
 
   "factory-reset": `A factory reset erases everything on the headset and returns it to out-of-box state. It is the **last resort** when nothing else works.
 
@@ -247,7 +255,7 @@ export const sectionsEn: Record<string, string> = {
 
 **After Reset**
 
-- You will need to re-pair the headset with a phone, log in, set up Guardian, and reinstall all apps
+- You will need to re-pair the headset with a phone, log in, set up Boundary, and reinstall all apps
 - Re-download any apps and reconfigure institutional settings
 
 > "Factory reset fixes almost everything — but it also erases everything. Use it only when you must."`,
@@ -332,5 +340,7 @@ export const sectionsEn: Record<string, string> = {
 - Document recurring issues so you can fix them before the next session
 - Every tech hiccup you solve makes the next VR lesson smoother
 
-> "The best VR teachers are not tech experts — they are prepared for when tech fails."`,
+> "The best VR teachers are not tech experts — they are prepared for when tech fails."
+
+[IMAGE:troubleshoot-mindset]`,
 };

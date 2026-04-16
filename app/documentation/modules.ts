@@ -72,12 +72,12 @@ const modulesData: DocumentationModule[] = [
       { id: "mobile-connection", titleKey: "modules.1.sections.mobileConnection" },
       { id: "organization-storage", titleKey: "modules.1.sections.organizationStorage" },
       { id: "specifications", titleKey: "modules.1.sections.specifications" },
-      { id: "app-lab", titleKey: "modules.1.sections.appLab" },
       { id: "store-install", titleKey: "modules.1.sections.storeInstall", priority: "essential" },
       { id: "apps-in-headset", titleKey: "modules.1.sections.appsInHeadset" },
       { id: "cleaning", titleKey: "modules.1.sections.cleaning" },
       { id: "accessories", titleKey: "modules.1.sections.accessories" },
       { id: "pre-class-checklist", titleKey: "modules.1.sections.preClassChecklist", priority: "essential" },
+      { id: "meta-for-education", titleKey: "modules.1.sections.metaForEducation" },
     ],
   },
   {

@@ -58,50 +58,50 @@ const module1Images: DocImagesByModule = {
   "work-meta-dashboard": {
     src: "/images/work-meta-dashboard.webp",
     alt: {
-      en: "Work for Meta admin dashboard — overview with configuration plans and device management",
-      es: "Panel de administración de Work for Meta — vista general con planes de configuración y gestión de dispositivos",
+      en: "Meta Horizon Managed Services admin dashboard — overview with configuration plans and device management",
+      es: "Panel de administración de Meta Horizon Managed Services — vista general con planes de configuración y gestión de dispositivos",
     },
   },
   "work-meta-people": {
     src: "/images/work-meta-people.webp",
     alt: {
-      en: "People management panel in Work for Meta — users, roles and permissions",
-      es: "Panel de personas en Work for Meta — usuarios, roles y permisos",
+      en: "People management panel in Meta Horizon Managed Services — users, roles and permissions",
+      es: "Panel de personas en Meta Horizon Managed Services — usuarios, roles y permisos",
     },
   },
   "work-meta-templates": {
     src: "/images/work-meta-templates.webp",
     alt: {
-      en: "Device configuration templates in Work for Meta",
-      es: "Plantillas de configuración de dispositivos en Work for Meta",
+      en: "Device configuration templates in Meta Horizon Managed Services",
+      es: "Plantillas de configuración de dispositivos en Meta Horizon Managed Services",
     },
   },
   "work-meta-create-group": {
     src: "/images/work-meta-create-group.webp",
     alt: {
-      en: "Create device group dialog in Work for Meta",
-      es: "Diálogo para crear grupo de dispositivos en Work for Meta",
+      en: "Create device group dialog in Meta Horizon Managed Services",
+      es: "Diálogo para crear grupo de dispositivos en Meta Horizon Managed Services",
     },
   },
   "work-meta-add-app": {
     src: "/images/work-meta-add-app.webp",
     alt: {
-      en: "Import app dialog in Work for Meta — adding a private app to the organisation",
-      es: "Diálogo de importar app en Work for Meta — añadiendo una app privada a la organización",
+      en: "Import app dialog in Meta Horizon Managed Services — adding a private app to the organisation",
+      es: "Diálogo de importar app en Meta Horizon Managed Services — añadiendo una app privada a la organización",
     },
   },
   "work-meta-apps": {
     src: "/images/work-meta-apps.webp",
     alt: {
-      en: "Applications and content management panel in Work for Meta",
-      es: "Panel de gestión de aplicaciones y contenido en Work for Meta",
+      en: "Applications and content management panel in Meta Horizon Managed Services",
+      es: "Panel de gestión de aplicaciones y contenido en Meta Horizon Managed Services",
     },
   },
   "work-meta-activate-instructions": {
     src: "/images/work-meta-activate-instructions.webp",
     alt: {
-      en: "Device activation instructions panel in Work for Meta — Wi-Fi method steps",
-      es: "Panel de instrucciones de activación de dispositivos en Work for Meta — pasos del método Wi-Fi",
+      en: "Device activation instructions panel in Meta Horizon Managed Services — Wi-Fi method steps",
+      es: "Panel de instrucciones de activación de dispositivos en Meta Horizon Managed Services — pasos del método Wi-Fi",
     },
   },
   "work-meta-activation-wifi": {
@@ -114,8 +114,8 @@ const module1Images: DocImagesByModule = {
   "work-meta-device-linked": {
     src: "/images/work-meta-device-linked.webp",
     alt: {
-      en: "Device successfully linked to the organisation in Work for Meta — group and template assignment options",
-      es: "Dispositivo vinculado a la organización en Work for Meta — opciones de asignación a grupo y plantilla",
+      en: "Device successfully linked to the organisation in Meta Horizon Managed Services — group and template assignment options",
+      es: "Dispositivo vinculado a la organización en Meta Horizon Managed Services — opciones de asignación a grupo y plantilla",
     },
   },
   "work-meta-headset-configured": {
@@ -184,8 +184,8 @@ const module1Images: DocImagesByModule = {
   "guardian-boundary-draw": {
     src: "/images/drawboundry.webp",
     alt: {
-      en: "Drawing the Guardian boundary on the floor with the Meta Quest controller",
-      es: "Dibujando el límite del Guardian en el suelo con el mando de Meta Quest",
+      en: "Drawing the Boundary on the floor with the Meta Quest controller",
+      es: "Dibujando el Boundary en el suelo con el mando de Meta Quest",
     },
   },
   "boundary-step1": {
@@ -273,6 +273,69 @@ const module4Images: DocImagesByModule = {
       es: "Estudiante usando gafas VR en un aula supervisada con límites claros",
     },
   },
+  "space-seated": {
+    src: "/images/m4-space-seated.webp",
+    alt: {
+      en: "Seated VR experience setup — student using a headset while sitting in a chair within a 1x1 metre area",
+      es: "Configuración de experiencia VR sentado — estudiante usando visor sentado en una silla en un área de 1x1 metro",
+    },
+  },
+  "space-standing": {
+    src: "/images/m4-space-standing.webp",
+    alt: {
+      en: "Standing VR experience setup — student standing in place within a 2x2 metre clear area",
+      es: "Configuración de experiencia VR de pie — estudiante de pie en un área despejada de 2x2 metros",
+    },
+  },
+  "space-roomscale": {
+    src: "/images/m4-space-roomscale.webp",
+    alt: {
+      en: "Room-scale VR experience — student moving freely within a 3x3 metre play area with boundaries marked",
+      es: "Experiencia VR a escala de habitación — estudiante moviéndose libremente en un área de juego de 3x3 metros con límites marcados",
+    },
+  },
+  "response-remove-headset": {
+    src: "/images/m4-response-remove-headset.webp",
+    alt: {
+      en: "Instructor gently helping a student remove the VR headset after reporting discomfort",
+      es: "Instructor ayudando con cuidado a un estudiante a retirar el visor VR tras reportar malestar",
+    },
+  },
+  "response-sit-rest": {
+    src: "/images/m4-response-sit-rest.webp",
+    alt: {
+      en: "Student sitting down to rest after removing the VR headset, guided by the instructor",
+      es: "Estudiante sentándose a descansar tras retirar el visor VR, guiado por el instructor",
+    },
+  },
+  "prevention-short-sessions": {
+    src: "/images/m4-prevention-short-sessions.webp",
+    alt: {
+      en: "Timer showing a short VR session duration — keeping sessions between 5 and 15 minutes to prevent motion sickness",
+      es: "Temporizador mostrando una sesión VR corta — manteniendo las sesiones entre 5 y 15 minutos para prevenir mareos",
+    },
+  },
+  "prevention-seated-mode": {
+    src: "/images/m4-prevention-seated-mode.webp",
+    alt: {
+      en: "Student using VR in seated mode as a comfort option to reduce motion sickness risk",
+      es: "Estudiante usando VR en modo sentado como opción de confort para reducir el riesgo de mareo",
+    },
+  },
+  "cleaning-supplies": {
+    src: "/images/m4-cleaning-supplies.webp",
+    alt: {
+      en: "VR headset cleaning supplies: non-alcoholic disinfectant wipes, microfibre cloth, and disposable hygiene covers",
+      es: "Material de limpieza para visores VR: toallitas desinfectantes sin alcohol, paño de microfibra y cubiertas higiénicas desechables",
+    },
+  },
+  "observer-role": {
+    src: "/images/m4-observer-role.webp",
+    alt: {
+      en: "Student in the active observer role watching a VR session on a screen and taking structured notes",
+      es: "Estudiante en el rol de observador activo viendo una sesión VR en pantalla y tomando notas estructuradas",
+    },
+  },
 };
 
 const module5Images: DocImagesByModule = {
@@ -281,6 +344,27 @@ const module5Images: DocImagesByModule = {
     alt: {
       en: "Instructor guiding a student through a VR briefing before the immersive experience begins",
       es: "Instructor guiando a un estudiante durante el briefing previo a la experiencia inmersiva",
+    },
+  },
+  "classify-objective": {
+    src: "/images/m5-classify-objective.webp",
+    alt: {
+      en: "Briefing framework visual — instructor explaining the learning objective to students before the VR session",
+      es: "Visual del marco de briefing — instructor explicando el objetivo de aprendizaje a los estudiantes antes de la sesión VR",
+    },
+  },
+  "classify-debrief-gather": {
+    src: "/images/m5-classify-debrief-gather.webp",
+    alt: {
+      en: "Gather phase of the GAS debriefing model — students sharing their observations after the VR experience",
+      es: "Fase de Recopilar del modelo de debriefing GAS — estudiantes compartiendo sus observaciones tras la experiencia VR",
+    },
+  },
+  "classify-debrief-analyze": {
+    src: "/images/m5-classify-debrief-analyze.webp",
+    alt: {
+      en: "Analyze phase of the GAS debriefing model — instructor and students examining why things happened during the VR session",
+      es: "Fase de Analizar del modelo de debriefing GAS — instructor y estudiantes examinando por qué ocurrieron las cosas durante la sesión VR",
     },
   },
 };
@@ -300,14 +384,70 @@ const module6Images: DocImagesByModule = {
       es: "Detalle de la rueda de ajuste IPD en Meta Quest 3 — solución clave para imagen borrosa o distorsionada",
     },
   },
+  "wifi-diagnostic": {
+    src: "/images/m6-wifi-diagnostic.webp",
+    alt: {
+      en: "WiFi diagnostic screen on VR headset showing network status, signal strength, and connection details",
+      es: "Pantalla de diagnóstico WiFi en el visor VR mostrando estado de red, intensidad de señal y detalles de conexión",
+    },
+  },
+  "guardian-mirror": {
+    src: "/images/m6-guardian-mirror.webp",
+    alt: {
+      en: "Mirror in a room confusing the VR headset tracking cameras — a common cause of Boundary setup failures",
+      es: "Espejo en una habitación confundiendo las cámaras de seguimiento del visor VR — causa frecuente de fallos en la configuración del Boundary",
+    },
+  },
+  "charging-led": {
+    src: "/images/m6-charging-led.webp",
+    alt: {
+      en: "VR headset charging LED indicator — orange means charging, green means fully charged",
+      es: "Indicador LED de carga del visor VR — naranja significa cargando, verde significa carga completa",
+    },
+  },
+  "casting-setup": {
+    src: "/images/m6-casting-setup.webp",
+    alt: {
+      en: "Casting troubleshooting setup — headset and receiving device connected to the same WiFi network for screen sharing",
+      es: "Configuración para solucionar problemas de casting — visor y dispositivo receptor conectados a la misma red WiFi para compartir pantalla",
+    },
+  },
+  "troubleshoot-mindset": {
+    src: "/images/m6-troubleshoot-mindset.webp",
+    alt: {
+      en: "Instructor staying calm while troubleshooting a VR headset issue during class — demonstrating the composed troubleshooting mindset",
+      es: "Instructor manteniendo la calma mientras resuelve un problema del visor VR durante clase — demostrando la mentalidad serena de resolución de problemas",
+    },
+  },
 };
 
 const module7Images: DocImagesByModule = {
   "app-types-overview": {
-    src: "/images/vr-use-cases-grid.webp",
+    src: "/images/m7-app-types-overview.webp",
     alt: {
       en: "Overview of VR educational app types: exploration, simulation, guided training, evaluation, and communication",
       es: "Resumen de tipos de apps VR educativas: exploración, simulación, entrenamiento guiado, evaluación y comunicación",
+    },
+  },
+  "simulation-training": {
+    src: "/images/m7-simulation-training.webp",
+    alt: {
+      en: "Student practising a hands-on procedure in a VR simulation app — learning through safe, repeatable interaction",
+      es: "Estudiante practicando un procedimiento práctico en una app de simulación VR — aprendiendo mediante interacción segura y repetible",
+    },
+  },
+  "app-evaluation": {
+    src: "/images/m7-app-evaluation.webp",
+    alt: {
+      en: "Instructor evaluating a VR app against pedagogical, technical, and classroom checklists before using it in class",
+      es: "Instructor evaluando una app VR según listas de verificación pedagógicas, técnicas y de aula antes de usarla en clase",
+    },
+  },
+  "before-during-after": {
+    src: "/images/m7-before-during-after.webp",
+    alt: {
+      en: "Before-during-after framework for integrating a VR app into a lesson — preparation, experience, and debriefing phases",
+      es: "Marco antes-durante-después para integrar una app VR en una clase — fases de preparación, experiencia y reflexión",
     },
   },
 };

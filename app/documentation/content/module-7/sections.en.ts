@@ -26,14 +26,13 @@ export const sectionsEn: Record<string, string> = {
 
 **Distribution channels**
 
-- **Official Meta Store** — curated, reviewed apps; mostly commercial titles with some education entries
-- **App Lab** — Meta's secondary channel accessed via invitation link or direct URL; the most common source for educational VR content because it has a lower publishing barrier
+- **Meta Horizon Store** — the unified Meta storefront for Quest apps. All titles are searchable in one place. Developers can publish apps through an "Early Access" programme for apps still in development
 - **Private / institutional apps** — custom-built apps distributed internally by universities, hospitals, or training organisations
 - **WebXR experiences** — browser-based VR accessed via a URL inside the headset browser; no installation required
 
 ---
 
-> "App Lab is where most educational VR content lives — always check it before concluding that nothing exists for your subject."`,
+> "All educational VR content is now in the Meta Horizon Store — use its search filters and categories before concluding that nothing exists for your subject."`,
 
   "exploration-apps": `Exploration apps let learners observe, navigate, and discover environments without performing structured tasks. Think virtual field trips, museum walkthroughs, and anatomy explorers.
 
@@ -68,7 +67,9 @@ Without a clear task, exploration becomes passive tourism. Learners look around,
 
 > "Simulation apps let learners fail safely — and that is exactly why they learn."
 
-> See **Module 2** for the full pedagogical rationale behind simulation-based VR learning.`,
+> See **Module 2** for the full pedagogical rationale behind simulation-based VR learning.
+
+[IMAGE:simulation-training]`,
 
   "guided-training-apps": `Guided training apps walk the learner through a sequence step by step, providing immediate feedback at each stage. The path is closed — learners follow the prescribed order.
 
@@ -198,11 +199,15 @@ Not every lesson needs all four stages, but knowing the sequence prevents gaps.
 - Does casting work reliably for observation?
 - What is your Plan B if the technology fails?
 
-> "Test every app yourself, in the same conditions your students will face, before you ever use it in class."`,
+> "Test every app yourself, in the same conditions your students will face, before you ever use it in class."
+
+[IMAGE:app-evaluation]`,
 
   "integrating-apps-in-class": `Integrating a VR app into a lesson follows the same before-during-after structure used for any VR activity. The key addition: test the specific app yourself before class, and prepare debriefing questions tailored to what the app teaches.
 
-> See **Module 2** for activity design and **Module 5** for briefing and debriefing frameworks.`,
+> See **Module 2** for activity design and **Module 5** for briefing and debriefing frameworks.
+
+[IMAGE:before-during-after]`,
 
   "tutorial-template": `Use this standard template every time you create a tutorial for a VR app. It ensures consistency and prevents you from forgetting critical information.
 

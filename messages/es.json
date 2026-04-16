@@ -5047,14 +5047,14 @@
           "mobileConnection": "Conexión con el móvil",
           "organizationStorage": "Organización y almacenamiento",
           "specifications": "Especificaciones",
-          "appLab": "Qué es App Lab",
           "storeInstall": "Instalación desde la Store",
           "appsInHeadset": "Aplicaciones dentro de las gafas",
           "casting": "Casting y visualización externa",
           "connectivityData": "Conectividad y datos",
           "cleaning": "Limpieza y mantenimiento",
           "accessories": "Accesorios",
-          "preClassChecklist": "Checklist técnico pre-clase"
+          "preClassChecklist": "Checklist técnico pre-clase",
+          "metaForEducation": "Meta for Education"
         }
       },
       "2": {

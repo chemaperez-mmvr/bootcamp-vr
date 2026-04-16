@@ -152,5 +152,5 @@ La Realidad Extendida (XR) es un término paraguas que engloba la Realidad Virtu
 
 En contextos educativos, el foco no está en la tecnología en sí, sino en cómo apoya el aprendizaje. El término XR permite a educadores e instituciones priorizar objetivos de aprendizaje, contextos de enseñanza y necesidades del alumno, en lugar de comprometerse con un solo tipo de tecnología inmersiva. Ofrece un marco flexible para elegir la solución más adecuada en cada escenario educativo.
 
-📎 **Más información:** [¿Qué es XR? — W3C Immersive Web](https://immersiveweb.dev/) | [Meta Quest para Educación](https://education.meta.com/)`,
+📎 **Más información:** [¿Qué es XR? — W3C Immersive Web](https://immersiveweb.dev/) | [Meta Quest para Educación](https://forwork.meta.com/meta-for-education/)`,
 };

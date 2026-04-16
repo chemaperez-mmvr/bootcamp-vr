@@ -85,7 +85,7 @@ Avoid vague verbs like "understand," "learn about," "be aware of," or "appreciat
 
 A PwC study found that VR learners were trained **4x faster** than classroom learners, felt **275% more confident** applying skills, and were **3.75x more emotionally connected** to the content — all from active, scenario-based VR.
 
-The learning pyramid concept: people retain ~10% of what they read but up to 75% of what they practice. VR at its best operates in that high-retention zone.
+Research consistently shows that active practice produces significantly better retention than passive reading or listening. VR at its best operates in that high-retention zone — learners do, not just observe.
 
 [IMAGE:learning-pyramid]
 

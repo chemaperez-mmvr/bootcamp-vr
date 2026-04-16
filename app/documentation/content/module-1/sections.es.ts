@@ -8,7 +8,7 @@ export const sectionsEs: Record<string, string> = {
 **Resumen**
 
 - **Cuenta personal:** un usuario por cuenta; se puede usar en clase con un setup sencillo. También es posible compartir una misma cuenta entre varias gafas, con limitaciones.
-- **Cuenta institucional (Work for Meta):** gestionada por el centro desde [work.meta.com](https://work.meta.com/). Permite administrar dispositivos, apps y usuarios de forma centralizada. Es la opción recomendada para flotas de gafas en entornos educativos.
+- **Cuenta institucional (Meta Horizon Managed Services):** gestionada por el centro desde [work.meta.com](https://work.meta.com/). Permite administrar dispositivos, apps y usuarios de forma centralizada. Es la opción recomendada para flotas de gafas en entornos educativos.
 
 [IMAGE:work-meta-dashboard]`,
 
@@ -28,15 +28,17 @@ Si varias personas usan la misma cuenta personal en distintas gafas:
 - **Pros:** menos cuentas que gestionar, mismo contenido y apps en todas las gafas.
 - **Contras:** límites de compartir cuentas, riesgo de mezclar datos y de incumplir condiciones de uso. Conviene documentar buenas prácticas (quién usa qué gafa, no cambiar contraseñas sin aviso) y conocer los límites que Meta aplica al uso compartido.
 
-> **Nota:** Si gestionas más de unas pocas gafas, considera usar una cuenta institucional con Work for Meta para evitar estos problemas.`,
+> **Nota:** Si gestionas más de unas pocas gafas, considera usar una cuenta institucional con Meta Horizon Managed Services para evitar estos problemas.`,
 
-  "institutional-account": `Las **cuentas institucionales** se gestionan con **Work for Meta** ([work.meta.com](https://work.meta.com/)) para educación y trabajo. Permiten administrar dispositivos, apps y usuarios de forma centralizada, eliminando la necesidad de gestionar cuentas personales y emails en cada gafa. Una vez configurada la plataforma, se acabaron los quebraderos de cabeza con las altas individuales: añadir nuevas apps, quitar apps, asignar grupos de apps a ciertos centros… todo se simplifica mucho.
+  "institutional-account": `Las **cuentas institucionales** se gestionan con **Meta Horizon Managed Services** (antes Work for Meta) desde [work.meta.com](https://work.meta.com/) para educación y trabajo. Permiten administrar dispositivos, apps y usuarios de forma centralizada, eliminando la necesidad de gestionar cuentas personales y emails en cada gafa. Una vez configurada la plataforma, se acabaron los quebraderos de cabeza con las altas individuales: añadir nuevas apps, quitar apps, asignar grupos de apps a ciertos centros… todo se simplifica mucho.
+
+> **Nota:** Desde febrero de 2026, Meta Horizon Managed Services es **completamente gratuito**. El soporte oficial está garantizado hasta enero de 2030.
 
 ---
 
 **Paso 1 — Crear la cuenta empresarial o educativa**
 
-El primer paso es crear la cuenta en [work.meta.com](https://work.meta.com/). Se puede crear como cuenta empresarial o educativa. Una vez creada, accedes al panel de administración donde se gestiona todo: dispositivos, personas, apps, plantillas y grupos.
+El primer paso es crear la cuenta en [work.meta.com](https://work.meta.com/). Se puede crear como cuenta empresarial o educativa. Una vez creada, accedes al panel de administración de Meta Horizon Managed Services donde se gestiona todo: dispositivos, personas, apps, plantillas y grupos.
 
 [IMAGE:work-meta-dashboard]
 
@@ -44,7 +46,7 @@ El primer paso es crear la cuenta en [work.meta.com](https://work.meta.com/). Se
 
 **Paso 2 — Añadir personas al sistema**
 
-Lo siguiente es añadir personas a la organización. Work for Meta tiene un completo sistema de roles: administradores, colaboradores, etc. Cada persona puede tener permisos diferentes según su función.
+Lo siguiente es añadir personas a la organización. Meta Horizon Managed Services tiene un completo sistema de roles: administradores, colaboradores, etc. Cada persona puede tener permisos diferentes según su función.
 
 > **Recomendación:** Si una entidad externa va a gestionar parte de la configuración, la institución puede simplemente crear la cuenta, invitar al equipo técnico como administrador por email y asignarles los roles necesarios. Una vez configurado todo, el centro podrá gestionar de forma autónoma tareas más sencillas como añadir nuevos dispositivos o vincular apps.
 
@@ -58,11 +60,11 @@ Antes de crear plantillas o grupos, es recomendable añadir las apps que se van 
 
 - Las apps deben ser **Apps Privadas** o publicadas en Meta como **gratuitas y abiertas**.
 - **No se pueden añadir** apps de pago ni apps que estén en canales Alpha o Beta.
-- La cuenta de Work for Meta **no es una cuenta de desarrollador**. Son perfiles independientes.
+- La cuenta de Meta Horizon Managed Services **no es una cuenta de desarrollador**. Son perfiles independientes.
 
 **¿Cómo funciona el proceso de añadir una app?**
 
-1. El administrador de Work for Meta facilita la **KEY de la organización** al desarrollador.
+1. El administrador de Meta Horizon Managed Services facilita la **KEY de la organización** al desarrollador.
 2. El desarrollador envía una invitación desde su canal de desarrollo usando esa KEY.
 3. La organización acepta la invitación desde el panel.
 4. La app aparece en la lista de aplicaciones, lista para asignar a plantillas, grupos o dispositivos.
@@ -173,14 +175,16 @@ Es posible configurar las gafas **sin necesidad de encenderlas la primera vez**.
 **Cosas a tener en cuenta**
 
 - **Resetear un dispositivo:** para desvincular unas gafas y vincularlas a otra organización o liberarlas, basta con usar la opción **"Eliminar Dispositivo"** en el panel. Las gafas se reinician de fábrica y comienzan desde cero.
-- **Dos vías de trabajo paralelas:** la publicación de apps en el canal de desarrollo (DEV) sigue siendo el mismo proceso. Pero Work for Meta es un perfil independiente para gestionar los dispositivos y las apps de forma masiva.
+- **Dos vías de trabajo paralelas:** la publicación de apps en el canal de desarrollo (DEV) sigue siendo el mismo proceso. Pero Meta Horizon Managed Services es un perfil independiente para gestionar los dispositivos y las apps de forma masiva.
 
 **Recursos oficiales**
 
-- [Work for Meta — panel de administración](https://work.meta.com/)
-- [Ayuda de Work for Meta](https://work.meta.com/help/1066783137225591?helpref=faq_content)`,
+- [Meta Horizon Managed Services — panel de administración](https://work.meta.com/)
+- [Ayuda de Meta Horizon Managed Services](https://work.meta.com/help/1066783137225591?helpref=faq_content)`,
 
   "getting-started": `Antes de usar las gafas en el aula, conviene dominar lo básico: contenido del paquete, colocación, IPD e idioma.
+
+> **Requisitos de edad:** Meta exige una edad mínima de **10 años** para usar las gafas Quest. Los menores de **10 a 12 años** necesitan una **cuenta parental de Meta** (la cuenta del padre/madre o tutor). A partir de los **13 años**, los alumnos pueden gestionar su propia cuenta Meta. Tenlo en cuenta al planificar actividades con alumnos de distintas edades.
 
 **Contenido del paquete y primeros pasos**
 
@@ -204,13 +208,13 @@ Meta Quest 3 y 3S permiten usarse con gafas graduadas de dimensiones reducidas, 
 - [Configuración de Meta Quest 3S](https://knowledge.vr-expert.com/kb/how-to-set-up-the-meta-quest-3s/)
 - [Empezar con Meta Quest 3S en el aula](https://knowledge.vr-expert.com/kb/getting-started-with-meta-quest-3s-in-the-classroom/)
 
-Incluye: encendido, cuenta (personal o institucional), Wi‑Fi, Guardian/límites de juego y, si aplica, conexión con la app móvil para gestión y casting.`,
+Incluye: encendido, cuenta (personal o institucional), Wi‑Fi, Boundary / Límite (antes Guardian) y, si aplica, conexión con la app de Meta Horizon para gestión y casting.`,
 
-  "settings": `Los ajustes del sistema permiten adaptar las gafas al espacio y al usuario. El más importante antes de cada sesión es el **Guardian (boundary)** — sin él configurado, el alumno podría chocar con paredes u objetos.
+  "settings": `Los ajustes del sistema permiten adaptar las gafas al espacio y al usuario. El más importante antes de cada sesión es el **Boundary / Límite (antes Guardian)** — sin él configurado, el alumno podría chocar con paredes u objetos.
 
-**Guardian / límite — paso a paso**
+**Límite (Boundary) — paso a paso**
 
-El Guardian es el sistema de seguridad que delimita la zona en la que el alumno puede moverse. Las gafas muestran una rejilla virtual cuando se acerca al borde, evitando que choque con paredes, muebles u otros alumnos.
+El Límite (Boundary) es el sistema de seguridad que delimita la zona en la que el alumno puede moverse. Las gafas muestran una rejilla virtual cuando se acerca al borde, evitando que choque con paredes, muebles u otros alumnos.
 
 **Límites sugeridos y escaneo automático**
 
@@ -250,7 +254,7 @@ Además, la **configuración del espacio asistida** permite que las gafas escane
 
 [DETAILS:Recursos]
 
-- [Guardian (guía oficial Meta)](https://www.meta.com/es-es/help/quest/guardian/)
+- [Límite / Boundary (guía oficial Meta)](https://www.meta.com/es-es/help/quest/guardian/)
 - [Límites sugeridos y configuración del espacio asistida (Meta)](https://www.meta.com/help/quest/853707093070890/)
 - [Configurar límite de juego (VR Expert)](https://knowledge.vr-expert.com/kb/how-to-set-up-a-play-boundary-on-the-meta-quest-3/)
 
@@ -274,7 +278,7 @@ Puedes complementar con una [guía completa para principiantes de Quest 3S](http
 
 [/DETAILS]`,
 
-  "mobile-connection": `Conectar las gafas a la **app Meta Quest (Horizon)** en el móvil facilita la gestión diaria y el casting.
+  "mobile-connection": `Conectar las gafas a la **app Meta Horizon** en el móvil facilita la gestión diaria y el casting.
 
 **Beneficios**
 
@@ -285,10 +289,10 @@ Puedes complementar con una [guía completa para principiantes de Quest 3S](http
 
 **Cómo hacerlo**
 
-1. Instala la app **Meta Quest** desde [App Store](https://apps.apple.com/app/meta-quest/id1365028940) o [Google Play](https://play.google.com/store/apps/details?id=com.oculus.vrshell).
+1. Instala la app **Meta Horizon** desde [App Store](https://apps.apple.com/app/meta-quest/id1365028940) o [Google Play](https://play.google.com/store/apps/details?id=com.oculus.vrshell).
 2. Enciende las gafas y abre la app en el móvil.
 3. Sigue el flujo de emparejamiento (Bluetooth y Wi‑Fi); las gafas mostrarán un código o confirmación.
-4. Una vez vinculadas, podrás ver el dispositivo en la app y usar las funciones anteriores.`,
+4. Una vez vinculadas, podrás ver el dispositivo en la app Meta Horizon y usar las funciones anteriores.`,
 
   "organization-storage": `Mantener orden en las gafas, mandos y accesorios evita pérdidas y alarga la vida del material.
 
@@ -318,29 +322,11 @@ Puedes complementar con una [guía completa para principiantes de Quest 3S](http
 - **Botones y uso básico:** [Usar los botones de Meta Quest 3S](https://knowledge.vr-expert.com/kb/how-to-use-the-meta-quest-3s-buttons/).
 - **Configuración inicial:** [Cómo configurar Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-set-up-the-meta-quest-3/).`,
 
-  "app-lab": `**App Lab** es la vía de Meta para distribuir aplicaciones en fase beta o no publicadas en la tienda principal. En educación se usa para acceder a apps específicas mediante enlace o invitación.
-
-**Flujo típico**
-
-1. **Recepción del enlace o invitación:** el instructor o el desarrollador recibe un enlace de App Lab por correo o web.
-2. **Aceptación:** al abrir el enlace y aceptar, la app se asocia a la cuenta Meta con la que estás identificado en ese momento.
-3. **Instalación en una gafa:** con las gafas encendidas y con la misma cuenta, la app aparece en la biblioteca o se puede instalar desde el enlace.
-4. **Replicación en varias gafas:** si todas las gafas usan la misma cuenta (personal compartida o institucional), la app instalada en una puede instalarse en las demás desde la app móvil o desde el headset.
-
-**Por qué se usa en educación**
-
-Permite usar aplicaciones educativas o experimentales que aún no están en la Store oficial, con un proceso controlado por enlace.
-
-**Problemas habituales**
-
-- **La app no aparece:** comprueba que las gafas estén iniciadas con la cuenta en la que aceptaste la invitación; si aceptaste antes de configurar las gafas, vuelve a abrir el enlace con las gafas ya configuradas.
-- **La app no se descarga:** revisa la conexión Wi‑Fi y que no haya demasiadas descargas en cola; libera espacio si es necesario.`,
-
-  "store-install": `La **Meta Quest Store** (dentro del headset o desde la app móvil) es la fuente principal de aplicaciones oficiales.
+  "store-install": `La **Meta Horizon Store** (dentro del headset o desde la app móvil) es la fuente principal de aplicaciones oficiales.
 
 **Instalación paso a paso**
 
-1. Abre la **Store** desde el menú del headset o desde la app Meta Quest en el móvil.
+1. Abre la **Meta Horizon Store** desde el menú del headset o desde la app Meta Horizon en el móvil.
 2. Busca la aplicación por nombre o explora categorías.
 3. Pulsa **Obtener** o **Comprar** (según sea gratuita o de pago).
 4. Espera a que termine la descarga e instalación; la app aparecerá en la biblioteca.
@@ -376,7 +362,7 @@ La primera vez que abras una aplicación, se iniciará directamente. Las actuali
 El flujo de preparación de las gafas antes de cada sesión es siempre el mismo:
 
 1. [**Conectar al WiFi**](#connectivity-data) — las gafas necesitan estar en la misma red que tu dispositivo.
-2. [**Configurar el Guardian (boundary)**](#settings) — delimitar el espacio seguro de movimiento.
+2. [**Configurar el Límite (Boundary)**](#settings) — delimitar el espacio seguro de movimiento.
 3. **Activar el casting** — retransmitir la vista del headset a tu móvil, tablet, TV o proyector.
 4. **Pasar las gafas al alumno** — solo cuando ya estés viendo lo que ve el alumno.
 
@@ -396,8 +382,8 @@ Antes de activar el casting, asegúrate de tener todo preparado:
 
 - **Misma red WiFi** para las gafas y el dispositivo receptor (obligatorio).
 - **Banda de 5 GHz** recomendada — reduce la latencia y mejora la calidad de imagen.
-- **Dispositivo receptor** compatible: app Meta Quest en móvil/tablet, Chromecast conectado a TV/proyector, o navegador web.
-- **Gafas cargadas** (mínimo 30 %) y [**vinculadas** a la app Meta Quest](#mobile-connection) en tu móvil.
+- **Dispositivo receptor** compatible: app Meta Horizon en móvil/tablet, Chromecast conectado a TV/proyector, o navegador web.
+- **Gafas cargadas** (mínimo 30 %) y [**vinculadas** a la app Meta Horizon](#mobile-connection) en tu móvil.
 
 
 ---
@@ -419,7 +405,7 @@ Antes de activar el casting, asegúrate de tener todo preparado:
    [IMAGE:casting-device-selection]
 
 6. Pulsa **Siguiente** y sigue las instrucciones en pantalla.
-   - Si eliges **Móvil**: la retransmisión aparece directamente en la app Meta Quest de tu teléfono.
+   - Si eliges **Móvil**: la retransmisión aparece directamente en la app Meta Horizon de tu teléfono.
    - Si eliges **Chromecast**: la imagen se muestra en la TV o proyector conectado.
    - Si eliges **Web**: abre **[horizon.meta.com/casting](https://horizon.meta.com/casting/)** en un navegador (Chrome recomendado) en cualquier ordenador o dispositivo conectado a la misma red Wifi. Debes estar logueado con la misma cuenta Meta que tienen las gafas.
 
@@ -435,7 +421,7 @@ Antes de activar el casting, asegúrate de tener todo preparado:
 - **Usa la banda de 5 GHz** de tu router. Si la red del centro es inestable, considera usar un **router dedicado** para los headsets.
 - **Prueba el casting antes** de que lleguen los alumnos — evitarás perder tiempo de clase solucionando problemas técnicos.
 - **Prepara tu narración:** dado el pequeño retardo del casting, planifica qué vas a decir mientras el alumno explora. Funciona bien describir lo que se está viendo o hacer preguntas al grupo.
-- **Relay móvil → proyector:** si no tienes Chromecast, haz casting a tu móvil y luego conecta el móvil al proyector por cable. Es una alternativa sencilla que funciona bien.
+- **Relay móvil a proyector:** si no tienes Chromecast, haz casting a tu móvil y luego conecta el móvil al proyector por cable. Es una alternativa sencilla que funciona bien.
 
 [/DETAILS]
 
@@ -463,7 +449,7 @@ Para una guía completa de resolución de problemas de casting, consulta la secc
 **Cómo conectar las gafas al WiFi — paso a paso**
 
 1. Enciende las gafas y ponte el headset.
-2. Pulsa [ICON:metabutton] el **botón Meta** (u Oculus) del mando derecho para abrir el Explorador.
+2. Pulsa [ICON:metabutton] el **botón Meta** del mando derecho para abrir el Explorador.
 3. Selecciona [ICON:quicksettings] **Controles de acceso rápido**.
 
    [IMAGE:wifi-quick-access]
@@ -521,7 +507,33 @@ Ejemplos típicos: correas de cabeza alternativas, fundas de transporte, espacia
 
 - **Gafas cargadas:** comprobar que el LED indique carga completa (p. ej. verde al 100%).
 - **Apps abiertas y probadas:** haber entrado al menos una vez en la app que usarás y comprobar que se abre correctamente.
-- **Boundary configurado:** Guardian/límite de juego dibujado y probado en el espacio real del aula.
+- **Límite (Boundary) configurado:** Límite dibujado y probado en el espacio real del aula.
 - **Casting probado:** si vas a proyectar, verificar que el dispositivo de casting (Chromecast, app, etc.) funciona con las gafas.
 - **Plan B preparado:** tener una actividad alternativa si falla la VR (Wi‑Fi, app o dispositivo).`,
+
+  "meta-for-education": `**Meta for Education** es la oferta de Meta diseñada específicamente para centros educativos e instituciones, construida sobre Meta Horizon Managed Services. Tras una fase beta iniciada en abril de 2024, está disponible de forma general desde **febrero de 2025**.
+
+**Por qué es relevante para los centros educativos**
+
+Meta for Education aborda los principales retos de gestionar gafas VR en entornos educativos: administración de dispositivos a escala, casting simplificado, identidad respetuosa con la privacidad y precios predecibles.
+
+**Funcionalidades clave**
+
+- **Facilitated Casting:** transmite y controla hasta 48 dispositivos simultáneamente desde un único panel web — sin necesidad de hacer casting de uno en uno.
+- **Gestión de archivos:** distribuye archivos, apps y configuraciones a toda la flota de gafas de forma remota.
+- **Modo kiosco:** bloquea los dispositivos compartidos a apps o experiencias específicas, ideal para aulas donde el alumnado solo debe acceder a la actividad asignada.
+- **Identidad centrada en la privacidad:** soluciones de identidad diseñadas para contextos educativos, de modo que el alumnado no necesita cuentas personales de Meta.
+
+**Precios y disponibilidad**
+
+Desde **febrero de 2026**, Meta descontinuó los packs de hardware educativo que estaban disponibles anteriormente. El modelo actual para centros educativos es:
+
+- **Comprar gafas Quest consumer** a precio de venta al público (Meta Quest 3, Quest 3S).
+- **Activar Meta Horizon Managed Services (HMS) gratis** — HMS es ahora gratuito para todos los despliegues y tiene soporte hasta enero de 2030.
+
+Esto significa que ya no existe un "SKU educativo" separado. Los centros compran el mismo hardware que los consumidores y luego activan la gestión de dispositivos a través de HMS sin coste adicional.
+
+**Más información**
+
+Visita [Meta for Education](https://forwork.meta.com/meta-for-education/) para todos los detalles, casos de éxito y para contactar con Meta sobre tu centro.`,
 };

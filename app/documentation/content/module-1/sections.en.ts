@@ -8,7 +8,7 @@ export const sectionsEn: Record<string, string> = {
 **Summary**
 
 - **Personal account:** one user per account; it can be used in class with a simple setup. It is also possible to share one account across multiple headsets, with limitations.
-- **Institutional account (Work for Meta):** managed by the institution from [work.meta.com](https://work.meta.com/). Allows centralised management of devices, apps and users. This is the recommended option for headset fleets in educational settings.
+- **Institutional account (Meta Horizon Managed Services):** managed by the institution from [work.meta.com](https://work.meta.com/). Allows centralised management of devices, apps and users. This is the recommended option for headset fleets in educational settings.
 
 [IMAGE:work-meta-dashboard]`,
 
@@ -28,9 +28,11 @@ If several people use the same personal account across different headsets:
 - **Pros:** fewer accounts to manage, same content and apps across headsets.
 - **Cons:** limits on account sharing, risk of mixing data and violating terms of use. Document good practices (who uses which headset, avoid changing passwords without notice) and be aware of Meta’s limits on shared use.
 
-> **Note:** If you manage more than a few headsets, consider using an institutional account with Work for Meta to avoid these issues.`,
+> **Note:** If you manage more than a few headsets, consider using an institutional account with Meta Horizon Managed Services to avoid these issues.`,
 
-  "institutional-account": `**Institutional accounts** are managed with **Work for Meta** ([work.meta.com](https://work.meta.com/)) for education and work. They allow centralised management of devices, apps and users, removing the need to manage personal accounts and emails on each headset. Once the platform is configured, all the headaches with individual device setup are gone: adding new apps, removing apps, assigning app groups to specific institutions… everything becomes much simpler.
+  "institutional-account": `**Institutional accounts** are managed with **Meta Horizon Managed Services (formerly Work for Meta)** ([work.meta.com](https://work.meta.com/)) for education and work. They allow centralised management of devices, apps and users, removing the need to manage personal accounts and emails on each headset. Once the platform is configured, all the headaches with individual device setup are gone: adding new apps, removing apps, assigning app groups to specific institutions... everything becomes much simpler.
+
+> **Note:** As of February 2026, Meta Horizon Managed Services (HMS) is **free for all deployments** — there is no cost for institutions to use the platform. HMS is supported until January 2030.
 
 ---
 
@@ -44,7 +46,7 @@ The first step is to create the account at [work.meta.com](https://work.meta.com
 
 **Step 2 — Add people to the system**
 
-Next, add people to the organisation. Work for Meta has a comprehensive role system: administrators, collaborators, etc. Each person can have different permissions depending on their function.
+Next, add people to the organisation. Meta Horizon Managed Services has a comprehensive role system: administrators, collaborators, etc. Each person can have different permissions depending on their function.
 
 > **Recommendation:** If an external team will handle part of the configuration, the institution can simply create the account, invite the technical team as administrators by email, and assign them the necessary roles. Once everything is configured, the institution can independently manage simpler tasks like adding new devices or linking apps.
 
@@ -58,11 +60,11 @@ Before creating templates or groups, it is recommended to add the apps you will 
 
 - Apps must be **Private Apps** or published on Meta as **free and open**.
 - **Paid apps cannot be added**, nor can apps in Alpha or Beta channels.
-- The Work for Meta account **is not a developer account**. They are independent profiles.
+- The HMS account **is not a developer account**. They are independent profiles.
 
 **How does the app addition process work?**
 
-1. The Work for Meta administrator provides the **organisation KEY** to the developer.
+1. The HMS administrator provides the **organisation KEY** to the developer.
 2. The developer sends an invitation from their development channel using that KEY.
 3. The organisation accepts the invitation from the admin panel.
 4. The app appears in the applications list, ready to be assigned to templates, groups or devices.
@@ -173,12 +175,12 @@ It is possible to configure the headset **without powering it on for the first t
 **Things to keep in mind**
 
 - **Resetting a device:** to unlink a headset and link it to another organisation or release it, simply use the **"Delete Device"** option in the admin panel. The headset performs a factory reset and starts from scratch.
-- **Two parallel workflows:** app publishing through the developer channel (DEV) remains the same process. But Work for Meta is an independent profile for managing devices and apps at scale.
+- **Two parallel workflows:** app publishing through the developer channel (DEV) remains the same process. But HMS is an independent profile for managing devices and apps at scale.
 
 **Official resources**
 
-- [Work for Meta — admin dashboard](https://work.meta.com/)
-- [Work for Meta help](https://work.meta.com/help/1066783137225591?helpref=faq_content)`,
+- [Meta Horizon Managed Services — admin dashboard](https://work.meta.com/)
+- [Meta Horizon Managed Services help](https://work.meta.com/help/1066783137225591?helpref=faq_content)`,
 
   "getting-started": `Before using the headset in class, it helps to master the basics: what’s in the box, how to wear it, IPD, and language.
 
@@ -190,6 +192,10 @@ It is possible to configure the headset **without powering it on for the first t
 - **Straps and facial adjustment:** the top and side straps are adjustable. By combining the adjustment of these with the tilt of the headset on your face, you can find the optimal position for clear and comfortable vision.
 - **IPD (interpupillary distance):** adjust the wheel between the lenses so the image is not blurry or double; improves comfort.
 - **Language:** set it in Settings so students see the interface in the course language.
+
+**Age requirements**
+
+Meta Quest headsets have a minimum age requirement of **10 years**. Children aged **10-12** must use a parent or guardian-managed Meta account. Users aged **13 and older** can create and manage their own Meta account. Keep these requirements in mind when planning classroom use with younger students.
 
 **Wearing with glasses**
 
@@ -204,17 +210,17 @@ Meta Quest 3 and 3S can be used with prescription glasses of reduced dimensions,
 - [Set up Meta Quest 3S](https://knowledge.vr-expert.com/kb/how-to-set-up-the-meta-quest-3s/)
 - [Getting started with Meta Quest 3S in the classroom](https://knowledge.vr-expert.com/kb/getting-started-with-meta-quest-3s-in-the-classroom/)
 
-This includes powering on, account (personal or institutional), Wi‑Fi, Guardian/play boundary, and if applicable, pairing with the mobile app for management and casting.`,
+This includes powering on, account (personal or institutional), Wi-Fi, Boundary setup, and if applicable, pairing with the mobile app for management and casting.`,
 
-  "settings": `System settings let you adapt the headset to the space and user. The most important one before every session is the **Guardian (boundary)** — without it set up, the student could bump into walls or objects.
+  "settings": `System settings let you adapt the headset to the space and user. The most important one before every session is the **Boundary (formerly Guardian)** — without it set up, the student could bump into walls or objects.
 
-**Guardian / boundary — step by step**
+**Boundary — step by step**
 
-The Guardian is the safety system that marks the zone where the student can move. The headset shows a virtual grid when they approach the edge, preventing them from hitting walls, furniture, or other students.
+The Boundary is the safety system that marks the zone where the student can move. The headset shows a virtual grid when they approach the edge, preventing them from hitting walls, furniture, or other students.
 
-**Suggested boundaries and automatic room scanning**
+**Suggested Boundary and automatic room scanning**
 
-Meta Quest 3/3S use their cameras to scan the environment and **suggest boundaries automatically** based on the free space around you. The first time you open an app without configured boundaries, the headset proposes a boundary you can accept, edit, or replace.
+Meta Quest 3/3S use their cameras to scan the environment and **suggest a Boundary automatically** based on the free space around you. The first time you open an app without a configured Boundary, the headset proposes one you can accept, edit, or replace.
 
 Additionally, **assisted Space Setup** lets the headset quickly 3D-scan your environment to detect walls, tables, and furniture without you having to add them manually.
 
@@ -225,12 +231,12 @@ Additionally, **assisted Space Setup** lets the headset quickly 3D-scan your env
 - **Stationary:** a fixed 1×1 m (3×3 ft) zone around the user. Created automatically when entering VR. Ideal for seated experiences or standing in place.
 - **Roomscale:** a larger zone based on the room scan or drawn manually. Minimum recommended space: 2×2 m (6.5×6.5 ft) without obstacles. Recommended for most educational apps.
 
-**How to adjust or redraw the boundary:**
+**How to adjust or redraw the Boundary:**
 
 1. Press [ICON:metabutton] the **Meta button** on the right controller to open the Navigator.
 2. Select [ICON:quicksettings] **Quick controls** > **Settings**.
 3. Select **Environment setup** > **Boundary** > **Adjust boundary**.
-4. If the headset suggests a boundary based on its scan, review it and accept if it fits the space. If not, choose **Roomscale** and draw manually: point the controller at the floor, pull the **trigger**, and trace the perimeter of the safe zone.
+4. If the headset suggests a Boundary based on its scan, review it and accept if it fits the space. If not, choose **Roomscale** and draw manually: point the controller at the floor, pull the **trigger**, and trace the perimeter of the safe zone.
 
    [IMAGE:guardian-boundary-draw]
 
@@ -240,19 +246,19 @@ Additionally, **assisted Space Setup** lets the headset quickly 3D-scan your env
 
 [DETAILS:Classroom tips]
 
-- Always review the suggested boundary before accepting — the headset may not detect low obstacles or backpacks on the floor.
+- Always review the suggested Boundary before accepting — the headset may not detect low obstacles or backpacks on the floor.
 - If drawing manually, leave at least **50 cm (20 in) of margin** from walls and furniture.
-- If multiple students have headsets on at the same time, make sure their **zones don’t overlap**.
-- The headset remembers boundaries from previous spaces, but if you change rooms you’ll need to redo it.
-- You can look down to see the outline of your play zone ("Glanceable boundary" feature).
+- If multiple students have headsets on at the same time, make sure their **Boundary zones don’t overlap**.
+- The headset remembers Boundaries from previous spaces, but if you change rooms you’ll need to redo it.
+- You can look down to see the outline of your play zone ("Glanceable Boundary" feature).
 
 [/DETAILS]
 
 [DETAILS:Resources]
 
-- [Guardian (official Meta guide)](https://www.meta.com/en-gb/help/quest/guardian/)
-- [Suggested boundaries and assisted Space Setup (Meta)](https://www.meta.com/help/quest/853707093070890/)
-- [Set up a play boundary (VR Expert)](https://knowledge.vr-expert.com/kb/how-to-set-up-a-play-boundary-on-the-meta-quest-3/)
+- [Boundary (official Meta guide)](https://www.meta.com/en-gb/help/quest/guardian/)
+- [Suggested Boundary and assisted Space Setup (Meta)](https://www.meta.com/help/quest/853707093070890/)
+- [Set up a play Boundary (VR Expert)](https://knowledge.vr-expert.com/kb/how-to-set-up-a-play-boundary-on-the-meta-quest-3/)
 
 [/DETAILS]
 
@@ -274,7 +280,7 @@ You can complement with a [complete Quest 3S beginner’s guide](https://knowled
 
 [/DETAILS]`,
 
-  "mobile-connection": `Connecting the headset to the **Meta Quest (Horizon)** app on your phone makes daily management and casting easier.
+  "mobile-connection": `Connecting the headset to the **Meta Horizon app** on your phone makes daily management and casting easier.
 
 **Benefits**
 
@@ -285,9 +291,9 @@ You can complement with a [complete Quest 3S beginner’s guide](https://knowled
 
 **How to do it**
 
-1. Install the **Meta Quest** app from [App Store](https://apps.apple.com/app/meta-quest/id1365028940) or [Google Play](https://play.google.com/store/apps/details?id=com.oculus.vrshell).
+1. Install the **Meta Horizon app** from [App Store](https://apps.apple.com/app/meta-quest/id1365028940) or [Google Play](https://play.google.com/store/apps/details?id=com.oculus.vrshell).
 2. Power on the headset and open the app on your phone.
-3. Follow the pairing flow (Bluetooth and Wi‑Fi); the headset will show a code or confirmation.
+3. Follow the pairing flow (Bluetooth and Wi-Fi); the headset will show a code or confirmation.
 4. Once linked, you’ll see the device in the app and can use the features above.`,
 
   "organization-storage": `Keeping headsets, controllers, and accessories organised reduces loss and extends the life of the equipment.
@@ -318,29 +324,11 @@ You can complement with a [complete Quest 3S beginner’s guide](https://knowled
 - **Buttons and basic use:** [Use Meta Quest 3S buttons](https://knowledge.vr-expert.com/kb/how-to-use-the-meta-quest-3s-buttons/).
 - **Initial setup:** [How to set up Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-set-up-the-meta-quest-3/).`,
 
-  "app-lab": `**App Lab** is Meta’s channel for distributing apps in beta or not yet on the main store. In education it is used to access specific apps via link or invitation.
-
-**Typical flow**
-
-1. **Receive link or invitation:** the instructor or developer gets an App Lab link by email or web.
-2. **Accept:** when you open the link and accept, the app is tied to the Meta account you’re signed in with at that time.
-3. **Install on one headset:** with the headset on and the same account, the app appears in the library or can be installed from the link.
-4. **Replicate on multiple headsets:** if all headsets use the same account (shared personal or institutional), the app installed on one can be installed on the others from the mobile app or from the headset.
-
-**Why it’s used in education**
-
-It allows using educational or experimental apps that are not yet on the official Store, with a link-controlled process.
-
-**Common issues**
-
-- **App doesn’t appear:** ensure the headset is signed in with the account you used to accept the invitation; if you accepted before setting up the headset, open the link again with the headset already set up.
-- **App doesn’t download:** check Wi‑Fi and that there aren’t too many downloads queued; free space if needed.`,
-
-  "store-install": `The **Meta Quest Store** (inside the headset or from the mobile app) is the main source of official applications.
+  "store-install": `The **Meta Horizon Store** (inside the headset or from the mobile app) is the main source of official applications.
 
 **Step-by-step installation**
 
-1. Open the **Store** from the headset menu or from the Meta Quest app on your phone.
+1. Open the **Store** from the headset menu or from the Meta Horizon app on your phone.
 2. Search for the app by name or browse categories.
 3. Tap **Get** or **Buy** (depending on free or paid).
 4. Wait for download and installation to finish; the app will appear in the library.
@@ -376,7 +364,7 @@ The first time you open an application, it will launch directly. Updates are not
 The headset preparation flow before every session is always the same:
 
 1. [**Connect to WiFi**](#connectivity-data) — the headset needs to be on the same network as your device.
-2. [**Set up the Guardian (boundary)**](#settings) — define the safe movement area.
+2. [**Set up the Boundary**](#settings) — define the safe movement area.
 3. **Activate casting** — stream the headset view to your phone, tablet, TV, or projector.
 4. **Hand the headset to the student** — only when you’re already seeing what they see.
 
@@ -396,8 +384,8 @@ Before activating casting, make sure everything is ready:
 
 - **Same WiFi network** for the headset and the receiving device (required).
 - **5 GHz band** recommended — reduces latency and improves image quality.
-- **Compatible receiving device**: Meta Quest app on phone/tablet, Chromecast connected to TV/projector, or a web browser.
-- **Headset charged** (at least 30%) and [**paired** with the Meta Quest app](#mobile-connection) on your phone.
+- **Compatible receiving device**: Meta Horizon app on phone/tablet, Chromecast connected to TV/projector, or a web browser.
+- **Headset charged** (at least 30%) and [**paired** with the Meta Horizon app](#mobile-connection) on your phone.
 
 
 ---
@@ -419,7 +407,7 @@ Before activating casting, make sure everything is ready:
    [IMAGE:casting-device-selection]
 
 6. Select **Next** and follow the on-screen instructions.
-   - If you choose **Mobile**: the stream appears directly in the Meta Quest app on your phone.
+   - If you choose **Mobile**: the stream appears directly in the Meta Horizon app on your phone.
    - If you choose **Chromecast**: the image is shown on the connected TV or projector.
    - If you choose **Web**: open **[horizon.meta.com/casting](https://horizon.meta.com/casting/)** in a browser (Chrome recommended) on any computer or device connected to the same Wi-Fi network. You must be logged in with the same Meta account used on the headset.
 
@@ -463,7 +451,7 @@ For a complete casting troubleshooting guide, see the **Casting issues** section
 **How to connect the headset to WiFi — step by step**
 
 1. Turn on the headset and put it on.
-2. Press [ICON:metabutton] the **Meta button** (or Oculus button) on the right controller to open the Navigator.
+2. Press [ICON:metabutton] the **Meta button** on the right controller to open the Navigator.
 3. Select [ICON:quicksettings] **Quick controls**.
 
    [IMAGE:wifi-quick-access]
@@ -521,7 +509,33 @@ Typical examples: alternative head straps, carry cases, facial spacers for glass
 
 - **Headsets charged:** check that the LED indicates full charge (e.g. green at 100%).
 - **Apps opened and tested:** have opened at least once the app you will use and confirmed it launches correctly.
-- **Boundary set:** Guardian/play area drawn and tested in the actual classroom space.
+- **Boundary set:** Boundary drawn and tested in the actual classroom space.
 - **Casting tested:** if you will project, verify that the casting device (Chromecast, app, etc.) works with the headset.
 - **Plan B ready:** have an alternative activity if VR fails (Wi‑Fi, app, or device).`,
+
+  "meta-for-education": `**Meta for Education** is Meta's dedicated offering for schools and educational institutions, built on top of Meta Horizon Managed Services. After a beta phase starting in April 2024, it became generally available in **February 2025**.
+
+**Why it matters for schools**
+
+Meta for Education addresses the key pain points of managing VR headsets in educational settings: device management at scale, simplified casting, privacy-compliant identity, and predictable pricing.
+
+**Key features**
+
+- **Facilitated Casting:** cast and control up to 48 devices simultaneously from a single web-based dashboard — no need to cast one headset at a time.
+- **File management:** distribute files, apps, and configurations across your headset fleet remotely.
+- **Kiosk mode:** lock shared devices to specific apps or experiences, ideal for classrooms where students should only access the assigned activity.
+- **Privacy-first identity:** identity solutions designed for educational contexts, so students do not need personal Meta accounts.
+
+**Pricing and availability**
+
+As of **February 2026**, Meta discontinued the dedicated education hardware bundles that were previously available. The current approach for schools is:
+
+- **Purchase consumer Quest headsets** at standard retail pricing (Meta Quest 3, Quest 3S).
+- **Activate Meta Horizon Managed Services (HMS) for free** — HMS is now free for all deployments and supported until January 2030.
+
+This means there is no longer a separate "education SKU" to purchase. Schools buy the same hardware as consumers and then enable device management through HMS at no additional cost.
+
+**More information**
+
+Visit [Meta for Education](https://forwork.meta.com/meta-for-education/) for full details, case studies, and to contact Meta about your institution.`,
 };

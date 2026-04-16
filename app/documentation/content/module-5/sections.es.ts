@@ -32,7 +32,9 @@ Este principio se sustenta en marcos ampliamente establecidos:
 - **Tiempo** — cuánto durará la experiencia
 - **Tarea** — las acciones específicas que realizará el estudiante
 
-> "Un briefing claro permite que los estudiantes usen su tiempo en RV para aprender, no para adivinar."`,
+> "Un briefing claro permite que los estudiantes usen su tiempo en RV para aprender, no para adivinar."
+
+[IMAGE:classify-objective]`,
 
   "what-to-explain": `Saber qué incluir en un briefing es importante, pero saber qué omitir es igualmente crítico. Un briefing excesivo mata la curiosidad y desperdicia tiempo.
 
@@ -81,7 +83,11 @@ Este principio se sustenta en marcos ampliamente establecidos:
 
 Cada modelo sigue la misma lógica: describir qué pasó, analizar por qué y decidir qué hacer la próxima vez. El modelo específico importa menos que tener una estructura.
 
-> "Un debriefing sin estructura es una oportunidad perdida. Uno estructurado es donde vive el aprendizaje."`,
+> "Un debriefing sin estructura es una oportunidad perdida. Uno estructurado es donde vive el aprendizaje."
+
+[IMAGE:classify-debrief-gather]
+
+[IMAGE:classify-debrief-analyze]`,
 
   "good-debriefing": `No todos los debriefings son iguales. La diferencia entre uno productivo y uno desperdiciado se reduce a seis características.
 

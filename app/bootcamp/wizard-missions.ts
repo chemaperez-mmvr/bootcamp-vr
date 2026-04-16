@@ -115,7 +115,7 @@ const missionsByModule: Record<string, WizardMissionDef[]> = {
           ],
         },
         {
-          id: "cs-guardian",
+          id: "cs-boundary",
           stepType: "choice",
           contextKey: "wizardMissions.classroomSetup.steps.s4.context",
           choices: [
@@ -295,7 +295,7 @@ const missionsByModule: Record<string, WizardMissionDef[]> = {
           confirmLabelKey: "wizardMissions.preClassCheck.steps.s3.confirm",
         },
         {
-          id: "pc-guardian",
+          id: "pc-boundary",
           stepType: "confirm",
           contextKey: "wizardMissions.preClassCheck.steps.s4.context",
           confirmLabelKey: "wizardMissions.preClassCheck.steps.s4.confirm",

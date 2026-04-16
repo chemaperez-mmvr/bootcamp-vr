@@ -29,13 +29,19 @@ Modern VR headsets include **boundary cameras** that activate automatically when
 
 Always measure and mark boundaries before the session. Remove obstacles — chairs, bags, cables — from the play zone. If your classroom cannot provide enough space for room-scale, choose seated or standing experiences instead.
 
-> "Plan the space before the session, not during it."`,
+> "Plan the space before the session, not during it."
+
+[IMAGE:space-seated]
+
+[IMAGE:space-standing]
+
+[IMAGE:space-roomscale]`,
 
   "supervision-boundaries": `Every VR session requires an instructor who can see every active user at all times. Supervision is not optional — it is the most important safety measure you have.
 
 **Non-negotiable rules**
 
-- **Always define the guardian or boundary system** on every headset before use
+- **Always define the boundary system** on every headset before use
 - The instructor must maintain **direct line of sight** to all VR users throughout the session
 - **Never leave VR users unsupervised**, not even briefly
 - One instructor can safely supervise a limited number of active users — if you have more students, rotate groups
@@ -64,7 +70,11 @@ If you are the only instructor, limit the number of students in VR at the same t
 
 Stay calm and speak reassuringly. Disorientation passes within a few minutes for most people. If symptoms persist beyond ten minutes, the student should stop VR for the day.
 
-> "React calmly. The student is uncomfortable, not in danger."`,
+> "React calmly. The student is uncomfortable, not in danger."
+
+[IMAGE:response-remove-headset]
+
+[IMAGE:response-sit-rest]`,
 
   "motion-sickness-fatigue": `Motion sickness in VR — sometimes called cybersickness — occurs when visual motion does not match physical sensation. Not everyone experiences it, but every instructor must recognise the signs and act quickly.
 
@@ -86,7 +96,11 @@ Stay calm and speak reassuringly. Disorientation passes within a few minutes for
 - Offer **seated mode** whenever the application supports it
 - Let students set their own pace
 
-**Students should never be forced to continue** if they report any discomfort. Pushing through makes symptoms worse, not better.`,
+**Students should never be forced to continue** if they report any discomfort. Pushing through makes symptoms worse, not better.
+
+[IMAGE:prevention-short-sessions]
+
+[IMAGE:prevention-seated-mode]`,
 
   "hygiene-care-equipment": `Shared VR headsets touch faces, hair, and hands. A consistent hygiene routine keeps equipment clean, comfortable, and ready for the next user.
 
@@ -105,7 +119,9 @@ Stay calm and speak reassuringly. Disorientation passes within a few minutes for
 - **Microfibre cloth** for lenses — never use paper towels, tissues, or clothing
 - **Disposable hygiene covers** for the face pad if available — they reduce cleaning time and improve comfort
 
-Pay special attention to the **face padding** (absorbs sweat) and **controller grips** (touched constantly). A 60-second wipe-down between users prevents buildup and keeps the experience pleasant for everyone.`,
+Pay special attention to the **face padding** (absorbs sweat) and **controller grips** (touched constantly). A 60-second wipe-down between users prevents buildup and keeps the experience pleasant for everyone.
+
+[IMAGE:cleaning-supplies]`,
 
   "cleaning-workflows": `A structured cleaning routine protects both equipment longevity and student comfort. Separate your cleaning into two levels: between-student quick cleans and end-of-day deep cleans.
 
@@ -192,5 +208,7 @@ Each option should feel like a legitimate path, not a consolation prize.`,
 
 Observers should have a structured task — a checklist, a set of questions, or a specific focus area. Without structure, observation becomes passive watching.
 
-> "Not wearing a headset does not mean not learning."`,
+> "Not wearing a headset does not mean not learning."
+
+[IMAGE:observer-role]`,
 };

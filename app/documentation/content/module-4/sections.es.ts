@@ -29,13 +29,19 @@ Los visores de RV modernos incluyen **cámaras de límite** que se activan autom
 
 Siempre mide y marca los límites antes de la sesión. Retira obstáculos — sillas, mochilas, cables — de la zona de juego. Si tu aula no puede proporcionar suficiente espacio para escala de habitación, elige experiencias sentado o de pie.
 
-> "Planifica el espacio antes de la sesión, no durante ella."`,
+> "Planifica el espacio antes de la sesión, no durante ella."
+
+[IMAGE:space-seated]
+
+[IMAGE:space-standing]
+
+[IMAGE:space-roomscale]`,
 
   "supervision-boundaries": `Cada sesión de RV requiere un instructor que pueda ver a todos los usuarios activos en todo momento. La supervisión no es opcional — es la medida de seguridad más importante que tienes.
 
 **Reglas innegociables**
 
-- **Siempre define el sistema de guardián o límites** en cada visor antes de usarlo
+- **Siempre define el sistema de límites (Boundary)** en cada visor antes de usarlo
 - El instructor debe mantener **línea de visión directa** hacia todos los usuarios de RV durante toda la sesión
 - **Nunca dejes a los usuarios de RV sin supervisión**, ni siquiera brevemente
 - Un instructor puede supervisar de forma segura un número limitado de usuarios activos — si tienes más estudiantes, rota los grupos
@@ -64,7 +70,11 @@ Si eres el único instructor, limita el número de estudiantes en RV al mismo ti
 
 Mantén la calma y habla de forma tranquilizadora. La desorientación pasa en pocos minutos para la mayoría de las personas. Si los síntomas persisten más de diez minutos, el estudiante debe dejar la RV por el resto del día.
 
-> "Reacciona con calma. El estudiante está incómodo, no en peligro."`,
+> "Reacciona con calma. El estudiante está incómodo, no en peligro."
+
+[IMAGE:response-remove-headset]
+
+[IMAGE:response-sit-rest]`,
 
   "motion-sickness-fatigue": `El mareo por movimiento en RV — a veces llamado cibermareo — ocurre cuando el movimiento visual no coincide con la sensación física. No todos lo experimentan, pero todo instructor debe reconocer las señales y actuar rápidamente.
 
@@ -86,7 +96,11 @@ Mantén la calma y habla de forma tranquilizadora. La desorientación pasa en po
 - Ofrece **modo sentado** siempre que la aplicación lo permita
 - Deja que los estudiantes marquen su propio ritmo
 
-**Nunca se debe obligar a un estudiante a continuar** si reporta cualquier malestar. Forzar la situación empeora los síntomas, no los mejora.`,
+**Nunca se debe obligar a un estudiante a continuar** si reporta cualquier malestar. Forzar la situación empeora los síntomas, no los mejora.
+
+[IMAGE:prevention-short-sessions]
+
+[IMAGE:prevention-seated-mode]`,
 
   "hygiene-care-equipment": `Los visores de RV compartidos tocan rostros, cabello y manos. Una rutina de higiene consistente mantiene el equipo limpio, cómodo y listo para el siguiente usuario.
 
@@ -105,7 +119,9 @@ Mantén la calma y habla de forma tranquilizadora. La desorientación pasa en po
 - **Paño de microfibra** para los lentes — nunca uses toallas de papel, pañuelos ni ropa
 - **Cubiertas higiénicas desechables** para la almohadilla facial si están disponibles — reducen el tiempo de limpieza y mejoran la comodidad
 
-Presta especial atención a la **almohadilla facial** (absorbe sudor) y las **empuñaduras de los controladores** (se tocan constantemente). Una limpieza de 60 segundos entre usuarios previene la acumulación y mantiene la experiencia agradable para todos.`,
+Presta especial atención a la **almohadilla facial** (absorbe sudor) y las **empuñaduras de los controladores** (se tocan constantemente). Una limpieza de 60 segundos entre usuarios previene la acumulación y mantiene la experiencia agradable para todos.
+
+[IMAGE:cleaning-supplies]`,
 
   "cleaning-workflows": `Una rutina de limpieza estructurada protege tanto la vida útil del equipo como la comodidad de los estudiantes. Separa tu limpieza en dos niveles: limpieza rápida entre estudiantes y limpieza profunda al final del día.
 
@@ -192,5 +208,7 @@ Cada opción debe sentirse como un camino legítimo, no como un premio de consol
 
 Los observadores deben tener una tarea estructurada — una lista de verificación, un conjunto de preguntas o un área de enfoque específica. Sin estructura, la observación se convierte en mirar pasivamente.
 
-> "No llevar un visor no significa no aprender."`,
+> "No llevar un visor no significa no aprender."
+
+[IMAGE:observer-role]`,
 };

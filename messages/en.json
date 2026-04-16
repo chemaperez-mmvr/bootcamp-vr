@@ -141,7 +141,7 @@
       },
       "phase2": {
         "title": "Tracking cameras",
-        "description": "Three camera clusters on the front capture your surroundings and hands. They enable passthrough (seeing the real world), controller-free hand tracking, and Guardian boundary detection to define a safe play area."
+        "description": "Three camera clusters on the front capture your surroundings and hands. They enable passthrough (seeing the real world), controller-free hand tracking, and Boundary (formerly Guardian) detection to define a safe play area."
       },
       "phase3": {
         "title": "IPD adjustment button",
@@ -327,10 +327,10 @@
         },
         "s2": {
           "title": "Classroom Setup",
-          "subtitle": "Room layout, WiFi, and Guardian boundaries make or break a VR session",
+          "subtitle": "Room layout, WiFi, and Boundary setup make or break a VR session",
           "p1": "Clear at least 2×2 meters per student station — chairs, bags, and desks are invisible hazards once headsets go on",
           "p2": "Verify WiFi can handle all headsets simultaneously — one Quest 3 uses 15–30 Mbps when streaming; multiply by your class set",
-          "p3": "Draw Guardian boundaries at each station before class — this prevents students from walking into walls, furniture, or each other",
+          "p3": "Draw Boundary zones at each station before class — this prevents students from walking into walls, furniture, or each other",
           "highlight": "The room is your stage. If the physical space isn't ready, the virtual experience won't work — no matter how good the app is."
         },
         "s3": {
@@ -353,7 +353,7 @@
           "title": "Pre-Class Checklist",
           "subtitle": "A systematic check the night before and morning of prevents 90% of VR session problems",
           "p1": "Night before: plug in all headsets, verify WiFi credentials, and confirm the target app is installed and updated on every device",
-          "p2": "Morning of: check battery levels (>80%), test Guardian on one headset, launch the app to confirm it loads, and set up casting",
+          "p2": "Morning of: check battery levels (>80%), test the Boundary on one headset, launch the app to confirm it loads, and set up casting",
           "p3": "Have a backup plan: know which offline app to switch to if WiFi fails, and keep one extra headset charged as a spare",
           "highlight": "The best VR sessions look effortless because the teacher checked everything twice. The checklist is your safety net."
         }
@@ -467,7 +467,7 @@
           "title": "Supervision & Boundary Management",
           "subtitle": "The most important safety measure is an instructor who can see every student",
           "p1": "Maintain direct line of sight to all VR users at all times — supervision is not optional",
-          "p2": "Always configure the Guardian/boundary system on every headset before use",
+          "p2": "Always configure the Boundary system on every headset before use",
           "p3": "Limit simultaneous VR users if you're the only instructor — others observe, do companion tasks, or wait",
           "highlight": "If you cannot see them, they should not be in VR. Limit active users to the number you can safely monitor."
         },
@@ -556,12 +556,12 @@
           "highlight": "A dedicated WiFi router for VR headsets avoids most school-network conflicts entirely."
         },
         "s2": {
-          "title": "Boundary & Guardian Problems",
+          "title": "Boundary Problems",
           "subtitle": "Why the tracking system fails and how to fix it before class starts",
-          "p1": "Poor lighting is the number one cause of Guardian failures — the cameras need consistent, even illumination to map the room",
+          "p1": "Poor lighting is the number one cause of Boundary failures — the cameras need consistent, even illumination to map the room",
           "p2": "Mirrors and reflective surfaces confuse the tracking cameras by creating false visual reference points",
           "p3": "Redrawing the boundary from scratch clears corrupt mapping data and usually resolves persistent tracking issues",
-          "highlight": "Set up Guardian on every headset before students arrive — it saves five minutes of class time and prevents frustration."
+          "highlight": "Set up the Boundary on every headset before students arrive — it saves five minutes of class time and prevents frustration."
         },
         "s3": {
           "title": "Headset Won't Turn On",
@@ -605,9 +605,9 @@
           "title": "Where to Find Educational VR Apps",
           "subtitle": "Distribution channels and where most educational content actually lives",
           "p1": "The official Meta Store is curated but has limited educational content — most titles are commercial",
-          "p2": "App Lab is Meta's secondary channel with a lower publishing barrier — most educational VR content lives here",
+          "p2": "The Meta Horizon Store now includes all apps (including former App Lab titles merged in 2024) — use the 'Early Access' filter to find experimental and educational content",
           "p3": "WebXR experiences run in the headset browser with no installation — ideal for quick classroom use",
-          "highlight": "App Lab is where most educational VR content lives — always check it before concluding nothing exists for your subject."
+          "highlight": "The Meta Horizon Store is your single source for all Quest apps — always search by name and check the Early Access section before concluding nothing exists for your subject."
         },
         "s3": {
           "title": "Simulation Apps: Highest Impact",
@@ -1264,7 +1264,7 @@
           },
           "concepts": {
             "c1": {
-              "context": "You've set up Guardian boundaries on all 8 headsets, but the classroom WiFi network only shows 3 bars of signal strength. A colleague says: 'Three bars is fine — let's just start.'",
+              "context": "You've set up Boundary zones on all 8 headsets, but the classroom WiFi network only shows 3 bars of signal strength. A colleague says: 'Three bars is fine — let's just start.'",
               "question": "Why should you test WiFi load before starting?",
               "choices": {
                 "a": "Three bars of signal strength means nothing when 8 devices connect simultaneously. Each Quest 3 streaming an app uses 15–30 Mbps. Test by connecting all headsets at once and launching the app — if it lags, reduce the number of simultaneous users.",
@@ -1278,17 +1278,17 @@
               }
             },
             "c2": {
-              "context": "During your first VR session, a student walks straight into another student's zone. Their Guardian boundaries didn't prevent the collision because the zones were set up with only 30cm between them.",
+              "context": "During your first VR session, a student walks straight into another student's zone. Their Boundary zones didn't prevent the collision because the zones were set up with only 30cm between them.",
               "question": "What went wrong and how do you fix it?",
               "choices": {
-                "a": "Guardian boundaries only warn the user — they don't create walls. The student can walk through the warning. More space between zones is needed.",
-                "b": "Set Guardian boundaries for each student so that adjacent boundaries overlap — this creates a shared safe zone in the middle",
-                "c": "Guardian is just a visual warning — you should physically mark zones on the floor with tape and leave at least 1 meter between boundaries"
+                "a": "The Boundary system only warns the user — it doesn't create walls. The student can walk through the warning. More space between zones is needed.",
+                "b": "Set Boundary zones for each student so that adjacent boundaries overlap — this creates a shared safe zone in the middle",
+                "c": "The Boundary is just a visual warning — you should physically mark zones on the floor with tape and leave at least 1 meter between boundaries"
               },
               "feedback": {
-                "a": "Correct observation but incomplete solution. Guardian shows a virtual grid when you approach the edge, but it doesn't physically stop you. You need buffer space AND floor markings so students know their limits even before putting headsets on.",
-                "b": "Overlapping boundaries would make the warning appear too early for both students, making VR unusable. You want each student's Guardian to fit their station with buffer space BETWEEN zones, not overlapping them.",
-                "c": "This is the complete solution. Guardian warns the VR user, but floor tape guides the teacher and nearby students. Leave at least 1 meter between Guardian edges so even if a student ignores the warning, they won't reach another person's zone."
+                "a": "Correct observation but incomplete solution. The Boundary shows a virtual grid when you approach the edge, but it doesn't physically stop you. You need buffer space AND floor markings so students know their limits even before putting headsets on.",
+                "b": "Overlapping boundaries would make the warning appear too early for both students, making VR unusable. You want each student's Boundary to fit their station with buffer space BETWEEN zones, not overlapping them.",
+                "c": "This is the complete solution. The Boundary warns the VR user, but floor tape guides the teacher and nearby students. Leave at least 1 meter between Boundary edges so even if a student ignores the warning, they won't reach another person's zone."
               }
             }
           },
@@ -1299,7 +1299,7 @@
                 "essential": "Essential",
                 "optional": "Nice to have"
               },
-              "i1": "Setting up Guardian boundaries at every station",
+              "i1": "Setting up Boundary zones at every station",
               "i2": "Decorating the VR stations with printed labels",
               "i3": "Testing WiFi with all headsets connected simultaneously",
               "i4": "Playing background music during the VR session"
@@ -1311,8 +1311,8 @@
           "exercise": {
             "instruction": "Connect each app source with its key characteristic",
             "left": {
-              "p1": "Meta Quest Store (main store)",
-              "p2": "App Lab",
+              "p1": "Meta Horizon Store (main store)",
+              "p2": "Early Access (formerly App Lab)",
               "p3": "Pre-loaded demo apps",
               "p4": "Browser-based WebXR"
             },
@@ -1324,17 +1324,17 @@
             }
           },
           "scenario": {
-            "context": "A science colleague asks you to install a VR chemistry lab app for tomorrow's class. You search the Meta Quest Store and can't find it by name.",
+            "context": "A science colleague asks you to install a VR chemistry lab app for tomorrow's class. You search the Meta Horizon Store and can't find it by name.",
             "question": "What do you do?",
             "choices": {
               "a": "Tell your colleague the app doesn't exist for Quest 3 — if it's not in the store, it's not available",
-              "b": "Search App Lab using the exact app name or developer link — many educational apps are distributed through App Lab rather than the main store. If still not found, check the developer's website for a direct link.",
+              "b": "Search for the app in the Meta Horizon Store using the exact name, check the Early Access section, or try the developer's direct link — many educational apps were formerly on App Lab and may be listed under Early Access.",
               "c": "Download a different chemistry app that looks similar — it's probably the same thing with a different name"
             },
             "feedback": {
-              "a": "The main store is curated and doesn't list everything. Many educational and research apps are on App Lab — Meta's secondary distribution channel for experimental apps. Always check App Lab before concluding an app doesn't exist.",
-              "b": "Smart approach. App Lab is specifically designed for educational, experimental, and niche apps that haven't gone through full store review. Many top VR education apps are only available through App Lab or direct developer links. Always have the developer URL ready.",
-              "c": "Substituting untested apps is risky. A 'similar' app may have different content, controls, or quality. Your colleague chose a specific app for a reason — find the right one through App Lab or the developer, or discuss alternatives together."
+              "a": "The main store search can miss titles. Many educational and research apps are listed under Early Access in the Meta Horizon Store (formerly on App Lab, which merged into the store in 2024). Always search by exact name and check the developer's website before concluding an app doesn't exist.",
+              "b": "Smart approach. The Early Access section of the Meta Horizon Store is where many educational, experimental, and niche apps live. Many top VR education apps are available there or via direct developer links. Always have the developer URL ready.",
+              "c": "Substituting untested apps is risky. A 'similar' app may have different content, controls, or quality. Your colleague chose a specific app for a reason — find the right one through the Meta Horizon Store or the developer, or discuss alternatives together."
             }
           },
           "concepts": {
@@ -1349,7 +1349,7 @@
               "feedback": {
                 "a": "Seven simultaneous 1.8 GB downloads (12.6 GB total) can saturate school WiFi and cause all downloads to fail or crawl. Stagger downloads in batches of 2-3 to keep the network usable for both you and the rest of the school.",
                 "b": "This is the practical approach. Staggering downloads prevents WiFi saturation, and testing each install catches issues early. A failed download on one headset doesn't mean it will fail on all — but testing each one ensures you know before class starts.",
-                "c": "Quest apps can't be copied via USB like regular files — they're tied to the Meta account and require proper installation through the store or App Lab. Each headset must download its own copy."
+                "c": "Quest apps can't be copied via USB like regular files — they're tied to the Meta account and require proper installation through the Meta Horizon Store. Each headset must download its own copy."
               }
             },
             "c2": {
@@ -1374,12 +1374,12 @@
                 "explanation": "Correct! Downloads can be slow, installs can fail, and apps sometimes need first-launch setup. Discovering these issues during class wastes everyone's time."
               },
               "s2": {
-                "statement": "If an app isn't in the main Meta Quest Store, it doesn't exist for the Quest 3",
-                "explanation": "Many educational apps are only on App Lab — Meta's secondary channel for experimental and niche apps. Always check App Lab and the developer's website before concluding an app is unavailable."
+                "statement": "If an app isn't in the main Meta Horizon Store search results, it doesn't exist for the Quest 3",
+                "explanation": "The store search can miss titles. Try searching by exact name, check the Early Access section (where former App Lab titles now live), and check the developer's website before concluding an app is unavailable."
               },
               "s3": {
                 "statement": "Each headset needs its own app download — you cannot copy apps between headsets via USB",
-                "explanation": "Correct! Quest apps are account-linked and must be downloaded individually to each device through the store or App Lab."
+                "explanation": "Correct! Quest apps are account-linked and must be downloaded individually to each device through the Meta Horizon Store."
               }
             }
           }
@@ -1468,7 +1468,7 @@
             "i1": "Plug in all headsets to charge overnight",
             "i2": "Verify WiFi credentials and test connection",
             "i3": "Confirm target app is installed and updated on every headset",
-            "i4": "Check battery levels and set up Guardian boundaries",
+            "i4": "Check battery levels and set up Boundary zones",
             "i5": "Quick-test the app and casting on one headset"
           },
           "scenario": {
@@ -2159,7 +2159,7 @@
             "i2": "Charge all headsets to 100%",
             "i3": "Verify the target app is installed and updated",
             "i4": "Check battery levels are above 80%",
-            "i5": "Test Guardian boundaries at each station",
+            "i5": "Test Boundary zones at each station",
             "i6": "Inventory controllers and check for damage",
             "i7": "Confirm WiFi credentials on each device",
             "i8": "Line up numbered headsets on the storage table"
@@ -2371,12 +2371,12 @@
               "context": "It's your students' very first VR session ever. You planned 3 rotations of 10 minutes each with a complex simulation app.",
               "question": "Is this a good plan for a first session?",
               "choices": {
-                "a": "It's too aggressive — plan extra time for headset fitting, Guardian tutorial, and orientation. Use a simple app and consider only 2 rotations.",
+                "a": "It's too aggressive — plan extra time for headset fitting, Boundary tutorial, and orientation. Use a simple app and consider only 2 rotations.",
                 "b": "It's fine — students will figure it out as they go, and excitement will carry them through",
                 "c": "Add more rotations so every student gets extra VR time on their first day"
               },
               "feedback": {
-                "a": "Correct. First sessions need extra time for everything: adjusting straps, explaining controllers, setting up Guardian boundaries, and managing excitement. Use the simplest possible app (a 360° tour, not a simulation) and expect to lose time to logistics. Two 8-minute rotations is more realistic.",
+                "a": "Correct. First sessions need extra time for everything: adjusting straps, explaining controllers, setting up Boundary zones, and managing excitement. Use the simplest possible app (a 360° tour, not a simulation) and expect to lose time to logistics. Two 8-minute rotations is more realistic.",
                 "b": "Excitement creates chaos, not learning. First-timers need time to adjust the headset, learn the controllers, and feel comfortable. Jumping into a complex simulation without this foundation means students spend VR time confused instead of learning.",
                 "c": "More rotations on day one means more transitions, more headset-fitting delays, and more overwhelm. Keep it simple: shorter rotations, simple app, focus on comfort. Save the complex activities for session two."
               }
@@ -2426,17 +2426,17 @@
           },
           "concepts": {
             "c1": {
-              "context": "A student in VR is walking toward the wall. The Guardian boundary grid appears, but the student ignores it and keeps moving.",
+              "context": "A student in VR is walking toward the wall. The Boundary grid appears, but the student ignores it and keeps moving.",
               "question": "What should have been set up differently?",
               "choices": {
-                "a": "The Guardian boundaries should be set tighter so the grid appears earlier, giving the student more warning distance from walls",
-                "b": "Guardian alone is not enough — the instructor should be watching and give a verbal warning before the student reaches any wall",
+                "a": "The Boundary should be set tighter so the grid appears earlier, giving the student more warning distance from walls",
+                "b": "The Boundary alone is not enough — the instructor should be watching and give a verbal warning before the student reaches any wall",
                 "c": "The room should have foam padding on all walls to prevent injuries"
               },
               "feedback": {
-                "a": "Good thinking. Setting Guardian boundaries a comfortable distance from walls gives students more reaction time. Combined with instructor supervision, this creates a double layer of safety.",
-                "b": "Relying on instructor reaction time alone is risky. The Guardian system provides an automatic visual warning before the student reaches the edge. Setting it tighter gives more buffer. The best approach combines both: tighter Guardian + active supervision.",
-                "c": "Wall padding addresses the symptom, not the cause. The real fix is proper Guardian configuration and instructor supervision to prevent students from reaching walls at all."
+                "a": "Good thinking. Setting the Boundary a comfortable distance from walls gives students more reaction time. Combined with instructor supervision, this creates a double layer of safety.",
+                "b": "Relying on instructor reaction time alone is risky. The Boundary system provides an automatic visual warning before the student reaches the edge. Setting it tighter gives more buffer. The best approach combines both: tighter Boundary + active supervision.",
+                "c": "Wall padding addresses the symptom, not the cause. The real fix is proper Boundary configuration and instructor supervision to prevent students from reaching walls at all."
               }
             },
             "c2": {
@@ -2477,8 +2477,8 @@
               "explanation": "Myth. Never leave VR users unsupervised, regardless of experience level. Accidents happen without warning — an experienced user can still trip, feel dizzy, or bump into someone."
             },
             "s2": {
-              "statement": "You should configure the Guardian system on every headset before each session",
-              "explanation": "Fact. The Guardian boundary system is a critical safety layer. It must be set up on every headset before any student puts it on, every session."
+              "statement": "You should configure the Boundary system on every headset before each session",
+              "explanation": "Fact. The Boundary system is a critical safety layer. It must be set up on every headset before any student puts it on, every session."
             },
             "s3": {
               "statement": "An instructor can safely supervise up to 30 students in VR simultaneously",
@@ -2489,20 +2489,20 @@
               "explanation": "Fact. Screen casting lets non-VR students see what VR users are experiencing. This keeps them engaged, supports observation-based learning, and reduces idle waiting time."
             },
             "s5": {
-              "statement": "The Guardian system makes instructor supervision unnecessary",
-              "explanation": "Myth. Guardian is an automated boundary warning, not a substitute for human supervision. It cannot detect obstacles that move (like other students), respond to dizziness, or manage session logistics."
+              "statement": "The Boundary system makes instructor supervision unnecessary",
+              "explanation": "Myth. The Boundary is an automated warning, not a substitute for human supervision. It cannot detect obstacles that move (like other students), respond to dizziness, or manage session logistics."
             }
           },
           "scenario": {
             "context": "You have 20 students and 5 VR headsets. A colleague suggests all 5 students can be in VR simultaneously while you supervise from your desk at the front.",
             "question": "What is your main concern?",
             "choices": {
-              "a": "Five students at once is fine — the Guardian system will keep them safe",
+              "a": "Five students at once is fine — the Boundary system will keep them safe",
               "b": "Only if you can maintain direct line of sight to all 5 stations from where you're positioned — rearrange if needed",
               "c": "You should only have 1 student in VR at a time to be completely safe"
             },
             "feedback": {
-              "a": "The Guardian system is helpful but doesn't replace supervision. It can't detect moving obstacles, respond to students feeling unwell, or manage session logistics. You still need line of sight.",
+              "a": "The Boundary system is helpful but doesn't replace supervision. It can't detect moving obstacles, respond to students feeling unwell, or manage session logistics. You still need line of sight.",
               "b": "Correct. The key question is whether you can see all active VR users from your position. If your desk doesn't give you line of sight to every station, move to a central position or reduce the number of simultaneous users.",
               "c": "One at a time is extremely safe but impractical — with 20 students and 50 minutes, each would get only 2.5 minutes of VR. Supervising 3–5 users simultaneously is realistic if you have clear sightlines."
             }
@@ -2519,21 +2519,21 @@
               "feedback": {
                 "a": "Correct. The rule is absolute: never leave VR users unsupervised. If the colleague needs you, they can step into the room or wait until the session is over.",
                 "b": "Even 'just a minute' is too long. In that time, a student could walk into a wall, feel dizzy and fall, or collide with another student. If you must leave, headsets come off first.",
-                "c": "An untrained student is not a substitute for instructor supervision. They don't know how to handle Guardian alerts, dizziness, or collisions. Stay in the room."
+                "c": "An untrained student is not a substitute for instructor supervision. They don't know how to handle Boundary alerts, dizziness, or collisions. Stay in the room."
               }
             },
             "c2": {
-              "context": "You notice a student has turned off the Guardian boundary because they find the grid overlay distracting during their VR experience.",
+              "context": "You notice a student has turned off the Boundary because they find the grid overlay distracting during their VR experience.",
               "question": "What do you do?",
               "choices": {
                 "a": "Let them continue — if the grid is distracting, it could interfere with the learning experience",
-                "b": "Increase the room lighting so you can supervise better without the Guardian",
-                "c": "Turn the Guardian back on immediately — it's a non-negotiable safety feature, even if it's briefly visible during the experience"
+                "b": "Increase the room lighting so you can supervise better without the Boundary",
+                "c": "Turn the Boundary back on immediately — it's a non-negotiable safety feature, even if it's briefly visible during the experience"
               },
               "feedback": {
-                "a": "The Guardian is not optional. Without it, the student has no warning before walking into walls, furniture, or other people. A brief visual grid is a minor inconvenience compared to a collision.",
-                "b": "Room lighting helps you see the students, but it doesn't help the student inside VR see the real world. Only the Guardian boundary system provides that warning.",
-                "c": "Correct. The Guardian system is non-negotiable. It's the student's only automated warning that they're approaching a physical boundary. Explain why it matters and adjust the sensitivity if the grid appears too often."
+                "a": "The Boundary is not optional. Without it, the student has no warning before walking into walls, furniture, or other people. A brief visual grid is a minor inconvenience compared to a collision.",
+                "b": "Room lighting helps you see the students, but it doesn't help the student inside VR see the real world. Only the Boundary system provides that warning.",
+                "c": "Correct. The Boundary system is non-negotiable. It's the student's only automated warning that they're approaching a physical boundary. Explain why it matters and adjust the sensitivity if the grid appears too often."
               }
             }
           },
@@ -2804,7 +2804,7 @@
             "choices": {
               "a": "Hand out the headsets and let students explore freely — they'll figure it out",
               "b": "Give a structured 60-second briefing: state the objective, explain the rules and task, set the time limit, then hand out headsets",
-              "c": "Spend 10 minutes explaining every button on the controller, all the menus, and how the Guardian system works technically"
+              "c": "Spend 10 minutes explaining every button on the controller, all the menus, and how the Boundary system works technically"
             },
             "feedback": {
               "a": "Without a briefing, students don't know what to focus on. They'll spend VR time figuring out controls instead of learning. First-time users especially need clear expectations before entering VR.",
@@ -3241,57 +3241,57 @@
           }
         },
         "b2": {
-          "title": "Boundary & Guardian Problems",
+          "title": "Boundary Problems",
           "exercise": {
-            "instruction": "Put the Guardian troubleshooting steps in the correct order, from easiest to most drastic",
+            "instruction": "Put the Boundary troubleshooting steps in the correct order, from easiest to most drastic",
             "scaleStart": "Try first",
             "scaleEnd": "Last resort",
             "i1": "Check room lighting — ensure even, consistent illumination with no dark corners",
             "i2": "Cover or face away from mirrors and reflective surfaces",
-            "i3": "Redraw the Guardian boundary from scratch in Settings",
+            "i3": "Redraw the Boundary from scratch in Settings",
             "i4": "Clean the headset's external cameras with a dry microfibre cloth",
             "i5": "Switch to Stationary Boundary mode as a fallback"
           },
           "scenario": {
-            "context": "Students put on headsets but 4 of them are stuck on the Guardian setup screen. They cannot proceed. The classroom has fluorescent lights and one wall is a full-length mirror.",
+            "context": "Students put on headsets but 4 of them are stuck on the Boundary setup screen. They cannot proceed. The classroom has fluorescent lights and one wall is a full-length mirror.",
             "question": "What is the most likely cause and fix?",
             "choices": {
-              "a": "The headsets need a software update to fix a Guardian bug",
+              "a": "The headsets need a software update to fix a Boundary bug",
               "b": "The fluorescent lighting may be causing flicker and the mirror is confusing the tracking cameras — turn on additional steady lights and have students face away from the mirror or cover it",
-              "c": "Tell students to skip Guardian by choosing Stationary Boundary mode"
+              "c": "Tell students to skip the Boundary by choosing Stationary mode"
             },
             "feedback": {
-              "a": "Guardian issues are almost always caused by the physical environment, not software bugs. Firmware updates rarely fix tracking problems. Check the room conditions first.",
-              "b": "Exactly. Fluorescent flicker and mirror reflections are the two most common Guardian killers. Adding steady lighting and eliminating reflective surfaces resolves the root cause for this session and all future ones.",
-              "c": "Stationary mode avoids Guardian but also removes the safety boundary. It fixes the symptom without addressing the cause — the same problem will recur every session until you fix the environment."
+              "a": "Boundary issues are almost always caused by the physical environment, not software bugs. Firmware updates rarely fix tracking problems. Check the room conditions first.",
+              "b": "Exactly. Fluorescent flicker and mirror reflections are the two most common Boundary killers. Adding steady lighting and eliminating reflective surfaces resolves the root cause for this session and all future ones.",
+              "c": "Stationary mode avoids the full Boundary but also removes the safety zone. It fixes the symptom without addressing the cause — the same problem will recur every session until you fix the environment."
             }
           },
           "concepts": {
             "c1": {
-              "context": "A student's Guardian boundary keeps resetting every 30 seconds, even though the room is well-lit with no mirrors. You have already redrawn the boundary twice.",
+              "context": "A student's Boundary keeps resetting every 30 seconds, even though the room is well-lit with no mirrors. You have already redrawn the boundary twice.",
               "question": "What should you try?",
               "choices": {
                 "a": "Clean the headset's external cameras with a dry microfibre cloth — smudges or fingerprints degrade tracking quality",
-                "b": "Restart the WiFi router — Guardian might depend on network connectivity",
+                "b": "Restart the WiFi router — the Boundary might depend on network connectivity",
                 "c": "Tell the student to just stay seated and avoid moving"
               },
               "feedback": {
                 "a": "Correct. Dirty cameras are an often-overlooked cause of persistent tracking failures. Students handle headsets constantly, leaving fingerprints on the external cameras. A quick wipe with a dry microfibre cloth can restore tracking.",
-                "b": "Guardian uses the headset's cameras for spatial tracking — it does not use WiFi. Restarting the router will not affect boundary behaviour.",
+                "b": "The Boundary system uses the headset's cameras for spatial tracking — it does not use WiFi. Restarting the router will not affect boundary behaviour.",
                 "c": "Sitting still avoids the problem but prevents the student from using room-scale VR. Fix the root cause — clean the cameras — so the student can move freely."
               }
             },
             "c2": {
-              "context": "You are setting up a VR session in a new room. The floor is a uniform dark grey carpet and the ceiling has dim recessed lighting. Guardian refuses to initialise on any headset.",
+              "context": "You are setting up a VR session in a new room. The floor is a uniform dark grey carpet and the ceiling has dim recessed lighting. The Boundary refuses to initialise on any headset.",
               "question": "What are two things that would help?",
               "choices": {
                 "a": "Place contrasting objects on the floor and add brighter portable lights — the cameras need visual features and illumination to map the space",
-                "b": "Use a different VR app that does not require Guardian",
-                "c": "Switch all headsets to developer mode to bypass Guardian"
+                "b": "Use a different VR app that does not require the Boundary",
+                "c": "Switch all headsets to developer mode to bypass the Boundary"
               },
               "feedback": {
                 "a": "Correct. The cameras need two things: enough light to see, and enough visual contrast to identify features. A uniform dark surface with dim lighting gives the cameras nothing to track. Adding objects (even tape lines on the floor) and portable lights solves both problems.",
-                "b": "Most VR apps require some form of spatial tracking. Avoiding Guardian does not eliminate the need for the cameras to see the environment.",
+                "b": "Most VR apps require some form of spatial tracking. Avoiding the Boundary does not eliminate the need for the cameras to see the environment.",
                 "c": "Developer mode is not a standard classroom solution and may introduce other issues. The correct fix is to improve the physical environment for the cameras."
               }
             }
@@ -3299,15 +3299,15 @@
           "micro": {
             "tf": {
               "s1": {
-                "statement": "Dim lighting is the most common cause of Guardian boundary failures",
-                "explanation": "True. The headset cameras rely on visible light to detect the environment. Dim, uneven, or flickering lighting prevents accurate spatial mapping and is the single most frequent cause of Guardian problems."
+                "statement": "Dim lighting is the most common cause of Boundary failures",
+                "explanation": "True. The headset cameras rely on visible light to detect the environment. Dim, uneven, or flickering lighting prevents accurate spatial mapping and is the single most frequent cause of Boundary problems."
               },
               "s2": {
-                "statement": "Mirrors and reflective surfaces help the Guardian cameras by providing more visual reference points",
+                "statement": "Mirrors and reflective surfaces help the Boundary cameras by providing more visual reference points",
                 "explanation": "False. Mirrors create false reflections that confuse the cameras. The tracking system interprets reflections as real physical space, causing boundaries to shift, reset, or fail entirely. Always cover mirrors or face students away from them."
               },
               "s3": {
-                "statement": "Clearing Guardian History in Settings and redrawing the boundary is a standard fix for persistent tracking issues",
+                "statement": "Clearing Boundary History in Settings and redrawing the boundary is a standard fix for persistent tracking issues",
                 "explanation": "True. Old boundary data can become corrupted, especially if the room layout has changed. Clearing the saved mapping and redrawing from scratch gives the cameras a fresh reference and resolves many persistent issues."
               }
             }
@@ -3407,7 +3407,7 @@
             "i1": "Headset and TV are connected to different WiFi networks",
             "i2": "Casting to a non-Chromecast smart TV that lacks built-in Cast support",
             "i3": "AP isolation is enabled on the school router, blocking device-to-device traffic",
-            "i4": "Using Firefox instead of Chrome for browser-based casting at oculus.com/casting",
+            "i4": "Using Firefox instead of Chrome for browser-based casting at horizon.meta.com/casting",
             "i5": "Cast target device does not appear in the headset's Cast menu",
             "i6": "Headset is on the 2.4 GHz band while the TV is on the 5 GHz band",
             "i7": "Cast was started from the TV side instead of from the headset's Quick Settings",
@@ -3653,7 +3653,7 @@
           "exercise": {
             "instruction": "Match each distribution channel with its key characteristic.",
             "p1": { "left": "Official Meta Store", "right": "Curated and reviewed; mostly commercial titles with limited educational content" },
-            "p2": { "left": "App Lab", "right": "Lower publishing barrier; where most educational VR content is published" },
+            "p2": { "left": "Early Access (formerly App Lab)", "right": "Lower publishing barrier; where many educational VR apps are published in the Meta Horizon Store" },
             "p3": { "left": "Private / institutional apps", "right": "Custom-built and distributed internally by universities, hospitals, or training organisations" },
             "p4": { "left": "WebXR experiences", "right": "Browser-based VR accessed via URL; no installation required" },
             "p5": { "left": "SideQuest", "right": "Third-party platform for sideloaded content; requires developer mode enabled" }
@@ -3663,18 +3663,18 @@
             "question": "What is wrong with this conclusion?",
             "choices": {
               "a": "Nothing — if the Meta Store does not have it, the app probably does not exist",
-              "b": "The teacher only checked one channel — most educational VR content lives on App Lab, not the main store. They should also check institutional apps and WebXR options.",
+              "b": "The teacher only checked one search — many educational VR apps are listed under Early Access in the Meta Horizon Store (formerly App Lab). They should also check institutional apps and WebXR options.",
               "c": "The teacher should build their own custom VR app to solve the problem"
             },
             "feedback": {
               "a": "The Meta Store is just one distribution channel, and it has limited educational content due to its curation requirements. Most educational VR apps are published elsewhere.",
-              "b": "Correct. App Lab is the primary home for educational VR content. Institutional channels and WebXR experiences are additional sources the teacher has not explored.",
+              "b": "Correct. The Early Access section of the Meta Horizon Store (formerly App Lab) is where many educational VR apps live. Institutional channels and WebXR experiences are additional sources the teacher has not explored.",
               "c": "Building custom apps is expensive and time-consuming. Before going that route, the teacher should exhaust all existing distribution channels."
             }
           },
           "concepts": {
             "c1": {
-              "context": "A school wants to use a VR anatomy app developed by a medical university. The app is not on the Meta Store or App Lab — it is distributed directly by the university via an APK file.",
+              "context": "A school wants to use a VR anatomy app developed by a medical university. The app is not on the Meta Horizon Store — it is distributed directly by the university via an APK file.",
               "question": "What type of distribution channel is this?",
               "choices": {
                 "a": "This is a private/institutional app — distributed internally by the developing organisation, typically via direct installation",
@@ -3691,12 +3691,12 @@
               "context": "A chemistry teacher finds a VR periodic table experience that runs entirely in the Meta Quest browser via a URL. No app installation is needed.",
               "question": "What distribution channel does this represent?",
               "choices": {
-                "a": "App Lab — since it is accessible without the main store",
+                "a": "Early Access — since it is accessible without the main store review",
                 "b": "WebXR — browser-based VR experiences that require no installation, accessed via URL inside the headset browser",
                 "c": "This is not a real distribution channel — browser-based VR does not exist"
               },
               "feedback": {
-                "a": "App Lab still requires app installation. This experience runs directly in the browser with no installation.",
+                "a": "Early Access apps still require installation. This experience runs directly in the browser with no installation.",
                 "b": "Correct. WebXR experiences are browser-based VR that run via URL, making them the easiest to deploy in classrooms — no installation, no updates, no storage concerns.",
                 "c": "WebXR is a well-established technology. Browser-based VR experiences are increasingly common for educational use."
               }
@@ -3710,7 +3710,7 @@
                 "institutional": "Requires institutional access",
                 "devSetup": "Requires developer setup"
               },
-              "i1": "App Lab apps shared via link",
+              "i1": "Early Access apps shared via link",
               "i2": "University-developed APK distributed internally",
               "i3": "WebXR experience via public URL",
               "i4": "SideQuest apps requiring developer mode",
@@ -4132,9 +4132,9 @@
           "question": "A parent emails you concerned about VR safety for their child. What's the best response?",
           "a": "Reply that VR is perfectly safe and there's nothing to worry about",
           "b": "Forward the email to the principal to handle",
-          "c": "Share specific safety measures you use (session limits, Guardian, supervision) and offer to discuss further",
+          "c": "Share specific safety measures you use (session limits, Boundary, supervision) and offer to discuss further",
           "d": "Exempt the child from all VR activities immediately",
-          "explanation": "Transparency builds trust. Sharing your specific safety protocols — session time limits, Guardian boundaries, active supervision — shows professionalism and invites dialogue rather than shutting down concerns."
+          "explanation": "Transparency builds trust. Sharing your specific safety protocols — session time limits, Boundary zones, active supervision — shows professionalism and invites dialogue rather than shutting down concerns."
         },
         "q4": {
           "question": "It's 30 minutes before class. Only 3 of your 5 headsets charged overnight. What do you do?",
@@ -4281,7 +4281,7 @@
       },
       "briefingAndDebriefing": {
         "q1": {
-          "question": "Before a VR session, a teacher spends 5 minutes explaining every controller button, all the menu options, the Guardian system, and every interactive object in the environment. Students look overwhelmed. What's the core problem?",
+          "question": "Before a VR session, a teacher spends 5 minutes explaining every controller button, all the menu options, the Boundary system, and every interactive object in the environment. Students look overwhelmed. What's the core problem?",
           "a": "5 minutes is fine — thoroughness prevents confusion during VR",
           "b": "The briefing should focus only on the O-R-T-T framework (Objective, Rules, Time, Task) and take under 60 seconds. Hardware orientation is separate and should take no more than 30 seconds.",
           "c": "The teacher should have sent a written guide before class instead",
@@ -4331,12 +4331,12 @@
           "explanation": "The 2-minute rule applies. A quick WiFi toggle fixes most drops; if not, rotate students to working headsets. Never stop the whole class for a problem affecting only some headsets — the students with working devices should keep learning."
         },
         "q2": {
-          "question": "A classroom has a full-length mirror on one wall and dim overhead lighting. Students report their Guardian boundaries keep resetting during VR. What is the primary fix?",
-          "a": "Switch all headsets to developer mode to bypass Guardian entirely",
-          "b": "Update the headset firmware — this is a known Guardian bug in older versions",
+          "question": "A classroom has a full-length mirror on one wall and dim overhead lighting. Students report their Boundary keeps resetting during VR. What is the primary fix?",
+          "a": "Switch all headsets to developer mode to bypass the Boundary entirely",
+          "b": "Update the headset firmware — this is a known Boundary bug in older versions",
           "c": "Improve room lighting and cover or have students face away from the mirror — the tracking cameras need consistent illumination and non-reflective surfaces",
           "d": "Have students draw very small boundaries so the cameras have less space to track",
-          "explanation": "Dim lighting and reflective surfaces are the top two causes of Guardian failures. The headset cameras need even illumination to detect the environment, and mirrors create false reflections that confuse the spatial mapping. Fixing the physical environment solves the root cause."
+          "explanation": "Dim lighting and reflective surfaces are the top two causes of Boundary failures. The headset cameras need even illumination to detect the environment, and mirrors create false reflections that confuse the spatial mapping. Fixing the physical environment solves the root cause."
         },
         "q3": {
           "question": "A headset won't turn on. No LED appears when plugged into its charger. You've held the power button for 3 seconds with no response. What should you try next?",
@@ -4441,14 +4441,14 @@
           "scenario": "It's 5 minutes before class. You have 5 Quest 3 headsets for 25 students. The classroom has desks arranged in a U-shape with limited space.",
           "options": {
             "a": "Place all 5 headsets in the center of the room and let students take turns freely",
-            "b": "Power on, set account/Wi-Fi, define Guardian boundaries in separate zones, and organize rotation groups",
+            "b": "Power on, set account/Wi-Fi, define Boundary zones in separate areas, and organize rotation groups",
             "c": "Push all desks to the walls and have all 5 students use VR simultaneously in the open center",
             "d": "Set up VR stations at individual desks and have students use seated-only VR experiences"
           },
           "consequences": {
-            "a": "Without separate Guardian zones, multiple students in the same area risk bumping into each other and furniture. Free turns without structure lead to chaos and wasted time.",
-            "b": "Excellent! Safety first with Guardian boundaries in defined zones, plus organized rotations ensure every student gets hands-on time within the class period.",
-            "c": "Moving desks creates space, but 5 students in VR at once in the same open area risks collisions — they can't see each other! Without defined Guardian zones and a rotation plan, this is a safety hazard.",
+            "a": "Without separate Boundary zones, multiple students in the same area risk bumping into each other and furniture. Free turns without structure lead to chaos and wasted time.",
+            "b": "Excellent! Safety first with Boundary zones in defined areas, plus organized rotations ensure every student gets hands-on time within the class period.",
+            "c": "Moving desks creates space, but 5 students in VR at once in the same open area risks collisions — they can't see each other! Without defined Boundary zones and a rotation plan, this is a safety hazard.",
             "d": "Seated VR at desks is safe and manageable, but it limits students to only certain apps and misses the immersive room-scale experiences. Good as a fallback, but not the optimal classroom setup."
           }
         },
@@ -4482,7 +4482,7 @@
           "items": {
             "1": "All headsets charged to at least 80%",
             "2": "Wi-Fi connected and working on every headset",
-            "3": "Guardian boundaries configured in each VR zone",
+            "3": "Boundary configured in each VR zone",
             "4": "Target apps installed, updated, and tested",
             "5": "Head straps adjusted to fit various sizes",
             "6": "Casting tested on projector or external screen",
@@ -5458,14 +5458,14 @@
           "mobileConnection": "Mobile connection",
           "organizationStorage": "Organization and storage",
           "specifications": "Specifications",
-          "appLab": "What is App Lab",
           "storeInstall": "Installing from the Store",
           "appsInHeadset": "Apps inside the headset",
           "casting": "Casting and external display",
           "connectivityData": "Connectivity and data",
           "cleaning": "Cleaning and maintenance",
           "accessories": "Accessories",
-          "preClassChecklist": "Pre-class technical checklist"
+          "preClassChecklist": "Pre-class technical checklist",
+          "metaForEducation": "Meta for Education"
         }
       },
       "2": {

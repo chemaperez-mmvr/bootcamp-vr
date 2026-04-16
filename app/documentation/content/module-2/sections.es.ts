@@ -77,12 +77,9 @@ export const sectionsEs: Record<string, string> = {
 - Contexto: entorno hospitalario simulado
 - Criterio: 5 pasos sin errores`,
 
-  "seeing-vs-doing": `**La pirámide de aprendizaje**
+  "seeing-vs-doing": `**Aprendizaje activo vs. pasivo**
 
-- **Leer o escuchar** — retención ~10-20%
-- **Ver una demostración** — retención ~30%
-- **Practicar haciendo** — retención ~75%
-- **Enseñar o aplicar en contexto real** — retención ~90%
+La investigación educativa muestra consistentemente que la práctica activa produce una retención significativamente mayor que la lectura o la escucha pasiva. Cuanto más activamente participa el alumno — manipulando, decidiendo, resolviendo —, mayor es la retención y la transferencia al mundo real.
 
 ---
 

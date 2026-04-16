@@ -11,7 +11,7 @@ export const sectionsEs: Record<string, string> = {
 
 **Verificación Rápida**
 
-- ¿Está el WiFi activado en Configuración Rápida?
+- ¿Está el WiFi activado en Controles de acceso rápido?
 - ¿Está seleccionada la red correcta?
 - ¿La señal tiene al menos dos barras?
 
@@ -28,7 +28,9 @@ export const sectionsEs: Record<string, string> = {
 - Intenta conectarte a un punto de acceso del teléfono para confirmar que el hardware WiFi del visor funciona
 - Pregunta a sistemas si la red de la escuela bloquea el tráfico de visores VR o requiere un portal de autenticación
 
-> "Un router dedicado para los visores evita la mayoría de conflictos con la red escolar."`,
+> "Un router dedicado para los visores evita la mayoría de conflictos con la red escolar."
+
+[IMAGE:wifi-diagnostic]`,
 
   "pins-access-codes": `Los errores de PIN y código de acceso impiden que los estudiantes entren al visor. Resolverlos rápidamente mantiene la clase en horario.
 
@@ -56,11 +58,11 @@ export const sectionsEs: Record<string, string> = {
 
 > "Mantén una tarjeta impresa en cada estuche del visor con el PIN actual — actualízala cada vez que cambie."`,
 
-  "boundary-guardian-problems": `El sistema de límites Guardian usa las cámaras del visor para mapear el espacio físico. Cuando falla, los estudiantes no pueden pasar de la pantalla de configuración.
+  "boundary-guardian-problems": `El sistema Boundary / Límite (antes Guardian) usa las cámaras del visor para mapear el espacio físico. Cuando falla, los estudiantes no pueden pasar de la pantalla de configuración.
 
 **Problema**
 
-- El límite Guardian no se configura, se reinicia constantemente o muestra una advertencia de "seguimiento perdido"
+- El Límite (Boundary) no se configura, se reinicia constantemente o muestra una advertencia de "seguimiento perdido"
 
 **Verificación Rápida**
 
@@ -74,7 +76,9 @@ export const sectionsEs: Record<string, string> = {
 
 - Enciende luces adicionales — las cámaras necesitan iluminación consistente y uniforme
 - Cubre o evita espejos y superficies muy reflectantes que confunden las cámaras de seguimiento
-- Redibuja el límite desde cero: ve a Configuración → Guardian → Borrar Historial de Guardian
+
+[IMAGE:guardian-mirror]
+- Redibuja el límite desde cero: ve a Configuración → Configuración del entorno → Límite → Borrar historial de límites
 - Asegúrate de que el suelo sea visible y no tenga un solo color uniforme
 
 **Si Sigue Sin Funcionar**
@@ -82,7 +86,7 @@ export const sectionsEs: Record<string, string> = {
 - Cambia al modo de Límite Estacionario, que requiere menos mapeo del espacio
 - Limpia las cámaras externas del visor con un paño de microfibra seco
 
-> "Configura Guardian antes de que lleguen los estudiantes — ahorra cinco minutos de clase."`,
+> "Configura Boundary antes de que lleguen los estudiantes — ahorra cinco minutos de clase."`,
 
   "headset-not-turning-on": `Un visor que no enciende es alarmante pero generalmente tiene una solución simple relacionada con la batería o un sistema congelado.
 
@@ -94,6 +98,8 @@ export const sectionsEs: Record<string, string> = {
 
 - ¿Se enciende el LED de carga al conectar el cable? (Naranja = cargando, verde = completo)
 - ¿Has mantenido presionado el botón de encendido durante tres segundos completos?
+
+[IMAGE:charging-led]
 
 ---
 
@@ -209,9 +215,9 @@ export const sectionsEs: Record<string, string> = {
 
 **Pasos de Solución**
 
-- Inicia el casting desde el visor: ve a Configuración Rápida → Transmitir → selecciona el dispositivo
+- Inicia el casting desde el visor: ve a Controles de acceso rápido → Transmitir → selecciona el dispositivo
 - Reinicia tanto el visor como el dispositivo receptor
-- Si usas casting por navegador, abre **oculus.com/casting** en Chrome en la misma red
+- Si usas casting por navegador, abre **horizon.meta.com/casting** en Chrome en la misma red
 - Intenta transmitir a través de la app de Meta en un teléfono como ruta alternativa
 
 **Si Sigue Sin Funcionar**
@@ -219,7 +225,9 @@ export const sectionsEs: Record<string, string> = {
 - Revisa la configuración del router — algunas redes aíslan los dispositivos entre sí (aislamiento AP), lo que bloquea el casting
 - Usa una app de duplicación de pantalla en un portátil conectado por USB como respaldo con cable
 
-> "Prueba el casting en la pantalla de tu aula antes de que lleguen los estudiantes. Toma treinta segundos."`,
+> "Prueba el casting en la pantalla de tu aula antes de que lleguen los estudiantes. Toma treinta segundos."
+
+[IMAGE:casting-setup]`,
 
   "factory-reset": `Un restablecimiento de fábrica borra todo del visor y lo devuelve a su estado original. Es el **último recurso** cuando nada más funciona.
 
@@ -247,7 +255,7 @@ export const sectionsEs: Record<string, string> = {
 
 **Después del Restablecimiento**
 
-- Necesitarás volver a emparejar el visor con un teléfono, iniciar sesión, configurar Guardian y reinstalar todas las apps
+- Necesitarás volver a emparejar el visor con un teléfono, iniciar sesión, configurar Boundary y reinstalar todas las apps
 - Vuelve a descargar las apps y reconfigura los ajustes institucionales
 
 > "El restablecimiento de fábrica arregla casi todo — pero también borra todo. Úsalo solo cuando sea necesario."`,
@@ -332,5 +340,7 @@ export const sectionsEs: Record<string, string> = {
 - Documenta los problemas recurrentes para resolverlos antes de la próxima sesión
 - Cada problema técnico que resuelves hace que la siguiente clase de VR sea más fluida
 
-> "Los mejores profesores de VR no son expertos en tecnología — están preparados para cuando la tecnología falla."`,
+> "Los mejores profesores de VR no son expertos en tecnología — están preparados para cuando la tecnología falla."
+
+[IMAGE:troubleshoot-mindset]`,
 };

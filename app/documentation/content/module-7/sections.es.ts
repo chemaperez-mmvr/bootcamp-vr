@@ -26,14 +26,13 @@ export const sectionsEs: Record<string, string> = {
 
 **Canales de distribución**
 
-- **Meta Store oficial** — apps curadas y revisadas; mayormente títulos comerciales con algunas entradas educativas
-- **App Lab** — canal secundario de Meta al que se accede por enlace de invitación o URL directo; la fuente más común de contenido educativo de VR por su barrera de publicación más baja
+- **Meta Horizon Store** — la tienda unificada de Meta para apps de Quest. Todos los títulos se encuentran en un solo lugar. Los desarrolladores pueden publicar nuevos títulos a través de un programa de "Early Access" para apps aún en desarrollo
 - **Apps privadas / institucionales** — apps desarrolladas a medida y distribuidas internamente por universidades, hospitales u organizaciones de formación
 - **Experiencias WebXR** — VR basado en navegador accesible mediante URL dentro del navegador del headset; no requiere instalación
 
 ---
 
-> "App Lab es donde vive la mayoría del contenido educativo de VR — revísalo siempre antes de concluir que no existe nada para tu materia."`,
+> "Todo el contenido educativo de VR está ahora en la Meta Horizon Store — usa sus filtros de búsqueda y categorías antes de concluir que no existe nada para tu materia."`,
 
   "exploration-apps": `Las apps de exploración permiten al estudiante observar, navegar y descubrir entornos sin realizar tareas estructuradas. Piensa en excursiones virtuales, recorridos por museos y exploradores de anatomía.
 
@@ -68,7 +67,9 @@ Sin una tarea clara, la exploración se convierte en turismo pasivo. Los estudia
 
 > "Las apps de simulación permiten al estudiante fallar de forma segura — y precisamente por eso aprenden."
 
-> Consulta el **Módulo 2** para la fundamentación pedagógica completa del aprendizaje VR basado en simulación.`,
+> Consulta el **Módulo 2** para la fundamentación pedagógica completa del aprendizaje VR basado en simulación.
+
+[IMAGE:simulation-training]`,
 
   "guided-training-apps": `Las apps de entrenamiento guiado llevan al estudiante por una secuencia paso a paso, proporcionando retroalimentación inmediata en cada etapa. El camino es cerrado — los estudiantes siguen el orden establecido.
 
@@ -198,11 +199,15 @@ No todas las lecciones necesitan las cuatro etapas, pero conocer la secuencia pr
 - ¿El casting funciona de manera confiable para observación?
 - ¿Cuál es tu Plan B si la tecnología falla?
 
-> "Prueba cada app tú mismo, en las mismas condiciones que enfrentarán tus estudiantes, antes de usarla en clase."`,
+> "Prueba cada app tú mismo, en las mismas condiciones que enfrentarán tus estudiantes, antes de usarla en clase."
+
+[IMAGE:app-evaluation]`,
 
   "integrating-apps-in-class": `Integrar una app VR en una clase sigue la misma estructura antes-durante-después de cualquier actividad VR. La clave adicional: prueba la app tú mismo antes de la clase y prepara preguntas de debriefing adaptadas a lo que enseña la app.
 
-> Consulta el **Módulo 2** para diseño de actividades y el **Módulo 5** para marcos de briefing y debriefing.`,
+> Consulta el **Módulo 2** para diseño de actividades y el **Módulo 5** para marcos de briefing y debriefing.
+
+[IMAGE:before-during-after]`,
 
   "tutorial-template": `Usa esta plantilla estándar cada vez que crees un tutorial para una app de VR. Asegura consistencia y evita que olvides información crítica.
 
