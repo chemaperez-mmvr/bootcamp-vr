@@ -452,6 +452,154 @@ const moduleQuizzes: Record<string, ModuleQuiz> = {
       },
     ],
   },
+  /* ================================================================== */
+  /*  MODULE 6 — Solving Common VR Problems                             */
+  /* ================================================================== */
+  "solving-common-vr-problems": {
+    moduleSlug: "solving-common-vr-problems",
+    passingScore: 0.7,
+    questions: [
+      {
+        id: "q1",
+        type: "judgment",
+        questionKey: "quiz.solvingCommonVrProblems.q1.question",
+        options: [
+          { id: "a", labelKey: "quiz.solvingCommonVrProblems.q1.a" },
+          { id: "b", labelKey: "quiz.solvingCommonVrProblems.q1.b" },
+          { id: "c", labelKey: "quiz.solvingCommonVrProblems.q1.c" },
+          { id: "d", labelKey: "quiz.solvingCommonVrProblems.q1.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.solvingCommonVrProblems.q1.explanation",
+      },
+      {
+        id: "q2",
+        type: "judgment",
+        questionKey: "quiz.solvingCommonVrProblems.q2.question",
+        options: [
+          { id: "a", labelKey: "quiz.solvingCommonVrProblems.q2.a" },
+          { id: "b", labelKey: "quiz.solvingCommonVrProblems.q2.b" },
+          { id: "c", labelKey: "quiz.solvingCommonVrProblems.q2.c" },
+          { id: "d", labelKey: "quiz.solvingCommonVrProblems.q2.d" },
+        ],
+        correctOptionId: "c",
+        explanationKey: "quiz.solvingCommonVrProblems.q2.explanation",
+      },
+      {
+        id: "q3",
+        type: "judgment",
+        questionKey: "quiz.solvingCommonVrProblems.q3.question",
+        options: [
+          { id: "a", labelKey: "quiz.solvingCommonVrProblems.q3.a" },
+          { id: "b", labelKey: "quiz.solvingCommonVrProblems.q3.b" },
+          { id: "c", labelKey: "quiz.solvingCommonVrProblems.q3.c" },
+          { id: "d", labelKey: "quiz.solvingCommonVrProblems.q3.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.solvingCommonVrProblems.q3.explanation",
+      },
+      {
+        id: "q4",
+        type: "judgment",
+        questionKey: "quiz.solvingCommonVrProblems.q4.question",
+        options: [
+          { id: "a", labelKey: "quiz.solvingCommonVrProblems.q4.a" },
+          { id: "b", labelKey: "quiz.solvingCommonVrProblems.q4.b" },
+          { id: "c", labelKey: "quiz.solvingCommonVrProblems.q4.c" },
+          { id: "d", labelKey: "quiz.solvingCommonVrProblems.q4.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.solvingCommonVrProblems.q4.explanation",
+      },
+      {
+        id: "q5",
+        type: "judgment",
+        questionKey: "quiz.solvingCommonVrProblems.q5.question",
+        options: [
+          { id: "a", labelKey: "quiz.solvingCommonVrProblems.q5.a" },
+          { id: "b", labelKey: "quiz.solvingCommonVrProblems.q5.b" },
+          { id: "c", labelKey: "quiz.solvingCommonVrProblems.q5.c" },
+          { id: "d", labelKey: "quiz.solvingCommonVrProblems.q5.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.solvingCommonVrProblems.q5.explanation",
+      },
+    ],
+  },
+  /* ================================================================== */
+  /*  MODULE 7 — VR Educational Apps                                    */
+  /* ================================================================== */
+  "vr-educational-apps": {
+    moduleSlug: "vr-educational-apps",
+    passingScore: 0.7,
+    questions: [
+      {
+        id: "q1",
+        type: "judgment",
+        questionKey: "quiz.vrEducationalApps.q1.question",
+        options: [
+          { id: "a", labelKey: "quiz.vrEducationalApps.q1.a" },
+          { id: "b", labelKey: "quiz.vrEducationalApps.q1.b" },
+          { id: "c", labelKey: "quiz.vrEducationalApps.q1.c" },
+          { id: "d", labelKey: "quiz.vrEducationalApps.q1.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.vrEducationalApps.q1.explanation",
+      },
+      {
+        id: "q2",
+        type: "judgment",
+        questionKey: "quiz.vrEducationalApps.q2.question",
+        options: [
+          { id: "a", labelKey: "quiz.vrEducationalApps.q2.a" },
+          { id: "b", labelKey: "quiz.vrEducationalApps.q2.b" },
+          { id: "c", labelKey: "quiz.vrEducationalApps.q2.c" },
+          { id: "d", labelKey: "quiz.vrEducationalApps.q2.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.vrEducationalApps.q2.explanation",
+      },
+      {
+        id: "q3",
+        type: "judgment",
+        questionKey: "quiz.vrEducationalApps.q3.question",
+        options: [
+          { id: "a", labelKey: "quiz.vrEducationalApps.q3.a" },
+          { id: "b", labelKey: "quiz.vrEducationalApps.q3.b" },
+          { id: "c", labelKey: "quiz.vrEducationalApps.q3.c" },
+          { id: "d", labelKey: "quiz.vrEducationalApps.q3.d" },
+        ],
+        correctOptionId: "c",
+        explanationKey: "quiz.vrEducationalApps.q3.explanation",
+      },
+      {
+        id: "q4",
+        type: "judgment",
+        questionKey: "quiz.vrEducationalApps.q4.question",
+        options: [
+          { id: "a", labelKey: "quiz.vrEducationalApps.q4.a" },
+          { id: "b", labelKey: "quiz.vrEducationalApps.q4.b" },
+          { id: "c", labelKey: "quiz.vrEducationalApps.q4.c" },
+          { id: "d", labelKey: "quiz.vrEducationalApps.q4.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.vrEducationalApps.q4.explanation",
+      },
+      {
+        id: "q5",
+        type: "judgment",
+        questionKey: "quiz.vrEducationalApps.q5.question",
+        options: [
+          { id: "a", labelKey: "quiz.vrEducationalApps.q5.a" },
+          { id: "b", labelKey: "quiz.vrEducationalApps.q5.b" },
+          { id: "c", labelKey: "quiz.vrEducationalApps.q5.c" },
+          { id: "d", labelKey: "quiz.vrEducationalApps.q5.d" },
+        ],
+        correctOptionId: "b",
+        explanationKey: "quiz.vrEducationalApps.q5.explanation",
+      },
+    ],
+  },
 };
 
 export function getQuizForModule(moduleSlug: string): ModuleQuiz | undefined {

@@ -75,7 +75,7 @@ export function HeroSection({ children }: { children: React.ReactNode }) {
           {prefersReducedMotion ? (
             <div className="absolute inset-0 w-full h-full">
               <Image
-                src="/hero-vr.jpg"
+                src="/hero-vr.webp"
                 alt=""
                 fill
                 className="object-cover object-top"
@@ -90,7 +90,7 @@ export function HeroSection({ children }: { children: React.ReactNode }) {
               loop
               playsInline
               preload="metadata"
-              poster="/hero-vr.jpg"
+              poster="/hero-vr.webp"
               className="absolute inset-0 w-full h-full object-cover object-top"
             >
               <source src={HERO_VIDEO_SRC} type="video/mp4" />

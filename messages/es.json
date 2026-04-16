@@ -541,6 +541,106 @@
           "p3": "Comunicación y comportamiento profesional revelan habilidades blandas que las evaluaciones tradicionales no captan",
           "highlight": "La RV muestra no solo si los estudiantes completaron la tarea, sino cómo pensaron, decidieron y se comunicaron en el camino."
         }
+      },
+      "solvingCommonVrProblems": {
+        "video": {
+          "title": "Resolver Problemas Comunes de RV",
+          "subtitle": "Mira esta introducción sobre cómo diagnosticar y solucionar los problemas de RV más frecuentes en aulas reales"
+        },
+        "s1": {
+          "title": "Solución de Problemas de WiFi",
+          "subtitle": "El problema de RV más común en escuelas — resuélvelo en menos de un minuto",
+          "p1": "Las caídas de WiFi paralizan lecciones enteras — conocer la secuencia de solución ahorra tiempo de clase y mantiene a los estudiantes aprendiendo",
+          "p2": "Activar/desactivar, olvidar y reconectar, y reiniciar resuelven el 90% de los problemas de conexión sin experiencia técnica",
+          "p3": "Las redes escolares pueden bloquear el tráfico de los visores o requerir portales cautivos que los visores no pueden navegar",
+          "highlight": "Un router WiFi dedicado para visores de RV evita la mayoría de conflictos con la red escolar."
+        },
+        "s2": {
+          "title": "Problemas del Guardian y Límites",
+          "subtitle": "Por qué falla el sistema de seguimiento y cómo solucionarlo antes de clase",
+          "p1": "La iluminación deficiente es la causa número uno de fallos del Guardian — las cámaras necesitan iluminación uniforme y consistente para mapear la sala",
+          "p2": "Los espejos y superficies reflectantes confunden las cámaras de seguimiento al crear puntos de referencia visual falsos",
+          "p3": "Redibujar el límite desde cero elimina datos de mapeo corruptos y normalmente resuelve problemas de seguimiento persistentes",
+          "highlight": "Configura el Guardian en cada visor antes de que lleguen los estudiantes — ahorra cinco minutos de clase y evita frustraciones."
+        },
+        "s3": {
+          "title": "El Visor No Enciende",
+          "subtitle": "Normalmente es un problema de alimentación, rara vez un fallo de hardware — diagnostícalo en 60 segundos",
+          "p1": "Comprueba el LED de carga primero: naranja fijo significa cargando, verde fijo significa completo, sin LED significa problema con el cable o adaptador",
+          "p2": "Los cables USB-C dañados son una causa frecuente e infradiagnosticada — siempre prueba un cable diferente antes de asumir fallo de hardware",
+          "p3": "Reinicio forzado (mantener encendido + bajar volumen 30 segundos) recupera un visor congelado que no responde al botón de encendido normal",
+          "highlight": "Carga los visores la noche anterior al día de clase. Un visor sin batería es un problema prevenible, no una emergencia."
+        },
+        "s4": {
+          "title": "Problemas de Casting y Pantalla Compartida",
+          "subtitle": "Comparte la vista de RV con toda la clase — y arréglalo cuando falle",
+          "p1": "El visor y el dispositivo receptor (TV o Chromecast) deben estar exactamente en la misma red WiFi para que funcione el casting",
+          "p2": "Siempre inicia el casting desde el visor: Quick Settings → Cast → seleccionar dispositivo",
+          "p3": "El AP isolation en routers escolares bloquea la comunicación entre dispositivos — pide a IT que habilite los visores de RV o cree una VLAN separada",
+          "highlight": "Prueba el casting a tu pantalla de aula antes de que lleguen los estudiantes. Toma treinta segundos y previene un retraso de diez minutos."
+        },
+        "s5": {
+          "title": "La Mentalidad de Resolución de Problemas",
+          "subtitle": "Tu respuesta a los problemas técnicos determina si la clase aprende o pierde el ritmo",
+          "p1": "Mantén la calma y modela compostura — los estudiantes reflejan tu reacción ante los fallos tecnológicos, así que tu actitud marca el tono",
+          "p2": "Aplica la regla de los 2 minutos: si un visor no se arregla en 2 minutos, apártalo, rota estudiantes y diagnostica después de clase",
+          "p3": "Ten siempre un Plan B: una actividad de respaldo sin RV que cubra el mismo objetivo de aprendizaje, lista para implementar al instante",
+          "highlight": "Los mejores profesores de RV no son expertos en tecnología — están preparados para cuando la tecnología falla y mantienen el foco en el aprendizaje."
+        }
+      },
+      "vrEducationalApps": {
+        "video": {
+          "title": "Apps Educativas de VR",
+          "subtitle": "Mira esta introducción sobre cómo identificar, evaluar e integrar apps educativas de VR en tu enseñanza"
+        },
+        "s1": {
+          "title": "¿Qué hace que una app sea educativa?",
+          "subtitle": "Cuatro rasgos que separan las apps educativas genuinas de juegos y demos",
+          "p1": "Una app educativa de VR apunta a un resultado de aprendizaje específico y medible — no solo a la exposición al contenido",
+          "p2": "El estudiante debe actuar dentro de la app, no solo mirar — la visualización pasiva no es educativa sin importar la calidad visual",
+          "p3": "La app proporciona retroalimentación sobre las acciones del estudiante y produce evidencia medible de aprendizaje",
+          "highlight": "Si la app no requiere que el estudiante actúe, responda y mejore, no es educativa — es una experiencia de visualización."
+        },
+        "s2": {
+          "title": "Dónde encontrar apps educativas de VR",
+          "subtitle": "Canales de distribución y dónde vive realmente la mayoría del contenido educativo",
+          "p1": "La Meta Store oficial está curada pero tiene contenido educativo limitado — la mayoría de títulos son comerciales",
+          "p2": "App Lab es el canal secundario de Meta con barrera de publicación más baja — aquí vive la mayoría del contenido educativo de VR",
+          "p3": "Las experiencias WebXR funcionan en el navegador del headset sin instalación — ideales para uso rápido en el aula",
+          "highlight": "App Lab es donde vive la mayoría del contenido educativo de VR — revísalo siempre antes de concluir que no existe nada para tu materia."
+        },
+        "s3": {
+          "title": "Apps de simulación: el mayor impacto",
+          "subtitle": "Por qué las apps de simulación son la categoría más potente para formación basada en habilidades",
+          "p1": "El entorno responde a las acciones del estudiante — los errores tienen consecuencias visibles como el deterioro de un paciente",
+          "p2": "Los estudiantes pueden fallar de forma segura y volver a intentarlo sin riesgo real — la ventaja central de la simulación VR",
+          "p3": "Los múltiples intentos construyen competencia progresivamente — cada fallo es una oportunidad de aprendizaje, no un costo",
+          "highlight": "Las apps de simulación permiten al estudiante fallar de forma segura — y precisamente por eso aprenden."
+        },
+        "s4": {
+          "title": "Elegir apps según el objetivo de aprendizaje",
+          "subtitle": "Elige el tipo de app según tu objetivo — nunca elijas la app primero",
+          "p1": "Usa el mapa de decisión: exploración para contexto, entrenamiento guiado para procedimientos, simulación para práctica, evaluación para valoración",
+          "p2": "Una ruta de aprendizaje completa combina tipos en secuencia: exploración → entrenamiento guiado → simulación → evaluación",
+          "p3": "No todas las lecciones necesitan las cuatro etapas, pero conocer la secuencia previene vacíos en el recorrido de aprendizaje",
+          "highlight": "Empieza por el objetivo, luego busca la app — no al revés."
+        },
+        "s5": {
+          "title": "Evaluar apps antes de la clase",
+          "subtitle": "Tres dimensiones de evaluación que toda app de VR debe superar antes de usarse en el aula",
+          "p1": "Verificación pedagógica: ¿Qué aprende el estudiante? ¿Qué hace? ¿Qué retroalimentación y evidencia proporciona la app?",
+          "p2": "Verificación técnica: Tiempo de carga, intuitividad de la interfaz, requisitos de espacio y estabilidad en condiciones de aula",
+          "p3": "Verificación de aula: Duración real con preparación, capacidad simultánea, fiabilidad del casting y tu Plan B",
+          "highlight": "Prueba cada app tú mismo, en las mismas condiciones que enfrentarán tus estudiantes, antes de usarla en clase."
+        },
+        "s6": {
+          "title": "Integrar apps en tus lecciones",
+          "subtitle": "La estructura antes-durante-después para integrar apps de VR en la enseñanza",
+          "p1": "Antes: Proporciona una instrucción clara — establece el objetivo de aprendizaje, explica qué harán los estudiantes y fija expectativas",
+          "p2": "Durante: Monitorea el progreso de los estudiantes, usa casting para observar desde fuera y estate preparado para asistir",
+          "p3": "Después: Realiza una reflexión estructurada — pregunta qué pasó, qué funcionó y cómo se conecta con la práctica real",
+          "highlight": "Una app de VR es una herramienta dentro de la lección, no la lección en sí — siempre intégrala en una estructura antes-durante-después."
+        }
       }
     },
     "learningBlocks": {
@@ -657,6 +757,20 @@
       "lessonPlanBuilderRebuild": "Reconstruir plan",
       "lessonPlanBuilderReview": "Revisa tu plan",
       "resourceAllocationTitle": "Planificador de recursos",
+      "matchingDesc": "Relaciona términos con sus definiciones correctas",
+      "orderingDesc": "Ordena los pasos en la secuencia correcta",
+      "mythBustersDesc": "Decide si cada afirmación es un hecho o un mito",
+      "troubleshootingDesc": "Diagnostica problemas paso a paso",
+      "triageSortDesc": "Clasifica elementos por prioridad",
+      "classroomPlannerDesc": "Diseña la disposición de tu aula en una cuadrícula",
+      "fillGapsDesc": "Completa el texto con las palabras que faltan",
+      "decisionTreeDesc": "Navega las decisiones y observa las consecuencias",
+      "lessonPlanBuilderDesc": "Construye un plan de lección eligiendo las mejores opciones",
+      "resourceAllocationDesc": "Distribuye tiempo o recursos limitados de forma inteligente",
+      "trueFalseDesc": "Juzga si cada afirmación es verdadera o falsa",
+      "classifyDesc": "Ordena elementos en su grupo correcto",
+      "memoryMatchDesc": "Encuentra parejas dando vuelta a las cartas",
+      "conceptMapDesc": "Conecta conceptos relacionados entre sí",
       "resourceAllocationBudget": "Total: {used}/{total} {unit}",
       "resourceAllocationSubmit": "Enviar plan",
       "resourceAllocationCorrect": "¡Plan bien equilibrado!",
@@ -3040,6 +3154,879 @@
             }
           }
         }
+      },
+      "solvingCommonVrProblems": {
+        "b1": {
+          "title": "Conexión WiFi",
+          "exercise": {
+            "instruction": "Recorre los pasos de resolución de WiFi. En cada etapa, elige la mejor acción.",
+            "scenario": "Un estudiante reporta que su visor muestra 'Sin conexión WiFi' durante una lección de RV. Necesitas diagnosticar y solucionar el problema.",
+            "n1": {
+              "prompt": "El visor muestra 'Sin conexión WiFi'. ¿Qué compruebas primero?",
+              "a": { "label": "Abrir Quick Settings y comprobar si el WiFi está activado", "feedback": "Correcto. La comprobación más simple primero — el WiFi puede haberse desactivado accidentalmente. Quick Settings es la forma más rápida de verificarlo." },
+              "b": { "label": "Reiniciar el visor inmediatamente", "feedback": "Reiniciar funciona pero salta comprobaciones más simples. Siempre verifica que el WiFi está activado primero — toma 5 segundos y resuelve muchos casos." },
+              "c": { "label": "Restaurar el visor de fábrica para limpiar toda la configuración", "feedback": "La restauración de fábrica es un último recurso que borra todos los datos. Nunca empieces por aquí — comprueba el toggle de WiFi primero." }
+            },
+            "n2": {
+              "prompt": "El WiFi está activado pero la red sigue cayéndose después de unos segundos.",
+              "a": { "label": "Poner el visor en modo avión y volver a activar", "feedback": "El modo avión alterna todas las radios, pero es más lento y menos preciso que olvidar la red específica." },
+              "b": { "label": "Olvidar la red y volver a introducir la contraseña", "feedback": "Correcto. Olvidar y reconectar limpia datos de conexión en caché que pueden estar corruptos. Esto resuelve la mayoría de problemas de caída persistentes." },
+              "c": { "label": "Ir a otra aula con mejor WiFi", "feedback": "Cambiar de aula es disruptivo y raramente necesario. El problema suele ser el perfil de conexión, no la señal." }
+            },
+            "n3": {
+              "prompt": "El estudiante se reconectó, pero el WiFi vuelve a caer después de 2 minutos.",
+              "a": { "label": "Reiniciar el visor — un reinicio completo limpia el estado de red más profundo", "feedback": "Correcto. Cuando toggle y reconexión no funcionan, un reinicio limpia la pila de red. Si sigue fallando después del reinicio, el problema es probablemente la red escolar, no el visor." },
+              "b": { "label": "Continuar sin WiFi — la app de RV podría funcionar sin conexión", "feedback": "Algunas apps funcionan sin conexión, pero muchas requieren red. Reiniciar es más fiable que esperar que la app funcione sin WiFi." }
+            }
+          },
+          "scenario": {
+            "context": "A mitad de lección, 3 de 8 visores pierden WiFi simultáneamente. Los estudiantes están en medio de una simulación de ciencias en RV. Cinco visores siguen funcionando bien.",
+            "question": "¿Qué haces primero?",
+            "choices": {
+              "a": "Parar toda la clase y solucionar los 3 visores juntos",
+              "b": "Que los 3 estudiantes afectados activen/desactiven WiFi en Quick Settings mientras el resto continúa. Si no se arregla en 2 minutos, rotarlos a visores funcionales.",
+              "c": "Llamar al soporte técnico inmediatamente — caídas simultáneas sugieren un problema de red fuera de tu control"
+            },
+            "feedback": {
+              "a": "Parar toda la clase desperdicia tiempo de aprendizaje para los 5 estudiantes cuyos visores funcionan bien. Déjalos continuar mientras atiendes a los afectados.",
+              "b": "Exactamente. El toggle rápido de WiFi es la solución más rápida. La regla de los 2 minutos mantiene la lección en marcha — si el toggle no funciona, rota a los estudiantes para que todos tengan tiempo de RV. Diagnostica los visores después de clase.",
+              "c": "El soporte técnico puede ser necesario eventualmente, pero la resolución básica (toggle WiFi, reinicio) toma menos de 2 minutos y resuelve la mayoría de problemas. Siempre prueba las soluciones rápidas primero."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "El visor de un estudiante se conecta al WiFi pero sigue cayéndose cada pocos minutos. Ya has activado/desactivado el WiFi y reiniciado el visor.",
+              "question": "¿Qué deberías probar a continuación?",
+              "choices": {
+                "a": "Olvidar la red completamente y volver a introducir la contraseña de WiFi desde cero",
+                "b": "Acercar al estudiante a la pantalla del proyector",
+                "c": "Comprobar si el móvil del estudiante está creando interferencia inalámbrica"
+              },
+              "feedback": {
+                "a": "Correcto. Olvidar y reconectar limpia las credenciales en caché y los perfiles de conexión. Este es el siguiente paso estándar cuando toggle y reinicio ya han fallado.",
+                "b": "La pantalla del proyector no tiene relación con la señal WiFi. Esto no ayudará.",
+                "c": "La interferencia de móviles es extremadamente rara con WiFi moderno. Es teóricamente posible pero casi nunca es la causa real."
+              }
+            },
+            "c2": {
+              "context": "Ningún visor del aula puede conectarse al WiFi. Otros dispositivos como móviles y portátiles funcionan perfectamente en la misma red.",
+              "question": "¿Cuál es la causa más probable?",
+              "choices": {
+                "a": "Todos los visores tienen el hardware WiFi roto simultáneamente",
+                "b": "La red escolar está bloqueando el tráfico de los visores de RV — filtrado MAC, restricciones de dispositivo o un portal cautivo que los visores no pueden navegar",
+                "c": "El aula está demasiado lejos del router WiFi"
+              },
+              "feedback": {
+                "a": "Múltiples visores fallando simultáneamente con síntomas idénticos casi nunca es un problema de hardware. Apunta a una causa externa como restricciones de red.",
+                "b": "Correcto. Cuando los dispositivos personales se conectan pero los visores de RV no, el problema es la política de red — no el hardware. IT puede tener filtrado MAC, bloqueo por tipo de dispositivo o un portal cautivo que los visores no pueden mostrar. Prueba con un hotspot de móvil para confirmar que los visores funcionan.",
+                "c": "Si los móviles funcionan bien en la misma ubicación, la distancia no es el problema. La señal llega al aula — los visores están siendo bloqueados a nivel de red."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Activar y desactivar el WiFi suele ser suficiente para resolver una conexión caída",
+                "explanation": "Verdadero. Un simple toggle de WiFi es la solución más rápida y resuelve la mayoría de caídas de conexión. Fuerza al visor a restablecer la conexión sin necesidad de un reinicio completo."
+              },
+              "s2": {
+                "statement": "Si un visor no puede conectarse al WiFi escolar, el hardware WiFi del visor definitivamente está roto",
+                "explanation": "Falso. Las redes escolares frecuentemente bloquean dispositivos desconocidos mediante filtrado MAC, restricciones de dispositivo o portales cautivos. Prueba primero con un hotspot de móvil — si el visor se conecta al hotspot, el hardware está bien y el problema es la red escolar."
+              },
+              "s3": {
+                "statement": "Probar con un hotspot de móvil es una buena forma de confirmar si el hardware WiFi del visor funciona",
+                "explanation": "Verdadero. Un hotspot de móvil evita las políticas de la red escolar por completo. Si el visor se conecta exitosamente, has confirmado que el hardware está bien y has aislado el problema a la red escolar."
+              }
+            }
+          }
+        },
+        "b2": {
+          "title": "Problemas del Guardian y Límites",
+          "exercise": {
+            "instruction": "Ordena los pasos de resolución del Guardian, del más fácil al más drástico",
+            "scaleStart": "Probar primero",
+            "scaleEnd": "Último recurso",
+            "i1": "Comprobar la iluminación de la sala — asegurar luz uniforme y consistente sin rincones oscuros",
+            "i2": "Cubrir o alejarse de espejos y superficies reflectantes",
+            "i3": "Redibujar el límite del Guardian desde cero en Configuración",
+            "i4": "Limpiar las cámaras externas del visor con un paño de microfibra seco",
+            "i5": "Cambiar a modo de Límite Estacionario como alternativa"
+          },
+          "scenario": {
+            "context": "Los estudiantes se ponen los visores pero 4 de ellos están atascados en la pantalla de configuración del Guardian. No pueden continuar. El aula tiene luces fluorescentes y una pared es un espejo de cuerpo entero.",
+            "question": "¿Cuál es la causa más probable y la solución?",
+            "choices": {
+              "a": "Los visores necesitan una actualización de software para arreglar un error del Guardian",
+              "b": "La iluminación fluorescente puede estar causando parpadeo y el espejo confunde las cámaras de seguimiento — encender luces adicionales estables y hacer que los estudiantes miren en dirección opuesta al espejo o cubrirlo",
+              "c": "Decir a los estudiantes que salten el Guardian eligiendo modo de Límite Estacionario"
+            },
+            "feedback": {
+              "a": "Los problemas del Guardian casi siempre están causados por el entorno físico, no por errores de software. Las actualizaciones de firmware rara vez solucionan problemas de seguimiento. Comprueba las condiciones de la sala primero.",
+              "b": "Exactamente. El parpadeo fluorescente y los reflejos de espejo son los dos principales enemigos del Guardian. Añadir iluminación estable y eliminar superficies reflectantes resuelve la causa raíz para esta sesión y todas las futuras.",
+              "c": "El modo estacionario evita el Guardian pero también elimina el límite de seguridad. Soluciona el síntoma sin abordar la causa — el mismo problema recurrirá cada sesión hasta que arregles el entorno."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "El límite Guardian de un estudiante se reinicia cada 30 segundos, aunque la sala está bien iluminada y no hay espejos. Ya has redibujado el límite dos veces.",
+              "question": "¿Qué deberías probar?",
+              "choices": {
+                "a": "Limpiar las cámaras externas del visor con un paño de microfibra seco — las manchas o huellas degradan la calidad del seguimiento",
+                "b": "Reiniciar el router WiFi — el Guardian podría depender de la conectividad de red",
+                "c": "Decir al estudiante que se quede sentado y evite moverse"
+              },
+              "feedback": {
+                "a": "Correcto. Las cámaras sucias son una causa frecuentemente ignorada de fallos de seguimiento persistentes. Los estudiantes manipulan los visores constantemente, dejando huellas en las cámaras externas. Una limpieza rápida con un paño de microfibra seco puede restaurar el seguimiento.",
+                "b": "El Guardian usa las cámaras del visor para seguimiento espacial — no usa WiFi. Reiniciar el router no afectará al comportamiento del límite.",
+                "c": "Estar sentado evita el problema pero impide al estudiante usar RV a escala de habitación. Soluciona la causa raíz — limpia las cámaras — para que el estudiante pueda moverse libremente."
+              }
+            },
+            "c2": {
+              "context": "Estás preparando una sesión de RV en una sala nueva. El suelo es una moqueta gris oscuro uniforme y el techo tiene iluminación empotrada tenue. El Guardian se niega a inicializarse en ningún visor.",
+              "question": "¿Qué dos cosas ayudarían?",
+              "choices": {
+                "a": "Colocar objetos con contraste en el suelo y añadir luces portátiles más brillantes — las cámaras necesitan rasgos visuales e iluminación para mapear el espacio",
+                "b": "Usar una app de RV diferente que no requiera Guardian",
+                "c": "Cambiar todos los visores a modo desarrollador para saltarse el Guardian"
+              },
+              "feedback": {
+                "a": "Correcto. Las cámaras necesitan dos cosas: suficiente luz para ver y suficiente contraste visual para identificar rasgos. Una superficie oscura uniforme con iluminación tenue no le da nada a las cámaras para rastrear. Añadir objetos (incluso líneas de cinta en el suelo) y luces portátiles resuelve ambos problemas.",
+                "b": "La mayoría de apps de RV requieren alguna forma de seguimiento espacial. Evitar el Guardian no elimina la necesidad de que las cámaras vean el entorno.",
+                "c": "El modo desarrollador no es una solución estándar para el aula y puede introducir otros problemas. La solución correcta es mejorar el entorno físico para las cámaras."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "La iluminación tenue es la causa más común de fallos del límite Guardian",
+                "explanation": "Verdadero. Las cámaras del visor dependen de la luz visible para detectar el entorno. La iluminación tenue, irregular o parpadeante impide el mapeo espacial preciso y es la causa más frecuente de problemas del Guardian."
+              },
+              "s2": {
+                "statement": "Los espejos y superficies reflectantes ayudan a las cámaras del Guardian al proporcionar más puntos de referencia visual",
+                "explanation": "Falso. Los espejos crean reflejos falsos que confunden a las cámaras. El sistema de seguimiento interpreta los reflejos como espacio físico real, causando que los límites cambien, se reinicien o fallen completamente. Siempre cubre los espejos o aleja a los estudiantes de ellos."
+              },
+              "s3": {
+                "statement": "Borrar el Historial del Guardian en Configuración y redibujar el límite es una solución estándar para problemas de seguimiento persistentes",
+                "explanation": "Verdadero. Los datos de límite antiguos pueden corromperse, especialmente si la disposición de la sala ha cambiado. Borrar el mapeo guardado y redibujar desde cero da a las cámaras una referencia nueva y resuelve muchos problemas persistentes."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "El Visor No Enciende",
+          "exercise": {
+            "instruction": "Recorre los pasos de diagnóstico de energía. En cada etapa, elige el mejor enfoque.",
+            "scenario": "Un visor no enciende. Sin pantalla, sin LED, sin sonido. Necesitas diagnosticar el problema.",
+            "n1": {
+              "prompt": "El visor no muestra señales de vida. ¿Qué compruebas primero?",
+              "a": { "label": "Comprobar el LED de carga — enchufarlo y buscar la luz indicadora", "feedback": "Buen enfoque. El LED es el diagnóstico más rápido: naranja significa cargando, verde significa completo, sin LED significa que la energía no llega al visor. Esto te indica exactamente dónde buscar después." },
+              "b": { "label": "Mantener el botón de encendido durante 3 segundos completos — las pulsaciones breves pueden no registrarse", "feedback": "Razonable — un error común es pulsar brevemente el botón en vez de mantenerlo. Pero comprobar el LED de carga primero te da más información diagnóstica." },
+              "c": { "label": "Realizar un reinicio forzado inmediatamente — mantener encendido + bajar volumen 30 segundos", "feedback": "El reinicio forzado es una herramienta útil, pero es excesivo como primer paso. Aún no sabes si el problema es la carga, la alimentación o el sistema operativo congelado. Empieza con comprobaciones más simples." }
+            },
+            "n2": {
+              "prompt": "No aparece ningún LED incluso enchufado. El visor no responde al cargador.",
+              "a": { "label": "Probar un cable USB-C diferente y un adaptador de corriente diferente", "feedback": "Buen enfoque. Los cables dañados y los adaptadores de baja potencia son la causa más común e infradiagnosticada de fallos de carga. Cambiar el cable a menudo resuelve el problema inmediatamente." },
+              "b": { "label": "Limpiar el puerto de carga USB-C con aire comprimido", "feedback": "Un puerto sucio puede causar problemas de carga, pero es menos común que un cable defectuoso. Prueba un cable diferente primero — es más rápido y más probable que sea el culpable." },
+              "c": { "label": "Apartar el visor y usar otro diferente — este probablemente está roto", "feedback": "Rendirse demasiado pronto. Un visor sin LED de carga casi siempre tiene un problema de cable o adaptador, no un fallo de hardware. Prueba un cable diferente antes de declararlo roto." }
+            },
+            "n3": {
+              "prompt": "Diagnóstico completado.",
+              "endFeedback": "La secuencia de diagnóstico correcta es: comprobar LED de carga → probar botón de encendido 3 segundos → cambiar cable USB-C y adaptador → limpiar el puerto → reinicio forzado → apartar para investigación después de clase. La mayoría de visores 'muertos' simplemente no reciben energía por un cable defectuoso."
+            }
+          },
+          "scenario": {
+            "context": "Faltan 5 minutos para clase. Pulsas el botón de encendido de un visor y no pasa nada — sin pantalla, sin LED, sin sonido. Tienes 10 visores pero necesitas todos para la actividad en parejas de hoy.",
+            "question": "¿Cuál es tu primera acción?",
+            "choices": {
+              "a": "Intentar un reinicio forzado inmediatamente — mantener encendido + bajar volumen 30 segundos",
+              "b": "Enchufarlo al cargador, buscar el LED de carga, y probar un cable USB-C diferente si no aparece LED — mientras tanto, reorganizar la actividad para funcionar con 9 visores",
+              "c": "Apartarlo inmediatamente y planificar enviarlo a reparación"
+            },
+            "feedback": {
+              "a": "Un reinicio forzado es útil para un visor congelado, pero sin LED y sin respuesta, el problema probablemente es la alimentación, no un sistema congelado. Comprueba la ruta de carga primero.",
+              "b": "Exactamente. Comprobar el LED de carga y cambiar cables es el camino más rápido al diagnóstico. Mientras tanto, adaptar la actividad a 9 visores mantiene la lección en marcha. La mentalidad de resolución: arregla lo que puedas rápidamente, adapta el plan, ocúpate del equipo roto después de clase.",
+              "c": "Esto casi seguro tiene arreglo. La mayoría de visores 'muertos' tienen un simple problema de cable o carga. Apartarlo sin probar pasos básicos desperdicia un visor perfectamente funcional."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un visor muestra un LED naranja de carga al enchufarlo pero sigue sin encender después de 5 minutos cargando. El botón de encendido no produce ninguna respuesta.",
+              "question": "¿Qué deberías probar?",
+              "choices": {
+                "a": "Mantener el botón de encendido durante 3 segundos completos — las pulsaciones breves no siempre se registran en algunos visores",
+                "b": "La batería está demasiado agotada y necesita carga nocturna — no hay nada que puedas hacer ahora",
+                "c": "El visor está roto y necesita una restauración de fábrica desde el menú de arranque"
+              },
+              "feedback": {
+                "a": "Correcto. Un error común es pulsar brevemente el botón de encendido en vez de mantenerlo 3 segundos completos. Con el LED naranja confirmando que llega energía, una pulsación sostenida es la solución más probable.",
+                "b": "Aunque las baterías muy agotadas tardan en cargar, 5 minutos con LED naranja normalmente proporcionan suficiente energía para arrancar. Prueba a mantener el botón de encendido primero.",
+                "c": "Una restauración de fábrica borraría todos los datos y es innecesaria aquí. El LED naranja confirma que el visor recibe energía — el problema probablemente es solo la duración de la pulsación del botón."
+              }
+            },
+            "c2": {
+              "context": "Un visor enciende, muestra el logo de Meta, luego se apaga inmediatamente. Este ciclo de reinicio se repite. El indicador de batería muestra brevemente 45% de carga.",
+              "question": "¿Qué tipo de problema es probablemente, y qué haces?",
+              "choices": {
+                "a": "Un error de autenticación WiFi — reconectar a la red",
+                "b": "Un sistema operativo congelado — realizar un reinicio forzado manteniendo encendido + bajar volumen durante 30 segundos para romper el bucle de arranque",
+                "c": "Batería baja a pesar de lo que muestra el indicador — enchufarlo y esperar"
+              },
+              "feedback": {
+                "a": "Los problemas de WiFi no pueden causar un bucle de arranque. El visor falla durante el inicio, antes de alcanzar la conectividad de red. Es un problema del sistema operativo o firmware.",
+                "b": "Correcto. Un bucle de arranque (encender → logo → apagar → repetir) indica que el sistema operativo se bloquea durante el inicio. Un reinicio forzado (encendido + bajar volumen 30 segundos) fuerza un arranque limpio que normalmente rompe el ciclo.",
+                "c": "La batería muestra 45%, más que suficiente para arrancar. Los bucles de arranque son causados por fallos de software, no por batería baja. Un reinicio forzado es la solución correcta."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿Qué significa cada indicador LED en un visor cargándose?",
+              "cat": {
+                "charging": "Cargando",
+                "fullyCharged": "Carga Completa",
+                "problem": "Problema"
+              },
+              "i1": "LED naranja fijo",
+              "i2": "LED verde fijo",
+              "i3": "Ningún LED a pesar de estar enchufado",
+              "i4": "LED naranja parpadeante",
+              "i5": "El LED aparece brevemente y luego desaparece"
+            }
+          }
+        },
+        "b4": {
+          "title": "Casting y Pantalla Compartida",
+          "exercise": {
+            "instruction": "Clasifica cada problema de casting según su causa raíz: ¿es un problema de red, de compatibilidad o de configuración?",
+            "cat": {
+              "network": "Problema de Red",
+              "compatibility": "Problema de Compatibilidad",
+              "settings": "Problema de Configuración"
+            },
+            "i1": "El visor y el TV están conectados a redes WiFi diferentes",
+            "i2": "Transmitiendo a un smart TV sin Chromecast que no tiene soporte Cast integrado",
+            "i3": "El AP isolation está activado en el router escolar, bloqueando tráfico entre dispositivos",
+            "i4": "Usando Firefox en vez de Chrome para casting por navegador en oculus.com/casting",
+            "i5": "El dispositivo destino no aparece en el menú Cast del visor",
+            "i6": "El visor está en la banda de 2,4 GHz mientras el TV está en la de 5 GHz",
+            "i7": "El casting se inició desde el TV en vez del Quick Settings del visor",
+            "i8": "No hay app de duplicación de pantalla por USB instalada como alternativa cableada"
+          },
+          "scenario": {
+            "context": "Quieres transmitir la vista de RV de un estudiante al TV del aula para que todos puedan ver. Inicias el casting desde el visor pero el TV no aparece como opción en el menú Cast.",
+            "question": "¿Cuáles son las dos primeras cosas que debes comprobar?",
+            "choices": {
+              "a": "Actualizar el firmware del visor — el firmware antiguo rompe la funcionalidad de casting",
+              "b": "Verificar que ambos dispositivos están en la misma red WiFi, y confirmar que el TV es compatible con Chromecast o tiene un Chromecast conectado",
+              "c": "Reiniciar el TV e intentar de nuevo"
+            },
+            "feedback": {
+              "a": "Las actualizaciones de firmware rara vez afectan la detección de casting. Las causas más comunes son desajustes de red y compatibilidad de dispositivos — comprueba esos primero.",
+              "b": "Correcto. Las dos razones más comunes por las que no aparece un destino Cast: (1) los dispositivos están en redes WiFi diferentes, y (2) el TV no soporta el protocolo Cast. Misma red + compatibilidad Chromecast cubre el 80% de fallos de casting.",
+              "c": "Reiniciar vale la pena intentar pero no aborda las dos causas más probables. Comprueba red y compatibilidad primero para una solución dirigida."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "El casting empieza correctamente del visor al TV, pero la imagen se congela después de 30 segundos y luego se desconecta completamente. Ambos dispositivos están en la misma red WiFi.",
+              "question": "¿Cuál es la causa más probable?",
+              "choices": {
+                "a": "La app de RV no soporta casting",
+                "b": "Congestión de red o AP isolation — el router puede estar limitando o bloqueando el tráfico entre dispositivos en la red escolar",
+                "c": "La batería del visor es demasiado baja para mantener una transmisión de casting"
+              },
+              "feedback": {
+                "a": "Algunas apps restringen el casting, pero eso impediría que el casting empezara, no que se congelara a mitad de transmisión. La congelación y desconexión apuntan a un problema de red.",
+                "b": "Correcto. Cuando el casting empieza pero se degrada, la red es la culpable. El AP isolation bloquea o limita el tráfico entre dispositivos. La congestión de red por muchos dispositivos también causa congelación. Pregunta a IT sobre la configuración de aislamiento o prueba con un router dedicado.",
+                "c": "El nivel de batería no afecta la calidad del casting. La batería baja haría que el visor se apague, no que el casting se congele."
+              }
+            },
+            "c2": {
+              "context": "No hay Chromecast ni smart TV disponible en tu aula. Aún necesitas mostrar la vista de RV a los estudiantes que no llevan visor.",
+              "question": "¿Cuál es tu mejor alternativa?",
+              "choices": {
+                "a": "Usar una app de duplicación de pantalla en un portátil conectado al visor por USB como alternativa cableada",
+                "b": "Que los estudiantes se turnen para mirar por el visor mientras los demás esperan",
+                "c": "Cancelar la visualización compartida y que los estudiantes describan verbalmente lo que ven"
+              },
+              "feedback": {
+                "a": "Correcto. Un cable USB y una app de duplicación de pantalla en un portátil evita el WiFi y el casting por completo. Conecta el visor al portátil, proyecta la pantalla del portátil, y toda la clase ve la vista de RV sin depender de la red.",
+                "b": "Turnarse es extremadamente lento con una clase completa y desperdicia el tiempo de la mayoría de estudiantes. Una conexión cableada es mucho más práctica.",
+                "c": "Las descripciones verbales pierden el impacto visual de la visualización compartida de RV. Si no puedes transmitir inalámbricamente, una conexión USB cableada es una alternativa fiable."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "El visor y el TV o Chromecast deben estar en la misma red WiFi para que funcione el casting",
+                "explanation": "Verdadero. El casting usa comunicación de red local entre dispositivos. Si el visor está en una red WiFi y el TV o Chromecast en otra, no pueden descubrirse ni comunicarse entre sí."
+              },
+              "s2": {
+                "statement": "El casting siempre debe iniciarse desde el TV o Chromecast, no desde el visor",
+                "explanation": "Falso. Siempre inicia el casting desde el visor: Quick Settings → Cast → seleccionar dispositivo. Iniciar desde el TV es poco fiable y no es el flujo soportado para visores Meta Quest."
+              },
+              "s3": {
+                "statement": "Si el casting no funciona de forma inalámbrica, una conexión USB a un portátil con una app de duplicación de pantalla es una alternativa fiable",
+                "explanation": "Verdadero. Una conexión USB cableada evita todos los problemas de WiFi y casting. Las apps de duplicación muestran la vista del visor en la pantalla del portátil, que luego puede proyectarse para la clase."
+              }
+            }
+          }
+        },
+        "b5": {
+          "title": "La Mentalidad de Resolución",
+          "exercise": {
+            "instruction": "¿Es cada afirmación un hecho o un mito sobre la resolución de problemas de RV en el aula?",
+            "s1": {
+              "statement": "Debes dedicar todo el tiempo necesario para arreglar un visor roto durante clase",
+              "explanation": "Mito. La regla de los 2 minutos existe para proteger el tiempo de aprendizaje. Si un visor no se arregla en 2 minutos, apártalo, rota a los estudiantes a visores funcionales y diagnostica después de clase."
+            },
+            "s2": {
+              "statement": "Tener una actividad de respaldo sin RV preparada es señal de mala preparación",
+              "explanation": "Mito. Un Plan B demuestra excelente preparación. La tecnología falla de forma impredecible — tener una actividad sin RV que cubra el mismo objetivo de aprendizaje significa que la lección tiene éxito independientemente de los problemas técnicos."
+            },
+            "s3": {
+              "statement": "La mayoría de problemas de visores RV en aulas se resuelven con un simple reinicio",
+              "explanation": "Hecho. Reiniciar limpia fallos temporales de software, restablece conexiones de red y resuelve muchos problemas comunes. Es la solución de propósito general más efectiva después de las comprobaciones básicas."
+            },
+            "s4": {
+              "statement": "Si algunos visores fallan durante una sesión, rota a los estudiantes por los funcionales en vez de parar la clase",
+              "explanation": "Hecho. La rotación mantiene a todos los estudiantes aprendiendo. Si 3 de 12 visores fallan, reorganiza en grupos que roten por los 9 visores funcionales. Cada estudiante sigue teniendo tiempo de RV, y arreglas los rotos después."
+            },
+            "s5": {
+              "statement": "Una lección de RV donde falla la tecnología es una lección fracasada",
+              "explanation": "Mito. El objetivo de aprendizaje importa más que la tecnología. Un profesor que se adapta al fallo del equipo — usando actividades de respaldo, rotando visores, manteniendo la calma — imparte una lección exitosa independientemente de los problemas técnicos."
+            }
+          },
+          "scenario": {
+            "context": "Tres visores fallan al inicio de una lección de RV. Tienes 30 estudiantes y habías planificado usar los 15 visores en parejas. Los estudiantes te miran expectantes.",
+            "question": "¿Qué haces?",
+            "choices": {
+              "a": "Dedicar 10 minutos a arreglar los visores mientras los estudiantes esperan — no puedes hacer RV con menos visores",
+              "b": "Mantener la calma, reconocer el problema brevemente, reorganizar en grupos de 3 con los 12 visores funcionales, y rotar para que todos tengan tiempo de RV. Anotar los visores rotos para diagnosticar después de clase.",
+              "c": "Cancelar la sesión de RV completamente y cambiar a una actividad con libro de texto"
+            },
+            "feedback": {
+              "a": "Diez minutos de espera para 30 estudiantes es una pérdida significativa de aprendizaje. La regla de los 2 minutos dice: si no se arregla en 2 minutos, adapta el plan y sigue enseñando.",
+              "b": "Exactamente. Mantener la calma modela compostura. Reorganizar en grupos de 3 significa que todos los estudiantes aún tienen tiempo de RV con los 12 visores funcionales. Los visores rotos son un problema de después de clase, no una emergencia a mitad de lección.",
+              "c": "Cancelar toda la sesión porque 3 de 15 visores fallaron es una reacción exagerada. Doce visores funcionales son más que suficientes para una lección de RV exitosa con agrupación adaptada."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor pasa 15 minutos intentando arreglar un visor mientras 29 estudiantes esperan sentados. El profesor murmura 'Estas cosas nunca funcionan' y muestra frustración visible.",
+              "question": "¿Qué está mal en este enfoque?",
+              "choices": {
+                "a": "El profesor tiene razón en priorizar arreglar la tecnología — no puedes enseñar RV sin ella",
+                "b": "El profesor violó tres principios: el límite de 2 minutos, mantener la calma ante los estudiantes y priorizar el aprendizaje sobre la tecnología. Los estudiantes absorbieron 15 minutos de frustración en vez de aprender.",
+                "c": "El profesor debería haber llamado al soporte técnico en vez de intentar arreglarlo él mismo"
+              },
+              "feedback": {
+                "a": "Se puede perfectamente dar una lección de RV con un visor menos. El profesor priorizó un dispositivo sobre el aprendizaje de 29 estudiantes — este es exactamente el error que la regla de los 2 minutos previene.",
+                "b": "Correcto. Tres errores se acumularon: (1) dedicar 15 minutos a un solo visor excede con creces el límite de 2 minutos, (2) la frustración visible dice a los estudiantes que la RV es poco fiable y estresante, y (3) 29 estudiantes perdieron tiempo de aprendizaje porque se priorizó un dispositivo sobre la lección.",
+                "c": "El soporte técnico puede ayudar, pero el problema mayor es la respuesta del profesor. Un profesor calmado habría apartado el visor después de 2 minutos, adaptado el plan y seguido enseñando."
+              }
+            },
+            "c2": {
+              "context": "Un profesor de RV experimentado llega temprano, prueba todos los visores y descubre que uno está atascado en una actualización de software. En vez de entrar en pánico, lo aparta, ajusta su plan para usar un visor menos y prepara su actividad de respaldo en papel habitual por si acaso.",
+              "question": "¿Qué principio demuestra esto?",
+              "choices": {
+                "a": "Que la RV es poco fiable y los profesores siempre deberían tener alternativas sin RV",
+                "b": "Buena gestión del tiempo — llegar temprano es la clave",
+                "c": "La mentalidad de resolución de problemas: prepararse para los fallos, probar de antemano, tener un Plan B y mantener el foco en el objetivo de aprendizaje en vez de la tecnología"
+              },
+              "feedback": {
+                "a": "La RV no es inherentemente poco fiable — pero toda tecnología puede fallar. El principio es preparación, no evitación. Este profesor usa la RV con confianza porque está preparado para los problemas.",
+                "b": "Llegar temprano ayudó, pero el principio real es más amplio: probar el equipo, adaptar el plan sin estrés y tener una actividad de respaldo. Esta es la mentalidad de resolución de problemas.",
+                "c": "Correcto. Este profesor demuestra cada elemento de la mentalidad de resolución: (1) probar de antemano, (2) mantener la calma cuando surgen problemas, (3) adaptar el plan rápidamente, (4) tener una actividad de respaldo lista y (5) mantener el objetivo de aprendizaje como prioridad, no la tecnología."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "¿Es esto una buena práctica, un error común o una estrategia Plan B?",
+              "cat": {
+                "goodPractice": "Buena Práctica",
+                "commonMistake": "Error Común",
+                "planB": "Estrategia Plan B"
+              },
+              "i1": "Dedicar 10+ minutos a arreglar un visor durante clase mientras los estudiantes esperan",
+              "i2": "Rotar estudiantes por menos visores funcionales para que todos tengan tiempo de RV",
+              "i3": "Preparar una actividad de discusión que cubra el mismo objetivo de aprendizaje sin RV",
+              "i4": "Mostrar frustración visible cuando falla la tecnología delante de los estudiantes",
+              "i5": "Probar todos los visores antes de que lleguen los estudiantes en cada sesión",
+              "i6": "Tener un vídeo corto preparado que cubra el mismo tema que la experiencia de RV"
+            }
+          }
+        }
+      },
+      "vrEducationalApps": {
+        "b1": {
+          "title": "¿Qué hace que una app sea educativa?",
+          "exercise": {
+            "instruction": "Etiqueta cada afirmación como Hecho o Mito según lo que define una app educativa genuina de VR.",
+            "s1": {
+              "statement": "Una app de VR que permite a los estudiantes volar por el sistema solar sin tareas, retroalimentación ni evaluación califica como educativa.",
+              "explanation": "Mito. Sin objetivos de aprendizaje, acción del estudiante, retroalimentación o resultados medibles, esto es una experiencia de visualización — no una app educativa."
+            },
+            "s2": {
+              "statement": "Una app educativa de VR debe producir resultados de aprendizaje medibles que puedan observarse, puntuarse o registrarse.",
+              "explanation": "Hecho. Los resultados medibles son uno de los cuatro rasgos definitorios de una app educativa de VR, permitiendo a los instructores verificar que el aprendizaje ocurrió."
+            },
+            "s3": {
+              "statement": "Un hermoso video 360 grados de un arrecife de coral califica automáticamente como app educativa de VR.",
+              "explanation": "Mito. Un video 360 es visualización pasiva — el estudiante no actúa, no recibe retroalimentación ni demuestra aprendizaje. La belleza no equivale a educación."
+            },
+            "s4": {
+              "statement": "Si una app de VR requiere que el estudiante realice acciones y proporciona retroalimentación sobre esas acciones, cumple dos de los cuatro criterios educativos.",
+              "explanation": "Hecho. La acción del estudiante y la retroalimentación son dos de los cuatro rasgos. La app todavía necesitaría objetivos de aprendizaje claros y resultados medibles para ser completamente educativa."
+            },
+            "s5": {
+              "statement": "Un alto nivel de engagement de los estudiantes con una app de VR siempre indica que está ocurriendo un aprendizaje significativo.",
+              "explanation": "Mito. El engagement y el aprendizaje no son lo mismo. Los estudiantes pueden estar muy enganchados con contenido de entretenimiento que no produce aprendizaje medible."
+            }
+          },
+          "scenario": {
+            "context": "Tu jefe de departamento quiere comprar un juego VR popular para el aula. Los estudiantes que lo probaron durante un día de demostración estaban entusiasmados y muy enganchados. Sin embargo, la app no tiene objetivos de aprendizaje, ni mecanismo de retroalimentación, ni forma de rastrear el rendimiento de los estudiantes.",
+            "question": "¿Qué recomiendas?",
+            "choices": {
+              "a": "Comprarlo — el engagement de los estudiantes es el factor más importante, y el entusiasmo demuestra que funciona",
+              "b": "Explicar que a pesar del engagement, la app carece de los cuatro rasgos de una app educativa y sugerir evaluar alternativas que incluyan objetivos de aprendizaje, acción del estudiante, retroalimentación y resultados medibles",
+              "c": "Rechazarlo completamente — si es un juego, no puede tener valor educativo bajo ninguna circunstancia"
+            },
+            "feedback": {
+              "a": "El engagement importa, pero no es suficiente. Una app sin objetivos de aprendizaje, retroalimentación o resultados medibles es entretenimiento, no educación — sin importar lo entusiasmados que estén los estudiantes.",
+              "b": "Correcto. Reconoces el valor del engagement mientras señalas los criterios educativos ausentes. Sugerir alternativas con los cuatro rasgos es constructivo y basado en evidencia.",
+              "c": "Demasiado absoluto. Los juegos pueden ser educativos si incorporan objetivos de aprendizaje, retroalimentación y resultados medibles. El problema no es el formato sino la ausencia de diseño educativo."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor de ciencias usa una app de VR donde los estudiantes pueden rotar y hacer zoom en un modelo 3D de una célula humana. Los estudiantes pueden tocar orgánulos para ver etiquetas y descripciones cortas. No hay quiz, ni tarea, ni retroalimentación sobre las acciones del estudiante.",
+              "question": "¿Cumple esta app los criterios de una app educativa de VR?",
+              "choices": {
+                "a": "Cumple parcialmente los criterios — tiene objetivos de aprendizaje implícitos (anatomía) y algo de acción del estudiante (tocar), pero carece de retroalimentación y resultados medibles. Se acerca más a una referencia interactiva que a una app educativa completa.",
+                "b": "Sí — el modelo 3D y las etiquetas la hacen completamente educativa",
+                "c": "No — tiene cero valor educativo porque no hay quiz"
+              },
+              "feedback": {
+                "a": "Correcto. La app tiene elementos de educación pero se queda corta en retroalimentación y resultados medibles. Podría mejorarse con tareas como 'identifica tres orgánulos involucrados en la producción de energía' para ser verdaderamente educativa.",
+                "b": "Las etiquetas e interactividad son un comienzo, pero sin retroalimentación sobre las acciones del estudiante y resultados medibles, esto es más una herramienta de referencia que una app educativa completa.",
+                "c": "Un quiz es una forma de medir resultados, pero no la única. El problema es más amplio — la app carece de retroalimentación y tareas estructuradas, no solo de un quiz."
+              }
+            },
+            "c2": {
+              "context": "Hay dos apps de VR disponibles para enseñar seguridad contra incendios. La App A muestra un dramático video 360 de un edificio en llamas — los estudiantes miran desde una posición fija. La App B coloca a los estudiantes dentro de un edificio en llamas donde deben localizar salidas, usar extintores y evacuar — la app puntúa su tiempo de respuesta y decisiones.",
+              "question": "¿Cuál app es educativa según los cuatro criterios?",
+              "choices": {
+                "a": "La App A — el metraje dramático crea un impacto emocional más fuerte que los estudiantes recordarán",
+                "b": "La App B — requiere acción del estudiante, proporciona retroalimentación mediante puntuación, tiene objetivos claros (evacuación segura) y produce resultados medibles",
+                "c": "Ambas son educativas — solo usan enfoques diferentes para enseñar seguridad contra incendios"
+              },
+              "feedback": {
+                "a": "El impacto emocional ayuda a la memoria, pero la App A es visualización pasiva sin acción, retroalimentación ni resultados medibles. Falla en tres de los cuatro criterios.",
+                "b": "Correcto. La App B cumple los cuatro criterios: objetivos de aprendizaje claros, acción requerida del estudiante, retroalimentación mediante puntuación y resultados medibles. Esta es la definición de una app educativa de VR.",
+                "c": "La App A es una experiencia de visualización, no una app educativa. Tener contenido sobre un tema educativo no convierte automáticamente una app en educativa — el diseño debe incluir los cuatro criterios."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Una app debe requerir que el estudiante tome acción — no solo mire — para calificar como educativa.",
+                "explanation": "Verdadero. La acción del estudiante es uno de los cuatro rasgos esenciales. La visualización pasiva, por muy inmersiva que sea, no es educación."
+              },
+              "s2": {
+                "statement": "Cualquier app de VR utilizada en un entorno de aula es automáticamente educativa.",
+                "explanation": "Falso. El contexto de uso no cambia el diseño de la app. Una app de entretenimiento usada en un aula sigue siendo entretenimiento."
+              },
+              "s3": {
+                "statement": "La retroalimentación de la app — mostrando consecuencias o correcciones — es esencial para el aprendizaje.",
+                "explanation": "Verdadero. Sin retroalimentación, los estudiantes no pueden saber si sus acciones fueron correctas o cómo mejorar."
+              }
+            }
+          }
+        },
+        "b2": {
+          "title": "Dónde encontrar apps educativas de VR",
+          "exercise": {
+            "instruction": "Empareja cada canal de distribución con su característica principal.",
+            "p1": { "left": "Meta Store oficial", "right": "Curada y revisada; mayormente títulos comerciales con contenido educativo limitado" },
+            "p2": { "left": "App Lab", "right": "Barrera de publicación más baja; donde se publica la mayoría del contenido educativo de VR" },
+            "p3": { "left": "Apps privadas / institucionales", "right": "Desarrolladas a medida y distribuidas internamente por universidades, hospitales u organizaciones" },
+            "p4": { "left": "Experiencias WebXR", "right": "VR basado en navegador accesible por URL; sin instalación necesaria" },
+            "p5": { "left": "SideQuest", "right": "Plataforma de terceros para contenido sideloaded; requiere modo desarrollador activado" }
+          },
+          "scenario": {
+            "context": "Un profesor busca en la Meta Store oficial apps de formación clínica VR y no encuentra nada. Le dice al departamento que la simulación clínica en VR simplemente no existe para su área.",
+            "question": "¿Qué hay de malo en esta conclusión?",
+            "choices": {
+              "a": "Nada — si la Meta Store no lo tiene, la app probablemente no existe",
+              "b": "El profesor solo revisó un canal — la mayoría del contenido educativo de VR vive en App Lab, no en la tienda principal. También debería revisar apps institucionales y opciones WebXR.",
+              "c": "El profesor debería construir su propia app VR personalizada para resolver el problema"
+            },
+            "feedback": {
+              "a": "La Meta Store es solo un canal de distribución, y tiene contenido educativo limitado debido a sus requisitos de curación. La mayoría de apps educativas de VR se publican en otros lugares.",
+              "b": "Correcto. App Lab es el hogar principal del contenido educativo de VR. Los canales institucionales y las experiencias WebXR son fuentes adicionales que el profesor no ha explorado.",
+              "c": "Construir apps personalizadas es costoso y requiere mucho tiempo. Antes de tomar esa ruta, el profesor debería agotar todos los canales de distribución existentes."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Una escuela quiere usar una app de anatomía VR desarrollada por una universidad médica. La app no está en la Meta Store ni en App Lab — se distribuye directamente por la universidad mediante un archivo APK.",
+              "question": "¿Qué tipo de canal de distribución es este?",
+              "choices": {
+                "a": "Es una app privada/institucional — distribuida internamente por la organización desarrolladora, típicamente mediante instalación directa",
+                "b": "Es una experiencia WebXR ya que no está en las tiendas oficiales",
+                "c": "Es una app de SideQuest que la universidad subió"
+              },
+              "feedback": {
+                "a": "Correcto. Las apps privadas/institucionales son desarrolladas a medida por organizaciones y distribuidas a través de sus propios canales, frecuentemente requiriendo instalación directa mediante APK.",
+                "b": "WebXR funciona en el navegador — esta app requiere instalación mediante APK, lo que la convierte en una distribución privada/institucional.",
+                "c": "SideQuest es una plataforma de terceros. Las apps institucionales distribuidas directamente por el desarrollador usan su propio canal privado."
+              }
+            },
+            "c2": {
+              "context": "Un profesor de química encuentra una experiencia VR de la tabla periódica que funciona completamente en el navegador del Meta Quest mediante una URL. No necesita instalación de app.",
+              "question": "¿Qué canal de distribución representa esto?",
+              "choices": {
+                "a": "App Lab — ya que es accesible sin la tienda principal",
+                "b": "WebXR — experiencias VR basadas en navegador que no requieren instalación, accesibles por URL dentro del navegador del headset",
+                "c": "Este no es un canal de distribución real — la VR basada en navegador no existe"
+              },
+              "feedback": {
+                "a": "App Lab aún requiere instalación de app. Esta experiencia funciona directamente en el navegador sin ninguna instalación.",
+                "b": "Correcto. Las experiencias WebXR son VR basado en navegador que funcionan mediante URL, siendo las más fáciles de desplegar en aulas — sin instalación, sin actualizaciones, sin preocupaciones de almacenamiento.",
+                "c": "WebXR es una tecnología bien establecida. Las experiencias VR basadas en navegador son cada vez más comunes para uso educativo."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada elemento según sus requisitos de acceso.",
+              "cat": {
+                "freeAccess": "Acceso libre / abierto",
+                "institutional": "Requiere acceso institucional",
+                "devSetup": "Requiere configuración de desarrollador"
+              },
+              "i1": "Apps de App Lab compartidas por enlace",
+              "i2": "APK desarrollado por universidad distribuido internamente",
+              "i3": "Experiencia WebXR mediante URL pública",
+              "i4": "Apps de SideQuest que requieren modo desarrollador",
+              "i5": "App de formación hospitalaria en sistema MDM privado"
+            }
+          }
+        },
+        "b3": {
+          "title": "Apps de simulación: la categoría de mayor impacto",
+          "exercise": {
+            "instruction": "Eres un instructor de enfermería eligiendo VR para formación en habilidades clínicas. Navega por las decisiones para construir la mejor ruta de aprendizaje.",
+            "scenario": "Tus estudiantes de enfermería necesitan aprender habilidades de evaluación de pacientes. Tienes acceso a tres tipos de apps VR: exploración (tour virtual del hospital), entrenamiento guiado (protocolo de evaluación paso a paso) y simulación (evaluación abierta de pacientes con consecuencias).",
+            "n1": {
+              "prompt": "Tus estudiantes nunca han realizado una evaluación de pacientes. ¿Qué experiencia VR seleccionas primero?",
+              "a": { "label": "App de exploración — que recorran el hospital virtual para familiarizarse con el entorno", "feedback": "Un punto de partida razonable para orientación, pero la exploración sola no enseña el procedimiento de evaluación. Los estudiantes necesitan instrucción estructurada después." },
+              "b": { "label": "App de entrenamiento guiado — guiarlos por el protocolo de evaluación paso a paso con retroalimentación", "feedback": "Excelente elección. Para estudiantes principiantes, el entrenamiento guiado proporciona la instrucción estructurada y paso a paso que necesitan antes de practicar de forma independiente." },
+              "c": { "label": "App de simulación — lanzarlos a un escenario realista para que aprendan haciendo", "feedback": "Demasiado pronto. Sin conocer el procedimiento correcto, los estudiantes cometerán errores sin entender por qué. El entrenamiento guiado debe venir antes de la simulación abierta." }
+            },
+            "n2": {
+              "prompt": "Los estudiantes completaron el entrenamiento guiado. Varios aún cometieron errores en algunos pasos. ¿Cuál es el mejor siguiente paso?",
+              "a": { "label": "Pasar a simulación — que practiquen la evaluación completa con consecuencias por sus decisiones", "feedback": "Buena progresión. Después de aprender los pasos mediante entrenamiento guiado, la simulación proporciona el entorno de práctica realista donde los errores tienen consecuencias visibles, profundizando el aprendizaje." },
+              "b": { "label": "Repetir el entrenamiento guiado — necesitan más práctica con los pasos estructurados", "feedback": "Algo de repetición puede ayudar, pero en algún momento los estudiantes necesitan practicar sin andamiaje. La simulación proporciona la oportunidad de transferencia que el entrenamiento guiado repetitivo no puede." },
+              "c": { "label": "Saltar a evaluación — evaluarlos inmediatamente para ver quién aprueba", "feedback": "Prematuro. Los estudiantes que acaban de aprender los pasos necesitan tiempo de práctica en simulación antes de ser evaluados. La evaluación debe venir después de suficiente práctica." }
+            },
+            "n3": {
+              "prompt": "Has construido una ruta de aprendizaje: primero entrenamiento guiado, luego simulación para práctica. Tus estudiantes ahora realizan evaluaciones de pacientes en VR con consecuencias visibles por sus decisiones.",
+              "endFeedback": "Bien hecho. Seguiste la secuencia más efectiva: el entrenamiento guiado enseña los pasos, luego la simulación demuestra que los estudiantes los conocen. Esta progresión guiado → simulación es la base de la formación efectiva basada en VR."
+            }
+          },
+          "scenario": {
+            "context": "Un profesor usa una simulación VR de combate contra incendios con los estudiantes. La simulación es realista — los estudiantes deben localizar salidas, usar extintores y evacuar. Los estudiantes pasaron un rato emocionante y hablaron de ello todo el día. Sin embargo, cuando se les pidió explicar lo que aprendieron sobre procedimientos de seguridad contra incendios, ninguno pudo articular los pasos claramente.",
+            "question": "¿Qué salió mal?",
+            "choices": {
+              "a": "La simulación fue demasiado emocionante — el entretenimiento anuló el aprendizaje",
+              "b": "El profesor se saltó la instrucción previa y la reflexión posterior — sin un objetivo de aprendizaje claro de antemano y una reflexión estructurada después, la experiencia fue atractiva pero no educativa",
+              "c": "Las apps de simulación no son efectivas para aprender — el profesor debería haber usado un video en su lugar"
+            },
+            "feedback": {
+              "a": "La emoción no es el problema — es la falta de estructura alrededor de la experiencia. Las simulaciones necesitan objetivos claros establecidos de antemano y reflexión después para convertir la emoción en aprendizaje.",
+              "b": "Correcto. Sin una instrucción previa estableciendo el objetivo de aprendizaje y una reflexión posterior conectando la experiencia con el conocimiento, incluso la simulación más potente se convierte solo en un evento emocionante. La estructura convierte la experiencia en aprendizaje.",
+              "c": "Las simulaciones son altamente efectivas para el aprendizaje basado en habilidades. El problema aquí es la estructura pedagógica, no el medio."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Una escuela vocacional ofrece dos apps VR para cableado eléctrico: la App A guía a los estudiantes por cada conexión de cables paso a paso con retroalimentación inmediata. La App B coloca a los estudiantes en un escenario realista donde deben cablear un circuito de memoria — un cableado incorrecto causa un cortocircuito visible.",
+              "question": "¿Qué tipo es cada app y cuándo debería usarse cada una?",
+              "choices": {
+                "a": "La App A es entrenamiento guiado (para primer aprendizaje), la App B es simulación (para práctica después de aprender los pasos) — usar A primero, luego B",
+                "b": "Ambas son simulaciones — solo tienen diferentes niveles de dificultad",
+                "c": "La App B es mejor en todos los casos porque los estudiantes aprenden más de cometer errores"
+              },
+              "feedback": {
+                "a": "Correcto. El entrenamiento guiado enseña los pasos; la simulación demuestra que los conoces. El enfoque más efectivo usa entrenamiento guiado primero, luego simulación para refuerzo.",
+                "b": "Sirven propósitos fundamentalmente diferentes. La App A proporciona andamiaje e instrucción; la App B proporciona práctica abierta con consecuencias. Son tipos de apps distintos.",
+                "c": "Cometer errores es valioso, pero solo después de que los estudiantes conozcan el procedimiento correcto. Sin entrenamiento guiado primero, los estudiantes en simulación no saben qué están haciendo mal ni por qué."
+              }
+            },
+            "c2": {
+              "context": "Una facultad de medicina usa una simulación VR donde estudiantes de enfermería evalúan a un paciente virtual. La simulación rastrea tiempo de respuesta, completitud de la evaluación y precisión de las decisiones. Después de la simulación, el instructor revisa los datos de rendimiento de cada estudiante.",
+              "question": "¿Qué función adicional cumple esta simulación más allá de la práctica?",
+              "choices": {
+                "a": "Solo sirve como práctica — las simulaciones no pueden evaluar",
+                "b": "También funciona como herramienta de evaluación — el rastreo de rendimiento proporciona datos objetivos sobre la competencia, combinando simulación con valoración",
+                "c": "Reemplaza la necesidad de cualquier práctica clínica real"
+              },
+              "feedback": {
+                "a": "Muchas simulaciones incluyen rastreo de rendimiento integrado, lo que añade una dimensión evaluativa. Los datos producidos pueden servir tanto para evaluación formativa como sumativa.",
+                "b": "Correcto. Cuando una simulación rastrea y reporta el rendimiento del estudiante, combina práctica con evaluación. El instructor obtiene datos objetivos sobre la competencia de cada estudiante.",
+                "c": "La simulación VR complementa pero no reemplaza la práctica real. Proporciona un entorno seguro para práctica inicial y evaluación antes de la exposición clínica real."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "En las apps de simulación, los errores tienen consecuencias visibles — lo que las hace efectivas para el aprendizaje.",
+                "explanation": "Verdadero. La capacidad de fallar de forma segura y ver consecuencias es la ventaja central de la formación basada en simulación VR."
+              },
+              "s2": {
+                "statement": "Los estudiantes siempre deben empezar con apps de simulación antes de probar el entrenamiento guiado.",
+                "explanation": "Falso. La secuencia más efectiva es entrenamiento guiado primero (para aprender los pasos), luego simulación (para practicar sin andamiaje)."
+              },
+              "s3": {
+                "statement": "Una app de simulación puede servir tanto como herramienta de práctica como de evaluación si rastrea el rendimiento del estudiante.",
+                "explanation": "Verdadero. Cuando las simulaciones registran datos de rendimiento, combinan práctica con evaluación, dando a los instructores evidencia objetiva de competencia."
+              }
+            }
+          }
+        },
+        "b4": {
+          "title": "Elegir la app correcta para tu objetivo",
+          "exercise": {
+            "instruction": "Ordena los cuatro tipos de apps VR en la secuencia de aprendizaje correcta — desde la primera exposición hasta la evaluación final.",
+            "scaleStart": "Primera etapa",
+            "scaleEnd": "Etapa final",
+            "i1": "Exploración — orientar al estudiante en el entorno y construir contexto",
+            "i2": "Entrenamiento guiado — enseñar el procedimiento correcto paso a paso con retroalimentación",
+            "i3": "Simulación — practicar sin andamiaje, experimentando consecuencias",
+            "i4": "Evaluación — verificar competencia con datos de rendimiento objetivos y rastreados"
+          },
+          "scenario": {
+            "context": "Una escuela vocacional de soldadura tiene tres apps VR disponibles: una exploración de un taller de soldadura profesional, un tutorial guiado de soldadura paso a paso con retroalimentación, y una simulación de soldadura donde los estudiantes deben completar uniones que se prueban para integridad estructural.",
+            "question": "¿En qué orden deberían los estudiantes usar estas apps?",
+            "choices": {
+              "a": "Simulación primero — los estudiantes aprenden mejor con práctica directa, incluso sin instrucción previa",
+              "b": "Exploración primero (para entender el entorno del taller), luego tutorial guiado (para aprender la técnica correcta), luego simulación (para practicar independientemente)",
+              "c": "No importa — los estudiantes pueden usarlas en cualquier orden y lograr el mismo resultado"
+            },
+            "feedback": {
+              "a": "Empezar con simulación antes de que los estudiantes conozcan la técnica correcta lleva a errores no estructurados. Los estudiantes necesitan aprender los pasos primero mediante entrenamiento guiado.",
+              "b": "Correcto. Esto sigue la secuencia de aprendizaje ideal: orientar → instruir → practicar. Cada etapa se construye sobre la anterior, creando una ruta de aprendizaje completa.",
+              "c": "La secuencia importa significativamente. Saltar a la simulación antes del entrenamiento guiado significa que los estudiantes no conocen el procedimiento correcto, y saltarse la exploración significa que carecen de contexto ambiental."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor de idiomas quiere que los estudiantes practiquen conversaciones de entrevistas de trabajo en VR. Los estudiantes necesitan responder preguntas de un entrevistador virtual, recibir retroalimentación sobre sus respuestas y mejorar mediante múltiples intentos.",
+              "question": "¿Qué tipo de app se ajusta a este objetivo?",
+              "choices": {
+                "a": "Una app de comunicación/conversacional — proporciona interacción basada en diálogo con personajes virtuales, conversaciones ramificadas y retroalimentación sobre habilidades comunicativas",
+                "b": "Una app de simulación — porque los estudiantes están practicando una habilidad del mundo real",
+                "c": "Una app de evaluación — porque evalúa el rendimiento del estudiante"
+              },
+              "feedback": {
+                "a": "Correcto. Las apps de comunicación se especializan en interacción basada en diálogo con personajes virtuales realistas. Están diseñadas específicamente para formación en habilidades blandas como entrevistas, atención al cliente y comunicación interpersonal.",
+                "b": "Aunque la práctica de entrevistas involucra habilidades del mundo real, las apps de comunicación son una categoría especializada diseñada específicamente para interacción conversacional, no simulación física.",
+                "c": "Las apps de evaluación se centran en medir competencia, no en practicarla. El profesor quiere que los estudiantes practiquen y mejoren, lo cual es una función de formación."
+              }
+            },
+            "c2": {
+              "context": "Un profesor de historia quiere que los estudiantes exploren una reconstrucción virtual de la Roma antigua. No hay tareas, ni quiz, ni actividad estructurada — el profesor solo quiere que los estudiantes tengan una idea del entorno antes de una clase sobre arquitectura romana.",
+              "question": "¿Qué tipo de app es esta y es apropiada para este propósito?",
+              "choices": {
+                "a": "Es una simulación — los estudiantes están simulando estar en la Roma antigua",
+                "b": "Es una app de entrenamiento guiado — los estudiantes están siendo formados en historia romana",
+                "c": "Es una app de exploración — y es apropiada para construir contexto antes de la clase, siempre que el profesor la acompañe con una pregunta guía o tarea de observación"
+              },
+              "feedback": {
+                "a": "La simulación requiere interacción con consecuencias. Explorar pasivamente un entorno sin realizar tareas es exploración, no simulación.",
+                "b": "El entrenamiento guiado requiere una secuencia fija de pasos con retroalimentación. La exploración libre de un entorno no es entrenamiento guiado.",
+                "c": "Correcto. Las apps de exploración orientan a los estudiantes en un entorno. Usarla antes de una clase para construir contexto es un caso de uso válido — pero siempre acompáñala con una tarea específica para evitar el 'efecto museo' del recorrido pasivo."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Empareja cada escenario de aprendizaje con el tipo de app VR más apropiado.",
+              "cat": {
+                "exploration": "App de exploración",
+                "simulation": "App de simulación",
+                "guidedTraining": "App de entrenamiento guiado"
+              },
+              "i1": "Los estudiantes recorren un sitio arqueológico virtual antes de estudiar civilizaciones antiguas",
+              "i2": "Estudiantes de enfermería practican decisiones de triaje con deterioro realista del paciente",
+              "i3": "Nuevos técnicos siguen instrucciones paso a paso para ensamblar una placa de circuito",
+              "i4": "Estudiantes de geografía navegan una selva virtual para observar biodiversidad",
+              "i5": "Pilotos practican procedimientos de aterrizaje de emergencia con fallos de instrumentos",
+              "i6": "Asistentes de laboratorio aprenden la secuencia correcta para manejar materiales peligrosos"
+            }
+          }
+        },
+        "b5": {
+          "title": "Evaluar apps antes de la clase",
+          "exercise": {
+            "instruction": "Clasifica cada pregunta de evaluación en la categoría correcta del checklist: Pedagógica, Técnica o Aula.",
+            "cat": {
+              "pedagogical": "Checklist pedagógico",
+              "technical": "Checklist técnico",
+              "classroom": "Checklist de aula"
+            },
+            "i1": "¿Qué aprende específicamente el estudiante con esta app?",
+            "i2": "¿Qué hace activamente el estudiante dentro de la app?",
+            "i3": "¿Qué retroalimentación proporciona la app sobre las acciones del estudiante?",
+            "i4": "¿Cuánto tarda la app en cargar e iniciarse?",
+            "i5": "¿La interfaz es intuitiva o requiere explicación extensa?",
+            "i6": "¿La app es estable — se cuelga, tiene lag o sobrecalienta el headset?",
+            "i7": "¿Cuál es la duración real incluyendo preparación y transiciones?",
+            "i8": "¿Cuántos estudiantes pueden usar la app simultáneamente?",
+            "i9": "¿Cuál es tu Plan B si la tecnología falla durante la clase?"
+          },
+          "scenario": {
+            "context": "Un colega recomienda una app de anatomía VR diciendo 'las reseñas en línea son geniales — 4.8 estrellas!' Tienes una clase programada para mañana y estás considerando usar la app sin probarla tú mismo primero.",
+            "question": "¿Deberías usarla sin probar basándote en las reseñas?",
+            "choices": {
+              "a": "Sí — 4.8 estrellas es un indicador fuerte de calidad y no hay tiempo para probar",
+              "b": "No — las reseñas en línea no pueden revelar cómo se comporta la app bajo tus condiciones específicas de aula. Siempre prueba las apps tú mismo en el mismo hardware antes de usarlas con estudiantes.",
+              "c": "Quizás — úsala mañana como prueba piloto y evalúala según la reacción de los estudiantes"
+            },
+            "feedback": {
+              "a": "Las reseñas reflejan las experiencias de otros usuarios en otros contextos. No pueden decirte sobre tiempos de carga, requisitos de espacio, compatibilidad con casting o vacíos pedagógicos en tu configuración específica.",
+              "b": "Correcto. Las reseñas en línea no sustituyen las pruebas prácticas en tus propias condiciones de aula. Los problemas técnicos, vacíos pedagógicos y restricciones prácticas solo se descubren probando tú mismo.",
+              "c": "Usar a los estudiantes como sujetos de prueba para tecnología no probada arriesga desperdiciar su tiempo de aprendizaje. Si la app se cuelga o no funciona como se esperaba, no tienes un Plan B preparado."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Un profesor prueba una app de laboratorio de química VR antes de la clase. La app carga rápido, la interfaz es intuitiva y funciona sin problemas ni cuelgues. El profesor declara que está lista para uso en el aula.",
+              "question": "¿Ha completado el profesor una evaluación exhaustiva?",
+              "choices": {
+                "a": "No — solo verificó la dimensión técnica. Aún necesita evaluar la dimensión pedagógica (qué aprenden los estudiantes, qué hacen, qué retroalimentación da la app) y la dimensión de aula (duración, capacidad, Plan B).",
+                "b": "Sí — si la app funciona técnicamente, está lista para usar",
+                "c": "Casi — solo necesita verificar si el casting funciona"
+              },
+              "feedback": {
+                "a": "Correcto. Una evaluación exhaustiva cubre tres dimensiones: pedagógica, técnica y de aula. Pasar la verificación técnica es necesario pero no suficiente.",
+                "b": "La estabilidad técnica es solo una de tres dimensiones. Una app que funciona perfectamente pero no enseña nada o no puede manejar el tamaño de tu clase sigue sin estar lista para el aula.",
+                "c": "El casting es un elemento del checklist de aula, pero hay muchas más preguntas de aula y pedagógicas que quedan sin responder."
+              }
+            },
+            "c2": {
+              "context": "Una app VR de formación en seguridad eléctrica puntúa bien en el checklist pedagógico: objetivos claros, tareas activas del estudiante, retroalimentación y resultados medibles. Sin embargo, durante las pruebas, tarda 4 minutos en cargar en cada headset, requiere un gran espacio de juego a escala de habitación y frecuentemente sobrecalienta el headset después de 10 minutos.",
+              "question": "¿Debería usarse esta app en clase?",
+              "choices": {
+                "a": "No — no sin modificaciones a la configuración técnica. La calidad pedagógica es fuerte, pero los problemas técnicos consumirán tiempo de clase y causarán interrupciones.",
+                "b": "Sí — la calidad pedagógica es excelente y los problemas técnicos se pueden resolver sobre la marcha durante la clase",
+                "c": "Solo si tienes una sala grande y headsets potentes"
+              },
+              "feedback": {
+                "a": "Todavía no — pero no es un rechazo. La calidad pedagógica hace que esta app valga la pena. Trabaja en los problemas técnicos: precarga la app antes de la clase, planifica el requisito de espacio y programa sesiones más cortas para evitar sobrecalentamiento.",
+                "b": "Correcto. La calidad pedagógica justifica el esfuerzo, pero los problemas técnicos necesitan soluciones planificadas — no arreglos improvisados durante la clase. Precarga apps, organiza el espacio y planifica pausas de enfriamiento.",
+                "c": "Tener el hardware adecuado es parte de la solución, pero el tiempo de carga de 4 minutos y los problemas de sobrecalentamiento requieren soluciones procedimentales sin importar la calidad del equipo."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Toda app de VR debería ser probada por el instructor en condiciones de aula antes de usarse con estudiantes.",
+                "explanation": "Verdadero. Las pruebas prácticas en las mismas condiciones que enfrentarán los estudiantes son la única forma de descubrir problemas técnicos, pedagógicos y prácticos antes de que afecten el aprendizaje."
+              },
+              "s2": {
+                "statement": "Si una app de VR tiene altas calificaciones en la Meta Store, no necesita ser probada antes del uso en aula.",
+                "explanation": "Falso. Las calificaciones de la tienda reflejan otros contextos y prioridades. No pueden predecir cómo se comportará la app bajo tus condiciones específicas de aula."
+              },
+              "s3": {
+                "statement": "Una evaluación completa de app cubre tres dimensiones: pedagógica, técnica y de aula.",
+                "explanation": "Verdadero. Las tres dimensiones deben superarse. Una app que falla en cualquiera de ellas creará problemas durante la sesión."
+              }
+            }
+          }
+        },
+        "b6": {
+          "title": "Integrar apps en tus lecciones",
+          "exercise": {
+            "instruction": "Arrastra las palabras correctas a los espacios en blanco para completar el marco de integración de lecciones VR.",
+            "template": "Antes de la sesión VR, proporciona una __blank1__ clara que establezca el __blank2__ y explique qué harán los estudiantes. Durante VR, __blank3__ el progreso de los estudiantes y usa __blank4__ para observar desde fuera del headset. Después de VR, realiza un __blank5__ estructurado para conectar la experiencia con la práctica real.",
+            "blank1": "instrucción previa",
+            "blank2": "objetivo de aprendizaje",
+            "blank3": "monitorea",
+            "blank4": "casting",
+            "blank5": "debriefing",
+            "distractor1": "tarea para casa",
+            "distractor2": "calificación"
+          },
+          "scenario": {
+            "context": "Un profesor usa una app de laboratorio de química VR durante 30 minutos. No hubo instrucción previa — a los estudiantes se les dijo 'solo abran la app.' No hubo reflexión posterior — los estudiantes se quitaron los headsets y pasaron a la siguiente materia. Dos días después, ningún estudiante puede recordar el procedimiento experimental que realizaron en VR.",
+            "question": "¿Cuál fue el error principal?",
+            "choices": {
+              "a": "La sesión VR fue demasiado larga — 30 minutos excede el tiempo recomendado",
+              "b": "La app se usó de forma aislada sin la estructura antes-durante-después — ninguna instrucción previa estableció un propósito, ningún monitoreo aseguró el engagement, y ninguna reflexión posterior conectó la experiencia con el aprendizaje",
+              "c": "La app de laboratorio de química fue la elección incorrecta — un video habría sido más efectivo"
+            },
+            "feedback": {
+              "a": "La duración de la sesión no fue el problema central. Incluso una sesión de 10 minutos sin instrucción previa ni reflexión posterior produciría el mismo resultado — engagement sin retención.",
+              "b": "Correcto. Sin instrucción previa, los estudiantes no tenían foco. Sin monitoreo, el profesor no pudo guiar la experiencia. Sin reflexión posterior, la experiencia no se procesó en conocimiento. Las tres etapas son esenciales.",
+              "c": "La app en sí no fue el problema — la ausencia de estructura pedagógica a su alrededor lo fue. Cualquier herramienta, incluido el video, requiere un marco antes-durante-después."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Una profesora planifica una sesión VR usando una simulación de evacuación por incendio. Escribe esta instrucción previa: 'Hoy van a usar una simulación VR de evacuación por incendio. Su objetivo es evacuar a todos los ocupantes en 3 minutos usando el protocolo correcto. Presten atención al orden en que revisan las habitaciones y cómo se comunican con los ocupantes virtuales.'",
+              "question": "¿Es esta una instrucción previa efectiva?",
+              "choices": {
+                "a": "No — revela demasiada información y arruina la experiencia",
+                "b": "Sí — es clara, establece un objetivo específico, dice a los estudiantes qué hacer y define cómo se ve el éxito, todo en menos de 60 segundos",
+                "c": "Es demasiado detallada — un simple 'hagan lo mejor que puedan' sería suficiente"
+              },
+              "feedback": {
+                "a": "Una buena instrucción previa debe aclarar el propósito, no crear misterio. Los estudiantes necesitan saber qué están haciendo y en qué enfocarse — esto es orientación, no spoilers.",
+                "b": "Correcto. Esta instrucción previa sigue la mejor práctica: objetivo claro, tarea específica y criterios de éxito. Enfoca a los estudiantes sin ser innecesariamente larga.",
+                "c": "Instrucciones vagas como 'hagan lo mejor que puedan' no proporcionan enfoque. Los estudiantes necesitan saber el objetivo específico y en qué prestar atención."
+              }
+            },
+            "c2": {
+              "context": "Después de una simulación VR de evaluación de pacientes, un profesor hace estas preguntas de reflexión: '¿Qué pasó durante tu evaluación? ¿Qué decisión fue la más difícil? ¿Qué harías diferente la próxima vez? ¿Cómo se conecta esto con la práctica clínica real?'",
+              "question": "¿Es esta una reflexión posterior efectiva?",
+              "choices": {
+                "a": "Sí — sigue una progresión estructurada desde describir la experiencia, analizar decisiones, hasta conectar con la práctica del mundo real",
+                "b": "No — hace demasiadas preguntas y tomará demasiado tiempo",
+                "c": "No — la reflexión posterior solo debería preguntar si los estudiantes disfrutaron la experiencia"
+              },
+              "feedback": {
+                "a": "Correcto. Estas preguntas siguen una progresión natural de reflexión: recuerdo (qué pasó), análisis (qué fue difícil, qué cambiarían) y transferencia (conexión con el mundo real). Esta estructura consolida las experiencias VR en conocimiento duradero.",
+                "b": "Cuatro preguntas enfocadas se pueden cubrir en 5-10 minutos. La profundidad de la reflexión es más importante que la velocidad — saltarse la reflexión por completo sería la verdadera pérdida de tiempo.",
+                "c": "El feedback sobre disfrute no es reflexión posterior. La reflexión estructurada procesa la experiencia en conocimiento mediante reflexión, análisis y conexión con el mundo real."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Clasifica cada acción en la fase correcta de integración de lecciones VR.",
+              "cat": {
+                "before": "Antes de VR",
+                "during": "Durante VR",
+                "after": "Después de VR"
+              },
+              "i1": "Establecer el objetivo de aprendizaje y explicar qué harán los estudiantes",
+              "i2": "Usar casting para observar las experiencias de los estudiantes desde fuera del headset",
+              "i3": "Preguntar a los estudiantes qué harían diferente la próxima vez",
+              "i4": "Probar la app tú mismo en el mismo hardware que usarán los estudiantes",
+              "i5": "Asistir a estudiantes que encuentren dificultades técnicas",
+              "i6": "Conectar la experiencia VR con la práctica real mediante discusión"
+            }
+          }
+        }
       }
     },
     "quizStep": {
@@ -3332,6 +4319,90 @@
           "c": "Suspender — la comunicación es la habilidad más importante en cirugía",
           "d": "Nota media — dividir la diferencia entre el buen trabajo técnico y la falta de comunicación",
           "explanation": "La evaluación en RV captura cuatro áreas: habilidades (precisión de ejecución), toma de decisiones (elecciones cognitivas), procedimientos (cumplimiento de protocolos) y comunicación (comportamiento profesional). Este estudiante destaca en habilidades y procedimientos pero tiene una laguna específica en comunicación. La retroalimentación matizada y multidimensional es más útil que una simple nota de aprobado/suspenso o promedio."
+        }
+      },
+      "solvingCommonVrProblems": {
+        "q1": {
+          "question": "Durante una lección de RV, la mitad de los visores pierden WiFi de repente. Los estudiantes llevan 10 minutos de una simulación de 20 minutos. ¿Qué haces?",
+          "a": "Parar a todos y solucionar todos los visores juntos — la justicia requiere que todos los estudiantes tengan la misma experiencia",
+          "b": "Que los estudiantes afectados activen/desactiven WiFi en Quick Settings. Si no se arregla en 2 minutos, rotarlos a visores que funcionen para que el aprendizaje continúe.",
+          "c": "Terminar la sesión antes — los problemas de WiFi solo empeorarán",
+          "d": "Reiniciar todos los visores simultáneamente para restablecer las conexiones de red",
+          "explanation": "Se aplica la regla de los 2 minutos. Un rápido toggle de WiFi arregla la mayoría de caídas; si no, rota a los estudiantes a visores funcionales. Nunca pares toda la clase por un problema que afecta solo a algunos visores — los estudiantes con dispositivos funcionando deben seguir aprendiendo."
+        },
+        "q2": {
+          "question": "Un aula tiene un espejo de cuerpo entero en una pared e iluminación tenue. Los estudiantes reportan que los límites del Guardian se reinician constantemente durante la RV. ¿Cuál es la solución principal?",
+          "a": "Cambiar todos los visores a modo desarrollador para saltarse el Guardian",
+          "b": "Actualizar el firmware del visor — es un error conocido del Guardian en versiones anteriores",
+          "c": "Mejorar la iluminación de la sala y cubrir o hacer que los estudiantes miren en dirección contraria al espejo — las cámaras de seguimiento necesitan iluminación uniforme y superficies no reflectantes",
+          "d": "Que los estudiantes dibujen límites muy pequeños para que las cámaras tengan menos espacio que rastrear",
+          "explanation": "La iluminación tenue y las superficies reflectantes son las dos principales causas de fallos del Guardian. Las cámaras del visor necesitan iluminación uniforme para detectar el entorno, y los espejos crean reflejos falsos que confunden el mapeo espacial. Arreglar el entorno físico soluciona la causa raíz."
+        },
+        "q3": {
+          "question": "Un visor no enciende. No aparece ningún LED al conectarlo al cargador. Has mantenido el botón de encendido 3 segundos sin respuesta. ¿Qué deberías probar a continuación?",
+          "a": "Un reinicio forzado — mantener encendido + bajar volumen durante 30 segundos",
+          "b": "Probar un cable USB-C diferente y un adaptador de corriente diferente — los cables dañados y los cargadores de bajo voltaje son causas comunes que impiden la carga",
+          "c": "Restaurar el visor de fábrica usando el menú de arranque",
+          "d": "El visor está roto y necesita ser enviado al servicio técnico del fabricante",
+          "explanation": "Sin LED al enchufar normalmente significa que la corriente no llega al visor. Antes de intentar un reinicio forzado en un dispositivo sin señales de vida, verifica la ruta de carga. Los cables USB-C dañados son una causa frecuente e infradiagnosticada — simplemente cambiar el cable a menudo resuelve el problema."
+        },
+        "q4": {
+          "question": "Estás transmitiendo la vista de RV de un estudiante al TV del aula vía Chromecast. La imagen se congela cada pocos segundos y el casting se desconecta. Ambos dispositivos están en la WiFi escolar. ¿Cuál es la causa más probable?",
+          "a": "El hardware del Chromecast es demasiado viejo y necesita reemplazarse por un modelo más nuevo",
+          "b": "El AP isolation del router escolar está interfiriendo con el tráfico entre dispositivos — el casting requiere que los dispositivos se comuniquen libremente en la misma red",
+          "c": "El estudiante se mueve demasiado rápido en la RV para que la transmisión del casting siga el ritmo",
+          "d": "El visor no tiene suficiente batería para mantener una transmisión de casting",
+          "explanation": "Las redes escolares frecuentemente activan AP isolation (aislamiento de clientes) por seguridad, lo que impide que dispositivos en la misma WiFi se comuniquen directamente entre sí. Esto bloquea el tráfico de casting. La solución es pedir a IT que habilite los dispositivos de RV o cree una VLAN dedicada para el equipo de RV del aula."
+        },
+        "q5": {
+          "question": "Tres de doce visores fallan durante una sesión de RV. Un profesor pasa 12 minutos intentando arreglarlos mientras los estudiantes esperan sentados. El tiempo restante de RV es solo 5 minutos. ¿Cuál fue el mayor error del profesor?",
+          "a": "No tener suficientes visores de repuesto disponibles",
+          "b": "Violar el límite de 2 minutos para resolución de problemas — después de 2 minutos, el profesor debería haber reorganizado la clase para rotar con los 9 visores funcionales y arreglar los rotos después de clase",
+          "c": "No llamar al soporte técnico inmediatamente cuando fallaron los visores",
+          "d": "Empezar la sesión de RV sin probar cada visor de antemano",
+          "explanation": "La regla de los 2 minutos existe precisamente para esta situación. Doce minutos de resolución de problemas quemaron todo el tiempo de aprendizaje restante de la sesión para cada estudiante. Reorganizar con 9 visores habría preservado tiempo significativo de RV para todos los estudiantes, y los 3 visores rotos podrían diagnosticarse con calma después de clase."
+        }
+      },
+      "vrEducationalApps": {
+        "q1": {
+          "question": "Un profesor encuentra una app de VR con visuales impresionantes donde los estudiantes vuelan por el sistema solar durante 15 minutos. No hay tareas, ni retroalimentación, ni evaluación. El profesor dice que es educativa porque los estudiantes están enganchados. ¿Cuál es tu juicio?",
+          "a": "Es educativa — los visuales inmersivos por sí solos crean una experiencia de aprendizaje memorable",
+          "b": "No es educativa — carece de objetivos de aprendizaje, acción del estudiante y retroalimentación, lo que la convierte en una experiencia de visualización y no en una app educativa",
+          "c": "Se convierte en educativa si los estudiantes la discuten después en clase",
+          "d": "Es educativa siempre que los estudiantes tomen notas mientras miran la experiencia",
+          "explanation": "El engagement no es aprendizaje. Una app educativa genuina de VR requiere cuatro rasgos: objetivos de aprendizaje claros, acción del estudiante, retroalimentación y resultados medibles. Un recorrido pasivo, por muy bonito que sea, no cumple ninguno de estos criterios."
+        },
+        "q2": {
+          "question": "Una instructora de enfermería necesita apps de simulación clínica VR para entrenamiento en evaluación de pacientes. La Meta Store oficial no tiene nada adecuado. Concluye que la formación clínica en VR no existe. ¿Qué debería hacer?",
+          "a": "Aceptarlo — si la Meta Store no lo tiene, las apps de formación clínica en VR aún no existen",
+          "b": "Revisar App Lab — la mayoría del contenido educativo de VR se publica allí porque tiene una barrera de publicación más baja que la tienda principal",
+          "c": "Construir una app VR personalizada desde cero — es la única opción para materias especializadas",
+          "d": "Usar un video 360 grados de YouTube de una sala de hospital en su lugar",
+          "explanation": "App Lab es el canal de distribución secundario de Meta donde vive la mayoría del contenido educativo de VR. Su barrera de publicación más baja lo convierte en el hogar principal de apps educativas especializadas, incluidas las simulaciones de formación clínica."
+        },
+        "q3": {
+          "question": "Quieres que los estudiantes aprendan un protocolo de lavado de manos quirúrgico paso a paso, recibiendo retroalimentación inmediata en cada etapa antes de pasar a la siguiente. ¿Qué tipo de app VR se ajusta mejor a este objetivo?",
+          "a": "Una app de exploración — los estudiantes pueden explorar el entorno quirúrgico libremente y descubrir el protocolo",
+          "b": "Una app de evaluación — evaluará si los estudiantes ya conocen el procedimiento correcto",
+          "c": "Una app de entrenamiento guiado — proporciona una secuencia fija de pasos con retroalimentación inmediata, exactamente lo que requiere el aprendizaje inicial de un protocolo",
+          "d": "Una app de simulación — los estudiantes pueden practicar el procedimiento libremente sin andamiaje",
+          "explanation": "Las apps de entrenamiento guiado llevan al estudiante por una secuencia paso a paso con retroalimentación inmediata — ideal para el aprendizaje inicial de procedimientos. Las apps de simulación son mejores para practicar después de haber aprendido los pasos."
+        },
+        "q4": {
+          "question": "Un profesor encuentra una app de anatomía VR muy bien valorada en internet. Tiene excelentes reseñas. Planea usarla en clase mañana sin probarla él mismo primero. ¿Cuál es el mayor riesgo?",
+          "a": "La app podría requerir una suscripción de pago que la escuela no puede costear",
+          "b": "La app puede tener problemas técnicos o vacíos pedagógicos que solo se revelan con pruebas prácticas en condiciones de aula — siempre prueba las apps tú mismo antes de usarlas con estudiantes",
+          "c": "Las reseñas en línea podrían ser falsas o pagadas por el desarrollador",
+          "d": "Los estudiantes podrían ya saber anatomía y encontrar la app aburrida",
+          "explanation": "Las reseñas no pueden revelar cómo se comporta una app bajo tus condiciones específicas de aula: tiempos de carga, requisitos de espacio, estabilidad, compatibilidad con casting y si la app realmente produce evidencia de aprendizaje. Siempre prueba en las mismas condiciones que enfrentarán tus estudiantes."
+        },
+        "q5": {
+          "question": "Un profesor da headsets VR a los estudiantes y dice 'Abran la app y exploren — hablaremos de ello después.' Sin instrucción previa, sin pregunta guía, sin estructura. Los estudiantes terminan VR y pasan directamente a la siguiente materia sin reflexión posterior. ¿Cuál fue el error principal?",
+          "a": "No dar suficiente tiempo a los estudiantes dentro de la experiencia VR",
+          "b": "Saltarse tanto la instrucción previa como la reflexión posterior — la app se usó de forma aislada en lugar de integrarse en una estructura antes-durante-después con propósito claro y reflexión estructurada",
+          "c": "Usar una app de exploración en lugar de una de simulación",
+          "d": "No transmitir la pantalla VR para que toda la clase pudiera ver",
+          "explanation": "Sin instrucción previa, los estudiantes no tienen foco ni propósito. Sin reflexión posterior, la experiencia no se conecta con el aprendizaje. La estructura antes-durante-después es esencial: instruir con un objetivo claro, monitorear durante VR y reflexionar con una estructura guiada."
         }
       }
     },
@@ -3865,6 +4936,7 @@
       "lockedDesc": "Completa {remaining, plural, one {el módulo restante} other {los # módulos restantes}} para desbloquear tu certificado.",
       "unlockedDesc": "¡Felicidades! Has completado todos los módulos. Descarga tu certificado personalizado.",
       "progress": "Módulos completados",
+      "module": "Módulo",
       "downloadBtn": "Descargar certificado",
       "lockedBtn": "Certificado bloqueado",
       "modalTitle": "Tu certificado",
@@ -3922,6 +4994,7 @@
     "modulesFound": "{count} módulo",
     "modulesFound_other": "{count} módulos",
     "noMatchModules": "Ningún módulo o sección coincide con \"{query}\".",
+    "alsoMentioned": "También se menciona en",
     "essentialBadge": "Esencial",
     "referenceBadge": "Referencia",
     "quickStart": {
@@ -3970,7 +5043,7 @@
           "institutionalAccount": "Cuenta institucional",
           "gettingStarted": "Primeros pasos: contenido del paquete, uso, IPD e idioma",
           "classroomSetup": "Meta Quest 3(S) en el aula",
-          "settings": "Ajustes del sistema",
+          "settings": "Guardian (boundary) y ajustes",
           "mobileConnection": "Conexión con el móvil",
           "organizationStorage": "Organización y almacenamiento",
           "specifications": "Especificaciones",

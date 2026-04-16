@@ -7,6 +7,7 @@ import {
   siteName,
 } from "@/i18n/languageAlternates";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link as NavLink } from "@/i18n/navigation";
 import { Header } from "../../../../components/Header";
@@ -78,7 +79,7 @@ const markdownComponents = {
     <ul className="list-disc pl-6 my-3 space-y-1 text-foreground">{children}</ul>
   ),
   ol: ({ children }: { children?: React.ReactNode }) => (
-    <ol className="list-decimal pl-6 my-3 space-y-1 text-foreground">{children}</ol>
+    <ol className="list-decimal pl-6 my-3 space-y-3 text-foreground">{children}</ol>
   ),
   li: ({ children }: { children?: React.ReactNode }) => (
     <li className="leading-relaxed">{children}</li>
@@ -97,6 +98,16 @@ const markdownComponents = {
   hr: () => <hr className="my-6 border-t border-gray-200" />,
   img: ({ src, alt }: { src?: string; alt?: string | null }) => {
     if (!src) return null;
+    if (alt?.startsWith("icon:")) {
+      return (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={src}
+          alt={alt.slice(5)}
+          className="inline-block align-middle h-5 w-5 mx-0.5"
+        />
+      );
+    }
     return <LightboxImage src={src} alt={alt ?? ""} />;
   },
 };
@@ -189,7 +200,7 @@ export default async function DocumentationModuleSlugPage({ params }: Props) {
                             </h2>
                             {markdown ? (
                               <div className="text-gray-700 leading-relaxed">
-                                <ReactMarkdown components={markdownComponents}>
+                                <ReactMarkdown rehypePlugins={[rehypeRaw]} components={markdownComponents}>
                                   {resolveDocImages(markdown, mod.slug, locale)}
                                 </ReactMarkdown>
                               </div>

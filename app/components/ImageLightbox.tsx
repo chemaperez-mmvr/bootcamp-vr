@@ -41,7 +41,7 @@ export function LightboxImage({
     <>
       {/* Use <span> instead of <div> so it can live inside a <p> from ReactMarkdown */}
       <span
-        className="relative max-w-xl w-full aspect-video my-4 overflow-hidden rounded-lg border border-gray-200 shadow-sm cursor-zoom-in group block"
+        className="relative max-w-xl mt-2 mb-1 overflow-hidden rounded-lg border border-gray-200 shadow-sm cursor-zoom-in group inline-block"
         onClick={() => setOpen(true)}
         role="button"
         tabIndex={0}
@@ -56,9 +56,10 @@ export function LightboxImage({
         <Image
           src={src}
           alt={alt}
-          fill
-          className="object-cover transition-transform duration-200 group-hover:scale-[1.02]"
+          width={0}
+          height={0}
           sizes="(max-width: 576px) 100vw, 576px"
+          className="w-auto h-auto max-w-full transition-transform duration-200 group-hover:scale-[1.02]"
         />
         <span className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-200 flex items-end justify-end p-2">
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/60 text-white text-xs px-2 py-1 rounded">

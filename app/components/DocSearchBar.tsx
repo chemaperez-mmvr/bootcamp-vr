@@ -23,7 +23,7 @@ export type DocSearchBarProps = {
 
 type MatchItem =
   | { type: "module"; module: DocumentationModule }
-  | { type: "section"; module: DocumentationModule; section: ModuleSection; snippet?: string };
+  | { type: "section"; module: DocumentationModule; section: ModuleSection; snippet?: string; titleMatch?: boolean };
 
 /** Extract a short readable snippet from body containing the query (original casing). */
 function extractSnippet(body: string, query: string, maxLength = 140): string {
@@ -68,6 +68,9 @@ function SnippetWithHighlight({ snippet, query }: { snippet: string; query: stri
   );
 }
 
+/** Max body-only mentions to show (reduces noise). */
+const MAX_BODY_MENTIONS = 3;
+
 function getMatches(
   query: string,
   t: (key: string) => string,
@@ -75,13 +78,21 @@ function getMatches(
 ): MatchItem[] {
   const q = query.trim().toLowerCase();
   if (!q) return [];
-  const items: MatchItem[] = [];
+  const titleHits: MatchItem[] = [];
+  const bodyHits: MatchItem[] = [];
+
   for (const m of documentationModules) {
     const modTitle = t(m.titleKey).toLowerCase();
     const moduleTitleMatches = modTitle.includes(q);
     const sectionContent = getModuleSectionContent(m.slug, locale);
 
-    const matchingSectionsWhenNoTitleMatch: { section: ModuleSection; snippet?: string }[] = [];
+    if (moduleTitleMatches) {
+      titleHits.push({ type: "module", module: m });
+      for (const s of m.sections) {
+        titleHits.push({ type: "section", module: m, section: s, titleMatch: true });
+      }
+      continue;
+    }
 
     for (const s of m.sections) {
       const sectionTitle = t(s.titleKey).toLowerCase();
@@ -90,24 +101,16 @@ function getMatches(
       const body = rawBody.toLowerCase();
       const bodyMatches = body.includes(q);
 
-      if (!moduleTitleMatches && (sectionTitleMatches || bodyMatches)) {
-        const snippet = bodyMatches ? extractSnippet(rawBody, query) : undefined;
-        matchingSectionsWhenNoTitleMatch.push({ section: s, snippet });
-      }
-    }
-
-    if (moduleTitleMatches) {
-      items.push({ type: "module", module: m });
-      for (const s of m.sections) {
-        items.push({ type: "section", module: m, section: s });
-      }
-    } else {
-      for (const { section: s, snippet } of matchingSectionsWhenNoTitleMatch) {
-        items.push({ type: "section", module: m, section: s, snippet });
+      if (sectionTitleMatches) {
+        titleHits.push({ type: "section", module: m, section: s, titleMatch: true });
+      } else if (bodyMatches) {
+        const snippet = extractSnippet(rawBody, query);
+        bodyHits.push({ type: "section", module: m, section: s, snippet, titleMatch: false });
       }
     }
   }
-  return items;
+
+  return [...titleHits, ...bodyHits.slice(0, MAX_BODY_MENTIONS)];
 }
 
 export function DocSearchBar({
@@ -167,62 +170,98 @@ export function DocSearchBar({
         />
       </div>
 
-      {showDropdown && matches.length > 0 && (
-        <ul
-          className="absolute z-20 left-0 right-0 mt-1 py-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-72 overflow-y-auto"
-          role="listbox"
-          id="doc-search-results"
-        >
-          {matches.map((item) => {
-            if (item.type === "module") {
+      {showDropdown && matches.length > 0 && (() => {
+        const titleHits = matches.filter((m) => m.type === "module" || m.titleMatch);
+        const bodyOnly = matches.filter((m) => m.type === "section" && !m.titleMatch);
+        const hasBothGroups = titleHits.length > 0 && bodyOnly.length > 0;
+        const primary = titleHits.length > 0 ? titleHits : bodyOnly;
+        const secondary = hasBothGroups ? bodyOnly : [];
+        return (
+          <ul
+            className="absolute z-20 left-0 right-0 mt-1 bg-white border border-gray-200 rounded-xl shadow-lg max-h-80 overflow-y-auto"
+            role="listbox"
+            id="doc-search-results"
+          >
+            {primary.map((item) => {
+              if (item.type === "module") {
+                return (
+                  <li key={`mod-${item.module.id}`} role="option">
+                    <Link
+                      href={
+                        value.trim()
+                          ? `/documentation/module/${item.module.slug}?q=${encodeURIComponent(value.trim())}`
+                          : `/documentation/module/${item.module.slug}`
+                      }
+                      className="block px-4 py-3 hover:bg-teal-50 focus:outline-none focus:bg-teal-50 transition-colors"
+                      onClick={() => { onChange(""); setDropdownOpen(false); }}
+                    >
+                      <span className="text-sm font-semibold text-gray-900">
+                        {t(item.module.titleKey)}
+                      </span>
+                    </Link>
+                  </li>
+                );
+              }
               return (
-                <li key={`mod-${item.module.id}`} role="option">
+                <li key={`sec-${item.module.id}-${item.section.id}`} role="option">
                   <Link
                     href={
                       value.trim()
-                        ? `/documentation/module/${item.module.slug}?q=${encodeURIComponent(value.trim())}`
-                        : `/documentation/module/${item.module.slug}`
+                        ? `/documentation/module/${item.module.slug}?q=${encodeURIComponent(value.trim())}#${item.section.id}`
+                        : `/documentation/module/${item.module.slug}#${item.section.id}`
                     }
-                    className="block px-4 py-2.5 text-sm font-medium text-foreground hover:bg-teal-50 hover:text-teal-700 focus:outline-none focus:bg-teal-50 focus:text-teal-700"
-                    onClick={() => {
-                      onChange("");
-                      setDropdownOpen(false);
-                    }}
+                    className="block px-4 py-3 hover:bg-teal-50 focus:outline-none focus:bg-teal-50 transition-colors"
+                    onClick={() => { onChange(""); setDropdownOpen(false); }}
                   >
-                    {t(item.module.titleKey)}
+                    <span className="block text-sm font-semibold text-gray-900">
+                      {t(item.section.titleKey)}
+                    </span>
+                    <span className="block text-xs text-gray-400 mt-0.5">
+                      {t(item.module.titleKey)}
+                    </span>
                   </Link>
                 </li>
               );
-            }
-            return (
-              <li key={`sec-${item.module.id}-${item.section.id}`} role="option">
-                <Link
-                  href={
-                    value.trim()
-                      ? `/documentation/module/${item.module.slug}?q=${encodeURIComponent(value.trim())}#${item.section.id}`
-                      : `/documentation/module/${item.module.slug}#${item.section.id}`
-                  }
-                  className="block px-4 py-2 text-sm text-muted-foreground hover:bg-teal-50 hover:text-teal-700 pl-6 focus:outline-none focus:bg-teal-50 focus:text-teal-700"
-                  onClick={() => {
-                    onChange("");
-                    setDropdownOpen(false);
-                  }}
-                >
-                  <span className="font-medium text-foreground">{t(item.section.titleKey)}</span>
-                  <span className="text-gray-500 font-normal ml-1">
-                    — {t(item.module.titleKey)}
+            })}
+            {secondary.length > 0 && (
+              <>
+                <li className="px-4 py-2 bg-gray-50 border-t border-gray-100" role="separator">
+                  <span className="text-[11px] font-medium text-gray-400 uppercase tracking-wide">
+                    {t("alsoMentioned")}
                   </span>
-                  {item.snippet && (
-                    <p className="mt-1 text-xs text-gray-500 line-clamp-2" title={item.snippet}>
-                      <SnippetWithHighlight snippet={item.snippet} query={value} />
-                    </p>
-                  )}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      )}
+                </li>
+                {secondary.map((item) => {
+                  if (item.type !== "section") return null;
+                  return (
+                    <li key={`sec-${item.module.id}-${item.section.id}`} role="option">
+                      <Link
+                        href={
+                          value.trim()
+                            ? `/documentation/module/${item.module.slug}?q=${encodeURIComponent(value.trim())}#${item.section.id}`
+                            : `/documentation/module/${item.module.slug}#${item.section.id}`
+                        }
+                        className="block px-4 py-2 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition-colors"
+                        onClick={() => { onChange(""); setDropdownOpen(false); }}
+                      >
+                        <span className="block text-xs text-gray-500">
+                          {t(item.section.titleKey)}
+                          <span className="text-gray-300 mx-1">·</span>
+                          <span className="text-gray-400">{t(item.module.titleKey)}</span>
+                        </span>
+                        {item.snippet && (
+                          <p className="mt-0.5 text-[11px] text-gray-400 line-clamp-1">
+                            <SnippetWithHighlight snippet={item.snippet} query={value} />
+                          </p>
+                        )}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </>
+            )}
+          </ul>
+        );
+      })()}
 
       {variant === "navigate" && value.trim().length > 0 && matches.length === 0 && showDropdown && (
         <div className="absolute z-20 left-0 right-0 mt-1 py-3 px-4 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-muted-foreground">

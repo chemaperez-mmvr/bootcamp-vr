@@ -206,16 +206,60 @@ Meta Quest 3 and 3S can be used with prescription glasses of reduced dimensions,
 
 This includes powering on, account (personal or institutional), Wi‑Fi, Guardian/play boundary, and if applicable, pairing with the mobile app for management and casting.`,
 
-  "settings": `System settings let you adapt the headset to the space and user. Review these before each session.
+  "settings": `System settings let you adapt the headset to the space and user. The most important one before every session is the **Guardian (boundary)** — without it set up, the student could bump into walls or objects.
 
-**Key topics**
+**Guardian / boundary — step by step**
+
+The Guardian is the safety system that marks the zone where the student can move. The headset shows a virtual grid when they approach the edge, preventing them from hitting walls, furniture, or other students.
+
+**Suggested boundaries and automatic room scanning**
+
+Meta Quest 3/3S use their cameras to scan the environment and **suggest boundaries automatically** based on the free space around you. The first time you open an app without configured boundaries, the headset proposes a boundary you can accept, edit, or replace.
+
+Additionally, **assisted Space Setup** lets the headset quickly 3D-scan your environment to detect walls, tables, and furniture without you having to add them manually.
+
+[IMAGE:boundary-step1]
+
+**Two modes available:**
+
+- **Stationary:** a fixed 1×1 m (3×3 ft) zone around the user. Created automatically when entering VR. Ideal for seated experiences or standing in place.
+- **Roomscale:** a larger zone based on the room scan or drawn manually. Minimum recommended space: 2×2 m (6.5×6.5 ft) without obstacles. Recommended for most educational apps.
+
+**How to adjust or redraw the boundary:**
+
+1. Press [ICON:metabutton] the **Meta button** on the right controller to open the Navigator.
+2. Select [ICON:quicksettings] **Quick controls** > **Settings**.
+3. Select **Environment setup** > **Boundary** > **Adjust boundary**.
+4. If the headset suggests a boundary based on its scan, review it and accept if it fits the space. If not, choose **Roomscale** and draw manually: point the controller at the floor, pull the **trigger**, and trace the perimeter of the safe zone.
+
+   [IMAGE:guardian-boundary-draw]
+
+5. Confirm and you’re done. The grid will appear whenever the student approaches the edge.
+
+> To switch modes during an experience without leaving it: [ICON:metabutton] **Meta button** > [ICON:quicksettings] **Quick controls** > **Boundary** > **Switch to Roomscale** (or Stationary).
+
+[DETAILS:Classroom tips]
+
+- Always review the suggested boundary before accepting — the headset may not detect low obstacles or backpacks on the floor.
+- If drawing manually, leave at least **50 cm (20 in) of margin** from walls and furniture.
+- If multiple students have headsets on at the same time, make sure their **zones don’t overlap**.
+- The headset remembers boundaries from previous spaces, but if you change rooms you’ll need to redo it.
+- You can look down to see the outline of your play zone ("Glanceable boundary" feature).
+
+[/DETAILS]
+
+[DETAILS:Resources]
+
+- [Guardian (official Meta guide)](https://www.meta.com/en-gb/help/quest/guardian/)
+- [Suggested boundaries and assisted Space Setup (Meta)](https://www.meta.com/help/quest/853707093070890/)
+- [Set up a play boundary (VR Expert)](https://knowledge.vr-expert.com/kb/how-to-set-up-a-play-boundary-on-the-meta-quest-3/)
+
+[/DETAILS]
+
+[DETAILS:Other important settings]
 
 - **Headset lights:** indicate status (on, charging, updating). See [What the lights on Meta Quest 3(S) mean](https://knowledge.vr-expert.com/kb/what-do-the-different-lights-on-the-meta-quest-3-mean/).
 - **Passthrough:** see the real environment through the cameras. [Activate passthrough on Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-activate-passthrough-on-the-meta-quest-3/).
-- **Guardian / play boundary:** defines the safe zone. [Set up a play boundary](https://knowledge.vr-expert.com/kb/how-to-set-up-a-play-boundary-on-the-meta-quest-3/). During setup:
-  - Select the interaction type: stationary or room-scale. For most applications, choose "Room-scale".
-  - If automatic floor detection is not accurate, manually indicate the floor location.
-  - Define the safe zone by drawing on the floor with the controller trigger, marking the available movement area.
 - **Hand tracking:** use hands without controllers. [Turn on hand tracking](https://knowledge.vr-expert.com/kb/how-to-turn-on-hand-tracking-on-the-meta-quest-3/).
 - **Controllers:** [Pair controllers with Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-pair-the-controllers-with-the-meta-quest-3/). Many applications only use the right controller. Make sure it has battery (AA or rechargeable). When you move it or press any button, it should be automatically detected by the system.
 - **IPD:** [Change IPD on Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-change-the-ipd-on-the-meta-quest-3/).
@@ -226,7 +270,9 @@ This includes powering on, account (personal or institutional), Wi‑Fi, Guardia
 
 You can complement with a [complete Quest 3S beginner’s guide](https://knowledge.vr-expert.com/kb/how-to-use-the-meta-quest-3s-buttons/) (buttons and general use).
 
-[IMAGE:quest-3-ipd]`,
+[IMAGE:quest-3-ipd]
+
+[/DETAILS]`,
 
   "mobile-connection": `Connecting the headset to the **Meta Quest (Horizon)** app on your phone makes daily management and casting easier.
 
@@ -325,43 +371,136 @@ App credentials (e.g. login inside the app) do not have to match the headset’s
 
 The first time you open an application, it will launch directly. Updates are not downloaded automatically; to get them, access the “Update” section within the app if new versions are available.`,
 
-  "casting": `**Casting** lets you show on a screen or projector what the user sees inside the headset. It’s very useful for the rest of the class to follow the experience and for the instructor to supervise and guide.
+  "casting": `**Casting** is the most important step before handing the headset to a student. Without casting, you can’t see what the student is seeing — and if you can’t see what they’re doing, you can’t guide them or supervise the experience.
 
-**What it’s for**
+The headset preparation flow before every session is always the same:
 
-- Guided observation: the group sees the same view as the person wearing the headset.
-- Real-time feedback: the instructor can comment on what they see.
-- Group control: keep attention and order during the VR activity.
+1. [**Connect to WiFi**](#connectivity-data) — the headset needs to be on the same network as your device.
+2. [**Set up the Guardian (boundary)**](#settings) — define the safe movement area.
+3. **Activate casting** — stream the headset view to your phone, tablet, TV, or projector.
+4. **Hand the headset to the student** — only when you’re already seeing what they see.
 
-**How to turn it on**
+> If you don’t activate casting before handing over the headset, you’ll be flying blind. You won’t know if the student is in the right app, if they need help, or if something is wrong. Casting is not optional — it’s a required step.
 
-- **From the headset:** in the quick menu (Meta button), find **Casting** or **Cast** and choose the target device (Chromecast, Meta Quest app on phone/PC, etc.).
-- **From the mobile app:** if the headset is linked, the app usually has a button to start casting to a TV or projector (e.g. via Chromecast).
+**Why you need it in the classroom**
 
-**Resources**
+- **Supervision:** you see exactly what the student is doing without taking the headset off.
+- **Live guidance:** you can give instructions while the student is inside the experience.
+- **Group participation:** the rest of the students follow the activity on screen and can join the discussion.
+
+---
+
+**Before you start — what you need**
+
+Before activating casting, make sure everything is ready:
+
+- **Same WiFi network** for the headset and the receiving device (required).
+- **5 GHz band** recommended — reduces latency and improves image quality.
+- **Compatible receiving device**: Meta Quest app on phone/tablet, Chromecast connected to TV/projector, or a web browser.
+- **Headset charged** (at least 30%) and [**paired** with the Meta Quest app](#mobile-connection) on your phone.
+
+
+---
+
+**How to activate casting — step by step**
+
+1. Make sure the headset and your device are connected to the **same Wi-Fi network**.
+2. On the headset, press [ICON:metabutton] the **Meta button** on the right controller to open the Navigator.
+3. Select [ICON:quicksettings] **Quick controls**.
+4. Select **Cast**.
+
+   [IMAGE:casting-quick-menu]
+
+5. Select the device you want to cast to (phone, Chromecast, web, etc.).
+
+   [IMAGE:casting-device-selection]
+
+6. Select **Next** and follow the on-screen instructions.
+   - If you choose **Mobile**: the stream appears directly in the Meta Quest app on your phone.
+   - If you choose **Chromecast**: the image is shown on the connected TV or projector.
+   - If you choose **Web**: open **[horizon.meta.com/casting](https://horizon.meta.com/casting/)** in a browser (Chrome recommended) on any computer or device connected to the same Wi-Fi network. You must be logged in with the same Meta account used on the headset.
+
+   [IMAGE:casting-meta-app]
+
+> The **Web** option is very practical in the classroom: no app install needed, just a browser and the same Wi-Fi network. You can project straight from the teacher’s laptop. A delay of 1-3 seconds between what the student does and what appears on screen is normal. Keep this in mind when giving instructions: the student hears your voice before you see their action. Practice the timing before class.
+
+---
+
+[DETAILS:Classroom tips]
+
+- **Position the screen** where all students can see it without moving from their seats.
+- **Use the 5 GHz band** on your router. If the school network is unreliable, consider using a **dedicated router** for the headsets.
+- **Test casting before** students arrive — avoid wasting class time troubleshooting technical issues.
+- **Prepare your narration:** given the slight casting delay, plan what you’ll say while the student explores. Describing what’s on screen or asking the group questions works well.
+- **Phone-to-projector relay:** if you don’t have a Chromecast, cast to your phone and then connect the phone to the projector via cable. It’s a simple alternative that works well.
+
+[/DETAILS]
+
+[DETAILS:Common issues]
+
+- **Casting won’t start:** check that the headset and the receiving device are on the [same Wi-Fi network](#connectivity-data). If the network has "client isolation" (AP isolation) enabled, casting won’t work — check with IT.
+- **Black screen:** restart the headset and the receiving device. Start casting again.
+- **High latency or choppy image:** reduce network traffic (ask students to disconnect WiFi on their phones), move the headset closer to the router.
+- **Device not showing in the list:** make sure the Chromecast is on and on the same network. Restart it if needed.
+
+For a complete casting troubleshooting guide, see the **Casting issues** section in Module 6 (Solving Common VR Problems).
+
+[/DETAILS]
+
+[DETAILS:Resources]
 
 - [Casting with Meta Quest (devices and methods)](https://www.meta.com/en-gb/help/quest/192719842695017/)
 - [Casting with Chromecast (video)](https://www.youtube.com/watch?v=_BgUP5T8_3M)
-- [Troubleshoot casting to a screen with Meta Quest](https://www.meta.com/en-gb/help/quest/214966974548157/)`,
+- [Troubleshoot casting to a screen with Meta Quest](https://www.meta.com/en-gb/help/quest/214966974548157/)
 
-  "connectivity-data": `Headsets need connectivity to install apps, update the system, and use cloud services; you can also connect them to a PC or Bluetooth devices.
+[/DETAILS]`,
 
-**Wi‑Fi**
+  "connectivity-data": `Connecting the headset to WiFi is the **first step** of the setup before every session. Without WiFi you can’t cast, install apps, or update the system. Additionally, the headset and your device (phone, Chromecast) must be on the **same network** for casting to work.
 
-- [Connect Meta Quest 3(S) to Wi‑Fi](https://knowledge.vr-expert.com/kb/how-to-connect-the-meta-quest-3-to-wi-fi/)
-- In the classroom, use a stable network; if the institution’s network has strict restrictions or firewalls, consider a dedicated router for the headsets.
+**How to connect the headset to WiFi — step by step**
 
-**Bluetooth**
+1. Turn on the headset and put it on.
+2. Press [ICON:metabutton] the **Meta button** (or Oculus button) on the right controller to open the Navigator.
+3. Select [ICON:quicksettings] **Quick controls**.
 
-- [Connect a Bluetooth device to Meta Quest 3(S)](https://www.meta.com/help/quest/) (search for “Bluetooth” in official help).
+   [IMAGE:wifi-quick-access]
 
-**PC connection (Windows)**
+4. Select **Wi-Fi**.
 
-- [Connect Meta Quest 3(S) to a Windows computer](https://www.meta.com/help/quest/) (useful for file transfer or Link/Air Link if needed).
+   [IMAGE:wifi-quest-settings]
 
-**File transfer**
+5. Make sure the **Wi-Fi toggle is turned on**.
+6. Find the Wi-Fi network you want to connect to and select **Connect**.
+7. Enter the **password** if required.
+8. Wait for the connection to complete. If you see the Wi-Fi icon in the top bar, you’re connected.
 
-- [Transfer files from a Windows PC to Meta Quest 3(S)](https://www.meta.com/help/quest/) (via USB cable or official tools).`,
+> If the school network has strict restrictions (firewalls, captive portals, client isolation), casting may not work. Consider using a **dedicated router** for the headsets — it’s the most reliable solution in educational settings.
+
+---
+
+[DETAILS:Classroom recommendations]
+
+- Always use the **5 GHz band** if your router supports it — lower latency and better casting quality.
+- Connect all headsets to the **same network** as the Chromecast and your phone.
+- If using multiple headsets at once, check that the router supports the number of simultaneous devices.
+- Run a connection test before class: open the headset browser and load any page to verify internet access.
+
+[/DETAILS]
+
+[DETAILS:Other connections]
+
+- **Bluetooth:** [Connect a Bluetooth device to Meta Quest 3(S)](https://www.meta.com/help/quest/) (search for “Bluetooth” in official help). Useful for external headphones.
+- **PC connection (Windows):** [Connect Meta Quest 3(S) to a Windows computer](https://www.meta.com/help/quest/) (for file transfer or Link/Air Link).
+- **File transfer:** [Transfer files from a Windows PC to Meta Quest 3(S)](https://www.meta.com/help/quest/) (via USB cable or official tools).
+
+[/DETAILS]
+
+[DETAILS:Resources]
+
+- [Connect Meta Quest to WiFi (official Meta guide)](https://www.meta.com/es-es/help/quest/1816744325172615/)
+- [Connect Meta Quest 3(S) to Wi‑Fi (VR Expert)](https://knowledge.vr-expert.com/kb/how-to-connect-the-meta-quest-3-to-wi-fi/)
+
+[/DETAILS]`,
 
   "cleaning": `Clean headsets and controllers after every use with a non-abrasive, non-alcoholic wipe. Clean lenses only with a dry microfiber cloth — never spray liquid directly on lenses. Allow surfaces to air-dry before the next user.
 

@@ -425,6 +425,163 @@ const slidesByModule: Record<string, TheorySlide[]> = {
       highlightKey: "slides.briefingAndDebriefing.s5.highlight",
     },
   ],
+
+  /* ================================================================== */
+  /*  MODULE 6 — Solving Common VR Problems                             */
+  /* ================================================================== */
+  "solving-common-vr-problems": [
+    {
+      id: "video-intro-m6",
+      type: "video",
+      titleKey: "slides.solvingCommonVrProblems.video.title",
+      subtitleKey: "slides.solvingCommonVrProblems.video.subtitle",
+      videoUrl: "/videos/m6-intro-{locale}.mp4",
+    },
+    {
+      id: "wifi-connection",
+      type: "content",
+      titleKey: "slides.solvingCommonVrProblems.s1.title",
+      subtitleKey: "slides.solvingCommonVrProblems.s1.subtitle",
+      points: [
+        { key: "slides.solvingCommonVrProblems.s1.p1", icon: "📶" },
+        { key: "slides.solvingCommonVrProblems.s1.p2", icon: "🔄" },
+        { key: "slides.solvingCommonVrProblems.s1.p3", icon: "🏫" },
+      ],
+      highlightKey: "slides.solvingCommonVrProblems.s1.highlight",
+    },
+    {
+      id: "boundary-guardian-problems",
+      type: "content",
+      titleKey: "slides.solvingCommonVrProblems.s2.title",
+      subtitleKey: "slides.solvingCommonVrProblems.s2.subtitle",
+      points: [
+        { key: "slides.solvingCommonVrProblems.s2.p1", icon: "💡" },
+        { key: "slides.solvingCommonVrProblems.s2.p2", icon: "🪞" },
+        { key: "slides.solvingCommonVrProblems.s2.p3", icon: "📷" },
+      ],
+      highlightKey: "slides.solvingCommonVrProblems.s2.highlight",
+    },
+    {
+      id: "headset-not-turning-on",
+      type: "content",
+      titleKey: "slides.solvingCommonVrProblems.s3.title",
+      subtitleKey: "slides.solvingCommonVrProblems.s3.subtitle",
+      points: [
+        { key: "slides.solvingCommonVrProblems.s3.p1", icon: "🔋" },
+        { key: "slides.solvingCommonVrProblems.s3.p2", icon: "🔌" },
+        { key: "slides.solvingCommonVrProblems.s3.p3", icon: "🔄" },
+      ],
+      highlightKey: "slides.solvingCommonVrProblems.s3.highlight",
+    },
+    {
+      id: "casting-issues",
+      type: "content",
+      titleKey: "slides.solvingCommonVrProblems.s4.title",
+      subtitleKey: "slides.solvingCommonVrProblems.s4.subtitle",
+      points: [
+        { key: "slides.solvingCommonVrProblems.s4.p1", icon: "📺" },
+        { key: "slides.solvingCommonVrProblems.s4.p2", icon: "📡" },
+        { key: "slides.solvingCommonVrProblems.s4.p3", icon: "🔧" },
+      ],
+      highlightKey: "slides.solvingCommonVrProblems.s4.highlight",
+    },
+    {
+      id: "troubleshooting-mindset",
+      type: "content",
+      titleKey: "slides.solvingCommonVrProblems.s5.title",
+      subtitleKey: "slides.solvingCommonVrProblems.s5.subtitle",
+      points: [
+        { key: "slides.solvingCommonVrProblems.s5.p1", icon: "🧘" },
+        { key: "slides.solvingCommonVrProblems.s5.p2", icon: "⏱️" },
+        { key: "slides.solvingCommonVrProblems.s5.p3", icon: "📋" },
+      ],
+      highlightKey: "slides.solvingCommonVrProblems.s5.highlight",
+    },
+  ],
+  /* ================================================================== */
+  /*  MODULE 7 — VR Educational Apps                                    */
+  /* ================================================================== */
+  "vr-educational-apps": [
+    {
+      id: "video-intro-m7",
+      type: "video",
+      titleKey: "slides.vrEducationalApps.video.title",
+      subtitleKey: "slides.vrEducationalApps.video.subtitle",
+      videoUrl: "/videos/m7-intro-{locale}.mp4",
+    },
+    {
+      id: "what-is-educational-app",
+      type: "content",
+      titleKey: "slides.vrEducationalApps.s1.title",
+      subtitleKey: "slides.vrEducationalApps.s1.subtitle",
+      points: [
+        { key: "slides.vrEducationalApps.s1.p1", icon: "🎯" },
+        { key: "slides.vrEducationalApps.s1.p2", icon: "🤲" },
+        { key: "slides.vrEducationalApps.s1.p3", icon: "🔄" },
+      ],
+      highlightKey: "slides.vrEducationalApps.s1.highlight",
+    },
+    {
+      id: "where-to-find-apps",
+      type: "content",
+      titleKey: "slides.vrEducationalApps.s2.title",
+      subtitleKey: "slides.vrEducationalApps.s2.subtitle",
+      points: [
+        { key: "slides.vrEducationalApps.s2.p1", icon: "🏪" },
+        { key: "slides.vrEducationalApps.s2.p2", icon: "🧪" },
+        { key: "slides.vrEducationalApps.s2.p3", icon: "🌐" },
+      ],
+      highlightKey: "slides.vrEducationalApps.s2.highlight",
+    },
+    {
+      id: "simulation-apps",
+      type: "content",
+      titleKey: "slides.vrEducationalApps.s3.title",
+      subtitleKey: "slides.vrEducationalApps.s3.subtitle",
+      points: [
+        { key: "slides.vrEducationalApps.s3.p1", icon: "🧪" },
+        { key: "slides.vrEducationalApps.s3.p2", icon: "🛡️" },
+        { key: "slides.vrEducationalApps.s3.p3", icon: "🔁" },
+      ],
+      highlightKey: "slides.vrEducationalApps.s3.highlight",
+    },
+    {
+      id: "choosing-app-by-objective",
+      type: "content",
+      titleKey: "slides.vrEducationalApps.s4.title",
+      subtitleKey: "slides.vrEducationalApps.s4.subtitle",
+      points: [
+        { key: "slides.vrEducationalApps.s4.p1", icon: "🗺️" },
+        { key: "slides.vrEducationalApps.s4.p2", icon: "🔗" },
+        { key: "slides.vrEducationalApps.s4.p3", icon: "📋" },
+      ],
+      highlightKey: "slides.vrEducationalApps.s4.highlight",
+    },
+    {
+      id: "evaluating-app-before-class",
+      type: "content",
+      titleKey: "slides.vrEducationalApps.s5.title",
+      subtitleKey: "slides.vrEducationalApps.s5.subtitle",
+      points: [
+        { key: "slides.vrEducationalApps.s5.p1", icon: "📝" },
+        { key: "slides.vrEducationalApps.s5.p2", icon: "⚙️" },
+        { key: "slides.vrEducationalApps.s5.p3", icon: "🏫" },
+      ],
+      highlightKey: "slides.vrEducationalApps.s5.highlight",
+    },
+    {
+      id: "integrating-apps-in-class",
+      type: "content",
+      titleKey: "slides.vrEducationalApps.s6.title",
+      subtitleKey: "slides.vrEducationalApps.s6.subtitle",
+      points: [
+        { key: "slides.vrEducationalApps.s6.p1", icon: "📋" },
+        { key: "slides.vrEducationalApps.s6.p2", icon: "🥽" },
+        { key: "slides.vrEducationalApps.s6.p3", icon: "💬" },
+      ],
+      highlightKey: "slides.vrEducationalApps.s6.highlight",
+    },
+  ],
 };
 
 export function getSlidesForModule(moduleSlug: string): TheorySlide[] {

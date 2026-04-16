@@ -35,6 +35,8 @@ export const theoreticalSlugs = new Set([
   "classroom-implementation",      // M3
   "safety-wellbeing-accessibility",// M4
   "briefing-and-debriefing",       // M5
+  "solving-common-vr-problems",    // M6
+  "vr-educational-apps",           // M7
 ]);
 
 function getEssentialSections(module: DocumentationModule): ModuleSection[] {
@@ -78,6 +80,8 @@ const enabledBootcampSlugs = new Set([
   "classroom-implementation", // M3
   "safety-wellbeing-accessibility", // M4
   "briefing-and-debriefing", // M5
+  "solving-common-vr-problems", // M6
+  "vr-educational-apps",        // M7
 ]);
 
 /** All modules shown in the bootcamp timeline (enabled + upcoming placeholders). */
@@ -111,14 +115,14 @@ export const bootcampCatalog: BootcampModule[] = documentationModules
     }
 
     const heroImages: Record<string, string> = {
-      "basic-foundations": "/images/vr-classroom-student-headset.jpg",
-      "getting-vr-ready": "/images/meta-quest-3-components.png",
-      "designing-meaningful-learning": "/images/hero-designing-meaningful-learning.png",
-      "classroom-implementation": "/images/hero-classroom-implementation.png",
-      "safety-wellbeing-accessibility": "/images/hero-safety-wellbeing-accessibility.png",
-      "briefing-and-debriefing": "/images/hero-briefing-and-debriefing.png",
-      "solving-common-vr-problems": "/images/standalone-vs-pc-vr.jpg",
-      "vr-educational-apps": "/images/uses-ar.jpg",
+      "basic-foundations": "/images/vr-classroom-student-headset.webp",
+      "getting-vr-ready": "/images/meta-quest-3-components.webp",
+      "designing-meaningful-learning": "/images/hero-designing-meaningful-learning.webp",
+      "classroom-implementation": "/images/hero-classroom-implementation.webp",
+      "safety-wellbeing-accessibility": "/images/hero-safety-wellbeing-accessibility.webp",
+      "briefing-and-debriefing": "/images/hero-briefing-and-debriefing.webp",
+      "solving-common-vr-problems": "/images/hero-solving-common-vr-problems.webp",
+      "vr-educational-apps": "/images/hero-vr-educational-apps.webp",
     };
 
     return {

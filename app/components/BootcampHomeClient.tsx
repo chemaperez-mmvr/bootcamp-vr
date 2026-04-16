@@ -75,7 +75,7 @@ export function BootcampHomeClient() {
          ════════════════════════════════════════════════════════════ */}
       <video
         className="fixed inset-0 h-full w-full object-cover z-0 hidden sm:block"
-        poster="/hero-bootcamp-poster.jpg"
+        poster="/hero-bootcamp-poster.webp"
         autoPlay
         muted
         loop
@@ -89,7 +89,7 @@ export function BootcampHomeClient() {
       {/* Mobile-only static background */}
       <div
         className="fixed inset-0 z-0 bg-cover bg-center sm:hidden"
-        style={{ backgroundImage: "url('/hero-bootcamp-poster.jpg')" }}
+        style={{ backgroundImage: "url('/hero-bootcamp-poster.webp')" }}
         aria-hidden="true"
       />
 
@@ -444,8 +444,14 @@ export function BootcampHomeClient() {
            ════════════════════════════════════ */}
         <CertificateDownload
           unlocked={enabledModulesCount > 0 && completedModulesCount >= enabledModulesCount}
-          enabledCount={enabledModulesCount}
-          completedCount={completedModulesCount}
+          modules={modulesWithProgress
+            .filter(({ module }) => module.enabled)
+            .map(({ module, progress }, i) => ({
+              index: i,
+              titleKey: module.titleKey,
+              status: progress.status,
+              enabled: module.enabled,
+            }))}
         />
       </div>
     </div>

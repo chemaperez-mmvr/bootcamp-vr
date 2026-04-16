@@ -206,16 +206,60 @@ Meta Quest 3 y 3S permiten usarse con gafas graduadas de dimensiones reducidas, 
 
 Incluye: encendido, cuenta (personal o institucional), Wi‑Fi, Guardian/límites de juego y, si aplica, conexión con la app móvil para gestión y casting.`,
 
-  "settings": `Los ajustes del sistema permiten adaptar las gafas al espacio y al usuario. Revisa estos puntos antes de cada sesión.
+  "settings": `Los ajustes del sistema permiten adaptar las gafas al espacio y al usuario. El más importante antes de cada sesión es el **Guardian (boundary)** — sin él configurado, el alumno podría chocar con paredes u objetos.
 
-**Conceptos clave**
+**Guardian / límite — paso a paso**
+
+El Guardian es el sistema de seguridad que delimita la zona en la que el alumno puede moverse. Las gafas muestran una rejilla virtual cuando se acerca al borde, evitando que choque con paredes, muebles u otros alumnos.
+
+**Límites sugeridos y escaneo automático**
+
+Las Meta Quest 3/3S usan sus cámaras para escanear el entorno y **sugerir límites automáticamente** en función del espacio libre que detectan a tu alrededor. La primera vez que abres una app sin límites configurados, las gafas te proponen un boundary que puedes aceptar, editar o reemplazar.
+
+Además, la **configuración del espacio asistida** permite que las gafas escaneen en 3D tu entorno rápidamente para detectar paredes, mesas y muebles sin que tengas que añadirlos manualmente.
+
+[IMAGE:boundary-step1]
+
+**Dos modos disponibles:**
+
+- **Estático (stationary):** zona fija de 1×1 m alrededor del usuario. Se crea automáticamente al entrar en VR. Ideal para experiencias sentado o de pie sin moverse.
+- **Room-scale (con desplazamiento):** zona más amplia basada en el escaneo del espacio o dibujada manualmente. Espacio mínimo recomendado: 2×2 m sin obstáculos. Recomendado para la mayoría de apps educativas.
+
+**Cómo ajustar o redibujar el límite:**
+
+1. Pulsa [ICON:metabutton] el **botón Meta** del mando derecho para abrir el Explorador.
+2. Selecciona [ICON:quicksettings] **Controles de acceso rápido** > **Configuración**.
+3. Selecciona **Configuración del entorno** > **Límite** > **Ajustar límite**.
+4. Si las gafas sugieren un límite basado en su escaneo, revísalo y acéptalo si se ajusta al espacio. Si no, elige **Room-scale** y dibuja manualmente: apunta con el mando al suelo, pulsa el **gatillo** y traza el perímetro de la zona segura.
+
+   [IMAGE:guardian-boundary-draw]
+
+5. Confirma y listo. La rejilla aparecerá siempre que el alumno se acerque al borde.
+
+> Para cambiar de modo durante una experiencia sin salir de ella: [ICON:metabutton] **botón Meta** > [ICON:quicksettings] **Controles de acceso rápido** > **Límite** > **Cambiar a room-scale** (o estático).
+
+[DETAILS:Consejos para el aula]
+
+- Revisa siempre el límite sugerido antes de aceptarlo — las gafas pueden no detectar obstáculos bajos o mochilas en el suelo.
+- Si dibujas manualmente, deja al menos **50 cm de margen** con paredes y muebles.
+- Si hay varios alumnos con gafas a la vez, asegúrate de que sus **zonas no se solapan**.
+- Las gafas recuerdan los límites de espacios anteriores, pero si cambias de aula necesitarás rehacerlo.
+- Puedes mirar hacia abajo para ver el contorno de tu zona de juego (función "Límite visible").
+
+[/DETAILS]
+
+[DETAILS:Recursos]
+
+- [Guardian (guía oficial Meta)](https://www.meta.com/es-es/help/quest/guardian/)
+- [Límites sugeridos y configuración del espacio asistida (Meta)](https://www.meta.com/help/quest/853707093070890/)
+- [Configurar límite de juego (VR Expert)](https://knowledge.vr-expert.com/kb/how-to-set-up-a-play-boundary-on-the-meta-quest-3/)
+
+[/DETAILS]
+
+[DETAILS:Otros ajustes importantes]
 
 - **Luces del headset:** indican estado (encendido, carga, actualización). Consulta [Qué significan las luces en Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/what-do-the-different-lights-on-the-meta-quest-3-mean/).
 - **Passthrough:** ver el entorno real a través de las cámaras. [Activar passthrough en Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-activate-passthrough-on-the-meta-quest-3/).
-- **Guardian / límite de juego:** define la zona segura. [Configurar límite de juego (boundary)](https://knowledge.vr-expert.com/kb/how-to-set-up-a-play-boundary-on-the-meta-quest-3/). Durante la configuración:
-  - Selecciona el tipo de interacción: estática o con movimiento libre. Para la mayoría de aplicaciones, elige "Con desplazamiento".
-  - Si la detección automática del suelo no es precisa, indica manualmente la ubicación del suelo.
-  - Define la zona segura dibujando sobre el suelo con el gatillo del controlador, delimitando el área de movimiento disponible.
 - **Hand tracking:** usar las manos sin mandos. [Activar hand tracking](https://knowledge.vr-expert.com/kb/how-to-turn-on-hand-tracking-on-the-meta-quest-3/).
 - **Mandos:** [Emparejar controladores con Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-pair-the-controllers-with-the-meta-quest-3/). Para muchas aplicaciones solo se utiliza el controlador derecho. Asegúrate de que tenga batería (pila AA o recargable). Al moverlo o presionar cualquier botón, debería ser detectado automáticamente por el sistema.
 - **IPD:** [Cambiar la IPD en Meta Quest 3(S)](https://knowledge.vr-expert.com/kb/how-to-change-the-ipd-on-the-meta-quest-3/).
@@ -226,7 +270,9 @@ Incluye: encendido, cuenta (personal o institucional), Wi‑Fi, Guardian/límite
 
 Puedes complementar con una [guía completa para principiantes de Quest 3S](https://knowledge.vr-expert.com/kb/how-to-use-the-meta-quest-3s-buttons/) (botones y uso general).
 
-[IMAGE:quest-3-ipd]`,
+[IMAGE:quest-3-ipd]
+
+[/DETAILS]`,
 
   "mobile-connection": `Conectar las gafas a la **app Meta Quest (Horizon)** en el móvil facilita la gestión diaria y el casting.
 
@@ -325,43 +371,136 @@ Las credenciales de la aplicación (por ejemplo, inicio de sesión dentro de la 
 
 La primera vez que abras una aplicación, se iniciará directamente. Las actualizaciones no se descargan automáticamente; para obtenerlas hay que acceder al apartado "Actualizar" dentro de la app si hay nuevas versiones disponibles.`,
 
-  "casting": `El **casting** permite mostrar en una pantalla o proyector lo que ve el usuario dentro del headset. Es muy útil para que el resto del aula siga la experiencia y para que el instructor supervise y guíe.
+  "casting": `El **casting** es el paso más importante antes de pasar las gafas a un alumno. Sin casting, no puedes ver lo que el alumno está viendo — y si no ves lo que hace, no puedes guiarle ni supervisar la experiencia.
 
-**Para qué sirve**
+El flujo de preparación de las gafas antes de cada sesión es siempre el mismo:
 
-- Observación guiada: el grupo ve la misma escena que quien lleva las gafas.
-- Feedback en tiempo real: el instructor puede comentar lo que ve.
-- Control del grupo: mantener la atención y el orden durante la actividad VR.
+1. [**Conectar al WiFi**](#connectivity-data) — las gafas necesitan estar en la misma red que tu dispositivo.
+2. [**Configurar el Guardian (boundary)**](#settings) — delimitar el espacio seguro de movimiento.
+3. **Activar el casting** — retransmitir la vista del headset a tu móvil, tablet, TV o proyector.
+4. **Pasar las gafas al alumno** — solo cuando ya estés viendo lo que ve el alumno.
 
-**Cómo activarlo**
+> Si no activas el casting antes de entregar las gafas, estarás "a ciegas". No sabrás si el alumno está en la app correcta, si necesita ayuda o si algo va mal. El casting no es opcional — es un paso obligatorio.
 
-- **Desde las gafas:** en el menú rápido (botón Meta), busca **Casting** o **Transmitir** y elige el dispositivo de destino (Chromecast, app Meta Quest en móvil/PC, etc.).
-- **Desde la app móvil:** si las gafas están vinculadas, en la app suele haber un botón para iniciar casting hacia TV o proyector (p. ej. vía Chromecast).
+**Para qué lo necesitas en el aula**
 
-**Recursos**
+- **Supervisión:** ves exactamente lo que hace el alumno sin necesidad de quitarle las gafas.
+- **Guía en directo:** puedes dar instrucciones mientras el alumno está dentro de la experiencia.
+- **Participación del grupo:** el resto de alumnos siguen la actividad en la pantalla y pueden participar en la discusión.
+
+---
+
+**Antes de empezar — lo que necesitas**
+
+Antes de activar el casting, asegúrate de tener todo preparado:
+
+- **Misma red WiFi** para las gafas y el dispositivo receptor (obligatorio).
+- **Banda de 5 GHz** recomendada — reduce la latencia y mejora la calidad de imagen.
+- **Dispositivo receptor** compatible: app Meta Quest en móvil/tablet, Chromecast conectado a TV/proyector, o navegador web.
+- **Gafas cargadas** (mínimo 30 %) y [**vinculadas** a la app Meta Quest](#mobile-connection) en tu móvil.
+
+
+---
+
+**Cómo activar el casting — paso a paso**
+
+1. Asegúrate de que las gafas y tu dispositivo están conectados a la **misma red Wifi**.
+2. En las gafas, pulsa [ICON:metabutton] el **botón Meta** del mando derecho para abrir el Explorador.
+3. Selecciona [ICON:quicksettings] **Controles de acceso rápido**.
+4. Selecciona **Transmitir**.
+
+   [IMAGE:casting-quick-menu]
+
+5. Selecciona el dispositivo al que quieras transmitir (móvil, Chromecast, web, etc.).
+
+   [IMAGE:casting-device-selection]
+
+6. Pulsa **Siguiente** y sigue las instrucciones en pantalla.
+   - Si eliges **Móvil**: la retransmisión aparece directamente en la app Meta Quest de tu teléfono.
+   - Si eliges **Chromecast**: la imagen se muestra en la TV o proyector conectado.
+   - Si eliges **Web**: abre **[horizon.meta.com/casting](https://horizon.meta.com/casting/)** en un navegador (Chrome recomendado) en cualquier ordenador o dispositivo conectado a la misma red Wifi. Debes estar logueado con la misma cuenta Meta que tienen las gafas.
+
+   [IMAGE:casting-meta-app]
+
+> La opción **Web** es muy práctica en el aula: no necesitas instalar nada, solo un navegador y la misma red Wifi. Puedes proyectar desde el portátil del profesor directamente. Es normal que haya un retardo de 1-3 segundos entre lo que hace el alumno y lo que se ve en pantalla. Tenlo en cuenta al dar instrucciones: el alumno escucha tu voz antes de que tú veas su acción. Practica el ritmo antes de la clase.
+
+---
+
+[DETAILS:Consejos para el aula]
+
+- **Posiciona la pantalla** donde todos los alumnos puedan verla sin moverse de su sitio.
+- **Usa la banda de 5 GHz** de tu router. Si la red del centro es inestable, considera usar un **router dedicado** para los headsets.
+- **Prueba el casting antes** de que lleguen los alumnos — evitarás perder tiempo de clase solucionando problemas técnicos.
+- **Prepara tu narración:** dado el pequeño retardo del casting, planifica qué vas a decir mientras el alumno explora. Funciona bien describir lo que se está viendo o hacer preguntas al grupo.
+- **Relay móvil → proyector:** si no tienes Chromecast, haz casting a tu móvil y luego conecta el móvil al proyector por cable. Es una alternativa sencilla que funciona bien.
+
+[/DETAILS]
+
+[DETAILS:Problemas frecuentes]
+
+- **El casting no se inicia:** verifica que las gafas y el dispositivo receptor están en la [misma red Wifi](#connectivity-data). Si la red tiene "aislamiento de clientes" (AP isolation), el casting no funcionará — consulta con el responsable de IT.
+- **Pantalla en negro:** reinicia las gafas y el dispositivo receptor. Vuelve a iniciar el casting.
+- **Mucha latencia o imagen entrecortada:** reduce el tráfico en la red (pide a los alumnos que desconecten WiFi en sus móviles), acerca las gafas al router.
+- **No aparece el dispositivo en la lista:** asegúrate de que el Chromecast está encendido y en la misma red. Reinícialo si es necesario.
+
+Para una guía completa de resolución de problemas de casting, consulta la sección **Problemas de casting** en el Módulo 6 (Resolución de problemas comunes).
+
+[/DETAILS]
+
+[DETAILS:Recursos]
 
 - [Casting con Meta Quest (dispositivos y métodos)](https://www.meta.com/en-gb/help/quest/192719842695017/)
 - [Casting con Chromecast (vídeo)](https://www.youtube.com/watch?v=_BgUP5T8_3M)
-- [Solucionar problemas de casting con Meta Quest](https://www.meta.com/en-gb/help/quest/214966974548157/)`,
+- [Solucionar problemas de casting con Meta Quest](https://www.meta.com/en-gb/help/quest/214966974548157/)
 
-  "connectivity-data": `Para instalar apps, actualizar el sistema y usar servicios en la nube, las gafas necesitan conectividad; también puedes conectarlas a un PC o a dispositivos Bluetooth.
+[/DETAILS]`,
 
-**Wi‑Fi**
+  "connectivity-data": `Conectar las gafas al WiFi es el **primer paso** de la preparación antes de cada sesión. Sin WiFi no podrás hacer casting, instalar apps ni actualizar el sistema. Además, las gafas y tu dispositivo (móvil, Chromecast) deben estar en la **misma red** para que el casting funcione.
 
-- [Conectar Meta Quest 3(S) a Wi‑Fi](https://knowledge.vr-expert.com/kb/how-to-connect-the-meta-quest-3-to-wi-fi/)
-- En el aula, usa una red estable; si la red del centro tiene restricciones o firewalls fuertes, valora un router dedicado para los headsets.
+**Cómo conectar las gafas al WiFi — paso a paso**
 
-**Bluetooth**
+1. Enciende las gafas y ponte el headset.
+2. Pulsa [ICON:metabutton] el **botón Meta** (u Oculus) del mando derecho para abrir el Explorador.
+3. Selecciona [ICON:quicksettings] **Controles de acceso rápido**.
 
-- [Conectar un dispositivo Bluetooth a Meta Quest 3(S)](https://www.meta.com/help/quest/) (busca en la ayuda oficial “Bluetooth”).
+   [IMAGE:wifi-quick-access]
 
-**Conexión con PC (Windows)**
+4. Selecciona **Wifi**.
 
-- [Conectar Meta Quest 3(S) a un ordenador Windows](https://www.meta.com/help/quest/) (útil para transferir archivos o usar Link/Air Link si lo necesitas).
+   [IMAGE:wifi-quest-settings]
 
-**Transferencia de archivos**
+5. Asegúrate de que el **botón de Wifi esté activado** (toggle encendido).
+6. Busca la red wifi de tu aula y selecciona **Conectar**.
+7. Introduce la **contraseña** si es necesario.
+8. Espera a que se conecte. Si ves el icono de Wifi en la barra superior, ya estás conectado.
 
-- [Transferir archivos desde un PC Windows a Meta Quest 3(S)](https://www.meta.com/help/quest/) (por cable USB o herramientas oficiales).`,
+> Si la red del centro tiene restricciones fuertes (firewalls, portales cautivos, aislamiento de clientes), el casting puede no funcionar. Valora tener un **router dedicado** para los headsets — es la solución más fiable en entornos educativos.
+
+---
+
+[DETAILS:Recomendaciones para el aula]
+
+- Usa siempre la **banda de 5 GHz** si tu router la ofrece — menos latencia y mejor calidad de casting.
+- Conecta todas las gafas a la **misma red** que el Chromecast y tu móvil.
+- Si usas varias gafas a la vez, comprueba que el router soporta el número de dispositivos simultáneos.
+- Haz una prueba de conexión antes de la clase: abre el navegador de las gafas y carga cualquier página para verificar que hay acceso a internet.
+
+[/DETAILS]
+
+[DETAILS:Otras conexiones]
+
+- **Bluetooth:** [Conectar un dispositivo Bluetooth a Meta Quest 3(S)](https://www.meta.com/help/quest/) (busca en la ayuda oficial “Bluetooth”). Útil para auriculares externos.
+- **Conexión con PC (Windows):** [Conectar Meta Quest 3(S) a un ordenador Windows](https://www.meta.com/help/quest/) (para transferir archivos o usar Link/Air Link).
+- **Transferencia de archivos:** [Transferir archivos desde un PC Windows a Meta Quest 3(S)](https://www.meta.com/help/quest/) (por cable USB o herramientas oficiales).
+
+[/DETAILS]
+
+[DETAILS:Recursos]
+
+- [Conectar Meta Quest a WiFi (guía oficial Meta)](https://www.meta.com/es-es/help/quest/1816744325172615/)
+- [Conectar Meta Quest 3(S) a Wi‑Fi (VR Expert)](https://knowledge.vr-expert.com/kb/how-to-connect-the-meta-quest-3-to-wi-fi/)
+
+[/DETAILS]`,
 
   "cleaning": `Limpia las gafas y mandos después de cada uso con una toallita no abrasiva y sin alcohol. Limpia las lentes solo con un paño de microfibra seco — nunca rocíes líquido directamente. Deja secar las superficies antes del siguiente usuario.
 

@@ -132,14 +132,19 @@ function drawCertificate(
   }
 }
 
+export type ModuleStatus = {
+  index: number;
+  titleKey: string;
+  status: "not_started" | "in_progress" | "completed";
+  enabled: boolean;
+};
+
 export function CertificateDownload({
   unlocked,
-  enabledCount,
-  completedCount,
+  modules,
 }: {
   unlocked: boolean;
-  enabledCount: number;
-  completedCount: number;
+  modules: ModuleStatus[];
 }) {
   const t = useTranslations("bootcamp");
   const [showModal, setShowModal] = useState(false);
@@ -166,6 +171,8 @@ export function CertificateDownload({
     link.click();
   }, [name, t]);
 
+  const completedCount = modules.filter((m) => m.status === "completed").length;
+  const enabledCount = modules.filter((m) => m.enabled).length;
   const remaining = enabledCount - completedCount;
 
   return (
@@ -194,21 +201,44 @@ export function CertificateDownload({
             : t("certificate.lockedDesc", { remaining })}
         </p>
 
-        {/* Progress towards certificate */}
-        {!unlocked && (
-          <div className="mx-auto mt-5 max-w-xs">
-            <div className="flex items-center justify-between text-xs text-gray-400 mb-1.5">
-              <span>{t("certificate.progress")}</span>
-              <span>{completedCount}/{enabledCount}</span>
-            </div>
-            <div className="h-2.5 w-full overflow-hidden rounded-full bg-white/10">
+        {/* Module thumbnails grid */}
+        <div className="mx-auto mt-6 grid max-w-md grid-cols-4 gap-3 sm:grid-cols-8">
+          {modules.map((mod) => (
+            <div
+              key={mod.index}
+              className={`flex flex-col items-center gap-1.5 rounded-xl p-2 transition-all ${
+                mod.status === "completed"
+                  ? "bg-teal-500/20"
+                  : mod.status === "in_progress"
+                    ? "bg-amber-500/10"
+                    : "bg-white/5"
+              }`}
+            >
               <div
-                className="h-full rounded-full bg-teal-500 transition-all duration-500"
-                style={{ width: `${enabledCount > 0 ? (completedCount / enabledCount) * 100 : 0}%` }}
-              />
+                className={`flex h-10 w-10 items-center justify-center rounded-lg text-sm font-bold transition-all ${
+                  mod.status === "completed"
+                    ? "bg-teal-500 text-white shadow-lg shadow-teal-500/30"
+                    : mod.status === "in_progress"
+                      ? "bg-amber-500/20 text-amber-400 ring-1 ring-amber-500/40"
+                      : "bg-white/10 text-gray-500"
+                }`}
+              >
+                {mod.status === "completed" ? (
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                ) : (
+                  mod.index
+                )}
+              </div>
+              <span className={`text-[10px] leading-tight ${
+                mod.status === "completed" ? "text-teal-400" : "text-gray-500"
+              }`}>
+                {t(`certificate.module` as Parameters<typeof t>[0])} {mod.index}
+              </span>
             </div>
-          </div>
-        )}
+          ))}
+        </div>
 
         <button
           type="button"

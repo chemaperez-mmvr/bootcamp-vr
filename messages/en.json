@@ -541,6 +541,106 @@
           "p3": "Communication and professional behaviour reveal soft skills that traditional assessments miss",
           "highlight": "VR shows you not just whether students completed the task, but how they thought, decided, and communicated along the way."
         }
+      },
+      "solvingCommonVrProblems": {
+        "video": {
+          "title": "Solving Common VR Problems",
+          "subtitle": "Watch this introduction to diagnosing and fixing the most frequent VR issues teachers face in real classrooms"
+        },
+        "s1": {
+          "title": "WiFi Connection Troubleshooting",
+          "subtitle": "The most common VR problem in schools — fix it in under a minute",
+          "p1": "WiFi drops stall entire lessons — knowing the fix sequence saves class time and keeps students learning",
+          "p2": "Toggle off/on, forget and rejoin, and restart solve 90% of connection issues without any technical expertise",
+          "p3": "School networks may block headset traffic or require captive portal logins that headsets cannot navigate",
+          "highlight": "A dedicated WiFi router for VR headsets avoids most school-network conflicts entirely."
+        },
+        "s2": {
+          "title": "Boundary & Guardian Problems",
+          "subtitle": "Why the tracking system fails and how to fix it before class starts",
+          "p1": "Poor lighting is the number one cause of Guardian failures — the cameras need consistent, even illumination to map the room",
+          "p2": "Mirrors and reflective surfaces confuse the tracking cameras by creating false visual reference points",
+          "p3": "Redrawing the boundary from scratch clears corrupt mapping data and usually resolves persistent tracking issues",
+          "highlight": "Set up Guardian on every headset before students arrive — it saves five minutes of class time and prevents frustration."
+        },
+        "s3": {
+          "title": "Headset Won't Turn On",
+          "subtitle": "Usually a power issue, rarely a hardware failure — diagnose it in 60 seconds",
+          "p1": "Check the charging LED first: solid orange means charging, solid green means full, no LED means a problem with the cable or adapter",
+          "p2": "Damaged USB-C cables are a frequent and underdiagnosed culprit — always try a different cable before assuming hardware failure",
+          "p3": "Force restart (hold power + volume-down for 30 seconds) recovers a frozen headset that shows no response to normal power button presses",
+          "highlight": "Charge headsets overnight before class day. A dead headset is a preventable problem, not an emergency."
+        },
+        "s4": {
+          "title": "Casting & Screen Sharing Issues",
+          "subtitle": "Share the VR view with the whole class — and fix it when it breaks",
+          "p1": "The headset and the receiving device (TV or Chromecast) must be on the exact same WiFi network for casting to work",
+          "p2": "Always start casting from the headset side: Quick Settings → Cast → select the target device",
+          "p3": "AP isolation on school routers blocks device-to-device communication — ask IT to whitelist VR devices or create a separate VLAN",
+          "highlight": "Test casting to your classroom screen before students arrive. It takes thirty seconds and prevents a ten-minute delay."
+        },
+        "s5": {
+          "title": "The Troubleshooting Mindset",
+          "subtitle": "Your response to tech problems determines whether the class learns or loses momentum",
+          "p1": "Stay calm and model composure — students mirror your reaction to technology failures, so your attitude sets the tone",
+          "p2": "Apply the 2-minute rule: if a headset is not fixed in 2 minutes, set it aside, rotate students, and troubleshoot after class",
+          "p3": "Always have a Plan B: a non-VR backup activity that covers the same learning objective, ready to deploy instantly",
+          "highlight": "The best VR teachers are not tech experts — they are prepared for when technology fails and keep the focus on learning."
+        }
+      },
+      "vrEducationalApps": {
+        "video": {
+          "title": "VR Educational Apps",
+          "subtitle": "Watch this introduction to identifying, evaluating, and integrating VR educational apps in your teaching"
+        },
+        "s1": {
+          "title": "What Makes an App Educational?",
+          "subtitle": "Four traits that separate genuine educational VR apps from games and demos",
+          "p1": "An educational VR app targets a specific, measurable learning outcome — not just exposure to content",
+          "p2": "The learner must act inside the app, not just watch — passive viewing is not educational regardless of visual quality",
+          "p3": "The app provides feedback on learner actions and produces measurable evidence of learning",
+          "highlight": "If the app does not require the learner to act, respond, and improve, it is not educational — it is a viewing experience."
+        },
+        "s2": {
+          "title": "Where to Find Educational VR Apps",
+          "subtitle": "Distribution channels and where most educational content actually lives",
+          "p1": "The official Meta Store is curated but has limited educational content — most titles are commercial",
+          "p2": "App Lab is Meta's secondary channel with a lower publishing barrier — most educational VR content lives here",
+          "p3": "WebXR experiences run in the headset browser with no installation — ideal for quick classroom use",
+          "highlight": "App Lab is where most educational VR content lives — always check it before concluding nothing exists for your subject."
+        },
+        "s3": {
+          "title": "Simulation Apps: Highest Impact",
+          "subtitle": "Why simulation apps are the most powerful category for skill-based training",
+          "p1": "The environment responds to learner actions — mistakes have visible consequences like a patient deteriorating",
+          "p2": "Learners can fail safely and try again without real-world risk — the core advantage of VR simulation",
+          "p3": "Multiple attempts build competence progressively — each failure is a learning opportunity, not a cost",
+          "highlight": "Simulation apps let learners fail safely — and that is exactly why they learn."
+        },
+        "s4": {
+          "title": "Choosing Apps by Learning Objective",
+          "subtitle": "Match the app type to your objective — never choose the app first",
+          "p1": "Use the decision map: exploration for context, guided training for procedures, simulation for practice, evaluation for assessment",
+          "p2": "A complete learning path combines types in sequence: exploration → guided training → simulation → evaluation",
+          "p3": "Not every lesson needs all four stages, but knowing the sequence prevents gaps in the learning journey",
+          "highlight": "Start with the objective, then find the app — not the other way around."
+        },
+        "s5": {
+          "title": "Evaluating Apps Before Class",
+          "subtitle": "Three evaluation dimensions every VR app must pass before classroom use",
+          "p1": "Pedagogical check: What does the student learn? What do they do? What feedback and evidence does the app provide?",
+          "p2": "Technical check: Load time, interface intuitiveness, space requirements, and stability under classroom conditions",
+          "p3": "Classroom check: Real duration with setup, simultaneous capacity, casting reliability, and your Plan B",
+          "highlight": "Test every app yourself, in the same conditions your students will face, before you ever use it in class."
+        },
+        "s6": {
+          "title": "Integrating Apps in Your Lessons",
+          "subtitle": "The before-during-after structure for embedding VR apps in teaching",
+          "p1": "Before: Provide a clear briefing — state the learning objective, explain what students will do, and set expectations",
+          "p2": "During: Monitor student progress, use casting to observe from outside, and be ready to assist",
+          "p3": "After: Run a structured debriefing — ask what happened, what worked, and how it connects to real-world practice",
+          "highlight": "A VR app is a tool within the lesson, not the lesson itself — always embed it in a before-during-after structure."
+        }
       }
     },
     "learningBlocks": {
@@ -657,6 +757,20 @@
       "lessonPlanBuilderRebuild": "Rebuild plan",
       "lessonPlanBuilderReview": "Review your plan",
       "resourceAllocationTitle": "Resource planner",
+      "matchingDesc": "Match terms to their correct definitions",
+      "orderingDesc": "Arrange steps in the right sequence",
+      "mythBustersDesc": "Decide if each statement is fact or fiction",
+      "troubleshootingDesc": "Diagnose problems step by step",
+      "triageSortDesc": "Sort items into priority categories",
+      "classroomPlannerDesc": "Design your classroom layout on a grid",
+      "fillGapsDesc": "Complete the text with the missing words",
+      "decisionTreeDesc": "Navigate choices and see the consequences",
+      "lessonPlanBuilderDesc": "Build a lesson plan choosing the best options",
+      "resourceAllocationDesc": "Distribute limited time or resources wisely",
+      "trueFalseDesc": "Judge whether each statement is true or false",
+      "classifyDesc": "Sort items into their correct group",
+      "memoryMatchDesc": "Find matching pairs by flipping cards",
+      "conceptMapDesc": "Connect related concepts together",
       "resourceAllocationBudget": "Total: {used}/{total} {unit}",
       "resourceAllocationSubmit": "Submit plan",
       "resourceAllocationCorrect": "Well-balanced plan!",
@@ -3040,6 +3154,879 @@
             }
           }
         }
+      },
+      "solvingCommonVrProblems": {
+        "b1": {
+          "title": "WiFi Connection",
+          "exercise": {
+            "instruction": "Walk through the WiFi troubleshooting steps. At each stage, choose the best action.",
+            "scenario": "A student reports their headset shows 'No WiFi connection' during a VR lesson. You need to diagnose and fix the problem.",
+            "n1": {
+              "prompt": "The headset displays 'No WiFi connection'. What do you check first?",
+              "a": { "label": "Open Quick Settings and check if WiFi is toggled on", "feedback": "Correct. The simplest check first — WiFi may have been accidentally toggled off. Quick Settings is the fastest way to verify." },
+              "b": { "label": "Immediately restart the headset", "feedback": "Restarting works but skips simpler checks. Always verify WiFi is toggled on first — it takes 5 seconds and solves many cases." },
+              "c": { "label": "Factory reset the headset to clear all settings", "feedback": "Factory reset is a last resort that wipes all data. Never start here — check the WiFi toggle first." }
+            },
+            "n2": {
+              "prompt": "WiFi is enabled but the network keeps dropping after a few seconds.",
+              "a": { "label": "Switch the headset to airplane mode and back", "feedback": "Airplane mode toggles all radios, but it's slower and less targeted than forgetting the specific network." },
+              "b": { "label": "Forget the network and re-enter the password", "feedback": "Correct. Forgetting and rejoining clears cached connection data that may be corrupted. This resolves most persistent drop issues." },
+              "c": { "label": "Move to a different classroom with better WiFi", "feedback": "Changing rooms is disruptive and rarely necessary. The issue is usually the connection profile, not the signal." }
+            },
+            "n3": {
+              "prompt": "The student reconnected, but WiFi drops again after 2 minutes.",
+              "a": { "label": "Restart the headset — a full reboot clears deeper network state", "feedback": "Correct. When toggle and rejoin don't work, a restart clears the network stack. If it still fails after restart, the issue is likely the school network, not the headset." },
+              "b": { "label": "Continue without WiFi — the VR app might still work offline", "feedback": "Some apps work offline, but many require a network connection. Restarting is more reliable than hoping the app works without WiFi." }
+            }
+          },
+          "scenario": {
+            "context": "Mid-lesson, 3 of 8 headsets simultaneously lose WiFi. Students are in the middle of a VR science simulation. Five headsets are still working fine.",
+            "question": "What do you do first?",
+            "choices": {
+              "a": "Stop the entire class and troubleshoot all 3 headsets together",
+              "b": "Have the 3 affected students toggle WiFi off/on in Quick Settings while the rest continue. If not fixed in 2 minutes, rotate them to working headsets.",
+              "c": "Call IT support immediately — simultaneous drops suggest a network problem beyond your control"
+            },
+            "feedback": {
+              "a": "Stopping the entire class wastes learning time for the 5 students whose headsets work fine. Let them continue while you address the issue with the affected students.",
+              "b": "Exactly right. Quick WiFi toggle is the fastest fix. The 2-minute rule keeps the lesson moving — if the toggle doesn't work, rotate students so everyone gets VR time. Troubleshoot the headsets after class.",
+              "c": "IT support may be needed eventually, but basic troubleshooting (WiFi toggle, restart) takes under 2 minutes and solves most issues. Always try the quick fixes first."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A student's headset connects to WiFi but keeps dropping every few minutes. You've already toggled WiFi and restarted the headset.",
+              "question": "What should you try next?",
+              "choices": {
+                "a": "Forget the network entirely and re-enter the WiFi password from scratch",
+                "b": "Move the student closer to the projector screen",
+                "c": "Check if the student's phone is creating wireless interference"
+              },
+              "feedback": {
+                "a": "Correct. Forgetting and rejoining the network clears cached credentials and connection profiles. This is the standard next step when toggle and restart have already failed.",
+                "b": "The projector screen has no relationship to WiFi signal strength. This won't help.",
+                "c": "Phone interference is extremely rare with modern WiFi. This is theoretically possible but almost never the actual cause."
+              }
+            },
+            "c2": {
+              "context": "No headsets in the classroom can connect to WiFi at all. Other devices like phones and laptops work fine on the same network.",
+              "question": "What is the most likely cause?",
+              "choices": {
+                "a": "All headsets have broken WiFi hardware simultaneously",
+                "b": "The school network is blocking VR headset traffic — MAC address filtering, device restrictions, or a captive portal the headsets cannot navigate",
+                "c": "The classroom is too far from the WiFi router"
+              },
+              "feedback": {
+                "a": "Multiple headsets failing simultaneously with identical symptoms is almost never a hardware issue. It points to an external cause like network restrictions.",
+                "b": "Correct. When personal devices connect but VR headsets cannot, the issue is network policy — not hardware. School IT may have MAC filtering, device-type blocking, or a captive portal that headsets cannot display. Test with a phone hotspot to confirm the headsets themselves work.",
+                "c": "If phones work fine in the same location, distance is not the issue. The signal reaches the room — the headsets are being blocked at the network level."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Toggling WiFi off and back on is often enough to resolve a dropped connection",
+                "explanation": "True. A simple WiFi toggle is the fastest fix and resolves the majority of connection drops. It forces the headset to re-establish the connection without a full restart."
+              },
+              "s2": {
+                "statement": "If a headset cannot connect to the school WiFi, the headset's WiFi hardware is definitely broken",
+                "explanation": "False. School networks frequently block unfamiliar devices via MAC filtering, device restrictions, or captive portals. Test with a phone hotspot first — if the headset connects to the hotspot, the hardware is fine and the issue is the school network."
+              },
+              "s3": {
+                "statement": "Testing with a phone hotspot is a good way to confirm whether the headset's WiFi hardware works",
+                "explanation": "True. A phone hotspot bypasses school network policies entirely. If the headset connects successfully, you've confirmed the hardware is fine and isolated the problem to the school network."
+              }
+            }
+          }
+        },
+        "b2": {
+          "title": "Boundary & Guardian Problems",
+          "exercise": {
+            "instruction": "Put the Guardian troubleshooting steps in the correct order, from easiest to most drastic",
+            "scaleStart": "Try first",
+            "scaleEnd": "Last resort",
+            "i1": "Check room lighting — ensure even, consistent illumination with no dark corners",
+            "i2": "Cover or face away from mirrors and reflective surfaces",
+            "i3": "Redraw the Guardian boundary from scratch in Settings",
+            "i4": "Clean the headset's external cameras with a dry microfibre cloth",
+            "i5": "Switch to Stationary Boundary mode as a fallback"
+          },
+          "scenario": {
+            "context": "Students put on headsets but 4 of them are stuck on the Guardian setup screen. They cannot proceed. The classroom has fluorescent lights and one wall is a full-length mirror.",
+            "question": "What is the most likely cause and fix?",
+            "choices": {
+              "a": "The headsets need a software update to fix a Guardian bug",
+              "b": "The fluorescent lighting may be causing flicker and the mirror is confusing the tracking cameras — turn on additional steady lights and have students face away from the mirror or cover it",
+              "c": "Tell students to skip Guardian by choosing Stationary Boundary mode"
+            },
+            "feedback": {
+              "a": "Guardian issues are almost always caused by the physical environment, not software bugs. Firmware updates rarely fix tracking problems. Check the room conditions first.",
+              "b": "Exactly. Fluorescent flicker and mirror reflections are the two most common Guardian killers. Adding steady lighting and eliminating reflective surfaces resolves the root cause for this session and all future ones.",
+              "c": "Stationary mode avoids Guardian but also removes the safety boundary. It fixes the symptom without addressing the cause — the same problem will recur every session until you fix the environment."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A student's Guardian boundary keeps resetting every 30 seconds, even though the room is well-lit with no mirrors. You have already redrawn the boundary twice.",
+              "question": "What should you try?",
+              "choices": {
+                "a": "Clean the headset's external cameras with a dry microfibre cloth — smudges or fingerprints degrade tracking quality",
+                "b": "Restart the WiFi router — Guardian might depend on network connectivity",
+                "c": "Tell the student to just stay seated and avoid moving"
+              },
+              "feedback": {
+                "a": "Correct. Dirty cameras are an often-overlooked cause of persistent tracking failures. Students handle headsets constantly, leaving fingerprints on the external cameras. A quick wipe with a dry microfibre cloth can restore tracking.",
+                "b": "Guardian uses the headset's cameras for spatial tracking — it does not use WiFi. Restarting the router will not affect boundary behaviour.",
+                "c": "Sitting still avoids the problem but prevents the student from using room-scale VR. Fix the root cause — clean the cameras — so the student can move freely."
+              }
+            },
+            "c2": {
+              "context": "You are setting up a VR session in a new room. The floor is a uniform dark grey carpet and the ceiling has dim recessed lighting. Guardian refuses to initialise on any headset.",
+              "question": "What are two things that would help?",
+              "choices": {
+                "a": "Place contrasting objects on the floor and add brighter portable lights — the cameras need visual features and illumination to map the space",
+                "b": "Use a different VR app that does not require Guardian",
+                "c": "Switch all headsets to developer mode to bypass Guardian"
+              },
+              "feedback": {
+                "a": "Correct. The cameras need two things: enough light to see, and enough visual contrast to identify features. A uniform dark surface with dim lighting gives the cameras nothing to track. Adding objects (even tape lines on the floor) and portable lights solves both problems.",
+                "b": "Most VR apps require some form of spatial tracking. Avoiding Guardian does not eliminate the need for the cameras to see the environment.",
+                "c": "Developer mode is not a standard classroom solution and may introduce other issues. The correct fix is to improve the physical environment for the cameras."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Dim lighting is the most common cause of Guardian boundary failures",
+                "explanation": "True. The headset cameras rely on visible light to detect the environment. Dim, uneven, or flickering lighting prevents accurate spatial mapping and is the single most frequent cause of Guardian problems."
+              },
+              "s2": {
+                "statement": "Mirrors and reflective surfaces help the Guardian cameras by providing more visual reference points",
+                "explanation": "False. Mirrors create false reflections that confuse the cameras. The tracking system interprets reflections as real physical space, causing boundaries to shift, reset, or fail entirely. Always cover mirrors or face students away from them."
+              },
+              "s3": {
+                "statement": "Clearing Guardian History in Settings and redrawing the boundary is a standard fix for persistent tracking issues",
+                "explanation": "True. Old boundary data can become corrupted, especially if the room layout has changed. Clearing the saved mapping and redrawing from scratch gives the cameras a fresh reference and resolves many persistent issues."
+              }
+            }
+          }
+        },
+        "b3": {
+          "title": "Headset Won't Turn On",
+          "exercise": {
+            "instruction": "Walk through the power diagnosis steps. At each stage, choose the best approach.",
+            "scenario": "A headset will not turn on. No display, no LED, no sound. You need to diagnose the problem.",
+            "n1": {
+              "prompt": "The headset shows no sign of life. What do you check first?",
+              "a": { "label": "Check the charging LED — plug it in and look for the indicator light", "feedback": "Good approach. The LED is the fastest diagnostic: orange means charging, green means full, no LED means power is not reaching the headset. This tells you exactly where to look next." },
+              "b": { "label": "Hold the power button for a full 3 seconds — brief taps may not register", "feedback": "Reasonable — a common mistake is tapping the power button instead of holding it. But checking the charging LED first gives you more diagnostic information." },
+              "c": { "label": "Perform a force restart immediately — hold power + volume-down for 30 seconds", "feedback": "A force restart is a useful tool, but it is overkill as a first step. You do not yet know if the problem is charging, power delivery, or a frozen OS. Start with simpler checks." }
+            },
+            "n2": {
+              "prompt": "No LED appears even when plugged in. The headset shows no response to the charger.",
+              "a": { "label": "Try a different USB-C cable and a different power adapter", "feedback": "Good approach. Damaged cables and underpowered adapters are the most common and most underdiagnosed cause of charging failures. Swapping the cable often solves the problem immediately." },
+              "b": { "label": "Clean the USB-C charging port with compressed air", "feedback": "A dirty port can cause charging issues, but it is less common than a faulty cable. Try a different cable first — it is faster and more likely to be the culprit." },
+              "c": { "label": "Set the headset aside and use a different one — this one is probably broken", "feedback": "Giving up too early. A headset with no charging LED is almost always a cable or adapter problem, not a hardware failure. Try a different cable before declaring it broken." }
+            },
+            "n3": {
+              "prompt": "Diagnosis complete.",
+              "endFeedback": "The correct diagnostic sequence is: check the charging LED → try the power button for 3 seconds → swap the USB-C cable and adapter → clean the port → force restart → set aside for post-class investigation. Most 'dead' headsets are simply not receiving power due to a faulty cable."
+            }
+          },
+          "scenario": {
+            "context": "It is 5 minutes before class. You press the power button on a headset and nothing happens — no display, no LED, no sound. You have 10 headsets but need all of them for today's paired activity.",
+            "question": "What is your first action?",
+            "choices": {
+              "a": "Try a force restart immediately — hold power + volume-down for 30 seconds",
+              "b": "Plug it into the charger, check for a charging LED, and try a different USB-C cable if no LED appears — while waiting, reorganise the activity to work with 9 headsets",
+              "c": "Set it aside immediately and plan to send it for repair"
+            },
+            "feedback": {
+              "a": "A force restart is useful for a frozen headset, but with no LED and no response, the problem is more likely power delivery than a frozen OS. Check the charging path first.",
+              "b": "Exactly right. Checking the charging LED and swapping cables is the fastest path to diagnosis. Meanwhile, adapting the activity to 9 headsets keeps the lesson on track. The troubleshooting mindset: fix what you can quickly, adapt the plan, deal with broken equipment after class.",
+              "c": "This is almost certainly fixable. Most 'dead' headsets have a simple cable or charging issue. Setting it aside without trying basic steps wastes a perfectly good headset."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A headset shows an orange charging LED when plugged in but still will not turn on after 5 minutes of charging. The power button produces no response at all.",
+              "question": "What should you try?",
+              "choices": {
+                "a": "Hold the power button for a full 3 seconds — brief taps do not always register on some headsets",
+                "b": "The battery is too drained and needs overnight charging — there is nothing you can do now",
+                "c": "The headset is broken and needs a factory reset through the boot menu"
+              },
+              "feedback": {
+                "a": "Correct. A common mistake is tapping the power button quickly instead of holding it for a full 3 seconds. With the orange LED confirming power delivery, a sustained button press is the most likely fix.",
+                "b": "While severely drained batteries do take time, 5 minutes of charging with an orange LED usually provides enough power to boot. Try holding the power button first.",
+                "c": "A factory reset would erase all data and is unnecessary here. The orange LED confirms the headset is receiving power — the issue is likely just the power button press duration."
+              }
+            },
+            "c2": {
+              "context": "A headset turns on, shows the Meta logo, then immediately shuts off. This boot loop cycle repeats. The battery indicator briefly shows 45% charge.",
+              "question": "This is likely what kind of problem, and what do you do?",
+              "choices": {
+                "a": "A WiFi authentication error — reconnect to the network",
+                "b": "A frozen operating system — perform a force restart by holding power + volume-down for 30 seconds to break the boot loop",
+                "c": "Low battery despite what the indicator shows — plug it in and wait"
+              },
+              "feedback": {
+                "a": "WiFi issues cannot cause a boot loop. The headset is failing during startup, before it even reaches network connectivity. This is an OS or firmware problem.",
+                "b": "Correct. A boot loop (power on → logo → shutdown → repeat) indicates the operating system is crashing during startup. A force restart (power + volume-down for 30 seconds) forces a clean boot that usually breaks the cycle.",
+                "c": "The battery shows 45%, which is more than enough to boot. Boot loops are caused by software crashes, not low battery. A force restart is the correct fix."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "What does each LED indicator on a charging headset mean?",
+              "cat": {
+                "charging": "Charging",
+                "fullyCharged": "Fully Charged",
+                "problem": "Problem"
+              },
+              "i1": "Solid orange LED",
+              "i2": "Solid green LED",
+              "i3": "No LED at all despite being plugged in",
+              "i4": "Flashing orange LED",
+              "i5": "LED appears briefly then disappears"
+            }
+          }
+        },
+        "b4": {
+          "title": "Casting & Screen Sharing",
+          "exercise": {
+            "instruction": "Classify each casting problem by its root cause: is it a network problem, a compatibility problem, or a settings problem?",
+            "cat": {
+              "network": "Network Problem",
+              "compatibility": "Compatibility Problem",
+              "settings": "Settings Problem"
+            },
+            "i1": "Headset and TV are connected to different WiFi networks",
+            "i2": "Casting to a non-Chromecast smart TV that lacks built-in Cast support",
+            "i3": "AP isolation is enabled on the school router, blocking device-to-device traffic",
+            "i4": "Using Firefox instead of Chrome for browser-based casting at oculus.com/casting",
+            "i5": "Cast target device does not appear in the headset's Cast menu",
+            "i6": "Headset is on the 2.4 GHz band while the TV is on the 5 GHz band",
+            "i7": "Cast was started from the TV side instead of from the headset's Quick Settings",
+            "i8": "No USB screen-mirroring app installed as a wired fallback option"
+          },
+          "scenario": {
+            "context": "You want to cast a student's VR view to the classroom TV so everyone can watch. You start casting from the headset but the TV does not appear as an option in the Cast menu.",
+            "question": "What are the first two things to check?",
+            "choices": {
+              "a": "Update the headset firmware — old firmware breaks casting functionality",
+              "b": "Verify both devices are on the same WiFi network, and confirm the TV is a Chromecast-enabled device or has a Chromecast plugged in",
+              "c": "Restart the TV and try again"
+            },
+            "feedback": {
+              "a": "Firmware updates rarely affect casting discovery. The most common causes are network mismatches and device compatibility — check those first.",
+              "b": "Correct. The two most common reasons a Cast target does not appear: (1) the devices are on different WiFi networks, and (2) the TV does not support the Cast protocol. Same network + Chromecast compatibility covers 80% of casting failures.",
+              "c": "Restarting is worth trying but does not address the two most likely root causes. Check network and compatibility first for a targeted fix."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "Casting starts successfully from headset to TV, but the image freezes after 30 seconds and then disconnects entirely. Both devices are on the same WiFi network.",
+              "question": "What is the most likely cause?",
+              "choices": {
+                "a": "The VR app does not support casting",
+                "b": "Network congestion or AP isolation — the router may be throttling or blocking device-to-device traffic on the school network",
+                "c": "The headset battery is too low to sustain a casting stream"
+              },
+              "feedback": {
+                "a": "Some apps restrict casting, but that would prevent casting from starting at all, not cause it to freeze mid-stream. Freezing and disconnecting points to a network issue.",
+                "b": "Correct. When casting starts but degrades, the network is the culprit. AP isolation blocks or throttles device-to-device traffic. Network congestion from many devices also causes freezing. Ask IT about isolation settings or try a dedicated router.",
+                "c": "Battery level does not affect casting quality. Low battery would cause the headset to shut down, not the cast to freeze."
+              }
+            },
+            "c2": {
+              "context": "No Chromecast or smart TV is available in your classroom. You still need to show the VR view to students who are not wearing headsets.",
+              "question": "What is your best fallback?",
+              "choices": {
+                "a": "Use a screen-mirroring app on a laptop connected to the headset via USB as a wired fallback",
+                "b": "Have students take turns looking through the headset while others wait",
+                "c": "Cancel the shared viewing and have students describe what they see verbally to each other"
+              },
+              "feedback": {
+                "a": "Correct. A USB cable and a screen-mirroring app on a laptop bypasses WiFi and casting entirely. Connect the headset to the laptop, project the laptop screen, and the whole class sees the VR view with zero network dependency.",
+                "b": "Taking turns is extremely slow with a full class and wastes most students' time. A wired connection is far more practical.",
+                "c": "Verbal descriptions lose the visual impact of shared VR viewing. If you cannot cast wirelessly, a wired USB connection is a reliable alternative."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "The headset and the TV or Chromecast must be on the same WiFi network for casting to work",
+                "explanation": "True. Casting uses local network communication between devices. If the headset is on one WiFi network and the TV or Chromecast is on another, they cannot discover or communicate with each other."
+              },
+              "s2": {
+                "statement": "Casting should always be started from the TV or Chromecast side, not the headset",
+                "explanation": "False. Always start casting from the headset: Quick Settings → Cast → select the target device. Starting from the TV side is unreliable and not the supported workflow for Meta Quest headsets."
+              },
+              "s3": {
+                "statement": "If casting does not work wirelessly, a USB connection to a laptop with a screen-mirroring app is a reliable fallback",
+                "explanation": "True. A USB wired connection bypasses all WiFi and casting issues. Screen-mirroring apps display the headset view on the laptop screen, which can then be projected for the class."
+              }
+            }
+          }
+        },
+        "b5": {
+          "title": "The Troubleshooting Mindset",
+          "exercise": {
+            "instruction": "Is each statement a fact or a myth about troubleshooting VR in classrooms?",
+            "s1": {
+              "statement": "You should spend as long as needed to fix a broken headset during class",
+              "explanation": "Myth. The 2-minute rule exists to protect learning time. If a headset is not fixed in 2 minutes, set it aside, rotate students to working headsets, and troubleshoot after class."
+            },
+            "s2": {
+              "statement": "Having a non-VR backup activity ready is a sign of poor preparation",
+              "explanation": "Myth. A Plan B shows excellent preparation. Technology fails unpredictably — having a non-VR activity that covers the same learning objective means the lesson succeeds regardless of tech issues."
+            },
+            "s3": {
+              "statement": "Most VR headset issues in classrooms can be resolved with a simple restart",
+              "explanation": "Fact. Restarting clears temporary software glitches, resets network connections, and resolves many common issues. It is the single most effective general-purpose fix after basic checks."
+            },
+            "s4": {
+              "statement": "If some headsets break during a session, rotate students through the working ones rather than stopping the class",
+              "explanation": "Fact. Rotation keeps every student learning. If 3 of 12 headsets fail, reorganise into groups that cycle through the 9 working headsets. Every student still gets VR time, and you fix the broken ones later."
+            },
+            "s5": {
+              "statement": "A VR lesson where the technology fails is a failed lesson",
+              "explanation": "Myth. The learning objective matters more than the technology. A teacher who adapts to equipment failure — using backup activities, rotating headsets, staying calm — delivers a successful lesson regardless of tech problems."
+            }
+          },
+          "scenario": {
+            "context": "Three headsets malfunction at the start of a VR lesson. You have 30 students and planned to use all 15 headsets in pairs. Students are watching you expectantly.",
+            "question": "What do you do?",
+            "choices": {
+              "a": "Spend 10 minutes fixing the headsets while students wait — you cannot run VR with fewer headsets",
+              "b": "Stay calm, acknowledge the issue briefly, reorganise into groups of 3 with the 12 working headsets, and rotate so everyone gets VR time. Note the broken headsets for post-class troubleshooting.",
+              "c": "Cancel the VR session entirely and switch to a textbook activity"
+            },
+            "feedback": {
+              "a": "Ten minutes of idle time for 30 students is a significant learning loss. The 2-minute rule says: if it is not fixed in 2 minutes, adapt the plan and keep teaching.",
+              "b": "Exactly right. Staying calm models composure. Reorganising into groups of 3 means all students still get VR time with the 12 working headsets. The broken headsets are a post-class problem, not a mid-lesson emergency.",
+              "c": "Cancelling the entire session because 3 of 15 headsets failed is an overreaction. Twelve working headsets is more than enough to run a successful VR lesson with adapted grouping."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A teacher spends 15 minutes trying to fix one headset while 29 students sit idle. The teacher mutters 'These things never work' and visibly shows frustration.",
+              "question": "What is wrong with this approach?",
+              "choices": {
+                "a": "The teacher is right to prioritise fixing the technology — you cannot teach VR without it",
+                "b": "The teacher violated three principles: the 2-minute troubleshooting limit, staying calm in front of students, and prioritising learning over technology. Students absorbed 15 minutes of frustration instead of learning.",
+                "c": "The teacher should have called IT support instead of trying to fix it themselves"
+              },
+              "feedback": {
+                "a": "You can absolutely teach a VR lesson with one fewer headset. The teacher prioritised one device over the learning of 29 students — this is the exact mistake the 2-minute rule prevents.",
+                "b": "Correct. Three mistakes compounded: (1) spending 15 minutes on a single headset far exceeds the 2-minute limit, (2) visible frustration tells students that VR is unreliable and stressful, and (3) 29 students lost learning time because one device was prioritised over the lesson.",
+                "c": "IT support may help, but the bigger issue is the teacher's response. A calm teacher would have set the headset aside after 2 minutes, adapted the plan, and continued teaching."
+              }
+            },
+            "c2": {
+              "context": "An experienced VR teacher arrives early, tests all headsets, and discovers one is stuck on a software update. Instead of panicking, they set it aside, adjust their plan to use one fewer headset, and prepare their usual paper-based backup activity just in case.",
+              "question": "What principle does this demonstrate?",
+              "choices": {
+                "a": "That VR is unreliable and teachers should always have non-VR alternatives",
+                "b": "Good time management — arriving early is the key",
+                "c": "The troubleshooting mindset: prepare for failures, test in advance, have a Plan B, and keep the focus on the learning objective rather than the technology"
+              },
+              "feedback": {
+                "a": "VR is not inherently unreliable — but all technology can fail. The principle is preparation, not avoidance. This teacher uses VR confidently because they are prepared for problems.",
+                "b": "Arriving early helped, but the real principle is broader: testing equipment, adapting the plan without stress, and having a backup activity. This is the troubleshooting mindset.",
+                "c": "Correct. This teacher demonstrates every element of the troubleshooting mindset: (1) test in advance, (2) stay calm when problems arise, (3) adapt the plan quickly, (4) have a backup activity ready, and (5) keep the learning objective as the priority, not the technology."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Is this a good troubleshooting practice, a common mistake, or a Plan B strategy?",
+              "cat": {
+                "goodPractice": "Good Practice",
+                "commonMistake": "Common Mistake",
+                "planB": "Plan B Strategy"
+              },
+              "i1": "Spending 10+ minutes fixing one headset during class while students wait",
+              "i2": "Rotating students through fewer working headsets so everyone still gets VR time",
+              "i3": "Preparing a discussion activity that covers the same learning objective without VR",
+              "i4": "Showing visible frustration when technology fails in front of students",
+              "i5": "Testing all headsets before students arrive each session",
+              "i6": "Having a short video clip ready that covers the same topic as the VR experience"
+            }
+          }
+        }
+      },
+      "vrEducationalApps": {
+        "b1": {
+          "title": "What Makes an App Educational?",
+          "exercise": {
+            "instruction": "Label each statement as Fact or Myth based on what defines a genuine educational VR app.",
+            "s1": {
+              "statement": "A VR app that lets students fly through the solar system with no tasks, no feedback, and no assessment qualifies as educational.",
+              "explanation": "Myth. Without learning objectives, learner action, feedback, or measurable outcomes, this is a viewing experience — not an educational app."
+            },
+            "s2": {
+              "statement": "An educational VR app must produce measurable learning outcomes that can be observed, scored, or recorded.",
+              "explanation": "Fact. Measurable outcomes are one of the four defining traits of an educational VR app, allowing instructors to verify that learning occurred."
+            },
+            "s3": {
+              "statement": "A beautiful 360-degree video of a coral reef automatically qualifies as an educational VR app.",
+              "explanation": "Myth. A 360 video is passive viewing — the learner does not act, receive feedback, or demonstrate learning. Beauty does not equal education."
+            },
+            "s4": {
+              "statement": "If a VR app requires the learner to perform actions and provides feedback on those actions, it meets two of the four educational criteria.",
+              "explanation": "Fact. Learner action and feedback are two of the four traits. The app would still need clear learning objectives and measurable outcomes to be fully educational."
+            },
+            "s5": {
+              "statement": "High student engagement with a VR app always indicates that meaningful learning is taking place.",
+              "explanation": "Myth. Engagement and learning are not the same. Students can be highly engaged with entertainment content that produces no measurable learning."
+            }
+          },
+          "scenario": {
+            "context": "Your department head wants to purchase a popular VR game for the classroom. Students who tried it during a demo day were thrilled and highly engaged. However, the app has no learning objectives, no feedback mechanism, and no way to track student performance.",
+            "question": "What do you recommend?",
+            "choices": {
+              "a": "Buy it — student engagement is the most important factor, and the enthusiasm proves it works",
+              "b": "Explain that despite the engagement, the app lacks the four traits of an educational app and suggest evaluating alternatives that include learning objectives, learner action, feedback, and measurable outcomes",
+              "c": "Reject it outright — if it is a game, it cannot have educational value under any circumstances"
+            },
+            "feedback": {
+              "a": "Engagement matters, but it is not sufficient. An app without learning objectives, feedback, or measurable outcomes is entertainment, not education — no matter how excited students are.",
+              "b": "Correct. You acknowledge the engagement value while pointing out the missing educational criteria. Suggesting alternatives with the four traits is constructive and evidence-based.",
+              "c": "Too absolute. Games can be educational if they incorporate learning objectives, feedback, and measurable outcomes. The issue is not the format but the absence of educational design."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A science teacher uses a VR app where students can rotate and zoom into a 3D model of a human cell. Students can tap organelles to see labels and short descriptions. There is no quiz, no task, and no feedback on student actions.",
+              "question": "Does this app meet the criteria for an educational VR app?",
+              "choices": {
+                "a": "It partially meets the criteria — it has implicit learning objectives (anatomy) and some learner action (tapping), but lacks feedback and measurable outcomes. It is closer to an interactive reference than a full educational app.",
+                "b": "Yes — the 3D model and labels make it fully educational",
+                "c": "No — it has zero educational value because there is no quiz"
+              },
+              "feedback": {
+                "a": "Correct. The app has elements of education but falls short on feedback and measurable outcomes. It could be enhanced with tasks like 'identify three organelles involved in energy production' to become truly educational.",
+                "b": "Labels and interactivity are a start, but without feedback on learner actions and measurable outcomes, this is more of a reference tool than a complete educational app.",
+                "c": "A quiz is one way to measure outcomes, but not the only one. The issue is broader — the app lacks feedback and structured tasks, not just a quiz."
+              }
+            },
+            "c2": {
+              "context": "Two VR apps are available for teaching fire safety. App A shows a dramatic 360-degree video of a building fire — students watch from a fixed position. App B places students inside a burning building where they must locate exits, use fire extinguishers, and evacuate — the app scores their response time and decisions.",
+              "question": "Which app is educational according to the four criteria?",
+              "choices": {
+                "a": "App A — the dramatic footage creates a stronger emotional impact that students will remember",
+                "b": "App B — it requires learner action, provides feedback through scoring, has clear objectives (safe evacuation), and produces measurable outcomes",
+                "c": "Both are educational — they just use different approaches to teach fire safety"
+              },
+              "feedback": {
+                "a": "Emotional impact aids memory, but App A is passive viewing with no action, feedback, or measurable outcomes. It fails three of the four criteria.",
+                "b": "Correct. App B meets all four criteria: clear learning objectives, required learner action, feedback via scoring, and measurable outcomes. This is the definition of an educational VR app.",
+                "c": "App A is a viewing experience, not an educational app. Having educational subject matter does not automatically make an app educational — the design must include all four criteria."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "An app must require the learner to take action — not just watch — to qualify as educational.",
+                "explanation": "True. Learner action is one of the four essential traits. Passive viewing, no matter how immersive, is not education."
+              },
+              "s2": {
+                "statement": "Any VR app used in a classroom setting is automatically educational.",
+                "explanation": "False. The context of use does not change the app's design. An entertainment app used in a classroom is still entertainment."
+              },
+              "s3": {
+                "statement": "Feedback from the app — showing consequences or corrections — is essential for learning.",
+                "explanation": "True. Without feedback, learners cannot know whether their actions were correct or how to improve."
+              }
+            }
+          }
+        },
+        "b2": {
+          "title": "Where to Find Educational VR Apps",
+          "exercise": {
+            "instruction": "Match each distribution channel with its key characteristic.",
+            "p1": { "left": "Official Meta Store", "right": "Curated and reviewed; mostly commercial titles with limited educational content" },
+            "p2": { "left": "App Lab", "right": "Lower publishing barrier; where most educational VR content is published" },
+            "p3": { "left": "Private / institutional apps", "right": "Custom-built and distributed internally by universities, hospitals, or training organisations" },
+            "p4": { "left": "WebXR experiences", "right": "Browser-based VR accessed via URL; no installation required" },
+            "p5": { "left": "SideQuest", "right": "Third-party platform for sideloaded content; requires developer mode enabled" }
+          },
+          "scenario": {
+            "context": "A teacher searches the official Meta Store for VR clinical training apps and finds nothing. They tell the department that VR clinical simulation simply does not exist for their subject area.",
+            "question": "What is wrong with this conclusion?",
+            "choices": {
+              "a": "Nothing — if the Meta Store does not have it, the app probably does not exist",
+              "b": "The teacher only checked one channel — most educational VR content lives on App Lab, not the main store. They should also check institutional apps and WebXR options.",
+              "c": "The teacher should build their own custom VR app to solve the problem"
+            },
+            "feedback": {
+              "a": "The Meta Store is just one distribution channel, and it has limited educational content due to its curation requirements. Most educational VR apps are published elsewhere.",
+              "b": "Correct. App Lab is the primary home for educational VR content. Institutional channels and WebXR experiences are additional sources the teacher has not explored.",
+              "c": "Building custom apps is expensive and time-consuming. Before going that route, the teacher should exhaust all existing distribution channels."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A school wants to use a VR anatomy app developed by a medical university. The app is not on the Meta Store or App Lab — it is distributed directly by the university via an APK file.",
+              "question": "What type of distribution channel is this?",
+              "choices": {
+                "a": "This is a private/institutional app — distributed internally by the developing organisation, typically via direct installation",
+                "b": "This is a WebXR experience since it is not on official stores",
+                "c": "This is a SideQuest app that the university uploaded"
+              },
+              "feedback": {
+                "a": "Correct. Private/institutional apps are custom-built by organisations and distributed through their own channels, often requiring direct installation via APK.",
+                "b": "WebXR runs in the browser — this app requires installation via APK, making it a private/institutional distribution.",
+                "c": "SideQuest is a third-party platform. Institutional apps distributed directly by the developer use their own private channel."
+              }
+            },
+            "c2": {
+              "context": "A chemistry teacher finds a VR periodic table experience that runs entirely in the Meta Quest browser via a URL. No app installation is needed.",
+              "question": "What distribution channel does this represent?",
+              "choices": {
+                "a": "App Lab — since it is accessible without the main store",
+                "b": "WebXR — browser-based VR experiences that require no installation, accessed via URL inside the headset browser",
+                "c": "This is not a real distribution channel — browser-based VR does not exist"
+              },
+              "feedback": {
+                "a": "App Lab still requires app installation. This experience runs directly in the browser with no installation.",
+                "b": "Correct. WebXR experiences are browser-based VR that run via URL, making them the easiest to deploy in classrooms — no installation, no updates, no storage concerns.",
+                "c": "WebXR is a well-established technology. Browser-based VR experiences are increasingly common for educational use."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each item by its access requirements.",
+              "cat": {
+                "freeAccess": "Free / Open access",
+                "institutional": "Requires institutional access",
+                "devSetup": "Requires developer setup"
+              },
+              "i1": "App Lab apps shared via link",
+              "i2": "University-developed APK distributed internally",
+              "i3": "WebXR experience via public URL",
+              "i4": "SideQuest apps requiring developer mode",
+              "i5": "Hospital training app on private MDM system"
+            }
+          }
+        },
+        "b3": {
+          "title": "Simulation Apps: The Highest-Impact Category",
+          "exercise": {
+            "instruction": "You are a nursing instructor choosing VR for clinical skills training. Navigate through the decisions to build the best learning path.",
+            "scenario": "Your nursing students need to learn patient assessment skills. You have access to three types of VR apps: exploration (virtual hospital tour), guided training (step-by-step assessment protocol), and simulation (open patient assessment with consequences).",
+            "n1": {
+              "prompt": "Your students have never performed a patient assessment before. Which VR experience do you select first?",
+              "a": { "label": "Exploration app — let them tour the virtual hospital to get familiar with the environment", "feedback": "A reasonable starting point for orientation, but exploration alone does not teach the assessment procedure. Students need structured instruction next." },
+              "b": { "label": "Guided training app — walk them through the assessment protocol step by step with feedback", "feedback": "Excellent choice. For first-time learners, guided training provides the structured, step-by-step instruction they need before practising independently." },
+              "c": { "label": "Simulation app — throw them into a realistic scenario so they learn by doing", "feedback": "Too early. Without knowing the correct procedure, students will make errors without understanding why. Guided training should come before open simulation." }
+            },
+            "n2": {
+              "prompt": "Students have completed the guided training. Several still made errors on some steps. What is the best next step?",
+              "a": { "label": "Move to simulation — let them practise the full assessment with consequences for their decisions", "feedback": "Good progression. After learning the steps through guided training, simulation provides the realistic practice environment where mistakes have visible consequences, deepening learning." },
+              "b": { "label": "Repeat the guided training — they need more practice with the structured steps", "feedback": "Some repetition can help, but at some point students need to practise without scaffolding. Simulation provides the transfer opportunity that repetitive guided training cannot." },
+              "c": { "label": "Skip to evaluation — test them immediately to see who passes", "feedback": "Premature. Students who just learned the steps need practice time in simulation before being assessed. Evaluation should come after sufficient practice." }
+            },
+            "n3": {
+              "prompt": "You have built a learning path: guided training first, then simulation for practice. Your students are now performing patient assessments in VR with visible consequences for their decisions.",
+              "endFeedback": "Well done. You followed the most effective sequence: guided training teaches the steps, then simulation proves students know them. This guided → simulation progression is the foundation of effective VR-based skill training."
+            }
+          },
+          "scenario": {
+            "context": "A teacher uses a VR firefighting simulation with students. The simulation is realistic — students must locate exits, use extinguishers, and evacuate. Students had an exciting time and talked about it all day. However, when asked to explain what they learned about fire safety procedures, none could articulate the steps clearly.",
+            "question": "What went wrong?",
+            "choices": {
+              "a": "The simulation was too exciting — entertainment overrode learning",
+              "b": "The teacher skipped the briefing and debriefing — without a clear learning objective beforehand and structured reflection afterward, the experience was engaging but not educational",
+              "c": "Simulation apps are not effective for learning — the teacher should have used a video instead"
+            },
+            "feedback": {
+              "a": "Excitement is not the problem — it is the lack of structure around the experience. Simulations need clear objectives set in advance and reflection afterward to convert excitement into learning.",
+              "b": "Correct. Without a briefing setting the learning objective and a debriefing connecting the experience to knowledge, even the most powerful simulation becomes just an exciting event. Structure turns experience into learning.",
+              "c": "Simulations are highly effective for skill-based learning. The issue here is pedagogical structure, not the medium."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A vocational school offers two VR apps for electrical wiring: App A guides students through each wire connection step by step with immediate feedback. App B places students in a realistic scenario where they must wire a circuit from memory — incorrect wiring causes a visible short circuit.",
+              "question": "What type is each app, and when should each be used?",
+              "choices": {
+                "a": "App A is guided training (for first-time learning), App B is simulation (for practice after learning the steps) — use A first, then B",
+                "b": "Both are simulations — they just have different difficulty levels",
+                "c": "App B is better in all cases because students learn more from making mistakes"
+              },
+              "feedback": {
+                "a": "Correct. Guided training teaches the steps; simulation proves you know them. The most effective approach uses guided training first, then simulation for reinforcement.",
+                "b": "They serve fundamentally different purposes. App A provides scaffolding and instruction; App B provides open practice with consequences. These are distinct app types.",
+                "c": "Making mistakes is valuable, but only after students know the correct procedure. Without guided training first, students in simulation do not know what they are doing wrong or why."
+              }
+            },
+            "c2": {
+              "context": "A medical school uses a VR simulation where nursing students assess a virtual patient. The simulation tracks response time, assessment completeness, and decision accuracy. After the simulation, the instructor reviews each student's performance data.",
+              "question": "What additional function does this simulation serve beyond practice?",
+              "choices": {
+                "a": "It only serves as practice — simulations cannot evaluate",
+                "b": "It also functions as an evaluation tool — the performance tracking provides objective data on competency, combining simulation with assessment",
+                "c": "It replaces the need for any real-world clinical practice"
+              },
+              "feedback": {
+                "a": "Many simulations include built-in performance tracking, which adds an evaluation dimension. The data produced can serve both formative and summative assessment purposes.",
+                "b": "Correct. When a simulation tracks and reports learner performance, it combines practice with evaluation. The instructor gets objective data on each student's competency.",
+                "c": "VR simulation supplements but does not replace real-world practice. It provides a safe environment for initial practice and assessment before real clinical exposure."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "In simulation apps, mistakes have visible consequences — which is what makes them effective for learning.",
+                "explanation": "True. The ability to fail safely and see consequences is the core advantage of simulation-based VR training."
+              },
+              "s2": {
+                "statement": "Students should always start with simulation apps before trying guided training.",
+                "explanation": "False. The most effective sequence is guided training first (to learn the steps), then simulation (to practise without scaffolding)."
+              },
+              "s3": {
+                "statement": "A simulation app can serve both as a practice tool and as an evaluation tool if it tracks learner performance.",
+                "explanation": "True. When simulations record performance data, they combine practice with assessment, giving instructors objective evidence of competency."
+              }
+            }
+          }
+        },
+        "b4": {
+          "title": "Choosing the Right App for Your Objective",
+          "exercise": {
+            "instruction": "Arrange the four VR app types in the correct learning sequence — from first exposure to final assessment.",
+            "scaleStart": "First stage",
+            "scaleEnd": "Final stage",
+            "i1": "Exploration — orient the learner to the environment and build context",
+            "i2": "Guided training — teach the correct procedure step by step with feedback",
+            "i3": "Simulation — practise without scaffolding, experiencing consequences",
+            "i4": "Evaluation — verify competency with tracked, objective performance data"
+          },
+          "scenario": {
+            "context": "A vocational welding school has three VR apps available: an exploration of a professional welding workshop, a step-by-step guided welding tutorial with feedback, and a welding simulation where students must complete joints that are tested for structural integrity.",
+            "question": "In what order should students use these apps?",
+            "choices": {
+              "a": "Simulation first — students learn best from hands-on practice, even without prior instruction",
+              "b": "Exploration first (to understand the workshop environment), then guided tutorial (to learn the correct technique), then simulation (to practise independently)",
+              "c": "It does not matter — students can use them in any order and achieve the same result"
+            },
+            "feedback": {
+              "a": "Starting with simulation before students know the correct technique leads to unstructured errors. Students need to learn the steps first through guided training.",
+              "b": "Correct. This follows the ideal learning sequence: orient → instruct → practise. Each stage builds on the previous one, creating a complete learning path.",
+              "c": "Sequence matters significantly. Jumping to simulation before guided training means students do not know the correct procedure, and skipping exploration means they lack environmental context."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A language teacher wants students to practise job interview conversations in VR. Students need to respond to interview questions from a virtual interviewer, receive feedback on their answers, and improve through multiple attempts.",
+              "question": "Which app type matches this objective?",
+              "choices": {
+                "a": "A communication/conversational app — it provides dialogue-based interaction with virtual characters, branching conversations, and feedback on communication skills",
+                "b": "A simulation app — because students are practising a real-world skill",
+                "c": "An evaluation app — because it assesses student performance"
+              },
+              "feedback": {
+                "a": "Correct. Communication apps specialise in dialogue-based interaction with realistic virtual characters. They are purpose-built for soft skills training like interviews, customer service, and interpersonal communication.",
+                "b": "While interview practice involves real-world skills, communication apps are a specialised category designed specifically for conversational interaction, not physical simulation.",
+                "c": "Evaluation apps focus on measuring competency, not practising it. The teacher wants students to practise and improve, which is a training function."
+              }
+            },
+            "c2": {
+              "context": "A history teacher wants students to explore a virtual reconstruction of ancient Rome. There are no tasks, no quiz, and no structured activity — the teacher just wants students to get a sense of the environment before a lecture on Roman architecture.",
+              "question": "Which app type is this, and is it appropriate for this purpose?",
+              "choices": {
+                "a": "It is a simulation — students are simulating being in ancient Rome",
+                "b": "It is a guided training app — students are being trained on Roman history",
+                "c": "It is an exploration app — and it is appropriate for building context before the lecture, as long as the teacher pairs it with a focus question or observation task"
+              },
+              "feedback": {
+                "a": "Simulation requires interaction with consequences. Passively exploring an environment without performing tasks is exploration, not simulation.",
+                "b": "Guided training requires a fixed sequence of steps with feedback. Free exploration of an environment is not guided training.",
+                "c": "Correct. Exploration apps orient learners to an environment. Using it before a lecture for context-building is a valid use case — but always pair it with a specific task to avoid the 'museum effect' of passive touring."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Match each learning scenario with the most appropriate VR app type.",
+              "cat": {
+                "exploration": "Exploration app",
+                "simulation": "Simulation app",
+                "guidedTraining": "Guided training app"
+              },
+              "i1": "Students tour a virtual archaeological site before studying ancient civilizations",
+              "i2": "Nursing students practise triage decisions with realistic patient deterioration",
+              "i3": "New technicians follow step-by-step instructions to assemble a circuit board",
+              "i4": "Geography students navigate a virtual rainforest to observe biodiversity",
+              "i5": "Pilots practise emergency landing procedures with instrument failures",
+              "i6": "Lab assistants learn the correct sequence for handling hazardous materials"
+            }
+          }
+        },
+        "b5": {
+          "title": "Evaluating Apps Before Class",
+          "exercise": {
+            "instruction": "Sort each evaluation question into the correct checklist category: Pedagogical, Technical, or Classroom.",
+            "cat": {
+              "pedagogical": "Pedagogical checklist",
+              "technical": "Technical checklist",
+              "classroom": "Classroom checklist"
+            },
+            "i1": "What specifically does the student learn from this app?",
+            "i2": "What does the student actively do inside the app?",
+            "i3": "What feedback does the app provide on learner actions?",
+            "i4": "How long does the app take to load and launch?",
+            "i5": "Is the interface intuitive or does it require extensive explanation?",
+            "i6": "Is the app stable — does it crash, lag, or overheat the headset?",
+            "i7": "What is the real duration including setup and transitions?",
+            "i8": "How many students can use the app simultaneously?",
+            "i9": "What is your Plan B if the technology fails during class?"
+          },
+          "scenario": {
+            "context": "A colleague recommends a VR anatomy app, saying 'the online reviews are great — 4.8 stars!' You have a class scheduled tomorrow and are considering using the app without testing it yourself first.",
+            "question": "Should you use it untested based on the reviews?",
+            "choices": {
+              "a": "Yes — 4.8 stars is a strong indicator of quality, and there is no time to test",
+              "b": "No — online reviews cannot reveal how the app performs under your specific classroom conditions. Always test apps yourself on the same hardware before using them with students.",
+              "c": "Maybe — use it tomorrow as a trial run and evaluate it based on how students react"
+            },
+            "feedback": {
+              "a": "Reviews reflect other users' experiences in other contexts. They cannot tell you about load times, space requirements, casting compatibility, or pedagogical gaps in your specific setup.",
+              "b": "Correct. Online reviews are no substitute for hands-on testing in your own classroom conditions. Technical issues, pedagogical gaps, and practical constraints can only be discovered by testing yourself.",
+              "c": "Using students as test subjects for untested technology risks wasting their learning time. If the app crashes or does not work as expected, you have no Plan B prepared."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A teacher tests a VR chemistry lab app before class. The app loads quickly, the interface is intuitive, and it runs smoothly without crashes. The teacher declares it ready for classroom use.",
+              "question": "Has the teacher completed a thorough evaluation?",
+              "choices": {
+                "a": "No — they only checked the technical dimension. They still need to evaluate the pedagogical dimension (what students learn, what they do, what feedback the app gives) and the classroom dimension (duration, capacity, Plan B).",
+                "b": "Yes — if the app works technically, it is ready to use",
+                "c": "Almost — they just need to check if casting works"
+              },
+              "feedback": {
+                "a": "Correct. A thorough evaluation covers three dimensions: pedagogical, technical, and classroom. Passing the technical check is necessary but not sufficient.",
+                "b": "Technical stability is just one of three dimensions. An app that works perfectly but teaches nothing or cannot handle your class size is still not classroom-ready.",
+                "c": "Casting is one item on the classroom checklist, but there are many more classroom and pedagogical questions that remain unanswered."
+              }
+            },
+            "c2": {
+              "context": "A VR app for electrical safety training scores well on the pedagogical checklist: clear objectives, active learner tasks, feedback, and measurable outcomes. However, during testing, it takes 4 minutes to load on each headset, requires a large room-scale play area, and frequently overheats the headset after 10 minutes.",
+              "question": "Should this app be used in class?",
+              "choices": {
+                "a": "No — not without modifications to the technical setup. The pedagogical quality is strong, but the technical issues will consume classroom time and cause disruptions.",
+                "b": "Yes — the pedagogical quality is excellent, and technical issues can be solved on the spot during class",
+                "c": "Only if you have a large room and powerful headsets"
+              },
+              "feedback": {
+                "a": "Not yet — but it is not a rejection. The pedagogical quality makes this app worth pursuing. Work on the technical issues: pre-load the app before class, plan for the space requirement, and schedule shorter sessions to avoid overheating.",
+                "b": "Correct. The pedagogical quality justifies the effort, but the technical issues need planned solutions — not improvised fixes during class. Pre-load apps, arrange space, and plan for cooling breaks.",
+                "c": "Having the right hardware is part of the solution, but the 4-minute load time and overheating issues require procedural solutions regardless of equipment quality."
+              }
+            }
+          },
+          "micro": {
+            "tf": {
+              "s1": {
+                "statement": "Every VR app should be tested by the instructor in classroom conditions before being used with students.",
+                "explanation": "True. Hands-on testing in the same conditions students will face is the only way to discover technical, pedagogical, and practical issues before they affect learning."
+              },
+              "s2": {
+                "statement": "If a VR app has high ratings in the Meta Store, it does not need to be tested before classroom use.",
+                "explanation": "False. Store ratings reflect other contexts and priorities. They cannot predict how the app will perform under your specific classroom conditions."
+              },
+              "s3": {
+                "statement": "A complete app evaluation covers three dimensions: pedagogical, technical, and classroom.",
+                "explanation": "True. All three dimensions must pass. An app that fails in any one dimension will create problems during the session."
+              }
+            }
+          }
+        },
+        "b6": {
+          "title": "Integrating Apps in Your Lessons",
+          "exercise": {
+            "instruction": "Drag the correct words into the blanks to complete the VR lesson integration framework.",
+            "template": "Before the VR session, provide a clear __blank1__ that states the __blank2__ and explains what students will do. During VR, __blank3__ student progress and use __blank4__ to observe from outside the headset. After VR, run a structured __blank5__ to connect the experience to real-world practice.",
+            "blank1": "briefing",
+            "blank2": "learning objective",
+            "blank3": "monitor",
+            "blank4": "casting",
+            "blank5": "debriefing",
+            "distractor1": "homework",
+            "distractor2": "grading"
+          },
+          "scenario": {
+            "context": "A teacher uses a VR chemistry lab app for 30 minutes. There was no briefing — students were told 'just open the app.' There was no debriefing — students removed headsets and moved to the next subject. Two days later, no student can recall the experimental procedure they performed in VR.",
+            "question": "What was the main mistake?",
+            "choices": {
+              "a": "The VR session was too long — 30 minutes exceeds the recommended time",
+              "b": "The app was used in isolation without the before-during-after structure — no briefing set a purpose, no monitoring ensured engagement, and no debriefing connected the experience to learning",
+              "c": "The chemistry lab app was the wrong choice — a video would have been more effective"
+            },
+            "feedback": {
+              "a": "Session length was not the core problem. Even a 10-minute session without briefing and debriefing would produce the same result — engagement without retention.",
+              "b": "Correct. Without a briefing, students had no focus. Without monitoring, the teacher could not guide the experience. Without a debriefing, the experience was not processed into knowledge. All three stages are essential.",
+              "c": "The app itself was not the problem — the absence of pedagogical structure around it was. Any tool, including video, requires a before-during-after framework."
+            }
+          },
+          "concepts": {
+            "c1": {
+              "context": "A teacher plans a VR session using a fire evacuation simulation. She writes this briefing: 'Today you will use a VR fire evacuation simulation. Your goal is to evacuate all occupants within 3 minutes using the correct protocol. Pay attention to the order in which you check rooms and how you communicate with virtual occupants.'",
+              "question": "Is this an effective briefing?",
+              "choices": {
+                "a": "No — it reveals too much information and spoils the experience",
+                "b": "Yes — it is clear, sets a specific objective, tells students what to do, and defines what success looks like, all in under 60 seconds",
+                "c": "It is too detailed — a simple 'do your best' would be sufficient"
+              },
+              "feedback": {
+                "a": "A good briefing should clarify purpose, not create mystery. Students need to know what they are doing and what to focus on — this is orientation, not spoilers.",
+                "b": "Correct. This briefing follows the best practice: clear objective, specific task, and success criteria. It focuses students without being unnecessarily long.",
+                "c": "Vague instructions like 'do your best' provide no focus. Students need to know the specific objective and what to pay attention to."
+              }
+            },
+            "c2": {
+              "context": "After a VR patient assessment simulation, a teacher asks these debriefing questions: 'What happened during your assessment? What decision was the hardest? What would you do differently next time? How does this connect to real clinical practice?'",
+              "question": "Is this an effective debriefing?",
+              "choices": {
+                "a": "Yes — it follows a structured progression from describing the experience, to analysing decisions, to connecting to real-world practice",
+                "b": "No — it asks too many questions and will take too long",
+                "c": "No — debriefing should only ask whether students enjoyed the experience"
+              },
+              "feedback": {
+                "a": "Correct. These questions follow a natural debriefing progression: recall (what happened), analysis (what was hard, what would change), and transfer (real-world connection). This structure consolidates VR experiences into lasting knowledge.",
+                "b": "Four focused questions can be covered in 5-10 minutes. The depth of reflection is more important than speed — skipping debriefing entirely would be the time-wasting choice.",
+                "c": "Enjoyment feedback is not debriefing. Structured debriefing processes the experience into knowledge through reflection, analysis, and real-world connection."
+              }
+            }
+          },
+          "micro": {
+            "cls": {
+              "instruction": "Classify each action into the correct phase of VR lesson integration.",
+              "cat": {
+                "before": "Before VR",
+                "during": "During VR",
+                "after": "After VR"
+              },
+              "i1": "State the learning objective and explain what students will do",
+              "i2": "Use casting to observe student experiences from outside the headset",
+              "i3": "Ask students what they would do differently next time",
+              "i4": "Test the app yourself on the same hardware students will use",
+              "i5": "Assist students who encounter technical difficulties",
+              "i6": "Connect the VR experience to real-world practice through discussion"
+            }
+          }
+        }
       }
     },
     "quizStep": {
@@ -3332,6 +4319,90 @@
           "c": "Fail — communication is the most important skill in surgery",
           "d": "Average score — split the difference between good technical work and missing communication",
           "explanation": "VR assessment captures four areas: skills (execution accuracy), decision-making (cognitive choices), procedures (protocol compliance), and communication (professional behaviour). This student excels in skills and procedures but has a specific gap in communication. Nuanced, multi-dimensional feedback is more useful than a single pass/fail or average score."
+        }
+      },
+      "solvingCommonVrProblems": {
+        "q1": {
+          "question": "During a VR lesson, half the headsets suddenly lose WiFi. Students are 10 minutes into a 20-minute simulation. What do you do?",
+          "a": "Pause everyone and troubleshoot all headsets together — fairness requires all students have the same experience",
+          "b": "Have affected students toggle WiFi off/on in Quick Settings. If not fixed in 2 minutes, rotate them onto working headsets so learning continues.",
+          "c": "End the session early — WiFi problems will only get worse once they start",
+          "d": "Restart all headsets simultaneously to reset the network connections",
+          "explanation": "The 2-minute rule applies. A quick WiFi toggle fixes most drops; if not, rotate students to working headsets. Never stop the whole class for a problem affecting only some headsets — the students with working devices should keep learning."
+        },
+        "q2": {
+          "question": "A classroom has a full-length mirror on one wall and dim overhead lighting. Students report their Guardian boundaries keep resetting during VR. What is the primary fix?",
+          "a": "Switch all headsets to developer mode to bypass Guardian entirely",
+          "b": "Update the headset firmware — this is a known Guardian bug in older versions",
+          "c": "Improve room lighting and cover or have students face away from the mirror — the tracking cameras need consistent illumination and non-reflective surfaces",
+          "d": "Have students draw very small boundaries so the cameras have less space to track",
+          "explanation": "Dim lighting and reflective surfaces are the top two causes of Guardian failures. The headset cameras need even illumination to detect the environment, and mirrors create false reflections that confuse the spatial mapping. Fixing the physical environment solves the root cause."
+        },
+        "q3": {
+          "question": "A headset won't turn on. No LED appears when plugged into its charger. You've held the power button for 3 seconds with no response. What should you try next?",
+          "a": "A force restart — hold power + volume-down for 30 seconds",
+          "b": "Try a different USB-C cable and a different power adapter — damaged cables and low-wattage chargers are common culprits that prevent charging",
+          "c": "Factory reset the headset using the boot menu",
+          "d": "The headset is broken beyond classroom repair and needs to be sent for manufacturer service",
+          "explanation": "No LED when plugged in usually means power is not reaching the headset. Before attempting a force restart on a device showing no signs of life, verify the charging path. Damaged USB-C cables are a frequent and underdiagnosed cause — simply swapping the cable often solves the problem."
+        },
+        "q4": {
+          "question": "You are casting a student's VR view to the classroom TV via Chromecast. The image freezes every few seconds and the cast keeps disconnecting. Both devices are on the school WiFi. What is the most likely cause?",
+          "a": "The Chromecast hardware is too old and needs replacing with a newer model",
+          "b": "AP isolation on the school router is interfering with device-to-device traffic — casting requires devices to communicate freely on the same network",
+          "c": "The student is moving too quickly inside VR for the cast stream to keep up",
+          "d": "The headset does not have enough battery remaining to sustain a casting stream",
+          "explanation": "School networks often enable AP isolation (client isolation) for security, which prevents devices on the same WiFi from communicating directly with each other. This blocks casting traffic. The fix is to ask IT to whitelist VR devices or create a dedicated VLAN for classroom VR equipment."
+        },
+        "q5": {
+          "question": "Three of twelve headsets fail during a VR session. A teacher spends 12 minutes trying to fix them while students sit idle. The remaining VR time is only 5 minutes. What was the teacher's biggest mistake?",
+          "a": "Not having enough spare headsets available as backups",
+          "b": "Violating the 2-minute troubleshooting limit — after 2 minutes, the teacher should have reorganised the class to rotate through the 9 working headsets and fixed the broken ones after class",
+          "c": "Not calling IT support immediately when the headsets failed",
+          "d": "Starting the VR session without testing every headset beforehand",
+          "explanation": "The 2-minute rule exists precisely for this situation. Twelve minutes of troubleshooting burned the entire session's remaining learning time for every student. Reorganising with 9 headsets would have preserved meaningful VR time for all students, and the 3 broken headsets could be diagnosed calmly after class."
+        }
+      },
+      "vrEducationalApps": {
+        "q1": {
+          "question": "A teacher finds a VR app with stunning visuals where students fly through the solar system for 15 minutes. There are no tasks, no feedback, and no assessment. The teacher says it is educational because students are engaged. What is your judgment?",
+          "a": "It is educational — the immersive visuals alone create a memorable learning experience",
+          "b": "It is not educational — it lacks learning objectives, learner action, and feedback, making it a viewing experience rather than an educational app",
+          "c": "It becomes educational if students discuss it afterward in class",
+          "d": "It is educational as long as students take notes while watching the experience",
+          "explanation": "Engagement is not learning. A genuine educational VR app requires four traits: clear learning objectives, learner action, feedback, and measurable outcomes. A passive flythrough, however beautiful, meets none of these criteria."
+        },
+        "q2": {
+          "question": "A nursing instructor needs VR clinical simulation apps for patient assessment training. The official Meta Store has nothing suitable. They conclude that VR clinical training does not exist. What should they do?",
+          "a": "Accept it — if the Meta Store does not have it, VR clinical training apps do not exist yet",
+          "b": "Check App Lab — most educational VR content is published there because it has a lower publishing barrier than the main store",
+          "c": "Build a custom VR app from scratch — it is the only option for specialised subjects",
+          "d": "Use a 360-degree YouTube video of a hospital ward instead",
+          "explanation": "App Lab is Meta's secondary distribution channel where most educational VR content lives. Its lower publishing barrier makes it the primary home for specialised educational apps, including clinical training simulations."
+        },
+        "q3": {
+          "question": "You want students to learn a surgical hand-washing protocol step by step, receiving immediate feedback at each stage before moving to the next. Which VR app type fits this objective best?",
+          "a": "An exploration app — students can explore the surgical environment freely and discover the protocol",
+          "b": "An evaluation app — it will test whether students already know the correct procedure",
+          "c": "A guided training app — it provides a fixed sequence of steps with immediate feedback, which is exactly what first-time protocol learning requires",
+          "d": "A simulation app — students can practise the procedure freely without scaffolding",
+          "explanation": "Guided training apps walk the learner through a sequence step by step with immediate feedback — ideal for initial learning of procedures. Simulation apps are better for practising after the steps have been learned."
+        },
+        "q4": {
+          "question": "A teacher finds a highly-rated VR anatomy app online. It has excellent reviews. They plan to use it in class tomorrow without testing it themselves first. What is the biggest risk?",
+          "a": "The app might require a paid subscription that the school cannot afford",
+          "b": "The app may have technical issues or pedagogical gaps that only hands-on testing in classroom conditions can reveal — always test apps yourself before using them with students",
+          "c": "The online reviews might be fake or paid for by the developer",
+          "d": "Students might already know anatomy and find the app boring",
+          "explanation": "Reviews cannot reveal how an app behaves under your specific classroom conditions: load times, space requirements, stability, casting compatibility, and whether the app actually produces learning evidence. Always test in the same conditions your students will face."
+        },
+        "q5": {
+          "question": "A teacher gives students VR headsets and says 'Open the app and explore — we will talk about it later.' No briefing, no focus question, no structure. Students finish VR and go straight to the next subject with no debriefing. What was the main mistake?",
+          "a": "Not giving students enough time inside the VR experience",
+          "b": "Skipping both the briefing and the debriefing — the app was used in isolation instead of embedded in a before-during-after structure with clear purpose and structured reflection",
+          "c": "Using an exploration app instead of a simulation app",
+          "d": "Not casting the VR screen so the whole class could watch together",
+          "explanation": "Without a briefing, students have no focus or purpose. Without a debriefing, the experience is not connected to learning. The before-during-after structure is essential: brief with a clear objective, monitor during VR, and debrief with structured reflection."
         }
       }
     },
@@ -4276,6 +5347,7 @@
       "lockedDesc": "Complete all {remaining, plural, one {# remaining module} other {# remaining modules}} to unlock your certificate of completion.",
       "unlockedDesc": "Congratulations! You've completed all modules. Download your personalized certificate.",
       "progress": "Modules completed",
+      "module": "Module",
       "downloadBtn": "Download certificate",
       "lockedBtn": "Certificate locked",
       "modalTitle": "Your certificate",
@@ -4333,6 +5405,7 @@
     "modulesFound": "{count} module",
     "modulesFound_other": "{count} modules",
     "noMatchModules": "No modules or sections match \"{query}\".",
+    "alsoMentioned": "Also mentioned in",
     "essentialBadge": "Essential",
     "referenceBadge": "Reference",
     "quickStart": {
@@ -4381,7 +5454,7 @@
           "institutionalAccount": "Institutional account",
           "gettingStarted": "Getting started: in the box, how to wear, IPD, language",
           "classroomSetup": "Meta Quest 3(S) in the classroom",
-          "settings": "System settings",
+          "settings": "Guardian (boundary) & settings",
           "mobileConnection": "Mobile connection",
           "organizationStorage": "Organization and storage",
           "specifications": "Specifications",

@@ -3,7 +3,6 @@
 import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { IconLightning } from "./icons";
 import { DocModulesNav } from "./DocModulesNav";
 import { DocSearchBar } from "./DocSearchBar";
 import type {
@@ -11,10 +10,6 @@ import type {
   ModuleSection,
   ModuleCategoryId,
 } from "@/app/documentation/modules";
-import {
-  quickStartSteps,
-  getQuickStartHref,
-} from "@/app/documentation/quickStartSteps";
 
 const categoryLabelKeys: Record<string, string> = {
   fundamentals: "vrFundamentals",
@@ -93,55 +88,12 @@ export function DocSearchClient({
 
   return (
     <>
-      {/* Quick Start Guide */}
-      {!searchQuery && !categoryFilter && (
-        <div
-          className="mb-10 rounded-2xl border border-teal-200 bg-gradient-to-br from-teal-50/80 to-white p-6 sm:p-8 doc-part-enter"
-          style={{ animationDelay: "120ms" }}
-        >
-          <div className="flex items-center gap-3 mb-1">
-            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-teal-500 text-white shrink-0">
-              <IconLightning className="w-5 h-5" />
-            </span>
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
-              {t("quickStart.title")}
-            </h2>
-          </div>
-          <p className="text-sm text-gray-600 mb-6 ml-12">
-            {t("quickStart.subtitle")}
-          </p>
-          <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5 list-none p-0 m-0">
-            {quickStartSteps.map((step) => (
-              <li key={step.step}>
-                <Link
-                  href={getQuickStartHref(step, true)}
-                  className="group flex flex-col h-full rounded-xl border border-gray-200 bg-white p-4 transition-all hover:border-teal-400 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
-                >
-                  <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-sm font-bold mb-2 shrink-0">
-                    {step.step}
-                  </span>
-                  <span className="text-sm font-semibold text-gray-900 mb-1">
-                    {t(step.titleKey)}
-                  </span>
-                  <span className="text-xs text-gray-500 flex-1">
-                    {t(step.descKey)}
-                  </span>
-                  <span className="mt-2 text-xs font-medium text-teal-600 group-hover:text-teal-700 transition-colors">
-                    {t("quickStart.readSection")}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ol>
-        </div>
-      )}
-
       {/* Search Bar - Centered */}
       <div className="mb-6 flex justify-center">
         <DocSearchBar
           value={searchQuery}
           onChange={setSearchQuery}
-          variant="filter"
+          variant="navigate"
           className="max-w-2xl w-full"
         />
       </div>

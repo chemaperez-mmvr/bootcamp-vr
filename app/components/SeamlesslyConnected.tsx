@@ -19,7 +19,7 @@ export function SeamlesslyConnected() {
       {prefersReducedMotion ? (
         <div className="absolute inset-0 w-full h-full" aria-hidden>
           <Image
-            src="/hero-bg.jpg"
+            src="/hero-bg.webp"
             alt=""
             fill
             className="object-cover object-center"
@@ -33,7 +33,7 @@ export function SeamlesslyConnected() {
           loop
           playsInline
           preload="metadata"
-          poster="/hero-bg.jpg"
+          poster="/hero-bg.webp"
           className="absolute inset-0 w-full h-full object-cover"
           aria-hidden
         >
