@@ -1,5 +1,9 @@
 # Claude Code local settings (may contain approved commands with secrets)
 .claude/settings.local.json
+.claude/worktrees/
+
+# Playwright MCP cache (local screenshots/logs)
+.playwright-mcp/
 
 # Dependencies
 node_modules/
