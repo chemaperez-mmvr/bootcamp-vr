@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { DocModulesNav } from "./DocModulesNav";
 import { DocSearchBar } from "./DocSearchBar";
+import { MobileCollapsible } from "./MobileCollapsible";
 import type {
   DocumentationModule,
   ModuleSection,
@@ -102,35 +103,39 @@ export function DocSearchClient({
       <div className="flex flex-col lg:flex-row gap-8 pb-12">
         {/* Left Sidebar - Navigation */}
         <aside className="lg:w-64 shrink-0 lg:sticky lg:top-[76px] lg:self-start lg:h-[calc(100vh-100px)] flex flex-col">
-          <div className="mb-4 pr-2">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">
-              {t("modulesLabel")}
-            </h2>
-            <label htmlFor="doc-category-filter" className="sr-only">
-              {t("categories")}
-            </label>
-            <select
-              id="doc-category-filter"
-              value={categoryFilter}
-              onChange={(e) =>
-                setCategoryFilter(
-                  (e.target.value || "") as ModuleCategoryId | ""
-                )
-              }
-              className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-              aria-label={t("categories")}
-            >
-              <option value="">{t("filterAll")}</option>
-              {categoryIds.map((id) => (
-                <option key={id} value={id}>
-                  {t(getCategoryLabelKey(id))}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="flex-1 min-h-0 overflow-y-auto pr-2">
-            <DocModulesNav modules={filteredModulesForDisplay} />
-          </div>
+          <MobileCollapsible label={t("modulesLabel")} id="docs-index-modules-nav">
+            <div className="hidden lg:block mb-4 pr-2">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                {t("modulesLabel")}
+              </h2>
+            </div>
+            <div className="mb-4 pr-2">
+              <label htmlFor="doc-category-filter" className="sr-only">
+                {t("categories")}
+              </label>
+              <select
+                id="doc-category-filter"
+                value={categoryFilter}
+                onChange={(e) =>
+                  setCategoryFilter(
+                    (e.target.value || "") as ModuleCategoryId | ""
+                  )
+                }
+                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                aria-label={t("categories")}
+              >
+                <option value="">{t("filterAll")}</option>
+                {categoryIds.map((id) => (
+                  <option key={id} value={id}>
+                    {t(getCategoryLabelKey(id))}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="lg:flex-1 lg:min-h-0 lg:overflow-y-auto pr-2 mb-6 lg:mb-0">
+              <DocModulesNav modules={filteredModulesForDisplay} />
+            </div>
+          </MobileCollapsible>
         </aside>
 
         {/* Main Content - Module list */}

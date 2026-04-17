@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { IconChevronDown, IconChevronRight } from "./icons";
@@ -31,10 +31,39 @@ export function DocModulesNav({ modules, currentModuleSlug }: DocModulesNavProps
   }, [modules, currentModuleSlug]);
 
   const [expandedModuleIds, setExpandedModuleIds] = useState<Record<string, boolean>>(initialExpanded);
+  const [activeSectionId, setActiveSectionId] = useState<string>("");
 
   const toggleModule = (moduleId: string) => {
     setExpandedModuleIds((prev) => ({ ...prev, [moduleId]: !prev[moduleId] }));
   };
+
+  useEffect(() => {
+    if (!currentModuleSlug) return;
+    const currentModule = modules.find(({ module }) => module.slug === currentModuleSlug);
+    if (!currentModule || currentModule.sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSectionId(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-220px 0px -66% 0px", threshold: 0 }
+    );
+
+    const sectionElements = currentModule.sections
+      .map((s) => document.getElementById(s.id))
+      .filter(Boolean) as HTMLElement[];
+
+    sectionElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      sectionElements.forEach((el) => observer.unobserve(el));
+      observer.disconnect();
+    };
+  }, [modules, currentModuleSlug]);
 
   return (
     <nav className="space-y-1" role="navigation" aria-label={t("documentationModulesNav")}>
@@ -78,7 +107,7 @@ export function DocModulesNav({ modules, currentModuleSlug }: DocModulesNavProps
                   role="list"
                 >
                   {sections.map((section) => {
-                    const isCurrentSection = isCurrent && typeof window !== 'undefined' && window.location.hash === `#${section.id}`;
+                    const isCurrentSection = isCurrent && activeSectionId === section.id;
                     const isEssential = section.priority === "essential";
                     return (
                       <li key={section.id}>

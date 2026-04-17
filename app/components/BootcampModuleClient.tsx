@@ -195,20 +195,44 @@ export function BootcampModuleClient({ module }: { module: BootcampModule }) {
             blockSet={getLearningBlocksForModule(module.slug)!}
             slides={getSlidesForModule(module.slug)}
             onComplete={() => {
+              const nextMap = { ...completedMap };
               module.lessons.forEach((l) => {
-                if (!completedMap[l.id]) onToggleLesson(l.id);
+                if (!nextMap[l.id]) {
+                  setLessonCompleted(module.slug, l.id, true);
+                  nextMap[l.id] = true;
+                }
               });
-              advanceToNext();
+              setCompletedMap(nextMap);
+              setModuleProgress(getModuleProgress(module.slug));
+
+              const nextIdx = currentStep + 1;
+              if (nextIdx < steps.length && isStepUnlocked(module, steps, nextIdx, nextMap)) {
+                setCurrentStep(nextIdx);
+                saveStepIndex(module.slug, nextIdx);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
             }}
           />
         ) : (
           <TheorySliderStep
             slides={getSlidesForModule(module.slug)}
             onComplete={() => {
+              const nextMap = { ...completedMap };
               module.lessons.forEach((l) => {
-                if (!completedMap[l.id]) onToggleLesson(l.id);
+                if (!nextMap[l.id]) {
+                  setLessonCompleted(module.slug, l.id, true);
+                  nextMap[l.id] = true;
+                }
               });
-              advanceToNext();
+              setCompletedMap(nextMap);
+              setModuleProgress(getModuleProgress(module.slug));
+
+              const nextIdx = currentStep + 1;
+              if (nextIdx < steps.length && isStepUnlocked(module, steps, nextIdx, nextMap)) {
+                setCurrentStep(nextIdx);
+                saveStepIndex(module.slug, nextIdx);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
             }}
           />
         ))}

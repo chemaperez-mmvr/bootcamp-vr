@@ -69,7 +69,7 @@ export default async function BootcampModulePage({ params }: Props) {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
       <main id="main-content" tabIndex={-1} className="flex-1 pt-10 sm:pt-12">
-        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 pb-12">
           <BootcampModuleClient module={module} />
         </div>
       </main>

@@ -24,6 +24,7 @@ export type ContentSlide = {
   subtitleKey: string;
   points: SlidePoint[];
   highlightKey: string;
+  imageUrl?: string;
 };
 
 export type TheorySlide = VideoSlide | ContentSlide;
@@ -48,6 +49,7 @@ const slidesByModule: Record<string, TheorySlide[]> = {
         { key: "slides.basicFoundations.s1.p3", icon: "🎯" },
       ],
       highlightKey: "slides.basicFoundations.s1.highlight",
+      imageUrl: "/images/slides/what-is-vr.jpg",
     },
     {
       id: "why-vr-effective",
@@ -60,6 +62,7 @@ const slidesByModule: Record<string, TheorySlide[]> = {
         { key: "slides.basicFoundations.s2.p3", icon: "📋" },
       ],
       highlightKey: "slides.basicFoundations.s2.highlight",
+      imageUrl: "/images/slides/why-vr-effective.jpg",
     },
     {
       id: "vr-use-cases",
@@ -73,6 +76,7 @@ const slidesByModule: Record<string, TheorySlide[]> = {
         { key: "slides.basicFoundations.s3.p4", icon: "💼" },
       ],
       highlightKey: "slides.basicFoundations.s3.highlight",
+      imageUrl: "/images/slides/vr-use-cases.jpg",
     },
     {
       id: "vr-ar-xr",
@@ -85,6 +89,7 @@ const slidesByModule: Record<string, TheorySlide[]> = {
         { key: "slides.basicFoundations.s4.p3", icon: "🌐" },
       ],
       highlightKey: "slides.basicFoundations.s4.highlight",
+      imageUrl: "/images/slides/vr-ar-xr.png",
     },
   ],
   "getting-vr-ready": [

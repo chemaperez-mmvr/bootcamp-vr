@@ -11,8 +11,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { HeroSection } from "../components/HeroSection";
 import { IconGraduationCap, IconSearch } from "../components/icons";
-import { TwoWaysToLearn } from "../components/TwoWaysToLearn";
-import { SeamlesslyConnected } from "../components/SeamlesslyConnected";
+import { ConnectedLearningPaths } from "../components/ConnectedLearningPaths";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -81,8 +80,7 @@ export default async function HomePage({ params }: Props) {
           </div>
         </HeroSection>
 
-        <TwoWaysToLearn />
-        <SeamlesslyConnected />
+        <ConnectedLearningPaths />
       </main>
 
       <Footer />

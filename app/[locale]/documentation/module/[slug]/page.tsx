@@ -10,9 +10,12 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link as NavLink } from "@/i18n/navigation";
+import { IconChevronRight } from "../../../../components/icons";
 import { Header } from "../../../../components/Header";
 import { Footer } from "../../../../components/Footer";
 import { DocModulesNav } from "../../../../components/DocModulesNav";
+import { MobileCollapsible } from "../../../../components/MobileCollapsible";
+import { DocsStickyHeader } from "../../../../components/DocsStickyHeader";
 import { DocSearchBarNavigate } from "../../../../components/DocSearchBar";
 import { OnThisPageNav } from "../../../../components/OnThisPageNav";
 import { CopyAnchorLink } from "../../../../components/CopyAnchorLink";
@@ -134,29 +137,56 @@ export default async function DocumentationModuleSlugPage({ params }: Props) {
         <HighlightSearchTerm />
       </Suspense>
 
-      <main id="main-content" tabIndex={-1} className="flex-1 bg-white pt-10 sm:pt-12">
+      <main id="main-content" tabIndex={-1} className="flex-1 bg-white pt-6 sm:pt-8">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Search Bar - Above content */}
-          <div className="mb-6 flex justify-center">
-            <DocSearchBarNavigate className="max-w-2xl w-full" />
-          </div>
+          {/* Breadcrumb + Search — sticky below header, auto-hides on scroll down */}
+          <DocsStickyHeader>
+            <div className="px-4 sm:px-6 lg:px-8 pt-5 pb-5 flex flex-col gap-4">
+              <div className="flex justify-center">
+                <DocSearchBarNavigate className="max-w-2xl w-full" />
+              </div>
+              <nav aria-label={t("breadcrumbLabel")} className="text-sm min-w-0">
+                <ol className="flex items-center gap-1.5 text-gray-500 min-w-0">
+                  <li className="shrink-0">
+                    <NavLink
+                      href="/documentation"
+                      className="hover:text-teal-600 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 rounded"
+                    >
+                      {t("title")}
+                    </NavLink>
+                  </li>
+                  <li aria-hidden className="shrink-0 text-gray-300">
+                    <IconChevronRight className="w-3.5 h-3.5" />
+                  </li>
+                  <li
+                    className="text-gray-700 font-medium truncate min-w-0 flex-1"
+                    aria-current="page"
+                  >
+                    {t(mod.titleKey)}
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </DocsStickyHeader>
 
           {/* Three-column layout inspired by Meta Horizon */}
           <div className="flex flex-col lg:flex-row gap-8 pb-12">
             {/* Left Sidebar - Navigation */}
-            <aside className="lg:w-64 shrink-0 lg:sticky lg:top-[76px] lg:self-start lg:h-[calc(100vh-100px)] flex flex-col">
-              <div className="mb-4 pr-2">
-                <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                  {t("modulesLabel")}
-                </h2>
-              </div>
-              <div className="flex-1 min-h-0 overflow-y-auto pr-2">
-                <DocModulesNav
-                  key={`nav-${mod.slug}`}
-                  modules={allModulesForNav}
-                  currentModuleSlug={mod.slug}
-                />
-              </div>
+            <aside className="lg:w-64 shrink-0 lg:sticky lg:self-start flex flex-col lg:[top:var(--docs-sticky-offset,204px)] lg:[height:calc(100vh-var(--docs-sticky-offset,204px)-24px)] lg:transition-[top,height] lg:duration-200 lg:ease-out">
+              <MobileCollapsible label={t("modulesLabel")} id="docs-modules-nav">
+                <div className="hidden lg:block mb-4 pr-2">
+                  <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                    {t("modulesLabel")}
+                  </h2>
+                </div>
+                <div className="lg:flex-1 lg:min-h-0 lg:overflow-y-auto pr-2 mb-6 lg:mb-0">
+                  <DocModulesNav
+                    key={`nav-${mod.slug}`}
+                    modules={allModulesForNav}
+                    currentModuleSlug={mod.slug}
+                  />
+                </div>
+              </MobileCollapsible>
             </aside>
 
             {/* Main Content Area */}
@@ -181,7 +211,7 @@ export default async function DocumentationModuleSlugPage({ params }: Props) {
                       <section
                         key={section.id}
                         id={section.id}
-                        className="scroll-mt-24 mb-12 pb-8 border-b border-gray-200 last:border-b-0 last:pb-0"
+                        className="scroll-mt-[220px] mb-12 pb-8 border-b border-gray-200 last:border-b-0 last:pb-0"
                       >
                         <Suspense fallback={null}>
                           <QuickStartSectionWrapper sectionId={section.id}>
@@ -223,7 +253,7 @@ export default async function DocumentationModuleSlugPage({ params }: Props) {
 
             {/* Right Sidebar - On This Page */}
             {mod.sections.length > 0 && (
-              <OnThisPageNav sections={mod.sections} />
+              <OnThisPageNav sections={mod.sections} moduleSlug={mod.slug} />
             )}
           </div>
         </div>

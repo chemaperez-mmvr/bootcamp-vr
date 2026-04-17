@@ -3,15 +3,15 @@
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
-function escapeRegex(s: string): string {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function normalize(s: string): string {
+  return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
 function highlightTextInElement(element: HTMLElement, query: string): void {
   const q = query.trim();
   if (!q) return;
-  const qLower = q.toLowerCase();
-  const regex = new RegExp(`(${escapeRegex(q)})`, "gi");
+  const qNorm = normalize(q);
+  if (!qNorm) return;
 
   const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null);
   const textNodes: Text[] = [];
@@ -22,20 +22,26 @@ function highlightTextInElement(element: HTMLElement, query: string): void {
 
   for (const textNode of textNodes) {
     const text = textNode.textContent ?? "";
-    const parts = text.split(regex);
-    if (parts.length <= 1) continue;
+    const textNorm = normalize(text);
+    if (!textNorm.includes(qNorm)) continue;
 
     const fragment = document.createDocumentFragment();
-    for (const part of parts) {
-      if (part.toLowerCase() === qLower) {
-        const mark = document.createElement("mark");
-        mark.className =
-          "doc-search-highlight doc-search-highlight-blink bg-teal-200/55 dark:bg-teal-700/40 text-foreground rounded px-0.5 font-medium";
-        mark.textContent = part;
-        fragment.appendChild(mark);
-      } else {
-        fragment.appendChild(document.createTextNode(part));
+    let cursor = 0;
+    let idx = textNorm.indexOf(qNorm);
+    while (idx !== -1) {
+      if (idx > cursor) {
+        fragment.appendChild(document.createTextNode(text.slice(cursor, idx)));
       }
+      const mark = document.createElement("mark");
+      mark.className =
+        "doc-search-highlight doc-search-highlight-blink bg-teal-200/55 dark:bg-teal-700/40 text-foreground rounded px-0.5 font-medium";
+      mark.textContent = text.slice(idx, idx + qNorm.length);
+      fragment.appendChild(mark);
+      cursor = idx + qNorm.length;
+      idx = textNorm.indexOf(qNorm, cursor);
+    }
+    if (cursor < text.length) {
+      fragment.appendChild(document.createTextNode(text.slice(cursor)));
     }
     textNode.parentNode?.replaceChild(fragment, textNode);
   }

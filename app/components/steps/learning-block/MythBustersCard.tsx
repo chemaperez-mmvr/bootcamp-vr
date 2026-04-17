@@ -92,7 +92,7 @@ export function MythBustersCard({
     return (
       <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
         {/* Badge */}
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-semibold mb-4">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-4">
           {t("learningBlocks.mythBustersTitle")}
         </div>
 
@@ -174,7 +174,7 @@ export function MythBustersCard({
     <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
       {/* Badge + progress */}
       <div className="flex items-center justify-between mb-5">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-semibold">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold">
           {t("learningBlocks.mythBustersTitle")}
         </div>
         <div className="text-xs font-medium text-gray-400 tabular-nums">
@@ -193,7 +193,7 @@ export function MythBustersCard({
                   ? "bg-green-400"
                   : "bg-red-400"
                 : i === currentIdx
-                  ? "bg-rose-500"
+                  ? "bg-teal-500"
                   : "bg-gray-200"
             }`}
           />

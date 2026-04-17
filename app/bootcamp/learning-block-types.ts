@@ -44,6 +44,8 @@ export type MicroCheckTrueFalse = {
     statementKey: string;
     isTrue: boolean;
     explanationKey: string;
+    /** Optional illustration shown above the statement. Path relative to /public. */
+    imageUrl?: string;
   }[];
 };
 
@@ -78,6 +80,8 @@ export type MatchingExercise = {
     id: string;
     leftKey: string;
     rightKey: string;
+    /** Optional Lucide icon name shown next to the left term. */
+    iconName?: string;
   }[];
 };
 
@@ -124,7 +128,7 @@ export type MemoryMatchExercise = {
   }[];
 };
 
-/** Concept Map — drag nodes and connect them with valid relationships. */
+/** Concept Map — place nodes into a hierarchical tree. */
 export type ConceptMapExercise = {
   type: "conceptMap";
   id: string;
@@ -135,11 +139,20 @@ export type ConceptMapExercise = {
     /** Initial position hint (0-1 range, relative to container). */
     x: number;
     y: number;
+    /** Short description shown on the chip as a hint. */
+    descriptionKey?: string;
   }[];
   validConnections: {
     fromId: string;
     toId: string;
     labelKey?: string;
+  }[];
+  /** Specific reasons why certain invalid pairs don't relate. Key is any
+   *  stable pair id — matching is done by (fromId, toId) in either order. */
+  invalidExplanations?: {
+    fromId: string;
+    toId: string;
+    reasonKey: string;
   }[];
 };
 

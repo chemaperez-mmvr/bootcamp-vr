@@ -763,3 +763,88 @@ input:focus-visible,
     opacity: 0 !important;
   }
 }
+
+/* ================================================================== */
+/*  Concept map — cinematic / kinetic animations                      */
+/* ================================================================== */
+
+@keyframes concept-step-number-in {
+  from { opacity: 0; transform: translateX(-24px) scale(0.9); letter-spacing: 0.2em; }
+  to { opacity: 0.12; transform: translateX(0) scale(1); letter-spacing: -0.02em; }
+}
+
+.animate-concept-step-number {
+  animation: concept-step-number-in 0.55s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+}
+
+@keyframes concept-sentence-in {
+  from { opacity: 0; transform: translateX(32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-concept-sentence {
+  animation: concept-sentence-in 0.4s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+}
+
+@keyframes concept-node-pop {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  40% { transform: translate(-50%, -50%) scale(1.15); }
+  100% { transform: translate(-50%, -50%) scale(1.05); }
+}
+
+.animate-concept-node-pop {
+  animation: concept-node-pop 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+@keyframes concept-line-draw {
+  from { stroke-dashoffset: var(--len, 400); }
+  to { stroke-dashoffset: 0; }
+}
+
+.animate-concept-line-draw {
+  stroke-dasharray: var(--len, 400);
+  animation: concept-line-draw 0.8s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+}
+
+@keyframes concept-label-in {
+  0% { opacity: 0; transform: scale(0.5); }
+  60% { opacity: 1; transform: scale(1.15); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-concept-label {
+  animation: concept-label-in 0.45s cubic-bezier(0.2, 1, 0.3, 1) 0.7s both;
+  transform-origin: center;
+}
+
+@keyframes concept-description-pop {
+  0% { opacity: 0; transform: translateY(-4px) scale(0.7); }
+  55% { opacity: 1; transform: translateY(0) scale(1.1); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-concept-description-pop {
+  animation: concept-description-pop 0.5s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+  transform-origin: top center;
+}
+
+@keyframes concept-explanation-pop {
+  0% { opacity: 0; transform: translateY(8px) scale(0.92); }
+  55% { opacity: 1; transform: translateY(-2px) scale(1.035); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-concept-explanation-pop {
+  animation: concept-explanation-pop 0.5s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+  transform-origin: left center;
+}
+
+@keyframes concept-success-kinetic {
+  0% { opacity: 0; transform: translateY(40px) scale(0.8); letter-spacing: 0.5em; filter: blur(8px); }
+  60% { opacity: 1; transform: translateY(0) scale(1.02); letter-spacing: -0.01em; filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); letter-spacing: -0.02em; filter: blur(0); }
+}
+
+.animate-concept-success {
+  animation: concept-success-kinetic 0.9s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+}

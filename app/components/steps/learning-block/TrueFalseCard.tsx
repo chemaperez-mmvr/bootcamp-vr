@@ -27,7 +27,7 @@ export function TrueFalseCard({
 
   const handleAnswer = useCallback(
     (answeredTrue: boolean) => {
-      if (feedback) return; // already answered
+      if (feedback) return;
       const isCorrect = answeredTrue === statement.isTrue;
       setFeedback({
         correct: isCorrect,
@@ -43,8 +43,7 @@ export function TrueFalseCard({
   const handleNext = useCallback(() => {
     const nextIdx = currentIdx + 1;
     if (nextIdx >= total) {
-      // All statements done — always continue (user already saw per-statement feedback)
-      if (answeredCorrectly < total) onFail(); // track retry count
+      if (answeredCorrectly < total) onFail();
       onPass();
     } else {
       setCurrentIdx(nextIdx);
@@ -55,112 +54,123 @@ export function TrueFalseCard({
   if (!statement) return null;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge + progress */}
-      <div className="flex items-center justify-between mb-5">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold">
-          {t("learningBlocks.trueFalseTitle")}
-        </div>
-        <div className="flex items-center gap-1.5">
-          {check.statements.map((_, i) => (
-            <div
-              key={i}
-              className={`w-2.5 h-2.5 rounded-full transition-all ${
-                i === currentIdx
-                  ? "bg-violet-500 scale-125"
-                  : i < currentIdx
-                    ? "bg-violet-300"
-                    : "bg-gray-200"
-              }`}
-            />
-          ))}
-        </div>
-      </div>
+    <div className="relative rounded-2xl border border-slate-200 bg-slate-50 shadow-sm animate-content-enter overflow-hidden">
+      {/* Subtle top accent line */}
+      <div className="h-1 w-full bg-gradient-to-r from-teal-400 via-teal-500 to-teal-400" />
 
-      {/* Statement */}
-      <div
-        key={statement.id}
-        className="animate-content-enter"
-      >
-        <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 mb-6">
-          <p className="text-base font-medium text-gray-900 leading-relaxed text-center">
-            &ldquo;{t(statement.statementKey)}&rdquo;
-          </p>
+      <div className="p-6 sm:p-8">
+        {/* Header row: label + progress */}
+        <div className="flex items-center justify-between mb-6">
+          <span className="text-[10px] uppercase tracking-[0.18em] font-semibold text-slate-500">
+            {t("learningBlocks.trueFalseTitle")}
+          </span>
+          <span className="text-xs font-medium text-slate-500 tabular-nums">
+            {currentIdx + 1} <span className="text-slate-300">/</span> {total}
+          </span>
         </div>
 
-        {/* Buttons */}
-        {!feedback && (
-          <div className="grid grid-cols-2 gap-3">
-            <button
-              type="button"
-              onClick={() => handleAnswer(true)}
-              className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-green-200 bg-green-50/50 text-green-700 font-semibold text-sm sm:text-base hover:border-green-400 hover:bg-green-100 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+        {/* Statement — editorial quote */}
+        <div key={statement.id} className="animate-content-enter">
+          {statement.imageUrl && (
+            <div className="relative w-full max-w-xl mx-auto mb-6 rounded-xl overflow-hidden border border-slate-200 bg-white">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={statement.imageUrl}
+                alt=""
+                className="w-full h-auto"
+              />
+            </div>
+          )}
+          <div className="relative px-2 sm:px-4 py-2 mb-8">
+            <span
+              aria-hidden
+              className="absolute -left-1 -top-2 text-5xl font-serif text-teal-300/70 leading-none select-none"
             >
-              <IconCheck className="w-5 h-5" />
-              {t("learningBlocks.trueFalseTrue")}
-            </button>
-            <button
-              type="button"
-              onClick={() => handleAnswer(false)}
-              className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-red-200 bg-red-50/50 text-red-700 font-semibold text-sm sm:text-base hover:border-red-400 hover:bg-red-100 hover:shadow-md hover:-translate-y-0.5 transition-all active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
-            >
-              <IconClose className="w-5 h-5" />
-              {t("learningBlocks.trueFalseFalse")}
-            </button>
+              &ldquo;
+            </span>
+            <p className="pl-6 pr-2 text-lg sm:text-xl font-serif text-slate-800 leading-snug italic">
+              {t(statement.statementKey)}
+            </p>
           </div>
-        )}
 
-        {/* Feedback */}
-        {feedback && (
-          <div className="animate-wizard-feedback">
-            <div
-              className={`rounded-xl border p-4 ${
-                feedback.correct
-                  ? "border-green-200 bg-green-50"
-                  : "border-red-200 bg-red-50"
-              }`}
-            >
-              <div className="flex items-start gap-2">
-                {feedback.correct ? (
-                  <IconCheck className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
-                ) : (
-                  <IconClose className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                )}
-                <div>
-                  <p
-                    className={`text-sm font-semibold mb-1 ${
-                      feedback.correct ? "text-green-800" : "text-red-800"
-                    }`}
-                  >
-                    {feedback.correct
-                      ? t("learningBlocks.trueFalseCorrect")
-                      : t("learningBlocks.trueFalseWrong")}
-                  </p>
-                  <p
-                    className={`text-sm leading-relaxed ${
-                      feedback.correct ? "text-green-700" : "text-red-700"
-                    }`}
-                  >
-                    {feedback.explanation}
-                  </p>
-                </div>
+          {/* Answer prompt + pill buttons */}
+          {!feedback && (
+            <div className="space-y-4">
+              <p className="text-xs uppercase tracking-wide font-semibold text-slate-500 text-center">
+                {t("learningBlocks.trueFalsePrompt")}
+              </p>
+              <div className="flex items-center justify-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => handleAnswer(true)}
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 bg-white text-sm font-semibold text-slate-700 hover:border-teal-400 hover:text-teal-700 hover:bg-teal-50 transition-all active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+                >
+                  {t("learningBlocks.trueFalseTrue")}
+                </button>
+                <span className="text-xs text-slate-300">·</span>
+                <button
+                  type="button"
+                  onClick={() => handleAnswer(false)}
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 bg-white text-sm font-semibold text-slate-700 hover:border-teal-400 hover:text-teal-700 hover:bg-teal-50 transition-all active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+                >
+                  {t("learningBlocks.trueFalseFalse")}
+                </button>
               </div>
             </div>
+          )}
 
-            <div className="mt-5 flex justify-end">
-              <button
-                type="button"
-                onClick={handleNext}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+          {/* Feedback */}
+          {feedback && (
+            <div className="animate-wizard-feedback">
+              <div
+                className={`rounded-xl border p-4 ${
+                  feedback.correct
+                    ? "border-green-200 bg-green-50"
+                    : "border-red-200 bg-red-50"
+                }`}
               >
-                {currentIdx < total - 1
-                  ? t("learningBlocks.continueToNext")
-                  : t("learningBlocks.continueToCheck")}
-                <span aria-hidden>→</span>
-              </button>
+                <div className="flex items-start gap-2">
+                  {feedback.correct ? (
+                    <IconCheck className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
+                  ) : (
+                    <IconClose className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
+                  )}
+                  <div>
+                    <p
+                      className={`text-sm font-semibold mb-1 ${
+                        feedback.correct ? "text-green-800" : "text-red-800"
+                      }`}
+                    >
+                      {feedback.correct
+                        ? t("learningBlocks.trueFalseCorrect")
+                        : t("learningBlocks.trueFalseWrong")}
+                    </p>
+                    <p
+                      className={`text-sm leading-relaxed ${
+                        feedback.correct ? "text-green-700" : "text-red-700"
+                      }`}
+                    >
+                      {feedback.explanation}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-5 flex justify-end">
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+                >
+                  {currentIdx < total - 1
+                    ? t("learningBlocks.continueToNext")
+                    : t("learningBlocks.continueToCheck")}
+                  <span aria-hidden>→</span>
+                </button>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

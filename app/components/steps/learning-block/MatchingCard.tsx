@@ -1,8 +1,32 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";
+import {
+  Eye,
+  PersonStanding,
+  Zap,
+  MapPin,
+  Heart,
+  Waves,
+  Ear,
+  Hand,
+  Sparkles,
+  type LucideIcon,
+} from "lucide-react";
 import type { MatchingExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Eye,
+  PersonStanding,
+  Zap,
+  MapPin,
+  Heart,
+  Waves,
+  Ear,
+  Hand,
+  Sparkles,
+};
 
 /* Palette for connection lines & badges — each pair gets a distinct color */
 const PAIR_COLORS = [
@@ -176,11 +200,19 @@ export function MatchingCard({
     );
   };
 
+  const connectedCount = Object.keys(connections).length;
+  const totalPairs = exercise.pairs.length;
+
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.matchingTitle")}
+      {/* Badge + progress */}
+      <div className="flex items-center justify-between mb-4">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold">
+          {t("learningBlocks.matchingTitle")}
+        </div>
+        <span className="text-xs font-medium text-gray-500 tabular-nums">
+          {connectedCount} <span className="text-gray-300">/</span> {totalPairs}
+        </span>
       </div>
 
       {/* Instruction */}
@@ -245,9 +277,9 @@ export function MatchingCard({
           })}
         </svg>
 
-        <div className="grid grid-cols-[1fr_auto_1fr] gap-2 sm:gap-3 items-start">
+        <div className="grid grid-cols-[1fr_auto_1fr] gap-4 sm:gap-8 items-start">
           {/* Left column */}
-          <div className="space-y-2.5">
+          <div className="space-y-6">
             {exercise.pairs.map((pair) => {
               const isSelected = selectedLeft === pair.id;
               const isConnected = pair.id in connections;
@@ -257,7 +289,7 @@ export function MatchingCard({
               const isTargetable = selectedRight && !checked;
 
               let classes =
-                "w-full p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
+                "w-full min-h-[4.5rem] p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
               if (checked) {
                 if (isCorrectChecked) {
                   classes += " border-green-400 bg-green-50 text-green-800";
@@ -268,16 +300,16 @@ export function MatchingCard({
                 }
               } else if (isSelected) {
                 classes +=
-                  " border-indigo-400 bg-indigo-50 text-indigo-800 ring-2 ring-indigo-300 shadow-md scale-[1.02]";
+                  " border-teal-400 bg-teal-50 text-teal-800 ring-2 ring-teal-300 shadow-md scale-[1.02]";
               } else if (isConnected) {
                 const c = PAIR_COLORS[idx % PAIR_COLORS.length];
                 classes += ` ${c.border} text-gray-800`;
               } else if (isTargetable) {
                 classes +=
-                  " border-indigo-200 border-dashed text-gray-700 hover:border-indigo-400 hover:bg-indigo-50/40 cursor-pointer hover:scale-[1.02] hover:shadow-sm";
+                  " border-teal-200 border-dashed text-gray-700 hover:border-teal-400 hover:bg-teal-50/40 cursor-pointer hover:scale-[1.02] hover:shadow-sm";
               } else {
                 classes +=
-                  " border-gray-200 text-gray-700 hover:border-indigo-300 hover:bg-indigo-50/40 cursor-pointer";
+                  " border-gray-200 text-gray-700 hover:border-teal-300 hover:bg-teal-50/40 cursor-pointer";
               }
 
               return (
@@ -303,8 +335,16 @@ export function MatchingCard({
                     )}
                     {!checked && isConnected && <PairBadge idx={idx} />}
                     {!checked && !isConnected && isTargetable && (
-                      <span className="w-5 h-5 rounded-full border-2 border-dashed border-indigo-300 shrink-0" />
+                      <span className="w-5 h-5 rounded-full border-2 border-dashed border-teal-300 shrink-0" />
                     )}
+                    {pair.iconName && ICON_MAP[pair.iconName] && !checked && !isConnected && !isTargetable && (() => {
+                      const Icon = ICON_MAP[pair.iconName!];
+                      return (
+                        <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-teal-50 text-teal-600 shrink-0">
+                          <Icon className="w-4 h-4" strokeWidth={2} />
+                        </span>
+                      );
+                    })()}
                     <span className="leading-relaxed">{t(pair.leftKey)}</span>
                   </div>
                 </button>
@@ -323,7 +363,7 @@ export function MatchingCard({
           </div>
 
           {/* Right column */}
-          <div className="space-y-2.5">
+          <div className="space-y-6">
             {shuffledRight.map((pair) => {
               const connectedLeft = getLeftForRight(pair.id);
               const isConnected = Boolean(connectedLeft);
@@ -334,7 +374,7 @@ export function MatchingCard({
               const isCorrectChecked = checked && isConnected && !isWrong;
 
               let classes =
-                "w-full p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
+                "w-full min-h-[4.5rem] p-3 sm:p-3.5 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
               if (checked) {
                 if (isCorrectChecked) {
                   classes += " border-green-400 bg-green-50 text-green-800";
@@ -345,15 +385,15 @@ export function MatchingCard({
                 }
               } else if (isSelected) {
                 classes +=
-                  " border-indigo-400 bg-indigo-50 text-indigo-800 ring-2 ring-indigo-300 shadow-md scale-[1.02]";
+                  " border-teal-400 bg-teal-50 text-teal-800 ring-2 ring-teal-300 shadow-md scale-[1.02]";
               } else if (isConnected) {
                 const c = PAIR_COLORS[idx % PAIR_COLORS.length];
                 classes += ` ${c.border} text-gray-800`;
               } else if (isTargetable) {
                 classes +=
-                  " border-indigo-200 border-dashed text-gray-700 hover:border-indigo-400 hover:bg-indigo-50/40 cursor-pointer hover:scale-[1.02] hover:shadow-sm";
+                  " border-teal-200 border-dashed text-gray-700 hover:border-teal-400 hover:bg-teal-50/40 cursor-pointer hover:scale-[1.02] hover:shadow-sm";
               } else {
-                classes += " border-gray-200 text-gray-700 hover:border-indigo-300 hover:bg-indigo-50/40 cursor-pointer";
+                classes += " border-gray-200 text-gray-700 hover:border-teal-300 hover:bg-teal-50/40 cursor-pointer";
               }
 
               return (
@@ -379,7 +419,7 @@ export function MatchingCard({
                     )}
                     {!checked && isConnected && <PairBadge idx={idx} />}
                     {!checked && !isConnected && isTargetable && (
-                      <span className="w-5 h-5 rounded-full border-2 border-dashed border-indigo-300 shrink-0" />
+                      <span className="w-5 h-5 rounded-full border-2 border-dashed border-teal-300 shrink-0" />
                     )}
                     <span className="leading-relaxed">{t(pair.rightKey)}</span>
                   </div>

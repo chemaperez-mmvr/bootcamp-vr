@@ -12,6 +12,10 @@ export type QuizQuestion = {
   options: QuizOption[];
   correctOptionId: string;
   explanationKey?: string;
+  /** Optional illustration shown above the options, path relative to /public. */
+  imageUrl?: string;
+  /** Optional alt text translation key for the image. */
+  imageAltKey?: string;
 };
 
 export type ModuleQuiz = {
@@ -68,6 +72,8 @@ const moduleQuizzes: Record<string, ModuleQuiz> = {
         ],
         correctOptionId: "b",
         explanationKey: "quiz.basicFoundations.q3.explanation",
+        imageUrl: "/images/quiz/m0-q3.png",
+        imageAltKey: "quiz.basicFoundations.q3.imageAlt",
       },
       {
         id: "q4",
@@ -92,8 +98,10 @@ const moduleQuizzes: Record<string, ModuleQuiz> = {
           { id: "c", labelKey: "quiz.basicFoundations.q5.c" },
           { id: "d", labelKey: "quiz.basicFoundations.q5.d" },
         ],
-        correctOptionId: "d",
+        correctOptionId: "b",
         explanationKey: "quiz.basicFoundations.q5.explanation",
+        imageUrl: "/images/quiz/m0-q5.png",
+        imageAltKey: "quiz.basicFoundations.q5.imageAlt",
       },
     ],
   },

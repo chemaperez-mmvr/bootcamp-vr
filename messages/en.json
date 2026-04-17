@@ -43,35 +43,34 @@
     "startBootcamp": "Start the Bootcamp",
     "searchDocs": "Search Documentation"
   },
-  "twoWays": {
-    "heading": "Two Ways to Learn, One Connected Platform",
-    "subtitle": "Choose your learning style — or use both. They work together seamlessly.",
-    "learningPath": "Learning Path",
+  "connectedPaths": {
+    "eyebrow": "Two paths, one foundation",
+    "heading": "Learn by doing, reference on demand",
+    "subtitle": "The Bootcamp and the Documentation draw from the same knowledge base — pick the path that fits the moment, and jump between them whenever you need to.",
+    "learningPath": "Learning path",
     "bootcamp": "Bootcamp",
-    "bootcampDesc": "A guided, sequential learning journey through the essentials of VR in education.",
+    "bootcampDesc": "A guided, hands-on journey through the essentials of VR in the classroom — lesson by lesson.",
     "curated": "Curated, must-know content",
-    "stepByStep": "Step-by-step progression",
-    "progressTracking": "Progress tracking & checklists",
-    "linksToDocs": "Links to deep-dive documentation",
-    "startLearning": "Start Learning →",
-    "referenceMode": "Reference Mode",
+    "stepByStep": "Step-by-step missions and checklists",
+    "progressTracking": "Progress tracking across modules",
+    "startLearning": "Start the Bootcamp →",
+    "referenceMode": "Reference",
     "documentation": "Documentation",
-    "docsDesc": "Comprehensive, searchable knowledge base for quick answers and deep dives.",
-    "exhaustiveRef": "Exhaustive reference material",
-    "powerfulSearch": "Powerful search functionality",
-    "categorized": "Categorized by topic & difficulty",
-    "linksToBootcamp": "Links back to Bootcamp modules",
-    "browseDocs": "Browse Docs →"
-  },
-  "seamless": {
-    "heading": "Seamlessly Connected",
-    "subtitle": "Both modes share the same content base, cross-linked for your convenience.",
-    "fromBootcamp": "From Bootcamp",
-    "fromBootcampDesc": "While learning about VR hardware setup...",
-    "relatedHardware": "Related: Complete Hardware Specifications",
-    "fromDocs": "From Documentation",
-    "fromDocsDesc": "Reading a detailed troubleshooting guide...",
-    "learnInContext": "Learn in context: Module 2: Hardware Setup"
+    "docsDesc": "A complete, searchable knowledge base for quick answers and full context whenever you need it.",
+    "exhaustiveRef": "Every topic covered in depth",
+    "powerfulSearch": "Powerful search across modules",
+    "categorized": "Organized by topic and priority",
+    "browseDocs": "Browse documentation →",
+    "bridgeLabel": "See how they connect",
+    "bridgeDesc": "Every Bootcamp lesson is built on a Documentation section — and every Documentation page points back to hands-on practice. Here's the same topic seen from both sides:",
+    "bridgeConnector": "Same topic",
+    "exampleBootcampBadge": "Bootcamp lesson",
+    "exampleDocsBadge": "Documentation",
+    "exampleModuleLabel": "Module 1 · Getting VR Ready",
+    "exampleTitle": "Casting the headset to a screen",
+    "exampleBootcampHint": "A guided walkthrough with checkpoints, so your students can see what's happening inside the headset.",
+    "exampleDocsHint": "The full step-by-step reference, with screenshots for every Quick Access option and troubleshooting notes.",
+    "bridgeFootnote": "This mirroring applies to every module — pick the path that fits what you need right now."
   },
   "bootcamp": {
     "eyebrow": "Guided path",
@@ -651,13 +650,14 @@
       "tapToExplore": "Tap to explore",
       "keepExploring": "Explore more options to continue",
       "continueToInsight": "See key concepts",
-      "continueToCheck": "Quick check",
+      "continueToCheck": "Continue",
       "continueToNext": "Next topic",
       "microCheckTitle": "Quick check",
       "microCheckRetry": "Review the key concepts",
       "microCheckCorrect": "Correct!",
       "microCheckWrong": "Not quite — read the explanation below",
-      "trueFalseTitle": "True or False?",
+      "trueFalseTitle": "Verify what you learned",
+      "trueFalsePrompt": "Is this true?",
       "trueFalseTrue": "True",
       "trueFalseFalse": "False",
       "trueFalseCorrect": "Correct!",
@@ -692,6 +692,7 @@
       "memoryMatchComplete": "All pairs found!",
       "conceptMapTitle": "Concept map",
       "conceptMapInstruction": "Tap two nodes to connect them",
+      "conceptMapSuccess": "Tree complete! Connections correct.",
       "conceptMapCheck": "Check connections",
       "conceptMapCorrect": "All connections correct!",
       "conceptMapWrong": "{wrong} connection(s) incorrect — removed. Complete the remaining ones.",
@@ -867,7 +868,7 @@
             "tf": {
               "s1": {
                 "statement": "VR completely replaces the real environment — the student cannot see the classroom",
-                "explanation": "Correct! VR creates a fully immersive 360° digital world. The physical classroom disappears entirely for the student."
+                "explanation": "VR creates a fully immersive 360° digital world. The physical classroom disappears entirely for the student."
               },
               "s2": {
                 "statement": "A 360° video on a headset is the most interactive form of VR",
@@ -957,7 +958,7 @@
             "tf": {
               "s1": {
                 "statement": "In VR, a student who fails a simulation can try again with no real consequences",
-                "explanation": "Correct! Safe repetition is a core VR advantage. Students can practice as many times as needed — mistakes carry no real-world risk."
+                "explanation": "Safe repetition is a core VR advantage. Students can practice as many times as needed — mistakes carry no real-world risk."
               },
               "s2": {
                 "statement": "VR is most effective when students watch an expert perform a procedure",
@@ -965,7 +966,7 @@
               },
               "s3": {
                 "statement": "Repetition in a safe VR environment builds confidence and competence",
-                "explanation": "Correct! Each retry reinforces the correct approach. Students build muscle memory and decision-making skills through repeated safe practice."
+                "explanation": "Each retry reinforces the correct approach. Students build muscle memory and decision-making skills through repeated safe practice."
               }
             }
           }
@@ -1048,18 +1049,28 @@
         "b4": {
           "title": "VR, AR, and XR — Choosing the right tool",
           "exercise": {
-            "instruction": "Connect the technologies to show how they relate to each other",
+            "instruction": "Place each technology in its correct spot in the hierarchy tree",
             "nodes": {
               "xr": "Extended Reality (XR)",
               "vr": "Virtual Reality (VR)",
               "ar": "Augmented Reality (AR)",
               "mr": "Mixed Reality (MR)"
             },
+            "desc": {
+              "xr": "Umbrella term for all immersive realities",
+              "vr": "Full immersion — the real world disappears",
+              "ar": "Overlays digital content on the real world",
+              "mr": "Hybrid: extends AR with environment interaction"
+            },
             "conn": {
               "xrVr": "includes",
               "xrAr": "includes",
               "xrMr": "includes",
-              "arMr": "MR extends AR"
+              "arMr": "extends"
+            },
+            "invalid": {
+              "vrAr": "VR and AR are not directly related: VR immerses you in a fully virtual world (the real world disappears), while AR overlays digital content on top of the real world. They are sibling categories under XR — neither includes nor extends the other.",
+              "vrMr": "VR and MR are opposite approaches: VR fully replaces the physical environment, while MR blends digital content with the real world and interacts with it. They are siblings within XR, with no hierarchy between them."
             }
           },
           "scenario": {
@@ -1218,7 +1229,7 @@
             "tf": {
               "s1": {
                 "statement": "Every student needs their own IPD adjustment — one size does not fit all",
-                "explanation": "Correct! IPD ranges from 56mm to 72mm across people. Using the wrong setting causes blurry vision and eye strain within minutes."
+                "explanation": "IPD ranges from 56mm to 72mm across people. Using the wrong setting causes blurry vision and eye strain within minutes."
               },
               "s2": {
                 "statement": "A Quest 3 can be used straight out of the box without any setup",
@@ -1226,7 +1237,7 @@
               },
               "s3": {
                 "statement": "Charging headsets the night before class is the single most important preparation step",
-                "explanation": "Correct! A dead headset is a useless headset. Overnight charging ensures full battery (2+ hours of use) and avoids the #1 preventable classroom VR problem."
+                "explanation": "A dead headset is a useless headset. Overnight charging ensures full battery (2+ hours of use) and avoids the #1 preventable classroom VR problem."
               }
             }
           }
@@ -1371,7 +1382,7 @@
             "tf": {
               "s1": {
                 "statement": "You should always install and test VR apps at least one day before class — never during class time",
-                "explanation": "Correct! Downloads can be slow, installs can fail, and apps sometimes need first-launch setup. Discovering these issues during class wastes everyone's time."
+                "explanation": "Downloads can be slow, installs can fail, and apps sometimes need first-launch setup. Discovering these issues during class wastes everyone's time."
               },
               "s2": {
                 "statement": "If an app isn't in the main Meta Horizon Store search results, it doesn't exist for the Quest 3",
@@ -1379,7 +1390,7 @@
               },
               "s3": {
                 "statement": "Each headset needs its own app download — you cannot copy apps between headsets via USB",
-                "explanation": "Correct! Quest apps are account-linked and must be downloaded individually to each device through the Meta Horizon Store."
+                "explanation": "Quest apps are account-linked and must be downloaded individually to each device through the Meta Horizon Store."
               }
             }
           }
@@ -1519,7 +1530,7 @@
             "tf": {
               "s1": {
                 "statement": "Charging headsets the night before is more reliable than charging them the morning of class",
-                "explanation": "Correct! A Quest 3 takes about 2 hours to fully charge. Morning charging gives you no margin — a power outage, a bad cable, or a forgotten charger means dead headsets at class time."
+                "explanation": "A Quest 3 takes about 2 hours to fully charge. Morning charging gives you no margin — a power outage, a bad cable, or a forgotten charger means dead headsets at class time."
               },
               "s2": {
                 "statement": "If the VR app works on one headset, it will work on all of them without testing",
@@ -1527,7 +1538,7 @@
               },
               "s3": {
                 "statement": "Having a backup plan (offline app + non-VR activity) is essential for every VR session",
-                "explanation": "Correct! WiFi outages, app crashes, and hardware failures are common enough that a backup plan isn't optional — it's professional practice. The backup ensures learning continues regardless of technology issues."
+                "explanation": "WiFi outages, app crashes, and hardware failures are common enough that a backup plan isn't optional — it's professional practice. The backup ensures learning continues regardless of technology issues."
               }
             }
           }
@@ -1733,7 +1744,7 @@
             "tf": {
               "s1": {
                 "statement": "A strong VR objective uses action verbs like 'perform', 'demonstrate', or 'execute' — not 'understand' or 'learn about'",
-                "explanation": "Correct! Action verbs describe observable behaviour. 'Understand' can't be seen or measured; 'perform' can."
+                "explanation": "Action verbs describe observable behaviour. 'Understand' can't be seen or measured; 'perform' can."
               },
               "s2": {
                 "statement": "Adding 'in VR' to any objective automatically makes it a good VR objective",
@@ -1741,7 +1752,7 @@
               },
               "s3": {
                 "statement": "A well-written VR objective includes three components: an action, a context, and a success criterion",
-                "explanation": "Correct! Action (what they do), Context (where/under what conditions), and Criterion (how you know it was done correctly) form the complete objective formula."
+                "explanation": "Action (what they do), Context (where/under what conditions), and Criterion (how you know it was done correctly) form the complete objective formula."
               }
             }
           }
@@ -1905,7 +1916,7 @@
             "tf": {
               "s1": {
                 "statement": "A VR briefing should be under 60 seconds: state the objective, describe the task, set the time limit",
-                "explanation": "Correct! Long briefings kill momentum. Keep it short: what to do, how long, what success looks like. Students learn the rest by doing."
+                "explanation": "Long briefings kill momentum. Keep it short: what to do, how long, what success looks like. Students learn the rest by doing."
               },
               "s2": {
                 "statement": "Debriefing is optional — the VR experience itself is enough for learning to occur",
@@ -1913,7 +1924,7 @@
               },
               "s3": {
                 "statement": "The instructor's role during VR is to observe via casting and only intervene when a student is clearly stuck",
-                "explanation": "Correct! The instructor monitors, notes strengths and errors for debriefing, and offers a brief prompt only when absolutely needed. The goal is minimal intervention to preserve student autonomy."
+                "explanation": "The instructor monitors, notes strengths and errors for debriefing, and offers a brief prompt only when absolutely needed. The goal is minimal intervention to preserve student autonomy."
               }
             }
           }
@@ -4056,7 +4067,14 @@
       "xpTotal": "Total",
       "breakdown": "Question breakdown",
       "yourAnswer": "Your answer",
-      "correctAnswer": "Correct answer"
+      "correctAnswer": "Correct answer",
+      "check": "Check",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "scoreOnly": "Score",
+      "attemptShort": "Attempt",
+      "passMark": "Pass",
+      "breakdownHint": "Tap for details"
     },
     "resultsStep": {
       "congratsTitle": "Module completed!",
@@ -4074,25 +4092,26 @@
           "question": "Which of the following best describes what happens when a student uses Virtual Reality?",
           "a": "Digital elements are added on top of the real classroom",
           "b": "The real environment is fully replaced by a computer-generated one — the student can no longer see the physical classroom",
-          "c": "The student watches a 360-degree video on a flat screen",
-          "d": "The student controls an avatar on a computer monitor",
-          "explanation": "VR replaces reality entirely. The student is placed inside a 360° digital environment and cannot see the physical classroom."
+          "c": "The student still sees the real classroom with virtual elements overlaid that they can interact with",
+          "d": "The student plays a 3D video game displayed on a television",
+          "explanation": "VR replaces reality entirely. The student is placed inside a 360° digital environment and can't see the physical classroom. Option (a) describes AR, (c) describes MR, and (d) is a traditional video game — none of those are VR."
         },
         "q2": {
           "question": "You want students to practice an emergency evacuation procedure without any real danger. Which strength of VR makes this the right tool?",
           "a": "VR headsets are wireless, so students can move around freely",
-          "b": "VR has better graphics than a textbook diagram",
+          "b": "VR keeps students motivated because it's a novel and entertaining experience",
           "c": "VR provides a safe practice environment where students can make mistakes and repeat the procedure without real-world consequences",
           "d": "VR lets you record the session for grading later",
-          "explanation": "One of VR's core strengths is safe repetition. Students can practice dangerous or costly procedures multiple times without real consequences, building confidence and competence."
+          "explanation": "One of VR's core strengths is safe repetition. Students can practice dangerous or costly procedures multiple times without real consequences. Don't confuse novelty (b) with pedagogical value — the engagement wears off after a few sessions, but safe practice keeps teaching."
         },
         "q3": {
-          "question": "A colleague describes two activities: (1) Students use tablets to see 3D labels appear on a real skeleton model sitting on the table. (2) Students put on headsets and explore the inside of a human cell as if they were walking through it. Which technologies are being used?",
+          "question": "A colleague describes two classroom activities. Which technology is each one?\nActivity 1 — Students point their tablet at a physical skeleton model and see 3D labels appear over the real bones.\nActivity 2 — Students put on headsets and explore the inside of a human cell as if walking through it.",
           "a": "Both are VR because they both use digital content",
           "b": "Activity 1 is AR (digital overlays on the real world), Activity 2 is VR (replaces reality with a digital environment)",
           "c": "Activity 1 is VR, Activity 2 is AR",
           "d": "Both are AR because they both involve 3D content",
-          "explanation": "AR adds digital content on top of the real world — students still see the skeleton and classroom. VR replaces reality entirely — students are inside a digital cell and can't see the classroom. The key question: is the real world still visible?"
+          "explanation": "AR adds digital content on top of the real world — students still see the skeleton and classroom. VR replaces reality entirely — students are inside a digital cell and can't see the classroom. The key question: is the real world still visible?",
+          "imageAlt": "Two classroom scenes side by side: on the left a student holds a tablet over a skeleton model and sees 3D labels over the real bones; on the right a student wearing a VR headset explores the inside of a human cell as if they were inside it."
         },
         "q4": {
           "question": "A colleague says: 'I used VR in my history class — students watched a 360° video of ancient Rome for 15 minutes.' How would you evaluate this use of VR?",
@@ -4103,12 +4122,13 @@
           "explanation": "The strongest VR use cases involve doing, not just watching. A 360° video is passive observation. VR shines when students interact, make decisions, and practice procedures."
         },
         "q5": {
-          "question": "Which of these is the strongest example of using VR's full potential in education?",
-          "a": "Students watch a 360° tour of a museum",
-          "b": "Students view a slideshow inside a VR headset",
-          "c": "Students listen to a recorded lecture in a virtual classroom",
-          "d": "Students perform a virtual chemistry experiment — measuring, mixing, and observing reactions step by step",
-          "explanation": "VR's full potential is realized when students actively do something — performing experiments, making decisions, practicing procedures. Passive viewing doesn't leverage VR's unique strengths."
+          "question": "A tablet app displays animated digital orbits and labels over a physical model of the solar system when you point the camera at it. Students can tap a planet on the screen to see data. Which technology is this and what is the umbrella category that includes it?",
+          "a": "VR — and it belongs to XR",
+          "b": "AR — and it belongs to XR",
+          "c": "MR — and it belongs to VR",
+          "d": "XR — it's a standalone category, not an umbrella",
+          "explanation": "Digital content (orbits and labels) is overlaid on the visible real world (the physical model). That's Augmented Reality (AR). XR is the umbrella term that covers VR, AR, and MR — AR is a branch within XR, not a synonym or a substitute.",
+          "imageAlt": "A student holds a tablet over a physical model of the solar system on a desk. The tablet screen shows animated digital orbits and labels floating over the real planets."
         }
       },
       "gettingVrReady": {
@@ -5399,6 +5419,13 @@
     "tocLabel": "On this page",
     "tableOfContents": "Table of contents",
     "onThisPage": "ON THIS PAGE",
+    "practiceInBootcampLabel": "Bootcamp version",
+    "practiceInBootcampCta": "Take this module as a guided, hands-on journey",
+    "popularTopics": "Popular topics",
+    "newToVr": "New to VR?",
+    "startBootcampHint": "Start with the guided Bootcamp",
+    "clearSearch": "Clear search",
+    "breadcrumbLabel": "Breadcrumb",
     "updated": "Updated",
     "copyLink": "Copy link to this section",
     "linkCopied": "Link copied!",

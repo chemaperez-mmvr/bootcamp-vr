@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const HEADER_OFFSET = 80; // slightly above header height (76px) for breathing room
+const HEADER_OFFSET = 220; // header (76px) + sticky search+breadcrumb bar (~125px) + breathing room
 const MAX_RETRIES = 25; // 25 × 100ms = 2.5s max wait for element to appear
 const RETRY_INTERVAL = 100; // ms between retries
 

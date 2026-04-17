@@ -22,7 +22,6 @@ import {
   ENCOURAGE_PROBABILITY,
 } from "@/app/bootcamp/tone-styles";
 import {
-  BlockProgressBar,
   ScenarioCard,
   InsightCard,
   MicroCheckCard,
@@ -196,53 +195,62 @@ export function LearningBlockStep({
     [block, slides]
   );
 
-  // Block step indicators (topic dots)
+  // Block step indicators (topic dots — clickable for completed/current blocks to revisit)
+  const canNavigateTo = (i: number) => i <= currentBlock || allDone;
   const blockDots = (
-    <div className="flex items-center justify-center gap-2 mb-4">
-      {blockSet.blocks.map((b, i) => (
-        <div
-          key={b.blockId}
-          className="flex items-center gap-2"
-        >
-          <div
-            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium transition-all ${
-              i === currentBlock && !allDone
-                ? "bg-teal-100 text-teal-700 ring-2 ring-teal-300"
-                : i < currentBlock || allDone
-                  ? "bg-teal-50 text-teal-600"
-                  : "bg-gray-100 text-gray-400"
-            }`}
-          >
-            <span>{i + 1}</span>
-            {i < currentBlock || allDone ? (
-              <span className="text-teal-500">✓</span>
-            ) : null}
-          </div>
-          {i < blockSet.blocks.length - 1 && (
+    <div className="flex items-center justify-center gap-3 mb-4">
+      <div className="flex items-center gap-2">
+        {blockSet.blocks.map((b, i) => {
+          const canNav = canNavigateTo(i);
+          return (
             <div
-              className={`w-4 h-0.5 ${
-                i < currentBlock || allDone ? "bg-teal-300" : "bg-gray-200"
-              }`}
-            />
-          )}
-        </div>
-      ))}
+              key={b.blockId}
+              className="flex items-center gap-2"
+            >
+              <button
+                type="button"
+                onClick={() => {
+                  if (canNav) goToPhase(i, "scenario");
+                }}
+                disabled={!canNav}
+                title={canNav ? "Ir a este tema" : "Bloqueado hasta completar los anteriores"}
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1 ${
+                  i === currentBlock && !allDone
+                    ? "bg-teal-100 text-teal-700 ring-2 ring-teal-300 cursor-pointer hover:bg-teal-200"
+                    : i < currentBlock || allDone
+                      ? "bg-teal-50 text-teal-600 cursor-pointer hover:bg-teal-100"
+                      : "bg-gray-100 text-gray-400 cursor-not-allowed"
+                }`}
+              >
+                <span>{i + 1}</span>
+                {i < currentBlock || allDone ? (
+                  <span className="text-teal-500">✓</span>
+                ) : null}
+              </button>
+              {i < blockSet.blocks.length - 1 && (
+                <div
+                  className={`w-4 h-0.5 ${
+                    i < currentBlock || allDone ? "bg-teal-300" : "bg-gray-200"
+                  }`}
+                />
+              )}
+            </div>
+          );
+        })}
+      </div>
+      <span className="text-xs font-medium text-gray-500 tabular-nums">
+        {allDone
+          ? t("learningBlocks.allBlocksComplete")
+          : t("learningBlocks.blockProgress", {
+              current: currentBlock + 1,
+              total: totalBlocks,
+            })}
+      </span>
     </div>
   );
 
   return (
     <div className="space-y-6">
-      {/* Progress bar */}
-      <BlockProgressBar
-        currentBlock={currentBlock}
-        totalBlocks={totalBlocks}
-        currentPhase={currentPhase}
-        hasVideo={hasVideo}
-        videoViewed={videoViewed}
-        allDone={allDone}
-        t={t}
-      />
-
       {/* Block topic dots */}
       {blockDots}
 
@@ -272,9 +280,25 @@ export function LearningBlockStep({
         </div>
       )}
 
-      {/* DEV: Skip button */}
+      {/* Navigation controls: Back (always when there's somewhere to go back) + DEV Skip */}
       {videoViewed && !allDone && (
-        <div className="flex justify-end">
+        <div className="flex justify-between items-center gap-2">
+          <div>
+            {(currentPhase !== "scenario" || currentBlock > 0) && (
+              <button
+                type="button"
+                onClick={() => {
+                  if (currentPhase === "microcheck") goToPhase(currentBlock, "insight");
+                  else if (currentPhase === "insight") goToPhase(currentBlock, "scenario");
+                  else if (currentPhase === "scenario" && currentBlock > 0) goToPhase(currentBlock - 1, "scenario");
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-gray-600 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:text-gray-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1"
+              >
+                <span aria-hidden>←</span>
+                Volver
+              </button>
+            )}
+          </div>
           <button
             type="button"
             onClick={() => {
@@ -403,18 +427,43 @@ export function LearningBlockStep({
       {videoViewed && !allDone && currentPhase === "insight" && insightSlide && (
         <>
           {block?.exercise ? (
-            /* Exercise flow: show only key takeaway, skip concept scenarios */
+            /* Exercise flow: concept recap with subtitle, points, image + key takeaway */
             <div className="space-y-4 animate-content-enter">
               <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-                <div className="bg-gradient-to-br from-teal-600 to-teal-700 px-5 py-5 sm:px-6">
-                  <h3 className="text-lg font-semibold text-white">
+                <div className="bg-gradient-to-br from-teal-600 to-teal-700 px-5 py-3 sm:px-6 sm:py-4">
+                  <h3 className="text-lg font-semibold text-white leading-tight">
                     {t(insightSlide.titleKey)}
                   </h3>
+                  <p className="mt-0.5 text-xs text-teal-100">
+                    {t(insightSlide.subtitleKey)}
+                  </p>
                 </div>
-                <div className="p-5 sm:p-6">
-                  <div className="rounded-xl bg-amber-50 border border-amber-200 p-5">
+                {insightSlide.imageUrl && (
+                  <div className="relative w-full bg-gray-50">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={insightSlide.imageUrl}
+                      alt={t(insightSlide.titleKey)}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                )}
+                <div className="p-5 sm:p-6 space-y-4">
+                  <ul className="space-y-2.5">
+                    {insightSlide.points.map((point) => (
+                      <li
+                        key={point.key}
+                        className="flex items-start gap-3 border-l-2 border-teal-500 pl-3.5 py-0.5"
+                      >
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          {t(point.key)}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="rounded-xl bg-amber-50 border border-amber-200 p-4">
                     <div className="flex items-start gap-3">
-                      <span className="text-amber-600 shrink-0 mt-0.5">💡</span>
+                      <span className="text-amber-600 shrink-0 mt-0.5" aria-hidden>💡</span>
                       <div>
                         <span className="text-xs font-bold text-amber-700 uppercase tracking-wide">
                           {t("learningBlocks.insightKeyTakeaway")}
