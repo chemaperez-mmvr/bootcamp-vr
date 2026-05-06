@@ -1487,16 +1487,16 @@
           },
           "micro": {
             "cls": {
-              "instruction": "Clasifica cada característica del casting como cableada o inalámbrica",
+              "instruction": "Clasifica cada acción como cuidado correcto del Quest o algo que daña el dispositivo",
               "cat": {
-                "wired": "Cableado (USB-C a HDMI)",
-                "wireless": "Inalámbrico (casting por WiFi)"
+                "care": "Cuidado correcto",
+                "damage": "Daña el dispositivo"
               },
-              "i1": "Funciona a través del menú de casting de Meta Quest",
-              "i2": "Cero retardo — visualización en tiempo real sin retraso",
-              "i3": "Requiere que todos los dispositivos estén en la misma red WiFi",
-              "i4": "Necesita un adaptador o cable compatible",
-              "i5": "Tiene un retardo inherente de 1-3 segundos"
+              "i1": "Limpiar las lentes con un paño de microfibra seco",
+              "i2": "Rociar limpiavidrios directamente sobre las lentes",
+              "i3": "Dejar el Quest sobre la mesa con las lentes mirando a la luz solar de la ventana",
+              "i4": "Guardar el Quest en su funda dentro de un armario o estantería",
+              "i5": "Pasar una toallita antibacteriana sin alcohol por la correa y el frontal"
             }
           }
         },

@@ -1487,16 +1487,16 @@
           },
           "micro": {
             "cls": {
-              "instruction": "Classify each casting characteristic as wired or wireless",
+              "instruction": "Classify each action as proper Quest care or something that damages the device",
               "cat": {
-                "wired": "Wired (USB-C to HDMI)",
-                "wireless": "Wireless (WiFi casting)"
+                "care": "Proper care",
+                "damage": "Damages the device"
               },
-              "i1": "Works through the Meta Quest casting menu",
-              "i2": "Zero lag — real-time display with no delay",
-              "i3": "Requires all devices on the same WiFi network",
-              "i4": "Needs an adapter or compatible cable",
-              "i5": "Has 1-3 seconds of inherent delay"
+              "i1": "Wiping the lenses with a dry microfiber cloth",
+              "i2": "Spraying glass cleaner directly onto the lenses",
+              "i3": "Leaving the Quest on a desk with the lenses facing direct sunlight from a window",
+              "i4": "Storing the Quest in its case inside a cabinet or shelf",
+              "i5": "Wiping the strap and front pad with an alcohol-free antibacterial wipe"
             }
           }
         },
