@@ -213,12 +213,12 @@ export function ModuleQuizStep({
           <div key={currentIndex} className={`animate-content-enter ${currentQuestion.imageUrl ? "grid gap-4 sm:grid-cols-[minmax(0,360px)_minmax(0,1fr)]" : ""}`}>
             {/* Optional illustration — on the left, spans full right-column height */}
             {currentQuestion.imageUrl && (
-              <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 self-stretch min-h-[180px]">
+              <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 min-h-[180px] sm:relative sm:self-stretch sm:min-h-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={currentQuestion.imageUrl}
                   alt={currentQuestion.imageAltKey ? t(currentQuestion.imageAltKey) : ""}
-                  className="w-full h-full object-cover block"
+                  className="w-full block sm:absolute sm:inset-0 sm:h-full sm:object-cover"
                   loading="lazy"
                 />
               </div>
