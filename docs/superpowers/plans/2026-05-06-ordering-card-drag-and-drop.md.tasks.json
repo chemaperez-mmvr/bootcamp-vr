@@ -1,0 +1,29 @@
+{
+  "planPath": "docs/superpowers/plans/2026-05-06-ordering-card-drag-and-drop.md",
+  "tasks": [
+    {
+      "id": 0,
+      "subject": "Task 0: Instalar dependencias de @dnd-kit",
+      "status": "pending"
+    },
+    {
+      "id": 1,
+      "subject": "Task 1: Actualizar traducciones de orderingInstruction",
+      "status": "pending",
+      "blockedBy": [0]
+    },
+    {
+      "id": 2,
+      "subject": "Task 2: Reescribir OrderingCard con dnd-kit",
+      "status": "pending",
+      "blockedBy": [0, 1]
+    },
+    {
+      "id": 3,
+      "subject": "Task 3: Verificación manual con Playwright",
+      "status": "pending",
+      "blockedBy": [2]
+    }
+  ],
+  "lastUpdated": "2026-05-06"
+}
