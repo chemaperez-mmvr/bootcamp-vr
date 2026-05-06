@@ -337,6 +337,7 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
             },
             {
               id: "n2", promptKey: `${Q}.b1.exercise.n2.prompt`,
+              imageUrl: "/images/quest3-charging-led.webp",
               options: [
                 { id: "a", labelKey: `${Q}.b1.exercise.n2.a.label`, nextNodeId: null, feedbackKey: `${Q}.b1.exercise.n2.a.feedback`, isCorrect: false },
                 { id: "b", labelKey: `${Q}.b1.exercise.n2.b.label`, nextNodeId: "n3", feedbackKey: `${Q}.b1.exercise.n2.b.feedback`, isCorrect: true },
@@ -345,6 +346,7 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
             },
             {
               id: "n3", promptKey: `${Q}.b1.exercise.n3.prompt`,
+              imageUrl: "/images/quest3-meta-logo-wifi.webp",
               options: [
                 { id: "a", labelKey: `${Q}.b1.exercise.n3.a.label`, nextNodeId: null, feedbackKey: `${Q}.b1.exercise.n3.a.feedback`, isCorrect: true },
                 { id: "b", labelKey: `${Q}.b1.exercise.n3.b.label`, nextNodeId: null, feedbackKey: `${Q}.b1.exercise.n3.b.feedback`, isCorrect: false },
@@ -390,9 +392,9 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
             type: "trueFalse",
             id: "b1-tf",
             statements: [
-              { id: "s1", statementKey: `${Q}.b1.micro.tf.s1.statement`, isTrue: true, explanationKey: `${Q}.b1.micro.tf.s1.explanation` },
-              { id: "s2", statementKey: `${Q}.b1.micro.tf.s2.statement`, isTrue: false, explanationKey: `${Q}.b1.micro.tf.s2.explanation` },
-              { id: "s3", statementKey: `${Q}.b1.micro.tf.s3.statement`, isTrue: true, explanationKey: `${Q}.b1.micro.tf.s3.explanation` },
+              { id: "s1", statementKey: `${Q}.b1.micro.tf.s1.statement`, isTrue: true, explanationKey: `${Q}.b1.micro.tf.s1.explanation`, imageUrl: "/images/slides/tf-ipd-individual.jpg" },
+              { id: "s2", statementKey: `${Q}.b1.micro.tf.s2.statement`, isTrue: false, explanationKey: `${Q}.b1.micro.tf.s2.explanation`, imageUrl: "/images/slides/tf-quest-out-of-box.jpg" },
+              { id: "s3", statementKey: `${Q}.b1.micro.tf.s3.statement`, isTrue: true, explanationKey: `${Q}.b1.micro.tf.s3.explanation`, imageUrl: "/images/slides/tf-charging-overnight.jpg" },
             ],
           },
         ],
@@ -410,7 +412,7 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
           id: "b2-planner",
           instructionKey: `${Q}.b2.exercise.instruction`,
           gridCols: 6,
-          gridRows: 5,
+          gridRows: 4,
           items: [
             { id: "teacher", labelKey: `${Q}.b2.exercise.items.teacher`, emoji: "🧑‍🏫", width: 1, height: 1 },
             { id: "vr1", labelKey: `${Q}.b2.exercise.items.vrStation`, emoji: "🥽", width: 1, height: 1 },
@@ -419,10 +421,31 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
             { id: "charger", labelKey: `${Q}.b2.exercise.items.charger`, emoji: "🔌", width: 1, height: 1 },
           ],
           zones: [
-            { id: "front", labelKey: `${Q}.b2.exercise.zones.front`, requiredItemIds: ["teacher", "screen"], col: 0, row: 1, width: 6, height: 1 },
-            { id: "vrArea", labelKey: `${Q}.b2.exercise.zones.vrArea`, requiredItemIds: ["vr1", "vr2"], col: 2, row: 3, width: 4, height: 2 },
-            { id: "support", labelKey: `${Q}.b2.exercise.zones.support`, requiredItemIds: ["charger"], col: 1, row: 3, width: 1, height: 2 },
+            { id: "front", labelKey: `${Q}.b2.exercise.zones.front`, descriptionKey: `${Q}.b2.exercise.zones.frontDesc`, requiredItemIds: ["teacher", "screen"], col: 0, row: 0, width: 6, height: 1 },
+            { id: "vrArea", labelKey: `${Q}.b2.exercise.zones.vrArea`, descriptionKey: `${Q}.b2.exercise.zones.vrAreaDesc`, requiredItemIds: ["vr1", "vr2"], col: 2, row: 2, width: 4, height: 2 },
+            { id: "support", labelKey: `${Q}.b2.exercise.zones.support`, descriptionKey: `${Q}.b2.exercise.zones.supportDesc`, requiredItemIds: ["charger"], col: 0, row: 2, width: 2, height: 2 },
           ],
+          obstacles: [
+            { id: "window", emoji: "🪟", labelKey: `${Q}.b2.exercise.obstacles.window`, col: 5, row: 0, width: 1, height: 1 },
+            { id: "door", emoji: "🚪", labelKey: `${Q}.b2.exercise.obstacles.door`, col: 0, row: 1, width: 1, height: 1 },
+          ],
+          clearanceRule: {
+            itemIds: ["vr1", "vr2"],
+            cells: 1,
+            violationKey: `${Q}.b2.exercise.hints.vrClearance`,
+          },
+          successJustificationKeys: [
+            `${Q}.b2.exercise.justification.supervision`,
+            `${Q}.b2.exercise.justification.cables`,
+            `${Q}.b2.exercise.justification.evacuation`,
+          ],
+          itemMistakeHints: {
+            teacher: `${Q}.b2.exercise.hints.teacher`,
+            vr1: `${Q}.b2.exercise.hints.vrStation`,
+            vr2: `${Q}.b2.exercise.hints.vrStation`,
+            screen: `${Q}.b2.exercise.hints.screen`,
+            charger: `${Q}.b2.exercise.hints.charger`,
+          },
         },
         scenario: {
           id: "b2-s0",

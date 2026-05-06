@@ -101,7 +101,7 @@
     },
     "progress": {
       "global": "Progreso hacia el certificado",
-      "module": "{completed}/{total} pasos ({percent}%)"
+      "module": "{completed}/{total} lecciones ({percent}%)"
     },
     "stats": {
       "completed": "Completados",
@@ -261,7 +261,7 @@
     },
     "tourStep": {
       "completedTitle": "¡Tour completado!",
-      "completedDesc": "Has explorado todas las partes del Quest 3. Ahora probemos tus conocimientos con el quiz.",
+      "completedDesc": "Has explorado todas las partes del Quest 3. Ya puedes continuar con el módulo.",
       "continueButton": "Continuar a las misiones"
     },
     "contentStep": {
@@ -644,6 +644,10 @@
     },
     "learningBlocks": {
       "blockProgress": "Tema {current} de {total}",
+      "topic": "Tema",
+      "goToTopic": "Ir al tema",
+      "lockedTopic": "Bloqueado hasta completar los anteriores",
+      "completed": "completado",
       "scenarioLabel": "Escenario de aula",
       "scenarioPrompt": "¿Qué harías tú?",
       "explorePrompt": "Toca cada opción para explorar qué pasaría.",
@@ -720,12 +724,19 @@
       "classroomPlannerCorrect": "¡Buen diseño!",
       "classroomPlannerWrong": "{wrong} elemento(s) mal colocados",
       "classroomPlannerReset": "Limpiar diseño",
-      "classroomPlannerInstruction": "Selecciona un elemento y luego toca la zona donde debe ir",
+      "classroomPlannerInstruction": "Arrastra cada elemento (o toca) y colócalo en su zona.",
       "classroomPlannerSelectZone": "Ahora toca una celda del plano para colocarlo",
       "classroomPlannerCell": "Celda",
-      "classroomPlannerRetry": "Intentar de nuevo",
-      "classroomPlannerAllPlaced": "¡Todos los elementos colocados — revisa tu diseño!",
-      "classroomPlannerClearAll": "Limpiar todo",
+      "classroomPlannerRetry": "Reintentar",
+      "classroomPlannerAllPlaced": "¡Todos colocados — revisa tu diseño!",
+      "classroomPlannerClearAll": "Vaciar plano",
+      "classroomPlannerLegend": "Zonas del aula",
+      "classroomPlannerObstacle": "Fijo (no se puede mover)",
+      "classroomPlannerWhyItWorks": "Por qué este diseño funciona",
+      "classroomPlannerHintsTitle": "Revisa estos elementos",
+      "classroomPlannerClearance": "Espacio recomendado para movimiento",
+      "classroomPlannerDragHere": "Suelta aquí",
+      "classroomPlannerPaletteEmpty": "Sin más elementos",
       "fillGapsTitle": "Rellena los huecos",
       "fillGapsWordBank": "Banco de palabras",
       "fillGapsCheck": "Comprobar",
@@ -1140,7 +1151,7 @@
             "instruction": "Ayuda a diagnosticar y resolver este problema de configuración",
             "scenario": "Un profesor reporta: \"Acabo de desembalar el Meta Quest 3 y pulsé el botón de encendido, pero la pantalla se queda en negro. No aparece nada en el casco.\"",
             "n1": {
-              "prompt": "La pantalla del casco está completamente en negro. ¿Qué deberías comprobar primero?",
+              "prompt": "¿Qué deberías comprobar primero?",
               "a": {
                 "label": "Comprobar si el casco está cargado",
                 "feedback": "¡Buena idea! Un Quest 3 nuevo suele llegar con batería baja. Comprobemos el indicador de carga."
@@ -1245,7 +1256,7 @@
         "b2": {
           "title": "Preparación del aula",
           "exercise": {
-            "instruction": "Organiza los elementos en el aula para crear una configuración de RV segura. Coloca cada elemento en la zona correcta.",
+            "instruction": "Organiza el aula para una sesión VR segura. Arrastra (o toca) cada elemento y colócalo en la zona correcta.",
             "items": {
               "teacher": "Mesa del profesor",
               "vrStation": "Estación VR 1",
@@ -1255,8 +1266,27 @@
             },
             "zones": {
               "front": "Frente del aula",
-              "vrArea": "Área abierta de actividad VR",
-              "support": "Área de soporte / almacenamiento"
+              "frontDesc": "Profesor y pantalla a la vista de todos los alumnos.",
+              "vrArea": "Zona de actividad VR",
+              "vrAreaDesc": "Espacio despejado con margen para mover los brazos.",
+              "support": "Zona de soporte",
+              "supportDesc": "Carga y almacenamiento, lejos del área de movimiento."
+            },
+            "obstacles": {
+              "window": "Ventana",
+              "door": "Puerta"
+            },
+            "hints": {
+              "teacher": "La mesa del profesor debe estar al frente para supervisar a todos los alumnos.",
+              "vrStation": "Las estaciones VR necesitan espacio despejado lejos de ventanas, puertas y muros.",
+              "screen": "La pantalla va al frente del aula para que todos puedan verla.",
+              "charger": "La estación de carga va en una zona accesible pero fuera del área de movimiento.",
+              "vrClearance": "Las estaciones VR necesitan al menos una celda de margen alrededor — los brazos extendidos chocarían con obstáculos."
+            },
+            "justification": {
+              "supervision": "Desde el frente, el profesor ve todos los puestos VR y puede intervenir rápido si alguien se desorienta.",
+              "cables": "La estación de carga junto a la puerta evita cables cruzando el área de movimiento.",
+              "evacuation": "La puerta queda libre — si hay que evacuar, nadie tropieza con un puesto VR."
             }
           },
           "scenario": {

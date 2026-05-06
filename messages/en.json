@@ -101,7 +101,7 @@
     },
     "progress": {
       "global": "Progress to certificate",
-      "module": "{completed}/{total} steps ({percent}%)"
+      "module": "{completed}/{total} lessons ({percent}%)"
     },
     "stats": {
       "completed": "Completed",
@@ -261,7 +261,7 @@
     },
     "tourStep": {
       "completedTitle": "Tour completed!",
-      "completedDesc": "You've explored all the parts of the Quest 3. Now let's test your knowledge with the quiz.",
+      "completedDesc": "You've explored all the parts of the Quest 3. You're ready to continue with the module.",
       "continueButton": "Continue to missions"
     },
     "contentStep": {
@@ -644,6 +644,10 @@
     },
     "learningBlocks": {
       "blockProgress": "Topic {current} of {total}",
+      "topic": "Topic",
+      "goToTopic": "Go to topic",
+      "lockedTopic": "Locked until previous topics are complete",
+      "completed": "completed",
       "scenarioLabel": "Classroom scenario",
       "scenarioPrompt": "What would you do?",
       "explorePrompt": "Tap each option to explore what would happen.",
@@ -720,12 +724,19 @@
       "classroomPlannerCorrect": "Great layout!",
       "classroomPlannerWrong": "{wrong} item(s) misplaced",
       "classroomPlannerReset": "Clear layout",
-      "classroomPlannerInstruction": "Select an item, then tap the zone where it belongs",
+      "classroomPlannerInstruction": "Drag each item (or tap) and drop it into its zone.",
       "classroomPlannerSelectZone": "Now tap a cell on the grid to place it",
       "classroomPlannerCell": "Cell",
-      "classroomPlannerRetry": "Try again",
-      "classroomPlannerAllPlaced": "All items placed — check your layout!",
-      "classroomPlannerClearAll": "Clear all",
+      "classroomPlannerRetry": "Retry",
+      "classroomPlannerAllPlaced": "All placed — review your layout!",
+      "classroomPlannerClearAll": "Clear board",
+      "classroomPlannerLegend": "Classroom zones",
+      "classroomPlannerObstacle": "Fixed (cannot be moved)",
+      "classroomPlannerWhyItWorks": "Why this layout works",
+      "classroomPlannerHintsTitle": "Take another look at these",
+      "classroomPlannerClearance": "Recommended movement clearance",
+      "classroomPlannerDragHere": "Drop here",
+      "classroomPlannerPaletteEmpty": "No more items",
       "fillGapsTitle": "Fill the blanks",
       "fillGapsWordBank": "Word bank",
       "fillGapsCheck": "Check",
@@ -1140,7 +1151,7 @@
             "instruction": "Help diagnose and fix this setup problem",
             "scenario": "A teacher reports: \"I just unboxed the Meta Quest 3 and pressed the power button, but the screen stays black. Nothing appears in the headset.\"",
             "n1": {
-              "prompt": "The headset screen is completely black. What should you check first?",
+              "prompt": "What should you check first?",
               "a": {
                 "label": "Check if the headset is charged",
                 "feedback": "Good call! A new Quest 3 often arrives with low battery. Let's check the charging indicator."
@@ -1245,7 +1256,7 @@
         "b2": {
           "title": "Classroom Setup",
           "exercise": {
-            "instruction": "Arrange items in the classroom to create a safe VR setup. Place each item in the correct zone.",
+            "instruction": "Arrange the classroom for a safe VR session. Drag (or tap) each item into the correct zone.",
             "items": {
               "teacher": "Teacher desk",
               "vrStation": "VR Station 1",
@@ -1254,9 +1265,28 @@
               "charger": "Charging station"
             },
             "zones": {
-              "front": "Front of classroom",
-              "vrArea": "Open VR activity area",
-              "support": "Support / storage area"
+              "front": "Front of room",
+              "frontDesc": "Teacher and screen visible to every student.",
+              "vrArea": "VR activity zone",
+              "vrAreaDesc": "Clear floor with margin for arm movement.",
+              "support": "Support zone",
+              "supportDesc": "Charging and storage, away from movement area."
+            },
+            "obstacles": {
+              "window": "Window",
+              "door": "Door"
+            },
+            "hints": {
+              "teacher": "The teacher desk belongs at the front so every student is in view.",
+              "vrStation": "VR stations need clear floor space — keep them away from windows, doors and walls.",
+              "screen": "The display goes at the front so everyone can see it.",
+              "charger": "The charging station belongs in an accessible spot, but outside the movement area.",
+              "vrClearance": "VR stations need at least one cell of clearance — outstretched arms would hit obstacles."
+            },
+            "justification": {
+              "supervision": "From the front, the teacher sees every VR station and can step in fast if a student gets disoriented.",
+              "cables": "Charging next to the door keeps cables out of the movement area.",
+              "evacuation": "The door stays clear — if you need to evacuate, no one trips over a VR station."
             }
           },
           "scenario": {

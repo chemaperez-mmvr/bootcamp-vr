@@ -168,6 +168,8 @@ export type TroubleshootingExercise = {
   nodes: {
     id: string;
     promptKey: string;
+    /** Optional per-node image. Falls back to scenarioImageUrl if absent. */
+    imageUrl?: string;
     options: {
       id: string;
       labelKey: string;
@@ -194,13 +196,37 @@ export type ClassroomPlannerExercise = {
   }[];
   zones: {
     id: string;
+    /** Short label rendered as numbered chip (①②③). */
     labelKey: string;
+    /** Longer description shown in the legend. Optional — falls back to labelKey. */
+    descriptionKey?: string;
     requiredItemIds: string[];
     col: number;
     row: number;
     width: number;
     height: number;
   }[];
+  /** Fixed obstacles drawn on the grid. Cells they cover cannot host items. */
+  obstacles?: {
+    id: string;
+    emoji: string;
+    labelKey: string;
+    col: number;
+    row: number;
+    width: number;
+    height: number;
+  }[];
+  /** Optional clearance rule: items in `itemIds` must keep N empty cells around them (away from obstacles or zone edges). */
+  clearanceRule?: {
+    itemIds: string[];
+    cells: number;
+    /** Translation key for the violation message (e.g. "VR station too close to window"). */
+    violationKey: string;
+  };
+  /** Bullet points shown when the layout is solved correctly. */
+  successJustificationKeys?: string[];
+  /** Per-item placement-mistake hints. Key is itemId, value is translation key with the contextual hint. */
+  itemMistakeHints?: Record<string, string>;
 };
 
 /** Triage Sort — categorize items by priority. */
