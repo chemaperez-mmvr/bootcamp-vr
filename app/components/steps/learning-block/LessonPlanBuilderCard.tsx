@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import type { LessonPlanBuilderExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 type StepChoice = {
   stepId: string;
@@ -106,15 +107,11 @@ export function LessonPlanBuilderCard({
   // ── Evaluation screen ──
   if (showEvaluation) {
     return (
-      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-5">
-          {t("learningBlocks.lessonPlanBuilderTitle")}
-        </div>
-
-        <h3 className="text-lg font-bold text-gray-900 mb-4">
-          {t("learningBlocks.lessonPlanBuilderReview")}
-        </h3>
-
+      <LearningBlockShell
+        tone="indigo"
+        badgeLabel={t("learningBlocks.lessonPlanBuilderTitle")}
+        title={t("learningBlocks.lessonPlanBuilderReview")}
+      >
         {/* Review each step choice */}
         <div className="space-y-3 mb-5">
           {exercise.steps.map((step, i) => {
@@ -190,7 +187,7 @@ export function LessonPlanBuilderCard({
             </button>
           )}
         </div>
-      </div>
+      </LearningBlockShell>
     );
   }
 
@@ -198,20 +195,11 @@ export function LessonPlanBuilderCard({
 
   // ── Step builder view ──
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge + progress */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold">
-          {t("learningBlocks.lessonPlanBuilderTitle")}
-          <span className="ml-1 text-indigo-400">
-            ({currentStepIdx + 1}/{exercise.steps.length})
-          </span>
-        </div>
-      </div>
-
-      {/* Instruction */}
-      <p className="text-sm text-gray-600 mb-5">{t(exercise.instructionKey)}</p>
-
+    <LearningBlockShell
+      tone="indigo"
+      badgeLabel={`${t("learningBlocks.lessonPlanBuilderTitle")} (${currentStepIdx + 1}/${exercise.steps.length})`}
+      title={t(exercise.instructionKey)}
+    >
       <div className="flex flex-col lg:flex-row gap-5">
         {/* Left: stepper + current step */}
         <div className="flex-1 min-w-0">
@@ -406,6 +394,6 @@ export function LessonPlanBuilderCard({
           </div>
         )}
       </div>
-    </div>
+    </LearningBlockShell>
   );
 }

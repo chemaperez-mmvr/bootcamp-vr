@@ -10,6 +10,7 @@ import type {
 import { IconCheck, IconClose, IconLightbulb } from "@/app/components/icons";
 import { TrueFalseCard } from "./TrueFalseCard";
 import { ClassifyCard } from "./ClassifyCard";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 /* ------------------------------------------------------------------ */
 /*  Dispatcher                                                          */
@@ -120,21 +121,16 @@ function ClassicMicroCheckCard({
   };
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.microCheckTitle")}
-        {questions.length > 1 && (
-          <span className="ml-1 text-teal-500">
-            ({currentQ + 1}/{questions.length})
-          </span>
-        )}
-      </div>
-
+    <LearningBlockShell
+      tone="teal"
+      badgeLabel={
+        questions.length > 1
+          ? `${t("learningBlocks.microCheckTitle")} (${currentQ + 1}/${questions.length})`
+          : t("learningBlocks.microCheckTitle")
+      }
+      title={t(question.questionKey)}
+    >
       <div key={question.id} className="animate-content-enter">
-        <p className="text-base font-medium text-gray-900 leading-relaxed mb-5">
-          {t(question.questionKey)}
-        </p>
-
         <div className="grid gap-3">
           {question.options.map((option) => {
             const isSelected = selectedId === option.id;
@@ -240,6 +236,6 @@ function ClassicMicroCheckCard({
           </div>
         )}
       </div>
-    </div>
+    </LearningBlockShell>
   );
 }

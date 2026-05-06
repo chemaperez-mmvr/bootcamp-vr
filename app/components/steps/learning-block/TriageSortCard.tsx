@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import type { TriageSortExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 /** Map category color tokens to Tailwind utility classes. */
 const COLOR_MAP: Record<
@@ -146,20 +147,12 @@ export function TriageSortCard({
   }, [wrongItemIds]);
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.triageSortTitle")}
-      </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-2">
-        {t(exercise.instructionKey)}
-      </p>
-      <p className="text-sm text-gray-500 mb-5">
-        {t("learningBlocks.triageSortInstruction")}
-      </p>
-
+    <LearningBlockShell
+      tone="amber"
+      badgeLabel={t("learningBlocks.triageSortTitle")}
+      title={t(exercise.instructionKey)}
+      subtitle={t("learningBlocks.triageSortInstruction")}
+    >
       {/* Pool of unsorted items */}
       {pool.length > 0 && (
         <div className="mb-5">
@@ -363,6 +356,6 @@ export function TriageSortCard({
           </p>
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }

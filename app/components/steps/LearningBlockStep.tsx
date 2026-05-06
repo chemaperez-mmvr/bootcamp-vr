@@ -195,50 +195,44 @@ export function LearningBlockStep({
     [block, slides]
   );
 
-  // Block step indicators (topic dots — clickable for completed/current blocks to revisit)
+  // Block step indicators — minimal progress bar with clickable tick marks for completed topics
   const canNavigateTo = (i: number) => i <= currentBlock || allDone;
   const blockDots = (
-    <div className="flex items-center justify-center gap-3 mb-4">
-      <div className="flex items-center gap-2">
+    <div className="flex items-center gap-3 mb-4 max-w-md mx-auto">
+      <div className="flex-1 flex items-center gap-1">
         {blockSet.blocks.map((b, i) => {
           const canNav = canNavigateTo(i);
+          const isDone = i < currentBlock || allDone;
+          const isCurrent = i === currentBlock && !allDone;
           return (
-            <div
+            <button
               key={b.blockId}
-              className="flex items-center gap-2"
+              type="button"
+              onClick={() => {
+                if (canNav) goToPhase(i, "scenario");
+              }}
+              disabled={!canNav}
+              title={canNav ? `${t("learningBlocks.goToTopic")} ${i + 1}` : t("learningBlocks.lockedTopic")}
+              aria-label={`${t("learningBlocks.topic")} ${i + 1}${isDone ? ` ${t("learningBlocks.completed")}` : ""}`}
+              className={`group relative flex-1 h-1.5 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
+                isCurrent
+                  ? "bg-teal-500"
+                  : isDone
+                    ? "bg-teal-300 hover:bg-teal-400 cursor-pointer"
+                    : "bg-gray-200 cursor-not-allowed"
+              }`}
             >
-              <button
-                type="button"
-                onClick={() => {
-                  if (canNav) goToPhase(i, "scenario");
-                }}
-                disabled={!canNav}
-                title={canNav ? "Ir a este tema" : "Bloqueado hasta completar los anteriores"}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1 ${
-                  i === currentBlock && !allDone
-                    ? "bg-teal-100 text-teal-700 ring-2 ring-teal-300 cursor-pointer hover:bg-teal-200"
-                    : i < currentBlock || allDone
-                      ? "bg-teal-50 text-teal-600 cursor-pointer hover:bg-teal-100"
-                      : "bg-gray-100 text-gray-400 cursor-not-allowed"
-                }`}
-              >
-                <span>{i + 1}</span>
-                {i < currentBlock || allDone ? (
-                  <span className="text-teal-500">✓</span>
-                ) : null}
-              </button>
-              {i < blockSet.blocks.length - 1 && (
-                <div
-                  className={`w-4 h-0.5 ${
-                    i < currentBlock || allDone ? "bg-teal-300" : "bg-gray-200"
-                  }`}
+              {isCurrent && (
+                <span
+                  aria-hidden
+                  className="absolute -top-1 left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-teal-500 border-2 border-white shadow"
                 />
               )}
-            </div>
+            </button>
           );
         })}
       </div>
-      <span className="text-xs font-medium text-gray-500 tabular-nums">
+      <span className="shrink-0 text-[11px] font-medium text-gray-500 tabular-nums">
         {allDone
           ? t("learningBlocks.allBlocksComplete")
           : t("learningBlocks.blockProgress", {
@@ -299,17 +293,19 @@ export function LearningBlockStep({
               </button>
             )}
           </div>
-          <button
-            type="button"
-            onClick={() => {
-              if (currentPhase === "scenario") handleExercisePass();
-              else if (currentPhase === "insight") handleInsightContinue();
-              else if (currentPhase === "microcheck") handleMicroCheckPass();
-            }}
-            className="px-3 py-1 text-xs font-mono text-gray-400 border border-dashed border-gray-300 rounded-lg hover:text-gray-600 hover:border-gray-400 transition-colors"
-          >
-            Skip {currentPhase} →
-          </button>
+          {process.env.NODE_ENV !== "production" && (
+            <button
+              type="button"
+              onClick={() => {
+                if (currentPhase === "scenario") handleExercisePass();
+                else if (currentPhase === "insight") handleInsightContinue();
+                else if (currentPhase === "microcheck") handleMicroCheckPass();
+              }}
+              className="px-3 py-1 text-xs font-mono text-gray-400 border border-dashed border-gray-300 rounded-lg hover:text-gray-600 hover:border-gray-400 transition-colors"
+            >
+              Skip {currentPhase} →
+            </button>
+          )}
         </div>
       )}
 
@@ -449,26 +445,52 @@ export function LearningBlockStep({
                   </div>
                 )}
                 <div className="p-5 sm:p-6 space-y-4">
-                  <ul className="space-y-2.5">
-                    {insightSlide.points.map((point) => (
-                      <li
-                        key={point.key}
-                        className="flex items-start gap-3 border-l-2 border-teal-500 pl-3.5 py-0.5"
-                      >
-                        <p className="text-sm text-gray-700 leading-relaxed">
-                          {t(point.key)}
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="rounded-xl bg-amber-50 border border-amber-200 p-4">
+                  {insightSlide.imageUrl ? (
+                    <ul className="space-y-2.5">
+                      {insightSlide.points.map((point) => (
+                        <li
+                          key={point.key}
+                          className="flex items-start gap-3 border-l-2 border-teal-500 pl-3.5 py-0.5"
+                        >
+                          <p className="text-sm text-gray-700 leading-relaxed">
+                            {t(point.key)}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <ul className="grid gap-2.5">
+                      {insightSlide.points.map((point) => (
+                        <li
+                          key={point.key}
+                          className="flex items-start gap-3.5 rounded-xl border border-teal-100 bg-gradient-to-br from-teal-50/50 to-white p-3.5 sm:p-4 transition-colors hover:border-teal-200 hover:bg-teal-50/30"
+                        >
+                          <span
+                            className="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-white border border-teal-200 text-xl shadow-sm"
+                            aria-hidden
+                          >
+                            {point.icon}
+                          </span>
+                          <p className="text-sm sm:text-base text-gray-800 leading-relaxed pt-1.5">
+                            {t(point.key)}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  <div className="rounded-xl bg-gradient-to-br from-amber-50 to-amber-100/40 border border-amber-200 p-4 sm:p-5">
                     <div className="flex items-start gap-3">
-                      <span className="text-amber-600 shrink-0 mt-0.5" aria-hidden>💡</span>
+                      <span
+                        className="flex shrink-0 items-center justify-center w-8 h-8 rounded-full bg-amber-100 border border-amber-200 text-base"
+                        aria-hidden
+                      >
+                        💡
+                      </span>
                       <div>
                         <span className="text-xs font-bold text-amber-700 uppercase tracking-wide">
                           {t("learningBlocks.insightKeyTakeaway")}
                         </span>
-                        <p className="mt-1 text-sm font-semibold text-amber-900 leading-relaxed">
+                        <p className="mt-1 text-sm sm:text-base font-semibold text-amber-900 leading-relaxed">
                           {t(insightSlide.highlightKey)}
                         </p>
                       </div>

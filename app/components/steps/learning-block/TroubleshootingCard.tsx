@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import type { TroubleshootingExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 export function TroubleshootingCard({
   exercise,
@@ -56,12 +57,11 @@ export function TroubleshootingCard({
   if (!currentNode) return null;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.troubleshootingTitle")}
-      </div>
-
+    <LearningBlockShell
+      tone="orange"
+      badgeLabel={t("learningBlocks.troubleshootingTitle")}
+      title={t(exercise.instructionKey)}
+    >
       {/* Breadcrumb trail */}
       {visitedNodeIds.length > 1 && (
         <div className="flex items-center gap-1.5 flex-wrap mb-4">
@@ -97,33 +97,44 @@ export function TroubleshootingCard({
         </div>
       )}
 
-      {/* Scenario — problem report */}
-      <div className="rounded-xl border border-amber-200 bg-amber-50/60 overflow-hidden mb-5">
-        {exercise.scenarioImageUrl && (
-          <div className="p-4 pb-0">
+      {/* Per-node image takes priority; falls back to the scenario-wide image. */}
+      <div
+        className={
+          (currentNode.imageUrl ?? exercise.scenarioImageUrl)
+            ? "grid gap-4 sm:grid-cols-[minmax(0,360px)_minmax(0,1fr)]"
+            : ""
+        }
+      >
+        {/* Image — alone on the left */}
+        {(currentNode.imageUrl ?? exercise.scenarioImageUrl) && (
+          <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 self-stretch min-h-[180px]">
             <img
-              src={exercise.scenarioImageUrl}
+              src={currentNode.imageUrl ?? exercise.scenarioImageUrl}
               alt=""
-              className="w-full h-auto rounded-lg"
+              className="w-full h-full object-cover block"
+              loading="lazy"
             />
           </div>
         )}
-        <div className="p-5">
-          <div className="flex items-start gap-2.5">
-            <span className="text-lg shrink-0" aria-hidden>
-              &#9888;&#65039;
-            </span>
-            <div>
-              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-1">
-                {t("learningBlocks.troubleshootingReport")}
-              </p>
-              <p className="text-sm sm:text-base text-gray-900 leading-relaxed whitespace-pre-line">
-                {t(exercise.scenarioKey)}
-              </p>
+
+        {/* Right column: report + active/solved */}
+        <div className={(currentNode.imageUrl ?? exercise.scenarioImageUrl) ? "min-w-0" : ""}>
+          {/* Scenario — problem report */}
+          <div className="rounded-xl border border-amber-200 bg-amber-50/60 p-5 mb-5">
+            <div className="flex items-start gap-2.5">
+              <span className="text-lg shrink-0" aria-hidden>
+                &#9888;&#65039;
+              </span>
+              <div>
+                <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-1">
+                  {t("learningBlocks.troubleshootingReport")}
+                </p>
+                <p className="text-sm sm:text-base text-gray-900 leading-relaxed whitespace-pre-line">
+                  {t(exercise.scenarioKey)}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
       {/* Solved state */}
       {solved && selectedOption && (
@@ -161,11 +172,8 @@ export function TroubleshootingCard({
       {!solved && (
         <div className="animate-content-enter">
           {/* Current prompt */}
-          <p className="text-base font-semibold text-gray-900 mb-2">
+          <p className="text-base font-semibold text-gray-900 mb-4">
             {t(currentNode.promptKey)}
-          </p>
-          <p className="text-sm text-gray-500 mb-4">
-            {t("learningBlocks.troubleshootingChoose")}
           </p>
 
           {/* Options */}
@@ -269,6 +277,8 @@ export function TroubleshootingCard({
           )}
         </div>
       )}
-    </div>
+        </div>
+      </div>
+    </LearningBlockShell>
   );
 }

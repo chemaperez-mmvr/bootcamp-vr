@@ -3,6 +3,7 @@
 import { useState, useCallback, useMemo, useRef } from "react";
 import type { FillGapsExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 type BlankState = {
   blankId: string;
@@ -217,26 +218,18 @@ export function FillGapsCard({
   const hasWrong = checked && !allCorrect;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
+    <LearningBlockShell
+      tone="teal"
+      badgeLabel={t("learningBlocks.fillGapsTitle")}
+      title={t(exercise.instructionKey)}
+      subtitle={t("learningBlocks.fillGapsInstruction")}
+    >
       {/* Hidden drag ghost */}
       <div
         ref={dragGhostRef}
         className="fixed -left-[9999px] px-3 py-1.5 rounded-full bg-teal-600 text-white text-sm font-semibold shadow-lg"
         aria-hidden
       />
-
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.fillGapsTitle")}
-      </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-1">
-        {t(exercise.instructionKey)}
-      </p>
-      <p className="text-sm text-gray-500 mb-5">
-        {t("learningBlocks.fillGapsInstruction")}
-      </p>
 
       {/* Template with inline blanks */}
       <div className="text-base leading-[2.5] text-gray-800 mb-6">
@@ -412,6 +405,6 @@ export function FillGapsCard({
           </p>
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }

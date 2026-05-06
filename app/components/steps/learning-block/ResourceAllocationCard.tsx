@@ -3,6 +3,7 @@
 import { useState, useCallback, useMemo } from "react";
 import type { ResourceAllocationExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 export function ResourceAllocationCard({
   exercise,
@@ -74,17 +75,11 @@ export function ResourceAllocationCard({
   );
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.resourceAllocationTitle")}
-      </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-2">
-        {t(exercise.instructionKey)}
-      </p>
-
+    <LearningBlockShell
+      tone="cyan"
+      badgeLabel={t("learningBlocks.resourceAllocationTitle")}
+      title={t(exercise.instructionKey)}
+    >
       {/* Scenario */}
       <div className="bg-gradient-to-br from-cyan-50 to-teal-50 border border-cyan-200 rounded-xl p-4 mb-6">
         <p className="text-sm sm:text-base text-gray-900 leading-relaxed whitespace-pre-line">
@@ -298,6 +293,6 @@ export function ResourceAllocationCard({
           </p>
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }

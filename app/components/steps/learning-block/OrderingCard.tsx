@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import type { OrderingExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 export function OrderingCard({
   exercise,
@@ -67,20 +68,12 @@ export function OrderingCard({
   const itemMap = new Map(exercise.items.map((i) => [i.id, i]));
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.orderingTitle")}
-      </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-2">
-        {t(exercise.instructionKey)}
-      </p>
-      <p className="text-sm text-gray-500 mb-5">
-        {t("learningBlocks.orderingInstruction")}
-      </p>
-
+    <LearningBlockShell
+      tone="violet"
+      badgeLabel={t("learningBlocks.orderingTitle")}
+      title={t(exercise.instructionKey)}
+      subtitle={t("learningBlocks.orderingInstruction")}
+    >
       {/* Scale labels */}
       <div className="flex items-center justify-between mb-3 px-1">
         <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
@@ -210,6 +203,6 @@ export function OrderingCard({
           </p>
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }

@@ -6,6 +6,7 @@ import type {
   LearningBlockChoice,
 } from "@/app/bootcamp/learning-block-types";
 import { WIZARD_TONE as TONE_STYLES } from "@/app/bootcamp/tone-styles";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 export function ScenarioCard({
   block,
@@ -26,26 +27,18 @@ export function ScenarioCard({
   const bestChoice = block.scenario.choices.find((c) => c.isCorrect) ?? block.scenario.choices[0];
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Scenario badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.scenarioLabel")}
-      </div>
-
-      {/* Context */}
+    <LearningBlockShell
+      tone="indigo"
+      badgeLabel={t("learningBlocks.scenarioLabel")}
+      title={t(block.scenario.questionKey)}
+      subtitle={t("learningBlocks.explorePrompt")}
+    >
+      {/* Context — preserved from the original layout (now rendered after subtitle) */}
       <div className="rounded-xl border border-indigo-200 bg-indigo-50/40 p-5 mb-5">
         <p className="text-sm sm:text-base text-gray-900 leading-relaxed whitespace-pre-line">
           {t(block.scenario.contextKey)}
         </p>
       </div>
-
-      {/* Prompt */}
-      <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">
-        {t(block.scenario.questionKey)}
-      </p>
-      <p className="text-sm text-gray-500 mb-4">
-        {t("learningBlocks.explorePrompt")}
-      </p>
 
       {/* Explorable choices */}
       <div className="grid gap-3">
@@ -125,6 +118,6 @@ export function ScenarioCard({
           </button>
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }

@@ -3,6 +3,7 @@
 import { useState, useCallback, useMemo } from "react";
 import type { DecisionTreeExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 type TreeNode = DecisionTreeExercise["nodes"][number];
 
@@ -133,17 +134,11 @@ export function DecisionTreeCard({
   if (!currentNode) return null;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.decisionTreeTitle")}
-      </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-1">
-        {t(exercise.instructionKey)}
-      </p>
-
+    <LearningBlockShell
+      tone="violet"
+      badgeLabel={t("learningBlocks.decisionTreeTitle")}
+      title={t(exercise.instructionKey)}
+    >
       {/* Scenario context */}
       <div className="bg-gradient-to-br from-violet-50 to-indigo-50 border border-violet-200 rounded-xl overflow-hidden mb-5">
         {exercise.scenarioImageUrl && (
@@ -328,6 +323,6 @@ export function DecisionTreeCard({
           )}
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }

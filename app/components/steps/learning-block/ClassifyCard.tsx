@@ -3,6 +3,7 @@
 import { useState, useCallback, useRef } from "react";
 import type { MicroCheckClassify } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 export function ClassifyCard({
   check,
@@ -70,11 +71,11 @@ export function ClassifyCard({
     const allCorrect = wrongCount === 0;
 
     return (
-      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-5">
-          {t("learningBlocks.classifyTitle")}
-        </div>
-
+      <LearningBlockShell
+        tone="teal"
+        badgeLabel={t("learningBlocks.classifyTitle")}
+        title={t(check.instructionKey)}
+      >
         <div className="space-y-3 mb-5">
           {check.items.map((itm, i) => {
             const result = results[i];
@@ -147,7 +148,7 @@ export function ClassifyCard({
             <span aria-hidden>{allCorrect ? "→" : "↩"}</span>
           </button>
         </div>
-      </div>
+      </LearningBlockShell>
     );
   }
 
@@ -318,18 +319,14 @@ function ClassifyDragSurface({
   };
 
   return (
-    <div
-      ref={surfaceRef}
-      className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter"
+    <div ref={surfaceRef}>
+    <LearningBlockShell
+      tone="teal"
+      badgeLabel={`${title} (${currentIdx + 1}/${total})`}
+      title={instruction}
     >
-      {/* Badge + progress */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold">
-          {title}
-          <span className="ml-1 text-teal-500 tabular-nums">
-            ({currentIdx + 1}/{total})
-          </span>
-        </div>
+      {/* Progress dots — preserved from the original badge+dots flex layout */}
+      <div className="flex justify-end -mt-2 mb-3">
         <div className="flex items-center gap-1.5">
           {items.map((_, i) => (
             <div
@@ -346,8 +343,6 @@ function ClassifyDragSurface({
         </div>
       </div>
 
-      {/* Instruction */}
-      <p className="text-sm text-gray-600 mb-2">{instruction}</p>
       {!itemFeedback && (
         <p className="text-xs text-teal-600 font-semibold mb-5 flex items-center gap-1.5">
           <span aria-hidden>✋</span>
@@ -533,6 +528,7 @@ function ClassifyDragSurface({
           </div>
         </div>
       )}
+    </LearningBlockShell>
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect, useMemo } from "react";
 import type { ConceptMapExercise } from "@/app/bootcamp/learning-block-types";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 type ConnectionKey = string;
 const connKey = (a: string, b: string) => [a, b].sort().join("--");
@@ -199,21 +200,17 @@ export function ConceptMapCard({
   }, [exercise.validConnections, exercise.nodes]);
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge + progress */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold">
-          {t("learningBlocks.conceptMapTitle")}
-        </div>
+    <LearningBlockShell
+      tone="teal"
+      badgeLabel={t("learningBlocks.conceptMapTitle")}
+      title={t(exercise.instructionKey)}
+    >
+      {/* Progress counter — preserved from the original badge+counter flex layout */}
+      <div className="flex justify-end -mt-2 mb-3">
         <span className="text-xs font-medium text-gray-500 tabular-nums">
           {drawn.size} <span className="text-gray-300">/</span> {total}
         </span>
       </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-4">
-        {t(exercise.instructionKey)}
-      </p>
 
       {/* Tree canvas — all nodes visible, connections appear as steps complete */}
       <div
@@ -515,7 +512,7 @@ export function ConceptMapCard({
           </div>
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }
 

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import type { MemoryMatchExercise } from "@/app/bootcamp/learning-block-types";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                               */
@@ -206,22 +207,12 @@ export function MemoryMatchCard({
   /* ---------------------------------------------------------------- */
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-semibold mb-4">
-        {t("learningBlocks.memoryMatchTitle")}
-      </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-1">
-        {t(exercise.instructionKey)}
-      </p>
-
-      {/* Moves counter */}
-      <p className="text-sm text-gray-500 mb-5">
-        {t("learningBlocks.memoryMatchMoves", { count: moves })}
-      </p>
-
+    <LearningBlockShell
+      tone="sky"
+      badgeLabel={t("learningBlocks.memoryMatchTitle")}
+      title={t(exercise.instructionKey)}
+      subtitle={t("learningBlocks.memoryMatchMoves", { count: moves })}
+    >
       {/* Card grid */}
       <div
         className={`grid grid-cols-4 ${gridRows} gap-2 sm:gap-3`}
@@ -316,6 +307,6 @@ export function MemoryMatchCard({
         </div>
       )}
 
-    </div>
+    </LearningBlockShell>
   );
 }

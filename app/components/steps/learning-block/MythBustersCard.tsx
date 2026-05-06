@@ -3,6 +3,7 @@
 import { useState, useCallback, useMemo } from "react";
 import type { MythBustersExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 type AnswerRecord = { statementId: string; correct: boolean };
 
@@ -90,22 +91,12 @@ export function MythBustersCard({
     const allCorrect = correctCount === total;
 
     return (
-      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-4">
-          {t("learningBlocks.mythBustersTitle")}
-        </div>
-
-        {/* Score */}
-        <div className="text-center py-4">
-          <p className="text-4xl font-bold text-gray-900 mb-1">
-            {correctCount} / {total}
-          </p>
-          <p className="text-sm text-gray-500">
-            {t("learningBlocks.mythBustersScore", { correct: correctCount, total })}
-          </p>
-        </div>
-
+      <LearningBlockShell
+        tone="rose"
+        badgeLabel={t("learningBlocks.mythBustersTitle")}
+        title={`${correctCount} / ${total}`}
+        subtitle={t("learningBlocks.mythBustersScore", { correct: correctCount, total })}
+      >
         {/* Per-statement results */}
         <div className="space-y-2 mb-6">
           {order.map((st, i) => {
@@ -161,7 +152,7 @@ export function MythBustersCard({
             </button>
           )}
         </div>
-      </div>
+      </LearningBlockShell>
     );
   }
 
@@ -172,9 +163,9 @@ export function MythBustersCard({
 
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge + progress */}
+      {/* Badge + progress — custom layout: title with progress counter on the right */}
       <div className="flex items-center justify-between mb-5">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-semibold">
           {t("learningBlocks.mythBustersTitle")}
         </div>
         <div className="text-xs font-medium text-gray-400 tabular-nums">

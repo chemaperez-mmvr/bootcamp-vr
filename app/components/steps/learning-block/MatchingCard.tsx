@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { MatchingExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { LearningBlockShell } from "./LearningBlockShell";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Eye,
@@ -204,24 +205,18 @@ export function MatchingCard({
   const totalPairs = exercise.pairs.length;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm animate-content-enter">
-      {/* Badge + progress */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold">
-          {t("learningBlocks.matchingTitle")}
-        </div>
+    <LearningBlockShell
+      tone="teal"
+      badgeLabel={t("learningBlocks.matchingTitle")}
+      title={t(exercise.instructionKey)}
+      subtitle={t("learningBlocks.matchingInstruction")}
+    >
+      {/* Progress counter — preserved from the original badge+counter flex layout */}
+      <div className="flex justify-end -mt-2 mb-3">
         <span className="text-xs font-medium text-gray-500 tabular-nums">
           {connectedCount} <span className="text-gray-300">/</span> {totalPairs}
         </span>
       </div>
-
-      {/* Instruction */}
-      <p className="text-base font-semibold text-gray-900 mb-1">
-        {t(exercise.instructionKey)}
-      </p>
-      <p className="text-sm text-gray-500 mb-5">
-        {t("learningBlocks.matchingInstruction")}
-      </p>
 
       {/* Columns + SVG overlay */}
       <div ref={containerRef} className="relative">
@@ -499,6 +494,6 @@ export function MatchingCard({
           </p>
         </div>
       )}
-    </div>
+    </LearningBlockShell>
   );
 }
