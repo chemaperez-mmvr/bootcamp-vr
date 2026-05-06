@@ -78,7 +78,7 @@ function SortableItem({
     transform: CSS.Transform.toString(transform),
     transition,
     zIndex: isDragging ? 10 : undefined,
-    touchAction: "none",
+    touchAction: checked ? undefined : "none",
   };
 
   return (
@@ -134,8 +134,10 @@ export function OrderingCard({
   const reduceMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    setOrder((prev) => [...prev].sort(() => Math.random() - 0.5));
-  }, []);
+    setOrder(exercise.items.map((i) => i.id).sort(() => Math.random() - 0.5));
+    setChecked(false);
+    setWrongPositions(new Set());
+  }, [exercise.id, exercise.items]);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
@@ -152,8 +154,8 @@ export function OrderingCard({
     setOrder((prev) =>
       arrayMove(
         prev,
-        prev.indexOf(active.id as string),
-        prev.indexOf(over.id as string)
+        prev.indexOf(String(active.id)),
+        prev.indexOf(String(over.id))
       )
     );
   }, []);
@@ -173,10 +175,10 @@ export function OrderingCard({
   }, [order, exercise.items]);
 
   const handleReset = useCallback(() => {
-    setOrder((prev) => [...prev].sort(() => Math.random() - 0.5));
+    setOrder(exercise.items.map((i) => i.id).sort(() => Math.random() - 0.5));
     setChecked(false);
     setWrongPositions(new Set());
-  }, []);
+  }, [exercise.items]);
 
   const allCorrect = checked && wrongPositions.size === 0;
 
