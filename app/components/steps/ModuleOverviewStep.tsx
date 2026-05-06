@@ -8,7 +8,6 @@ import type { BootcampModule } from "@/app/bootcamp/catalog";
 import { theoreticalSlugs } from "@/app/bootcamp/catalog";
 import { getModuleBySlug } from "@/app/documentation/modules";
 import { getQuizForModule } from "@/app/bootcamp/quizzes";
-import { getLearningBlocksForModule } from "@/app/bootcamp/learning-blocks";
 import { isOverviewVisited } from "@/app/bootcamp/steps";
 import type { ModuleStepDef } from "@/app/bootcamp/steps";
 import {
@@ -32,24 +31,6 @@ const STEP_ICONS: Record<string, React.ComponentType<{ className?: string }>> = 
   content: IconBook,
   quiz: IconDocument,
   results: IconCheck,
-};
-
-/** Maps exercise/microCheck type → { titleKey, descKey, emoji }. */
-const EXERCISE_META: Record<string, { titleKey: string; descKey: string; emoji: string }> = {
-  matching:           { titleKey: "learningBlocks.matchingTitle",           descKey: "learningBlocks.matchingDesc",           emoji: "🔗" },
-  ordering:           { titleKey: "learningBlocks.orderingTitle",           descKey: "learningBlocks.orderingDesc",           emoji: "📋" },
-  mythBusters:        { titleKey: "learningBlocks.mythBustersTitle",        descKey: "learningBlocks.mythBustersDesc",        emoji: "🎭" },
-  conceptMap:         { titleKey: "learningBlocks.conceptMapTitle",         descKey: "learningBlocks.conceptMapDesc",         emoji: "🧩" },
-  troubleshooting:    { titleKey: "learningBlocks.troubleshootingTitle",    descKey: "learningBlocks.troubleshootingDesc",    emoji: "🔧" },
-  triageSort:         { titleKey: "learningBlocks.triageSortTitle",         descKey: "learningBlocks.triageSortDesc",         emoji: "🏷️" },
-  classroomPlanner:   { titleKey: "learningBlocks.classroomPlannerTitle",   descKey: "learningBlocks.classroomPlannerDesc",   emoji: "🗺️" },
-  fillGaps:           { titleKey: "learningBlocks.fillGapsTitle",           descKey: "learningBlocks.fillGapsDesc",           emoji: "✏️" },
-  decisionTree:       { titleKey: "learningBlocks.decisionTreeTitle",       descKey: "learningBlocks.decisionTreeDesc",       emoji: "🔀" },
-  lessonPlanBuilder:  { titleKey: "learningBlocks.lessonPlanBuilderTitle",  descKey: "learningBlocks.lessonPlanBuilderDesc",  emoji: "📝" },
-  resourceAllocation: { titleKey: "learningBlocks.resourceAllocationTitle", descKey: "learningBlocks.resourceAllocationDesc", emoji: "⏱️" },
-  trueFalse:          { titleKey: "learningBlocks.trueFalseTitle",          descKey: "learningBlocks.trueFalseDesc",          emoji: "✅" },
-  classify:           { titleKey: "learningBlocks.classifyTitle",           descKey: "learningBlocks.classifyDesc",           emoji: "📂" },
-  memoryMatch:        { titleKey: "learningBlocks.memoryMatchTitle",        descKey: "learningBlocks.memoryMatchDesc",        emoji: "🃏" },
 };
 
 /* ------------------------------------------------------------------ */
@@ -76,26 +57,6 @@ export function ModuleOverviewStep({
   const isTheoretical = theoreticalSlugs.has(module.slug);
   const quiz = getQuizForModule(module.slug);
   const moduleNumber = docModule?.order ?? 0;
-  const hasIntroVideo = steps.some((s) => s.type === "intro-video");
-
-  // Collect unique exercise types from learning blocks for the activity preview
-  const blockSet = getLearningBlocksForModule(module.slug);
-  const exerciseTypes: string[] = [];
-  if (blockSet) {
-    const seen = new Set<string>();
-    for (const block of blockSet.blocks) {
-      if (block.exercise && !seen.has(block.exercise.type)) {
-        seen.add(block.exercise.type);
-        exerciseTypes.push(block.exercise.type);
-      }
-      for (const mc of block.microChecks) {
-        if (!seen.has(mc.type)) {
-          seen.add(mc.type);
-          exerciseTypes.push(mc.type);
-        }
-      }
-    }
-  }
 
   // Returning-user state (deferred to useEffect to avoid hydration mismatch)
   const [hasStarted, setHasStarted] = useState(false);
@@ -186,83 +147,9 @@ export function ModuleOverviewStep({
       </div>
 
       {/* ============================================================ */}
-      {/*  What you'll do — Activity Preview                            */}
-      {/* ============================================================ */}
-      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm doc-part-enter doc-part-delay-2">
-        <h3 className="text-lg font-semibold text-gray-900 mb-5">
-          {t("overview.whatYoullDo")}
-        </h3>
-
-        {/* Summary row: video + lessons + quiz */}
-        <div className="flex flex-wrap gap-3 mb-5">
-          {hasIntroVideo && (
-            <div className="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-              <IconPlay className="w-4 h-4 text-teal-600" />
-              <span className="text-sm text-gray-700">{t("overview.activityVideo")}</span>
-            </div>
-          )}
-          <div className="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-            <IconBook className="w-4 h-4 text-teal-600" />
-            <span className="text-sm text-gray-700">
-              {t("overview.lessons", { count: module.lessons.length })}
-            </span>
-          </div>
-          {quiz && (
-            <div className="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-              <IconDocument className="w-4 h-4 text-teal-600" />
-              <span className="text-sm text-gray-700">{t("overview.quizIncluded")}</span>
-            </div>
-          )}
-        </div>
-
-        {/* Exercise types from learning blocks */}
-        {exerciseTypes.length > 0 && (
-          <>
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-3">
-              {t("overview.activityTypes")}
-            </p>
-            <div className="space-y-2">
-              {exerciseTypes.map((type, i) => {
-                const meta = EXERCISE_META[type];
-                if (!meta) return null;
-                return (
-                  <div
-                    key={type}
-                    className="flex items-center gap-3 rounded-lg border border-gray-100 bg-gray-50/60 px-3 py-2.5"
-                  >
-                    <span className="text-lg leading-none shrink-0 w-7 text-center" aria-hidden>
-                      {meta.emoji}
-                    </span>
-                    <div className="min-w-0">
-                      <p className="text-sm font-medium text-gray-800 leading-tight">
-                        {t(meta.titleKey)}
-                      </p>
-                      <p className="text-xs text-gray-500 leading-snug mt-0.5">
-                        {t(meta.descKey)}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </>
-        )}
-
-        {/* Quiz callout */}
-        {quiz && (
-          <div className="mt-5 rounded-lg bg-teal-50 border border-teal-100 p-3 flex items-start gap-2.5">
-            <IconDocument className="w-4 h-4 text-teal-600 mt-0.5 shrink-0" />
-            <p className="text-sm text-teal-800">
-              {t("overview.quizCallout", { percent: Math.round(quiz.passingScore * 100) })}
-            </p>
-          </div>
-        )}
-      </div>
-
-      {/* ============================================================ */}
       {/*  Learning Path — Timeline                                     */}
       {/* ============================================================ */}
-      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm doc-part-enter doc-part-delay-3">
+      <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm doc-part-enter doc-part-delay-2">
         <h3 className="text-lg font-semibold text-gray-900 mb-6">
           {t("overview.roadmap")}
         </h3>
@@ -343,7 +230,7 @@ export function ModuleOverviewStep({
       {/*  Topics Covered                                               */}
       {/* ============================================================ */}
       {allSections.length > 0 && (
-        <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm doc-part-enter doc-part-delay-4">
+        <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm doc-part-enter doc-part-delay-3">
           <h3 className="text-lg font-semibold text-gray-900 mb-2">
             {t("overview.topicsCovered")}
           </h3>
@@ -396,7 +283,7 @@ export function ModuleOverviewStep({
       {/* ============================================================ */}
       {/*  Bottom CTA                                                   */}
       {/* ============================================================ */}
-      <div className="flex justify-center doc-part-enter doc-part-delay-5">
+      <div className="flex justify-center doc-part-enter doc-part-delay-4">
         <button
           type="button"
           onClick={onContinue}
