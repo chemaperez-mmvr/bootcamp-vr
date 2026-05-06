@@ -1,9 +1,121 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import {
+  DndContext,
+  KeyboardSensor,
+  PointerSensor,
+  closestCenter,
+  useSensor,
+  useSensors,
+  type DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  arrayMove,
+  sortableKeyboardCoordinates,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
+
 import type { OrderingExercise } from "@/app/bootcamp/learning-block-types";
 import { IconCheck, IconClose } from "@/app/components/icons";
+import { usePrefersReducedMotion } from "@/app/components/usePrefersReducedMotion";
 import { LearningBlockShell } from "./LearningBlockShell";
+
+type ItemMeta = {
+  id: string;
+  labelKey: string;
+};
+
+function SortableItem({
+  id,
+  index,
+  labelText,
+  checked,
+  isWrong,
+  reduceMotion,
+}: {
+  id: string;
+  index: number;
+  labelText: string;
+  checked: boolean;
+  isWrong: boolean;
+  reduceMotion: boolean;
+}) {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({
+    id,
+    disabled: checked,
+    transition: reduceMotion ? null : undefined,
+  });
+
+  const isCorrectChecked = checked && !isWrong;
+
+  let classes =
+    "w-full p-4 rounded-xl border-2 text-left text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
+
+  if (checked) {
+    classes += isCorrectChecked
+      ? " border-green-400 bg-green-50 text-green-800"
+      : " border-red-400 bg-red-50 text-red-800";
+  } else if (isDragging) {
+    classes +=
+      " border-violet-400 bg-violet-50 text-violet-800 ring-2 ring-violet-300 shadow-lg cursor-grabbing";
+  } else {
+    classes +=
+      " border-gray-200 text-gray-700 hover:border-violet-300 hover:bg-violet-50/30 cursor-grab";
+  }
+
+  const style: React.CSSProperties = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    zIndex: isDragging ? 10 : undefined,
+    touchAction: checked ? undefined : "none",
+  };
+
+  return (
+    <button
+      ref={setNodeRef}
+      type="button"
+      disabled={checked}
+      className={classes}
+      style={style}
+      {...attributes}
+      {...listeners}
+    >
+      <div className="flex items-center gap-3">
+        <span
+          className={`flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold shrink-0 ${
+            checked && isCorrectChecked
+              ? "bg-green-500 text-white"
+              : checked && isWrong
+                ? "bg-red-500 text-white"
+                : isDragging
+                  ? "bg-violet-500 text-white"
+                  : "bg-gray-100 text-gray-500 border border-gray-300"
+          }`}
+        >
+          {checked && isCorrectChecked ? (
+            <IconCheck className="w-3.5 h-3.5" />
+          ) : checked && isWrong ? (
+            <IconClose className="w-3.5 h-3.5" />
+          ) : (
+            index + 1
+          )}
+        </span>
+        <span className="leading-relaxed">{labelText}</span>
+      </div>
+    </button>
+  );
+}
 
 export function OrderingCard({
   exercise,
@@ -14,33 +126,39 @@ export function OrderingCard({
   onPass: () => void;
   t: (key: string, values?: Record<string, string | number | Date>) => string;
 }) {
-  // Shuffle items for initial order
   const [order, setOrder] = useState<string[]>(() =>
-    [...exercise.items].sort(() => Math.random() - 0.5).map((i) => i.id)
+    exercise.items.map((i) => i.id)
   );
-  const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [wrongPositions, setWrongPositions] = useState<Set<number>>(new Set());
+  const reduceMotion = usePrefersReducedMotion();
 
-  const handleTap = useCallback(
-    (idx: number) => {
-      if (checked) return;
-      if (selectedIdx === null) {
-        setSelectedIdx(idx);
-      } else if (selectedIdx === idx) {
-        setSelectedIdx(null);
-      } else {
-        // Swap
-        setOrder((prev) => {
-          const next = [...prev];
-          [next[selectedIdx], next[idx]] = [next[idx], next[selectedIdx]];
-          return next;
-        });
-        setSelectedIdx(null);
-      }
-    },
-    [checked, selectedIdx]
+  useEffect(() => {
+    setOrder(exercise.items.map((i) => i.id).sort(() => Math.random() - 0.5));
+    setChecked(false);
+    setWrongPositions(new Set());
+  }, [exercise.id, exercise.items]);
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   );
+
+  const itemMap = useMemo<Map<string, ItemMeta>>(
+    () => new Map(exercise.items.map((i) => [i.id, i])),
+    [exercise.items]
+  );
+
+  const handleDragEnd = useCallback(({ active, over }: DragEndEvent) => {
+    if (!over || active.id === over.id) return;
+    setOrder((prev) =>
+      arrayMove(
+        prev,
+        prev.indexOf(String(active.id)),
+        prev.indexOf(String(over.id))
+      )
+    );
+  }, []);
 
   const handleCheck = useCallback(() => {
     const wrong = new Set<number>();
@@ -57,15 +175,12 @@ export function OrderingCard({
   }, [order, exercise.items]);
 
   const handleReset = useCallback(() => {
-    setOrder((prev) => [...prev].sort(() => Math.random() - 0.5));
-    setSelectedIdx(null);
+    setOrder(exercise.items.map((i) => i.id).sort(() => Math.random() - 0.5));
     setChecked(false);
     setWrongPositions(new Set());
-  }, []);
+  }, [exercise.items]);
 
   const allCorrect = checked && wrongPositions.size === 0;
-
-  const itemMap = new Map(exercise.items.map((i) => [i.id, i]));
 
   return (
     <LearningBlockShell
@@ -74,7 +189,6 @@ export function OrderingCard({
       title={t(exercise.instructionKey)}
       subtitle={t("learningBlocks.orderingInstruction")}
     >
-      {/* Scale labels */}
       <div className="flex items-center justify-between mb-3 px-1">
         <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
           {t(exercise.scaleStartKey)}
@@ -85,69 +199,32 @@ export function OrderingCard({
         </span>
       </div>
 
-      {/* Sortable items */}
-      <div className="space-y-2">
-        {order.map((id, idx) => {
-          const item = itemMap.get(id);
-          if (!item) return null;
+      <DndContext
+        sensors={sensors}
+        collisionDetection={closestCenter}
+        onDragEnd={handleDragEnd}
+      >
+        <SortableContext items={order} strategy={verticalListSortingStrategy}>
+          <div className="space-y-2">
+            {order.map((id, idx) => {
+              const item = itemMap.get(id);
+              if (!item) return null;
+              return (
+                <SortableItem
+                  key={id}
+                  id={id}
+                  index={idx}
+                  labelText={t(item.labelKey)}
+                  checked={checked}
+                  isWrong={wrongPositions.has(idx)}
+                  reduceMotion={reduceMotion}
+                />
+              );
+            })}
+          </div>
+        </SortableContext>
+      </DndContext>
 
-          const isSelected = selectedIdx === idx;
-          const isWrong = wrongPositions.has(idx);
-          const isCorrectChecked = checked && !isWrong;
-
-          let classes =
-            "w-full p-4 rounded-xl border-2 text-left text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2";
-
-          if (checked) {
-            if (isCorrectChecked) {
-              classes += " border-green-400 bg-green-50 text-green-800";
-            } else {
-              classes += " border-red-400 bg-red-50 text-red-800";
-            }
-          } else if (isSelected) {
-            classes +=
-              " border-violet-400 bg-violet-50 text-violet-800 ring-2 ring-violet-300 shadow-md -translate-y-0.5";
-          } else {
-            classes +=
-              " border-gray-200 text-gray-700 hover:border-violet-300 hover:bg-violet-50/30 cursor-pointer";
-          }
-
-          return (
-            <button
-              key={id}
-              type="button"
-              onClick={() => handleTap(idx)}
-              disabled={checked}
-              className={classes}
-            >
-              <div className="flex items-center gap-3">
-                <span
-                  className={`flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold shrink-0 ${
-                    checked && isCorrectChecked
-                      ? "bg-green-500 text-white"
-                      : checked && isWrong
-                        ? "bg-red-500 text-white"
-                        : isSelected
-                          ? "bg-violet-500 text-white"
-                          : "bg-gray-100 text-gray-500 border border-gray-300"
-                  }`}
-                >
-                  {checked && isCorrectChecked ? (
-                    <IconCheck className="w-3.5 h-3.5" />
-                  ) : checked && isWrong ? (
-                    <IconClose className="w-3.5 h-3.5" />
-                  ) : (
-                    idx + 1
-                  )}
-                </span>
-                <span className="leading-relaxed">{t(item.labelKey)}</span>
-              </div>
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Actions */}
       <div className="mt-6 flex justify-end gap-3">
         {!checked && (
           <button
@@ -183,7 +260,6 @@ export function OrderingCard({
         )}
       </div>
 
-      {/* Result */}
       {checked && (
         <div
           className={`mt-4 rounded-xl border p-4 animate-wizard-feedback ${

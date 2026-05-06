@@ -678,7 +678,7 @@
       "matchingReset": "Intentar de nuevo",
       "matchingClearAll": "Borrar todo",
       "orderingTitle": "Ordena",
-      "orderingInstruction": "Arrastra para reordenar, o toca para intercambiar posiciones",
+      "orderingInstruction": "Arrastra para reordenar",
       "orderingWrong": "No está en el orden correcto — ¡inténtalo de nuevo!",
       "orderingCorrect": "¡Orden perfecto!",
       "orderingReset": "Intentar de nuevo",

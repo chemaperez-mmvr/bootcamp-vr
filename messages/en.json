@@ -678,7 +678,7 @@
       "matchingReset": "Try again",
       "matchingClearAll": "Clear all",
       "orderingTitle": "Put in order",
-      "orderingInstruction": "Drag to reorder, or tap to swap positions",
+      "orderingInstruction": "Drag to reorder",
       "orderingWrong": "Not in the right order — try again!",
       "orderingCorrect": "Perfect order!",
       "orderingReset": "Try again",
