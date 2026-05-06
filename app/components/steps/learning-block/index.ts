@@ -1,4 +1,5 @@
 export { BlockProgressBar } from "./BlockProgressBar";
+export { LearningBlockShell, type LearningBlockTone } from "./LearningBlockShell";
 export { ScenarioCard } from "./ScenarioCard";
 export { InsightCard } from "./InsightCard";
 export { MicroCheckCard } from "./MicroCheckCard";
