@@ -4168,7 +4168,8 @@
           "b": "Ajustar la rueda de IPD hasta que la imagen sea nítida para ese alumno",
           "c": "Reiniciar las gafas — probablemente sea un fallo de software",
           "d": "Bajar el brillo de la pantalla en ajustes",
-          "explanation": "La visión borrosa casi siempre se debe a un IPD (distancia interpupilar) incorrecto. La rueda de IPD mueve las lentes para adaptarse a la separación ocular de cada alumno — un ajuste de 5 segundos que resuelve el problema al instante."
+          "explanation": "La visión borrosa casi siempre se debe a un IPD (distancia interpupilar) incorrecto. La rueda de IPD mueve las lentes para adaptarse a la separación ocular de cada alumno — un ajuste de 5 segundos que resuelve el problema al instante.",
+          "imageAlt": "Primer plano de una persona girando con los dedos la rueda de IPD bajo unas gafas Meta Quest 3."
         },
         "q2": {
           "question": "El WiFi se cae durante una sesión VR. La mitad de la clase no ha tenido su turno. ¿Cuál es tu prioridad?",
@@ -4179,12 +4180,13 @@
           "explanation": "La adaptabilidad es clave. Tener una app VR offline probada como respaldo significa que la caída del WiFi no acaba con la sesión. Reorganiza la rotación para mantener a todos los alumnos involucrados mientras se resuelve el problema de red."
         },
         "q3": {
-          "question": "Un padre te escribe preocupado por la seguridad VR para su hijo. ¿Cuál es la mejor respuesta?",
-          "a": "Responder que VR es perfectamente seguro y no hay de qué preocuparse",
-          "b": "Reenviar el email al director para que lo gestione",
-          "c": "Compartir las medidas de seguridad específicas que usas (límites de sesión, Guardian, supervisión) y ofrecer hablar más",
-          "d": "Eximir al niño de todas las actividades VR inmediatamente",
-          "explanation": "La transparencia genera confianza. Compartir tus protocolos de seguridad específicos — límites de tiempo, Guardian, supervisión activa — demuestra profesionalismo e invita al diálogo en lugar de cerrar las preocupaciones."
+          "question": "Quieres que toda la clase vea lo que un alumno está viendo dentro del Quest mientras explica un procedimiento paso a paso. ¿Cómo lo haces?",
+          "a": "Pides al alumno que se quite las gafas y describa lo que vio",
+          "b": "Inicias casting desde las gafas a la app Meta Quest del móvil y proyectas la pantalla del móvil en la pizarra digital",
+          "c": "Grabas un vídeo del alumno usando las gafas y lo reproduces después",
+          "d": "Conectas las gafas al proyector con un cable HDMI",
+          "explanation": "El casting nativo del Quest envía la vista en primera persona del alumno a la app Meta Quest (móvil/web) o a un Chromecast. Lo reflejas en la pizarra digital y toda la clase ve en directo lo que el alumno hace. El Quest 3 no tiene salida HDMI, así que la opción (d) no funciona.",
+          "imageAlt": "Pizarra digital del aula mostrando la vista en primera persona desde unas gafas VR; debajo, un Quest 3 conectado al cargador sobre la mesa del profesor."
         },
         "q4": {
           "question": "Faltan 30 minutos para clase. Solo 3 de tus 5 gafas se cargaron durante la noche. ¿Qué haces?",
@@ -4192,15 +4194,17 @@
           "b": "Usar las 3 cargadas ahora, enchufar las otras 2 y rotarlas cuando tengan carga",
           "c": "Intentar cargar rápido las 5 durante 30 minutos — debería ser suficiente",
           "d": "Usar solo las 3 cargadas y no preocuparte por las otras 2",
-          "explanation": "Empieza con lo que funciona. Un esquema de rotación con 3 gafas mientras las otras 2 cargan significa que cada alumno sigue teniendo tiempo en VR. Enchufar las descargadas les da batería suficiente para unirse a la rotación después."
+          "explanation": "Empieza con lo que funciona. Un esquema de rotación con 3 gafas mientras las otras 2 cargan significa que cada alumno sigue teniendo tiempo en VR. Enchufar las descargadas les da batería suficiente para unirse a la rotación después.",
+          "imageAlt": "Cinco Meta Quest 3 alineadas sobre una mesa, todas conectadas a sus cables; tres muestran el LED verde de carga completa y dos siguen con el LED rojo cargando."
         },
         "q5": {
-          "question": "Un alumno se niega a ponerse las gafas VR y parece ansioso. ¿Qué haces?",
-          "a": "Respetar su decisión y asignarle un rol alternativo como observador o controlador del casting",
-          "b": "Insistir — necesita participar para obtener su nota",
-          "c": "Ponerle las gafas tú mismo para demostrar que no da miedo",
-          "d": "Enviarlo al orientador del colegio",
-          "explanation": "Respetar la decisión del alumno mientras le ofreces alternativas significativas mantiene su inclusión sin forzarlo. Los roles de observador, tomador de notas y controlador de casting contribuyen a la clase y reducen la ansiedad ante futuras sesiones."
+          "question": "Vas a montar 3 estaciones VR en tu aula. ¿Cuándo y cómo configuras los límites de Guardian?",
+          "a": "Una vez al inicio del curso — el Quest recuerda el espacio para siempre",
+          "b": "En cada estación, antes de la primera sesión, dibujando un boundary que evite cualquier obstáculo o silla",
+          "c": "Solo si un alumno se queja de chocarse con algo",
+          "d": "Guardian se configura solo automáticamente — no hace falta tocarlo",
+          "explanation": "Guardian (el límite de juego) define el área segura dentro de la cual el alumno se puede mover en VR. Cada estación es un espacio distinto y debe redibujarse antes de empezar para evitar choques con sillas, mesas u otros compañeros. El Quest no recuerda el boundary tras cambios grandes de espacio, y omitir Guardian es la causa principal de incidentes de seguridad en aula.",
+          "imageAlt": "Alumno de pie con unas Meta Quest 3 dentro de un boundary virtual rectangular brillante en el suelo del aula, marcando el área segura de Guardian."
         }
       },
       "designingMeaningfulLearning": {

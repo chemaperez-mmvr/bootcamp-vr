@@ -4168,7 +4168,8 @@
           "b": "Adjust the IPD wheel until the image is clear for that student",
           "c": "Restart the headset — it's probably a software glitch",
           "d": "Lower the screen brightness in settings",
-          "explanation": "Blurry vision is almost always caused by incorrect IPD (inter-pupillary distance). The IPD wheel moves the lenses to match each student's unique eye spacing — a 5-second adjustment that fixes the problem immediately."
+          "explanation": "Blurry vision is almost always caused by incorrect IPD (inter-pupillary distance). The IPD wheel moves the lenses to match each student's unique eye spacing — a 5-second adjustment that fixes the problem immediately.",
+          "imageAlt": "Close-up of fingers turning the IPD adjustment wheel underneath a Meta Quest 3 headset."
         },
         "q2": {
           "question": "WiFi drops during a VR session. Half the class hasn't had their turn yet. What's your priority?",
@@ -4179,12 +4180,13 @@
           "explanation": "Adaptability is key. Having a tested offline VR app ready as backup means WiFi failure doesn't end the session. Reorganize the rotation to keep all students engaged while the network issue resolves."
         },
         "q3": {
-          "question": "A parent emails you concerned about VR safety for their child. What's the best response?",
-          "a": "Reply that VR is perfectly safe and there's nothing to worry about",
-          "b": "Forward the email to the principal to handle",
-          "c": "Share specific safety measures you use (session limits, Boundary, supervision) and offer to discuss further",
-          "d": "Exempt the child from all VR activities immediately",
-          "explanation": "Transparency builds trust. Sharing your specific safety protocols — session time limits, Boundary zones, active supervision — shows professionalism and invites dialogue rather than shutting down concerns."
+          "question": "You want the whole class to see what a student is seeing inside the Quest while they explain a procedure step by step. How do you do it?",
+          "a": "Ask the student to take off the headset and describe what they saw",
+          "b": "Start casting from the headset to the Meta Quest mobile app and project the phone screen onto the classroom display",
+          "c": "Record a video of the student using the headset and play it back later",
+          "d": "Connect the headset to the projector via HDMI cable",
+          "explanation": "The Quest's built-in casting sends the student's first-person view to the Meta Quest app (mobile/web) or to a Chromecast. Mirror that on the classroom display and the whole class watches live. The Quest 3 has no HDMI output, so option (d) won't work.",
+          "imageAlt": "Classroom display showing a first-person VR view; below it, a Quest 3 sits on the teacher's desk plugged into its charger."
         },
         "q4": {
           "question": "It's 30 minutes before class. Only 3 of your 5 headsets charged overnight. What do you do?",
@@ -4192,15 +4194,17 @@
           "b": "Use the 3 charged headsets now, plug in the other 2, and rotate them in once they have enough charge",
           "c": "Try to fast-charge all 5 for 30 minutes — that should be enough",
           "d": "Use only the 3 charged headsets and don't worry about the other 2",
-          "explanation": "Start with what works. A rotation schedule using 3 headsets while 2 charge means every student still gets VR time. Plugging in the uncharged ones gives them enough battery to join the rotation later."
+          "explanation": "Start with what works. A rotation schedule using 3 headsets while 2 charge means every student still gets VR time. Plugging in the uncharged ones gives them enough battery to join the rotation later.",
+          "imageAlt": "Five Meta Quest 3 headsets lined up on a table, all plugged into chargers; three show a green LED (full charge) and two still show a red LED (charging)."
         },
         "q5": {
-          "question": "A student refuses to put on the VR headset and looks anxious. What do you do?",
-          "a": "Respect their decision and assign them an alternative role like observer, note-taker, or casting controller",
-          "b": "Insist — they need to participate to get their grade",
-          "c": "Put the headset on them yourself to show it's not scary",
-          "d": "Send them to the school counselor",
-          "explanation": "Respecting a student's choice while offering meaningful alternatives keeps them included in the learning without forcing them. Observer, note-taker, and casting controller roles contribute to the class and reduce anxiety about future sessions."
+          "question": "You're setting up 3 VR stations in your classroom. When and how do you configure the Guardian boundaries?",
+          "a": "Once at the start of the year — the Quest remembers the space forever",
+          "b": "At each station, before the first session, drawing a boundary that avoids any obstacle or chair",
+          "c": "Only if a student complains about bumping into something",
+          "d": "Guardian configures itself automatically — you don't need to touch it",
+          "explanation": "Guardian (the play boundary) defines the safe zone the student can move within in VR. Each station is a distinct space and the boundary must be redrawn before starting to avoid bumping into chairs, desks or other students. The Quest doesn't keep the boundary across large changes of space, and skipping Guardian is the leading cause of in-classroom safety incidents.",
+          "imageAlt": "Student standing with a Meta Quest 3 inside a glowing rectangular virtual boundary on the classroom floor, marking the safe Guardian play area."
         }
       },
       "designingMeaningfulLearning": {
