@@ -700,9 +700,9 @@ const blocksByModule: Record<string, LearningBlockSetDef> = {
             type: "trueFalse",
             id: "b5-tf",
             statements: [
-              { id: "s1", statementKey: `${Q}.b5.micro.tf.s1.statement`, isTrue: true, explanationKey: `${Q}.b5.micro.tf.s1.explanation` },
-              { id: "s2", statementKey: `${Q}.b5.micro.tf.s2.statement`, isTrue: false, explanationKey: `${Q}.b5.micro.tf.s2.explanation` },
-              { id: "s3", statementKey: `${Q}.b5.micro.tf.s3.statement`, isTrue: true, explanationKey: `${Q}.b5.micro.tf.s3.explanation` },
+              { id: "s1", statementKey: `${Q}.b5.micro.tf.s1.statement`, isTrue: true, explanationKey: `${Q}.b5.micro.tf.s1.explanation`, imageUrl: "/images/tf-charge-night-vs-morning.webp" },
+              { id: "s2", statementKey: `${Q}.b5.micro.tf.s2.statement`, isTrue: false, explanationKey: `${Q}.b5.micro.tf.s2.explanation`, imageUrl: "/images/tf-test-each-headset.webp" },
+              { id: "s3", statementKey: `${Q}.b5.micro.tf.s3.statement`, isTrue: true, explanationKey: `${Q}.b5.micro.tf.s3.explanation`, imageUrl: "/images/tf-backup-plan.webp" },
             ],
           },
         ],
